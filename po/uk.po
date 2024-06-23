@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-15 20:15+0000\n"
-"PO-Revision-Date: 2024-06-15 21:52+0000\n"
+"POT-Creation-Date: 2024-06-21 14:25+0000\n"
+"PO-Revision-Date: 2024-06-21 14:18+0000\n"
 "Last-Translator: kvinto <badsystem@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/uk/>\n"
 "Language: uk\n"
@@ -18,17 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.6-rc\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-
-msgid ""
-"\n"
-"\n"
-"[User - bouquets (TV)]\n"
-msgstr ""
-"\n"
-"\n"
-"[Користувач - фаворити (ТБ)]\n"
 
 msgid ""
 "\n"
@@ -44,31 +35,8 @@ msgstr ""
 "\n"
 "Триває запис."
 
-msgid ""
-"\n"
-"[Installed Plugins]\n"
-msgstr ""
-"\n"
-"[Встановлені плагіни]\n"
-
-msgid ""
-"\n"
-"[User - bouquets (RADIO)]\n"
-msgstr ""
-"\n"
-"[Користувач - фаворити (Радіо)]\n"
-
 msgid " "
 msgstr " "
-
-msgid "     no space left on back-up device"
-msgstr "     на пристрої не залишилося місця"
-
-msgid "     no writing permission on back-up device"
-msgstr "     відсутність дозволу на створення резервної копії"
-
-msgid "     wrong back-up destination "
-msgstr "     неправильне місце призначення "
 
 msgid "  Menu key : Select quad channel"
 msgstr "  Кнопка Меню : Вибір 4 канальної доріжки"
@@ -100,7 +68,7 @@ msgid " (higher than rotor any auto)"
 msgstr " (вище будь-якого двигуна авто)"
 
 msgid " (lower than any auto)"
-msgstr " (нище будь-якого авто)"
+msgstr " (нижче будь-якого авто)"
 
 msgid " <No Channel>"
 msgstr " <Немає Каналу>"
@@ -1753,6 +1721,18 @@ msgstr "AC3+ транскодування"
 msgid "AFL"
 msgstr "AFL"
 
+msgid "AI-Powered translation color"
+msgstr "Колір субтитрів за допомогою AI"
+
+msgid "AI-Powered translation enabled"
+msgstr "Ввімкнути переклад за допомогою AI"
+
+msgid "AI-Powered translation language"
+msgstr "Мова перекладу на основі AI"
+
+msgid "AI-Powered translation subscription code"
+msgstr "Код підписки на переклад на основі AI"
+
 msgid "ARM"
 msgstr "ARM"
 
@@ -1889,10 +1869,10 @@ msgid "Add Bouquet"
 msgstr "додати фаворит"
 
 msgid "Add Bouquet To Parental Protection"
-msgstr "додати фаворит в батьківський контроль"
+msgstr "Додати фаворит у батьківський контроль"
 
 msgid "Add Current"
-msgstr "додати поточний"
+msgstr "Додати поточний"
 
 msgid "Add File Commander to Extensions Menu"
 msgstr "Додати File Commander до Меню розширень"
@@ -1919,10 +1899,10 @@ msgid "Add RecordTimer"
 msgstr "Додати Таймер Запису"
 
 msgid "Add Service To Bouquet"
-msgstr "додати канал до фаворитів"
+msgstr "Додати канал в фаворит"
 
 msgid "Add Service To Favorites"
-msgstr "додати канал до фаворитів"
+msgstr "Додати канал до фаворитів"
 
 msgid "Add Timer"
 msgstr "Додати Таймер"
@@ -2262,9 +2242,6 @@ msgstr "Дозволяє показати/приховати Менеджер л
 
 msgid "Allows you to show/hide OScam/CCcam in the Extension Menu screen (BLUE button)."
 msgstr "Дозволяє показувати/приховувати OScam/CCcam на екрані меню розширення (СИНЯ кнопка)."
-
-msgid "Almost there... "
-msgstr "Майже все... "
 
 msgid "Alpha"
 msgstr "Прозорість"
@@ -2838,14 +2815,6 @@ msgstr "Видалити, зовнішня USB"
 msgid "Back, upper USB"
 msgstr "Видалити, верхня USB"
 
-#, python-format
-msgid "Back-up Tool for a %s\n"
-msgstr "Інструмент резервного копіювання для %s\n"
-
-#, python-format
-msgid "Back-up Tool for an %s\n"
-msgstr "Інструмент для створення резервної копії %s\n"
-
 msgid "Back/Recall"
 msgstr "Назад/Повторити"
 
@@ -2870,10 +2839,6 @@ msgstr "Фон:"
 msgid "Backup"
 msgstr "Резервна копія"
 
-#, python-format
-msgid "Backup Date: %s\n"
-msgstr "Дата резервної копії: %s\n"
-
 msgid "Backup Location"
 msgstr "Місце збереження"
 
@@ -2886,14 +2851,8 @@ msgstr "Режим збереження"
 msgid "Backup Mode: Flash Online"
 msgstr "Режим резервного копіювання: Flash Online"
 
-msgid "Backup Mode: Flash Online\n"
-msgstr "Режим резервного копіювання: Повна копія\n"
-
 msgid "Backup Mode: USB Recovery"
 msgstr "Режим резервного копіювання: відновлення з USB"
-
-msgid "Backup Mode: USB Recovery\n"
-msgstr "Режим збереження: USB відновлення\n"
 
 msgid "Backup Settings"
 msgstr "Збереження Налаштувань"
@@ -2913,10 +2872,6 @@ msgid ""
 msgstr ""
 "Знайдений бекап плагінів!\n"
 "Хочете встановити його зараз?"
-
-#, python-format
-msgid "Backup to destination: %s"
-msgstr "Місце збереження Резервної копії: %s"
 
 #, python-format
 msgid "Backup tool for %s %s"
@@ -3241,10 +3196,6 @@ msgstr "Інформація про збірку"
 msgid "Build information for %s %s"
 msgstr "Інформація про збірку для %s %s"
 
-#, python-format
-msgid "Build: %s"
-msgstr "Збірка: %s"
-
 msgid "Bulgaria"
 msgstr "Болгарія"
 
@@ -3292,9 +3243,6 @@ msgstr "За UUID диску"
 
 msgid "By disk label"
 msgstr "За міткою диска"
-
-msgid "By openATV Image Team"
-msgstr "Від команди openATV"
 
 msgid "Bypass HDMI EDID Check"
 msgstr "Відключити перевірку HDMI EDID"
@@ -3687,9 +3635,6 @@ msgstr "Скасувати оновлення"
 msgid "Cancelled upon user request"
 msgstr "Скасовано за запитом користувача"
 
-msgid "Cannot create backup directory"
-msgstr "Неможливо створити каталог резервної копії"
-
 msgid "Cannot delete file"
 msgstr "Неможливо видалити файл"
 
@@ -3733,6 +3678,9 @@ msgstr "Каталонська / Валенсійська"
 
 msgid "Cayman Islands"
 msgstr "Кайманові острови"
+
+msgid "Cebuano"
+msgstr "Себуанська"
 
 msgid "Celsius"
 msgstr "Цельсій"
@@ -4002,9 +3950,8 @@ msgstr "Китай"
 msgid "Chinese"
 msgstr "Китайська"
 
-#, python-format
-msgid "Chipset: BCM%s"
-msgstr "Чіпсет: BCM%s"
+msgid "Chinese (Simplified)"
+msgstr "Китайська (спрощена)"
 
 msgid "Choice Box"
 msgstr "Зробіть вибір"
@@ -4497,6 +4444,9 @@ msgstr ""
 msgid "Configure remote control type"
 msgstr "Налаштування типу пульта керування"
 
+msgid "Configure the AI-Powered translation language."
+msgstr "Налаштуйте мову перекладу за допомогою AI."
+
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Налаштування DiSEqC режиму для цього конвертора."
 
@@ -4547,6 +4497,9 @@ msgstr "Регулювання яскравості дисплея на пере
 
 msgid "Configure the brightness level of the front panel display for standby."
 msgstr "Регулювання яскравості дисплея на передній панелі."
+
+msgid "Configure the color of the AI-Powered translations."
+msgstr "Налаштуйте колір субтитрів за допомогою AI."
 
 msgid "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
 msgstr "Налаштуйте колір зовнішніх субтитрів, альтернативний (нормальний при білому, курсив при жовтому, жирний при блакитному, підкреслений при зеленому), білий або жовтий кольори."
@@ -5130,13 +5083,6 @@ msgstr "Створіть додаткові слоти на вибраному �
 
 msgid "Create the flash expander in the selected device"
 msgstr "Створити флеш-розширювач у вибраному пристрої"
-
-msgid "Create:"
-msgstr "Створення:"
-
-#, python-format
-msgid "Create: Recovery Fullbackup %s"
-msgstr "Створити: Резервну копію відновлення %s"
 
 msgid "Creating .ap and .sc files"
 msgstr "Створення файлів АР і SC"
@@ -6902,6 +6848,9 @@ msgstr "Ввімкнути %s про:"
 msgid "Enable 5V for active antenna"
 msgstr "Подати 5В для активної антени"
 
+msgid "Enable AI-Powered translation for all teletext and DVB subtitles."
+msgstr "Увімкніть переклад за допомогою штучного інтелекту для всіх субтитрів телетексту та DVB."
+
 msgid "Enable Autorecord"
 msgstr "Активувати автозапис"
 
@@ -7314,6 +7263,9 @@ msgstr "Введіть частоту гетеродина нижнього ді
 msgid "Enter your personal feed URL to allow you to select packages from your personal feed."
 msgstr "Введіть URL-адресу свого особистого каналу, щоб Ви могли вибирати пакети з особистого каналу."
 
+msgid "Enter your subscription code, the unified code for trial is 15."
+msgstr "Введіть свій код підписки, уніфікований код для трейлу 15."
+
 msgid "Entertainment"
 msgstr "Розваги"
 
@@ -7484,12 +7436,6 @@ msgstr ""
 
 msgid "Error opening recording file"
 msgstr "Помилка відкриття файлу запису"
-
-msgid "Error reading bouquets.radio"
-msgstr "Помилка читання файлу bouquets.radio"
-
-msgid "Error reading bouquets.tv"
-msgstr "Помилка читання файлу bouquets.tv"
 
 msgid "Error reading webpage!"
 msgstr "Помилка читання веб-сторінки!"
@@ -8008,6 +7954,9 @@ msgstr "Запасний віддалений приймач для DVB-C"
 msgid "Fallback remote receiver for DVB-T"
 msgstr "Запасний віддалений приймач для DVB-T"
 
+msgid "Fallback Timer"
+msgstr "Резервний таймер"
+
 msgid "Fallback tuner setup"
 msgstr "Налаштування резервного тюнера"
 
@@ -8513,18 +8462,11 @@ msgstr "Версія процесора"
 msgid "Fulah"
 msgstr "Фульфульде"
 
-msgid "Full Image Backup "
-msgstr "Повна копія Іміджу "
-
 msgid "Full Range RGB"
 msgstr "Повний діапазон RGB"
 
 msgid "Full Stretch"
 msgstr "Повне розтягування"
-
-#, python-format
-msgid "Full back-up on %s"
-msgstr "Повний бекап на %s"
 
 msgid "Full factory reset"
 msgstr "Повне скидання до заводських налаштувань"
@@ -8959,6 +8901,9 @@ msgstr "Тип обладнання"
 msgid "Hausa"
 msgstr "Hausa"
 
+msgid "Hawaiian"
+msgstr "Гавайська"
+
 msgid "Heard Island and McDonald Islands"
 msgstr "Острів Херд і Макдональд"
 
@@ -9123,6 +9068,9 @@ msgstr "Вперед в історії"
 
 msgid "History zap..."
 msgstr "Історія перемикань..."
+
+msgid "Hmong"
+msgstr "Хмонгська"
 
 msgid "Hockey"
 msgstr "Хокей"
@@ -9484,15 +9432,8 @@ msgstr "Резервна Копія %s"
 msgid "Image Flash Actions"
 msgstr "Дії з прошивкою іміджу"
 
-#, python-format
-msgid "Image created on: %s/%s-%s-%s-backup-%s_%s.zip"
-msgstr "Імідж створено: %s/%s-%s-%s-backup-%s_%s.zip"
-
 msgid "Image created:"
 msgstr "Імідж створено:"
-
-msgid "Image creation failed - "
-msgstr "Помилка створення іміджу - "
 
 msgid "Image creation failed!"
 msgstr "Помилка створення Іміджу!"
@@ -10166,6 +10107,9 @@ msgstr "Куаняма / Кваняма"
 
 msgid "Kurdish"
 msgstr "Курдська"
+
+msgid "Kurdish (Sorani)"
+msgstr "Курдська (Суранська)"
 
 msgid "Kurdistan"
 msgstr "Курдистан"
@@ -11530,10 +11474,6 @@ msgstr "Multi Lib"
 msgid "MultiTranscoding"
 msgstr "Мульти-транскодування"
 
-#, python-format
-msgid "Multiboot Image created on: %s/%s-%s-%s-backup-%s_usb.zip"
-msgstr "Імідж Multiboot створено: %s/%s-%s-%s-backup-%s_usb.zip"
-
 msgid "Multiboot Image created:"
 msgstr "Створено Multiboot:"
 
@@ -12123,9 +12063,6 @@ msgstr ""
 msgid "No, but restart from begin"
 msgstr "Ні, але відтворити фільм з початку"
 
-msgid "No, do not backup a image"
-msgstr "Ні, не створювати резервну копію іміджу"
-
 msgid "No, do nothing."
 msgstr "Ні, не робити нічого."
 
@@ -12283,9 +12220,6 @@ msgstr "Нічого не робити, вийти з цього меню"
 msgctxt "now/next: 'now' event label"
 msgid "Now"
 msgstr "Тепер"
-
-msgid "Now building the Backup Image"
-msgstr "Тепер створюємо резервну копію іміджу"
 
 msgid "Now save time shift as movie and continues recording"
 msgstr "Зберегти таймшифт зараз як фільм і продовжувати запис"
@@ -13126,14 +13060,8 @@ msgstr "Пауза"
 msgid "Please add titles to the compilation."
 msgstr "Будь ласка, додайте назву до компіляції."
 
-msgid "Please be patient, a backup will now be made,\n"
-msgstr "Будь ласка, будьте терпеливими, створюється резервна копія,\n"
-
 msgid "Please be patient."
 msgstr "Будь ласка, почекайте."
-
-msgid "Please check the manual of the receiver"
-msgstr "Будь ласка, прочитайте інструкцію приймача"
 
 msgid "Please choose an extension..."
 msgstr "Будь ласка, виберіть розширення..."
@@ -13207,9 +13135,6 @@ msgstr "Будь ласка, натисніть OK для продовження
 
 msgid "Please press OK when ready"
 msgstr "Натисніть OK, коли будете готові"
-
-msgid "Please select a backup destination"
-msgstr "Будь ласка, виберіть місце резервної копії"
 
 msgid "Please select a default EPG type..."
 msgstr "Будь ласка, виберіть тип ЕПГ за замовчуванням..."
@@ -13381,9 +13306,6 @@ msgstr "Будь ласка, почекайте..."
 
 msgid "Please wait... Loading list..."
 msgstr "Будь ласка, почекайте... Завантаження списку..."
-
-msgid "Please wait...almost ready! "
-msgstr "Будь-ласка, почекайте...майже зроблено! "
 
 msgid "Plug in USB device"
 msgstr "Підключіть USB-пристрій"
@@ -13779,9 +13701,6 @@ msgstr "Прайм-тайм хвилина"
 
 msgid "Priority"
 msgstr "Пріоритет"
-
-msgid "Probable causes could be"
-msgstr "Можливі причини можуть бути"
 
 msgid "Proc model"
 msgstr "Модель ЦП"
@@ -18880,9 +18799,6 @@ msgstr "Сунданська"
 msgid "Sunday"
 msgstr "Неділя"
 
-msgid "Support at"
-msgstr "Підтримка на"
-
 msgid "Suriname"
 msgstr "Суринам"
 
@@ -19121,7 +19037,7 @@ msgid "TMDB Search"
 msgstr "TMDB Пошук"
 
 msgid "TRANSLATOR_INFO"
-msgstr "Переклад: kvinto - 16.06.2024"
+msgstr "Переклад: kvinto - 19.06.2024"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл занадто великий для ISO9660 рівень 1!"
@@ -20181,10 +20097,6 @@ msgstr "Інтервал повторення для швидкого перем
 msgid "Time jump: Use normal fast forward for speeds"
 msgstr "Нормальні швидкості для швидкого перемотування вперед"
 
-#, python-format
-msgid "Time required for this process: %s"
-msgstr "Час, необхідний для цього процесу: %s"
-
 msgid "Time shift buffer delete after zap"
 msgstr "Після перемикання видалити буфер таймшифта"
 
@@ -20343,9 +20255,6 @@ msgstr "Щоб відновити імідж, перегляньте посіб�
 
 msgid "To restore the image use 'OnlineFlash' option in the 'SoftwareManager' menu."
 msgstr "Щоб відновити імідж, скористайтеся опцією 'OnlineFlash' у меню 'SoftwareManager'."
-
-msgid "To restore the image:"
-msgstr "Щоб відновити імідж:"
 
 #, python-format
 msgid "To where would you like to extract '%s'?"
@@ -21128,9 +21037,6 @@ msgstr "Використовувати інформацію MHW ЕПГ, коли
 msgid "Use Netmed EPG information when it is available."
 msgstr "Використовувати інформацію Netmed ЕПГ, коли вона доступна."
 
-msgid "Use OnlineFlash in SoftwareManager"
-msgstr "Використовуйте OnlineFlash у SoftwareManager"
-
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "Використовуйте OpenTV EPG. Потрібне налаштування на певний транспондер для показу EPG."
 
@@ -21286,9 +21192,6 @@ msgstr "Можете вибрати альтернативний або норм
 
 msgid "Use the current selection and exit"
 msgstr "Використайте поточний вибір і вийдіть"
-
-msgid "Use the cursor keys to select an installed image and then Start button."
-msgstr "Використовуйте кнопки керування курсором, щоб вибрати встановлений імідж, а потім кнопку Старт."
 
 msgid "Use the extended List"
 msgstr "Використання розширеного списку"
@@ -21514,16 +21417,8 @@ msgstr "Венесуела, Болівійська Республіка"
 msgid "Version"
 msgstr "Версія"
 
-#, python-format
-msgid "Version %s %s"
-msgstr "Версія %s %s"
-
 msgid "Version: "
 msgstr "Версія: "
-
-#, python-format
-msgid "Version: %s"
-msgstr "Версія: %s"
 
 msgid "Vertical"
 msgstr "Вертикальна"
@@ -22783,12 +22678,6 @@ msgstr "Масштаб справа"
 msgid "Zulu"
 msgstr "Зулуська"
 
-msgid "[Enigma2 Settings]\n"
-msgstr "[Налаштування Enigma2]\n"
-
-msgid "[Image Info]\n"
-msgstr "[Інформація про Імідж]\n"
-
 msgid "[Timeshift] Merging records failed!"
 msgstr "[Таймшифт] Помилка злиття записів!"
 
@@ -22888,9 +22777,6 @@ msgstr "балет"
 #, python-format
 msgid "bc%d"
 msgstr "bc%d"
-
-msgid "because of the used file system the back-up\n"
-msgstr "через використовувану файлову систему резервне копіювання\n"
 
 msgid "better"
 msgstr "кращий"
@@ -23416,9 +23302,6 @@ msgstr "олімпійський синій"
 msgid "on READ ONLY medium."
 msgstr "на READ ONLY носії."
 
-msgid "on how to restore the image"
-msgstr "що робити для відновлення іміджа"
-
 msgid "orange"
 msgstr "помаранчевий"
 
@@ -23805,9 +23688,6 @@ msgstr "білий"
 msgid "width"
 msgstr "ширина"
 
-msgid "will take about 1-15 minutes for this system\n"
-msgstr "для цієї системи займе близько 1-15 хвилин\n"
-
 msgid "winter sport"
 msgstr "зимовий спорт"
 
@@ -23839,8 +23719,167 @@ msgstr "так (зберігати фіди)"
 msgid "®"
 msgstr "®"
 
-msgid "Fallback Timer"
-msgstr "Резервний таймер"
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "[User - bouquets (TV)]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "[Користувач - фаворити (ТБ)]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "[Installed Plugins]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "[Встановлені плагіни]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "[User - bouquets (RADIO)]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "[Користувач - фаворити (Радіо)]\n"
+
+#~ msgid "     no space left on back-up device"
+#~ msgstr "     на пристрої не залишилося місця"
+
+#~ msgid "     no writing permission on back-up device"
+#~ msgstr "     відсутність дозволу на створення резервної копії"
+
+#~ msgid "     wrong back-up destination "
+#~ msgstr "     неправильне місце призначення "
+
+#~ msgid "Almost there... "
+#~ msgstr "Майже все... "
+
+#, python-format
+#~ msgid "Back-up Tool for a %s\n"
+#~ msgstr "Інструмент резервного копіювання для %s\n"
+
+#, python-format
+#~ msgid "Back-up Tool for an %s\n"
+#~ msgstr "Інструмент для створення резервної копії %s\n"
+
+#, python-format
+#~ msgid "Backup Date: %s\n"
+#~ msgstr "Дата резервної копії: %s\n"
+
+#~ msgid "Backup Mode: Flash Online\n"
+#~ msgstr "Режим резервного копіювання: Повна копія\n"
+
+#~ msgid "Backup Mode: USB Recovery\n"
+#~ msgstr "Режим збереження: USB відновлення\n"
+
+#, python-format
+#~ msgid "Backup to destination: %s"
+#~ msgstr "Місце збереження Резервної копії: %s"
+
+#, python-format
+#~ msgid "Build: %s"
+#~ msgstr "Збірка: %s"
+
+#~ msgid "By openATV Image Team"
+#~ msgstr "Від команди openATV"
+
+#~ msgid "Cannot create backup directory"
+#~ msgstr "Неможливо створити каталог резервної копії"
+
+#, python-format
+#~ msgid "Chipset: BCM%s"
+#~ msgstr "Чіпсет: BCM%s"
+
+#~ msgid "Create:"
+#~ msgstr "Створення:"
+
+#, python-format
+#~ msgid "Create: Recovery Fullbackup %s"
+#~ msgstr "Створити: Резервну копію відновлення %s"
+
+#~ msgid "Error reading bouquets.radio"
+#~ msgstr "Помилка читання файлу bouquets.radio"
+
+#~ msgid "Error reading bouquets.tv"
+#~ msgstr "Помилка читання файлу bouquets.tv"
+
+#~ msgid "Full Image Backup "
+#~ msgstr "Повна копія Іміджу "
+
+#, python-format
+#~ msgid "Full back-up on %s"
+#~ msgstr "Повний бекап на %s"
+
+#, python-format
+#~ msgid "Image created on: %s/%s-%s-%s-backup-%s_%s.zip"
+#~ msgstr "Імідж створено: %s/%s-%s-%s-backup-%s_%s.zip"
+
+#~ msgid "Image creation failed - "
+#~ msgstr "Помилка створення іміджу - "
+
+#, python-format
+#~ msgid "Multiboot Image created on: %s/%s-%s-%s-backup-%s_usb.zip"
+#~ msgstr "Імідж Multiboot створено: %s/%s-%s-%s-backup-%s_usb.zip"
+
+#~ msgid "No, do not backup a image"
+#~ msgstr "Ні, не створювати резервну копію іміджу"
+
+#~ msgid "Now building the Backup Image"
+#~ msgstr "Тепер створюємо резервну копію іміджу"
+
+#~ msgid "Please be patient, a backup will now be made,\n"
+#~ msgstr "Будь ласка, будьте терпеливими, створюється резервна копія,\n"
+
+#~ msgid "Please check the manual of the receiver"
+#~ msgstr "Будь ласка, прочитайте інструкцію приймача"
+
+#~ msgid "Please select a backup destination"
+#~ msgstr "Будь ласка, виберіть місце резервної копії"
+
+#~ msgid "Please wait...almost ready! "
+#~ msgstr "Будь-ласка, почекайте...майже зроблено! "
+
+#~ msgid "Probable causes could be"
+#~ msgstr "Можливі причини можуть бути"
+
+#~ msgid "Support at"
+#~ msgstr "Підтримка на"
+
+#, python-format
+#~ msgid "Time required for this process: %s"
+#~ msgstr "Час, необхідний для цього процесу: %s"
+
+#~ msgid "To restore the image:"
+#~ msgstr "Щоб відновити імідж:"
+
+#~ msgid "Use OnlineFlash in SoftwareManager"
+#~ msgstr "Використовуйте OnlineFlash у SoftwareManager"
+
+#~ msgid "Use the cursor keys to select an installed image and then Start button."
+#~ msgstr "Використовуйте кнопки керування курсором, щоб вибрати встановлений імідж, а потім кнопку Старт."
+
+#, python-format
+#~ msgid "Version %s %s"
+#~ msgstr "Версія %s %s"
+
+#, python-format
+#~ msgid "Version: %s"
+#~ msgstr "Версія: %s"
+
+#~ msgid "[Enigma2 Settings]\n"
+#~ msgstr "[Налаштування Enigma2]\n"
+
+#~ msgid "[Image Info]\n"
+#~ msgstr "[Інформація про Імідж]\n"
+
+#~ msgid "because of the used file system the back-up\n"
+#~ msgstr "через використовувану файлову систему резервне копіювання\n"
+
+#~ msgid "on how to restore the image"
+#~ msgstr "що робити для відновлення іміджа"
+
+#~ msgid "will take about 1-15 minutes for this system\n"
+#~ msgstr "для цієї системи займе близько 1-15 хвилин\n"
 
 #~ msgid "Execution finished!!"
 #~ msgstr "Виконано!!!"
