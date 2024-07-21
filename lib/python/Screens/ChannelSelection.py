@@ -136,7 +136,7 @@ class ChannelSelectionBase(Screen):
 		self["key_green"] = StaticText(_("Reception Lists"))
 		self["key_yellow"] = StaticText(_("Providers"))
 		self["key_blue"] = StaticText(_("Bouquets"))
-		self["list"] = ServiceListLegacy(self) if config.channelSelection.style.value == "" else ServiceList(self)
+		self["list"] = ServiceListLegacy(self) if config.channelSelection.screenStyle.value == "" or config.channelSelection.widgetStyle.value == "" else ServiceList(self)
 		self.servicelist = self["list"]
 		self.numericalTextInput = NumericalTextInput(handleTimeout=False)
 		self.servicePath = []
@@ -2254,7 +2254,9 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 
 	def __init__(self, session):
 		ChannelSelectionBase.__init__(self, session)
-		if config.usage.use_pig.value:
+		if config.channelSelection.screenStyle.value:
+			self.skinName = [config.channelSelection.screenStyle.value]
+		elif config.usage.use_pig.value:
 			self.skinName = ["ChannelSelection_PIG", "ChannelSelection"]
 		elif config.usage.servicelist_mode.value == "simple":
 			self.skinName = ["SlimChannelSelection", "SimpleChannelSelection", "ChannelSelection"]
@@ -3060,7 +3062,7 @@ class ChannelSelectionRadio(ChannelSelectionBase, ChannelSelectionEdit, ChannelS
 		self["RdsActions"] = HelpableActionMap(self, ["InfobarRdsActions"], {
 			"startRassInteractive": (self.startRassInteractive, _("View Rass interactive"))
 		}, prio=-1, description=_("Radio Channel Selection Actions"))
-		self["rdsActions"].setEnabled(False)
+		self["RdsActions"].setEnabled(False)
 		infobar.rds_display.onRassInteractivePossibilityChanged.append(self.RassInteractivePossibilityChanged)
 		self.onClose.append(self.__onClose)
 		self.onExecBegin.append(self.__onExecBegin)
@@ -3083,7 +3085,7 @@ class ChannelSelectionRadio(ChannelSelectionBase, ChannelSelectionEdit, ChannelS
 		self.infobar.RassSlidePicChanged()
 
 	def RassInteractivePossibilityChanged(self, state):
-		self["rdsActions"].setEnabled(state)
+		self["RdsActions"].setEnabled(state)
 
 	def __onExecBegin(self):
 		self.info.show()
