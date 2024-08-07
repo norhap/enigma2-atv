@@ -8,7 +8,7 @@ from Components.Harddisk import Freespace
 from Components.SystemInfo import BoxInfo, getBoxDisplayName
 from Components.Sources.StaticText import StaticText
 from Screens.Console import Console
-from Screens.ChoiceBox import ChoiceBoxNew as ChoiceBox
+from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.MultiBoot import MultiBoot
@@ -300,7 +300,7 @@ class ImageBackup(Screen):
 			cmdLines.append(f"{self.syncCmd}")
 			# Create other image backup components.
 			boxName = BoxInfo.getItem("BoxName")
-			if boxName in ("gbquad4k", "gbue4k", "gbx34k"):
+			if boxName in ("gbquad4k", "gbquad4kpro", "gbue4k", "gbx34k"):
 				cmdLines.append(f"{self.echoCmd} \"Create boot dump.\"")
 				cmdLines.append(f"{self.ddCmd} if=/dev/mmcblk0p1 of={workDir}boot.bin")
 				cmdLines.append(f"{self.echoCmd} \"Create rescue dump.\"")
@@ -513,7 +513,7 @@ class ImageBackup(Screen):
 				cmdLines.append(f"{self.echoCmd} \"{"\n".join(lines)}\" > {mainDestination}force_{model}_READ.ME")
 			else:
 				cmdLines.append(f"{self.echoCmd} \"Rename this file to 'force' to force an update without confirmation.\" > {mainDestination}noforce")
-			if boxName in ("gbquad4k", "gbue4k", "gbx34k"):
+			if boxName in ("gbquad4k", "gbquad4kpro", "gbue4k", "gbx34k"):
 				cmdLines.append(f"{self.moveCmd} {workDir}boot.bin {mainDestination}")
 				cmdLines.append(f"{self.moveCmd} {workDir}rescue.bin {mainDestination}")
 				cmdLines.append(f"{self.copyCmd} -f /usr/share/gpt.bin {mainDestination}")

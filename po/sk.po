@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-10 17:04+0000\n"
-"PO-Revision-Date: 2024-07-09 10:09+0000\n"
-"Last-Translator: Marián Hikaník <podnety@mojepreklady.net>\n"
+"POT-Creation-Date: 2024-07-29 19:27+0000\n"
+"PO-Revision-Date: 2024-08-03 21:09+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -1225,8 +1225,8 @@ msgid "%s has been disabled."
 msgstr "%s bolo deaktivované."
 
 #, python-format
-msgid "%s imported from fallback tuner"
-msgstr ""
+msgid "%s imported from remote receiver."
+msgstr "%s importované zo záložného prijímača."
 
 #. TRANSLATORS: The satellite with name '%s' is no longer used after a configuration change. The user is asked whether or not the satellite should be deleted.
 #, python-format
@@ -2285,9 +2285,6 @@ msgstr "[úprava alternatív]"
 msgid "Alternative URLs for DVB-T/C or ATSC"
 msgstr "Alternatívne URL pre DVB-T/C alebo ATSC"
 
-msgid "Alternative numbering mode"
-msgstr "Alternatívne číslovanie"
-
 msgid "Alternative radio mode"
 msgstr "Režim alternatívne rádio"
 
@@ -3128,6 +3125,9 @@ msgstr "Akcie pre navigovanie nástroja na výber prehľadu"
 msgid "Bouquets"
 msgstr "Prehľady"
 
+msgid "Bouquets start at 1"
+msgstr "Perehľady sa začínajú od 1"
+
 msgid "Bouvet Island"
 msgstr "Bouvetov ostrov"
 
@@ -3814,13 +3814,13 @@ msgid "Channel Selection Context Menu Navigation Actions"
 msgstr "Navigačné akcie pre kontextové menu zoznamu kanálov"
 
 msgid "Channel Selection List"
-msgstr ""
+msgstr "Zoznam kanálov"
 
 msgid "Channel Selection Navigation Actions"
 msgstr "Akcie navigácie pre výber kanála"
 
 msgid "Channel Selection Screen"
-msgstr ""
+msgstr "Obrazovka výberu kanálov"
 
 msgid "Channel Selection Settings"
 msgstr "Nastavenia výberu staníc"
@@ -3886,13 +3886,13 @@ msgid "ChannelEPG Settings"
 msgstr "Nastavenia EPG kanála"
 
 msgid "Channels"
-msgstr ""
+msgstr "Kanály"
 
 msgid "Channels and EPG"
-msgstr ""
+msgstr "Kanály a EPG"
 
 msgid "Channels only"
-msgstr ""
+msgstr "Len kanály"
 
 msgid "Chap."
 msgstr "Kap."
@@ -4288,7 +4288,7 @@ msgid "Color space"
 msgstr "Farebný priestor"
 
 msgid "Colored Text"
-msgstr ""
+msgstr "Farebný text"
 
 msgid "Combined"
 msgstr "Kombinované"
@@ -4436,7 +4436,7 @@ msgid "Configure if and how wide the service name column will be shown in the ch
 msgstr "Nastavte, či a aký široký sa má zobrazovať stĺpec s názvom stanice, v zozname pre výber kanála."
 
 msgid "Configure if crypto icons will be shown in the channel selection list."
-msgstr ""
+msgstr "Nastavte, či sa v zozname kanálov majú zobrazovať ikony kódovania."
 
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Nastavte, či sa vo všeobecnosti má ukladať súbor epg.dat."
@@ -4448,7 +4448,7 @@ msgid "Configure if service picons will be shown in the service list."
 msgstr "Nastavte, čí sa majú v zozname staníc zobrazovať pikony."
 
 msgid "Configure if service type icons will be shown."
-msgstr ""
+msgstr "Nastavte, či sa v zozname kanálov majú zobrazovať ikony typu služby."
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bold italic."
 msgstr "Nastavte, či sa majú titulky prepnúť medzi normálnymi, tučnými a tučnými s kurzívou."
@@ -6734,7 +6734,7 @@ msgid "EPG location"
 msgstr "Umiestnenie EPG"
 
 msgid "EPG only"
-msgstr ""
+msgstr "Len EPG"
 
 msgid "EPGSearch"
 msgstr "Vyhľadávanie v EPG"
@@ -7231,7 +7231,7 @@ msgid "Enter PIN"
 msgstr "Zadajte PIN"
 
 msgid "Enter URL"
-msgstr ""
+msgstr "Zadajte URL"
 
 msgid "Enter a description for this timer."
 msgstr "Zadajte popis pre tento časovač."
@@ -7467,11 +7467,20 @@ msgstr ""
 "Chyba pri získavaní odkazu cez %s\n"
 "%s"
 
+msgid "Error moving 'epg.dat' to its destination!"
+msgstr "Chyba pri presúvaní 'epg.dat' na určené miesto!"
+
 msgid "Error opening recording file"
 msgstr "Chyba pri otváraní súboru s nahrávkou"
 
 msgid "Error reading webpage!"
 msgstr "Chyba pri načítaní webovej stránky!"
+
+msgid "Error retrieving 'epg.dat' from the remote receiver!"
+msgstr "Chyba pri získavaní 'epg.dat' zo vzdialeného prijímača!"
+
+msgid "Error retrieving location of 'epg.dat' on the remote receiver!"
+msgstr "Chyba pri získavaní umiestnenia 'epg.dat' na vzdialenom prijímači!"
 
 msgid "Error text:"
 msgstr "Text chyby:"
@@ -7479,15 +7488,6 @@ msgstr "Text chyby:"
 #, python-format
 msgid "Error unzipping image '%s'!"
 msgstr "Chyba pri rozbaľovaní image '%s'!"
-
-msgid "Error when writing epg.dat on the fallback receiver"
-msgstr ""
-
-msgid "Error while moving epg.dat to its destination"
-msgstr ""
-
-msgid "Error while retrieving epg.dat from the fallback receiver"
-msgstr ""
 
 #, python-format
 msgid ""
@@ -7497,8 +7497,11 @@ msgstr ""
 "Chyba pri načítaní informácií o záložnom časovači\n"
 "%s"
 
-msgid "Error while retrieving location of epg.dat on the fallback receiver"
-msgstr ""
+msgid "Error writing '/etc/enigma2/epg.dat' on the remote receiver!"
+msgstr "Chyba pri zápise '/etc/enigma2/epg.dat' na vzdialenom prijímači!"
+
+msgid "Error writing 'epg.dat' on the remote receiver!"
+msgstr "Chyba pri zápise 'epg.dat' na vzdialenom prijímači!"
 
 msgid "Error, unknown Result!"
 msgstr "Chyba, neznámy výsledok!"
@@ -8003,7 +8006,7 @@ msgid "Fallback remote receiver for DVB-T"
 msgstr "Záložný vzdialený prijímač pre DVB-T"
 
 msgid "Fallback remote receiver setup"
-msgstr ""
+msgstr "Nastavenie záložného vzdialeného prijímača"
 
 msgid "Fallback tuner setup"
 msgstr "Nastavenie záložného tuneru"
@@ -9216,7 +9219,7 @@ msgstr "I"
 msgid "I/O priority for scripts"
 msgstr "I/O priorita pre skripty"
 
-msgid "I55SE/H7/H9/H9SE/H9COMBO/H9COMBOSE/H10/H11 new Model"
+msgid "I55SE/H7/H17/H9/H9SE/H9COMBO/H9COMBOSE/H10/H11 new Model"
 msgstr "I55SE/H7/H9/H9SE/H9COMBO/H9COMBOSE/H10/H11 nový model"
 
 msgid "IMDb Details"
@@ -9506,10 +9509,6 @@ msgstr "Importovať kanály a/alebo EPG zo URL vzdialeného prijímača počas �
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Importovať kanály a/alebo EPG zo URL vzdialeného prijímača počas štartu prijímača alebo enigmy2"
-
-#, python-format
-msgid "Import from fallback tuner failed, %s"
-msgstr ""
 
 msgid "Import from remote receiver URL"
 msgstr "Importovať z URL adresy vzdialeného prijímača"
@@ -10175,6 +10174,9 @@ msgstr "Rýchlosť rolovania LCD"
 msgid "LCD/Front panel *"
 msgstr "LCD/Predný panel *"
 
+msgid "LCN numbering"
+msgstr "LCN číslovanie"
+
 msgid "LCN plugin for DVB-T/T2 services"
 msgstr "LCN plugin pre služby DVB-T/T2"
 
@@ -10813,7 +10815,7 @@ msgid "Manual transponder"
 msgstr "Ručne zadaný transpondér"
 
 msgid "Manually import from fallback tuner"
-msgstr ""
+msgstr "Manuálny import zo vzdialeného tuneru"
 
 msgid "Manufacturer"
 msgstr "Výrobca"
@@ -11064,6 +11066,9 @@ msgstr "Mipsel"
 msgid "Miscellaneous"
 msgstr "Rôzne"
 
+msgid "Miscellaneous languages"
+msgstr "Rôzne jazyky"
+
 msgid "Misconfiguration in channel allocation"
 msgstr "Nespráva konfigurácia prideľovania kanálov"
 
@@ -11231,6 +11236,9 @@ msgstr "Presunúť sa o stranu/obrazovku nadol"
 msgid "Move down a screen"
 msgstr "Presunúť o jednu obrazovku nadol"
 
+msgid "Move down a screen / Move to next item"
+msgstr "O obrazovku dolu / Prechod na ďalšiu položku"
+
 msgid "Move down a screen in the panel"
 msgstr "Presunúť v paneli o jednu obrazovku nadol"
 
@@ -11376,11 +11384,17 @@ msgstr "Presunúť na posledný riadok/obrazovku"
 msgid "Move to the next category in the list"
 msgstr "Presunúť na ďalšiu kategóriu v zozname"
 
+msgid "Move to the next item"
+msgstr "Prechod na ďalšiu položku"
+
 msgid "Move to the next item in the list"
 msgstr "Presunúť na ďalšiu položku v zozname"
 
 msgid "Move to the previous category in the list"
 msgstr "Presunúť na predchádzajúcu kategóriu v zozname"
+
+msgid "Move to the previous item"
+msgstr "Prechod na predošlú položku"
 
 msgid "Move to the previous item in list"
 msgstr "Presunúť na predchádzajúcu položku v zozname"
@@ -11399,6 +11413,9 @@ msgstr "Presunúť o stránku/obrazovku nahor"
 
 msgid "Move up a screen"
 msgstr "Presunúť o jednu obrazovku nahor"
+
+msgid "Move up a screen / Move to previous item"
+msgstr "O obrazovku hore / Prechod na predošlú položku"
 
 msgid "Move up a screen in the panel"
 msgstr "Presunúť v paneli o jednu obrazovku nahor"
@@ -11888,6 +11905,9 @@ msgstr "Niue"
 msgid "No"
 msgstr "Nie"
 
+msgid "No 'epg.dat' file found on the remote receiver!"
+msgstr "Žiadny súbor 'epg.dat' na vzdialenom prijímači!"
+
 msgid "No (supported) DVDROM found!"
 msgstr "Žiadny (podporovaný) DVDROM!"
 
@@ -11951,9 +11971,6 @@ msgstr "Na tomto médiu sa nenašli žiadne zobraziteľné súbory!"
 
 msgid "No entry in lcn db. Please do a service scan."
 msgstr "Žiadny záznam v databáze LCN. Prosím, vykonajte skenovanie staníc."
-
-msgid "No epg.dat file found on the fallback receiver"
-msgstr ""
 
 msgid "No error"
 msgstr "Žiadna chyba"
@@ -12290,6 +12307,9 @@ msgstr "Počet zobrazených riadkov."
 
 msgid "Number or SMS style data entry"
 msgstr "Zadávanie údajov v štýle čísel alebo SMS"
+
+msgid "Numbering mode"
+msgstr "Režim číslovania"
 
 msgid "OEM model"
 msgstr "OEM model"
@@ -14197,7 +14217,7 @@ msgid "Record Actions"
 msgstr "Akcie nahrávania"
 
 msgid "Record Icon"
-msgstr ""
+msgstr "Ikona nahrávania"
 
 msgid "Record next"
 msgstr "Nahrať nasledujúce"
@@ -15500,6 +15520,9 @@ msgstr "Ak sa používa 'univerzálny' LNB, vyberte možnosť 'polarizácia', v 
 msgid "Select 'Provider' to scan from the predefined list of cable multiplexes. Select 'Bands' to only scan certain parts of the spectrum. Select 'Steps' to scan in steps of a particular frequency bandwidth."
 msgstr "Možnosť 'poskytovateľ' (provider) umožní skenovať preddefinovaný zoznam káblových multiplexov. Možnosť 'pásma' umožní skenovať len určité časti spektra. Na skenovanie po jednotlivých krokoch určitej šírky frekvenčného pásma, vyberte možnosť 'kroky'."
 
+msgid "Select 'Unique numbering' to assign unique numbers for every service in every bouquet. Use 'Bouquets start at 1' to start numbering each bouquet from 1. Use 'LCN numbering' to use consistent service LCNs where ever that service is used."
+msgstr "Ak sa má každej službe vo všetkých prehľadoch priradiť jedinečné číslo, vyberte možnosť 'Jedinečné číslovanie'. Ak sa má číslovanie začínať v každom prehľade od 1, použite 'Prehľady začínajú od 1. 'LCN číslovanie použite vtedy, ak sa majú používať konzistentné LCN služieb bez ohľadu na to, kde sa vyskytujú."
+
 msgid "Select 'Yes' if an end time is required for this timer."
 msgstr "Ak je pre tento časovač potrebné zadať aj čas ukončenia, vyberte možnosť 'Áno'."
 
@@ -16155,7 +16178,7 @@ msgid "Select the last item in the list"
 msgstr "Vyberte poslednú položku v zozname"
 
 msgid "Select the layout of the information in the services list, from the options provided by the skin, displayed within the ChannelSelection screen."
-msgstr ""
+msgstr "Rozloženie informácií na obrazovke výberu kanála vyberte pomocou možností vzhľadu."
 
 msgid "Select the layout of the installed plugins in the Plugin Browser screen. NOTE: The change is not immediate but will be seen when Plugin Browser is restarted!"
 msgstr "Vyberte rozloženie nainštalovaných pluginov, ktoré sa použije na obrazovke Prehliadača pluginov. POZNÁMKA: Táto zmena nie je okamžitá, prejaví sa až po reštartovaní prehliadača pluginov!"
@@ -16233,7 +16256,7 @@ msgid "Select the satellite you want to configure. Once configured you can selec
 msgstr "Vyberte družicu, ktorú chcete konfigurovať. Po nakonfigurovaní družice môžete vybrať a konfigurovať ďalšie družice, ku ktorým sa bude pristupovať s použitím rovnakého tunera."
 
 msgid "Select the screen layout, from the options provided by the skin, to be used for the ChannelSelection screen."
-msgstr ""
+msgstr "Z možností poskytnutých vzhľadom si zvoľte rozloženie, ktoré sa má použiť pre obrazovku výberu kanálov."
 
 msgid "Select the shifted character set"
 msgstr "Vyberte znakovú sadu pre veľké písmená"
@@ -17200,9 +17223,6 @@ msgstr "Zobraziť informácie"
 msgid "Show Kernel packages"
 msgstr "Zobraziť balíčky kernelu"
 
-msgid "Show LCN in channel selection"
-msgstr ""
-
 msgid "Show Live in MiniTV"
 msgstr "Zobraziť naživo v MiniTV"
 
@@ -17578,6 +17598,12 @@ msgstr "Zobrazovať infolištu nepretržite aj počas pozastavenia"
 
 msgid "Show picon background color"
 msgstr "Zobraziť farbu pozadia pikon"
+
+msgid "Show picons in quickzap"
+msgstr "zobraziť pikony pri rýchlom prepínaní"
+
+msgid "Show picons in service list"
+msgstr "zobraziť pikony v zozname staníc"
 
 msgid "Show picture information"
 msgstr "Zobraziť informácie o obrázku"
@@ -20068,7 +20094,7 @@ msgstr "Počas rýchleho pretáčania dopredu/dozadu sa použijú časové rámc
 
 #, python-format
 msgid "This window will automatically close in %d seconds."
-msgstr ""
+msgstr "Toto okno sa automaticky zavrie o %d sekúnd."
 
 msgid "This wizard has finished"
 msgstr "Sprievodca bol dokončený"
@@ -20815,6 +20841,9 @@ msgstr "Unicable Matrix"
 
 msgid "Uninstall"
 msgstr "Odinštalovať"
+
+msgid "Unique numbering"
+msgstr "Jedinečné číslovanie"
 
 msgid "United Arab Emirates"
 msgstr "Spojené arabské emiráty"
@@ -22007,9 +22036,6 @@ msgstr "Ak je povolené, prijímané http streamy sa vždy budú dekódovať. Sp
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Ak je povolené, na sledovanie http streamov sa vyžaduje prihlásenie."
 
-msgid "When enabled, channel numbering will start at '1' for each bouquet."
-msgstr "Ak je povolené, číslovanie kanálov sa bude v každom prehľade začínať od '1'."
-
 msgid "When enabled, content with an aspect ratio of 4:3 will be stretched to fit the screen."
 msgstr "Ak je povolené, tak obsah s pomerom strán 4:3 sa roztiahne na celú obrazovku."
 
@@ -22048,9 +22074,6 @@ msgstr "Ak je povolené, stlačením tlačidla '0 'sa prepne prvý kanál vo va�
 
 msgid "When enabled, reformat subtitles to match the width of the screen."
 msgstr "Ak je povolené, titulky sa preformátujú tak, aby zodpovedali šírke obrazovky."
-
-msgid "When enabled, show LCN in the channel selection screen."
-msgstr ""
 
 msgid "When enabled, show channel numbers in the channel selection screen."
 msgstr "Ak je povolené, na pobrazovke výberu kanálov sa zobrazia čísla kanálov."
@@ -23526,12 +23549,6 @@ msgstr "zobraziť karty s uphop 8"
 msgid "show cards with uphop 9"
 msgstr "zobraziť karty s uphop 9"
 
-msgid "Show picons in quickzap"
-msgstr "zobraziť pikony pri rýchlom prepínaní"
-
-msgid "Show picons in service list"
-msgstr "zobraziť pikony v zozname staníc"
-
 msgid "show program information..."
 msgstr "zobraziť informácie o programe…"
 
@@ -23766,6 +23783,12 @@ msgstr "áno (zachovať zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Alternative numbering mode"
+#~ msgstr "Alternatívne číslovanie"
+
+#~ msgid "When enabled, channel numbering will start at '1' for each bouquet."
+#~ msgstr "Ak je povolené, číslovanie kanálov sa bude v každom prehľade začínať od '1'."
 
 #~ msgid "Installing feeds from IPK ..."
 #~ msgstr "Inštalácia zdrojov informácií z IPK..."

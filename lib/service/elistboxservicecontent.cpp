@@ -1,4 +1,5 @@
 #include <lib/base/wrappers.h>
+#include <lib/base/esimpleconfig.h>
 #include <lib/gui/elistbox.h>
 #include <lib/gui/elistboxcontent.h>
 #include <lib/service/elistboxservicecontent.h>
@@ -291,14 +292,17 @@ void eListboxPythonServiceContent::sort()
 void eListboxPythonServiceContent::swapServices(list::iterator a, list::iterator b)
 {
 	std::iter_swap(a, b);
-	int temp = a->getChannelNum();
-	a->setChannelNum(b->getChannelNum());
-	b->setChannelNum(temp);
+	if(m_numbering_mode !=2 )
+	{
+		int temp = a->getChannelNum();
+		a->setChannelNum(b->getChannelNum());
+		b->setChannelNum(temp);
+	}
 }
 
 bool eListboxPythonServiceContent::isServiceHidden(int flags)
 {
-	return (flags & eServiceReference::isInvisible) || (m_hide_number_marker && (flags & eServiceReference::isNumberedMarker)) || (m_hide_marker && (flags & eServiceReference::isMarker));
+	return (flags & eServiceReference::isInvisible) || (m_marked.empty() && m_hide_number_marker && (flags & eServiceReference::isNumberedMarker)) || (m_marked.empty() && m_hide_marker && (flags & eServiceReference::isMarker));
 }
 
 void eListboxPythonServiceContent::cursorHome()
@@ -469,7 +473,7 @@ int eListboxPythonServiceContent::cursorResolve(int cursor_position)
 
 		count++;
 
-		if (isServiceHidden(m_service_cursor->flags))
+		if (isServiceHidden(i->flags))
 			continue;
 		m_stripped_cursor++;
 	}
@@ -513,7 +517,7 @@ int eListboxPythonServiceContent::size()
 	int size = 0;
 	for (list::iterator i(m_service_list.begin()); i != m_service_list.end(); ++i)
 	{
-		if (isServiceHidden(m_service_cursor->flags))
+		if (isServiceHidden(i->flags))
 			continue;
 		size++;
 	}
@@ -528,6 +532,7 @@ DEFINE_REF(eListboxPythonServiceContent);
 eListboxPythonServiceContent::eListboxPythonServiceContent()
 	: m_size(0), m_current_marked(false), m_hide_number_marker(false), m_hide_marker(false), m_record_indicator_mode(0)
 {
+	m_numbering_mode = eSimpleConfig::getInt("config.usage.numberMode", 0);
 	cursorHome();
 	eServiceCenter::getInstance(m_service_center);
 	m_servicelist = true;

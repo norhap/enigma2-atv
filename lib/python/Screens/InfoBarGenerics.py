@@ -877,11 +877,12 @@ class InfoBarShowHide(InfoBarScreenSaver):
 				if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
 					self.secondInfoBarScreen.hide()
 					self.secondInfoBarWasShown = False
-			if self.session.pipshown and "popup" in config.usage.pip_hideOnExit.value:
-				if config.usage.pip_hideOnExit.value == "popup":
-					self.session.openWithCallback(self.hidePipOnExitCallback, MessageBox, _("Disable Picture in Picture"), simple=True)
-				else:
-					self.hidePipOnExitCallback(True)
+			if SHOW:
+				if self.session.pipshown and "popup" in config.usage.pip_hideOnExit.value:
+					if config.usage.pip_hideOnExit.value == "popup":
+						self.session.openWithCallback(self.hidePipOnExitCallback, MessageBox, _("Disable Picture in Picture"), simple=True)
+					else:
+						self.hidePipOnExitCallback(True)
 		else:
 			self.hide()
 			if hasattr(self, "pvrStateDialog"):
@@ -3141,10 +3142,12 @@ class ExtensionsList(ChoiceBox):
 		extensionListAll = []
 		for extension in extensions:
 			if extension[0] == 0:  # EXTENSION_SINGLE
-				extensionListAll.append((extension[1][0](), extension[1], extension[2], colorKeys.get(extension[2], 0)))
+				if extension[1][2]():
+					extensionListAll.append((extension[1][0](), extension[1], extension[2], colorKeys.get(extension[2], 0)))
 			else:
 				for subExtension in extension[1]():
-					extensionListAll.append((subExtension[0][0](), subExtension[0], subExtension[1], colorKeys.get(subExtension[1], 0)))
+					if subExtension[0][2]():
+						extensionListAll.append((subExtension[0][0](), subExtension[0], subExtension[1], colorKeys.get(subExtension[1], 0)))
 
 		if config.usage.sortExtensionslist.value == "alpha":
 			extensionListAll.sort(key=lambda x: (x[3], x[0]))
