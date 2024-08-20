@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-29 19:27+0000\n"
-"PO-Revision-Date: 2024-07-31 15:37+0000\n"
+"POT-Creation-Date: 2024-08-08 08:13+0000\n"
+"PO-Revision-Date: 2024-08-14 17:23+0000\n"
 "Last-Translator: Petr Turek <turekdesign99@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/cs/>\n"
 "Language: cs\n"
@@ -2005,6 +2005,12 @@ msgstr "Přidat nahrávání (ukončit po současné události)"
 msgid "Add service"
 msgstr "Přidat program"
 
+msgid "Add service names"
+msgstr "Přidat názvy služeb"
+
+msgid "Add service names to each #SERVICE entry."
+msgstr "Ke každé položce #SERVICE přidejte názvy služeb."
+
 msgid "Add service to AutoCam"
 msgstr "Přidání služby do AutoCam"
 
@@ -2265,6 +2271,9 @@ msgstr "Importovat též při přechodu ze standby"
 
 msgid "Also on standby"
 msgstr "Zahrnout také start z pohotovosti"
+
+msgid "Also use a #DESCRIPTION line after each #SERVICE line to hold the service's name."
+msgstr "Po každém řádku #SERVICE použijte také řádek #DESCRIPTION, který obsahuje název služby."
 
 msgid "Alternative"
 msgstr "Alternativní"
@@ -3178,6 +3187,9 @@ msgstr "Načítání %d%%"
 
 msgid "Buffers"
 msgstr "Buffery"
+
+msgid "Build"
+msgstr "Sestavení"
 
 msgid "Build Brand"
 msgstr "Značka buildu"
@@ -4319,6 +4331,9 @@ msgstr "Příkaz spustit"
 
 msgid "Command type"
 msgstr "Příkaz typu"
+
+msgid "Commit"
+msgstr "Commit"
 
 msgid "Commit Information Actions"
 msgstr "Akce s informacemi commitu"
@@ -7055,9 +7070,6 @@ msgstr "K naladění služeb, které nemohou být naladěny místně povolte vzd
 msgid "Enable teletext caching"
 msgstr "Povolit vyrovnávací paměť teletextu"
 
-msgid "Enable terrestrial LCN:"
-msgstr "Povolit pozemní LCN:"
-
 msgid "Enable the advanced HDMI-CEC setting options."
 msgstr "Povolit pokročilé možnosti nastavení HDMI-CEC."
 
@@ -7067,8 +7079,14 @@ msgstr "Povolením této možnosti přidáte do souboru protokolu ladění infor
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr "Tuto možnost povolte, chcete-li do souboru protokolu ladění přidat data mapování akcí / vzdáleného ovládání."
 
+msgid "Enable this option to add extra DVB details to the debug log file."
+msgstr "Povolením této možnosti přidáte další podrobnosti DVB do souboru protokolu ladění."
+
 msgid "Enable this option to add extra DVB scan data to the debug log file."
 msgstr "Tuto možnost povolte, chcete-li do souboru protokolu ladění přidat další data skenování DVB."
+
+msgid "Enable this option to add extra DVB time sync data to the debug log file."
+msgstr "Povolením této možnosti přidáte do souboru protokolu ladění další data synchronizace času DVB."
 
 msgid "Enable this option to add extra EPG data to the debug log file."
 msgstr "Povolením této možnosti přidáte do souboru protokolu ladění další data EPG."
@@ -7090,6 +7108,9 @@ msgstr "Tuto možnost povolte, chcete-li do souboru protokolu ladění přidat n
 
 msgid "Enable this option to add timer debugging data to the debug log file."
 msgstr "Tuto možnost povolte, chcete-li do souboru protokolu ladění přidat údaje o ladění časovače."
+
+msgid "Enable this option to show all the available Information screens in the Information menu item list."
+msgstr "Povolením této možnosti zobrazíte všechny dostupné informační obrazovky v seznamu položek nabídky Informace."
 
 msgid "Enable this setting if your aerial system needs power."
 msgstr "Povolte toto nastavení, pokud váš anténní systém potřebuje napájení."
@@ -9564,8 +9585,14 @@ msgstr "Zahrnout AIT do nahrávek"
 msgid "Include CI assignment"
 msgstr "Zahrnout přidělení CI"
 
+msgid "Include DVB details"
+msgstr "Zahrnout podrobnosti o DVB"
+
 msgid "Include DVB scan data"
 msgstr "Zahrnout data skenování DVB"
+
+msgid "Include DVB timesync data"
+msgstr "Zahrnout data časové synchronizace DVB"
 
 msgid "Include ECM in http streams"
 msgstr "Zahrnout ECM do http streamů"
@@ -10170,14 +10197,23 @@ msgstr "Rychlost rolování LCD"
 msgid "LCD/Front panel *"
 msgstr "LCD/přední panel *"
 
+msgid "LCN Scanner"
+msgstr "LCN skener"
+
+msgid "LCN Scanner Actions"
+msgstr "Akce LCN skeneru"
+
+msgid "LCN Scanner Settings"
+msgstr "Nastavení LCN skeneru"
+
+msgid "LCN Scanner plugin for DVB-C/T/T2 services"
+msgstr "Plugin LCN Scanner pro služby DVB-C/T/T2"
+
 msgid "LCN numbering"
 msgstr "Číslování LCN"
 
-msgid "LCN plugin for DVB-T/T2 services"
-msgstr "LCN plugin pro DVB-T/T2 služby"
-
-msgid "LCN rules:"
-msgstr "Pravidla LCN:"
+msgid "LCN rules"
+msgstr "LCN pravidla"
 
 msgid "LCN style QuickSelect entry selection"
 msgstr "Výběr položky QuickSelect ve stylu LCN"
@@ -11965,9 +12001,6 @@ msgstr "Není k dispozici žádný demux"
 msgid "No displayable files on this medium found!"
 msgstr "Žádné zobrazitelné soubory na tomto médiu nebyly nalezeny!"
 
-msgid "No entry in lcn db. Please do a service scan."
-msgstr "Žádný záznam v lcn db. Proveďte prosím servisní sken."
-
 msgid "No error"
 msgstr "Bez chyby"
 
@@ -13279,6 +13312,9 @@ msgstr "Prosím, čekejte"
 msgid "Please wait for activation of your network configuration..."
 msgstr "Čekejte prosím na aktivaci Vaší síťové konfigurace..."
 
+msgid "Please wait while LCN bouquets are created/updated..."
+msgstr "Počkejte prosím, než budou vytvořeny/aktualizovány seznamy LCN..."
+
 msgid "Please wait while feeds are updated..."
 msgstr "Čekejte prosím na aktualizaci zdrojů..."
 
@@ -14166,12 +14202,6 @@ msgstr "Zadní"
 msgid "Reboot"
 msgstr "Restartovat"
 
-msgid "Rebuild"
-msgstr "Obnovit"
-
-msgid "Rebuild LCN bouquet now?"
-msgstr "Chcete nyní znovu vytvořit LCN přehled?"
-
 msgid "Rec"
 msgstr "Rec"
 
@@ -14193,9 +14223,6 @@ msgstr "Informace o přijímači %s %s"
 
 msgid "Receiver name"
 msgstr "Jméno přijímače"
-
-msgid "Reception"
-msgstr "Nastavení příjmu"
 
 msgid "Reception Lists"
 msgstr "Satelity"
@@ -15320,6 +15347,9 @@ msgstr "Prohlédne disky pro instalaci místních rozšíření"
 msgid "Scan for local extensions and install them."
 msgstr "Vyhledá a nainstaluje místní rozšíření."
 
+msgid "Scan for terrestrial LCNs and create LCN bouquets"
+msgstr "Vyhledejte pozemní LCN a vytvořte LCN seznamy"
+
 msgid "Scan wireless networks"
 msgstr "Vyhledat bezdrátové sítě"
 
@@ -15710,6 +15740,9 @@ msgstr "Pokud je nastaveno na 'ano' zobrazí se seznam kanálů po přepnutí me
 
 msgid "Select 'Yes' to show the current directory in the list of directories. Note that File Commander must be restarted for this change to take effect."
 msgstr "Vyberte 'Ano' pro zobrazení aktuálního adresáře v seznamu adresářů. Pamatujte, že aby se tato změna projevila, musí být File Commander restartován."
+
+msgid "Select 'Yes' to show this plugin in the Plugin Browser."
+msgstr "Chcete-li tento plugin zobrazit v prohlížeči pluginů, vyberte 'Ano'."
 
 msgid "Select 'Yes' to show web link packages in the Download Plugins screen."
 msgstr "Vyberte 'Ano', chcete-li zobrazit balíčky webových odkazů na obrazovce Stáhnout pluginy."
@@ -16179,6 +16212,9 @@ msgstr "Vyberte rozvržení informací v seznamu služeb z možností, které po
 msgid "Select the layout of the installed plugins in the Plugin Browser screen. NOTE: The change is not immediate but will be seen when Plugin Browser is restarted!"
 msgstr "Vyberte rozložení nainstalovaných pluginů na obrazovce Prohlížeč zásuvných modulů. POZNÁMKA: Změna není okamžitá, ale bude vidět po restartu prohlížeče pluginů!"
 
+msgid "Select the list of LCN rules to be applied to the scan."
+msgstr "Vyberte seznam pravidel LCN, která se mají použít na skenování."
+
 msgid "Select the locale from a menu"
 msgstr "Z nabídky vyberte národní prostředí"
 
@@ -16559,6 +16595,9 @@ msgstr "Číslo programu a název programu"
 
 msgid "Service Number, Picon and Service Name"
 msgstr "Číslo programu, pikona a název programu"
+
+msgid "Service Scan"
+msgstr "Skenování služby"
 
 msgid "Service Selection Actions"
 msgstr "Akce pro výběr služeb"
@@ -17360,6 +17399,9 @@ msgstr "Zobrazit pokročilé nastavení"
 msgid "Show all"
 msgstr "Ukázat vše"
 
+msgid "Show all Information screens"
+msgstr "Zobrazit všechny informační obrazovky"
+
 msgid "Show all available services"
 msgstr "Zobrazit všechny dostupné služby"
 
@@ -17492,6 +17534,9 @@ msgstr "Zobrazit obrázek a uložit jako '%s'"
 
 msgid "Show in Extension Menu"
 msgstr "Zobrazit v rozšířené nabídce (modré tlačítko)"
+
+msgid "Show in Plugin Browser"
+msgstr "Zobrazit v prohlížeči pluginů"
 
 msgid "Show in Standby"
 msgstr "Zobrazit v pohotovostním režimu"
@@ -19268,9 +19313,6 @@ msgstr "Tenis"
 msgid "Terrestrial"
 msgstr "Pozemní"
 
-msgid "Terrestrial bouquet:"
-msgstr "Pozemní skupina programů:"
-
 msgid "Test"
 msgstr "Test"
 
@@ -20653,6 +20695,9 @@ msgstr "Typ tuneru %s"
 msgid "Tuners"
 msgstr "Tunery"
 
+msgid "Tuners, Scanning & Reception"
+msgstr "Tunery, skenování a příjem"
+
 msgid "Tuning algorithm"
 msgstr "Ladicí algoritmus"
 
@@ -21164,6 +21209,9 @@ msgstr "Použít kruhové LNB"
 msgid "Use defaults"
 msgstr "Použít výchozí"
 
+msgid "Use description lines"
+msgstr "Použijte řádky popisu"
+
 msgid "Use extended List"
 msgstr "Použít rozšířený seznam"
 
@@ -21220,6 +21268,12 @@ msgstr "Použít sílu měření"
 
 msgid "Use small screen"
 msgstr "Použít malou obrazovku"
+
+msgid "Use spacer lines"
+msgstr "Použijte vymezovací čáry"
+
+msgid "Use spacer lines to pad the bouquet to make the #SERVICE line numbers match the LCN."
+msgstr "K vyplnění seznamu použijte vymezovací čáry, aby čísla řádků #SERVICE odpovídala LCN."
 
 msgid "Use the LEFT/RIGHT buttons on your remote to adjust the height of the OSD. LEFT button decreases the height, RIGHT increases the height."
 msgstr "Pomocí tlačítek VLEVO/VPRAVO na dálkovém ovládání upravte výšku nabídky OSD. Tlačítko VLEVO snižuje výšku, VPRAVO zvyšuje výšku."
@@ -23779,6 +23833,30 @@ msgstr "ano (uchovat zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Reception"
+#~ msgstr "Nastavení příjmu"
+
+#~ msgid "Enable terrestrial LCN:"
+#~ msgstr "Povolit pozemní LCN:"
+
+#~ msgid "LCN plugin for DVB-T/T2 services"
+#~ msgstr "LCN plugin pro DVB-T/T2 služby"
+
+#~ msgid "LCN rules:"
+#~ msgstr "Pravidla LCN:"
+
+#~ msgid "No entry in lcn db. Please do a service scan."
+#~ msgstr "Žádný záznam v lcn db. Proveďte prosím servisní sken."
+
+#~ msgid "Rebuild"
+#~ msgstr "Obnovit"
+
+#~ msgid "Rebuild LCN bouquet now?"
+#~ msgstr "Chcete nyní znovu vytvořit LCN přehled?"
+
+#~ msgid "Terrestrial bouquet:"
+#~ msgstr "Pozemní skupina programů:"
 
 #~ msgid "Alternative numbering mode"
 #~ msgstr "Alternativní způsob číslování"

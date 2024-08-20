@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-29 19:27+0000\n"
+"POT-Creation-Date: 2024-08-08 08:13+0000\n"
 "PO-Revision-Date: 2019-07-27 12:19+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1984,6 +1984,12 @@ msgstr "Thêm ghi âm (dừng sau sự kiện hiện tại)"
 msgid "Add service"
 msgstr "Thêm dịch vụ"
 
+msgid "Add service names"
+msgstr ""
+
+msgid "Add service names to each #SERVICE entry."
+msgstr ""
+
 msgid "Add service to AutoCam"
 msgstr ""
 
@@ -2248,6 +2254,9 @@ msgstr "Cũng nhập khi hộp rời khỏi chế độ chờ"
 
 msgid "Also on standby"
 msgstr "Ngoài ra ở chế độ chờ"
+
+msgid "Also use a #DESCRIPTION line after each #SERVICE line to hold the service's name."
+msgstr ""
 
 msgid "Alternative"
 msgstr "Thay thế"
@@ -3173,6 +3182,9 @@ msgid "Buffering %d%%"
 msgstr "Đệm%d %%"
 
 msgid "Buffers"
+msgstr ""
+
+msgid "Build"
 msgstr ""
 
 msgid "Build Brand"
@@ -4315,6 +4327,9 @@ msgstr ""
 
 msgid "Command type"
 msgstr "Loại lệnh"
+
+msgid "Commit"
+msgstr ""
 
 msgid "Commit Information Actions"
 msgstr ""
@@ -7076,9 +7091,6 @@ msgstr "Cho phép máy thu enigma2 từ xa cố gắng điều chỉnh các dị
 msgid "Enable teletext caching"
 msgstr "Kích hoạt bộ đệm ẩn teletext"
 
-msgid "Enable terrestrial LCN:"
-msgstr "Kích hoạt LCN trên mặt đất:"
-
 msgid "Enable the advanced HDMI-CEC setting options."
 msgstr ""
 
@@ -7088,7 +7100,13 @@ msgstr ""
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
+msgid "Enable this option to add extra DVB details to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add extra DVB scan data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add extra DVB time sync data to the debug log file."
 msgstr ""
 
 msgid "Enable this option to add extra EPG data to the debug log file."
@@ -7110,6 +7128,9 @@ msgid "Enable this option to add screen names and resolution data to the debug l
 msgstr ""
 
 msgid "Enable this option to add timer debugging data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to show all the available Information screens in the Information menu item list."
 msgstr ""
 
 msgid "Enable this setting if your aerial system needs power."
@@ -9612,7 +9633,13 @@ msgstr "Bao gồm AIT trong bản ghi âm"
 msgid "Include CI assignment"
 msgstr "Bao gồm phân công CI"
 
+msgid "Include DVB details"
+msgstr ""
+
 msgid "Include DVB scan data"
+msgstr ""
+
+msgid "Include DVB timesync data"
 msgstr ""
 
 msgid "Include ECM in http streams"
@@ -10230,14 +10257,23 @@ msgstr "Tốc độ cuộn LCD"
 msgid "LCD/Front panel *"
 msgstr ""
 
+msgid "LCN Scanner"
+msgstr ""
+
+msgid "LCN Scanner Actions"
+msgstr ""
+
+msgid "LCN Scanner Settings"
+msgstr ""
+
+msgid "LCN Scanner plugin for DVB-C/T/T2 services"
+msgstr ""
+
 msgid "LCN numbering"
 msgstr ""
 
-msgid "LCN plugin for DVB-T/T2 services"
-msgstr "Plugin LCN cho các dịch vụ DVB-T / T2"
-
-msgid "LCN rules:"
-msgstr "Quy tắc LCN:"
+msgid "LCN rules"
+msgstr ""
 
 msgid "LCN style QuickSelect entry selection"
 msgstr ""
@@ -12084,9 +12120,6 @@ msgstr "Không có chỉ số miễn phí có sẵn"
 msgid "No displayable files on this medium found!"
 msgstr "Không tìm thấy tập tin nào trên phương tiện này!"
 
-msgid "No entry in lcn db. Please do a service scan."
-msgstr "Không có mục trong lcn db. Hãy làm một dịch vụ quét."
-
 #, fuzzy
 msgid "No error"
 msgstr "lỗi không rõ"
@@ -13414,6 +13447,9 @@ msgstr "Xin vui lòng chờ"
 msgid "Please wait for activation of your network configuration..."
 msgstr "Vui lòng đợi kích hoạt cấu hình mạng của bạn ..."
 
+msgid "Please wait while LCN bouquets are created/updated..."
+msgstr ""
+
 msgid "Please wait while feeds are updated..."
 msgstr ""
 
@@ -14309,12 +14345,6 @@ msgstr ""
 msgid "Reboot"
 msgstr "Khởi động lại"
 
-msgid "Rebuild"
-msgstr "Tái tạo"
-
-msgid "Rebuild LCN bouquet now?"
-msgstr "Tái tạo gói kênh LCN bây giờ?"
-
 msgid "Rec"
 msgstr "Ghi"
 
@@ -14336,9 +14366,6 @@ msgstr ""
 
 msgid "Receiver name"
 msgstr ""
-
-msgid "Reception"
-msgstr "Tiếp nhận"
 
 msgid "Reception Lists"
 msgstr "Danh sách tiếp nhận"
@@ -15482,6 +15509,9 @@ msgstr "Quét các tiện ích mở rộng cục bộ và cài đặt chúng"
 msgid "Scan for local extensions and install them."
 msgstr "Quét các tiện ích mở rộng cục bộ và cài đặt chúng."
 
+msgid "Scan for terrestrial LCNs and create LCN bouquets"
+msgstr ""
+
 msgid "Scan wireless networks"
 msgstr "Quét mạng không dây"
 
@@ -15871,6 +15901,9 @@ msgid "Select 'Yes' to show the channel list after switching between Radio and T
 msgstr "Nếu được đặt thành 'có', danh sách kênh sẽ được hiển thị sau khi chuyển đổi giữa chế độ radio và TV."
 
 msgid "Select 'Yes' to show the current directory in the list of directories. Note that File Commander must be restarted for this change to take effect."
+msgstr ""
+
+msgid "Select 'Yes' to show this plugin in the Plugin Browser."
 msgstr ""
 
 msgid "Select 'Yes' to show web link packages in the Download Plugins screen."
@@ -16342,6 +16375,9 @@ msgstr ""
 msgid "Select the layout of the installed plugins in the Plugin Browser screen. NOTE: The change is not immediate but will be seen when Plugin Browser is restarted!"
 msgstr ""
 
+msgid "Select the list of LCN rules to be applied to the scan."
+msgstr ""
+
 #, fuzzy
 msgid "Select the locale from a menu"
 msgstr "Chọn ngôn ngữ bàn phím ảo từ menu"
@@ -16720,6 +16756,9 @@ msgstr "Số dịch vụ và tên dịch vụ"
 
 msgid "Service Number, Picon and Service Name"
 msgstr "Số dịch vụ, Picon và Tên dịch vụ"
+
+msgid "Service Scan"
+msgstr ""
 
 #, fuzzy
 msgid "Service Selection Actions"
@@ -17525,6 +17564,9 @@ msgstr "Hiển thị cài đặt nâng cao"
 msgid "Show all"
 msgstr ""
 
+msgid "Show all Information screens"
+msgstr ""
+
 msgid "Show all available services"
 msgstr ""
 
@@ -17660,6 +17702,9 @@ msgstr ""
 
 msgid "Show in Extension Menu"
 msgstr "Hiển thị trong danh sách mở rộng?"
+
+msgid "Show in Plugin Browser"
+msgstr ""
 
 msgid "Show in Standby"
 msgstr "Hiển thị trong chế độ chờ"
@@ -19468,9 +19513,6 @@ msgstr "Phần Lan"
 msgid "Terrestrial"
 msgstr "TH mặt đất"
 
-msgid "Terrestrial bouquet:"
-msgstr "Gói kênh TH mặt đất:"
-
 msgid "Test"
 msgstr ""
 
@@ -20833,6 +20875,9 @@ msgstr "Bộ chỉnh tần số % s"
 msgid "Tuners"
 msgstr ""
 
+msgid "Tuners, Scanning & Reception"
+msgstr ""
+
 msgid "Tuning algorithm"
 msgstr "Thuật toán điều chỉnh"
 
@@ -21348,6 +21393,9 @@ msgstr "Sử dụng LNB tròn"
 msgid "Use defaults"
 msgstr ""
 
+msgid "Use description lines"
+msgstr ""
+
 msgid "Use extended List"
 msgstr "Sử dụng danh sách mở rộng"
 
@@ -21404,6 +21452,12 @@ msgstr "Sử dụng đo năng lượng"
 
 msgid "Use small screen"
 msgstr "Sử dụng màn hình mỏng"
+
+msgid "Use spacer lines"
+msgstr ""
+
+msgid "Use spacer lines to pad the bouquet to make the #SERVICE line numbers match the LCN."
+msgstr ""
 
 msgid "Use the LEFT/RIGHT buttons on your remote to adjust the height of the OSD. LEFT button decreases the height, RIGHT increases the height."
 msgstr ""
@@ -23962,6 +24016,30 @@ msgstr "có (giữ thức ăn)"
 
 msgid "®"
 msgstr ""
+
+#~ msgid "Reception"
+#~ msgstr "Tiếp nhận"
+
+#~ msgid "Enable terrestrial LCN:"
+#~ msgstr "Kích hoạt LCN trên mặt đất:"
+
+#~ msgid "LCN plugin for DVB-T/T2 services"
+#~ msgstr "Plugin LCN cho các dịch vụ DVB-T / T2"
+
+#~ msgid "LCN rules:"
+#~ msgstr "Quy tắc LCN:"
+
+#~ msgid "No entry in lcn db. Please do a service scan."
+#~ msgstr "Không có mục trong lcn db. Hãy làm một dịch vụ quét."
+
+#~ msgid "Rebuild"
+#~ msgstr "Tái tạo"
+
+#~ msgid "Rebuild LCN bouquet now?"
+#~ msgstr "Tái tạo gói kênh LCN bây giờ?"
+
+#~ msgid "Terrestrial bouquet:"
+#~ msgstr "Gói kênh TH mặt đất:"
 
 #~ msgid "Alternative numbering mode"
 #~ msgstr "Chế độ đánh số thay thế"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 Kurdish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-29 19:27+0000\n"
+"POT-Creation-Date: 2024-08-08 08:13+0000\n"
 "PO-Revision-Date: 2021-08-15 18:50+0000\n"
 "Last-Translator: openATV <openatv@gmail.com>\n"
 "Language-Team: Kurdish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ku/>\n"
@@ -2118,6 +2118,12 @@ msgstr "Add recording (Stop after current event)"
 msgid "Add service"
 msgstr "Hizmeté Nu girédi"
 
+msgid "Add service names"
+msgstr ""
+
+msgid "Add service names to each #SERVICE entry."
+msgstr ""
+
 msgid "Add service to AutoCam"
 msgstr ""
 
@@ -2394,6 +2400,9 @@ msgid "Also import when box is leaving standby"
 msgstr ""
 
 msgid "Also on standby"
+msgstr ""
+
+msgid "Also use a #DESCRIPTION line after each #SERVICE line to hold the service's name."
 msgstr ""
 
 msgid "Alternative"
@@ -3364,6 +3373,9 @@ msgid "Buffering %d%%"
 msgstr ""
 
 msgid "Buffers"
+msgstr ""
+
+msgid "Build"
 msgstr ""
 
 msgid "Build Brand"
@@ -4543,6 +4555,9 @@ msgstr ""
 #, fuzzy
 msgid "Command type"
 msgstr "Command order"
+
+msgid "Commit"
+msgstr ""
 
 msgid "Commit Information Actions"
 msgstr ""
@@ -7345,9 +7360,6 @@ msgstr ""
 msgid "Enable teletext caching"
 msgstr "Enable teletext caching"
 
-msgid "Enable terrestrial LCN:"
-msgstr ""
-
 msgid "Enable the advanced HDMI-CEC setting options."
 msgstr ""
 
@@ -7357,7 +7369,13 @@ msgstr ""
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
+msgid "Enable this option to add extra DVB details to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add extra DVB scan data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add extra DVB time sync data to the debug log file."
 msgstr ""
 
 msgid "Enable this option to add extra EPG data to the debug log file."
@@ -7379,6 +7397,9 @@ msgid "Enable this option to add screen names and resolution data to the debug l
 msgstr ""
 
 msgid "Enable this option to add timer debugging data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to show all the available Information screens in the Information menu item list."
 msgstr ""
 
 msgid "Enable this setting if your aerial system needs power."
@@ -9924,7 +9945,13 @@ msgstr ""
 msgid "Include CI assignment"
 msgstr ""
 
+msgid "Include DVB details"
+msgstr ""
+
 msgid "Include DVB scan data"
+msgstr ""
+
+msgid "Include DVB timesync data"
 msgstr ""
 
 msgid "Include ECM in http streams"
@@ -10561,13 +10588,22 @@ msgstr ""
 msgid "LCD/Front panel *"
 msgstr ""
 
+msgid "LCN Scanner"
+msgstr ""
+
+msgid "LCN Scanner Actions"
+msgstr ""
+
+msgid "LCN Scanner Settings"
+msgstr ""
+
+msgid "LCN Scanner plugin for DVB-C/T/T2 services"
+msgstr ""
+
 msgid "LCN numbering"
 msgstr ""
 
-msgid "LCN plugin for DVB-T/T2 services"
-msgstr ""
-
-msgid "LCN rules:"
+msgid "LCN rules"
 msgstr ""
 
 msgid "LCN style QuickSelect entry selection"
@@ -12439,9 +12475,6 @@ msgstr "No free index available"
 msgid "No displayable files on this medium found!"
 msgstr "No displayable files on this medium found!"
 
-msgid "No entry in lcn db. Please do a service scan."
-msgstr ""
-
 #, fuzzy
 msgid "No error"
 msgstr "Unknown Service"
@@ -13792,6 +13825,9 @@ msgstr "Please wait..."
 msgid "Please wait for activation of your network configuration..."
 msgstr "Please wait for activation of your network configuration..."
 
+msgid "Please wait while LCN bouquets are created/updated..."
+msgstr ""
+
 msgid "Please wait while feeds are updated..."
 msgstr ""
 
@@ -14720,12 +14756,6 @@ msgstr ""
 msgid "Reboot"
 msgstr "Reboot"
 
-msgid "Rebuild"
-msgstr ""
-
-msgid "Rebuild LCN bouquet now?"
-msgstr ""
-
 msgid "Rec"
 msgstr ""
 
@@ -14748,10 +14778,6 @@ msgstr ""
 
 msgid "Receiver name"
 msgstr ""
-
-#, fuzzy
-msgid "Reception"
-msgstr "Description"
 
 msgid "Reception Lists"
 msgstr ""
@@ -15924,6 +15950,9 @@ msgstr ""
 msgid "Scan for local extensions and install them."
 msgstr "Giradiye mehali bigeri "
 
+msgid "Scan for terrestrial LCNs and create LCN bouquets"
+msgstr ""
+
 msgid "Scan wireless networks"
 msgstr "Scan wireless networks"
 
@@ -16323,6 +16352,9 @@ msgid "Select 'Yes' to show the channel list after switching between Radio and T
 msgstr ""
 
 msgid "Select 'Yes' to show the current directory in the list of directories. Note that File Commander must be restarted for this change to take effect."
+msgstr ""
+
+msgid "Select 'Yes' to show this plugin in the Plugin Browser."
 msgstr ""
 
 msgid "Select 'Yes' to show web link packages in the Download Plugins screen."
@@ -16796,6 +16828,9 @@ msgstr ""
 msgid "Select the layout of the installed plugins in the Plugin Browser screen. NOTE: The change is not immediate but will be seen when Plugin Browser is restarted!"
 msgstr ""
 
+msgid "Select the list of LCN rules to be applied to the scan."
+msgstr ""
+
 #, fuzzy
 msgid "Select the locale from a menu"
 msgstr "Select the movie path"
@@ -17170,6 +17205,9 @@ msgstr "Picon and service name"
 #, fuzzy
 msgid "Service Number, Picon and Service Name"
 msgstr "Picon and service name"
+
+msgid "Service Scan"
+msgstr ""
 
 #, fuzzy
 msgid "Service Selection Actions"
@@ -18004,6 +18042,9 @@ msgstr ""
 msgid "Show all"
 msgstr ""
 
+msgid "Show all Information screens"
+msgstr ""
+
 msgid "Show all available services"
 msgstr ""
 
@@ -18147,6 +18188,9 @@ msgstr ""
 #, fuzzy
 msgid "Show in Extension Menu"
 msgstr "Show extensions..."
+
+msgid "Show in Plugin Browser"
+msgstr ""
 
 #, fuzzy
 msgid "Show in Standby"
@@ -20009,9 +20053,6 @@ msgstr "Finnish"
 msgid "Terrestrial"
 msgstr "Terrestrial"
 
-msgid "Terrestrial bouquet:"
-msgstr ""
-
 msgid "Test"
 msgstr ""
 
@@ -21390,6 +21431,9 @@ msgstr "Tuner type"
 msgid "Tuners"
 msgstr ""
 
+msgid "Tuners, Scanning & Reception"
+msgstr ""
+
 msgid "Tuning algorithm"
 msgstr ""
 
@@ -21908,6 +21952,9 @@ msgstr ""
 msgid "Use defaults"
 msgstr ""
 
+msgid "Use description lines"
+msgstr ""
+
 msgid "Use extended List"
 msgstr ""
 
@@ -21965,6 +22012,12 @@ msgstr "Use power measurement"
 #, fuzzy
 msgid "Use small screen"
 msgstr "Hold screen"
+
+msgid "Use spacer lines"
+msgstr ""
+
+msgid "Use spacer lines to pad the bouquet to make the #SERVICE line numbers match the LCN."
+msgstr ""
 
 msgid "Use the LEFT/RIGHT buttons on your remote to adjust the height of the OSD. LEFT button decreases the height, RIGHT increases the height."
 msgstr ""
@@ -24558,6 +24611,10 @@ msgstr "yes (keep feeds)"
 
 msgid "®"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Reception"
+#~ msgstr "Description"
 
 #~ msgid "Alternative numbering mode"
 #~ msgstr "Evé din numara"
