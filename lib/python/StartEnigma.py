@@ -559,6 +559,7 @@ def runScreenTest():
 	print("=" * 100)
 	session.nav.stopService()
 	session.nav.shutdown()
+	VolumeControl.instance.saveVolumeState()
 	configfile.save()
 	from Screens.InfoBarGenerics import saveResumePoints
 	saveResumePoints()
@@ -836,10 +837,6 @@ from Tools.StbHardware import setFPWakeuptime, setRTCtime
 enigma.eProfileWrite("InitSkins")
 from skin import InitSkins
 InitSkins()
-
-enigma.eProfileWrite("InitServiceList")
-from Components.ServiceList import InitServiceListSettings
-InitServiceListSettings()
 
 enigma.eProfileWrite("InitInputDevices")
 from Components.InputDevice import InitInputDevices

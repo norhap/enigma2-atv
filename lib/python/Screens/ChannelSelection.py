@@ -58,6 +58,7 @@ FLAG_SERVICE_NEW_FOUND = 64
 FLAG_IS_DEDICATED_3D = 128
 FLAG_HIDE_VBI = 512
 FLAG_CENTER_DVB_SUBS = 2048  # Defined in lib/dvb/idvb.h as dxNewFound = 64 and dxIsDedicated3D = 128.
+FLAG_NO_AI_TRANSLATION = 8192
 
 # Values for csel.bouquet_mark_edit:
 OFF = 0
@@ -127,7 +128,7 @@ def parseNextEvent(list, isZapTimer=False):  # IanSav: This is only used in once
 
 
 class ChannelSelectionBase(Screen):
-	def __init__(self, session, forceLegacy=False):
+	def __init__(self, session):
 		def digitHelp():
 			return _("LCN style QuickSelect entry selection") if config.usage.show_channel_jump_in_servicelist.value == "quick" else _("SMS style QuickSelect entry selection")
 
@@ -142,7 +143,7 @@ class ChannelSelectionBase(Screen):
 		self["key_green"] = StaticText(_("Reception Lists"))
 		self["key_yellow"] = StaticText(_("Providers"))
 		self["key_blue"] = StaticText(_("Bouquets"))
-		self["list"] = ServiceListLegacy(self) if config.channelSelection.screenStyle.value == "" or config.channelSelection.widgetStyle.value == "" or forceLegacy else ServiceList(self)
+		self["list"] = ServiceListLegacy(self) if config.channelSelection.screenStyle.value == "" or config.channelSelection.widgetStyle.value == "" else ServiceList(self)
 		self.servicelist = self["list"]
 		self.numericalTextInput = NumericalTextInput(handleTimeout=False)
 		self.servicePath = []
@@ -200,6 +201,18 @@ class ChannelSelectionBase(Screen):
 			"pageDown": (self.servicelist.goPageDown, _("Move down a screen"))
 		}, prio=0, description=_("Channel Selection Navigation Actions"))
 		self["newNavigationActions"].setEnabled(not config.misc.actionLeftRightToPageUpPageDown.value)
+		if "keymap.ntr" in config.usage.keymap.value:
+			self["legacyNavigationActions"].setEnabled(False)
+			self["newNavigationActions"].setEnabled(False)
+			self["neutrinoNavigationActions"] = HelpableActionMap(self, ["NavigationActions", "PreviousNextActions"], {
+				"pageUp": (self.servicelist.goPageUp, _("Move up a screen")),
+				"previous": (self.prevMarker, _("Move to previous marker")),
+				"right": (self.nextBouquet, _("Move to next bouquet")),
+				"left": (self.prevBouquet, _("Move to previous bouquet")),
+				"next": (self.nextMarker, _("Move to next marker")),
+				"pageDown": (self.servicelist.goPageDown, _("Move down a screen"))
+			}, prio=0, description=_("Channel Selection Navigation Actions"))
+
 		self.mode = MODE_TV
 		self.baseTitle = _("Channel Selection")
 		self.function = EDIT_OFF
@@ -210,7 +223,7 @@ class ChannelSelectionBase(Screen):
 		self.onShown.append(self.applyKeyMap)
 
 	def layoutFinished(self):
-		self.servicelist.instance.enableAutoNavigation(config.misc.actionLeftRightToPageUpPageDown.value)  # Override list box navigation.
+		self.servicelist.instance.enableAutoNavigation(config.misc.actionLeftRightToPageUpPageDown.value and ("keymap.ntr" not in config.usage.keymap.value))  # Override list box navigation.
 
 	def applyKeyMap(self):  # IanSav: Should this be a NumericalTextInput mode?
 		if config.usage.show_channel_jump_in_servicelist.value == "alpha":
@@ -255,7 +268,10 @@ class ChannelSelectionBase(Screen):
 		self.servicelist.goTop()
 
 	def moveUp(self):  # This is used by InfoBarGenerics.
-		self.servicelist.goLineUp()
+		if self.servicelist.isVertical():
+			self.servicelist.goLineUp()
+		else:
+			self.servicelist.goLeft()
 
 	def moveLeft(self):
 		if self.servicelist.isVertical():
@@ -270,7 +286,10 @@ class ChannelSelectionBase(Screen):
 			self.servicelist.goRight()
 
 	def moveDown(self):  # This is used by InfoBarGenerics.
-		self.servicelist.goLineDown()
+		if self.servicelist.isVertical():
+			self.servicelist.goLineDown()
+		else:
+			self.servicelist.goRight()
 
 	def moveEnd(self):  # This is used by InfoBarGenerics.
 		self.servicelist.goBottom()
@@ -1353,6 +1372,13 @@ class ChannelContextMenu(Screen):
 						appendWhenValid(current, menu, (_("Don't Center DVB Subs On This Service"), self.removeCenterDVBSubsFlag))
 					else:
 						appendWhenValid(current, menu, (_("Center DVB Subs On This Service"), self.addCenterDVBSubsFlag))
+
+					if BoxInfo.getItem("AISubs"):
+						if eDVBDB.getInstance().getFlag(eServiceReference(current.toString())) & FLAG_NO_AI_TRANSLATION:
+							appendWhenValid(current, menu, (_("Translate Subs On This Service"), self.removeNoAITranslationFlag))
+						else:
+							appendWhenValid(current, menu, (_("Don't Translate Subs On This Service"), self.addNoAITranslationFlag))
+
 					if not csel.isSubservices():
 						if haveBouquets:
 							bouquets = self.csel.getBouquetList()
@@ -1487,7 +1513,7 @@ class ChannelContextMenu(Screen):
 		self["menu"].getCurrent()[0][1]()
 
 	def keySetup(self):
-		self.session.openWithCallback(self.keyCancel, Setup, "ChannelSelection")
+		self.session.openWithCallback(self.keyCancel, ChannelSelectionSetup)
 
 	def keyTop(self):
 		self["menu"].goTop()
@@ -1615,6 +1641,16 @@ class ChannelContextMenu(Screen):
 		eDVBDB.getInstance().removeFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_CENTER_DVB_SUBS)
 		eDVBDB.getInstance().reloadBouquets()
 		config.subtitles.dvb_subtitles_centered.value = False
+		self.close()
+
+	def addNoAITranslationFlag(self):
+		eDVBDB.getInstance().addFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_NO_AI_TRANSLATION)
+		eDVBDB.getInstance().reloadBouquets()
+		self.close()
+
+	def removeNoAITranslationFlag(self):
+		eDVBDB.getInstance().removeFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_NO_AI_TRANSLATION)
+		eDVBDB.getInstance().reloadBouquets()
 		self.close()
 
 	def addServiceToBouquetOrAlternative(self):
@@ -2309,9 +2345,9 @@ class SelectionEventInfo:
 class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelectionEPG, SelectionEventInfo):
 	instance = None
 
-	def __init__(self, session, forceLegacy=False):
-		ChannelSelectionBase.__init__(self, session, forceLegacy)
-		if config.channelSelection.screenStyle.value and not forceLegacy:
+	def __init__(self, session):
+		ChannelSelectionBase.__init__(self, session)
+		if config.channelSelection.screenStyle.value:
 			self.skinName = [config.channelSelection.screenStyle.value]
 		elif config.usage.use_pig.value:
 			self.skinName = ["ChannelSelection_PIG", "ChannelSelection"]
@@ -3005,8 +3041,10 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 
 class PiPZapSelection(ChannelSelection):
 	def __init__(self, session):
-		ChannelSelection.__init__(self, session, forceLegacy=True)
+		ChannelSelection.__init__(self, session)
 		self.skinName = ["SlimChannelSelection", "SimpleChannelSelection", "ChannelSelection"]
+		self["list"] = ServiceListLegacy(self)  # Force legacy list
+		self.servicelist = self["list"]
 		self.startservice = None
 		self.pipzapfailed = None
 		if plugin_PiPServiceRelation_installed:
@@ -3094,7 +3132,9 @@ class RadioInfoBar(Screen):
 
 class ChannelSelectionRadio(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelectionEPG, InfoBarBase, SelectionEventInfo):
 	def __init__(self, session, infobar):
-		ChannelSelectionBase.__init__(self, session, forceLegacy=True)
+		ChannelSelectionBase.__init__(self, session)
+		self["list"] = ServiceListLegacy(self)  # Force legacy list
+		self.servicelist = self["list"]
 		InfoBarBase.__init__(self)
 		SelectionEventInfo.__init__(self)
 		self.infobar = infobar
@@ -3241,6 +3281,8 @@ class ChannelSelectionRadio(ChannelSelectionBase, ChannelSelectionEdit, ChannelS
 class SimpleChannelSelection(ChannelSelectionBase):
 	def __init__(self, session, title, currentBouquet=False):
 		ChannelSelectionBase.__init__(self, session)
+		self["list"] = ServiceListLegacy(self)  # Force legacy list
+		self.servicelist = self["list"]
 		self["actions"] = HelpableActionMap(self, ["OkCancelActions", "TvRadioActions"], {
 			"ok": (self.channelSelected, _("Play the selected service")),
 			"cancel": (self.close, _("Cancel the selection and exit")),
@@ -3429,3 +3471,42 @@ class SilentBouquetSelector:  # IanSav: Where is this used?  It is imported into
 
 	def getCurrent(self):
 		return self.bouquets[self.pos]
+
+
+class ChannelSelectionSetup(Setup):
+	def __init__(self, session):
+		Setup.__init__(self, session=session, setup="ChannelSelection")
+		self.addSaveNotifier(self.onUpdateSettings)
+		self.onClose.append(self.clearSaveNotifiers)
+
+	def onUpdateSettings(self):
+		ChannelSelectionSetup.updateSettings(self.session)
+
+	@staticmethod
+	def updateSettings(session):
+		styleChanged = False
+		styleScreenChanged = config.channelSelection.screenStyle.isChanged() or config.channelSelection.widgetStyle.isChanged()
+		if not styleScreenChanged:
+			for setting in ("showNumber", "showPicon", "showServiceTypeIcon", "showCryptoIcon", "recordIndicatorMode", "piconRatio"):
+				if getattr(config.channelSelection, setting).isChanged():
+					styleChanged = True
+					break
+			if styleChanged:
+				from Screens.InfoBar import InfoBar
+				InfoBarInstance = InfoBar.instance
+				if InfoBarInstance is not None and InfoBarInstance.servicelist is not None:
+					InfoBarInstance.servicelist.servicelist.readTemplate(config.channelSelection.widgetStyle.value)
+		else:
+			InfoBarInstance = Screens.InfoBar.InfoBar.instance
+			if InfoBarInstance is not None and InfoBarInstance.servicelist is not None:
+				oldDialogIndex = (-1, None)
+				oldSummarys = InfoBarInstance.servicelist.summaries[:]
+				for index, dialog in enumerate(session.dialog_stack):
+					if isinstance(dialog[0], ChannelSelection):
+						oldDialogIndex = (index, dialog[1])
+				InfoBarInstance.servicelist = session.instantiateDialog(ChannelSelection)
+				InfoBarInstance.servicelist.summaries = oldSummarys
+				InfoBarInstance.servicelist.isTmp = False
+				InfoBarInstance.servicelist.callback = None
+				if oldDialogIndex[0] != -1:
+					session.dialog_stack[oldDialogIndex[0]] = (InfoBarInstance.servicelist, oldDialogIndex[1])

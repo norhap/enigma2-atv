@@ -226,25 +226,38 @@ def reloadSkins():
 
 # Method to load a skinTemplates.xml if one exists or load the templates from the screens.
 #
-def loadSkinTemplates(skinTemplatesFileName):
-	if isfile(skinTemplatesFileName):
-		print(f"[Skin] Loading XML templates from '{skinTemplatesFileName}'.")
-		domStyles = fileReadXML(skinTemplatesFileName, source=MODULE_NAME)
-		if domStyles is not None:
-			for template in domStyles.findall("template"):
-				componentTemplates.add(template, skinTemplatesFileName)
+def loadSkinTemplates(skinTemplatesFileNames):
+	def addTemplate(template, fileName):
+		if template.get("component", "") in ("serviceList",):  # Only serviceList now more comming
+			componentTemplates.add(template, fileName)
+
+	if skinTemplatesFileNames:
+		for skinTemplatesFileName in skinTemplatesFileNames:
+			print(f"[Skin] Loading XML templates from '{skinTemplatesFileName}'.")
+			domStyles = fileReadXML(skinTemplatesFileName, source=MODULE_NAME)
+			if domStyles is not None:
+				for template in domStyles.findall("template"):
+					addTemplate(template, skinTemplatesFileName)
 	else:
 		for screen in domScreens:
 			element, path = domScreens.get(screen, (None, None))
 			for template in element.findall(".//widget/templates/template"):
-				componentTemplates.add(template, None)
+				addTemplate(template, None)
 	if config.crash.debugScreens.value:
 		print(f"[Skin] DEBUG: componentTemplates '{componentTemplates.templates}'.")
 
 
-def reloadSkinTemplates():
-	skinTemplatesFileName = resolveFilename(SCOPE_SKINS, pathjoin(dirname(currentPrimarySkin), "skinTemplates.xml"))
-	loadSkinTemplates(skinTemplatesFileName)
+def reloadSkinTemplates(clear=False):
+	if clear:
+		componentTemplates.clear()
+	skinTemplatesFileName = resolveFilename(SCOPE_GUISKIN, pathjoin(dirname(currentPrimarySkin), "skinTemplates.xml"))
+	skinTemplatesFileNames = []
+	if isfile(skinTemplatesFileName):
+		skinTemplatesFileNames.append(skinTemplatesFileName)
+	skinTemplatesFileName = resolveFilename(SCOPE_GUISKIN, "skinUserTemplates.xml")
+	if isfile(skinTemplatesFileName):
+		skinTemplatesFileNames.append(skinTemplatesFileName)
+	loadSkinTemplates(skinTemplatesFileNames)
 
 
 def addCallback(callback):
@@ -1290,6 +1303,9 @@ class AttributeParser:
 	def transparent(self, value):
 		self.guiObject.setTransparent(1 if parseBoolean("transparent", value) else 0)
 
+	def underline(self, value):
+		self.guiObject.setUnderline(parseBoolean("underline", value))
+
 	def vAlign(self, value):  # This typo catcher definition uses an inconsistent name, use 'verticalAlignment' instead!
 		self.verticalAlignment(value)
 		# attribDeprecationWarning("vAlign", "verticalAlignment")
@@ -1583,9 +1599,11 @@ class ComponentTemplates():
 	def __init__(self):
 		self.changedTimes = {}
 		self.templates = {}
+		BoxInfo.setMutableItem("CanRefreshTemplates", False)
 
 	def add(self, template, fileName):
 		if fileName and fileName not in self.changedTimes:
+			BoxInfo.setMutableItem("CanRefreshTemplates", True)
 			try:
 				self.changedTimes[fileName] = getmtime(fileName)
 			except OSError:
@@ -1598,6 +1616,10 @@ class ComponentTemplates():
 			else:
 				self.templates[component] = {name: template}
 
+	def clear(self):
+		self.templates = {}
+		self.changedTimes = {}
+
 	def get(self, component, name):
 		if component in self.templates and self.templates[component][name] is not None:
 			return self.templates[component][name]
@@ -1608,12 +1630,11 @@ class ComponentTemplates():
 			return list(self.templates[component].keys())
 		return None
 
-	def changedFiles(self):
-		fileNames = []
+	def isChanged(self):
 		for fileName in self.changedTimes:
 			if getmtime(fileName) != self.changedTimes[fileName]:
-				fileNames.append(fileName)
-		return fileNames
+				return True
+		return False
 
 
 componentTemplates = ComponentTemplates()
