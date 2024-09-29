@@ -1194,12 +1194,11 @@ void eDVBScan::channelDone()
 			}
 			SCAN_eDebug("[eDVBScan] name '%s', provider_name '%s'", sname, pname);
 			int tsonid = 0;
-			if( m_chid_current )
-				tsonid = ( m_chid_current.transport_stream_id.get() << 16 )
-					| m_chid_current.original_network_id.get();
-			service->m_service_name = strip_non_graph(convertDVBUTF8(sname,-1,tsonid,0));
+			if (m_chid_current)
+				tsonid = (m_chid_current.transport_stream_id.get() << 16) | m_chid_current.original_network_id.get();
+			service->m_service_name = sname;
 			service->genSortName();
-			service->m_provider_name = strip_non_graph(convertDVBUTF8(pname,-1,tsonid,0));
+			service->m_provider_name = pname;
 		}
 
 		if (!(m_flags & scanOnlyFree) || !m_pmt_in_progress->second.scrambled) {
@@ -1816,7 +1815,11 @@ RESULT eDVBScan::processVCT(eDVBNamespace dvbnamespace, const VirtualChannelTabl
 	return 0;
 }
 
+#if SIGCXX_MAJOR_VERSION == 2
 RESULT eDVBScan::connectEvent(const sigc::slot1<void,int> &event, ePtr<eConnection> &connection)
+#else
+RESULT eDVBScan::connectEvent(const sigc::slot<void(int)> &event, ePtr<eConnection> &connection)
+#endif
 {
 	connection = new eConnection(this, m_event.connect(event));
 	return 0;
