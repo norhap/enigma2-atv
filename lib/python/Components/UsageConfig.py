@@ -9,7 +9,7 @@ from enigma import Misc_Options, RT_HALIGN_CENTER, RT_HALIGN_LEFT, RT_HALIGN_RIG
 
 from keyids import KEYIDS
 from skin import getcomponentTemplateNames, parameters, domScreens
-from Components.config import ConfigBoolean, ConfigClock, ConfigDirectory, ConfigDictionarySet, ConfigFloat, ConfigInteger, ConfigIP, ConfigLocations, ConfigNumber, ConfigSelectionNumber, ConfigPassword, ConfigSequence, ConfigSelection, ConfigSet, ConfigSlider, ConfigSubsection, ConfigText, ConfigYesNo, NoSave, config
+from Components.config import ConfigBoolean, ConfigClock, ConfigDirectory, ConfigDictionarySet, ConfigFloat, ConfigInteger, ConfigIP, ConfigLocations, ConfigNumber, ConfigSelectionNumber, ConfigPassword, ConfigSequence, ConfigSelection, ConfigSet, ConfigSlider, ConfigSubsection, ConfigText, ConfigYesNo, NoSave, config, configfile
 from Components.Harddisk import harddiskmanager
 from Components.International import international
 from Components.NimManager import nimmanager
@@ -2304,7 +2304,7 @@ def InitUsageConfig():
 	config.timeshift.isRecording = NoSave(ConfigYesNo(default=False))
 	config.timeshift.maxEvents = ConfigSelection(default=12, choices=[(x, ngettext("%d Event", "%d Events", x) % x) for x in range(1, 999)])
 	config.timeshift.maxHours = ConfigSelection(default=12, choices=[(x, ngettext("%d Hour", "%d Hours", x) % x) for x in range(1, 999)])
-	config.timeshift.skipreturntolive = ConfigYesNo(default=False)
+	config.timeshift.skipReturnToLive = ConfigYesNo(default=False)
 	config.timeshift.showInfoBar = ConfigYesNo(default=True)
 	config.timeshift.showLiveTVMsg = ConfigYesNo(default=True)
 	choiceList = [
@@ -2320,6 +2320,7 @@ def InitUsageConfig():
 		defaultPath = config.usage.timeshift_path.value
 		config.usage.timeshift_path.value = config.usage.timeshift_path.default
 		config.usage.timeshift_path.save()
+		configfile.save()  # This needs to be done once here to reset the legacy value.
 	config.timeshift.path = ConfigSelection(default=defaultPath, choices=[(defaultPath, defaultPath)])
 	config.timeshift.path.load()
 	savedPath = config.timeshift.path.saved_value

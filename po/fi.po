@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-01 08:46+0000\n"
-"PO-Revision-Date: 2024-09-30 23:21+0000\n"
+"POT-Creation-Date: 2024-10-28 12:47+0000\n"
+"PO-Revision-Date: 2024-10-06 22:57+0000\n"
 "Last-Translator: tomppaa <tomzza@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/fi/>\n"
 "Language: fi\n"
@@ -882,13 +882,6 @@ msgid_plural "%d Years"
 msgstr[0] "%d Vuosi"
 msgstr[1] "%d Vuodet"
 
-#. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
-#, python-format
-msgid "%d channel found"
-msgid_plural "%d channels found"
-msgstr[0] "%d kanava löydetty"
-msgstr[1] "%d kanavaa löydetty"
-
 #, python-format
 msgid "%d core"
 msgid_plural "%d cores"
@@ -1020,8 +1013,8 @@ msgstr "%d sekunti"
 #, python-format
 msgid "%d service found."
 msgid_plural "%d services found."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d kanava löyty."
+msgstr[1] "%d kanavia löydetty."
 
 #, python-format
 msgid "%d times"
@@ -3620,11 +3613,11 @@ msgstr "Peruuta image valinta ja poistu"
 msgid "Cancel the image selection and exit all menus"
 msgstr "Peruuta image valinta ja poistu kaikista valikoista"
 
-msgid "Cancel the scan and exit the scanner"
-msgstr ""
-
 msgid "Cancel the scan and exit all menus"
-msgstr ""
+msgstr "Peruuta etsintä ja poistu kaikista valikoista"
+
+msgid "Cancel the scan and exit the scanner"
+msgstr "Peruuta etsintä ja poistu kanavien hausta"
 
 msgid "Cancel the selection and exit"
 msgstr "Peruuta valinta ja poistu"
@@ -6739,12 +6732,11 @@ msgstr "Ohjelmaoppaan sijainti"
 msgid "EPG only"
 msgstr "Vain EPG"
 
+msgid "EPG:"
+msgstr ""
+
 msgid "EPGSearch"
 msgstr "EPG ohjelman haku"
-
-#, python-format
-msgid "ERROR - failed to scan (%s)!"
-msgstr "VIRHE - haku epäonnistui (%s)!"
 
 msgid "EXIF-Version"
 msgstr "EXIF-versio"
@@ -7084,7 +7076,7 @@ msgid "Enable this option to add extra EPG data to the debug log file."
 msgstr "Ota tämä vaihtoehto käyttöön, jos haluat lisätä ylimääräisiä EPG tietoja vianmäärityslokitiedostoon."
 
 msgid "Enable this option to add extra teletext details to the debug log file."
-msgstr ""
+msgstr "Tämän vaihtoehdon avulla voit lisätä ylimääräisiä tekstitv teksitys tietoja debug loki tiedostoon."
 
 msgid "Enable this option to add international language and country load information detected during system boot to the debug log file."
 msgstr "Ota tämä asetus käyttöön, jos haluat lisätä järjestelmän käynnistyksen aikana havaitut kansainväliset kieli- ja maa tiedot virheen korjauksen lokitiedostoon."
@@ -7111,7 +7103,7 @@ msgid "Enable this setting if your aerial system needs power."
 msgstr "Ota tämä asetus käyttöön, jos antennijärjestelmäsi tarvitsee virtaa."
 
 msgid "Enable timer"
-msgstr ""
+msgstr "Ota ajastus käyttöön"
 
 msgid "Enable to add some extra spacing to the Information screens. This can improve readability."
 msgstr "Ota käyttöön, jos haluat lisätä ylimääräisiä välilyöntejä Tieto näyttöihin. Tämä voi parantaa luettavuutta."
@@ -7549,7 +7541,7 @@ msgstr "Virhe: Kanavalogojen kansion luominen epäonnistui: (%s)"
 
 #, python-format
 msgid "Error: Failed to run service scan!  (%s)"
-msgstr ""
+msgstr "Virhe: Epäonnistunut kanavien etsintä!   (%s)"
 
 #, python-format
 msgid "Error: File '%s' cannot be opened!  (%s)"
@@ -9627,7 +9619,7 @@ msgid "Include screen load data"
 msgstr "Sisällytä näytön kuormitustiedot"
 
 msgid "Include teletext details"
-msgstr ""
+msgstr "Teksitv teksityksen yksityiskohdat"
 
 msgid "Include timer data"
 msgstr "Sisällytä ajastimen tiedot"
@@ -11676,6 +11668,9 @@ msgstr "Nimiavaruus & Sijainti"
 msgid "Namibia"
 msgstr "Namibia"
 
+msgid "Narration"
+msgstr ""
+
 msgid "Native"
 msgstr "Alkuperäinen"
 
@@ -11987,6 +11982,9 @@ msgstr "Ei korttia!"
 msgid "No channel"
 msgstr "Ei kanavaa"
 
+msgid "No channel list"
+msgstr "ei kanavalistaa"
+
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -12051,6 +12049,9 @@ msgstr ""
 
 msgid "No priority"
 msgstr "Ei prioriteettia"
+
+msgid "No resource manager"
+msgstr "Ei tiedostovalikkoa"
 
 msgid "No satellite, terrestrial or cable tuner is configured. Please check your tuner setup."
 msgstr "Satelliitteja ei ole määritetty. Tarkista virittimen asetukset."
@@ -12270,6 +12271,9 @@ msgstr "ei määritetty"
 
 msgid "Not currently mounted."
 msgstr "Ei tällä hetkellä käytössä."
+
+msgid "Not defined"
+msgstr ""
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -12662,6 +12666,9 @@ msgstr "Alkuperäinen"
 msgid "Original Network ID (ONID)"
 msgstr "Alkuperäinen verkkotunnus (ONID)"
 
+msgid "Original language"
+msgstr ""
+
 msgid "Oriya"
 msgstr "Oriya"
 
@@ -12904,7 +12911,7 @@ msgid "Partitions"
 msgstr "Levyosiot"
 
 msgid "Pass"
-msgstr ""
+msgstr "hyväksytty"
 
 msgid "Pass-through"
 msgstr "Läpilooppi"
@@ -13809,6 +13816,12 @@ msgstr "Paras katseluaika minuutit"
 msgid "Priority"
 msgstr "Prioriteetti"
 
+msgid "Problem starting scan"
+msgstr "virhe käynnistettäessä skannausta"
+
+msgid "Problem while scanning"
+msgstr "virhe skannauksen aikana"
+
 msgid "Proc model"
 msgstr "Proc malli"
 
@@ -14304,7 +14317,7 @@ msgid "Recording finished"
 msgstr "Tallennus päättyi"
 
 msgid "Recording in progress!"
-msgstr "Tallennus käynnissä"
+msgstr "Tallennus käynnissä!"
 
 msgid "Recording location"
 msgstr "Talennus sijainti"
@@ -15372,15 +15385,8 @@ msgstr "Skannaus"
 msgid "Scanning %s..."
 msgstr "Haetaan %s..."
 
-#. TRANSLATORS: The stb is performing a channel scan, progress percentage is printed in '%d' (and '%%' will show a single '%' symbol)
-#, python-format
-msgid "Scanning - %d%% completed"
-msgid_plural "Scanning - %d%% completed"
-msgstr[0] "Haetaan - %d%% valmiina"
-msgstr[1] "Haetaan - %d%% valmiina"
-
 msgid "Scanning can't be performed while recordings are in progress."
-msgstr ""
+msgstr "Kanavien etsintää ei voi tehdä, kun tallennukset ovat käynnissä."
 
 #, python-format
 msgid "Scanning completed, %d channel found"
@@ -15391,8 +15397,8 @@ msgstr[1] "Haku valmis, löytyi %d kanavaa"
 #, python-format
 msgid "Scanning completed, %d service found."
 msgid_plural "Scanning completed, %d services found."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Haku valmis, löytyi %d kanava."
+msgstr[1] "Haku valmis, löytyi %d kanavaa."
 
 msgid "Scanning failed!"
 msgstr "Haku epäonnistui!"
@@ -15404,8 +15410,8 @@ msgstr "Haetaan..."
 #, python-format
 msgid "Scanning: %d%% complete"
 msgid_plural "Scanning: %d%% complete"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Haetaan - %d%% valmiina"
+msgstr[1] "Haetaan - %d%% valmiina"
 
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Hakee oletuskanavalistan satelliittijärjestyksessä käyttäen kytkettyä kääntömoottoria"
@@ -16190,7 +16196,7 @@ msgid "Select the currently highlighted service"
 msgstr "Valitse parhaillaan korostettu kanava"
 
 msgid "Select the currently highlighted service and exit"
-msgstr ""
+msgstr "Valitse korostettu kanava ja poistu"
 
 msgid "Select the date from which this timer will become active."
 msgstr "Valitse päivämäärä, josta alkaen ajastus on aktiivinen."
@@ -16320,10 +16326,10 @@ msgid "Select the previous item in the list"
 msgstr "Valitse listan edellinen kohde"
 
 msgid "Select the previous service and close the scanner"
-msgstr ""
+msgstr "Valitse aiempi kanava ja sulje kanavahaku"
 
 msgid "Select the previous service and close the scanner and exit all menus"
-msgstr ""
+msgstr "Valitse aiempi kanava ja sulje kanavahaku ja poistu valikoista"
 
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Valitse SCR:n käyttämä protokolla. Vaihtoehdot ovat 'SCR Unicable' (Unicable) tai 'SCR JESS' (JESS, tunnetaan myös Unicable II:na)."
@@ -16665,7 +16671,7 @@ msgid "Service Scan"
 msgstr "Kanavahaku"
 
 msgid "Service Scan Actions"
-msgstr ""
+msgstr "kanavahaku toiminnot"
 
 msgid "Service Selection Actions"
 msgstr "Palvelu valinta toiminnot"
@@ -19217,7 +19223,7 @@ msgstr "TMDB Haku"
 
 msgid "TRANSLATOR_INFO"
 msgstr ""
-"Suomenkielinen käännös: 28.8.2024\n"
+"Suomenkielinen käännös: 07.10.2024\n"
 "tomppaa"
 
 msgid "TS file is too large for ISO9660 level 1!"
@@ -20412,6 +20418,9 @@ msgstr "Ajastuksen tyyppi"
 msgid "Timer+"
 msgstr "Ajastin+"
 
+msgid "Timer:"
+msgstr ""
+
 msgid "Timerlist"
 msgstr "Ajastuslista"
 
@@ -20785,14 +20794,8 @@ msgid "Tunisia"
 msgstr "Tunisia"
 
 # SoftwareManager/plugin.py
-msgid ""
-"Turbo: One reboot after flash\n"
-"Fast: One reboot after flash, one reboot after restore\n"
-"Slow: One reboot after flash, one reboot after restore in GUI"
-msgstr ""
-"Turbo: Uudelleenkäynnistys päivityksen jälkeen\n"
-"Nopea: Uudelleenkäynnistys päivityksen jälkeen, uudelleenkäynnistys palautumisen jälkeen\n"
-"Hidas: Uudelleenkäynnistys päivityksen jälkeen, uudelleenkäynnistys käyttöliittymän palauttamisen jälkeen"
+msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
+msgstr "Turbo: Uudelleenkäynnistys päivityksen jälkeen; Nopea: Uudelleenkäynnistys päivityksen jälkeen, uudelleenkäynnistys palautumisen jälkeen; Hidas: Uudelleenkäynnistys päivityksen jälkeen, uudelleenkäynnistys käyttöliittymän palauttamisen jälkeen"
 
 msgid "Turkey"
 msgstr "Turkki"
@@ -23165,12 +23168,6 @@ msgstr "Sama kuin"
 msgid "equestrian"
 msgstr "ratsastus"
 
-msgid "Problem starting scan"
-msgstr "virhe käynnistettäessä skannausta"
-
-msgid "Problem while scanning"
-msgstr "virhe skannauksen aikana"
-
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "Suorittaa leikkauksia (tarvitsee MovieCut lisäosan)"
 
@@ -23456,17 +23453,11 @@ msgstr "ei CAId valittu"
 msgid "no CI slots found"
 msgstr "ei löytynyt CI portteja"
 
-msgid "No channel list"
-msgstr "ei kanavalistaa"
-
 msgid "no module found"
 msgstr "(modulia ei löytynyt)"
 
 msgid "no or unknown card inserted"
 msgstr "ei korttia tai tuntematon kortti"
-
-msgid "No resource manager"
-msgstr "Ei tiedostovalikkoa"
 
 msgid "no storage devices found"
 msgstr "tallennuslaitteita ei löytynyt"
@@ -23527,9 +23518,6 @@ msgstr "Paketti"
 
 msgid "packages"
 msgstr "paketit"
-
-msgid "pass"
-msgstr "hyväksytty"
 
 msgid "performing arts"
 msgstr "esittävä taide"
@@ -23925,6 +23913,25 @@ msgstr "kyllä (pidä syötteet)"
 
 msgid "®"
 msgstr "®"
+
+#, python-format
+#~ msgid "%d channel found"
+#~ msgid_plural "%d channels found"
+#~ msgstr[0] "%d kanava löydetty"
+#~ msgstr[1] "%d kanavaa löydetty"
+
+#, python-format
+#~ msgid "ERROR - failed to scan (%s)!"
+#~ msgstr "VIRHE - haku epäonnistui (%s)!"
+
+#, python-format
+#~ msgid "Scanning - %d%% completed"
+#~ msgid_plural "Scanning - %d%% completed"
+#~ msgstr[0] "Haetaan - %d%% valmiina"
+#~ msgstr[1] "Haetaan - %d%% valmiina"
+
+#~ msgid "pass"
+#~ msgstr "hyväksytty"
 
 #, python-format
 #~ msgid "%s  (%s)"

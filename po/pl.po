@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-01 08:46+0000\n"
-"PO-Revision-Date: 2024-10-01 17:35+0000\n"
+"POT-Creation-Date: 2024-10-28 12:47+0000\n"
+"PO-Revision-Date: 2024-10-28 16:12+0000\n"
 "Last-Translator: pololoko111 <peciek83@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/pl/>\n"
 "Language: pl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -43,7 +43,7 @@ msgid " "
 msgstr " "
 
 msgid "  Menu key : Select quad channel"
-msgstr "  Klawisz menu: Wybierz czterokanałowy kanał"
+msgstr "  Klawisz menu: Wybierz kanał czterokanałowy"
 
 msgid "  REC  "
 msgstr "  REC  "
@@ -906,14 +906,6 @@ msgstr[0] "%d rok"
 msgstr[1] "%d lata"
 msgstr[2] "%d lat"
 
-#. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
-#, python-format
-msgid "%d channel found"
-msgid_plural "%d channels found"
-msgstr[0] "znaleziono %d kanał"
-msgstr[1] "znaleziono %d kanały"
-msgstr[2] "znaleziono %d kanałów"
-
 #, python-format
 msgid "%d core"
 msgid_plural "%d cores"
@@ -1306,7 +1298,7 @@ msgid "'Buffer in hours' or 'number of last events'. For deleting older time shi
 msgstr "'Limit bufora w godzinach' lub 'Liczba ostatnio zarejestrowanych wydarzeń' spowoduje usunięcie najstarszego pliku timeshiftu, w zależności od tego, który warunek wystąpił jako pierwszy."
 
 msgid "'Handle standby from TV' has a higher priority than 'Handle input from TV'."
-msgstr "Komenda czuwania z TV ma wyższy priorytet niż komenda wejścia."
+msgstr "Opcja „Obsługa trybu czuwania z telewizora” ma wyższy priorytet niż opcja „Obsługa sygnału wejściowego z telewizora”."
 
 msgid "'Unscramble & record ECM' gives the option to unscramble afterwards if unscrambling on recording failed. 'Don't unscramble, record ECM' save a scramble recording that can be unscrambled on playback. 'Normal' means unscramble the recording and don't record ECM."
 msgstr "Dekodowanie i nagrywanie ECM' daje możliwość późniejszego deszyfrowania, jeśli deszyfrowanie przy nagrywaniu zakończyło się niepowodzeniem. 'Nie dekoduj, nagrywaj ECM', zapisz nagranie, które można odszyfrować podczas odtwarzania. \"Normalny\" oznacza deszyfrowanie nagrania i nie rejestruje ECM."
@@ -2242,7 +2234,7 @@ msgid "Allows the %s %s to store the EPG data regularly."
 msgstr "Umożliwia %s %s na regularne przechowywanie danych EPG."
 
 msgid "Allows the TV remote to be used to control the receiver."
-msgstr "Zezwól na kontrolę za pomocą pilota od TV."
+msgstr "Umożliwia sterowanie odbiornikiem za pomocą pilota telewizora."
 
 msgid "Allows you to adjust the amount of time the resolution information display on screen."
 msgstr "Pozwala określić, czy i jak długo ekran jest wyświetlany, gdy zmienia się rozdzielczość."
@@ -2895,7 +2887,7 @@ msgid "Backup Settings"
 msgstr "Kopia zapasowa ustawień"
 
 msgid "Backup System Settings"
-msgstr "Wykonaj kopię zapasową ustawień systemu"
+msgstr "Wykonaj kopię ustawień systemu"
 
 msgid "Backup images"
 msgstr "Kopie zapasowe systemów"
@@ -3187,7 +3179,7 @@ msgid "Brightness (Normal)"
 msgstr "Jasność"
 
 msgid "Brightness (Standby)"
-msgstr "Jasność czuwanie"
+msgstr "Jasność (tryb czuwania)"
 
 msgid "Brightness Video"
 msgstr "Jasność wideo"
@@ -3258,7 +3250,7 @@ msgid "Burn DVD"
 msgstr "Nagraj DVD"
 
 msgid "Burn existing image to medium"
-msgstr "Wykonaj kopię zapasową system na nośniku danych"
+msgstr "Wypal istniejący obraz na nośniku"
 
 msgid "Burn to medium"
 msgstr "Nagraj do średniego"
@@ -3288,7 +3280,7 @@ msgid "By disk label"
 msgstr "Wg etykiety dysku"
 
 msgid "Bypass HDMI EDID Check"
-msgstr "Pomiń HDMI EDID"
+msgstr "Pomiń sprawdzanie HDMI EDID"
 
 msgid "Bytes received"
 msgstr "Odebrane bity"
@@ -3654,11 +3646,11 @@ msgstr "Anuluj wybór systemu i wyjdź"
 msgid "Cancel the image selection and exit all menus"
 msgstr "Anuluj wybór systemu i zamknij wszystkie menu"
 
-msgid "Cancel the scan and exit the scanner"
-msgstr "Anuluj skanowanie i wyjdź ze skanera"
-
 msgid "Cancel the scan and exit all menus"
 msgstr "Anuluj skanowanie i wyjdź ze wszystkich menu"
+
+msgid "Cancel the scan and exit the scanner"
+msgstr "Anuluj skanowanie i wyjdź ze skanera"
 
 msgid "Cancel the selection and exit"
 msgstr "Anuluj wybór i wyjdź"
@@ -4564,13 +4556,13 @@ msgid "Configure the border width of the subtitles. The dark border makes the su
 msgstr "Skonfiguruj szerokość krawędzi napisów. Ciemne krawędzie sprawią, że napisy będa bardziej czytelne na jasnym tle."
 
 msgid "Configure the brightness level of the front panel display for dimmed operation."
-msgstr "Skonfiguruj poziom jasności przedniego wyświetlacza w trybie przyciemnionym."
+msgstr "Skonfiguruj poziom jasności wyświetlacza na panelu przednim w celu przyciemnienia."
 
 msgid "Configure the brightness level of the front panel display for normal operation."
-msgstr "Skonfiguruj poziom jasności przedniego wyświetlacza."
+msgstr "Skonfiguruj poziom jasności wyświetlacza panelu przedniego podczas normalnej pracy."
 
 msgid "Configure the brightness level of the front panel display for standby."
-msgstr "Skonfiguruj poziom jasności przedniego wyświetlacza w trybie czuwaniu."
+msgstr "Skonfiguruj poziom jasności wyświetlacza panelu przedniego w trybie czuwania."
 
 msgid "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
 msgstr "Skonfiguruj kolor napisów zewnętrznych,alternatywne(normalnie w kolorze białym, kursywa w żółtym, pogrubienie w błękicie, podkreślenia w kolorze zielonym), białe lub żółte."
@@ -6777,12 +6769,11 @@ msgstr "Lokalizacja EPG"
 msgid "EPG only"
 msgstr "Tylko EPG"
 
+msgid "EPG:"
+msgstr "EPG:"
+
 msgid "EPGSearch"
 msgstr "Wyszukiwanie EPG"
-
-#, python-format
-msgid "ERROR - failed to scan (%s)!"
-msgstr "BŁĄD - skanowanie (%s) nie powiodło się!"
 
 msgid "EXIF-Version"
 msgstr "Wersja EXIF"
@@ -8045,13 +8036,13 @@ msgid "Fallback remote receiver"
 msgstr "Zdalny odbiornik zastępczy"
 
 msgid "Fallback remote receiver IP"
-msgstr "IP zdalnego odbiornika rezerwowego"
+msgstr "IP zdalnego odbiornika "
 
 msgid "Fallback remote receiver Port"
-msgstr "Port zdalnego odbiornika rezerwowego"
+msgstr "Port zdalnego odbiornika"
 
 msgid "Fallback remote receiver URL"
-msgstr "URL odbiornika rezerwowego"
+msgstr "URL odbiornika zdalnego"
 
 msgid "Fallback remote receiver for ATSC"
 msgstr "Zdalny odbiornik zastępczy dla ATSC"
@@ -8971,7 +8962,7 @@ msgid "Handle Python crashes"
 msgstr "Awaria obsługi Pythona"
 
 msgid "Handle input from TV"
-msgstr "Obsługuj dane przychodzące z TV"
+msgstr "Obsługa danych wejściowych z telewizora"
 
 msgid "Handle standby from TV"
 msgstr "Obsługuj komendę 'czuwania' z TV"
@@ -9322,7 +9313,7 @@ msgid "IP address of the Stream Relay server used to descramble services that ca
 msgstr "Adres IP serwera Stream Relay wykorzystywany do odkodowywania usług, które mogą być odszyfrowane przez Stream Relay."
 
 msgid "IP of fallback remote receiver"
-msgstr "Adres zdalnego odbiornika rezerwowego"
+msgstr "Adres IP odbiornika zdalnego"
 
 msgid "IPK Installer"
 msgstr "Instalator IPK"
@@ -9562,10 +9553,10 @@ msgid "Import channels and/or EPG from remote receiver URL when receiver or enig
 msgstr "Importuj kanały i / lub EPG ze zdalnego odbiornika wtedy, gdy odbiornik lub enigma się restartuje"
 
 msgid "Import from remote receiver URL"
-msgstr "Importuj ze zdalnego odbiornika"
+msgstr "Importuj z adresu URL zdalnego odbiornika"
 
 msgid "Import remote receiver URL"
-msgstr "Importuj adres zdalnego odbiornika"
+msgstr "Importuj adres URL zdalnego odbiornika"
 
 msgid "In addition to the check at an event start, a repetitive check can be used, so that the conditions 'buffer limit in hours' or 'check free space' are detected earlier."
 msgstr "Oprócz sprawdzania na początku zdarzenia można zastosować sprawdzanie powtarzalne, dzięki czemu warunki „Limit bufora w godzinach” lub „Sprawdź wolne miejsce” zostaną wykryte wcześniej."
@@ -9935,7 +9926,7 @@ msgid "Inupiaq"
 msgstr "Inupiaq"
 
 msgid "Invalid"
-msgstr "Nie prawidłowa"
+msgstr "Nieprawidłowa"
 
 msgid "Invalid location!"
 msgstr "Nieprawidłowa lokalizacja!"
@@ -11712,6 +11703,9 @@ msgstr "Przestrzeń i poz. orbit"
 msgid "Namibia"
 msgstr "Namibia"
 
+msgid "Narration"
+msgstr "Narracja"
+
 msgid "Native"
 msgstr "Rodowity"
 
@@ -12023,6 +12017,9 @@ msgstr "Nie włożono karty!"
 msgid "No channel"
 msgstr "Brak kanału"
 
+msgid "No channel list"
+msgstr "Brak listy kanałów"
+
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -12083,6 +12080,9 @@ msgstr "Nie znaleziono nadającego się pozycjonera."
 
 msgid "No priority"
 msgstr "Bez priorytetu"
+
+msgid "No resource manager"
+msgstr "Brak menadżera zasobów"
 
 msgid "No satellite, terrestrial or cable tuner is configured. Please check your tuner setup."
 msgstr "Nie skonfigurowano tunera satelitarnego, naziemnego ani kablowego. Sprawdź konfigurację tunera."
@@ -12300,6 +12300,9 @@ msgstr "nie skonfigurowano"
 
 msgid "Not currently mounted."
 msgstr "Obecnie nie jest zamontowany."
+
+msgid "Not defined"
+msgstr "Nie zdefiniowano"
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -12606,7 +12609,7 @@ msgid "Open the Image information"
 msgstr "Otwórz Informacje o systemie"
 
 msgid "Open the Plugin Browser"
-msgstr "Przeglądaj dostępne wtyczki"
+msgstr "Otwórz przeglądarkę wtyczek"
 
 msgid "Open the Plugin Browser settings screen"
 msgstr "Otwórz ekran ustawień przeglądarki wtyczek"
@@ -12691,6 +12694,9 @@ msgstr "Oryginalny"
 
 msgid "Original Network ID (ONID)"
 msgstr "Oryginale ID sieci (ONID)"
+
+msgid "Original language"
+msgstr "Język oryginalny"
 
 msgid "Oriya"
 msgstr "Oriya"
@@ -12934,7 +12940,7 @@ msgid "Partitions"
 msgstr "Partycje"
 
 msgid "Pass"
-msgstr "Stan"
+msgstr "Przelot"
 
 msgid "Pass-through"
 msgstr "Pass-through"
@@ -12943,7 +12949,7 @@ msgid "Password"
 msgstr "Hasło"
 
 msgid "Password (httpuser)"
-msgstr "Hasło"
+msgstr "Hasło (httpuser)"
 
 msgid "Password (httpwd)"
 msgstr "Hasło (httpwd)"
@@ -13402,7 +13408,7 @@ msgid "Please wait while the plugin is replaced."
 msgstr "Poczekaj, aż wtyczka zostanie wymieniona."
 
 msgid "Please wait while the plugin is updated."
-msgstr "Poczekaj na aktualizację wtyczki."
+msgstr "Proszę czekać, aż wtyczka zostanie zaktualizowana."
 
 msgid "Please wait while we check your installed plugins..."
 msgstr "Proszę czekać, sprawdzamy zainstalowane wtyczki…"
@@ -13462,7 +13468,7 @@ msgid "Plugin Action Log Actions"
 msgstr "Akcje dziennika działań wtyczek"
 
 msgid "Plugin Browser"
-msgstr "Przeglądarka wtyczek"
+msgstr "Wtyczki"
 
 msgid "Plugin Browser Actions"
 msgstr "Akcje przeglądarki wtyczek"
@@ -13841,6 +13847,12 @@ msgstr "Podstawowe minuty czasu"
 msgid "Priority"
 msgstr "Priorytet konwertera"
 
+msgid "Problem starting scan"
+msgstr "Problem z uruchomieniem skanowania"
+
+msgid "Problem while scanning"
+msgstr "Problem podczas skanowania"
+
 msgid "Proc model"
 msgstr "Model Procesora"
 
@@ -13948,7 +13960,7 @@ msgid "Protect on epg age"
 msgstr "Chroń Wiek z EPG"
 
 msgid "Protect plugin browser"
-msgstr "Chroń Przeglądarkę Wtyczek"
+msgstr "Chroń przeglądarkę wtyczek"
 
 msgid "Protect services"
 msgstr "Zabezpiecz Kanały"
@@ -15404,16 +15416,8 @@ msgstr "Skanowanie"
 msgid "Scanning %s..."
 msgstr "Skanowanie %s..."
 
-#. TRANSLATORS: The stb is performing a channel scan, progress percentage is printed in '%d' (and '%%' will show a single '%' symbol)
-#, python-format
-msgid "Scanning - %d%% completed"
-msgid_plural "Scanning - %d%% completed"
-msgstr[0] "Skanowanie - %d%% ukończono"
-msgstr[1] "Skanowanie - %d%% ukończono"
-msgstr[2] "Skanowanie - %d%% ukończone"
-
 msgid "Scanning can't be performed while recordings are in progress."
-msgstr "Skanowania nie można wykonać podczas trwania nagrywania."
+msgstr "Skanowania nie można wykonać podczas nagrywania."
 
 #, python-format
 msgid "Scanning completed, %d channel found"
@@ -16898,7 +16902,7 @@ msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scr
 msgstr "Ustawia liczbę linii, które mają być zapisane dla wyjścia 'stout' i 'sterr' w skryptach."
 
 msgid "Set the password of the OpenWebif from your fallback tuner"
-msgstr "Wpisz hasło do zalogowania do OpenWebif tunera rezerwowego"
+msgstr "Ustaw hasło OpenWebif z tunera zapasowego"
 
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr "Wpisz port OpenWebif tunera rezerwowego"
@@ -19797,14 +19801,14 @@ msgstr ""
 
 #, python-format
 msgid "The user interface of your %s %s is restarting"
-msgstr "Interfejs użytkownika Twojego %s %s uruchamia się ponownie"
+msgstr "Interfejs %s %s jest ponownie uruchamiany"
 
 #, python-format
 msgid ""
 "The user interface of your %s %s is restarting\n"
 "due to an error in StartEnigma.py"
 msgstr ""
-"Interfejs użytkownika Twojego %s %s uruchamia się ponownie\n"
+"Interfejs%s %s uruchamia się ponownie\n"
 "z powodu błędu w StartEnigma.py"
 
 msgid "The width of the picture. The input will be scaled to match this value."
@@ -20431,6 +20435,9 @@ msgstr "Akcja timera"
 msgid "Timer+"
 msgstr "Timer+"
 
+msgid "Timer:"
+msgstr "Timer:"
+
 msgid "Timerlist"
 msgstr "Lista timera"
 
@@ -20803,14 +20810,8 @@ msgstr "Algorytm strojenia"
 msgid "Tunisia"
 msgstr "Tunezja"
 
-msgid ""
-"Turbo: One reboot after flash\n"
-"Fast: One reboot after flash, one reboot after restore\n"
-"Slow: One reboot after flash, one reboot after restore in GUI"
-msgstr ""
-"Turbo: Jeden restart po flashu\n"
-"Szybki: Jeden restart po flashu, jeden restart po przywróceniu\n"
-"Wolny: Jeden restart po flashu, jeden restart po przywróceniu interfejsu"
+msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
+msgstr "Turbo: Jeden restart po flashu; Szybki: Jeden restart po flashu, jeden restart po przywróceniu; Wolny: Jeden restart po flashu, jeden restart po przywróceniu interfejsu."
 
 msgid "Turkey"
 msgstr "Turcja"
@@ -20897,7 +20898,7 @@ msgid "URL"
 msgstr "URL"
 
 msgid "URL of fallback remote receiver"
-msgstr "Adres zdalnego odbiornika rezerwowego"
+msgstr "Adres URL zdalnego odbiornika"
 
 msgid "USALS"
 msgstr "USALS"
@@ -21261,7 +21262,7 @@ msgid "Use QuickSelect"
 msgstr "Użyj szybkiego wyboru"
 
 msgid "Use TV remote control"
-msgstr "Zezwól na kontrolę pilotem od TV"
+msgstr "Użyj pilota do telewizora"
 
 msgid "Use UP/DOWN buttons to select option then press OK"
 msgstr "Użyj przycisków GÓRA/DÓŁ, aby wybrać opcję, a następnie naciśnij OK"
@@ -23177,12 +23178,6 @@ msgstr "równe"
 msgid "equestrian"
 msgstr "jeździectwo"
 
-msgid "Problem starting scan"
-msgstr "Problem z uruchomieniem skanowania"
-
-msgid "Problem while scanning"
-msgstr "Problem podczas skanowania"
-
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "wykonywać cięcia (wymaga wtyczki MovieCut)"
 
@@ -23468,17 +23463,11 @@ msgstr "nie wybrano kaida"
 msgid "no CI slots found"
 msgstr "nie znaleziono gniazda CI"
 
-msgid "No channel list"
-msgstr "Brak listy kanałów"
-
 msgid "no module found"
 msgstr "nie znaleziono modułu"
 
 msgid "no or unknown card inserted"
 msgstr "brak lub nieaktywna karta"
-
-msgid "No resource manager"
-msgstr "Brak menadżera zasobów"
 
 msgid "no storage devices found"
 msgstr "nie znaleziono urządzenia magazynującego"
@@ -23539,9 +23528,6 @@ msgstr "pakiet"
 
 msgid "packages"
 msgstr "pakiety"
-
-msgid "pass"
-msgstr "postęp"
 
 msgid "performing arts"
 msgstr "sztuka"
@@ -23938,6 +23924,27 @@ msgstr "tak (zachować kanały)"
 
 msgid "®"
 msgstr "®"
+
+#, python-format
+#~ msgid "%d channel found"
+#~ msgid_plural "%d channels found"
+#~ msgstr[0] "znaleziono %d kanał"
+#~ msgstr[1] "znaleziono %d kanały"
+#~ msgstr[2] "znaleziono %d kanałów"
+
+#, python-format
+#~ msgid "ERROR - failed to scan (%s)!"
+#~ msgstr "BŁĄD - skanowanie (%s) nie powiodło się!"
+
+#, python-format
+#~ msgid "Scanning - %d%% completed"
+#~ msgid_plural "Scanning - %d%% completed"
+#~ msgstr[0] "Skanowanie - %d%% ukończono"
+#~ msgstr[1] "Skanowanie - %d%% ukończono"
+#~ msgstr[2] "Skanowanie - %d%% ukończone"
+
+#~ msgid "pass"
+#~ msgstr "przelot"
 
 #, python-format
 #~ msgid "%s  (%s)"

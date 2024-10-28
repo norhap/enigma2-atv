@@ -799,10 +799,10 @@ PyObject *eDVBServiceList::getContent(const char* format, bool sorted)
 					tmp = NEW_eServiceReference(ref);
 					break;
 				case 'C':  // service reference compare string
-					tmp = PyString_FromString(ref.toCompareString().c_str());
+					tmp = PyUnicode_FromString(ref.toCompareString().c_str());
 					break;
 				case 'S':  // service reference string
-					tmp = PyString_FromString(ref.toString().c_str());
+					tmp = PyUnicode_FromString(ref.toString().c_str());
 					break;
 				case 'N':  // service name
 					if (service_center)
@@ -821,11 +821,11 @@ PyObject *eDVBServiceList::getContent(const char* format, bool sorted)
 								name.erase(pos,2);
 
 							if (name.length())
-								tmp = PyString_FromString(name.c_str());
+								tmp = PyUnicode_FromString(name.c_str());
 						}
 					}
 					if (!tmp)
-						tmp = PyString_FromString("<n/a>");
+						tmp = PyUnicode_FromString("<n/a>");
 					break;
 				case 'n':  // short service name
 					if (service_center)
@@ -837,11 +837,11 @@ PyObject *eDVBServiceList::getContent(const char* format, bool sorted)
 							sptr->getName(ref, name);
 							name = buildShortName(name);
 							if (name.length())
-								tmp = PyString_FromString(name.c_str());
+								tmp = PyUnicode_FromString(name.c_str());
 						}
 					}
 					if (!tmp)
-						tmp = PyString_FromString("<n/a>");
+						tmp = PyUnicode_FromString("<n/a>");
 					break;
 				default:
 					if (tuple)
@@ -1089,7 +1089,7 @@ eDVBServicePlay::~eDVBServicePlay()
 		int ret=meta.parseFile(m_reference.path);
 		if (!ret)
 		{
-			char tmp[255];
+			char tmp[255] = {};
 			meta.m_service_data="";
 			sprintf(tmp, "f:%x", m_dvb_service->m_flags);
 			meta.m_service_data += tmp;
@@ -1332,7 +1332,7 @@ void eDVBServicePlay::serviceEventTimeshift(int event)
 		{
 			if (m_timeshift_file_next.empty())
 			{
-				if (!eConfigManager::getConfigBoolValue("config.timeshift.skipreturntolive", false))
+				if (!eConfigManager::getConfigBoolValue("config.timeshift.skipReturnToLive", false))
 				{
 					eDebug("[eDVBServicePlay] time shift EOF, so let's go live");
 					switchToLive();
@@ -1526,8 +1526,7 @@ RESULT eDVBServicePlay::pause(ePtr<iPauseableService> &ptr)
 		/* note: we check for time shift to be enabled,
 		   not neccessary active. if you pause when timeshift
 		   is not active, you should activate it when unpausing */
-
-	if (!m_is_pvr && !m_timeshift_enabled && (m_reference.path.empty() || !m_reference.alternativeurl.empty()))
+	if ((!m_is_pvr) && (!m_timeshift_enabled))
 	{
 		ptr = nullptr;
 		return -1;
@@ -1632,8 +1631,7 @@ RESULT eDVBServicePlay::setFastForward_internal(int ratio, bool final_seek)
 
 RESULT eDVBServicePlay::seek(ePtr<iSeekableService> &ptr)
 {
-
-	if (m_is_pvr || m_timeshift_enabled || (!m_reference.path.empty() && m_reference.alternativeurl.empty()))
+	if (m_is_pvr || m_timeshift_enabled)
 	{
 		ptr = this;
 		return 0;
