@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openATV / enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 12:47+0000\n"
+"POT-Creation-Date: 2024-11-26 16:11+0000\n"
 "PO-Revision-Date: 2023-08-06 06:22+0000\n"
 "Last-Translator: Salif Mehmed <mail@salif.eu>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/bg/>\n"
@@ -2279,7 +2279,7 @@ msgstr "Винаги питай"
 msgid "Always include ECM in recordings"
 msgstr "Винаги включвайте ECM в записите"
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver."
 msgstr "Винаги включвайте ECM съобщения в записите. Това отменя глобално индивидуалните настройки на таймера. Позволява записите да бъдат винаги декриптирани след това (понякога наричано офлайн декодиране), ако се поддържа от вашия приемник. По подразбиране: изключено."
 
 msgid "Always show bouquets"
@@ -4369,6 +4369,9 @@ msgstr "Комплексно (позволява смесване на audio tra
 msgid "Composition of the recording filenames"
 msgstr "Състав на имената на запис на файлове"
 
+msgid "Compress root file system tar file. (This takes the most time!)"
+msgstr ""
+
 msgid "Compressed bits/pixel"
 msgstr ""
 
@@ -5073,8 +5076,38 @@ msgstr "Създайте произволно генерирана парола"
 msgid "Create a symbolic link"
 msgstr ""
 
+msgid "Create application loader dump."
+msgstr ""
+
+msgid "Create backup image zip file."
+msgstr ""
+
+msgid "Create boot dump."
+msgstr ""
+
+msgid "Create boot image dump."
+msgstr ""
+
+msgid "Create device information dump."
+msgstr ""
+
+msgid "Create kernel dump."
+msgstr ""
+
 #, python-format
 msgid "Create recovery image backup '%s'."
+msgstr ""
+
+msgid "Create rescue dump."
+msgstr ""
+
+msgid "Create root UBI file system."
+msgstr ""
+
+msgid "Create root file system dump."
+msgstr ""
+
+msgid "Create root journaling flash file system."
 msgstr ""
 
 msgid "Create separate radio user bouquet"
@@ -5083,10 +5116,16 @@ msgstr "Създайте отделен потребителски букет з
 msgid "Create swap"
 msgstr ""
 
+msgid "Create tar file of root file system."
+msgstr ""
+
 msgid "Create the additional slots on the selected device"
 msgstr ""
 
 msgid "Create the flash expander in the selected device"
+msgstr ""
+
+msgid "Create working directories."
 msgstr ""
 
 msgid "Creating .ap and .sc files"
@@ -6606,9 +6645,6 @@ msgid "Dzongkha"
 msgstr ""
 
 msgid "E"
-msgstr ""
-
-msgid "E "
 msgstr ""
 
 msgid "ECM"
@@ -10923,9 +10959,6 @@ msgstr ""
 msgid "MediaPlayer"
 msgstr ""
 
-msgid "MediaStream"
-msgstr ""
-
 msgid "Medical"
 msgstr "Медицински"
 
@@ -11167,11 +11200,11 @@ msgstr "Настройка на монтажа"
 msgid "Mount failed"
 msgstr "Монтирането се провали"
 
+msgid "Mount root file system."
+msgstr ""
+
 msgid "Mount: "
 msgstr "Монтиране: "
-
-msgid "Mountpoint"
-msgstr "Точка на монтиране"
 
 msgid "Mounts"
 msgstr "Мониране"
@@ -11799,7 +11832,7 @@ msgstr "никога"
 msgid "Never abort"
 msgstr "никога не прекъсвайте"
 
-msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
+msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding)."
 msgstr "Никога не декриптирайте съдържанието по време на запис. Това отменя глобално индивидуалните настройки на таймера. Ако е активирано, записите се съхраняват в криптирана презентация и трябва да бъдат декриптирани след това (понякога се нарича офлайн декодиране). По подразбиране: изключено."
 
 msgid "Never decrypt while recording"
@@ -14400,6 +14433,9 @@ msgstr ""
 msgid "Reload Services"
 msgstr "Презареждане на сервизи"
 
+msgid "Reload Skin"
+msgstr ""
+
 msgid "Reload all services from disk"
 msgstr ""
 
@@ -16790,6 +16826,9 @@ msgstr "Задайте съотношението на иконите за ус�
 
 msgid "Set the default location for your instant recordings. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Задайте местоположението по подразбиране за вашите моментални записи. Натиснете \"OK\", за да добавите нови местоположения, изберете ляво/дясно, за да изберете съществуващо местоположение."
+
+msgid "Set the default location to save your time shift recording files. Press 'OK' to add new locations, press LEFT/RIGHT to select from previously defined locations."
+msgstr ""
 
 msgid "Set the default location to store your time shift buffer files. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Задайте местоположението по подразбиране за файловете ви за временно преместване. Натиснете \"OK\", за да добавите нови местоположения, изберете ляво/дясно, за да изберете съществуващо местоположение."
@@ -20210,6 +20249,9 @@ msgstr "Timeshift-запазващо действие на превключва�
 
 msgid "Time shift save failed!"
 msgstr "Timeshift неуспешно запазен!"
+
+msgid "Time shift save location"
+msgstr ""
 
 msgid "Time shift save recording (Select event)"
 msgstr "Timeshift запазва запис (Изберете събитие)"
@@ -23748,6 +23790,9 @@ msgstr "да (запази фийдове)"
 
 msgid "®"
 msgstr ""
+
+#~ msgid "Mountpoint"
+#~ msgstr "Точка на монтиране"
 
 #, python-format
 #~ msgid "%d channel found"

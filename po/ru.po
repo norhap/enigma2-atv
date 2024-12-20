@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2 OpenXXX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 12:47+0000\n"
-"PO-Revision-Date: 2024-10-24 16:48+0000\n"
-"Last-Translator: Вячеслав Диконов <sdiconov@mail.ru>\n"
+"POT-Creation-Date: 2024-11-26 16:11+0000\n"
+"PO-Revision-Date: 2024-11-28 03:21+0000\n"
+"Last-Translator: igorrrrr <igorzhugan66@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 "X-Poedit-SourceCharset: iso-8859-5\n"
 
 msgid ""
@@ -2312,7 +2312,7 @@ msgstr "Всегда спрашивать"
 msgid "Always include ECM in recordings"
 msgstr "Всегда включать ECM в записи"
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver."
 msgstr "Всегда включать сообщения ECM в запись. Эта функция глобально переопределяет установки отдельных таймеров. Это позволяет дешифровать запись позже (автономное/offline декодирование), если такая возможность реализована в вашем ресивере. По умолчанию: 'ВЫКЛ'."
 
 msgid "Always show bouquets"
@@ -4355,7 +4355,7 @@ msgid "Command type"
 msgstr "Тип команды"
 
 msgid "Commit"
-msgstr "Commit"
+msgstr "Зафиксировать"
 
 msgid "Commit Information Actions"
 msgstr "Совершение информационных действий"
@@ -4407,6 +4407,9 @@ msgstr "Сложный (позволяет смешивать звуковые �
 
 msgid "Composition of the recording filenames"
 msgstr "Формат именования файлов записей"
+
+msgid "Compress root file system tar file. (This takes the most time!)"
+msgstr "Сжать root-файл корневой файловой системы. (Это займет больше всего времени!)"
 
 msgid "Compressed bits/pixel"
 msgstr "Сжатые биты/пиксель"
@@ -5116,9 +5119,39 @@ msgstr "Сгенерировать случайный пароль"
 msgid "Create a symbolic link"
 msgstr "Создать символическую ссылку"
 
+msgid "Create application loader dump."
+msgstr "Создать дамп загрузчика приложения."
+
+msgid "Create backup image zip file."
+msgstr "Создайте резервную копию образа в формате zip."
+
+msgid "Create boot dump."
+msgstr "Создать загрузочный дамп."
+
+msgid "Create boot image dump."
+msgstr "Создать дамп загрузочного образа."
+
+msgid "Create device information dump."
+msgstr "Создать дамп информации об устройстве."
+
+msgid "Create kernel dump."
+msgstr "Создать дамп ядра."
+
 #, python-format
 msgid "Create recovery image backup '%s'."
 msgstr "Создать резервную копию образа для восстановления '%s'."
+
+msgid "Create rescue dump."
+msgstr "Создать аварийный дамп."
+
+msgid "Create root UBI file system."
+msgstr "Создать корневую файловую систему UBI."
+
+msgid "Create root file system dump."
+msgstr "Создать дамп корневой файловой системы."
+
+msgid "Create root journaling flash file system."
+msgstr "Создать корневую журналируемую флеш-файловую систему."
 
 msgid "Create separate radio user bouquet"
 msgstr "Создание отдельного радио букета"
@@ -5126,11 +5159,17 @@ msgstr "Создание отдельного радио букета"
 msgid "Create swap"
 msgstr "Создать swap"
 
+msgid "Create tar file of root file system."
+msgstr "Создать root-файл корневой файловой системы."
+
 msgid "Create the additional slots on the selected device"
 msgstr "Создайте дополнительные слоты на выбранном устройстве"
 
 msgid "Create the flash expander in the selected device"
 msgstr "Создать расширение флеш-памяти на выбранном устройстве"
+
+msgid "Create working directories."
+msgstr "Создайте рабочие каталоги."
 
 msgid "Creating .ap and .sc files"
 msgstr "Создание файлов АР и SC"
@@ -6662,9 +6701,6 @@ msgstr "Дзонгка"
 msgid "E"
 msgstr "В"
 
-msgid "E "
-msgstr "E "
-
 msgid "ECM"
 msgstr "ECM"
 
@@ -6761,7 +6797,7 @@ msgid "EPG only"
 msgstr "Только ТВ-гид"
 
 msgid "EPG:"
-msgstr ""
+msgstr "EPG:"
 
 msgid "EPGSearch"
 msgstr "Поиск по ТВ-гиду"
@@ -10986,9 +11022,6 @@ msgstr "МедиаИнфо"
 msgid "MediaPlayer"
 msgstr "Медиапроигрыватель"
 
-msgid "MediaStream"
-msgstr "Медиа поток"
-
 msgid "Medical"
 msgstr "Медицина"
 
@@ -11230,11 +11263,11 @@ msgstr "Настройки монтирования"
 msgid "Mount failed"
 msgstr "Монтирование не удалось"
 
+msgid "Mount root file system."
+msgstr "Смонтировать корневую файловую систему."
+
 msgid "Mount: "
 msgstr "Смонтирован "
-
-msgid "Mountpoint"
-msgstr "Точка монтирования"
 
 msgid "Mounts"
 msgstr "Точки монтирования"
@@ -11694,7 +11727,7 @@ msgid "Namibia"
 msgstr "Намибия"
 
 msgid "Narration"
-msgstr ""
+msgstr "Повествование"
 
 msgid "Native"
 msgstr "Исходное"
@@ -11865,7 +11898,7 @@ msgstr "Никогда"
 msgid "Never abort"
 msgstr "Никогда не прерывать"
 
-msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
+msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding)."
 msgstr "Не декодировать передачу во время записи. Эта функция глобально переопределяет настройки отдельных таймеров. Если включено, запись будет сохранена зашифрованной и должна быть расшифрована позже (автономное/offline декодирование). По умолчанию: ВЫКЛ."
 
 msgid "Never decrypt while recording"
@@ -12292,7 +12325,7 @@ msgid "Not currently mounted."
 msgstr "В настоящее время не смонтирован."
 
 msgid "Not defined"
-msgstr ""
+msgstr "Не определено"
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -12686,7 +12719,7 @@ msgid "Original Network ID (ONID)"
 msgstr "Исходный идент. сети (ONID)"
 
 msgid "Original language"
-msgstr ""
+msgstr "Исходный язык"
 
 msgid "Oriya"
 msgstr "Ория"
@@ -12930,7 +12963,7 @@ msgid "Partitions"
 msgstr "Разделы"
 
 msgid "Pass"
-msgstr "Пароль"
+msgstr "Проход"
 
 msgid "Pass-through"
 msgstr "Пропускать"
@@ -13385,8 +13418,8 @@ msgstr "Пожалуйста, подождите, пока список загр
 msgid "Please wait while the plugin is installed."
 msgid_plural "Please wait while the plugins are installed."
 msgstr[0] "Пожалуйста, подождите, пока плагин будет установлен."
-msgstr[1] "Пожалуйста, подождите, пока плагины установятся."
-msgstr[2] "Пожалуйста, подождите, пока плагины установятся."
+msgstr[1] "Пожалуйста, подождите, пока плагина установятся."
+msgstr[2] "Пожалуйста, подождите, пока плагинов установятся."
 
 msgid "Please wait while the plugin is removed."
 msgid_plural "Please wait while the plugins are removed."
@@ -14471,6 +14504,9 @@ msgstr "Перезагрузить закладки"
 msgid "Reload Services"
 msgstr "Перезагрузить каналы"
 
+msgid "Reload Skin"
+msgstr "Перезагрузить скин"
+
 msgid "Reload all services from disk"
 msgstr "Перезагрузить все каналы с диска"
 
@@ -15433,9 +15469,9 @@ msgstr "Сканирование..."
 #, python-format
 msgid "Scanning: %d%% complete"
 msgid_plural "Scanning: %d%% complete"
-msgstr[0] "Поиск: %d%%"
-msgstr[1] "Поиск: %d%%"
-msgstr[2] "Поиск: %d%%"
+msgstr[0] "Сканирование: %d%% завершено"
+msgstr[1] "Сканирование: %d%% завершено"
+msgstr[2] "Сканирование: %d%% завершено"
 
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Сканирование записей lamedb с сортировкой по спутникам при использовании позиционера"
@@ -16869,6 +16905,9 @@ msgstr "Настройка соотношения сторон пиконов к
 
 msgid "Set the default location for your instant recordings. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Назначьте стандартное расположение для файлов немедленной записи. Нажмите 'OK' чтобы добавить новый каталог, либо выберите существующий каталог кнопками ВПРАВО/ВЛЕВО."
+
+msgid "Set the default location to save your time shift recording files. Press 'OK' to add new locations, press LEFT/RIGHT to select from previously defined locations."
+msgstr "Установите местоположение по умолчанию для сохранения файлов записи сдвига во времени. Нажмите 'ОК', чтобы добавить новые местоположения, нажмите ВЛЕВО/ВПРАВО, чтобы выбрать из ранее определенных местоположений."
 
 msgid "Set the default location to store your time shift buffer files. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Назначьте расположение для файлов таймшифта. Нажмите 'OK', чтобы добавить новый каталог, либо кнопками ВПРАВО/ВЛЕВО для выбора существующего каталога."
@@ -19234,7 +19273,7 @@ msgid "TMDB Search"
 msgstr "Поиск по TMDB"
 
 msgid "TRANSLATOR_INFO"
-msgstr "Коррекция перевода Monja 18.10.2024"
+msgstr "Коррекция перевода Monja 27.11.2024"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл слишком большой для ISO9660 уровень 1!"
@@ -20331,6 +20370,9 @@ msgstr "Сохранять данные таймшифта при переклю
 msgid "Time shift save failed!"
 msgstr "Ошибка сохранения файла таймшифта!"
 
+msgid "Time shift save location"
+msgstr "Сдвиг во времени сохранить местоположение"
+
 msgid "Time shift save recording (Select event)"
 msgstr "Сохранение записи таймшифта (Выберите передачу)"
 
@@ -20425,7 +20467,7 @@ msgid "Timer+"
 msgstr "Таймер+"
 
 msgid "Timer:"
-msgstr ""
+msgstr "Таймер:"
 
 msgid "Timerlist"
 msgstr "Список таймеров"
@@ -20800,7 +20842,7 @@ msgid "Tunisia"
 msgstr "Тунис"
 
 msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
-msgstr "Турбо: Одна перезагрузка после прошивки; Быстро: Одна перезагрузка после прошивки, одна перезагрузка после восстановления; Медленно: Одна перезагрузка после прошивки, одна перезагрузка после восстановления в GUI"
+msgstr "Турбо: одна перезагрузка после прошивки; Быстро: одна перезагрузка после прошивки, одна перезагрузка после восстановления; Медленно: одна перезагрузка после прошивки, одна перезагрузка после восстановления в графическом интерфейсе."
 
 msgid "Turkey"
 msgstr "Турция"
@@ -22738,7 +22780,7 @@ msgid "Your email address is used to login to IceTV services."
 msgstr "Ваш адрес электронной почты используется для входа в сервисы IceTV."
 
 msgid "Your existing IceTV password."
-msgstr "Ваш существующий пароль IceTV."
+msgstr "Ваш текущий пароль IceTV."
 
 msgid ""
 "Your front panel processor firmware must be upgraded.\n"
@@ -23913,6 +23955,15 @@ msgstr "Да (оставить фиды)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "MediaStream"
+#~ msgstr "Медиа поток"
+
+#~ msgid "E "
+#~ msgstr "E "
+
+#~ msgid "Mountpoint"
+#~ msgstr "Точка монтирования"
 
 #, python-format
 #~ msgid "%d channel found"
