@@ -1,5 +1,6 @@
 from os import stat, statvfs, makedirs
 from os.path import join, isdir
+from re import search
 from shlex import split
 
 from enigma import eTimer
@@ -54,6 +55,10 @@ class StartWizard(Wizard, ShowRemoteControl):
 		configfile.save()
 
 	def createSwapFileFlashExpander(self, callback):
+		def messageBoxCallback(*res):
+			if callback and callable(callback):
+				callback()
+
 		def creataSwapFileCallback(result=None, retVal=None, extraArgs=None):
 			fstab = fileReadLines("/etc/fstab", default=[], source=MODULE_NAME)
 			print("[FlashExpander] fstabUpdate DEBUG: Begin fstab:\n%s" % "\n".join(fstab))
@@ -63,11 +68,9 @@ class StartWizard(Wizard, ShowRemoteControl):
 			fileWriteLines("/etc/fstab", "\n".join(fstabNew), source=MODULE_NAME)
 			print("[FlashExpander] fstabUpdate DEBUG: Ending fstab:\n%s" % "\n".join(fstabNew))
 			messageBox.close()
-			if callback:
-				callback()
 
 		print("[StartWizard] DEBUG createSwapFileFlashExpander")
-		messageBox = self.session.open(MessageBox, _("Please wait, swap is is being created. This could take a few minutes to complete."), MessageBox.TYPE_INFO, enable_input=False, windowTitle=_("Create swap"))
+		messageBox = self.session.openWithCallback(messageBoxCallback, MessageBox, _("Please wait, swap is is being created. This could take a few minutes to complete."), MessageBox.TYPE_INFO, enable_input=False, windowTitle=_("Create swap"))
 		fileName = join("/.FlashExpander", "swapfile")
 		commands = []
 		commands.append("/bin/dd if=/dev/zero of='%s' bs=1024 count=131072 2>/dev/null" % fileName)  # Use 128 MB because creation of bigger swap is very slow.
@@ -88,7 +91,7 @@ class StartWizard(Wizard, ShowRemoteControl):
 			return None
 
 		def creataSwapFileCallback(result=None, retVal=None, extraArgs=None):
-			if callback:
+			if callback and callable(callback):
 				callback()
 
 		print("[StartWizard] DEBUG createSwapFile: %s" % self.swapDevice)
@@ -157,7 +160,7 @@ class StartWizard(Wizard, ShowRemoteControl):
 						if deviceID:
 							self.deviceData[deviceID] = (data[0][:-1], name)
 			print("[StartWizard] DEBUG readSwapDevicesCallback: %s" % str(self.deviceData))
-			if callback:
+			if callback and callable(callback):
 				callback()
 
 		self.console.ePopen(["/sbin/blkid", "/sbin/blkid"], callback=readSwapDevicesCallback)
@@ -168,6 +171,18 @@ class StartWizard(Wizard, ShowRemoteControl):
 
 	def isFlashExpanderActive(self):
 		return isdir(join("/%s/%s" % (EXPANDER_MOUNT, EXPANDER_MOUNT), "bin"))
+
+	def hasPartitions(self):
+		partitions = fileReadLines("/proc/partitions", source=MODULE_NAME)
+		count = 0
+		black = BoxInfo.getItem("mtdblack")
+		for line in partitions:
+			parts = line.strip().split()
+			if parts:
+				device = parts[3]
+				if not device.startswith(black) and (search(r"^sd[a-z][1-9][\d]*$", device) or search(r"^mmcblk[\d]p[\d]*$", device)):
+					count += 1
+		return count > 0
 
 	def keyYellow(self):
 		if self.wizard[self.currStep]["name"] == "swap":

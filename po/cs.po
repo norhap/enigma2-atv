@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-24 18:40+0000\n"
+"POT-Creation-Date: 2024-12-31 15:16+0000\n"
 "PO-Revision-Date: 2024-12-21 11:00+0000\n"
 "Last-Translator: Petr Turek <turekdesign99@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/cs/>\n"
@@ -95,6 +95,9 @@ msgstr " aktualizováno"
 
 msgid "!! Boot loader Upgrade !!"
 msgstr "!! Upgrade zavaděče!!"
+
+msgid "# = Reboot Required"
+msgstr ""
 
 msgid "%-H:%M"
 msgstr "%-H:%M"
@@ -1586,18 +1589,18 @@ msgid "A file from media is in use!"
 msgstr "Používá se soubor z média!"
 
 #, python-format
-msgid "A finished PowerTimer wants to reboot your %s %s. Do that now?"
+msgid "A finished scheduled timer wants to reboot your %s %s. Do that now?"
 msgstr "Nastavený časovač chce restartovat Vaše %s %s. Určitě, nyní?"
 
-msgid "A finished PowerTimer wants to restart the user interface. Do that now?"
+msgid "A finished scheduled timer wants to restart the user interface. Do that now?"
 msgstr "Nastavený časovač chce restartovat uživatelské rozhraní. Určitě nyní?"
 
 #, python-format
-msgid "A finished PowerTimer wants to set your %s %s to standby. Do that now?"
+msgid "A finished scheduled timer wants to set your %s %s to standby. Do that now?"
 msgstr "Nastavený časovač chce nastavit %s %s pohotovostní režim. Určitě nyní?"
 
 #, python-format
-msgid "A finished PowerTimer wants to shut down your %s %s. Do that now?"
+msgid "A finished scheduled timer wants to shut down your %s %s. Do that now?"
 msgstr "Nastavený časovač chce vypnout Vaše %s %s. Určitěnyní?"
 
 #, python-format
@@ -1616,11 +1619,11 @@ msgstr ""
 "Ukončené nahrávání chce vypnout Vaše %s %s\n"
 "Určitě, teď?"
 
-msgid "Graphical DVB subtitles will be displayed in the selected color, instead of the original colors."
-msgstr ""
-
 msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr "Zvýraznění na obrázku dálkového ovladače ukazuje, kterého tlačítka se nápověda týká. Pokud uvedenou funkci vykonává více než jedno tlačítko, zobrazí se více než jedno zvýraznění. V textu pod seznamem jsou uvedena aktivní tlačítka a informace o tom, zda funkce vyžaduje dlouhé stisknutí nebo stisknutí tlačítka (tlačítek) SHIFT."
+
+msgid "A new storage device has been connected:"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -1648,7 +1651,7 @@ msgstr "Právě probíhá nahrávání. Před pokusem o spuštění satelitního
 
 #, python-format
 msgid ""
-"A recording, recording timer or power timer is running or will begin within 15 minutes. %s extended to 30 minutes. Your %s %s will go to Deep Standby after the recording or power timer event.\n"
+"A recording, recording timer or scheduled task is running or will begin within 15 minutes. %s extended to 30 minutes. Your %s %s will go to Deep Standby after the recording or scheduled task.\n"
 "\n"
 "Go to Deep Standby now?"
 msgstr ""
@@ -1811,6 +1814,9 @@ msgstr "Akce na dlouhý stisk tlačítka 'VYPNOUT'"
 
 msgid "Action on short POWER button press"
 msgstr "Akce na krátký stisk tlačítka 'VYPNOUT'"
+
+msgid "Actions"
+msgstr ""
 
 msgid "Activate"
 msgstr "Aktivovat"
@@ -2739,6 +2745,9 @@ msgstr "Zobrazovat nastavené rozlišení"
 
 msgid "Automatic scan for services"
 msgstr "Autonaticky vyhledá dostupné programy"
+
+msgid "Automatic shares access"
+msgstr ""
 
 msgid "Automatically put the TV in standby whenever the receiver goes into standby or deep standby."
 msgstr "Automaticky přepne televizor do pohotovostního režimu, kdykoli přijímač přejde do pohotovostního režimu nebo hlubokého spánku."
@@ -3806,14 +3815,6 @@ msgstr "Změnit na přehled"
 msgid "Changed"
 msgstr "Změněno"
 
-#, python-format
-msgid ""
-"Changes need a system restart to take effect.\n"
-"Restart your %s %s now?"
-msgstr ""
-"Změny se projeví až po restartu systému.\n"
-"Restartovat nyní %s %s?"
-
 msgid "Channel"
 msgstr "Kanál"
 
@@ -3948,12 +3949,6 @@ msgstr "Charakter zařízení"
 
 msgid "Chechen"
 msgstr "Čečenský"
-
-msgid "Check"
-msgstr "Ověřit"
-
-msgid "Check HDD"
-msgstr "Kontrola disku"
 
 msgid "Check for PDC"
 msgstr "Zkontrolovat PDC"
@@ -4260,6 +4255,12 @@ msgstr "Zavřít dialog"
 
 msgid "Close screen"
 msgstr "Zavřít obrazovku"
+
+msgid "Close the Device Manager screen"
+msgstr ""
+
+msgid "Close the Device Manager screen and exit all menus"
+msgstr ""
 
 msgid "Close the Kexec MultiBoot Manager"
 msgstr "Zavřít Správce multibootů Kexec"
@@ -4975,12 +4976,6 @@ msgstr "Ovládání Softcamů"
 msgid "Controlled by HDMI"
 msgstr "ovládané přes HDMI"
 
-msgid "Convert EXT3 File System to EXT4"
-msgstr "Konvertovat HDD z ext3 na ext4"
-
-msgid "Convert ext3 to ext4"
-msgstr "Konverze ext3 na ext4"
-
 msgid "Convert file system ext3 to ext4"
 msgstr "Převést souborový systém ext3 na ext4"
 
@@ -5324,6 +5319,9 @@ msgstr "Aktuálně definované posuny hlasitosti:"
 
 msgid "Custom"
 msgstr "Vlastní"
+
+msgid "Custom mountpoint"
+msgstr ""
 
 msgid "Custom skip time for '1'/'3' buttons"
 msgstr "Vlastní časový posun pro tlačítka '1'/'3'"
@@ -5780,6 +5778,12 @@ msgstr "Definujte další zpoždění v milisekundách před zahájením stream�
 msgid "Define the DNS suffix."
 msgstr "Určete příponu DNS."
 
+msgid "Define the custom mountpoint for the device."
+msgstr ""
+
+msgid "Define the file system mount options."
+msgstr ""
+
 msgid "Defined / Active"
 msgstr "Definováno / Aktivní"
 
@@ -6093,8 +6097,14 @@ msgstr "Podrobnosti"
 msgid "Development Packages"
 msgstr "Vývojové balíčky"
 
+msgid "Device"
+msgstr ""
+
 msgid "Device Manager"
 msgstr "Správce připojených zařízení"
+
+msgid "Device Manager Actions"
+msgstr ""
 
 msgid "Device Settings"
 msgstr "Nastavení zařízení"
@@ -6110,9 +6120,6 @@ msgstr "Název zařízení:"
 
 msgid "Device number"
 msgstr "Číslo zařízení"
-
-msgid "Device: "
-msgstr "Zařízení: "
 
 msgid "Devices"
 msgstr "Zařízení"
@@ -7071,6 +7078,9 @@ msgstr "Povolit automatické rychlé ladění (Fast Scan)"
 msgid "Enable auto fast scan for %s"
 msgstr "Povolit automatické rychlé vyhledávání pro %s"
 
+msgid "Enable automatic shares"
+msgstr ""
+
 msgid "Enable autorefresh templates."
 msgstr "Povolit automatické obnovování šablon."
 
@@ -7751,7 +7761,7 @@ msgstr "Etiopie"
 msgid "Even if TV has another input active?"
 msgstr "I když má TV aktivní další vstup?"
 
-msgid "Even if a 'Wakeup' PowerTimer starting?"
+msgid "Even if a 'Wakeup' scheduled task starting?"
 msgstr "I když je „Probuzení“ spustit PowerTimer?"
 
 msgid "Even if a 'Zap and Record' recording timer starting?"
@@ -8281,6 +8291,9 @@ msgstr "File Commander Akce textového editoru"
 msgid "File Commander settings"
 msgstr "File Commander - Nastavení"
 
+msgid "File system"
+msgstr ""
+
 msgid "File System Check"
 msgstr "Kontrola souborového systému"
 
@@ -8309,8 +8322,8 @@ msgstr "Název souboru"
 msgid "Files/folders to exclude from backup"
 msgstr "Soubory/složky vyloučené ze záloh"
 
-msgid "Filesystem check your hard drive"
-msgstr "Zkontrolujte souborový systém vašeho pevného disku"
+msgid "Filesystem"
+msgstr ""
 
 msgid "Fill in channel EPGs from the broadcast EPG where there is no IceTV EPG for the channel"
 msgstr "Vyplnění EPG kanálů z EPG vysílání, pokud pro daný kanál neexistuje EPG IceTV"
@@ -8511,14 +8524,11 @@ msgstr "Formát"
 msgid "Format Disk"
 msgstr "Formátovat disk"
 
-msgid "Format HDD"
-msgstr "Formátování a inicializace disků"
-
 msgid "Format Storage Device"
 msgstr "Formátovat úložné zařízení"
 
-msgid "Format your hard drive"
-msgstr "Zformátujte svůj pevný disk"
+msgid "Formatting storage device..."
+msgstr ""
 
 msgid "Forward Error Correction (FEC)"
 msgstr "Dopředná oprava chyb (FEC)"
@@ -8639,9 +8649,6 @@ msgstr "FullHD test"
 
 msgid "G"
 msgstr "G"
-
-msgid "GB"
-msgstr "GB"
 
 msgid "GCC version"
 msgstr "Verze GCC"
@@ -8859,6 +8866,9 @@ msgstr "Kalibrace přejít na X"
 
 msgid "Grab"
 msgstr "Grab"
+
+msgid "Graphical DVB subtitles will be displayed in the selected color, instead of the original colors."
+msgstr ""
 
 msgid "Graphical EPG"
 msgstr "Grafické EPG"
@@ -9817,9 +9827,6 @@ msgstr "Počáteční rychlost přetáčení zpět"
 
 msgid "Initial scroll delay"
 msgstr "Počáteční zpoždění rolování"
-
-msgid "Initialization"
-msgstr "Inicializace disku"
 
 msgid "Initialize"
 msgstr "Inicializovat"
@@ -10809,9 +10816,6 @@ msgstr "MAC adresa"
 msgid "MAC-address"
 msgstr "MAC-adresa"
 
-msgid "MB"
-msgstr "MB"
-
 msgid "MENU"
 msgstr "MENU"
 
@@ -11309,6 +11313,9 @@ msgstr "Správce připojení"
 msgid "Mount Menu Actions"
 msgstr "Akce nabídky Mount"
 
+msgid "Mount Point"
+msgstr ""
+
 msgid "Mount Settings"
 msgstr "Nastavení připojení"
 
@@ -11318,17 +11325,14 @@ msgstr "Správce připojení"
 msgid "Mount failed"
 msgstr "Připojení se nezdařilo"
 
+msgid "Mount point"
+msgstr "Přípojný bod"
+
 msgid "Mount root file system."
 msgstr "Připojit kořenový systém souborů."
 
-msgid "Mount: "
-msgstr "Připojit: "
-
 msgid "Mounts"
 msgstr "Připojit"
-
-msgid "Mounts Devices"
-msgstr "Připojená zařízení"
 
 msgid "Move"
 msgstr "Přesunout"
@@ -11970,6 +11974,9 @@ msgstr "Nový PIN"
 
 msgid "New Setting DXAndy "
 msgstr "Nové nastavení DXAndy "
+
+msgid "New Storage Device"
+msgstr ""
 
 msgid "New Zealand"
 msgstr "Nový Zéland"
@@ -12767,6 +12774,9 @@ msgstr "Volba aktivace hardware-časovače vypnutí."
 msgid "Optional parameter"
 msgstr "Volitelný parametr"
 
+msgid "Options"
+msgstr ""
+
 msgid "Orbital position"
 msgstr "Orbitální pozice"
 
@@ -13023,6 +13033,9 @@ msgstr "Parlament"
 msgid "Partition"
 msgstr "Oddíl"
 
+msgid "Partition Type"
+msgstr ""
+
 msgid "Partitions"
 msgstr "Diskové oddíly"
 
@@ -13049,6 +13062,9 @@ msgstr "Nastavení hesla"
 
 msgid "Password changed."
 msgstr "Heslo bylo změněno."
+
+msgid "Path"
+msgstr ""
 
 #, python-format
 msgid "Path '%s' missing!"
@@ -13095,6 +13111,13 @@ msgstr "Provést aktualizaci?"
 
 msgid "Permanently delete all recordings in the trash can?"
 msgstr "Trvale odstranit všechny záznamy z koše?"
+
+msgid "Permanently ignore this device"
+msgstr ""
+
+#, python-format
+msgid "Permanently mount as %s"
+msgstr ""
 
 msgid "Permanently remove all deleted items"
 msgstr "Trvale odstranit veškeré smazané položky"
@@ -13530,9 +13553,6 @@ msgstr "Čekejte prosím, načítá se obraz..."
 msgid "Please wait, swap is is being created. This could take a few minutes to complete."
 msgstr "Čekejte prosím, právě se vytváří swap. Dokončení může trvat několik minut."
 
-msgid "Please wait."
-msgstr "Prosím, čekejte."
-
 msgid "Please wait..."
 msgstr "Prosím, čekejte..."
 
@@ -13632,6 +13652,9 @@ msgstr "Portugalsko"
 msgid "Portuguese"
 msgstr "Portugalsky"
 
+msgid "Position"
+msgstr ""
+
 msgid "Position of finished Timers in Timerlist"
 msgstr "Dokončené časovače umísťovat v seznamu"
 
@@ -13682,30 +13705,6 @@ msgstr "Zapnout přední displej"
 
 msgid "Power threshold in mA"
 msgstr "Prahový proud v mA"
-
-msgid "PowerTimer"
-msgstr "Časovač vypnutí"
-
-msgid "PowerTimer Actions"
-msgstr "Akce PowerTimer"
-
-msgid "PowerTimer Overview"
-msgstr "Časovač napájení - přehled"
-
-msgid "PowerTimer Settings"
-msgstr "Nastavení časovače PowerTimer"
-
-msgid "PowerTimer Standby"
-msgstr "Časovač napájení (vypnout do pohotovosti)"
-
-msgid "PowerTimer deep standby"
-msgstr "Časovač napájení (úplně vypnout)"
-
-msgid "PowerTimer log"
-msgstr "Časovač napájení - protokol"
-
-msgid "PowerTimers"
-msgstr "Časovače napájení"
 
 msgid "Predefined"
 msgstr "Přednastavené"
@@ -14275,8 +14274,14 @@ msgstr "Hodnocení neurčeno"
 msgid "Re-enter new PIN"
 msgstr "Znovu zadejte nový PIN"
 
+msgid "Read Only"
+msgstr ""
+
 msgid "Read Userdata from oscam.conf"
 msgstr "Načíst data uživatelů z oscam.conf"
+
+msgid "Read/Write"
+msgstr ""
 
 msgid "Reader"
 msgstr "Čtečka"
@@ -14344,6 +14349,10 @@ msgstr "Zadní"
 
 msgid "Reboot"
 msgstr "Restartovat"
+
+#, python-format
+msgid "Reboot %s %s now?"
+msgstr ""
 
 msgid "Rec"
 msgstr "Rec"
@@ -14926,10 +14935,6 @@ msgstr "Jednotka rozlišení"
 msgid "Restart"
 msgstr "Restartovat"
 
-#, python-format
-msgid "Restart %s %s."
-msgstr "Restartovat %s %s."
-
 msgid "Restart GUI"
 msgstr "Restartovat Enigmu"
 
@@ -15315,6 +15320,9 @@ msgstr "Klient Samba"
 msgid "Samba Server"
 msgstr "Server Samba"
 
+msgid "Samba Settings"
+msgstr ""
+
 msgid "Same as in active"
 msgstr "Stejně jako při zapnutém přijímači"
 
@@ -15564,6 +15572,27 @@ msgstr "Naplánované načtení souboru epg.dat"
 msgid "Scheduled save of epg.dat"
 msgstr "Naplánované uložení souboru epg.dat"
 
+msgid "Scheduler"
+msgstr ""
+
+msgid "Scheduler Actions"
+msgstr "Akce PowerTimer"
+
+msgid "Scheduler Overview"
+msgstr "Časovač napájení - přehled"
+
+msgid "Scheduler Settings"
+msgstr ""
+
+msgid "Scheduler Standby"
+msgstr "Časovač napájení (vypnout do pohotovosti)"
+
+msgid "Scheduler deep standby"
+msgstr "Časovač napájení (úplně vypnout)"
+
+msgid "Scheduler log"
+msgstr "Časovač napájení - protokol"
+
 msgid "Sci-Fi"
 msgstr "Sci-Fi"
 
@@ -15735,7 +15764,7 @@ msgstr "Vyberte 'Ano', pokud mají být úpravy hlasitosti aplikovány na zvukov
 msgid "Select 'Yes' if you are using a multi-switch which requires a DiSEqC Port-A command signal. Select 'No' for all other setups."
 msgstr "Pokud používáte multipřepínač, který vyžaduje příkazový signál DiSEqC Port-A, vyberte „Ano“. Vyberte 'Ne' pro všechna ostatní nastavení."
 
-msgid "Select 'Yes' if you want to wake the TV for a 'Wakeup' power timer is starting."
+msgid "Select 'Yes' if you want to wake the TV for a 'Wakeup' scheduled task is starting."
 msgstr "Vyberte 'Ano' pokud chcete probudit TV aby se spustil časovač napájení 'Probuzení'."
 
 msgid "Select 'Yes' if you want to wake the TV for a 'Zap and Record' recording timer is starting."
@@ -15746,6 +15775,9 @@ msgstr "Vyberte „Ano“, pokud chcete probudit televizor, aby se spustil časo
 
 msgid "Select 'Yes' the keep the InfoBar displayed, with no timeout, while media playback is paused."
 msgstr "Vyberte 'Ano', aby byl informační panel zobrazen bez časového limitu, zatímco je přehrávání médií pozastaveno."
+
+msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
+msgstr ""
 
 msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
 msgstr "Pokud nastavíte na 'ano' můžete použít seekbar a skočit na místo v rámci události."
@@ -15837,7 +15869,7 @@ msgstr "Vyberte 'Ano' pro odstranění všech konfiguračních dat pluginu. Výb
 msgid "Select 'Yes' to remove all settings, tuning data, timers, resume pointers etc. Selecting this option will restore the configuration to the initial settings before any configuration settings were applied. This is the most reliable form of Factory Reset."
 msgstr "Výběrem možnosti „Ano“ odstraníte všechna nastavení, data ladění, časovače, ukazatele obnovení atd. Výběrem této možnosti obnovíte konfiguraci na výchozí nastavení před použitím jakýchkoli konfiguračních nastavení. Toto je nejspolehlivější forma obnovení továrního nastavení."
 
-msgid "Select 'Yes' to remove all timer configuration data. Selecting this option will clear all timers, autotimers and power timers."
+msgid "Select 'Yes' to remove all timer configuration data. Selecting this option will clear all timers, autotimers and schedules."
 msgstr "Vyberte 'Ano' pro odstranění všech konfiguračních dat časovače. Výběrem této možnosti vymažete všechny časovače, automatické časovače a časovače napájení."
 
 msgid "Select 'Yes' to remove all tuning data. Selecting this option will remove all tuning and bouquet data and will make timers non functional until the receiver is retuned."
@@ -15978,9 +16010,6 @@ msgstr "Vyberte Fast DiSEqC, pokud to váš anténní systém podporuje. Pokud s
 msgid "Select Folders"
 msgstr "Vyberte složky"
 
-msgid "Select HDD"
-msgstr "Vyberte disk"
-
 msgid "Select Lan/Wlan"
 msgstr "Vybrat LAN/Wlan"
 
@@ -16057,6 +16086,12 @@ msgstr "Vyberte film"
 msgid "Select a network adapter"
 msgstr "Vyberte síťový adaptér"
 
+msgid "Select a permanent mount point for all devices"
+msgstr ""
+
+msgid "Select a permanent mount point for the current device"
+msgstr ""
+
 msgid "Select a repository commit log to view:"
 msgstr "Vyberte protokol potvrzení úložiště, který chcete zobrazit:"
 
@@ -16087,6 +16122,9 @@ msgstr "Vybrat všechny řádky"
 
 msgid "Select all related files"
 msgstr "Vyberte všechny související soubory"
+
+msgid "Select an action for the current device"
+msgstr ""
 
 msgid "Select an action to perform when the task has completed."
 msgstr "Vyberte akci, která se má provést po dokončení úlohy."
@@ -16279,6 +16317,9 @@ msgstr "Vyberte frekvenci uživatelského pásma, která má být přiřazena to
 msgid "Select the Yes / True response"
 msgstr "Vyberte odpověď Ano / Pravda"
 
+msgid "Select the access mode for the automatically exported samba shares."
+msgstr ""
+
 #, python-format
 msgid "Select the action for '%s'"
 msgstr "Vyberte akci pro '%s'"
@@ -16374,6 +16415,9 @@ msgstr "Vyberte pořadí zobrazení dříve navštívených služeb."
 msgid "Select the file sort order for the %s column:"
 msgstr "Vyberte pořadí řazení souborů pro sloupec %s:"
 
+msgid "Select the file system for the device."
+msgstr ""
+
 msgid "Select the first item in list or move to the start of text"
 msgstr "Vyberte první položku v seznamu nebo přejděte na začátek textu"
 
@@ -16428,6 +16472,12 @@ msgstr "Vyberte režim DNS."
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "Vyberte číslo modelu vašeho zařízení Unicable. Pokud číslo modelu není uvedeno, nastavte „SCR“ na „definováno uživatelem“ a zadejte parametry zařízení ručně podle jeho specifikace."
 
+msgid "Select the mount points"
+msgstr ""
+
+msgid "Select the mountpoint for the device."
+msgstr ""
+
 msgid "Select the movie path"
 msgstr "Vyberte cestu k filmu"
 
@@ -16442,6 +16492,10 @@ msgstr ""
 "Vyberte síťové rozhraní, které chcete použít pro připojení k internetu.\n"
 "\n"
 "Pokračujte stisknutím OK."
+
+#, python-format
+msgid "Select the new mount point for: '%s'"
+msgstr ""
 
 msgid "Select the next item in list or move the cursor right"
 msgstr "Vyberte další položku v seznamu nebo posuňte kurzor vpravo"
@@ -17163,9 +17217,6 @@ msgstr "Nastavení vstupního zařízení"
 
 msgid "Setup MiniDLNA"
 msgstr "Nastavení MiniDLNA"
-
-msgid "Setup Mounts"
-msgstr "Nastavení připojení"
 
 msgid "Setup Network Services"
 msgstr "Nastavení síťových protokolů"
@@ -18003,8 +18054,8 @@ msgstr "Zobrazit obrazovku Nastavení protokolů"
 msgid "Show the OSCam information screen"
 msgstr "Zobrazit obrazovku s informacemi o OSCamu"
 
-msgid "Show the PowerTimer"
-msgstr "Zobrazit časovač napájení"
+msgid "Show the Scheduler"
+msgstr ""
 
 msgid "Show the SleepTimer"
 msgstr "Zobrazit časovač vypnutí"
@@ -18561,7 +18612,7 @@ msgstr "Bohužel, %s nebyl nainstalován!"
 msgid "Sorry, no backups found!"
 msgstr "Promiňte, ale žádné zálohy nenalezeny!"
 
-msgid "Sorry, no physical devices that supports SWAP attached. Can't create Swapfile on network or fat32 filesystems"
+msgid "Sorry, no physical devices that supports SWAP attached. Can't create swap file on network or FAT32 file systems"
 msgstr "Litujeme, nejsou připojena žádná fyzická zařízení, která podporují SWAP. Nelze vytvořit odkládací soubor v síti nebo na souborových systémech fat32"
 
 msgid "Sorry, there was a problem:"
@@ -19129,6 +19180,9 @@ msgstr "Svalbard a Jan Mayen"
 msgid "Swahili"
 msgstr "Svahilština"
 
+msgid "Swap"
+msgstr ""
+
 msgid "Swap File Manager"
 msgstr "Nastavení odkládacího souboru"
 
@@ -19351,9 +19405,6 @@ msgstr "T2MI PLP ID"
 msgid "T2MI RAW Mode"
 msgstr "Režim T2MI RAW"
 
-msgid "TB"
-msgstr "TB"
-
 msgid "TEXT"
 msgstr "TEXT"
 
@@ -19516,6 +19567,10 @@ msgstr "Telugština"
 #, python-format
 msgid "Temp directory (%s)"
 msgstr "Dočasný adresář (%s)"
+
+#, python-format
+msgid "Temporarily mount as %s"
+msgstr ""
 
 msgid "Temporary directory"
 msgstr "Dočasný adresář"
@@ -20012,9 +20067,6 @@ msgstr "Tento %s %s nemůže dekódovat %s streamů!"
 
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "DVD RW médium je již naformátováno - nové formátování smaže veškerý obsah na tomto DVD."
-
-msgid "This Device is already mounted as HDD."
-msgstr "Toto zařízení je již připojeno jako HDD."
 
 msgid "This Option allows you to switch Audio to BT Speakers."
 msgstr "Tato volba umožňuje přepnout zvuk na reproduktory BT."
@@ -20625,6 +20677,9 @@ msgstr "Přepnout zobrazení v grafice"
 msgid "Toggle a cut mark at the current position"
 msgstr "Přepnout střihovou značku na této pozici"
 
+msgid "Toggle a temporary mount for the current device"
+msgstr ""
+
 msgid "Toggle all related files"
 msgstr "Přepnout všechny související soubory"
 
@@ -21127,6 +21182,9 @@ msgstr "Univerzální LNB"
 msgid "Unknown"
 msgstr "Neznámé"
 
+msgid "Unknown Devices"
+msgstr ""
+
 msgid ""
 "Unknown Error creating Skin.\n"
 "Please check after reboot MyMetrixLite-Plugin and apply your settings."
@@ -21284,9 +21342,6 @@ msgstr "Aktualizace k dispozici:"
 msgid "Updating"
 msgstr "Aktualizace"
 
-msgid "Updating mount locations."
-msgstr "Aktualizace umístění připojení."
-
 msgid "Updating package list."
 msgstr "Aktualizace seznamu balíčků."
 
@@ -21413,9 +21468,6 @@ msgstr "Použijte alternativní GitHub DNS"
 
 msgid "Use an alternative smaller screen."
 msgstr "Použít alternativní menší obrazovku."
-
-msgid "Use as HDD"
-msgstr "Jako HDD"
 
 msgid "Use automatic mode detection"
 msgstr "Použít automatické rozpoznání režimu"
@@ -22064,13 +22116,6 @@ msgstr "Při spuštění počkat na synchronizaci času"
 msgid "Wait please while creating swap file..."
 msgstr "Počkejte prosím, vytvářím odkládací soubor..."
 
-msgid "Wait please while scanning for devices..."
-msgstr "Čekejte, prohledávám zařízení..."
-
-#, python-format
-msgid "Wait please while scanning your %s %s devices..."
-msgstr "Počkejte prosím při skenování zařízení %s %s..."
-
 msgid "Wait please while scanning..."
 msgstr "Prohledávám zařízení, prosím čekejte..."
 
@@ -22482,6 +22527,12 @@ msgstr "Zimní sporty"
 
 msgid "Wipe"
 msgstr "Vymazat"
+
+msgid "Wipe Storage Device"
+msgstr ""
+
+msgid "Wiping storage device..."
+msgstr ""
 
 msgid "Wireless LAN"
 msgstr "Bezdrátová LAN"
@@ -24048,6 +24099,97 @@ msgstr "ano (uchovat zdroje)"
 msgid "®"
 msgstr "®"
 
+#~ msgid "PowerTimer"
+#~ msgstr "Časovač vypnutí"
+
+#~ msgid "PowerTimer Settings"
+#~ msgstr "Nastavení časovače PowerTimer"
+
+#~ msgid "PowerTimers"
+#~ msgstr "Časovače napájení"
+
+#~ msgid "Show the PowerTimer"
+#~ msgstr "Zobrazit časovač napájení"
+
+#, python-format
+#~ msgid ""
+#~ "Changes need a system restart to take effect.\n"
+#~ "Restart your %s %s now?"
+#~ msgstr ""
+#~ "Změny se projeví až po restartu systému.\n"
+#~ "Restartovat nyní %s %s?"
+
+#~ msgid "Check"
+#~ msgstr "Ověřit"
+
+#~ msgid "Check HDD"
+#~ msgstr "Kontrola disku"
+
+#~ msgid "Convert EXT3 File System to EXT4"
+#~ msgstr "Konvertovat HDD z ext3 na ext4"
+
+#~ msgid "Convert ext3 to ext4"
+#~ msgstr "Konverze ext3 na ext4"
+
+#~ msgid "Device: "
+#~ msgstr "Zařízení: "
+
+#~ msgid "Filesystem check your hard drive"
+#~ msgstr "Zkontrolujte souborový systém vašeho pevného disku"
+
+#~ msgid "Format HDD"
+#~ msgstr "Formátování a inicializace disků"
+
+#~ msgid "Format your hard drive"
+#~ msgstr "Zformátujte svůj pevný disk"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "Initialization"
+#~ msgstr "Inicializace disku"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "Mount: "
+#~ msgstr "Připojit: "
+
+#~ msgid "Mounts Devices"
+#~ msgstr "Připojená zařízení"
+
+#~ msgid "Please wait."
+#~ msgstr "Prosím, čekejte."
+
+#, python-format
+#~ msgid "Restart %s %s."
+#~ msgstr "Restartovat %s %s."
+
+#~ msgid "Select HDD"
+#~ msgstr "Vyberte disk"
+
+#~ msgid "Setup Mounts"
+#~ msgstr "Nastavení připojení"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "This Device is already mounted as HDD."
+#~ msgstr "Toto zařízení je již připojeno jako HDD."
+
+#~ msgid "Updating mount locations."
+#~ msgstr "Aktualizace umístění připojení."
+
+#~ msgid "Use as HDD"
+#~ msgstr "Jako HDD"
+
+#~ msgid "Wait please while scanning for devices..."
+#~ msgstr "Čekejte, prohledávám zařízení..."
+
+#, python-format
+#~ msgid "Wait please while scanning your %s %s devices..."
+#~ msgstr "Počkejte prosím při skenování zařízení %s %s..."
+
 #~ msgid "When enabled, graphical DVB subtitles will be displayed in yellow, instead of the original color."
 #~ msgstr "Jestliže je povoleno, grafické DVB titulky budou zobrazovány žlutě namísto jejich původní barvy."
 
@@ -24083,9 +24225,6 @@ msgstr "®"
 
 #~ msgid "E "
 #~ msgstr "E "
-
-#~ msgid "Mountpoint"
-#~ msgstr "Přípojný bod"
 
 #, python-format
 #~ msgid "%d channel found"
