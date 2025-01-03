@@ -1787,8 +1787,8 @@ msgstr "Відтворення стрім-каналу перервано.\n"
 msgid "About"
 msgstr "Система"
 
-msgid "About openATV"
-msgstr "Про openATV"
+msgid "About OpenATV"
+msgstr "Про OpenATV"
 
 msgid "About to start"
 msgstr "час до запису"
@@ -8412,7 +8412,7 @@ msgstr "Дії розширювача флеш-пам’яті"
 msgid "Flash Image"
 msgstr "Запис Іміджа"
 
-#. TRANSLATORS: The variable is the name of a distribution.  E.g. "openATV".
+#. TRANSLATORS: The variable is the name of a distribution.  E.g. "OpenATV".
 #, python-format
 msgid "Flash Manager - %s Images"
 msgstr "Флеш-менеджер - %s іміджів"
@@ -15769,7 +15769,7 @@ msgstr "Виберіть 'Так', якщо налаштування гучно�
 msgid "Select 'Yes' if you are using a multi-switch which requires a DiSEqC Port-A command signal. Select 'No' for all other setups."
 msgstr "Виберіть 'Так' коли Ви використовуєте мультисвіч, який вимагає команду DiSEqC Port-A. Для всіх інших налаштувань виберіть 'Ні'."
 
-msgid "Select 'Yes' if you want to wake the TV for a 'Wakeup' scheduled task is starting."
+msgid "Select 'Yes' if you want to wake the TV when a 'Wakeup' scheduled task is starting."
 msgstr "Виберіть 'Так', якщо бажаєте увімкнути телевізор під час запуску таймера 'Пробудження'."
 
 msgid "Select 'Yes' if you want to wake the TV for a 'Zap and Record' recording timer is starting."
@@ -22233,11 +22233,11 @@ msgid "Welcome to IceTV"
 msgstr "Ласкаво просимо до IceTV"
 
 msgid ""
-"Welcome to openATV.\n"
+"Welcome to OpenATV.\n"
 "\n"
 "Use the UP/DOWN buttons on your remote control to select an option. Use the LEFT/RIGHT buttons to change the values of a configurable option. After that, press OK to proceed to the next screen."
 msgstr ""
-"Ласкаво просимо до openATV.\n"
+"Ласкаво просимо до OpenATV.\n"
 "\n"
 "Використовуйте кнопки ВГОРУ/ВНИЗ на пульті дистанційного керування, щоб вибрати параметр. Використовуйте кнопки ВЛІВО/ВПРАВО, щоб змінити значення настроюваного параметра. Після цього натисніть OK, щоб перейти до наступного кроку."
 
@@ -24418,7 +24418,7 @@ msgstr "®"
 #~ msgstr "Збірка: %s"
 
 #~ msgid "By openATV Image Team"
-#~ msgstr "Від команди openATV"
+#~ msgstr "Від команди OpenATV"
 
 #~ msgid "Cannot create backup directory"
 #~ msgstr "Неможливо створити каталог резервної копії"

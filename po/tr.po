@@ -1781,7 +1781,7 @@ msgstr "Bir akış hizmeti iptal edildi.\n"
 msgid "About"
 msgstr "Hakkında"
 
-msgid "About openATV"
+msgid "About OpenATV"
 msgstr "OpenATV hakkında"
 
 #
@@ -8712,7 +8712,7 @@ msgstr "Flash Genişletici Eylemler"
 msgid "Flash Image"
 msgstr "Flaş Image"
 
-#. TRANSLATORS: The variable is the name of a distribution.  E.g. "openATV".
+#. TRANSLATORS: The variable is the name of a distribution.  E.g. "OpenATV".
 #, python-format
 msgid "Flash Manager - %s Images"
 msgstr "Flash Manager - %s Görüntüler"
@@ -16503,7 +16503,7 @@ msgstr "Dolby ses parçalarına ses ayarı yapılması gerekiyorsa 'Evet'i seçi
 msgid "Select 'Yes' if you are using a multi-switch which requires a DiSEqC Port-A command signal. Select 'No' for all other setups."
 msgstr "DiSEqC Port-A komut sinyali gerektiren bir multiswich kullanıyorsanız, yalnızca 'evet'i seçin. Diğer tüm kurulumlar için 'hayır' seçeneğini seçin."
 
-msgid "Select 'Yes' if you want to wake the TV for a 'Wakeup' scheduled task is starting."
+msgid "Select 'Yes' if you want to wake the TV when a 'Wakeup' scheduled task is starting."
 msgstr ""
 
 msgid "Select 'Yes' if you want to wake the TV for a 'Zap and Record' recording timer is starting."
@@ -23232,7 +23232,7 @@ msgid "Welcome to IceTV"
 msgstr "IceTV'ye hoş geldiniz"
 
 msgid ""
-"Welcome to openATV.\n"
+"Welcome to OpenATV.\n"
 "\n"
 "Use the UP/DOWN buttons on your remote control to select an option. Use the LEFT/RIGHT buttons to change the values of a configurable option. After that, press OK to proceed to the next screen."
 msgstr ""
