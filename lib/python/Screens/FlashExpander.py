@@ -339,7 +339,7 @@ class FlashExpander(Setup):
 
 		for (name, hdd) in harddiskmanager.HDDList():
 			print("[FlashExpander] DEBUG: HDDList", hdd.device, hdd.dev_path)
-			uuid, device = uuids.get(hdd.device)
+			uuid, device = uuids.get(hdd.device, (None, None))
 			if uuid:
 				self.deviceData[uuid] = (device, name)
 

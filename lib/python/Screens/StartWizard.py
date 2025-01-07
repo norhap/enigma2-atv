@@ -152,14 +152,16 @@ class StartWizard(Wizard, ShowRemoteControl):
 					if disk:
 						uuids[disk] = (fileReadLine(join("/dev/uuid", fileName)), f"/dev/{fileName}")
 
+		print("[StartWizard] DEBUG readSwapDevices uuids", uuids)
+
 		for (name, hdd) in harddiskmanager.HDDList():
-			uuid, device = uuids.get(hdd.device)
+			uuid, device = uuids.get(hdd.device, (None, None))
 			if uuid:
 				self.deviceData[uuid] = (device, name)
 
-			print("[StartWizard] DEBUG readSwapDevicesCallback: %s" % str(self.deviceData))
-			if callback and callable(callback):
-				callback()
+		print("[StartWizard] DEBUG readSwapDevicesCallback: %s" % str(self.deviceData))
+		if callback and callable(callback):
+			callback()
 
 	def getFreeMemory(self):
 		memInfo = fileReadLines("/proc/meminfo", source=MODULE_NAME)
@@ -178,14 +180,14 @@ class StartWizard(Wizard, ShowRemoteControl):
 				device = parts[3]
 				if not device.startswith(black) and (search(r"^sd[a-z][1-9][\d]*$", device) or search(r"^mmcblk[\d]p[\d]*$", device)):
 					count += 1
-		return count > 0
+		return count > 1
 
 	def keyYellow(self):
 		if self.wizard[self.currStep]["name"] == "swap":
 			if not self.isFlashExpanderActive():
 				def formatCallback():
 					harddiskmanager.enumerateBlockDevices()
-					self.readSwapDevices()
+					self.updateValues()
 				self.session.openWithCallback(formatCallback, HarddiskSelection)
 		else:
 			Wizard.keyYellow(self)

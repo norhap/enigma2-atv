@@ -12,6 +12,7 @@ from Tools.Directories import fileReadLines, fileReadLine, fileWriteLines
 from Tools.CList import CList
 
 MODEL = BoxInfo.getItem("model")
+MODULE_NAME = __name__.split(".")[-1]
 
 
 def readFile(filename):
@@ -27,7 +28,7 @@ def readFile(filename):
 
 
 def getProcMountsNew():
-	lines = fileReadLines("/proc/mounts", default=[])
+	lines = fileReadLines("/proc/mounts", default=[], source=MODULE_NAME)
 	result = []
 	for line in [x for x in lines if x and x.startswith("/dev/")]:
 		# Replace encoded space (\040) and newline (\012) characters with actual space and newline
@@ -401,20 +402,66 @@ class HarddiskManager:
 		p = [("/", _("Internal flash"))]  # Find stuff not detected by the enumeration.
 		self.partitions.extend([Partition(mountpoint=x[0], description=x[1]) for x in p])
 
+	def refreshMountPoints(self):
+		# Remove old mounts
+		print(f"[Harddisk] DEBUG refreshMountPoints")
+		for partition in self.partitions:
+			if partition.mountpoint and partition.mountpoint != "/":
+				newMountpoint = self.getMountpoint(partition.device)
+				if partition.mountpoint != newMountpoint:
+					print(f"[Harddisk] DEBUG remove mountpoint old: {partition.mountpoint} / new: {newMountpoint}")
+					self.triggerAddRemovePartion("remove", partition=partition)
+					partition.mountpoint = newMountpoint
+
+		# Add new mount
+		for partition in self.partitions:
+			if partition.mountpoint != "/":
+				newMountpoint = self.getMountpoint(partition.device)
+				print(f"[Harddisk] DEBUG add mountpoint old: {partition.mountpoint} / new: {newMountpoint}")
+				if newMountpoint and partition.mountpoint != newMountpoint:
+					partition.mountpoint = newMountpoint
+					self.triggerAddRemovePartion("add", partition=partition)
+
+	def refresh(self, disk):
+		print(f"[Harddisk] DEBUG refresh", disk)
+		removeList = []
+		appedList = []
+		oldPartitions = []
+		for partition in self.partitions:
+			if partition.device and partition.device.startswith(disk) and partition.device != disk:
+				oldPartitions.append(partition.device)
+
+		if not exists(join("/sys/block/", disk)):
+			removeList += oldPartitions
+			removeList.append(disk)
+		else:
+			currentPartitions = []
+			for line in fileReadLines("/proc/partitions", default=[], source=MODULE_NAME):
+				parts = line.strip().split()
+				if parts:
+					device = parts[3]
+					if device.startswith(disk) and device != disk:
+						currentPartitions.append(device)
+
+			for partition in oldPartitions:
+				if partition not in currentPartitions:
+					removeList.append(partition)
+
+			for partition in currentPartitions:
+				if partition not in oldPartitions:
+					appedList.append(partition)
+
+		for device in removeList:
+			self.removeHotplugPartition(device)
+
+		for device in appedList:
+			self.addHotplugPartition(device)
+
 	def getBlockDevInfo(self, blockdev):
 		devpath = join("/sys/block", blockdev)
 		error = False
 		removable = False
-		BLACKLIST = []
-		if BoxInfo.getItem("mtdrootfs").startswith("mmcblk0p"):
-			BLACKLIST = ["mmcblk0"]
-		elif BoxInfo.getItem("mtdrootfs").startswith("mmcblk1p"):
-			BLACKLIST = ["mmcblk1"]
 		blacklisted = False
-		if blockdev[:7] in BLACKLIST:
-			blacklisted = True
-		if blockdev.startswith("mmcblk") and (search(r"mmcblk\dboot", blockdev) or search(r"mmcblk\drpmb", blockdev)) or blockdev == "ram":
-			blacklisted = True
 		is_cdrom = False
 		partitions = []
 		try:
@@ -480,7 +527,7 @@ class HarddiskManager:
 				if eventData["DEVTYPE"] == "partition":  # Handle only partitions
 					device = eventData["DEVNAME"].replace("/dev/", "")
 					shortDevice = device[:7] if device.startswith("mmcblk") else sub(r"[\d]", "", device)
-					removable = fileReadLine(f"/sys/block/{shortDevice}/removable")
+					removable = fileReadLine(f"/sys/block/{shortDevice}/removable", source=MODULE_NAME)
 					eventData["SORT"] = 0 if ("pci" in eventData["DEVPATH"] or "ahci" in eventData["DEVPATH"]) and removable == "0" else 1
 					devices.append(eventData)
 				remove(fileName)
@@ -496,8 +543,8 @@ class HarddiskManager:
 				if device["DEVNAME"] not in devmounts or "/media/hdd" in possibleMountPoints:
 					device["MOUNT"] = possibleMountPoints.pop()
 
-			knownDevices = fileReadLines("/etc/udev/known_devices", default=[])
-			newFstab = fileReadLines("/etc/fstab")
+			knownDevices = fileReadLines("/etc/udev/known_devices", default=[], source=MODULE_NAME)
+			newFstab = fileReadLines("/etc/fstab", default=[], source=MODULE_NAME)
 			commands = []
 			for device in devices:
 				ID_FS_UUID = device.get("ID_FS_UUID")
@@ -523,7 +570,7 @@ class HarddiskManager:
 			if commands:
 				#def enumerateHotPlugDevicesCallback(*args, **kwargs):
 				#	callback()
-				fileWriteLines("/etc/fstab", newFstab)
+				fileWriteLines("/etc/fstab", newFstab, source=MODULE_NAME)
 				commands.append("/bin/mount -a")
 				#self.console.eBatch(cmds=commands, callback=enumerateHotPlugDevicesCallback) # eBatch is not working correctly here this needs to be fixed
 				#return
@@ -533,7 +580,11 @@ class HarddiskManager:
 
 	def enumerateBlockDevices(self):
 		print("[Harddisk] Enumerating block devices.")
+		black = BoxInfo.getItem("mtdblack")
 		for blockdev in listdir("/sys/block"):
+			if blockdev.startswith(("ram", "loop", black)):
+				continue
+			# print(f"[Harddisk] Enumerating block device '{blockdev}'.")
 			error, blacklisted, removable, is_cdrom, partitions, medium_found = self.addHotplugPartition(blockdev)
 			if not error and not blacklisted and medium_found:
 				for part in partitions:
@@ -580,7 +631,7 @@ class HarddiskManager:
 
 	def addHotplugPartition(self, device, physdev=None, model=None):
 		device = device.replace("/dev/", "")
-		print(f"[Harddisk] addHotplugPartition {device}")
+		print(f"[Harddisk] DEBUG addHotplugPartition {device}")
 		# device -> the device name, without /dev.
 		# physdev -> the physical device path, which we (might) use to determine the user friendly name.
 		if not physdev:
@@ -665,7 +716,7 @@ class HarddiskManager:
 			dev, part = self.splitDeviceName(devname)
 			if part and dev in devs:  # If this is a partition and we still have the whole disk, remove the whole disk.
 				devs.remove(dev)
-		return [x for x in parts if not x.device or x.device in devs]  # Return all devices which are not removed due to being a whole disk when a partition exists.
+		return [x for x in parts if (not x.device or x.device in devs) and x.mountpoint]  # Return all devices which are not removed due to being a whole disk when a partition exists.
 
 	def splitDeviceName(self, devname):
 		if search(r"^mmcblk\d(?:p\d+$|$)", devname):

@@ -1,7 +1,7 @@
 # NickerSK <nickersk@gmail.com>, 2021, 2022.
 # Marian-SK <podnety@mojepreklady.net>, 2021.
 # Marián Hikaník <podnety@mojepreklady.net>, 2021, 2022, 2023, 2024.
-# Atec <dr.atec@gmail.com>, 2023, 2024.
+# Atec <dr.atec@gmail.com>, 2023, 2024, 2025.
 # Milan Šalka <salka.milan@googlemail.com>, 2023, 2024.
 # HS <enosat@yahoo.com>, 2024.
 # Marian Turba <puki247@gmail.com>, 2024.
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-31 15:16+0000\n"
-"PO-Revision-Date: 2024-12-21 14:15+0000\n"
-"Last-Translator: Marián Hikaník <podnety@mojepreklady.net>\n"
+"PO-Revision-Date: 2025-01-04 02:00+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -4594,7 +4594,7 @@ msgstr "Nastavte správanie kurzora v zozname pre výber kanála. Pri otvorení 
 msgid "Configure the display resolution and the font used for teletext."
 msgstr "Nastavte rozlíšenie obrazovky a písmo používané pre teletext."
 
-msgid "Configure the duration in minutes before the screen saver will be displayed."
+msgid "Select the duration of inactivity before the screen saver will be displayed."
 msgstr "Nastavte čas v minútach pre šetrič obrazovky."
 
 msgid "Configure the duration, in minutes, before the EnergySaver timer activates."
@@ -12797,7 +12797,7 @@ msgid "Original Network ID (ONID)"
 msgstr "Pôvodné ID siete (ONID)"
 
 msgid "Original language"
-msgstr "Pôvodný jazyk"
+msgstr "pôvodný jazyk"
 
 msgid "Oriya"
 msgstr "urijčina"
@@ -17956,7 +17956,7 @@ msgstr "Zobraziť zoznam družíc"
 msgid "Show screen menu path"
 msgstr "Zobraziť cestu k menu na obrazovke"
 
-msgid "Show screensaver"
+msgid "Show screen saver"
 msgstr "Zobraziť šetrič obrazovky"
 
 msgid "Show script messages"
