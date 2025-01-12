@@ -226,6 +226,7 @@ AS_IF([test "$BOXTYPE" == "vuultimo4k"],[AC_DEFINE(HWULTIMO4K, 1,[vuultimo4k])])
 AS_IF([test "$BOXTYPE" == "vuduo4k"],[AC_DEFINE(HWDUO4K, 1,[vuduo4k])])
 AS_IF([test "$BOXTYPE" == "vuduo4kse"],[AC_DEFINE(HWDUO4KSE, 1,[vuduo4kse])])
 AS_IF([test "$BOXTYPE" == "vuduo2"],[AC_DEFINE(HWDUO2, 1,[vuduo2])])
+AS_IF([test "$BOXTYPE" == "vuuno4kse"],[AC_DEFINE(HWUNO4KSE, 1,[vuuno4kse])])
 AS_IF([test "$BOXTYPE" == "h7"],[AC_DEFINE(HWH7, 1,[h7])])
 AS_IF([test "$BOXTYPE" == "h17"],[AC_DEFINE(HWH17, 1,[h17])])
 AS_IF([test "$BOXTYPE" == "pulse4k"],[AC_DEFINE(HWPULSE4K, 1,[pulse4k])])
@@ -827,6 +828,7 @@ fi
 
 if test "$BOXTYPE" == "dm900" -o "$BOXTYPE" == "dm920"; then
 	AC_DEFINE(LCD_DM900_Y_OFFSET, 4,[define LCD Y offset for dm900 and dm920])
+	AC_DEFINE(HAVE_DM_FBC, 1,[define for dm900 and dm920])
 fi
 
 if test "$BOXTYPE" == "sf4008" -o "$BOXTYPE" == "beyonwizu4"; then

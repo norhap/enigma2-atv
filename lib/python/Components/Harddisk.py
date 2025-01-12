@@ -388,6 +388,7 @@ class Partition:
 
 class HarddiskManager:
 	def __init__(self):
+		self.debug = False
 		self.hdd = []
 		self.cd = ""
 		self.partitions = []
@@ -402,28 +403,32 @@ class HarddiskManager:
 		p = [("/", _("Internal flash"))]  # Find stuff not detected by the enumeration.
 		self.partitions.extend([Partition(mountpoint=x[0], description=x[1]) for x in p])
 
+	def debugPrint(self, text):
+		if self.debug:
+			print(f"[{MODULE_NAME}] DEBUG: {text}")
+
 	def refreshMountPoints(self):
 		# Remove old mounts
-		print(f"[Harddisk] DEBUG refreshMountPoints")
+		self.debugPrint("refreshMountPoints")
 		for partition in self.partitions:
-			if partition.mountpoint and partition.mountpoint != "/":
+			if partition.device and partition.mountpoint and partition.mountpoint != "/":
 				newMountpoint = self.getMountpoint(partition.device)
 				if partition.mountpoint != newMountpoint:
-					print(f"[Harddisk] DEBUG remove mountpoint old: {partition.mountpoint} / new: {newMountpoint}")
+					self.debugPrint(f"remove mountpoint old: {partition.mountpoint} / new: {newMountpoint}")
 					self.triggerAddRemovePartion("remove", partition=partition)
 					partition.mountpoint = newMountpoint
 
 		# Add new mount
 		for partition in self.partitions:
-			if partition.mountpoint != "/":
+			if partition.device and partition.mountpoint != "/":
 				newMountpoint = self.getMountpoint(partition.device)
-				print(f"[Harddisk] DEBUG add mountpoint old: {partition.mountpoint} / new: {newMountpoint}")
+				self.debugPrint(f"add mountpoint old: {partition.mountpoint} / new: {newMountpoint}")
 				if newMountpoint and partition.mountpoint != newMountpoint:
 					partition.mountpoint = newMountpoint
 					self.triggerAddRemovePartion("add", partition=partition)
 
 	def refresh(self, disk):
-		print(f"[Harddisk] DEBUG refresh", disk)
+		self.debugPrint(f"refresh {disk}")
 		removeList = []
 		appedList = []
 		oldPartitions = []
@@ -557,7 +562,7 @@ class HarddiskManager:
 					continue
 				mountPoint = device.get("MOUNT")
 				if mountPoint:
-					commands.append(f"/bin/umount -lf {DEVNAME.replace("/dev/", "/media/")}")
+					commands.append(["/bin/umount", "/bin/umount", "-lf", DEVNAME.replace("/dev/", "/media/")])
 					ID_FS_TYPE = "auto"  # eventData.get("ID_FS_TYPE")
 					knownDevices.append(f"{ID_FS_UUID}:{mountPoint}")
 					newFstab.append(f"UUID={ID_FS_UUID} {mountPoint} {ID_FS_TYPE} defaults 0 0")
@@ -571,7 +576,7 @@ class HarddiskManager:
 				#def enumerateHotPlugDevicesCallback(*args, **kwargs):
 				#	callback()
 				fileWriteLines("/etc/fstab", newFstab, source=MODULE_NAME)
-				commands.append("/bin/mount -a")
+				commands.append(["/bin/mount", "/bin/mount", "-a"])
 				#self.console.eBatch(cmds=commands, callback=enumerateHotPlugDevicesCallback) # eBatch is not working correctly here this needs to be fixed
 				#return
 				for command in commands:
@@ -626,12 +631,12 @@ class HarddiskManager:
 		return None
 
 	def triggerAddRemovePartion(self, action, partition):
-		print(f"[Harddisk] {action} partition {partition.device} -> {partition.mountpoint}")
+		self.debugPrint(f"{action} partition {partition.device} -> {partition.mountpoint}")
 		self.on_partition_list_change(action, partition)
 
 	def addHotplugPartition(self, device, physdev=None, model=None):
 		device = device.replace("/dev/", "")
-		print(f"[Harddisk] DEBUG addHotplugPartition {device}")
+		self.debugPrint(f"addHotplugPartition {device}")
 		# device -> the device name, without /dev.
 		# physdev -> the physical device path, which we (might) use to determine the user friendly name.
 		if not physdev:
@@ -676,6 +681,8 @@ class HarddiskManager:
 		return error, blacklisted, removable, is_cdrom, partitions, medium_found
 
 	def removeHotplugPartition(self, device):
+		device = device.replace("/dev/", "")
+		self.debugPrint(f"removeHotplugPartition {device}")
 		for x in self.partitions[:]:
 			if x.device == device:
 				self.partitions.remove(x)
@@ -735,21 +742,31 @@ class HarddiskManager:
 			return dev, part and int(part) or 0
 
 	def getUserfriendlyDeviceName(self, dev, phys):
-		dev, part = self.splitDeviceName(dev)
-		description = _("External Storage %s") % dev
+		device, part = self.splitDeviceName(dev)
+		description = _("External Storage %s") % device
 		try:
-			fileName = "name" if "mmc" in dev else "model"
+			fileName = "name" if "mmc" in device else "model"
 			fileName = f"/sys{phys}/{fileName}"
 			if exists(fileName):
 				description = readFile(fileName)
 		except OSError as err:
 			print(f"[Harddisk] Error {err.errno}: Couldn't read model!  ({err.strerror})")
+		hwdescription = ""
 		for physdevprefix, pdescription in list(getDeviceDB().items()):
 			if phys.startswith(physdevprefix):
-				description = pdescription
-		if part and part != 1:  # Not whole disk and not partition 1.
-			description += _(" (Partition %d)") % part
-		return description
+				hwdescription = pdescription
+
+		label = fileReadLine(f"/dev/label/{dev}", default="", source=MODULE_NAME)
+		if label:
+			description += f" ({label})"
+		else:
+			if part and part != 1:  # Not whole disk and not partition 1.
+				description += _(" (Partition %d)") % part
+
+		if hwdescription:
+			return f"{hwdescription}: {description}"
+		else:
+			return description
 
 	def addMountedPartition(self, device, desc):
 		device = join(device, "")
