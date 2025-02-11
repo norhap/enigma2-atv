@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-07 09:29+0000\n"
+"POT-Creation-Date: 2025-01-30 15:09+0000\n"
 "PO-Revision-Date: 2025-01-27 15:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ta/>\n"
@@ -1692,19 +1692,19 @@ msgstr "AC3Plus டிரான்ச்கோடிங்"
 msgid "AFL"
 msgstr "Afl"
 
-msgid "AI-Powered Translation color"
+msgid "AI Translation color"
 msgstr "AI- இயங்கும் மொழிபெயர்ப்பு நிறம்"
 
-msgid "AI-Powered Translation enabled"
+msgid "AI Translation enabled"
 msgstr "AI- இயங்கும் மொழிபெயர்ப்பு இயக்கப்பட்டது"
 
-msgid "AI-Powered Translation language"
+msgid "AI Translation language"
 msgstr "AI- இயங்கும் மொழிபெயர்ப்பு மொழி"
 
-msgid "AI-Powered Translation optimization"
+msgid "AI Translation optimization"
 msgstr "AI- இயங்கும் மொழிபெயர்ப்பு தேர்வுமுறை"
 
-msgid "AI-Powered Translation subscription code"
+msgid "AI Translation subscription code"
 msgstr "AI- இயங்கும் மொழிபெயர்ப்பு சந்தா குறியீடு"
 
 msgid "ARM"
@@ -1814,6 +1814,9 @@ msgstr "கட்டமைக்கப்பட்ட பிணைய அமை�
 
 msgid "Activate the flash expander, save all changed settings and exit"
 msgstr "ஃபிளாச் விரிவாக்கத்தை செயல்படுத்தவும், மாற்றப்பட்ட அனைத்து அமைப்புகளையும் சேமித்து வெளியேறவும்"
+
+msgid "Activate this device"
+msgstr ""
 
 msgid "Activate time shift End"
 msgstr "நேர சிப்ட் முடிவை செயல்படுத்தவும்"
@@ -3507,6 +3510,9 @@ msgid ""
 "Switch to live TV and restart time shift ?"
 msgstr ""
 
+msgid "Can't move to trashcan!"
+msgstr ""
+
 msgid ""
 "Can't play the next time shift file!\n"
 "Switch to live TV and restart time shift ?"
@@ -3629,9 +3635,6 @@ msgid "Cannot determine %s limit ..., aborting !"
 msgstr ""
 
 msgid "Cannot find any signal ..., aborting !"
-msgstr ""
-
-msgid "Cannot move to trash can"
 msgstr ""
 
 msgid "Cape Verde"
@@ -4579,7 +4582,7 @@ msgstr ""
 msgid "Configure the longitude of your location."
 msgstr ""
 
-msgid "Configure the minimum amount of disk space to be available for recordings. When the amount of space drops below this value, deleted items will be removed from the trash can."
+msgid "Configure the minimum amount of disk space to be available for recordings. When the amount of space drops below this value, deleted items will be removed from the trashcan."
 msgstr ""
 
 msgid "Configure the minimum width before showing the 'i' icon, '0' is equal to not showing the icon at all."
@@ -4594,7 +4597,7 @@ msgstr ""
 msgid "Configure the network again"
 msgstr ""
 
-msgid "Configure the number of days after which items are automatically removed from the trash can."
+msgid "Configure the number of days after which items are automatically removed from the trashcan."
 msgstr ""
 
 msgid "Configure the number of days old timers are kept before they are automatically removed from the timer list."
@@ -6102,10 +6105,6 @@ msgid "Directory"
 msgstr ""
 
 #, python-format
-msgid "Directory %s does not exist."
-msgstr ""
-
-#, python-format
 msgid "Directory '%s' can't be linked to recordings!"
 msgstr ""
 
@@ -6313,14 +6312,7 @@ msgid ""
 msgstr ""
 
 #, python-format
-msgid "Do you really want to delete %s ?"
-msgstr ""
-
-#, python-format
 msgid "Do you really want to delete '%s'?"
-msgstr ""
-
-msgid "Do you really want to delete ?"
 msgstr ""
 
 #, python-format
@@ -6337,6 +6329,9 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr ""
 
+msgid "Do you really want to delete?"
+msgstr ""
+
 msgid "Do you really want to exit?"
 msgstr ""
 
@@ -6345,14 +6340,12 @@ msgid ""
 "All data on the device will be lost!"
 msgstr ""
 
-msgid "Do you really want to move to trashcan ?"
+#, python-format
+msgid "Do you really want to move '%s' to the trashcan?"
 msgstr ""
 
 #, python-format
-msgid "Do you really want to permanently remove '%s' from trash can ?"
-msgstr ""
-
-msgid "Do you really want to permanently remove from trash can ?"
+msgid "Do you really want to permanently remove '%s' from the trashcan?"
 msgstr ""
 
 #, python-format
@@ -6360,11 +6353,11 @@ msgid "Do you really want to remove directory '%s' from the disk?"
 msgstr ""
 
 #, python-format
-msgid "Do you really want to remove the timer for %s?"
+msgid "Do you really want to remove the bookmark for '%s'?"
 msgstr ""
 
 #, python-format
-msgid "Do you really want to remove your bookmark for '%s'?"
+msgid "Do you really want to remove the timer for %s?"
 msgstr ""
 
 msgid ""
@@ -7075,10 +7068,16 @@ msgstr ""
 msgid "Enable this option to add screen names and resolution data to the debug log file."
 msgstr ""
 
+msgid "Enable this option to add storage device information detected during system boot and hot plug events to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add timer debugging data to the debug log file."
 msgstr ""
 
 msgid "Enable this option to show all the available Information screens in the Information menu item list."
+msgstr ""
+
+msgid "Enable this option to show unknown storage devices in device manager."
 msgstr ""
 
 msgid "Enable this setting if your aerial system needs power."
@@ -7503,6 +7502,10 @@ msgstr ""
 
 #, python-format
 msgid "Error: Creating picon target directory: (%s)"
+msgstr ""
+
+#, python-format
+msgid "Error: Directory '%s' does not exist!"
 msgstr ""
 
 #, python-format
@@ -8152,7 +8155,7 @@ msgstr ""
 msgid "File System Packages"
 msgstr ""
 
-msgid "File appears to be busy.\n"
+msgid "File appears to be busy!\n"
 msgstr ""
 
 msgid ""
@@ -9449,6 +9452,9 @@ msgstr ""
 msgid "Image creation failed!"
 msgstr ""
 
+msgid "Image version"
+msgstr ""
+
 msgid "ImageWizard"
 msgstr ""
 
@@ -9563,6 +9569,9 @@ msgid "Include remote control data"
 msgstr ""
 
 msgid "Include screen load data"
+msgstr ""
+
+msgid "Include storage device data"
 msgstr ""
 
 msgid "Include teletext details"
@@ -12917,7 +12926,7 @@ msgstr ""
 msgid "Perform the upgrade?"
 msgstr ""
 
-msgid "Permanently delete all recordings in the trash can?"
+msgid "Permanently delete all recordings in the trashcan?"
 msgstr ""
 
 msgid "Permanently ignore this device"
@@ -17878,6 +17887,9 @@ msgstr ""
 msgid "Show unknown Videoresolution as next higher or as highest screen resolution."
 msgstr ""
 
+msgid "Show unknown devices"
+msgstr ""
+
 msgid "Show unknown video format as"
 msgstr ""
 
@@ -21976,7 +21988,7 @@ msgstr ""
 msgid "When enabled, continue to the next bouquet when the last channel of the current bouquet is reached while changing channels."
 msgstr ""
 
-msgid "When enabled, deleted recordings are moved to the trash can, instead of being deleted immediately."
+msgid "When enabled, deleted recordings are moved to the trashcan, instead of being deleted immediately."
 msgstr ""
 
 msgid "When enabled, external subtitles will be always turned on for playback movie."
@@ -21994,7 +22006,7 @@ msgstr ""
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr ""
 
-msgid "When enabled, network trash cans are probed for cleaning."
+msgid "When enabled, network trashcans are probed for cleaning."
 msgstr ""
 
 msgid "When enabled, number markers will be hidden."
