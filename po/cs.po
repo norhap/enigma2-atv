@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
-"PO-Revision-Date: 2025-01-31 08:54+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
+"PO-Revision-Date: 2025-02-13 21:46+0000\n"
 "Last-Translator: Petr Turek <turekdesign99@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/cs/>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10-rc\n"
 
 msgid ""
 "\n"
@@ -1176,10 +1176,6 @@ msgid "%s %sB"
 msgstr "%s %sB"
 
 #, python-format
-msgid "%s (%04o)"
-msgstr "%s (%04o)"
-
-#, python-format
 msgid "%s - Setup"
 msgstr "%s – Nastavení"
 
@@ -1733,6 +1729,9 @@ msgstr "Překlad pomocí AI povolen"
 
 msgid "AI Translation language"
 msgstr "Překladatelský jazyk založený na AI"
+
+msgid "AI Translation mode"
+msgstr "Režim překladu AI"
 
 msgid "AI Translation optimization"
 msgstr "Optimalizace překladu s technologií AI"
@@ -2408,6 +2407,9 @@ msgstr "Arabsky"
 
 msgid "Arabic (Egyptian)"
 msgstr "Arabština (Egyptština)"
+
+msgid "Arabic (Iraq)"
+msgstr "Arabština (Irák)"
 
 msgid "Arabic (Moroccan)"
 msgstr "Arabština (Marocká)"
@@ -3827,8 +3829,8 @@ msgstr "Info o kanálu"
 msgid "Channel List"
 msgstr "Seznam kanálů"
 
-msgid "Channel List Menu"
-msgstr "Nabídka Seznam kanálů"
+msgid "Channel Number"
+msgstr ""
 
 msgid "Channel Selection"
 msgstr "Výběr kanálú"
@@ -6411,9 +6413,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "Opravdu chcete smazat tento časovač ?"
 
-msgid "Do you really want to delete?"
-msgstr "Opravdu chcete smazat ?"
-
 msgid "Do you really want to exit?"
 msgstr "Opravdu chcete ukončit?"
 
@@ -7838,6 +7837,9 @@ msgstr "Ukončit File Commander"
 msgid "Exit MAC address configuration"
 msgstr "Ukončit konfiguraci MAC adresy"
 
+msgid "Exit Movie Selection"
+msgstr "Zavřít seznam filmů"
+
 msgid "Exit Quad Channel Selection"
 msgstr "Ukončit výběr čtyř kanálů"
 
@@ -7870,9 +7872,6 @@ msgstr "Zavřít přehrávač"
 
 msgid "Exit menu"
 msgstr "Opustit menu"
-
-msgid "Exit movie list"
-msgstr "Zavřít seznam filmů"
 
 msgid "Exit movie player?"
 msgstr "Zavřít přehrávač?"
@@ -9961,6 +9960,9 @@ msgstr "Interní"
 msgid "Internal Flash"
 msgstr "Interní Flash"
 
+msgid "Internal SSD"
+msgstr "Interní SSD"
+
 msgid "Internal USB"
 msgstr "Interní USB"
 
@@ -11596,17 +11598,17 @@ msgstr "Filmotéka"
 msgid "Movie List Actions"
 msgstr "Akce seznamu filmů"
 
-msgid "Movie List Settings"
-msgstr "Nastavení filmotéky"
-
 msgid "Movie Player Actions"
 msgstr "Akce přehrávače filmů"
 
+msgid "Movie Selection"
+msgstr "Výběr filmů"
+
+msgid "Movie Selection Settings"
+msgstr "Nastavení filmotéky"
+
 msgid "Movie playback may not use an invalid/inappropriate directory."
 msgstr "Přehrávání filmu nesmí používat neplatnou složku."
-
-msgid "Movie selection"
-msgstr "Výběr filmů"
 
 msgid "Movie/Drama"
 msgstr "Film/Drama"
@@ -13293,6 +13295,9 @@ msgstr "Přehrát vybranou službu"
 
 msgid "Playback Settings"
 msgstr "Nastavení přehrávání"
+
+msgid "Playback Time:"
+msgstr "Doba přehrávání:"
 
 msgid "Playback, Recording & Time Shift"
 msgstr "Nahrávání a Timeshift"
@@ -15944,6 +15949,9 @@ msgstr "Vyberte 'Ano' pro zobrazení předplacených balíčků na obrazovce St�
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr "Vyberte 'Ano', chcete-li zobrazit balíčky systémových pluginů na obrazovce Stáhnout pluginy."
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr ""
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr "Výběrem možnosti „Ano“ zobrazíte možnosti pokročilého nastavení."
 
@@ -17537,6 +17545,9 @@ msgstr "Zobrazit Merlin EPG Centrum"
 msgid "Show MiniTV in the Front Display"
 msgstr "Zobrazit MiniTV na předním displeji"
 
+msgid "Show Movie Selection in Main Menu"
+msgstr ""
+
 msgid "Show Movies List"
 msgstr "Zobrazit seznam filmů"
 
@@ -17731,6 +17742,9 @@ msgstr "Zobrazit detaily zvýrazněného úkolu"
 
 msgid "Show directories first"
 msgstr "Zobrazit nejprve adresáře"
+
+msgid "Show during operation"
+msgstr ""
 
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
 msgstr "Zobrazit informace o šifrování v Infobaru (je-li podporován vzhledem)."
@@ -19673,6 +19687,9 @@ msgstr "Protokol revizí '%s' neobsahuje žádné informace."
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr "Soubor '%s' nelze načíst, zkuste to prosím později."
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr "Režim AI používaný pro překlad jazyků. Můžete si vybrat ten, který poskytuje nejpřesnější překlad pro váš cílový jazyk."
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
 msgstr "Služba AI-Powered Translation bude optimalizována tak, aby poskytovala nejlepší výkon na základě zvolené rychlosti odesílání internetového připojení."
 
@@ -20157,6 +20174,9 @@ msgstr "Tato volba vám umožní vybrat, jak se zobrazí při přehrávání zb�
 
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
 msgstr "Tato možnost vám umožňuje vybrat, jak v pohotovostním režimu zobrazit čas nebo nic."
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
+msgstr ""
 
 msgid "This option allows you choose the background color of transparent picons."
 msgstr "Tato volba vám umožní vybrat barvu pozadí průhledných piconů."
@@ -24095,6 +24115,16 @@ msgstr "ano (uchovat zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#, python-format
+#~ msgid "%s (%04o)"
+#~ msgstr "%s (%04o)"
+
+#~ msgid "Channel List Menu"
+#~ msgstr "Nabídka Seznam kanálů"
+
+#~ msgid "Do you really want to delete?"
+#~ msgstr "Opravdu chcete smazat ?"
 
 #, python-format
 #~ msgid "Do you really want to delete %s ?"

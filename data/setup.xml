@@ -149,6 +149,7 @@
 		<item level="0" text="Status of the display in standby mode" description="With this option you can switch off the display in Standby Mode." requires="Power4x7Standby">config.usage.lcd_power4x7standby</item>
 		<item level="0" text="Status of the display in deep standby" description="With this option you can switch off the display in Deep Standby Mode." requires="Power4x7Suspend">config.usage.lcd_power4x7suspend</item>
 		<item level="0" text="Show in Standby" description="This option allows you choose if the display shows the time or nothing in Standby." requires="7segment">config.usage.show_in_standby</item>
+		<item level="0" text="Show during operation" description="This option allows you choose if the display shows the time, channel number or nothing during operation." requires="7segment">config.usage.show_in_operation</item>
 		<item level="2" text="Initial scroll delay" description="Delay in milliseconds before start of scrolling text on display." requires="VFD_initial_scroll_delay">config.usage.vfd_initial_scroll_delay</item>
 		<item level="2" text="Final scroll delay" description="Delay in milliseconds after finish scrolling text on display." requires="VFD_final_scroll_delay">config.usage.vfd_final_scroll_delay</item>
 		<item level="1" text="Repeat Display Message" description="If the text is too long to be displayed on the front panel, it will be repeated (number of times)." requires="VFD_scroll_repeats">config.usage.vfd_scroll_repeats</item>
@@ -162,8 +163,10 @@
 			<item level="1" text="Show PiP in the Front Display" description="You can Display PiP with or without OSD Menu." requires="PIPAvailable">config.lcd.modepip</item>
 			<item level="1" text="Set Framerate for MiniTV" description="Lower Framerate saves CPU Time.">config.lcd.fpsminitv</item>
 		</if>
-		<item level="1" text="REC Symbol in use" description="Enable blinking rec symbol on the LCD Display.">config.usage.blinking_rec_symbol_during_recording</item>
-		<item level="1" text="REC Symbol in Standby" description="Enable blinking rec symbol on the LCD Display in Standby.">config.usage.blinking_display_clock_during_recording</item>
+		<if requires="LCDSKIN">
+			<item level="1" text="REC Symbol in use" description="Enable blinking rec symbol on the LCD Display.">config.usage.blinking_rec_symbol_during_recording</item>
+			<item level="1" text="REC Symbol in Standby" description="Enable blinking rec symbol on the LCD Display in Standby.">config.usage.blinking_display_clock_during_recording</item>
+		</if>
 		<item level="1" text="switch 12 to 8 character display mode" description="12, show Latin-1 characters except for greek and cyrillic, switch to 8 if needed." requires="XcoreVFD">config.usage.vfd_xcorevfd</item>
 		<item level="1" text="Show Display Icons" description="Allows you to enable/disable displaying icons on the front panel.">config.lcd.mode</item>
 		<if requires="ConfigDisplay">
@@ -516,7 +519,7 @@
 		<item level="2" text="Enable GStreamer pipeline graphs *" description="Allows you to enable the GStreamer pipeline graphs. These are .dot files that describe the topology of your pipeline, along with the caps negotiated in each link.">config.crash.gstdot</item>
 		<item level="2" text="Enable core dumps *" description="Core dumps are helpful for developers in case of a FATAL SIGNAL crash in the C++ code. Typical core dump size is 110 MB so adjust maximum space used and choose proper location.">config.crash.coredump</item>
 	</setup>
-	<setup key="MovieSelection" title="Movie List Settings" showOpenWebif="1">
+	<setup key="MovieSelection" title="Movie Selection Settings" showOpenWebif="1">
 		<item level="0" text="Use 'Trash' in movie list" description="When enabled, deleted recordings are moved to the trashcan, instead of being deleted immediately.">config.usage.movielist_trashcan</item>
 		<item level="0" text="Purge 'Trash' after (days)" description="Configure the number of days after which items are automatically removed from the trashcan.">config.usage.movielist_trashcan_days</item>
 		<item level="0" text="Clean network 'Trash'" description="When enabled, network trashcans are probed for cleaning.">config.usage.movielist_trashcan_network_clean</item>
@@ -1012,6 +1015,7 @@
 		<item level="2" text="Screen saver movement" description="Select how long the screen saver image will stay in the same location on the screen before it will be moved." conditional="config.usage.screenSaverStartTimer.value">config.usage.screenSaverMoveTimer</item>
 		<item level="2" text="Show all Information screens" description="Enable this option to show all the available Information screens in the Information menu item list.">config.usage.informationShowAllMenuScreens</item>
 		<item level="2" text="Show extra spacing in Information" description="Enable to add some extra spacing to the Information screens. This can improve readability.">config.usage.informationExtraSpacing</item>
+		<item level="0" text="Show Movie Selection in Main Menu" description="Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control." restart="gui">config.usage.movieSelectionInMenu</item>
 		<item level="0" text="1st InfoBar timeout" description="Set the time to hide the infobar.">config.usage.infobar_timeout</item>
 		<item level="0" text="2nd InfoBar" description="Enable and set the duration of the second InfoBar (press 'OK' twice) that may include additional information.">config.usage.show_second_infobar</item>
 		<item level="0" text="2nd InfoBar timeout" description="Set the time to hide the second infobar. The bar also disappears on pressing 'OK'.">config.usage.second_infobar_timeout</item>

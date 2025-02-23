@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
-"PO-Revision-Date: 2025-02-08 19:21+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
+"PO-Revision-Date: 2025-02-23 18:50+0000\n"
 "Last-Translator: pololoko111 <peciek83@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/pl/>\n"
 "Language: pl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -1184,10 +1184,6 @@ msgid "%s %sB"
 msgstr "%s %sB"
 
 #, python-format
-msgid "%s (%04o)"
-msgstr "%s (%04o)"
-
-#, python-format
 msgid "%s - Setup"
 msgstr "%s - Ustawienia"
 
@@ -1563,7 +1559,7 @@ msgid "<Default movie location>"
 msgstr "<Domyślna lokalizacja filmu>"
 
 msgid "<Flash expander inactive>"
-msgstr "<Rozszerzacz flash nieaktywny>"
+msgstr "<Ekspander flash nieaktywny>"
 
 msgid "<Last timer location>"
 msgstr "<Ostatnia lokalizacja timera>"
@@ -1736,19 +1732,22 @@ msgid "AFL"
 msgstr "AFL"
 
 msgid "AI Translation color"
-msgstr "Kolor napisów oparty na sztucznej inteligencji"
+msgstr "Kolor tłumaczenia AI"
 
 msgid "AI Translation enabled"
-msgstr "Włącz tłumaczenie oparte na sztucznej inteligencji"
+msgstr "Włącz tłumaczenie AI"
 
 msgid "AI Translation language"
-msgstr "Język tłumaczenia oparty na sztucznej inteligencji"
+msgstr "Język tłumaczenia AI"
+
+msgid "AI Translation mode"
+msgstr "Tryb tłumaczenia AI"
 
 msgid "AI Translation optimization"
-msgstr "Optymalizacja tłumaczeń oparta na sztucznej inteligencji"
+msgstr "Optymalizacja tłumaczenia AI"
 
 msgid "AI Translation subscription code"
-msgstr "Kod subskrypcji tłumaczenia obsługiwanego przez sztuczną inteligencję"
+msgstr "Kod subskrypcji tłumaczenia AI"
 
 msgid "ARM"
 msgstr "ARM"
@@ -2419,6 +2418,9 @@ msgstr "Arabski"
 msgid "Arabic (Egyptian)"
 msgstr "Arabski (Egipski)"
 
+msgid "Arabic (Iraq)"
+msgstr "Arabski (Irak)"
+
 msgid "Arabic (Moroccan)"
 msgstr "Arabski (Marokański)"
 
@@ -2772,10 +2774,10 @@ msgid "Automatically turn on external subtitles"
 msgstr "Automatyczne włączenie napisów zewnętrznych"
 
 msgid "Automatically update Client/Server View"
-msgstr "Automatycznie aktualizuj widok klienta/serwera"
+msgstr "Automatyczna aktualizacja widoku klienta/serwera"
 
 msgid "Automatically update Log-Fullscreen View"
-msgstr "Automatycznie aktualizuj widok logów na pełnym ekranie"
+msgstr "Automatyczna aktualizacja logów - widok pełnoekranowy"
 
 msgid "Autostart"
 msgstr "Autostart"
@@ -3647,7 +3649,7 @@ msgid "Cancel service selection and exit"
 msgstr "Anuluj wybór usługi i wyjdź"
 
 msgid "Cancel the Reset Feeds command currently being processed"
-msgstr "Anuluj aktualnie przetwarzane polecenie Resetuj kanały"
+msgstr "Anuluj polecenie Reset Feeds, które jest obecnie przetwarzane"
 
 msgid "Cancel the bouquet selection"
 msgstr "Anuluj wybór listy kanałów"
@@ -3837,8 +3839,8 @@ msgstr "Info Kanału"
 msgid "Channel List"
 msgstr "Lista Kanałów"
 
-msgid "Channel List Menu"
-msgstr "Menu listy kanałów"
+msgid "Channel Number"
+msgstr "Numer kanału"
 
 msgid "Channel Selection"
 msgstr "Wybór kanału"
@@ -4162,7 +4164,7 @@ msgid "City"
 msgstr "Miasto"
 
 msgid "Clean (Just flash and start clean)"
-msgstr "Aktualizuj, wyczyść i skonfiguruj od zera"
+msgstr "Wyczyść (Wystarczy zainstalować i skonfiguruj od zera)"
 
 msgid "Clean network 'Trash'"
 msgstr "Wyczyść kosz ze śmieci"
@@ -4873,7 +4875,7 @@ msgid "Connected: "
 msgstr "Podłączony: "
 
 msgid "Connection information"
-msgstr "Info o połączeniu"
+msgstr "Informacje o połączeniu"
 
 msgid "Console"
 msgstr "Konsola"
@@ -5435,7 +5437,7 @@ msgid "DVB Subtitles PID & Language"
 msgstr "Napisy DVB, PID i język"
 
 msgid "DVB subtitle black transparency"
-msgstr "Przezroczystość czarnych napisów DVB"
+msgstr "Przezroczystość czarnego tła napisów DVB"
 
 msgid "DVB subtitles color"
 msgstr "Kolor napisów DVB"
@@ -5796,7 +5798,7 @@ msgid "Defines the jump distance for forward jumps. The value is multiplied by t
 msgstr "Określa odległość skoku dla skoku do przodu. Wartość jest mnożona przez prędkość przewijania, np. 4 x. Wartości znacznie mniejsza niż 4s mogą nie działać z wszystkimi plikami multimedialnymi."
 
 msgid "Defines which fast forward speeds are using normal cueing. All other forward speeds and all rewind speeds use time jumps."
-msgstr "Określa, które prędkości korzystają z normalnych wskazówek.Wszystkie inne prędkości do przodu i wszystkie prędkości użyją czasu skoku."
+msgstr "Definiuje, które prędkości szybkiego przewijania do przodu używają normalnego podpowiadania. Wszystkie inne prędkości przewijania do przodu i wszystkie prędkości przewijania do tyłu używają przeskoków czasowych."
 
 msgid "Delay after DiSEqC peripheral power on command"
 msgstr "Opóźnienie po komendzie DiSEqC peryferyjny powerON"
@@ -6422,9 +6424,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "Czy na pewno usunąć timer?"
 
-msgid "Do you really want to delete?"
-msgstr "Czy na pewno chcesz usunąć?"
-
 msgid "Do you really want to exit?"
 msgstr "Czy chcesz wyjść?"
 
@@ -6696,7 +6695,7 @@ msgid "Driver Packages"
 msgstr "Pakiety sterowników"
 
 msgid "Driver and kernel information"
-msgstr "Info o sterowniku i jądrze"
+msgstr "Informacje o sterowniku i kernel"
 
 msgid "Drivers version"
 msgstr "Wersja sterownika"
@@ -7386,7 +7385,7 @@ msgid "Enter the service pin"
 msgstr "Wpisz PIN kanału"
 
 msgid "Enter the subscription code to fully enable the AI-Powered Translation plugin, the unified code for trial is 15."
-msgstr "Wprowadź kod subskrypcji, aby w pełni włączyć wtyczkę AI-Powered Translation. Ujednolicony kod na wersję próbną to 15."
+msgstr "Wprowadź kod subskrypcji, aby w pełni włączyć wtyczkę AI Translation. Ujednolicony kod dla wersji próbnej to 15."
 
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
 msgstr "Wprowadź aktualną szerokość geograficzną. Jest to liczba stopni z równika jako dziesiętna."
@@ -7395,10 +7394,10 @@ msgid "Enter your current longitude. This is the number of degrees you are from 
 msgstr "Wprowadź aktualną długość geograficzną. Jest to liczba stopni od południka zerowego jako dziesiętna."
 
 msgid "Enter your high band local oscillator frequency. For more information consult the specifications of your LNB."
-msgstr "Wprowadź częstotliwość pasma lokalnego oscylatora lokalnego. Aby uzyskać więcej informacji, zapoznaj się z arkuszem specyfikacji swojego LNB."
+msgstr "Wprowadź częstotliwość lokalnego oscylatora pasma wysokiego. Aby uzyskać więcej informacji, zapoznaj się ze specyfikacjami swojego LNB."
 
 msgid "Enter your low band local oscillator frequency. For more information consult the specifications of your LNB."
-msgstr "Wprowadź częstotliwość lokalnego oscylatora dolnego pasma. Aby uzyskać więcej informacji, zapoznaj się z arkuszem specyfikacji swojego LNB."
+msgstr "Wprowadź częstotliwość lokalnego oscylatora pasma niskiego. Aby uzyskać więcej informacji, zapoznaj się ze specyfikacjami swojego LNB."
 
 msgid "Enter your personal feed URL to allow you to select packages from your personal feed."
 msgstr "Wprowadź adres URL swojego osobistego kanału, aby móc wybierać pakiety z tego kanału."
@@ -7715,7 +7714,7 @@ msgstr "Błąd: Wystąpił problem z zapisem '%s'!"
 
 #, python-format
 msgid "Error: There was an issue in the reset of the feeds! Please reboot the %s %s and check the file system for any errors before trying this command again."
-msgstr "Błąd: Wystąpił problem podczas resetowania kanałów! Proszę zrestartować %s %s i sprawdzić system plików pod kątem błędów przed ponowną próbą wykonania tego polecenia."
+msgstr "Błąd: Wystąpił problem podczas resetowania feed'ów! Proszę zrestartować %s %s i sprawdzić system plików pod kątem błędów przed ponowną próbą wykonania tego polecenia."
 
 msgid "Error: Unable to create the required directories on the target device (e.g. USB stick or hard disk)! Please verify device and try again."
 msgstr "Błąd: Nie udało się utworzyć wymaganych katalogów na dysku (np. USB lub dysk twardy)! Sprawdź dysk i spróbuj ponownie."
@@ -7849,6 +7848,9 @@ msgstr "Zakończ File Commander"
 msgid "Exit MAC address configuration"
 msgstr "Zamknij konfigurację adresu MAC"
 
+msgid "Exit Movie Selection"
+msgstr "Wyjdź z wyboru filmu"
+
 msgid "Exit Quad Channel Selection"
 msgstr "Wyjdź z wyboru kanału"
 
@@ -7881,9 +7883,6 @@ msgstr "Wyjdź z odtwarzacza multimedialnego"
 
 msgid "Exit menu"
 msgstr "Wyjdź z menu"
-
-msgid "Exit movie list"
-msgstr "Wyjdź z listy filmów"
 
 msgid "Exit movie player?"
 msgstr "Wyjść z odtwarzacza?"
@@ -8179,7 +8178,7 @@ msgid "Feed URL"
 msgstr "Adres URL kanału"
 
 msgid "Feed disabled!"
-msgstr "Źródło wyłączone!"
+msgstr "Serwer-wyłączony!"
 
 msgid "Feed server DNS error!"
 msgstr "Błąd DNS serwera feed!"
@@ -8188,10 +8187,10 @@ msgid "Feed server access error!"
 msgstr "Błąd dostępu do serwera feed!"
 
 msgid "Feed stable."
-msgstr "Źródło stabilne."
+msgstr "Serwer-stabilny."
 
 msgid "Feed unstable!"
-msgstr "Źródło niestabilne!"
+msgstr "Serwer-niestabilny!"
 
 msgid "Fetch EPG and update timers now"
 msgstr "Pobierz EPG i zaktualizuj timery teraz"
@@ -8401,7 +8400,7 @@ msgid "Flash Expander Actions"
 msgstr "Akcje rozszerzacza flash"
 
 msgid "Flash Image"
-msgstr "Zainstaluj"
+msgstr "Instalacja systemu"
 
 #. TRANSLATORS: The variable is the name of a distribution.  E.g. "OpenATV".
 #, python-format
@@ -8716,7 +8715,7 @@ msgid "Geolocation"
 msgstr "Geolokalizacja"
 
 msgid "Geolocation Information"
-msgstr "Info o geolokalizacji"
+msgstr "Informacje o geolokalizacji"
 
 msgid "Geolocation data does not contain time zone information."
 msgstr "Dane geolokalizacyjne nie zawierają informacji o strefie czasowej."
@@ -9050,7 +9049,7 @@ msgid "Hardware MultiBoot device"
 msgstr "Slot MultiBoot"
 
 msgid "Hardware information"
-msgstr "Info o sprzęcie"
+msgstr "Informacje o sprzęcie"
 
 msgid "Hardware serial"
 msgstr "Numer seryjny"
@@ -9119,7 +9118,7 @@ msgid "HiSilicon"
 msgstr "HiSilicon"
 
 msgid "HiSilicon specific information"
-msgstr "Informacje szczegółowe dotyczące HiSilicon"
+msgstr "Informacje specyficzne dla HiSilicon"
 
 msgid "HiSilicon specific information not found."
 msgstr "Nie znaleziono szczegółowych informacji dotyczących HiSilicon."
@@ -9970,7 +9969,10 @@ msgid "Internal"
 msgstr "Wewnętrzny"
 
 msgid "Internal Flash"
-msgstr "Wewnętrzna pamięć flash"
+msgstr "Wewnętrzny flash"
+
+msgid "Internal SSD"
+msgstr "Wewnętrzny NVMe"
 
 msgid "Internal USB"
 msgstr "Wewnętrzny USB"
@@ -9984,7 +9986,7 @@ msgstr "Wewnętrzny flash:  %s %s "
 
 #, python-format
 msgid "Internal flash: %s %s as USB Recovery"
-msgstr "Wewnętrzna pamięć flash: %s %s jako USB Recovery"
+msgstr "Wewnętrzny flash: %s %s USB Recovery"
 
 msgid "Internal hdd only"
 msgstr "Tylko wewnętrzny hdd"
@@ -10639,7 +10641,7 @@ msgid "Local date/time"
 msgstr "Lokalna data/czas"
 
 msgid "Local information"
-msgstr "Info lokalne"
+msgstr "Informacje lokalne"
 
 msgid "Local network"
 msgstr "Lokalna Sieć"
@@ -10692,7 +10694,7 @@ msgid "Location Selection Actions"
 msgstr "Akcje wyboru lokalizacji"
 
 msgid "Location information"
-msgstr "Info o lokalizacji"
+msgstr "Informacje o lokalizacji"
 
 msgid "Location list"
 msgstr "Lista lokalizacji"
@@ -11164,7 +11166,7 @@ msgid "Mexico"
 msgstr "Meksyk"
 
 msgid "Micro SD"
-msgstr "Micro SD"
+msgstr "Karta SD"
 
 msgid "Micronesia, Federated States of"
 msgstr "Mikronezja, Sfederowane Stany Mikronezji"
@@ -11608,17 +11610,17 @@ msgstr "Lista filmów"
 msgid "Movie List Actions"
 msgstr "Akcje listy filmów"
 
-msgid "Movie List Settings"
-msgstr "Ustawienia listy filmów"
-
 msgid "Movie Player Actions"
 msgstr "Akcje odtwarzacza filmów"
 
-msgid "Movie playback may not use an invalid/inappropriate directory."
-msgstr "Odtwarzanie filmów nie może korzystać z nieprawidłowego/nieodpowiedniego katalogu."
+msgid "Movie Selection"
+msgstr "Wybór filmów"
 
-msgid "Movie selection"
-msgstr "Filmy/Multimedia"
+msgid "Movie Selection Settings"
+msgstr "Ustawienia wyboru filmu"
+
+msgid "Movie playback may not use an invalid/inappropriate directory."
+msgstr "Odtwarzanie filmu nie może odbywać się przy użyciu nieprawidłowego/niewłaściwego katalogu."
 
 msgid "Movie/Drama"
 msgstr "Film/Dramat"
@@ -11855,7 +11857,7 @@ msgid "Network ID"
 msgstr "ID sieci"
 
 msgid "Network Information"
-msgstr "Info o sieci"
+msgstr "Informacje o sieci"
 
 msgid "Network Information Actions"
 msgstr "Działania dotyczące informacji o sieci"
@@ -11909,7 +11911,7 @@ msgid "Network configuration..."
 msgstr "Ustawienia sieci..."
 
 msgid "Network information"
-msgstr "Info o sieci"
+msgstr "Informacje o sieci"
 
 #, python-format
 msgid "Network information for %s %s"
@@ -13306,6 +13308,9 @@ msgstr "Odtwarzaj wybraną usługę"
 msgid "Playback Settings"
 msgstr "Ustawienia odtwarzania"
 
+msgid "Playback Time:"
+msgstr "Czas odtwarzania:"
+
 msgid "Playback, Recording & Time Shift"
 msgstr "Nagrywanie i timeshift"
 
@@ -13461,7 +13466,7 @@ msgid "Please select the target location to save the backup:"
 msgstr "Wybierz lokalizację docelową, aby zapisać kopię zapasową:"
 
 msgid "Please select what to do after flash of the following image:"
-msgstr "Wybierz, co zrobić po flashowaniu następującego systemu:"
+msgstr "Wybierz, co zrobić po wgraniu następującego systemu:"
 
 msgid ""
 "Please use direction keys to move the PiP window.\n"
@@ -13503,7 +13508,7 @@ msgid "Please wait while the data is extracted..."
 msgstr "Proszę poczekać, aż dane zostaną wyodrębnione..."
 
 msgid "Please wait while the feeds are reset (cleared and reloaded)..."
-msgstr "Poczekaj, aż feedy zostaną zresetowane (wyczyszczone i ponownie załadowane)..."
+msgstr "Poczekaj, aż feed'y zostaną zresetowane (wyczyszczone i ponownie załadowane)..."
 
 msgid "Please wait while the file is read and processed..."
 msgstr "Proszę czekać, aż plik zostanie odczytany i przetworzony..."
@@ -13548,7 +13553,7 @@ msgid "Please wait while your skin setting is restoring..."
 msgstr "Proszę czekać, przywracanie ustawień skórki..."
 
 msgid "Please wait whilst feeds state is checked."
-msgstr "Proszę czekać, 'feeds' jest sprawdzany."
+msgstr "Proszę czekać, feed jest sprawdzany."
 
 msgid "Please wait, copy of flash memory is being deleted. This could take a few minutes to complete."
 msgstr "Proszę czekać, kopia pamięci flash jest kasowana. Może to potrwać kilka minut."
@@ -13973,7 +13978,7 @@ msgid "Processing"
 msgstr "Przetwarzanie"
 
 msgid "Processor information"
-msgstr "Info o procesorze"
+msgstr "Informacje o procesorze"
 
 msgid "Profile"
 msgstr "Profil"
@@ -14663,7 +14668,7 @@ msgid "Remove Bookmark"
 msgstr "Usuń zakładkę"
 
 msgid "Remove Bouquet From Parental Protection"
-msgstr "usuń listę kanałów z ochrony rodzicielskiej"
+msgstr "Usuń listę kanałów z kontroli rodzicielskiej"
 
 msgid "Remove Cable Services"
 msgstr "Usuń kanały telewizji kablowej"
@@ -14672,7 +14677,7 @@ msgid "Remove Confirmation"
 msgstr "Potwierdź usunięcie"
 
 msgid "Remove Entry"
-msgstr "Usuń kanał"
+msgstr "Usuń wpis"
 
 msgid "Remove Files"
 msgstr "Usuń pliki"
@@ -14696,7 +14701,7 @@ msgid "Remove Satellite Services"
 msgstr "Usuń wybranego satelitę"
 
 msgid "Remove Service"
-msgstr "Usuń kanał"
+msgstr "Usuń usługę"
 
 msgid "Remove Terrestrial Services"
 msgstr "Usuń kanały naziemne"
@@ -15822,7 +15827,7 @@ msgid "Select 'Yes' to display unknown files in the File Commander file viewer, 
 msgstr "Wybierz \"Tak\", aby wyświetlić nieznane pliki w podglądzie plików File Commander, wybierz \"Nie\", aby nie przetwarzać nieznanych plików."
 
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
-msgstr "Wybierz opcję „Tak”, aby włączyć tłumaczenie wspomagane sztuczną inteligencją dla wszystkich napisów teletekstu i DVB."
+msgstr "Wybierz 'Tak', aby włączyć tłumaczenie AI dla wszystkich napisów teletekstowych i DVB."
 
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "Wybierz \"Tak\", aby włączyć edycję ustawień urządzenia. Wybierz \"Nie\" aby przywrócić domyślne ustawienia urządzenia."
@@ -15956,6 +15961,9 @@ msgstr "Wybierz opcję „Tak”, aby wyświetlić pakiety subskrypcji na ekrani
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr "Wybierz \"Tak\", aby wyświetlić pakiety wtyczek systemowych na ekranie pobierania wtyczek."
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr "Wybierz 'Tak', aby wyświetlić wpis 'Wybór filmu' w Menu głównym. Może to zapewnić dostęp do ekranu Wybór filmu, gdy na pilocie nie ma przypisanego przycisku."
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr "Wybierz \"Tak\", aby wyświetlić zaawansowane opcje ustawień."
 
@@ -15978,7 +15986,7 @@ msgid "Select 'Yes' to split tasks into separate actions."
 msgstr "Wybierz 'Tak', aby podzielić zadania na osobne działania."
 
 msgid "Select 'Yes' to use alternate GitHub feed IP addresses. This can be helpful if you use a VPN and the normal feeds can't be accessed via the published DNS names."
-msgstr "Wybierz \"Tak\", aby użyć alternatywnego adresu IP źródła GitHub. Może to być pomocne, gdy używasz VPN, a nie można uzyskać dostępu do normalnych źródeł za pomocą opublikowanych nazw DNS."
+msgstr "Wybierz \"Tak\", aby użyć alternatywnego adresu IP feed'a GitHub. Może to być pomocne, gdy używasz VPN, a nie można uzyskać dostępu do normalnych feed'ów za pomocą opublikowanych nazw DNS."
 
 msgid "Select 'Yes' to use legacy navigation where CH+/- swaps the active column. Select 'No' to use the newer unified navigation option for consistent navigation with other screens where LEFT/RIGHT swaps the active column and CH+/- pages up and down the list."
 msgstr "Wybierz „Tak”, aby użyć starszej nawigacji, w której CH+/- zamienia aktywną kolumnę. Wybierz opcję „Nie”, aby użyć nowszej, ujednoliconej opcji nawigacji w celu spójnej nawigacji z innymi ekranami, gdzie LEWO/PRAWO zamienia aktywną kolumnę i strony CH+/- w górę i w dół listy."
@@ -16050,7 +16058,7 @@ msgid "Select Time Shift Location"
 msgstr "Wybierz lokalizację przesunięcia w czasie"
 
 msgid "Select Upgrade Source"
-msgstr "Źródło aktualizacji"
+msgstr "Wybierz źródło aktualizacji"
 
 msgid "Select Upgrade Source To Edit"
 msgstr "Wybierz źródło aktualizacji do edycji"
@@ -16193,7 +16201,7 @@ msgid "Select how to activate the Quick EPG mode."
 msgstr "Wybierz sposób aktywacji trybu szybkiego EPG."
 
 msgid "Select how your box will upgrade."
-msgstr "Wybór trybu aktualizacji."
+msgstr "Wybierz sposób aktualizacji urządzenia."
 
 msgid "Select if an end time is required."
 msgstr "Wybierz, czy wymagany jest czas zakończenia."
@@ -16293,7 +16301,7 @@ msgid "Select the %s entry"
 msgstr "Wybierz wpis %s"
 
 msgid "Select the AI-Powered Translation target language."
-msgstr "Wybierz język docelowy tłumaczenia wspomaganego przez sztuczną inteligencję."
+msgstr "Wybierz język docelowy tłumaczenia AI."
 
 msgid "Select the No / False response"
 msgstr "Wybierz odpowiedź jako Nie/Fałsz"
@@ -16355,7 +16363,7 @@ msgid "Select the character or action under the keyboard cursor"
 msgstr "Wybierz znak lub akcję pod kursorem klawiatury"
 
 msgid "Select the color to be used for the AI-Powered Translation text."
-msgstr "Wybierz kolor, który będzie używany w tekście tłumaczenia wspomaganego przez sztuczną inteligencję."
+msgstr "Wybierz kolor, który będzie używany dla tekstu tłumaczenia AI."
 
 msgid "Select the current bookmarked location and exit"
 msgstr "Wybierz bieżącą lokalizację zakładki i wyjdź"
@@ -16585,7 +16593,7 @@ msgid "Select the sort order of the menu entries. User defined also allows the m
 msgstr "Wybierz kolejność sortowania pozycji menu. Zdefiniowane przez użytkownika pozwala również na ukrycie pozycji menu."
 
 msgid "Select the source location from where to obtain the upgrade files."
-msgstr "Wybierz lokalizację źródłową, z której zostaną pobrane pliki ulepszenia."
+msgstr "Wybierz lokalizację źródłową, z której chcesz pobrać pliki aktualizacji."
 
 msgid "Select the source of the default DNS settings."
 msgstr "Wybierz źródło domyślnych ustawień DNS."
@@ -17061,7 +17069,7 @@ msgid "Set the default location to store your time shift buffer files. Press 'OK
 msgstr "Ustaw domyślną lokalizację dla nagrań-timeshiftu. Naciśnij przycisk 'OK', aby dodać nową lokalizację użyj strzałek 'lewo/prawo'."
 
 msgid "Set the default movie selection location for your media files. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
-msgstr "Ustaw domyślną lokalizację nagrań.Naciśnij przycisk 'OK', aby dodać nową lokalizację użyj strzałek 'lewo/prawo'."
+msgstr "Ustaw domyślną lokalizację wyboru filmu dla swoich plików multimedialnych. Naciśnij 'OK', aby dodać nowe lokalizacje, naciśnij 'LEWO'/'PRAWO', aby wybrać z wcześniej zdefiniowanych lokalizacji."
 
 msgid "Set the default recording location for your timers. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Ustaw domyślną lokalizację dla swoich timerów. Naciśnij przycisk 'OK', aby dodać nowa lokalizację użyj strzałek 'lewo/prawo'."
@@ -17549,6 +17557,9 @@ msgstr "Pokaż Centrum Merlin EPG"
 msgid "Show MiniTV in the Front Display"
 msgstr "Pokaż MiniTV na przednim wyświetlaczu"
 
+msgid "Show Movie Selection in Main Menu"
+msgstr "Pokaż wybór filmów w menu głównym"
+
 msgid "Show Movies List"
 msgstr "Pokaż Listę Filmów"
 
@@ -17743,6 +17754,9 @@ msgstr "Pokaż szczegóły podświetlonego zadania"
 
 msgid "Show directories first"
 msgstr "Pokaż najpierw katalogi"
+
+msgid "Show during operation"
+msgstr "Pokaż podczas działania"
 
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
 msgstr "Pokaż informacje o kodowaniu na pasku informacyjnym (jeśli posiada wsparcie w skórce)."
@@ -18432,7 +18446,7 @@ msgstr "Slot %s: %s (Bieżący system)"
 
 #, python-format
 msgid "Slot %s: %s as USB Recovery"
-msgstr "Slot %s: %s jako USB Recovery"
+msgstr "Slot %s: %s USB Recovery"
 
 #, python-format
 msgid "Slot '%s' %s"
@@ -18561,7 +18575,7 @@ msgid "Software Update Actions"
 msgstr "Akcje aktualizacji oprogramowania"
 
 msgid "Software information"
-msgstr "Info o oprogramowaniu"
+msgstr "Informacje o oprogramowaniu"
 
 msgid ""
 "Software update starting, please wait.\n"
@@ -19686,8 +19700,11 @@ msgstr "Log %s nie zawiera żadnych informacji."
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr "Nie można odzyskać pliku \"%s\", spróbuj ponownie później."
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr "Tryb AI używany do tłumaczenia języków. Możesz wybrać ten, który daje najdokładniejsze tłumaczenie dla Twojego języka docelowego."
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
-msgstr "Usługa tłumaczenia wspomaganego sztuczną inteligencją zostanie zoptymalizowana w celu zapewnienia najlepszej wydajności w oparciu o wybraną prędkość wysyłania połączenia internetowego."
+msgstr "Usługa tłumaczenia AI zostanie zoptymalizowana w celu zapewnienia najlepszej wydajności na podstawie wybranej prędkości przesyłania danych połączenia internetowego."
 
 msgid ""
 "The AutoTimer plugin is not installed!\n"
@@ -19847,7 +19864,7 @@ msgid "The backup succeeded"
 msgstr "Kopia zapasowa wykonana poprawnie"
 
 msgid "The backup succeeded. We will now continue to explain the upgrade process."
-msgstr "Kopia zapasowa wykonana poprawnie. Będziemy kontynuować, aby wyjaśnić proces ulepszania."
+msgstr "Kopia zapasowa wykonana poprawnie. Będziemy kontynuować, aby wyjaśnić proces aktualizacji."
 
 msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
 msgstr "Szybkość transmisji kodera wideo. Większa wartość poprawia jakość i zwiększa rozmiar pliku."
@@ -19954,7 +19971,7 @@ msgstr ""
 " Czy na pewno chcesz włączyć VPS?"
 
 msgid "The service list is reloaded."
-msgstr "Listy kanałów została przeładowana."
+msgstr "Lista kanałów została przeładowana."
 
 msgid "The setting 'Without query' is the same as 'Standard' without additional confirmation query. All other dependencies (e.g. recordings, time range) persist."
 msgstr "Ustawienie „bez warunku” jest takie samo jak „standardowe” bez dodatkowego zapytania potwierdzającego. Wszystkie inne zależności (np. nagrania, zakres czasowy) pozostają bez zmian."
@@ -20170,6 +20187,9 @@ msgstr "Ta opcja pozwala wybrać sposób wyświetlania czasu pozostałego/upływ
 
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
 msgstr "Ta opcja pozwala wybrać, czy w trybie gotowości wyświetlacz ma pokazywać godzinę, czy też nic."
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
+msgstr "Opcja ta pozwala wybrać, czy podczas pracy wyświetlacz ma pokazywać godzinę, numer kanału czy nic."
 
 msgid "This option allows you choose the background color of transparent picons."
 msgstr "Ta opcja pozwala wybrać kolor tła dla przezroczystych pikon."
@@ -21135,7 +21155,7 @@ msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "Nie udało się zainicjować Kexec MultiBoot!"
 
 msgid "Unattended upgrade without GUI"
-msgstr "Aktualizacja bez nadzoru poza GUI"
+msgstr "Nienadzorowana aktualizacja bez interfejsu graficznego"
 
 msgid "Undefined"
 msgstr "Nieokreślony"
@@ -21338,10 +21358,10 @@ msgid "Update the selected plugin / list of plugins"
 msgstr "Zaktualizuj wybraną wtyczkę / listę wtyczek"
 
 msgid "Update/Backup your firmware, Backup/Restore settings"
-msgstr "Aktualizuj, wykonaj kopię zapasową systemu i przywróć ustawienia"
+msgstr "Aktualizuj/Utwórz kopię zapasową oprogramowania, Utwórz kopię zapasową/Przywróć ustawienia"
 
 msgid "Update/Backup/Restore your box"
-msgstr "Instalacja, aktualizacja, i zarządzanie oprogramowaniem"
+msgstr "Aktualizuj-Utwórz kopię zapasową-Przywróć ustawienia"
 
 msgid "Updated"
 msgstr "Zaktualizowano"
@@ -21359,7 +21379,7 @@ msgid "Updating package list."
 msgstr "Aktualizowanie listy pakietów."
 
 msgid "Upgrade (Flash & restore all)"
-msgstr "Aktualizuj (Przywróć wszystko)"
+msgstr "Uaktualnienie (instalowanie i przywracanie wszystkiego)"
 
 msgid "Upgrade finished."
 msgstr "Aktualizacja zakończona."
@@ -21408,7 +21428,7 @@ msgid "Usage & GUI"
 msgstr "Obsługa i interfejs"
 
 msgid "Usage Setup"
-msgstr "Ustawienia użycia"
+msgstr "Ustawienia zaawansowane"
 
 msgid "Use"
 msgstr "Użyj"
@@ -22091,7 +22111,7 @@ msgid "WAN Geolocation"
 msgstr "Geolokalizacja sieci WAN"
 
 msgid "WAN connection information"
-msgstr "Info o połączeniu WAN"
+msgstr "Informacje o połączeniu WAN"
 
 msgid "WARNING:"
 msgstr "OSTRZEŻENIE:"
@@ -22170,10 +22190,10 @@ msgstr "Ostrzeżenie"
 
 #, python-format
 msgid "Warning: %d feeds were unable to be reloaded!"
-msgstr "Ostrzeżenie: nie można ponownie załadować %d feeds!"
+msgstr "Ostrzeżenie: Nie udało się przeładować %d feed'ów!"
 
 msgid "Warning: Canceling this process will leave the feeds in an incomplete and unusable state!"
-msgstr "Ostrzeżenie: Anulowanie tego procesu spowoduje, że kanały staną się niekompletne i nienadające się do użytku!"
+msgstr "Ostrzeżenie: Anulowanie tego procesu spowoduje, że feed'y będą niekompletne i bezużyteczne!"
 
 msgid "Warning: Overrides are currently active!"
 msgstr "Uwaga: Nadpisywanie jest aktualnie aktywne!"
@@ -22260,7 +22280,7 @@ msgstr ""
 "Przejdź do miejsca, które ma być nowym końcem pliku. Naciśnij 'OK', wybierz 'koniec cięcia'. To wszystko."
 
 msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of the %s %s by providing a backup facility for the current settings and a short explanation of how to upgrade the firmware."
-msgstr "Witamy w kreatorze aktualizacji systemu. Kreator pomoże Ci w aktualizacji oprogramowania sprzętowego %s %s, udostępniając kopię zapasową bieżących ustawień i krótkie wyjaśnienie, jak zaktualizować oprogramowanie sprzętowe."
+msgstr "Witamy w kreatorze aktualizacji obrazu. Kreator pomoże Ci w aktualizacji oprogramowania %s %s, zapewniając funkcję kopii zapasowej bieżących ustawień i krótkie wyjaśnienie, jak uaktualnić oprogramowanie."
 
 msgid "Welcome..."
 msgstr "Witaj..."
@@ -24104,10 +24124,20 @@ msgid "yellow"
 msgstr "Żółty"
 
 msgid "yes (keep feeds)"
-msgstr "tak (zachować kanały)"
+msgstr "tak (zachować feed'y)"
 
 msgid "®"
 msgstr "®"
+
+#, python-format
+#~ msgid "%s (%04o)"
+#~ msgstr "%s (%04o)"
+
+#~ msgid "Channel List Menu"
+#~ msgstr "Menu listy kanałów"
+
+#~ msgid "Do you really want to delete?"
+#~ msgstr "Czy na pewno chcesz usunąć?"
 
 #, python-format
 #~ msgid "Do you really want to delete %s ?"

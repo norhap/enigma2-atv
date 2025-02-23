@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openATV / enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
 "PO-Revision-Date: 2024-01-13 10:34+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/id/>\n"
@@ -1280,10 +1280,6 @@ msgstr "%s %s remote kontrol (bawaan)"
 msgid "%s %sB"
 msgstr ""
 
-#, fuzzy, python-format
-msgid "%s (%04o)"
-msgstr "%s (%s)\n"
-
 #, python-format
 msgid "%s - Setup"
 msgstr "%s - Pengaturan"
@@ -1848,6 +1844,9 @@ msgid "AI Translation enabled"
 msgstr ""
 
 msgid "AI Translation language"
+msgstr ""
+
+msgid "AI Translation mode"
 msgstr ""
 
 msgid "AI Translation optimization"
@@ -2540,6 +2539,9 @@ msgid "Arabic"
 msgstr "Arab"
 
 msgid "Arabic (Egyptian)"
+msgstr ""
+
+msgid "Arabic (Iraq)"
 msgstr ""
 
 msgid "Arabic (Moroccan)"
@@ -3980,8 +3982,8 @@ msgstr "Channel Info"
 msgid "Channel List"
 msgstr "Channel List"
 
-msgid "Channel List Menu"
-msgstr "Channel List Menu"
+msgid "Channel Number"
+msgstr ""
 
 msgid "Channel Selection"
 msgstr "Channel Selection"
@@ -6593,9 +6595,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "Do you really want to delete this timer?"
 
-msgid "Do you really want to delete?"
-msgstr "Do you really want to delete?"
-
 msgid "Do you really want to exit?"
 msgstr "Do you really want to exit?"
 
@@ -8027,6 +8026,9 @@ msgstr ""
 msgid "Exit MAC address configuration"
 msgstr "Exit MAC address configuration"
 
+msgid "Exit Movie Selection"
+msgstr "Exit Movie Selection"
+
 msgid "Exit Quad Channel Selection"
 msgstr "Exit Quad Channel Selection"
 
@@ -8059,9 +8061,6 @@ msgstr "Exit mediaplayer"
 
 msgid "Exit menu"
 msgstr ""
-
-msgid "Exit movie list"
-msgstr "Exit movie list"
 
 msgid "Exit movie player?"
 msgstr "Exit movie player?"
@@ -10222,6 +10221,9 @@ msgstr "Internal"
 msgid "Internal Flash"
 msgstr "Internal flash"
 
+msgid "Internal SSD"
+msgstr ""
+
 msgid "Internal USB"
 msgstr "Internal USB"
 
@@ -11904,20 +11906,20 @@ msgstr "Movie List"
 
 #, fuzzy
 msgid "Movie List Actions"
-msgstr "Movie selection"
-
-msgid "Movie List Settings"
-msgstr "Movie List Settings"
+msgstr "Movie Selection"
 
 #, fuzzy
 msgid "Movie Player Actions"
-msgstr "Movie selection"
+msgstr "Movie Selection"
+
+msgid "Movie Selection"
+msgstr "Movie Selection"
+
+msgid "Movie Selection Settings"
+msgstr "Movie Selection Settings"
 
 msgid "Movie playback may not use an invalid/inappropriate directory."
 msgstr ""
-
-msgid "Movie selection"
-msgstr "Movie selection"
 
 msgid "Movie/Drama"
 msgstr "Movie/Drama"
@@ -13657,6 +13659,9 @@ msgid "Play the selected service"
 msgstr ""
 
 msgid "Playback Settings"
+msgstr ""
+
+msgid "Playback Time:"
 msgstr ""
 
 msgid "Playback, Recording & Time Shift"
@@ -16356,6 +16361,9 @@ msgstr ""
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr ""
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr ""
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr ""
 
@@ -17962,6 +17970,9 @@ msgstr "Show Merlin EPG Center"
 msgid "Show MiniTV in the Front Display"
 msgstr "Show MiniTV in the Front Display"
 
+msgid "Show Movie Selection in Main Menu"
+msgstr ""
+
 msgid "Show Movies List"
 msgstr "Show Movies List"
 
@@ -18162,6 +18173,9 @@ msgstr ""
 #, fuzzy
 msgid "Show directories first"
 msgstr "Show Movies List"
+
+msgid "Show during operation"
+msgstr ""
 
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
 msgstr "Show encryption information in the InfoBar (when supported by the skin)."
@@ -20151,6 +20165,9 @@ msgstr ""
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr ""
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr ""
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
 msgstr ""
 
@@ -20618,6 +20635,9 @@ msgstr "This option allows you choose how to display the remaining/elapsed time 
 #, fuzzy
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
 msgstr "This option allows you to choose how to display elapsed time, as + or -."
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
+msgstr ""
 
 msgid "This option allows you choose the background color of transparent picons."
 msgstr "This option allows you choose the background color of transparent picons."
@@ -24605,6 +24625,16 @@ msgstr "yes (keep feeds)"
 
 msgid "®"
 msgstr ""
+
+#, fuzzy, python-format
+#~ msgid "%s (%04o)"
+#~ msgstr "%s (%s)\n"
+
+#~ msgid "Channel List Menu"
+#~ msgstr "Channel List Menu"
+
+#~ msgid "Do you really want to delete?"
+#~ msgstr "Do you really want to delete?"
 
 #, python-format
 #~ msgid "Do you really want to delete %s ?"

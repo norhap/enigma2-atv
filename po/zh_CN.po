@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
-"PO-Revision-Date: 2025-02-08 19:21+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
+"PO-Revision-Date: 2025-02-23 14:07+0000\n"
 "Last-Translator: Mark Stone <grystyle@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 "X-SourceCharset: UTF-8\n"
 "X-Generated: TM2TURK by thawtes\n"
 
@@ -75,7 +75,7 @@ msgid " <empty>"
 msgstr " <空白>"
 
 msgid " HI "
-msgstr " HI "
+msgstr " 听障 "
 
 msgid " and"
 msgstr " 和"
@@ -1144,10 +1144,6 @@ msgid "%s %sB"
 msgstr "%s %sB"
 
 #, python-format
-msgid "%s (%04o)"
-msgstr "%s (%04o)"
-
-#, python-format
 msgid "%s - Setup"
 msgstr "%s - 设置"
 
@@ -1701,6 +1697,9 @@ msgstr "已启用人工智能翻译"
 
 msgid "AI Translation language"
 msgstr "人工智能翻译语言"
+
+msgid "AI Translation mode"
+msgstr "AI 翻译模式"
 
 msgid "AI Translation optimization"
 msgstr "人工智能翻译优化"
@@ -2376,6 +2375,9 @@ msgstr "阿拉伯语"
 
 msgid "Arabic (Egyptian)"
 msgstr "阿拉伯语（埃及）"
+
+msgid "Arabic (Iraq)"
+msgstr "阿拉伯语（伊拉克）"
 
 msgid "Arabic (Moroccan)"
 msgstr "阿拉伯语（摩洛哥）"
@@ -3795,8 +3797,8 @@ msgstr "频道信息"
 msgid "Channel List"
 msgstr "频道列表"
 
-msgid "Channel List Menu"
-msgstr "频道列表菜单"
+msgid "Channel Number"
+msgstr "频道号"
 
 msgid "Channel Selection"
 msgstr "频道选择"
@@ -6377,9 +6379,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "真的要删除这个定时器吗？"
 
-msgid "Do you really want to delete?"
-msgstr "真的要删除？"
-
 msgid "Do you really want to exit?"
 msgstr "真的要退出？"
 
@@ -6587,7 +6586,7 @@ msgstr[0] "完成 - 已安装，升级或删除了 %d 个软件包 (%s)"
 msgstr[1] "完成 - 已安装，升级或删除了 %d 个软件包 (%s)"
 
 msgid "Down"
-msgstr "下 箭头"
+msgstr "下"
 
 msgid "Down / Inactive"
 msgstr "Down / 非活动"
@@ -7801,6 +7800,9 @@ msgstr "退出文件指挥官"
 msgid "Exit MAC address configuration"
 msgstr "退出 MAC 地址配置"
 
+msgid "Exit Movie Selection"
+msgstr "退出影片列表"
+
 msgid "Exit Quad Channel Selection"
 msgstr "退出四路频道选择"
 
@@ -7833,9 +7835,6 @@ msgstr "退出媒体播放器"
 
 msgid "Exit menu"
 msgstr "退出菜单"
-
-msgid "Exit movie list"
-msgstr "退出影片列表"
 
 msgid "Exit movie player?"
 msgstr "退出电影播放器？"
@@ -8957,7 +8956,7 @@ msgid "HH:mm:ss"
 msgstr "24小时制 时时:分分:秒秒"
 
 msgid "HI-cleanup for external subtitles"
-msgstr "HI-cleanup外挂字幕"
+msgstr "外挂听障字幕清理"
 
 msgid "HLG Support"
 msgstr "HLG 支持"
@@ -9924,6 +9923,9 @@ msgstr "内部"
 msgid "Internal Flash"
 msgstr "内部闪存"
 
+msgid "Internal SSD"
+msgstr "内置固态硬盘"
+
 msgid "Internal USB"
 msgstr "内部 USB"
 
@@ -10394,7 +10396,7 @@ msgid "Lebanon"
 msgstr "黎巴嫩"
 
 msgid "Left"
-msgstr "左 箭头"
+msgstr "左"
 
 msgid "Left USB"
 msgstr "左侧 USB"
@@ -10702,7 +10704,7 @@ msgid "Long << / >>"
 msgstr "长按 << / >>"
 
 msgid "Long Left/Right"
-msgstr "长按 左/右 箭头"
+msgstr "长按 左/右 键"
 
 msgid "Long filenames"
 msgstr "长文件名"
@@ -11557,17 +11559,17 @@ msgstr "电影列表"
 msgid "Movie List Actions"
 msgstr "影片列表操作"
 
-msgid "Movie List Settings"
-msgstr "影片列表设置"
-
 msgid "Movie Player Actions"
 msgstr "电影播放器操作"
 
+msgid "Movie Selection"
+msgstr "影片选择"
+
+msgid "Movie Selection Settings"
+msgstr "影片列表设置"
+
 msgid "Movie playback may not use an invalid/inappropriate directory."
 msgstr "电影播放不得使用无效/不适当的目录。"
-
-msgid "Movie selection"
-msgstr "影片选择"
 
 msgid "Movie/Drama"
 msgstr "电影/戏剧"
@@ -13254,6 +13256,9 @@ msgstr "播放选择的频道"
 
 msgid "Playback Settings"
 msgstr "回放设置"
+
+msgid "Playback Time:"
+msgstr "播放时间："
 
 msgid "Playback, Recording & Time Shift"
 msgstr "回放、录像和时移"
@@ -15900,6 +15905,9 @@ msgstr "选择“是”以在“下载插件”屏幕中显示订阅包。"
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr "选择“是”在下载插件屏幕中显示系统插件包。"
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr "选择“是”以在主菜单中显示“电影选择”条目。当遥控器上没有指定按钮时，这可以提供访问电影选择屏幕的途径。"
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr "选择“是”以显示高级设置选项。"
 
@@ -16209,7 +16217,7 @@ msgid "Select refresh rate"
 msgstr "选择刷新率"
 
 msgid "Select seekbar to be activated by arrow L/R (long) or << >> (long)."
-msgstr "选择要激活的进度条，通过（长按）左/右箭头或（长按）<< >>。"
+msgstr "选择要激活的进度条，通过（长按）左/右键或（长按）<< >>。"
 
 msgid "Select service information to view:"
 msgstr "选择要查看的频道信息："
@@ -16568,7 +16576,7 @@ msgid "Select the time zone within the area or region."
 msgstr "选择区域或区域内的时区。"
 
 msgid "Select the timer from the fallback tuner by default"
-msgstr "默认情况下从后备调谐器中选择定时器"
+msgstr "默认情况下，从备用调谐器选择定时器"
 
 msgid "Select the tuner that controls the motorized dish."
 msgstr "选择控制电动天线的调谐器。"
@@ -17493,6 +17501,9 @@ msgstr "显示梅林 EPG 中心"
 msgid "Show MiniTV in the Front Display"
 msgstr "在前端显示屏中显示 MiniTV"
 
+msgid "Show Movie Selection in Main Menu"
+msgstr "在主菜单中显示电影选择"
+
 msgid "Show Movies List"
 msgstr "显示影片列表"
 
@@ -17687,6 +17698,9 @@ msgstr "显示突出显示任务的详细信息"
 
 msgid "Show directories first"
 msgstr "首先显示目录"
+
+msgid "Show during operation"
+msgstr "操作期间显示"
 
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
 msgstr "在信息栏上显示加密信息（当皮肤支持时）。"
@@ -19627,6 +19641,9 @@ msgstr "“%s”提交日志不包含任何信息。"
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr "无法检索“%s”文件，请稍后再试。"
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr "用于翻译语言的 AI 模式。您可以选择为目标语言提供最准确翻译的模式。"
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
 msgstr "人工智能驱动的翻译服务将根据所选的互联网连接上传速度进行优化，以提供最佳性能。"
 
@@ -20111,6 +20128,9 @@ msgstr "此选项允许您选择如何显示媒体播放的剩余/已用时间�
 
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
 msgstr "此选项允许您选择显示屏在待机状态下是否显示时间或不显示任何内容。"
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
+msgstr "此选项允许您选择在操作期间显示屏是显示时间、频道号还是不显示任何内容。"
 
 msgid "This option allows you choose the background color of transparent picons."
 msgstr "此选项允许您选择透明频道图标的背景颜色。"
@@ -21230,7 +21250,7 @@ msgid "Unzipping Image"
 msgstr "正在解压镜像"
 
 msgid "Up"
-msgstr "上 箭头"
+msgstr "上"
 
 msgid "Up / Active"
 msgstr "Up / 活动"
@@ -22276,7 +22296,7 @@ msgid "When enabled the timer from the fallback tuner is imported"
 msgstr "启用后，将导入备用调谐器中的定时器"
 
 msgid "When enabled the timer from the fallback tuner is the default timer"
-msgstr "启用后，后备调谐器中的定时器是默认定时器"
+msgstr "启用时，默认使用备用调谐器的定时器"
 
 msgid "When enabled you can customize the OpenWebIf settings for the fallback tuner"
 msgstr "启用后，您可以自定义备用调谐器的 OpenWebIf 设置"
@@ -24048,6 +24068,16 @@ msgstr "是（保留订阅源）"
 
 msgid "®"
 msgstr "®"
+
+#, python-format
+#~ msgid "%s (%04o)"
+#~ msgstr "%s (%04o)"
+
+#~ msgid "Channel List Menu"
+#~ msgstr "频道列表菜单"
+
+#~ msgid "Do you really want to delete?"
+#~ msgstr "真的要删除？"
 
 #, python-format
 #~ msgid "Do you really want to delete %s ?"

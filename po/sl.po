@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
 "PO-Revision-Date: 2016-04-02 23:18+0200\n"
 "Last-Translator: Andy Blackburn <andyblac@icloud.com>\n"
 "Language-Team: OldSkul from www.linux-sprejemniki.info\n"
@@ -1293,11 +1293,6 @@ msgstr ""
 
 #
 #, fuzzy, python-format
-msgid "%s (%04o)"
-msgstr "%s (%s)\n"
-
-#
-#, fuzzy, python-format
 msgid "%s - Setup"
 msgstr "Nastavitve"
 
@@ -1895,6 +1890,9 @@ msgid "AI Translation enabled"
 msgstr ""
 
 msgid "AI Translation language"
+msgstr ""
+
+msgid "AI Translation mode"
 msgstr ""
 
 msgid "AI Translation optimization"
@@ -2665,6 +2663,9 @@ msgid "Arabic"
 msgstr "Arabsko"
 
 msgid "Arabic (Egyptian)"
+msgstr ""
+
+msgid "Arabic (Iraq)"
 msgstr ""
 
 msgid "Arabic (Moroccan)"
@@ -4204,7 +4205,7 @@ msgstr ""
 msgid "Channel List"
 msgstr "Seznam kanalov"
 
-msgid "Channel List Menu"
+msgid "Channel Number"
 msgstr ""
 
 #
@@ -6997,9 +6998,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "Res želite odstraniti %s?"
 
-msgid "Do you really want to delete?"
-msgstr ""
-
 #
 msgid "Do you really want to exit?"
 msgstr "Ali res želite zapustiti?"
@@ -8509,6 +8507,11 @@ msgstr "izhod iz nastavitev imenskega strežnika"
 
 #
 #, fuzzy
+msgid "Exit Movie Selection"
+msgstr "Izhod iz seznama datotek"
+
+#
+#, fuzzy
 msgid "Exit Quad Channel Selection"
 msgstr "Seznam kanalov"
 
@@ -8546,11 +8549,6 @@ msgstr "Izhod iz predvajalnika vsebin"
 
 msgid "Exit menu"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Exit movie list"
-msgstr "Izhod iz seznama datotek"
 
 #
 #, fuzzy
@@ -10854,6 +10852,9 @@ msgstr "Notranji pomnilnik"
 msgid "Internal Flash"
 msgstr "Notranji pomnilnik"
 
+msgid "Internal SSD"
+msgstr ""
+
 msgid "Internal USB"
 msgstr ""
 
@@ -12677,19 +12678,19 @@ msgstr "Seznam posnetkov"
 msgid "Movie List Actions"
 msgstr "Movie lokacija"
 
-msgid "Movie List Settings"
-msgstr ""
-
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "Movie lokacija"
 
-msgid "Movie playback may not use an invalid/inappropriate directory."
+#, fuzzy
+msgid "Movie Selection"
+msgstr "Movie lokacija"
+
+msgid "Movie Selection Settings"
 msgstr ""
 
-#, fuzzy
-msgid "Movie selection"
-msgstr "Movie lokacija"
+msgid "Movie playback may not use an invalid/inappropriate directory."
+msgstr ""
 
 msgid "Movie/Drama"
 msgstr ""
@@ -14571,6 +14572,9 @@ msgid "Play the selected service"
 msgstr ""
 
 msgid "Playback Settings"
+msgstr ""
+
+msgid "Playback Time:"
 msgstr ""
 
 msgid "Playback, Recording & Time Shift"
@@ -17525,6 +17529,9 @@ msgstr ""
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr ""
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr ""
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr ""
 
@@ -19195,6 +19202,9 @@ msgstr ""
 msgid "Show MiniTV in the Front Display"
 msgstr ""
 
+msgid "Show Movie Selection in Main Menu"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Show Movies List"
@@ -19414,6 +19424,9 @@ msgid "Show details of highlighted task"
 msgstr ""
 
 msgid "Show directories first"
+msgstr ""
+
+msgid "Show during operation"
 msgstr ""
 
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
@@ -21579,6 +21592,9 @@ msgstr ""
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr ""
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr ""
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
 msgstr ""
 
@@ -22018,6 +22034,9 @@ msgid "This option allows you choose how to display the remaining/elapsed time f
 msgstr ""
 
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
+msgstr ""
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
 msgstr ""
 
 msgid "This option allows you choose the background color of transparent picons."
@@ -26249,6 +26268,11 @@ msgstr "Da (obdrži feed-e)"
 
 msgid "®"
 msgstr ""
+
+#
+#, fuzzy, python-format
+#~ msgid "%s (%04o)"
+#~ msgstr "%s (%s)\n"
 
 #
 #~ msgid "Bus: "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
 "PO-Revision-Date: 2021-08-15 18:50+0000\n"
 "Last-Translator: openATV <openatv@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/en_GB/>\n"
@@ -1142,10 +1142,6 @@ msgid "%s %sB"
 msgstr ""
 
 #, python-format
-msgid "%s (%04o)"
-msgstr ""
-
-#, python-format
 msgid "%s - Setup"
 msgstr ""
 
@@ -1695,6 +1691,9 @@ msgid "AI Translation enabled"
 msgstr ""
 
 msgid "AI Translation language"
+msgstr ""
+
+msgid "AI Translation mode"
 msgstr ""
 
 msgid "AI Translation optimization"
@@ -2371,6 +2370,9 @@ msgid "Arabic"
 msgstr "Arabic"
 
 msgid "Arabic (Egyptian)"
+msgstr ""
+
+msgid "Arabic (Iraq)"
 msgstr ""
 
 msgid "Arabic (Moroccan)"
@@ -3780,7 +3782,7 @@ msgstr ""
 msgid "Channel List"
 msgstr "Channel List"
 
-msgid "Channel List Menu"
+msgid "Channel Number"
 msgstr ""
 
 msgid "Channel Selection"
@@ -6345,9 +6347,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "Do you really want to delete this timer?"
 
-msgid "Do you really want to delete?"
-msgstr ""
-
 msgid "Do you really want to exit?"
 msgstr "Do you really want to exit?"
 
@@ -7726,6 +7725,9 @@ msgstr ""
 msgid "Exit MAC address configuration"
 msgstr ""
 
+msgid "Exit Movie Selection"
+msgstr "Exit Movie Selection"
+
 msgid "Exit Quad Channel Selection"
 msgstr ""
 
@@ -7758,9 +7760,6 @@ msgstr "Exit mediaplayer"
 
 msgid "Exit menu"
 msgstr ""
-
-msgid "Exit movie list"
-msgstr "Exit movie list"
 
 msgid "Exit movie player?"
 msgstr "Exit movie player?"
@@ -9841,6 +9840,9 @@ msgstr "Internal"
 msgid "Internal Flash"
 msgstr ""
 
+msgid "Internal SSD"
+msgstr ""
+
 msgid "Internal USB"
 msgstr ""
 
@@ -11473,17 +11475,17 @@ msgstr "Movie List"
 msgid "Movie List Actions"
 msgstr ""
 
-msgid "Movie List Settings"
-msgstr "Movie List Settings"
-
 msgid "Movie Player Actions"
 msgstr ""
 
+msgid "Movie Selection"
+msgstr "Movie Selection"
+
+msgid "Movie Selection Settings"
+msgstr "Movie Selection Settings"
+
 msgid "Movie playback may not use an invalid/inappropriate directory."
 msgstr ""
-
-msgid "Movie selection"
-msgstr "Movie selection"
 
 msgid "Movie/Drama"
 msgstr "Movie/Drama"
@@ -13166,6 +13168,9 @@ msgid "Play the selected service"
 msgstr ""
 
 msgid "Playback Settings"
+msgstr ""
+
+msgid "Playback Time:"
 msgstr ""
 
 msgid "Playback, Recording & Time Shift"
@@ -15801,6 +15806,9 @@ msgstr ""
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr ""
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr ""
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr ""
 
@@ -17370,6 +17378,9 @@ msgstr ""
 msgid "Show MiniTV in the Front Display"
 msgstr "Show MiniTV in the Front Display"
 
+msgid "Show Movie Selection in Main Menu"
+msgstr ""
+
 msgid "Show Movies List"
 msgstr ""
 
@@ -17563,6 +17574,9 @@ msgid "Show details of highlighted task"
 msgstr ""
 
 msgid "Show directories first"
+msgstr ""
+
+msgid "Show during operation"
 msgstr ""
 
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
@@ -19494,6 +19508,9 @@ msgstr ""
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr ""
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr ""
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
 msgstr ""
 
@@ -19936,6 +19953,9 @@ msgid "This option allows you choose how to display the remaining/elapsed time f
 msgstr ""
 
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
+msgstr ""
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
 msgstr ""
 
 # TRANSLATORS: override en_US (en.po)

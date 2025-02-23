@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 15:09+0000\n"
-"PO-Revision-Date: 2025-01-30 15:58+0000\n"
+"POT-Creation-Date: 2025-02-21 10:33+0000\n"
+"PO-Revision-Date: 2025-02-21 12:14+0000\n"
 "Last-Translator: Makumbo <tokioplo@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/de/>\n"
 "Language: de\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -1162,10 +1162,6 @@ msgid "%s %sB"
 msgstr "%s %sB"
 
 #, python-format
-msgid "%s (%04o)"
-msgstr "%s (%04o)"
-
-#, python-format
 msgid "%s - Setup"
 msgstr "%s-Einrichtung"
 
@@ -1780,19 +1776,22 @@ msgid "AFL"
 msgstr "AFL"
 
 msgid "AI Translation color"
-msgstr "Textfarbe für KI-gestützte Übersetzung"
+msgstr "Textfarbe der KI-Übersetzung"
 
 msgid "AI Translation enabled"
-msgstr "KI-gestützte Übersetzung aktiviert"
+msgstr "KI-Übersetzung aktiviert"
 
 msgid "AI Translation language"
-msgstr "Sprache der KI-gestützten Übersetzung"
+msgstr "Sprache der KI-Übersetzung"
+
+msgid "AI Translation mode"
+msgstr "Modus der KI-Übersetzung"
 
 msgid "AI Translation optimization"
-msgstr "KI-gestützte Übersetzung Optimierung"
+msgstr "KI-Übersetzung-Optimierung"
 
 msgid "AI Translation subscription code"
-msgstr "Abo-Code für KI-gestützte Übersetzung"
+msgstr "Abo-Code für KI-Übersetzung"
 
 msgid "ARM"
 msgstr "ARM"
@@ -2506,6 +2505,9 @@ msgstr "Arabisch"
 
 msgid "Arabic (Egyptian)"
 msgstr "Arabisch (Egyptisch)"
+
+msgid "Arabic (Iraq)"
+msgstr "Arabisch (Irakisch)"
 
 msgid "Arabic (Moroccan)"
 msgstr "Arabisch (Marokkanisch)"
@@ -4003,9 +4005,8 @@ msgstr "Programm-Informationen"
 msgid "Channel List"
 msgstr "Senderliste"
 
-#
-msgid "Channel List Menu"
-msgstr "Senderliste-Menü"
+msgid "Channel Number"
+msgstr "Sendernummer"
 
 msgid "Channel Selection"
 msgstr "Senderliste"
@@ -6722,9 +6723,6 @@ msgstr ""
 msgid "Do you really want to delete this timer?"
 msgstr "Timer wirklich löschen?"
 
-msgid "Do you really want to delete?"
-msgstr "Dies wirklich löschen?"
-
 #
 msgid "Do you really want to exit?"
 msgstr "Wirklich beenden?"
@@ -7527,7 +7525,7 @@ msgid "Enable this option to add screen names and resolution data to the debug l
 msgstr "Aktivieren, um dem Debug-Log Bildschirmnamen und Auflösungsdaten hinzuzufügen."
 
 msgid "Enable this option to add storage device information detected during system boot and hot plug events to the debug log file."
-msgstr "Aktivieren, um während des Bootvorgangs oder per Hot-Plug ermittelte Informationen zu Datenträgern im Log anzuzeigen."
+msgstr "Aktivieren, um während des Bootvorgangs oder per Hot-Plug ermittelte Informationen zu Datenträgern im Debug-Log anzuzeigen."
 
 msgid "Enable this option to add timer debugging data to the debug log file."
 msgstr "Aktivieren, um dem Debug-Log Timer-Daten hinzuzufügen."
@@ -8217,6 +8215,10 @@ msgstr "File Commander beenden"
 msgid "Exit MAC address configuration"
 msgstr "Konfiguration der MAC-Addresse verlassen"
 
+#
+msgid "Exit Movie Selection"
+msgstr "Filmauswahl verlassen"
+
 msgid "Exit Quad Channel Selection"
 msgstr "Beende Quad Bild-im-Bild Senderauswahl"
 
@@ -8250,10 +8252,6 @@ msgstr "Mediaplayer beenden"
 
 msgid "Exit menu"
 msgstr "Menü verlassen"
-
-#
-msgid "Exit movie list"
-msgstr "Verlasse Filmauswahl"
 
 msgid "Exit movie player?"
 msgstr "Movieplayer verlassen?"
@@ -10446,6 +10444,9 @@ msgstr "Intern"
 msgid "Internal Flash"
 msgstr "Interner Flash"
 
+msgid "Internal SSD"
+msgstr "Interne SSD"
+
 msgid "Internal USB"
 msgstr "USB intern"
 
@@ -12193,17 +12194,17 @@ msgstr "Filmauswahl"
 msgid "Movie List Actions"
 msgstr "Filmauswahlaktionen"
 
-msgid "Movie List Settings"
-msgstr "Filmauswahl-Einstellungen"
-
 msgid "Movie Player Actions"
 msgstr "Movieplayer-Aktionen"
 
-msgid "Movie playback may not use an invalid/inappropriate directory."
-msgstr "Die Filmwiedergabe darf kein ungültiges/unpassendes Verzeichnis verwenden."
-
-msgid "Movie selection"
+msgid "Movie Selection"
 msgstr "Filmauswahl"
+
+msgid "Movie Selection Settings"
+msgstr "Filmauswahl-Einstellungen"
+
+msgid "Movie playback may not use an invalid/inappropriate directory."
+msgstr "Zur Filmwiedergabe darf kein ungültiges/unpassendes Verzeichnis verwenden werden!"
 
 msgid "Movie/Drama"
 msgstr "Film/Drama"
@@ -14034,6 +14035,9 @@ msgstr "Gewählten Sender abspielen"
 
 msgid "Playback Settings"
 msgstr "Wiedergabe"
+
+msgid "Playback Time:"
+msgstr "Laufzeit:"
 
 msgid "Playback, Recording & Time Shift"
 msgstr "Aufnahmen & Timeshift"
@@ -16886,6 +16890,9 @@ msgstr "Bei 'Ja' werden Abo-Pakete in der Downloadliste angezeigt."
 msgid "Select 'Yes' to show system plugin packages in the Download Plugins screen."
 msgstr "Bei 'Ja' werden Systemplugins in der Downloadliste angezeigt."
 
+msgid "Select 'Yes' to show the 'Movie Selection' entry in the Main Menu. This can provide access to the Movie Selection screen when there is no assigned button on the remote control."
+msgstr "'Ja' wählen, um den Eintrag 'Filmauswahl' im Hauptmenü anzuzeigen. Dies kann den Zugriff auf die Filmauswahl ermöglichen, falls auf der Fernbedienung dafür keine Taste vorhanden ist."
+
 msgid "Select 'Yes' to show the advanced setting options."
 msgstr "'Ja' auswählen, um die erweiterten Einstellungen anzuzeigen."
 
@@ -17239,7 +17246,7 @@ msgid "Select the %s entry"
 msgstr "Eintrag %s auswählen"
 
 msgid "Select the AI-Powered Translation target language."
-msgstr "Sprache der für KI-gestützten Übersetzung auswählen."
+msgstr "Sprache der KI-gestützten Übersetzung auswählen."
 
 msgid "Select the No / False response"
 msgstr "Nein / negative Antwort auswählen"
@@ -17305,7 +17312,7 @@ msgid "Select the character or action under the keyboard cursor"
 msgstr "Das Zeichen oder die Aktion beim Cursor der Tastatur auswählen"
 
 msgid "Select the color to be used for the AI-Powered Translation text."
-msgstr "Textfarbe der für KI-gestützten Übersetzung auswählen."
+msgstr "Textfarbe der KI-gestützten Übersetzung auswählen."
 
 msgid "Select the current bookmarked location and exit"
 msgstr "Den aktuellen Speicherort vom Lesezeichen auswählen und beenden"
@@ -18582,6 +18589,9 @@ msgstr "Merlin-EPG-Center anzeigen"
 msgid "Show MiniTV in the Front Display"
 msgstr "MiniTV im Display anzeigen"
 
+msgid "Show Movie Selection in Main Menu"
+msgstr "Filmauswahl im Hauptmenü anzeigen"
+
 msgid "Show Movies List"
 msgstr "Filmauswahl"
 
@@ -18781,6 +18791,9 @@ msgstr "Details der markierten Aufgabe anzeigen"
 
 msgid "Show directories first"
 msgstr "Verzeichnisse zuerst anzeigen"
+
+msgid "Show during operation"
+msgstr "Anzeige im Betrieb"
 
 # Menue Anpassungen OSD
 msgid "Show encryption information in the InfoBar (when supported by the skin)."
@@ -20832,6 +20845,9 @@ msgstr "Das '%s' Commit-Log enthält keine Informationen!"
 msgid "The '%s' file can't be retrieved, please try again later."
 msgstr "Die Datei '%s' kann nicht abgerufen werden! Bitte später erneut versuchen."
 
+msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
+msgstr "Der KI-Modus zum Übersetzen von Sprachen. Denjenigen auswählen, der die beste Übersetzung für die Zielsprache liefert."
+
 msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
 msgstr "Die KI-gestützte Übersetzung wird optimiert, um das beste Ergebnis basierend auf der Upload-Geschwindigkeit der Internetverbindung zu erreichen."
 
@@ -21332,6 +21348,9 @@ msgstr "Anzeige der verbleibenden und verstrichenen Zeit bei Medienwiedergabe ei
 
 msgid "This option allows you choose if the display shows the time or nothing in Standby."
 msgstr "Die Anzeige der Uhrzeit im Standby einstellen."
+
+msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
+msgstr "Auswählen, ob das Display im Betrieb Zeit, Sendernummer oder nichts anzeigen soll."
 
 msgid "This option allows you choose the background color of transparent picons."
 msgstr "Die Hintergrundfarbe von transparenten Senderlogos (Picons) einstellen."
@@ -25584,6 +25603,17 @@ msgstr "Ja (Feeds beibehalten)"
 
 msgid "®"
 msgstr "®"
+
+#, python-format
+#~ msgid "%s (%04o)"
+#~ msgstr "%s (%04o)"
+
+#
+#~ msgid "Channel List Menu"
+#~ msgstr "Senderliste-Menü"
+
+#~ msgid "Do you really want to delete?"
+#~ msgstr "Dies wirklich löschen?"
 
 #, python-format
 #~ msgid "Do you really want to delete %s ?"

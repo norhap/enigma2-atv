@@ -116,6 +116,7 @@ def InitUsageConfig():
 	config.usage.screenSaverMoveTimer = ConfigSelection(default=10, choices=[(x, ngettext("%d Second", "%d Seconds", x) % x) for x in range(1, 61)])
 	config.usage.informationShowAllMenuScreens = ConfigYesNo(default=False)
 	config.usage.informationExtraSpacing = ConfigYesNo(False)
+	config.usage.movieSelectionInMenu = ConfigYesNo(False)
 
 	# Settings for servicemp3 and handling from cue sheet file.
 	config.usage.useVideoCuesheet = ConfigYesNo(default=True)  # Use marker for video media file.
@@ -818,6 +819,12 @@ def InitUsageConfig():
 
 	config.usage.show_in_standby = ConfigSelection(default="time", choices=[
 		("time", _("Time")),
+		("nothing", _("Nothing"))
+	])
+
+	config.usage.show_in_operation = ConfigSelection(default="time", choices=[
+		("time", _("Time")),
+		("number", _("Channel Number")),
 		("nothing", _("Nothing"))
 	])
 
