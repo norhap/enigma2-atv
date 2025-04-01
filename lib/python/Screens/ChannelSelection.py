@@ -293,17 +293,24 @@ class ChannelSelectionBase(Screen):
 	def moveEnd(self):  # This is used by InfoBarGenerics.
 		self.servicelist.goBottom()
 
-	def setTvMode(self):
-		self.mode = MODE_TV
-		self.servicePath = self.servicePathTV
+	def getCurrentMode(self):
+		return self.mode
+
+	def setCurrentMode(self, mode):
+		if mode != MODE_RADIO:
+			mode = MODE_TV
+		self.servicePath = self.servicePathRadio if mode == MODE_RADIO else self.servicePathTV
+		self.mode = mode
 		self.getBouquetMode()
 		self.buildTitle()
+		# modeString = {MODE_RADIO: "Radio", MODE_TV: "TV"}.get(mode)
+		# print(f"[ChannelSelection] DEBUG {modeString} Mode selected.")
+
+	def setTvMode(self):
+		self.setCurrentMode(MODE_TV)
 
 	def setRadioMode(self):
-		self.mode = MODE_RADIO
-		self.servicePath = self.servicePathRadio
-		self.getBouquetMode()
-		self.buildTitle()
+		self.setCurrentMode(MODE_RADIO)
 
 	def getBouquetMode(self):
 		if self.mode == MODE_TV:
@@ -772,7 +779,7 @@ class ChannelSelectionBase(Screen):
 		self.setCurrentSelection(service or self.session.nav.getCurrentlyPlayingServiceReference())
 
 	def isSubservices(self, path=None):
-		return subservices_tv_ref == (path or self.getRoot())
+		return subservices_tv_ref == (path or self.getRoot() or eServiceReference())
 
 	def getMutableList(self, root=eServiceReference()):  # Override for subservices
 		# ChannelContextMenu.inBouquet = True --> Wrong menu
@@ -2430,7 +2437,7 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 					ref = eServiceReference(refstr)
 					if isStreamRelay:
 						if not [timer for timer in self.session.nav.RecordTimer.timer_list if timer.state == 2 and refstr == timer.service_ref]:
-							ref.setAlternativeUrl(refstr)
+							ref.setAlternativeUrl(refstr, True)
 					self.servicelist.setPlayableIgnoreService(ref)
 
 	def __evServiceEnd(self):
@@ -2637,7 +2644,7 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 		return ret
 
 	def addToHistory(self, ref):
-		if not self.isSubservices():
+		if not self.isSubservices() or not self.history:
 			if self.delhistpoint is not None:
 				x = self.delhistpoint
 				while x <= len(self.history) - 1:
