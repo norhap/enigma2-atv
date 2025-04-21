@@ -142,6 +142,7 @@ public:
 		eventHBBTVInfo, /* HBBTV information was detected in the AIT */
 
 		eventStopped,
+		eventStartPvrDescramble,   // start PVR Descramble Convert
 		eventChannelAllocated,
 	};
 #ifndef SWIG
@@ -179,7 +180,8 @@ public:
 		streamserver = 7,
 		scrambled_streamserver = 8,
 		streamclient = 9,
-		offline = 10
+		offline = 10,
+		pvrDescramble = 11
 	};
 
 	/* deprecated interface */
@@ -189,6 +191,8 @@ public:
 	int tuneExt(eServiceReferenceDVB &ref, ePtr<iTsSource> &, const char *streaminfo_file, eCueSheet *sg=0, bool simulate=false, eDVBService *service = 0, serviceType type = livetv, bool descramble = true);
 
 	void free();
+	bool isCiConnected();
+	bool isPmtReady() { return m_pmt_ready; }
 private:
 	bool m_have_cached_program;
 	program m_cached_program;

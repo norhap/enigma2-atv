@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-21 10:33+0000\n"
-"PO-Revision-Date: 2025-04-01 09:55+0000\n"
+"POT-Creation-Date: 2025-04-21 09:40+0000\n"
+"PO-Revision-Date: 2025-04-14 12:33+0000\n"
 "Last-Translator: kvinto <badsystem@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/uk/>\n"
 "Language: uk\n"
@@ -919,6 +919,10 @@ msgid_plural "%d feed catalog packages were updated."
 msgstr[0] "%d сервер каталогу пакетів оновлено."
 msgstr[1] "%d сервер каталогів пакетів оновлено."
 msgstr[2] "%d сервер каталогів пакетів оновлено."
+
+#, python-format
+msgid "%d jobs are running in the background!"
+msgstr ""
 
 #, python-format
 msgid "%d kB"
@@ -1918,6 +1922,9 @@ msgstr "Додати новий чотирьохканальний вхід"
 msgid "Add RecordTimer"
 msgstr "Додати Таймер Запису"
 
+msgid "Add Service"
+msgstr ""
+
 msgid "Add Service To Bouquet"
 msgstr "Додати канал в фаворит"
 
@@ -1939,11 +1946,17 @@ msgstr "Додати Таймер Переключення"
 msgid "Add a DNS entry"
 msgstr "Добавити запис DNS"
 
+msgid "Add a RADIO service to the Volume Offset list"
+msgstr ""
+
 msgid "Add a RecordTimer"
 msgstr "Додати таймер запису"
 
 msgid "Add a RecordTimer for current event"
 msgstr "Додати таймер запису для поточного події"
+
+msgid "Add a TV service to the Volume Offset list"
+msgstr ""
 
 msgid "Add a ZapTimer for current event"
 msgstr "Додати таймер перемикання для даної передачі"
@@ -1969,7 +1982,7 @@ msgstr "Додати новий таймер"
 msgid "Add a new title"
 msgstr "Додати нову назву"
 
-msgid "Add a service to the Volume Offsets list"
+msgid "Add a service to the Volume Offset list"
 msgstr "Додайте службу до списку зміщення гучності"
 
 msgid "Add a timer for the current event"
@@ -2041,7 +2054,7 @@ msgstr "Додати канали до фавориту?"
 msgid "Add the current directory as a bookmark"
 msgstr "Додати поточний каталог як закладку"
 
-msgid "Add the current service to the Volume Offsets list"
+msgid "Add the current/active service to the Volume Offset list"
 msgstr "Додайте поточну службу до списку зміщення гучності"
 
 msgid "Add the selected service to a bouquet or alternative"
@@ -2064,6 +2077,9 @@ msgstr "Додати/Видалити виділений плагін до/із 
 
 msgid "Add/Remove highlighted plugin to/from update list"
 msgstr "Додати/Видалити виділений плагін до/із списку оновлень"
+
+msgid "Add/Remove the current service to/from the Volume Offset list"
+msgstr ""
 
 msgid "Adding schedule..."
 msgstr "Додавання завдання..."
@@ -2349,6 +2365,10 @@ msgstr "Amlogic"
 
 msgid "Amlogic remote"
 msgstr "Пульт Amlogic"
+
+#, python-format
+msgid "Amount %d / Success %d / Failed %d"
+msgstr ""
 
 msgid "An attempt is made to capture the current TV status. If this is not possible due to incorrect or missing status messages it may cause the receiver to respond unexpectedly. On the other hand, tries to respond better to different operating conditions."
 msgstr "Зроблено спробу зафіксувати поточний статус телевізора. Якщо це неможливо через неправильні, або відсутні повідомлення про статус, це може призвести до неочікуваної відповіді приймача. З іншого боку, намагається краще реагувати на різні умови експлуатації."
@@ -2701,6 +2721,9 @@ msgstr "Журнал автоматичного встановлення"
 
 msgid "Auto multi-selection"
 msgstr "Автоматичний багаторазовий вибір"
+
+msgid "Auto show volume level"
+msgstr ""
 
 msgid "Auto shut down"
 msgstr "Автоматичне відключення"
@@ -3567,7 +3590,7 @@ msgid "Can't create backup directory!"
 msgstr "Не вдається створити каталог резервних копій!"
 
 msgid ""
-"Can't going to live TV!\n"
+"Can't go to live TV!\n"
 "Switch to live TV and restart time shift ?"
 msgstr ""
 "Неможливо з’єднатися з ТВ!\n"
@@ -3577,7 +3600,7 @@ msgid "Can't move to trashcan!"
 msgstr "Неможливо перемістити в кошик!"
 
 msgid ""
-"Can't play the next time shift file!\n"
+"Can't play the next time shift buffer file!\n"
 "Switch to live TV and restart time shift ?"
 msgstr ""
 "Неможливо запустити наступний файл таймшифта!\n"
@@ -3725,6 +3748,9 @@ msgstr "ПІП каскадом"
 
 msgid "Catalan / Valencian"
 msgstr "Каталонська / Валенсійська"
+
+msgid "Catch Up Player Actions"
+msgstr ""
 
 msgid "Cayman Islands"
 msgstr "Кайманові острови"
@@ -4865,11 +4891,17 @@ msgstr "Підключено через інший тюнер"
 msgid "Connected to"
 msgstr "Під'єднано до"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr "Підключене перекодування, обмеження - немає PiP!"
+
 msgid "Connected: "
 msgstr "Під'єднано: "
 
 msgid "Connection information"
 msgstr "Інформація про підключення"
+
+msgid "Connector"
+msgstr "Роз'єм"
 
 msgid "Console"
 msgstr "Консоль"
@@ -5311,6 +5343,9 @@ msgstr ""
 
 msgid "Currently Defined Volume Offsets:"
 msgstr "Поточні зміщення гучності:"
+
+msgid "Currently Remembered Volume Levels:"
+msgstr ""
 
 msgid "Custom"
 msgstr "Користувацька"
@@ -5782,6 +5817,9 @@ msgstr "Визначте параметри монтування файлово�
 msgid "Defined / Active"
 msgstr "Визначено / Активно"
 
+msgid "Defined volume offset"
+msgstr ""
+
 msgid "Defines how fast the time jumps are repeated. Values lower than 500ms may be problematic with NAS."
 msgstr "Визначає час повторного запиту. Значення нижче 500 мс можуть бути проблематичними з NAS."
 
@@ -5985,9 +6023,6 @@ msgstr "Видалити файл поточного таймшифта і пе�
 msgid "Delete the currently displayed log file"
 msgstr "Видалити поточний файл журналу помилок"
 
-msgid "Delete the currently highlighted service from the Volume Offsets list"
-msgstr "Видалити поточний виділений канал зі списку зміщення гучності"
-
 msgid "Delete the currently selected timer"
 msgstr "Видалити поточний вибраний таймер"
 
@@ -6045,6 +6080,21 @@ msgstr "Глибина"
 
 msgid "Descending"
 msgstr "По зменшуванню"
+
+msgid "Descramble end time"
+msgstr ""
+
+msgid "Descramble in Standby"
+msgstr ""
+
+msgid "Descramble in Standby finished"
+msgstr ""
+
+msgid "Descramble recordings before Shutdown"
+msgstr ""
+
+msgid "Descramble start time"
+msgstr ""
 
 msgid "Descrambling options"
 msgstr "Параметри дешифрування"
@@ -6962,9 +7012,6 @@ msgstr "Активувати BT Аудіо"
 
 msgid "Enable Bouquet Edit"
 msgstr "Ввімкнути редагування фавориту"
-
-msgid "Enable Dolby Digital / Dolby AC-3 offsets"
-msgstr "Увімкнути зміщення Dolby Digital / Dolby AC-3"
 
 msgid "Enable EIT EPG"
 msgstr "Включити EIT EPG"
@@ -8086,6 +8133,9 @@ msgstr "Резервний API не завантажив дійсний резу
 msgid "Fallback Font *"
 msgstr "Резервний шрифт *"
 
+msgid "Fallback Remote Receiver Settings"
+msgstr "Налаштування дистанційного приймача"
+
 msgid "Fallback Timer"
 msgstr "Резервний таймер"
 
@@ -8109,9 +8159,6 @@ msgstr "Запасний віддалений приймач для DVB-C"
 
 msgid "Fallback remote receiver for DVB-T"
 msgstr "Запасний віддалений приймач для DVB-T"
-
-msgid "Fallback remote receiver setup"
-msgstr "Налаштування дистанційного приймача"
 
 msgid "Fallback tuner setup"
 msgstr "Налаштування резервного тюнера"
@@ -8739,7 +8786,7 @@ msgstr "Німецька"
 msgid "Germany"
 msgstr "Німеччина"
 
-msgid "Getting Event Info failed!"
+msgid "Getting event information failed!"
 msgstr "Помилка отримання інформації про поточну подію!"
 
 msgid "Getting plugin information. Please wait..."
@@ -9841,6 +9888,12 @@ msgstr "Вхід"
 msgid "Input "
 msgstr "Вхід "
 
+msgid "Input 1"
+msgstr "Вхід 1"
+
+msgid "Input 2"
+msgstr "Вхід 2"
+
 msgid "Input Device Settings"
 msgstr "Налаштування Пристрою введення"
 
@@ -10412,6 +10465,9 @@ msgstr "Останній використаний стовпець"
 
 msgid "Last used share: "
 msgstr "Останній мережевий диск: "
+
+msgid "Last used/set volume"
+msgstr ""
 
 msgctxt "third event: 'third' event label"
 msgid "Later"
@@ -12200,7 +12256,7 @@ msgstr "Системну програмну камеру не налаштова
 msgid "No tags are set on these movies."
 msgstr "Теги не встановлені на цих фільмах."
 
-msgid "No time shift found to save as recording!"
+msgid "No time shift buffer found to save as recording!"
 msgstr "Файл таймшифта для збереження у вигляді запису не знайдено!"
 
 msgid "No timeout"
@@ -12399,7 +12455,7 @@ msgstr "Недостатньо місця на диску. Будь ласка, 
 
 #, python-format
 msgid ""
-"Not enough free Diskspace!\n"
+"Not enough free disk space!\n"
 "\n"
 "Filesize: %sMB\n"
 "Free Space: %sMB\n"
@@ -12442,9 +12498,6 @@ msgstr "Нічого не робити, вийти з цього меню"
 msgctxt "now/next: 'now' event label"
 msgid "Now"
 msgstr "Тепер"
-
-msgid "Now save time shift as movie and continues recording"
-msgstr "Зберегти таймшифт зараз як фільм і продовжувати запис"
 
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Тепер, використовуйте регулювання контрастності, щоб збільшити яскравість фону наскільки це можливо, але переконайтесь, що Ви все ще бачите різницю між двома самими яскравими рівнями відтінків. Якщо Ви зробили це, то натисніть ОК."
@@ -13046,6 +13099,12 @@ msgstr "Пропуск"
 msgid "Pass-through"
 msgstr "Проходити через"
 
+msgid "Passthrough audio handling delay AC3"
+msgstr "Затримка обробки наскрізного аудіо AC3"
+
+msgid "Passthrough audio handling delay AC3+"
+msgstr "Затримка обробки наскрізного аудіо AC3+"
+
 msgid "Password"
 msgstr "Пароль"
 
@@ -13246,6 +13305,9 @@ msgstr "Відтворити аудіодиск..."
 
 msgid "Play back media files"
 msgstr "Відтворення медіа файлів"
+
+msgid "Play catch up service archive"
+msgstr ""
 
 msgid "Play entry"
 msgstr "Відтворити запис"
@@ -14407,9 +14469,6 @@ msgstr "Записати наступне"
 msgid "Record now"
 msgstr "Записати зараз"
 
-msgid "Record started! Stopping time shift now ..."
-msgstr "Розпочато запис! Зупинка таймшифта ..."
-
 #, python-format
 msgid "Record time limited due to conflicting timer:%s"
 msgstr "Час запису обмежено через конфлікт таймера %s"
@@ -14464,6 +14523,9 @@ msgstr "Початок запису"
 
 msgid "Recording started"
 msgstr "Запис розпочато"
+
+msgid "Recording started, stopping time shift now."
+msgstr "Розпочато запис! Зупинка таймшифта ..."
 
 msgid "Recording stopped"
 msgstr "Запис зупинено"
@@ -15475,13 +15537,16 @@ msgstr "Зберегти таймшифт як запис і продовжит�
 msgid "Save time shift as movie and stop recording"
 msgstr "Зберегти таймшифт як запис і зупинити запис"
 
+msgid "Save time shift buffer now and continue recording"
+msgstr "Зберегти таймшифт зараз як фільм і продовжувати запис"
+
 msgid "Saved lines in script messages"
 msgstr "Збережені рядки в повідомленнях сценарію"
 
 msgid "Saving EPG Cache..."
 msgstr "Збереження кеша ЕПГ..."
 
-msgid "Saving time shift as movie now. This might take a while!"
+msgid "Saving time shift buffer, this might take a while."
 msgstr "Файл тайшифта зберігається як фільм. Це займе деякий час!"
 
 msgid "Saving time shift files"
@@ -15735,6 +15800,9 @@ msgstr "Виберіть 'A' або 'B', якщо це потрібно для �
 msgid "Select 'Band' if using a 'Universal' LNB, otherwise consult your LNB specifications."
 msgstr "Виберіть 'band', якщо використовується \"універсальний\" LNB, інакше зверніться до специфікації LNB."
 
+msgid "Select 'Disabled' to disable all automated volume adjustments. Select 'Defined volume offsets' to assign a specified offset to the service's volume level. Select 'Last used/set volume' to remember the volume level last used for each service."
+msgstr ""
+
 msgid "Select 'Enable' to start the CI+ helper."
 msgstr "Виберіть 'Увімкнути', щоб запустити помічник CI+."
 
@@ -15767,9 +15835,6 @@ msgstr "Виберіть 'Так', якщо перед активацією та
 
 msgid "Select 'Yes' if this tuner is connected to the SCR device through another tuner, otherwise select 'No'."
 msgstr "Виберіть 'так', якщо цей тюнер підключено до пристрою SCR через інший тюнер, інакше виберіть 'ні'."
-
-msgid "Select 'Yes' if volume adjustments should be applied to Dolby sound tracks."
-msgstr "Виберіть 'Так', якщо налаштування гучності потрібно застосувати до звукових доріжок Dolby."
 
 msgid "Select 'Yes' if you are using a multi-switch which requires a DiSEqC Port-A command signal. Select 'No' for all other setups."
 msgstr "Виберіть 'Так' коли Ви використовуєте мультисвіч, який вимагає команду DiSEqC Port-A. Для всіх інших налаштувань виберіть 'Ні'."
@@ -15969,11 +16034,17 @@ msgstr "Якщо вибрано 'так', список каналів буде �
 msgid "Select 'Yes' to show the current directory in the list of directories. Note that File Commander must be restarted for this change to take effect."
 msgstr "Виберіть 'Так', щоб показати поточний каталог у списку каталогів. Зауважте, що File Commander потрібно перезапустити, щоб ця зміна набула чинності."
 
+msgid "Select 'Yes' to show the volume level on any automated changes of volume level."
+msgstr ""
+
 msgid "Select 'Yes' to show this plugin in the Plugin Browser."
 msgstr "Виберіть 'Так', щоб відобразити цей плагін у браузері плагінів."
 
 msgid "Select 'Yes' to show web link packages in the Download Plugins screen."
 msgstr "Виберіть 'Так', щоб відобразити пакети веб-посилань на екрані завантаження плагінів."
+
+msgid "Select 'Yes' to shut down immediately instead of starting the descramble."
+msgstr ""
 
 msgid "Select 'Yes' to split tasks into separate actions."
 msgstr "Виберіть 'Так', щоб розділити завдання на окремі дії."
@@ -16107,6 +16178,12 @@ msgstr "Виберіть журнал фіксації сховища для п�
 
 msgid "Select a script to run:"
 msgstr "Вибір скрипта для запуску:"
+
+msgid "Select a time, when in Standby mode, after which the descramble can proceed."
+msgstr ""
+
+msgid "Select a time, when in Standby, before which descramble can proceed."
+msgstr ""
 
 msgid "Select a tuner"
 msgstr "Вибір тюнера"
@@ -16451,6 +16528,9 @@ msgstr "Виберіть виділений слот і перезавантаж
 
 msgid "Select the initial position of the timeline marker. The marker is the vertical line drawn on the EPG that shows the current time. The larger the value the more the marker will move to the right showing more history and less of upcoming events."
 msgstr "Виберіть початкове положення маркера шкали часу. Маркер — це вертикальна лінія, намальована на EPG, яка показує поточний час. Чим більше значення, тим більше маркер переміщуватиметься праворуч, показуючи більше історії та менше майбутніх подій."
+
+msgid "Select the input connector you want to use."
+msgstr "Виберіть вхідний роз’єм, який ви хочете використовувати."
 
 msgid "Select the last item in list or move to the end of text"
 msgstr "Виберіть останній елемент у списку, або перейдіть до кінця тексту"
@@ -17125,6 +17205,10 @@ msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Встановіть тип відображення прогресу в меню вибору каналів."
 
 #, python-format
+msgid "Set the volume level for the '%s' service."
+msgstr ""
+
+#, python-format
 msgid "Set the volume offset for the '%s' service."
 msgstr "Встановіть зміщення гучності для каналу '%s'."
 
@@ -17151,6 +17235,12 @@ msgstr "Встановити параметри часу"
 
 msgid "Set to 'Disabled' to replace underscore characters, '_', in file and directory names with spaces."
 msgstr "Якщо вимкнено, символи підкреслення в назвах файлів і каталогів не відображаються і замінюються пробілами."
+
+msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby mode before shutting down."
+msgstr ""
+
+msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby."
+msgstr ""
 
 msgid "Set to 'Yes', to enable automatic recording of the background timeshift buffer."
 msgstr "Якщо вибрано 'Так', буде включено автоматичний запис таймшифта у фоновому режимі."
@@ -18989,10 +19079,10 @@ msgstr "Зупинити оновлення, якщо воно запущене,
 msgid "Stop time shift"
 msgstr "Зупинити таймшифт"
 
-msgid "Stop time shift and save time shift buffer as movie"
+msgid "Stop time shift and save time shift buffer as a movie"
 msgstr "Зупинити тайм-шифт і зберегти його буфер як запис"
 
-msgid "Stop time shift and save time shift buffer as movie and start recording of current event"
+msgid "Stop time shift and save time shift buffer as a movie and start recording of current event"
 msgstr "Зупинити тайм-шифт і зберегти його буфер як запис і почати запис поточної передачі"
 
 msgid "Stop time shift while recording"
@@ -19837,8 +19927,8 @@ msgid "The authors are NOT RESPONSIBLE for DATA LOSS OR DAMAGE!"
 msgstr "Автори НЕ НЕСУТЬ ВІДПОВІДАЛЬНОСТІ за ВТРАТУ, АБО ПОШКОДЖЕННЯ ДАНИХ!"
 
 msgid ""
-"The available disk space for time shift is less than specified in the settings.\n"
-"What do you want to do ?"
+"The available disk space for time shift buffer is less than specified in the settings.\n"
+"What do you want to do?"
 msgstr ""
 "Вільне місце на диску менше ніж вказано в налаштуваннях.\n"
 "Що ви хочете зробити?"
@@ -19860,13 +19950,6 @@ msgstr "Резервне копіювання виконано успішно. �
 
 msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
 msgstr "Бітрейт відеокодера. Велике значення покращує якість і збільшує розмір файлу."
-
-msgid ""
-"The buffer time for time shift exceeds the specified limit in the settings.\n"
-"What do you want to do ?"
-msgstr ""
-"Розмір буфера таймшифта перевищує ліміт, зазначений в налаштуваннях.\n"
-"Що ви хочете зробити?"
 
 msgid ""
 "The channel may support VPS\n"
@@ -19949,6 +20032,10 @@ msgid "The picon directory already exists and must be removed. Do you want to pr
 msgstr "Каталог піконів уже існує і його потрібно видалити. Ви бажаєте продовжити?"
 
 #, python-format
+msgid "The process will take approximately %d minutes to complete."
+msgstr ""
+
+#, python-format
 msgid "The results have been written to %s."
 msgstr "Результати були записані до %s."
 
@@ -19980,6 +20067,13 @@ msgstr ""
 
 msgid "The time is multiplied by the current repeat counter."
 msgstr "Час множиться на поточний лічильник повторів."
+
+msgid ""
+"The time shift buffer exceeds the limit specified in the settings.\n"
+"What do you want to do?"
+msgstr ""
+"Розмір буфера таймшифта перевищує ліміт, зазначений в налаштуваннях.\n"
+"Що ви хочете зробити?"
 
 #, python-format
 msgid "The timer file '%s' is corrupt and could not be loaded."
@@ -20056,6 +20150,13 @@ msgstr "Немає доступних оновлень."
 
 msgid "There are pending tasks:"
 msgstr "Є незавершені завдання:"
+
+#, python-format
+msgid "There is %d scrambled recording, which will be unscrambled during Standby."
+msgid_plural "There are %d scrambled recordings, which will be unscrambled during Standby."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "There is a risk that your %s %s will not boot or may malfunction after such a large on-line update."
@@ -20716,6 +20817,9 @@ msgstr "Увімкнути/вимкнути автоматичне оновле�
 
 msgid "Toggle between bouquet/EPG lists"
 msgstr "Перемикання між списками фаворити/телегід"
+
+msgid "Toggle between the available TV and RADIO services"
+msgstr ""
 
 msgid "Toggle display of image information"
 msgstr "Перемкнути відображення інформації про імідж"
@@ -21659,6 +21763,12 @@ msgstr "Використано флеш"
 msgid "Used service scan type"
 msgstr "Тип пошуку каналів"
 
+msgid "Used to specify delay when switching between services and AC3 passthrough is enabled."
+msgstr "Використовується для вказівки затримки під час перемикання між каналами та ввімкненим пропуском AC3."
+
+msgid "Used to specify delay when switching between services and AC3+/Atmos passthrough is enabled."
+msgstr "Використовується для визначення затримки під час перемикання між каналами та ввімкненим проходженням AC3+/Atmos."
+
 msgid "Used:"
 msgstr "Використано:"
 
@@ -22066,17 +22176,20 @@ msgstr "Режим напруги"
 msgid "Volume"
 msgstr "Гучність"
 
-msgid "Volume Adjust"
-msgstr "Регулювання гучності"
-
 msgid "Volume Adjust Actions"
 msgstr "Дії регулювання гучності"
 
 msgid "Volume Adjust Service Selection"
 msgstr "Вибір каналу регулювання гучності"
 
+msgid "Volume Adjust Service Selection Actions"
+msgstr ""
+
 msgid "Volume Adjust Settings"
 msgstr "Налаштування гучності"
+
+msgid "Volume adjustment mode"
+msgstr ""
 
 msgid "Volume down"
 msgstr "Гучність нижче"
@@ -22526,7 +22639,7 @@ msgstr "Де хочете зробити копію своїх налаштув�
 msgid "Where do you want to save temporary time shift recordings?"
 msgstr "Де зберігати тимчасові записи timeshift?"
 
-msgid "Which event do you want to save permanently?"
+msgid "Which time shift buffer event do you want to save?"
 msgstr "Яку подію ви хочете зберегти назавжди?"
 
 msgid "While available"
@@ -22789,12 +22902,12 @@ msgstr "Ви вирішили створити резервну копію на�
 msgid "You have chosen to restore the settings. Enigma2 will restart after restore. Press OK to start the restore now."
 msgstr "Ви вибрали відновлення налаштувань. Enigma2 перезапуститься після відновлення. Натисніть OK, щоб почати відновлення зараз."
 
-msgid "You have chosen to save the current time shift"
+msgid "You have chosen to save the current time shift buffer"
 msgstr "Ви вибрали збереження поточного таймшифту"
 
 msgid ""
 "You have chosen to save the current time shift event, but the event has not yet finished\n"
-"What do you want to do ?"
+"What do you want to do?"
 msgstr ""
 "Ви обрали поточний таймшифт для збереження, але передача ще не закінчена\n"
 "Що Ви хочете зробити?"
@@ -22825,7 +22938,7 @@ msgstr ""
 msgid "You seem to be in time shift!"
 msgstr "Спочатку завершіть таймшифт!"
 
-msgid "You seem to be in time shift, Do you want to leave time shift ?"
+msgid "You seem to be in time shift, do you want to leave time shift?"
 msgstr "Спочатку завершіть таймшифт, бажаєте відключити таймшифт?"
 
 msgid "You seem to be in time shift, the service will briefly stop as time shift stops."
@@ -23698,9 +23811,6 @@ msgstr "на Двошаровому диску використано."
 msgid "of a SINGLE layer medium used."
 msgstr "на Одношаровому диску використано."
 
-msgid "off"
-msgstr "вимкн"
-
 msgid "off or wpa2 on"
 msgstr "викл. чи вкл. wpa2"
 
@@ -24120,6 +24230,21 @@ msgstr "так (зберігати фіди)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Delete the currently highlighted service from the Volume Offsets list"
+#~ msgstr "Видалити поточний виділений канал зі списку зміщення гучності"
+
+#~ msgid "Enable Dolby Digital / Dolby AC-3 offsets"
+#~ msgstr "Увімкнути зміщення Dolby Digital / Dolby AC-3"
+
+#~ msgid "Select 'Yes' if volume adjustments should be applied to Dolby sound tracks."
+#~ msgstr "Виберіть 'Так', якщо налаштування гучності потрібно застосувати до звукових доріжок Dolby."
+
+#~ msgid "Volume Adjust"
+#~ msgstr "Регулювання гучності"
+
+#~ msgid "off"
+#~ msgstr "вимкн"
 
 #, python-format
 #~ msgid "%s (%04o)"
