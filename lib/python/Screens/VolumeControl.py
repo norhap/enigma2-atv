@@ -53,9 +53,9 @@ class VolumeAdjustSettings(Setup):
 		self["key_blue"] = StaticText()
 		self["offsetActions"] = HelpableActionMap(self, ["ColorActions", "TVRadioActions"], {
 			"yellow": (self.keyAddRemoveService, _("Add/Remove the current service to/from the Volume Offset list")),
-			"tvMode": (self.keyAddTVService, _("Add a TV service to the Volume Offset list")),
-			"radioMode": (self.keyAddRadioService, _("Add a RADIO service to the Volume Offset list")),
-			"tvRadioMode": (self.keyAddService, _("Add a service to the Volume Offset list"))
+			"keyTV": (self.keyAddTVService, _("Add a TV service to the Volume Offset list")),
+			"keyRadio": (self.keyAddRadioService, _("Add a RADIO service to the Volume Offset list")),
+			"keyTVRadio": (self.keyAddService, _("Add a service to the Volume Offset list"))
 		}, prio=0, description=_("Volume Adjust Actions"))
 		self["currentAction"] = HelpableActionMap(self, ["ColorActions"], {
 			"blue": (self.keyAddServiceReference, _("Add the current/active service to the Volume Offset list"))
@@ -65,7 +65,7 @@ class VolumeAdjustSettings(Setup):
 		Setup.layoutFinished(self)
 		self.selectionChanged()
 
-	def createSetup(self):  # Redefine the method of the same in in the Setup class.
+	def createSetup(self, appendItems=None, prependItems=None):  # Redefine the method of the same in in the Setup class.
 		self.list = []
 		Setup.createSetup(self)
 		volumeList = self["config"].getList()
@@ -76,7 +76,6 @@ class VolumeAdjustSettings(Setup):
 				default = config.volumeAdjust.defaultOffset.value if offset == VolumeAdjust.NEW_VALUE else offset
 				entry = NoSave(ConfigSelectionNumber(default=default, min=VolumeAdjust.OFFSET_MIN, max=VolumeAdjust.OFFSET_MAX, stepwidth=1, wraparound=False))
 				if offset == VolumeAdjust.NEW_VALUE:
-					offset = config.volumeAdjust.defaultOffset.value
 					entry.default = VolumeAdjust.NEW_VALUE  # This triggers a cancel confirmation for unedited new entries.
 				volumeList.append(getConfigListEntry(f"-   {serviceName}", entry, _("Set the volume offset for the '%s' service.") % serviceName, serviceReference))
 		elif config.volumeAdjust.adjustMode.value == VolumeAdjust.MODE_LAST and self.volumeRemembered:
@@ -136,9 +135,9 @@ class VolumeAdjustSettings(Setup):
 		if not result:
 			return
 		if self.volumeOffsets != self.initialVolumeOffsets:
-			self.volumeOffsets = deepcopy(self.initialVolumeOffsets)
+			VolumeAdjust.instance.setVolumeOffsets(self.initialVolumeOffsets)
 		if self.volumeRemembered != self.initialVolumeRemembered:
-			self.volumeRemembered = deepcopy(self.initialVolumeRemembered)
+			VolumeAdjust.instance.setVolumeRemembered(self.initialVolumeRemembered)
 		if self.volumeControl.getVolume() != self.initialVolume:  # Reset the volume if we were setting a volume for the current service.
 			self.volumeControl.setVolume(self.initialVolume, self.initialVolume)
 		if self.volumeControl.getVolumeOffset() != self.initialOffset:  # Reset the offset if we were setting an offset for the current service.
@@ -174,7 +173,7 @@ class VolumeAdjustSettings(Setup):
 
 	def keyAddService(self):
 		from Screens.InfoBar import InfoBar  # This must be here to avoid cyclic imports!
-		mode = InfoBar.instance.servicelist.getCurrentMode() if InfoBar and InfoBar.instance and InfoBar.instance.servicelist else "TV"
+		mode = InfoBar.instance.servicelist.getCurrentMode() if InfoBar.instance and InfoBar.instance.servicelist else "TV"
 		self.session.openWithCallback(self.addServiceCallback, VolumeAdjustServiceSelection, mode)
 
 	def addServiceCallback(self, serviceReference):
@@ -233,13 +232,13 @@ class VolumeAdjustServiceSelection(ChannelSelectionBase):
 		self["volumeServiceActions"] = HelpableActionMap(self, ["SelectCancelActions", "TVRadioActions"], {
 			"select": (self.keySelect, _("Select the currently highlighted service")),
 			"cancel": (self.keyCancel, _("Cancel the service selection")),
-			"tvRadioMode": (self.keyModeToggle, _("Toggle between the available TV and RADIO services"))
+			"keyTVRadio": (self.keyModeToggle, _("Toggle between the available TV and RADIO services"))
 		}, prio=0, description=_("Volume Adjust Service Selection Actions"))
 		self["tvAction"] = HelpableActionMap(self, ["TVRadioActions"], {
-			"tvMode": (self.keyModeTV, _("Switch to the available TV services"))
+			"keyTV": (self.keyModeTV, _("Switch to the available TV services"))
 		}, prio=0, description=_("Volume Adjust Service Selection Actions"))
 		self["radioAction"] = HelpableActionMap(self, ["TVRadioActions"], {
-			"radioMode": (self.keyModeRadio, _("Switch to the available RADIO services"))
+			"keyRadio": (self.keyModeRadio, _("Switch to the available RADIO services"))
 		}, prio=0, description=_("Volume Adjust Service Selection Actions"))
 		match mode:
 			case "TV":
@@ -416,24 +415,19 @@ class VolumeAdjust:
 			if audioTracks:
 				try:  # Uhh, servicemp3 sometimes leads to OverflowError errors!
 					description = audioTracks.getTrackInfo(audioTracks.getCurrentTrack()).getDescription()
-					if "AC3" in description or "DTS" in description or description == "Dolby Digital":
-						result = True
-					elif description and description.split()[0] in ("AC3", "AC-3", "A_AC3", "A_AC-3", "A-AC-3", "E-AC-3", "A_EAC3", "DTS", "DTS-HD", "AC4", "AAC-HE"):
+					if "AC3" in description or "DTS" in description or description == "Dolby Digital" or (description and description.split()[0] in ("AC3", "AC-3", "A_AC3", "A_AC-3", "A-AC-3", "E-AC-3", "A_EAC3", "DTS", "DTS-HD", "AC4", "AAC-HE")):
 						result = True
 				except Exception:
 					description = "Unknown"
-			# print(f"[VolumeControl] isCurrentAudioAC3DTS DEBUG: Audio description '{description}' means AudioAC3Dolby is {result}.")
+			# print(f"[VolumeControl] isCurrentAudioAC3DTS DEBUG: Service '{self.serviceName}' audio description '{description}' means AudioAC3Dolby is {result}.")
 			return result
 
-		# print(f"[VolumeControl] eventUpdatedInfo DEBUG: Service '{self.serviceName}' changed.")
 		if self.serviceReference and self.adjustMode == self.MODE_OFFSET:
 			if self.serviceReference in self.volumeOffsets.keys():
 				isAC3 = isCurrentAudioAC3DTS()
 				if isAC3 != self.serviceAudio:
 					self.serviceAudio = isAC3
 					[serviceName, offset] = self.volumeOffsets[self.serviceReference]  # The test above ensures that serviceReference is defined.
-					# if not isAC3 and volume > self.mpegMax:
-					# 	offset = volume - self.mpegMax
 					if offset:  # For now it is assumed that serviceName is the same as self.serviceName so the offset is assumed to be appropriate!
 						offset = self.volumeControl.setVolumeOffset(offset)
 						volume = self.volumeControl.getVolume()
@@ -471,8 +465,14 @@ class VolumeAdjust:
 	def getVolumeOffsets(self):
 		return self.volumeOffsets
 
+	def setVolumeOffsets(self, volumeOffsets):
+		self.volumeOffsets = volumeOffsets
+
 	def getVolumeRemembered(self):
 		return self.volumeRemembered
+
+	def setVolumeRemembered(self, volumeRemembered):
+		self.volumeRemembered = volumeRemembered
 
 	def refreshSettings(self):  # Refresh the cached data when the settings are changed.
 		self.adjustMode = config.volumeAdjust.adjustMode.value
