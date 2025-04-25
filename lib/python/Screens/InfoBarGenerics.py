@@ -1244,8 +1244,8 @@ class NumberZap(Screen):
 		self.field = str(number)
 		self.searchNumber = searchNumberFunction
 		self.startBouquet = None
-		self["channel"] = Label(_("Channel:"))
-		self["channel_summary"] = StaticText(_("Channel:"))
+		self["channel"] = Label(_("Channel") + ":")
+		self["channel_summary"] = StaticText(_("Channel") + ":")
 		self["number"] = Label(self.numberString)
 		self["servicenumber"] = Label(self.numberString)
 		self["number_summary"] = StaticText(self.numberString)
@@ -4141,7 +4141,7 @@ class InfoBarRedButton:
 class InfoBarTimerButton:
 	def __init__(self):
 		self["TimerButtonActions"] = HelpableActionMap(self, "InfobarTimerButtonActions", {
-			"timerSelection": (self.timerSelection, _("Timer selection...")),
+			"timerSelection": (self.timerSelection, _("Timer selection")),
 		}, prio=0, description=_("Timer Actions"))
 
 	def timerSelection(self):
@@ -4259,7 +4259,7 @@ class InfoBarResolutionSelection:
 		resList = []
 		resList.append((_("Exit"), "exit"))
 		resList.append((_("Auto(not available)"), "auto"))
-		resList.append((_("Video: ") + "%dx%d@%gHz" % (xRes, yRes, fps), ""))
+		resList.append((_("Video") + ": %dx%d@%gHz" % (xRes, yRes, fps), ""))
 		resList.append(("--", ""))
 		# Do we need a new sorting with this way here or should we disable some choices?
 		videoModes = avSwitch.readPreferredModes(readOnly=True)
@@ -4843,8 +4843,8 @@ class InfoBarZoom:
 		self.zoomrate = 0
 		self.zoomin = 1
 		self["ZoomActions"] = HelpableActionMap(self, "InfobarZoomActions", {
-			"ZoomInOut": (self.ZoomInOut, _("Zoom In/Out TV...")),
-			"ZoomOff": (self.ZoomOff, _("Zoom Off...")),
+			"ZoomInOut": (self.ZoomInOut, _("Zoom In/Out TV")),
+			"ZoomOff": (self.ZoomOff, _("Zoom Off")),
 		}, prio=2, description=_("Zoom Actions"))
 
 	def ZoomInOut(self):
