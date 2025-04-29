@@ -442,7 +442,7 @@ class MultiBootClass():
 				compileDate = f"{compileDate[0:4]}-{compileDate[4:6]}-{compileDate[6:8]}"
 				version = str(info.get("version"))
 				if "." not in version and "-" not in version and version.isdigit():
-					version = f"{int(version[0:3])}.{version[3:4]}.{version[4:6]}" if len(version) == 18 else f"{int(version[0:2])}.{int(version[3:5])}"
+					version = f"{int(version[0:2])}.{version[2:3]}.{version[3:5]}" if len(version) == 17 else f"{int(version[0:2])}.{int(version[3:5])}"
 				self.imageList[self.slotCode]["detection"] = "Found an image version file"
 				creator = info.get("creator")
 				if creator is not None:
@@ -747,8 +747,11 @@ class MultiBootClass():
 		try:
 			with open(device, "rb") as fd:
 				bootSector = fd.read(512)
-				fsType = bootSector[82:90].decode("ascii", errors="ignore")
-				return fsType.strip() == "FAT32"
+				fsType = bootSector[82:90].decode("ascii", errors="ignore").strip()
+				if fsType == "FAT32":
+					return True
+				else:
+					return int.from_bytes(bootSector[36:40], "little") != 0
 		except Exception:
 			return False
 
