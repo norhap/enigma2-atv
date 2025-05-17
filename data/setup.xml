@@ -417,6 +417,9 @@
 	<setup key="GPTSlotManager" title="Slot Manager">
 		<item level="0" text="Target location" description="Choose the target device for the slots.">self.GPTSlotManagerLocation</item>
 	</setup>
+	<setup key="UBISlotManager" title="Slot Manager">
+		<item level="0" text="Target location" description="Choose the target device for the slots.">self.UBISlotManagerLocation</item>
+	</setup>
 	<setup key="HardDisk" title="Hard Disk Settings" showOpenWebif="1">
 		<item level="0" text="Hard disk standby after" description="Configure the hard disk drive to go to standby after the specified idle time.">config.usage.hdd_standby</item>
 		<item level="0" text="Hard disk standby in box standby after" description="Configure the hard disk drive to go to standby after the specified idle time when the box is in standby.">config.usage.hdd_standby_in_standby</item>
@@ -819,7 +822,6 @@
 		<item level="1" text="History buttons mode" description="Configure the function of the &lt; and &gt; buttons.">config.usage.historymode</item>
 		<item level="0" text="Channel +/- button mode" description="Select what you want the Channel +/- button to activate.">config.usage.channelbutton_mode</item>
 		<item level="0" text="Up/Down button mode" description="Select what you want the Up/Down button to activate.">config.usage.updownbutton_mode</item>
-		<!--item level="0" text="Use image colored Buttons *" description="Select if you want to use the image colored Buttons (set to 'no' if you want to use (Multi) Quick Button).">config.plisettings.ColouredButtons</item-->
 		<item level="0" text="BLUE switch: BLUE/BLUE long" description="Switch BLUE short (QuickMenu) with BLUE long (Extension Menu).">config.workaround.blueswitch</item>
 		<item level="0" text="Long press emulation with button" description="Press this button to emulate a long press on a button pressed afterwards (this also overrides any other actions assigned to emulation button).">config.usage.long_press_emulation_key</item>
 		<item level="0" text="Add legacy LEFT/RIGHT actions" description="Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it.">config.misc.actionLeftRightToPageUpPageDown</item>

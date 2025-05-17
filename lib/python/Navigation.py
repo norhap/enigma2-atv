@@ -12,6 +12,7 @@ from Components.config import config
 from Components.ImportChannels import ImportChannels
 from Components.ParentalControl import parentalControl
 from Components.PluginComponent import plugins
+from Components.RecordingConfig import recType
 from Components.SystemInfo import BoxInfo
 from Plugins.Plugin import PluginDescriptor
 from Screens.InfoBar import InfoBar, MoviePlayer
@@ -529,8 +530,8 @@ class Navigation:
 				lastrecordEnd = 0
 				for timer in self.RecordTimer.timer_list:
 					if lastrecordEnd == 0 or lastrecordEnd >= timer.begin:
-						if timer.afterEvent < 2:
-							timer.afterEvent = 2
+						if timer.afterEvent < 2 and timer.forceDeepStandby is False:
+							timer.forceDeepStandby = True
 							print(f"[Navigation] Set after-event for recording '{timer.name}' to deep standby.")
 						if timer.end > lastrecordEnd:
 							lastrecordEnd = timer.end + 900
@@ -541,6 +542,15 @@ class Navigation:
 		if not self.currentlyPlayingService:
 			self.currentlyPlayingService = self.pnav and self.pnav.getCurrentService()
 		return self.currentlyPlayingService
+
+	def getAnyRecordingsCount(self):
+		return len(self.getRecordings(False, pNavigation.isAnyRecording))
+
+	def getIndicatorRecordingsCount(self):
+		return len(self.getRecordings(False, recType(config.recording.show_rec_symbol_for_rec_types.getValue())))
+
+	def getRealRecordingsCount(self):
+		return len(self.getRecordings(False, pNavigation.isRealRecording))
 
 	def stopService(self):
 		if self.pnav:

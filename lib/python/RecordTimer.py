@@ -13,7 +13,7 @@ from Components.config import config
 from Components.Harddisk import findMountPoint
 import Components.RecordingConfig
 Components.RecordingConfig.InitRecordingConfig()
-from Components.SystemInfo import getBoxDisplayName
+from Components.SystemInfo import getBoxDisplayName, BoxInfo
 from Components.ScrambledRecordings import ScrambledRecordings
 from Components.TimerSanityCheck import TimerSanityCheck
 from Components.UsageConfig import defaultMoviePath, calcFrontendPriorityIntval
@@ -671,6 +671,7 @@ class RecordTimerEntry(TimerEntry):
 		self.justplay = justplay
 		self.always_zap = always_zap
 		self.afterEvent = afterEvent
+		self.forceDeepStandby = False
 		self.dirname = dirname
 		self.dirnameHadToFallback = False
 		self.autoincrease = False
@@ -694,10 +695,9 @@ class RecordTimerEntry(TimerEntry):
 			elif config.recording.ecm_data.value == "normal":
 				self.descramble = True
 				self.record_ecm = False
-			if self.descramble or not self.record_ecm:
-				if cihelper.ServiceIsAssigned(self.service_ref.ref):
-					self.descramble = False
-					self.record_ecm = True
+			if (self.descramble or not self.record_ecm) and BoxInfo.getItem("CanDescrambleInStandby") and config.recording.standbyDescramble.value and cihelper.ServiceIsAssigned(self.service_ref.ref):
+				self.descramble = False
+				self.record_ecm = True
 		else:
 			self.descramble = descramble
 			self.record_ecm = record_ecm
@@ -1009,15 +1009,16 @@ class RecordTimerEntry(TimerEntry):
 				self.wasInStandby = False
 				self.resetTimerWakeup()
 				return True
-			if self.afterEvent == AFTEREVENT.DEEPSTANDBY or (wasRecTimerWakeup and self.afterEvent == AFTEREVENT.AUTO and self.wasInStandby):
+			if self.forceDeepStandby or self.afterEvent == AFTEREVENT.DEEPSTANDBY or (wasRecTimerWakeup and self.afterEvent == AFTEREVENT.AUTO and self.wasInStandby):
 				if not Screens.Standby.inTryQuitMainloop:  # No shutdown as message box is open.
 					if not boxInStandby and not tvNotActive:  # Not already in standby.
-						message = _("A finished record timer wants to shut down\nyour %s %s. Shutdown now?") % getBoxDisplayName()
-						timeout = int(config.usage.shutdown_msgbox_timeout.value)
-						if InfoBar and InfoBar.instance:
-							InfoBar.instance.openInfoBarMessageWithCallback(self.sendTryQuitMainloopNotification, message, MessageBox.TYPE_YESNO, timeout=timeout, default=True)
-						else:
-							AddNotificationWithCallback(self.sendTryQuitMainloopNotification, MessageBox, message, MessageBox.TYPE_YESNO, timeout=timeout, default=True)
+						if not self.forceDeepStandby:  # Don't show the shutdown message again.
+							message = _("A finished record timer wants to shut down\nyour %s %s. Shutdown now?") % getBoxDisplayName()
+							timeout = int(config.usage.shutdown_msgbox_timeout.value)
+							if InfoBar and InfoBar.instance:
+								InfoBar.instance.openInfoBarMessageWithCallback(self.sendTryQuitMainloopNotification, message, MessageBox.TYPE_YESNO, timeout=timeout, default=True)
+							else:
+								AddNotificationWithCallback(self.sendTryQuitMainloopNotification, MessageBox, message, MessageBox.TYPE_YESNO, timeout=timeout, default=True)
 					else:
 						print("[RecordTimer] quitMainloop #1.")
 						quitMainloop(1)
