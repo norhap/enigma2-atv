@@ -118,7 +118,7 @@ public:
 typedef struct _GstElement GstElement;
 
 typedef enum { atUnknown, atMPEG, atMP3, atAC3, atDTS, atAAC, atPCM, atOGG, atFLAC, atWMA, atDRA, atEAC3 } audiotype_t;
-typedef enum { stUnknown, stPlainText, stSSA, stASS, stSRT, stVOB, stPGS, stDVB } subtype_t;
+typedef enum { stUnknown, stPlainText, stSSA, stASS, stSRT, stVOB, stPGS, stWebVTT, stDVB } subtype_t;
 typedef enum { ctNone, ctMPEGTS, ctMPEGPS, ctMKV, ctAVI, ctMP4, ctVCD, ctCDA, ctASF, ctOGG, ctWEBM, ctDRA } containertype_t;
 
 class eServiceMP3: public iPlayableService, public iPauseableService,
@@ -219,6 +219,7 @@ public:
 		audiotype_t type;
 		std::string language_code; /* iso-639, if available. */
 		std::string codec; /* clear text codec description */
+		std::string title;
 		audioStream()
 			:pad(0), type(atUnknown)
 		{
@@ -313,6 +314,9 @@ private:
 	bool m_subtitles_paused;
 	bool m_use_prefillbuffer;
 	bool m_paused;
+	bool m_clear_buffers;
+	bool m_initial_start;
+	bool m_send_ev_start;
 	bool m_first_paused;
 	/* cuesheet load check */
 	bool m_cuesheet_loaded;
@@ -391,7 +395,7 @@ private:
 	void pushSubtitles();
 	void pullSubtitle(GstBuffer *buffer);
 	void sourceTimeout();
-	void clearBuffers();
+	void clearBuffers(bool force=false);
 #ifdef PASSTHROUGH_FIX
 	void forcePassthrough();
 #endif
