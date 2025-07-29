@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 16:24+0000\n"
+"POT-Creation-Date: 2025-07-17 17:20+0000\n"
 "PO-Revision-Date: 2019-07-27 12:19+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1029,6 +1029,10 @@ msgid_plural "%d services found."
 msgstr[0] ""
 
 #, python-format
+msgid "%d slots have been created on the device.\n"
+msgstr ""
+
+#, python-format
 msgid "%d times"
 msgstr "%d thời gian"
 
@@ -1209,6 +1213,10 @@ msgstr ""
 #, python-format
 msgid "%s not available."
 msgstr "%s không có sẵn."
+
+#, python-format
+msgid "%s version"
+msgstr ""
 
 #, python-format
 msgid "%s%d min"
@@ -2545,10 +2553,10 @@ msgstr ""
 msgid "Ask user"
 msgstr "Hỏi người dùng"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr "Người dùng sk (với mặc định là 'không')"
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr "Hỏi người dùng (với mặc định là 'có')"
 
 msgid "Aspect"
@@ -2663,7 +2671,7 @@ msgid "Auto"
 msgstr "Tự động"
 
 #, fuzzy
-msgid "Auto Detect"
+msgid "Auto detect"
 msgstr "Tự động chờ"
 
 msgid "Auto Language"
@@ -3082,7 +3090,7 @@ msgstr ""
 msgid "Blinking REC"
 msgstr "Nhấp nháy khi ghi"
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr "Nhấp nháy khi ghi"
 
 msgid "Block device"
@@ -3832,7 +3840,7 @@ msgstr ""
 msgid "Channel 1"
 msgstr "Kênh 1"
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Kênh 1 với Primetime"
 
 msgid "Channel Info"
@@ -3841,7 +3849,7 @@ msgstr "Thông tin kênh"
 msgid "Channel List"
 msgstr "Danh sách kênh"
 
-msgid "Channel Number"
+msgid "Channel number"
 msgstr ""
 
 msgid "Channel Selection"
@@ -4335,7 +4343,7 @@ msgstr "Định dạng màu"
 msgid "Color space"
 msgstr "Không gian màu"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr ""
 
 msgid "Combined"
@@ -5176,6 +5184,9 @@ msgstr ""
 msgid "Create separate radio user bouquet"
 msgstr "Tạo gói kênh radio riêng"
 
+msgid "Create slots for the selected device"
+msgstr ""
+
 msgid "Create swap"
 msgstr ""
 
@@ -5454,9 +5465,6 @@ msgstr "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVD DUAL LAYER"
-
-msgid "DVB API version"
-msgstr ""
 
 msgid "DVB CI Delay"
 msgstr "Sự chậm trễ của DVB CI"
@@ -5816,6 +5824,9 @@ msgid "Define the DNS suffix."
 msgstr ""
 
 msgid "Define the custom mountpoint for the device."
+msgstr ""
+
+msgid "Define the default settings backup target location. Select 'Ask user' to prompt the user for the target location when the backup is run."
 msgstr ""
 
 msgid "Define the file system mount options."
@@ -7373,9 +7384,6 @@ msgstr ""
 msgid "Enigma2 revision"
 msgstr ""
 
-msgid "Enigma2 version"
-msgstr ""
-
 msgid "Enigmalight"
 msgstr ""
 
@@ -8095,9 +8103,6 @@ msgstr ""
 msgid "FFmpeg is not installed so '.mvi' file actions are not available!"
 msgstr ""
 
-msgid "FFmpeg version"
-msgstr ""
-
 msgid "FIFO"
 msgstr "FIFO"
 
@@ -8708,9 +8713,6 @@ msgstr "Toàn bộ RGB RGB"
 msgid "G"
 msgstr "GB"
 
-msgid "GCC version"
-msgstr ""
-
 msgid "GREEN button"
 msgstr "Nút màu xanh lá cây"
 
@@ -8721,9 +8723,6 @@ msgid "GStreamer debug log category *"
 msgstr ""
 
 msgid "GStreamer debug log level *"
-msgstr ""
-
-msgid "GStreamer version"
 msgstr ""
 
 msgid "GUI Skin *"
@@ -8826,9 +8825,6 @@ msgid "Gibraltar"
 msgstr "Gibraltar"
 
 msgid "Given device id"
-msgstr ""
-
-msgid "Glibc version"
 msgstr ""
 
 msgid "Go back to the previous step"
@@ -10063,7 +10059,7 @@ msgstr ""
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr ""
 
-msgid "Internal hdd only"
+msgid "Internal disk only"
 msgstr "Chỉ hdd nội bộ"
 
 msgid "Internet"
@@ -10287,7 +10283,14 @@ msgstr ""
 msgid "Kernel file"
 msgstr ""
 
+msgid "Kernel partition"
+msgstr ""
+
 msgid "Kernel version"
+msgstr ""
+
+#, python-format
+msgid "Kernel%s partition"
 msgstr ""
 
 msgid "Kexec MultiBoot Actions"
@@ -10548,7 +10551,7 @@ msgstr ""
 msgid "Left column file sort"
 msgstr ""
 
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr "Còn lại từ tên dịch vụ"
 
 msgid "Left, back USB"
@@ -10840,10 +10843,10 @@ msgstr "Nhật ký vị trí"
 msgid "Logs older then the set no of days will be deleted."
 msgstr "Nhật ký cũ hơn sau đó bộ không có ngày sẽ bị xóa."
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr "Dài << / >>"
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr "Dài trái / phải"
 
 msgid "Long filenames"
@@ -12446,10 +12449,10 @@ msgstr "Không bao giờ"
 msgid "No, scan later manually"
 msgstr "Không, quét sau"
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr "Không, hiển thị luôn trình duyệt plugin"
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr "Không, hiển thị luôn danh sách hẹn giờ"
 
 msgid "NodeID"
@@ -12522,7 +12525,7 @@ msgstr "Không liên quan"
 msgid "Not Defined"
 msgstr "Không xác định"
 
-msgid "Not Flashing"
+msgid "Non-flashing"
 msgstr "Không nhấp nháy"
 
 #, fuzzy
@@ -12806,9 +12809,6 @@ msgstr "Tùy chọn âm thanh ..."
 msgid "Open AutoTimer"
 msgstr "Mở AutoTimer"
 
-msgid "Open AutoTimer OverView"
-msgstr ""
-
 #, fuzzy
 msgid "Open AutoTimer Overview"
 msgstr "Mở danh sách tự động ..."
@@ -12820,9 +12820,6 @@ msgstr "Mở danh sách gói kênh ..."
 #, fuzzy
 msgid "Open Box Portal"
 msgstr "Hiển thị Cổng thông tin ..."
-
-msgid "Open DreamPlex"
-msgstr "Hiển thị trình phát DreamPlex ..."
 
 msgid "Open EPG"
 msgstr "hiển thị EPG ..."
@@ -13001,9 +12998,6 @@ msgid "OpenDNS Home"
 msgstr "Mở AutoTimer"
 
 msgid "OpenPLi Packages"
-msgstr ""
-
-msgid "OpenSSL version"
 msgstr ""
 
 msgid "OpenVPN"
@@ -13446,7 +13440,7 @@ msgstr "Picon"
 msgid "Picon Packages"
 msgstr ""
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr "Tên dịch vụ và Picon"
 
 msgid "Picon install location"
@@ -14410,9 +14404,6 @@ msgstr ""
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr "Giao diện  /tmp/mmi.socket"
 
-msgid "Python version"
-msgstr ""
-
 msgid "Qatar"
 msgstr "Qatar"
 
@@ -14465,10 +14456,6 @@ msgstr "Chế độ QuickEPG"
 msgid "QuickMenu"
 msgstr "Menu nhanh"
 
-#, fuzzy
-msgid "QuickMenu Actions"
-msgstr "Thao tác nhanh"
-
 msgid "QuickMenu/Extensions"
 msgstr "QuickMothy / Tiện ích mở rộng"
 
@@ -14518,7 +14505,7 @@ msgstr "GHI"
 msgid "REC "
 msgstr ""
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr "Biểu tượng REC"
 
 msgid "REC Symbol in Standby"
@@ -14681,7 +14668,7 @@ msgstr "Ghi - giống như nút ghi"
 msgid "Record Actions"
 msgstr ""
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr ""
 
 msgid "Record next"
@@ -15407,7 +15394,7 @@ msgstr ""
 msgid "Right column file sort"
 msgstr ""
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr "Ngay từ tên dịch vụ"
 
 msgid "Right, back USB"
@@ -15621,9 +15608,6 @@ msgid "Samba Server"
 msgstr ""
 
 msgid "Samba Settings"
-msgstr ""
-
-msgid "Samba version"
 msgstr ""
 
 msgid "Same as in active"
@@ -15884,7 +15868,7 @@ msgstr "Tổng quan về PowerTimer"
 msgid "Scheduler Settings"
 msgstr ""
 
-msgid "Scheduler Standby"
+msgid "Scheduler standby"
 msgstr "Chế độ chờ PowerTimer"
 
 msgid "Scheduler deep standby"
@@ -15925,12 +15909,6 @@ msgstr "Tốc độ cuộn (trình kết xuất phần mềm)"
 
 msgid "Search"
 msgstr "Tìm kiếm"
-
-msgid "Search EPG for current event"
-msgstr "Tìm kiếm epg cho sự kiện hiện tại."
-
-msgid "Search IMDb for information about current event"
-msgstr "Tìm kiếm IMDb để biết thông tin về sự kiện hiện tại."
 
 msgid "Search Sats"
 msgstr "Tìm kiếm Sats"
@@ -16011,10 +15989,10 @@ msgstr "Tìm kiếm về phía trước"
 msgid "SeekBar activation"
 msgstr "Tìm kiếm kích hoạt"
 
-msgid "Seekbar"
+msgid "SeekBar"
 msgstr "Tìm kiếm quán bar"
 
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr "Tìm kiếm sự nhạy cảm"
 
 msgid "Seeking connected events"
@@ -16086,7 +16064,7 @@ msgstr "Nếu được đặt thành 'có; infobar sẽ vẫn hiển thị vĩnh
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr ""
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr "Nếu được đặt thành 'có', cho phép bạn sử dụng thanh tìm kiếm để chuyển đến một điểm trong sự kiện."
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -16374,6 +16352,9 @@ msgstr "Chọn một gói kênh"
 msgid "Select a debug log file to view:"
 msgstr ""
 
+msgid "Select a device to create multiboot slots"
+msgstr ""
+
 msgid "Select a device to use as the flash expander"
 msgstr ""
 
@@ -16599,6 +16580,9 @@ msgid "Select sort method:"
 msgstr "Chọn phương pháp sắp xếp:"
 
 msgid "Select system information to view:"
+msgstr ""
+
+msgid "Select target device for slot creation"
 msgstr ""
 
 msgid "Select temporary directory sort order for the current column"
@@ -17187,10 +17171,10 @@ msgstr ""
 msgid "Service Name"
 msgstr "Tên dịch vụ"
 
-msgid "Service Number and Service Name"
+msgid "Service number and service name"
 msgstr "Số dịch vụ và tên dịch vụ"
 
-msgid "Service Number, Picon and Service Name"
+msgid "Service number, picon and service name"
 msgstr "Số dịch vụ, Picon và Tên dịch vụ"
 
 msgid "Service Scan"
@@ -17419,7 +17403,7 @@ msgstr "Đặt phương thức sắp xếp mặc định."
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr "Đặt thời gian trễ giữa các vòng lặp lặp lại, điều này được sử dụng bởi trình kết xuất phần mềm trong một số giao diện."
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr "Đặt kích thước bước nhảy của thanh tìm kiếm."
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -17552,6 +17536,9 @@ msgstr ""
 
 msgid "Settings"
 msgstr "Cài đặt"
+
+msgid "Settings Backup Target"
+msgstr ""
 
 msgid "Settings mode"
 msgstr "Chế độ cài đặt"
@@ -18599,7 +18586,7 @@ msgstr ""
 msgid "Skin Packages"
 msgstr ""
 
-msgid "Skin Setting"
+msgid "Skin setting"
 msgstr "Thiết lập da"
 
 msgid "Skin Settings"
@@ -18753,6 +18740,9 @@ msgstr ""
 
 #, python-format
 msgid "Slot '%s' %s: %s%s"
+msgstr ""
+
+msgid "Slot F: Flash Slot Image Backup (Current image)"
 msgstr ""
 
 msgid "Slot Manager"
@@ -20025,13 +20015,6 @@ msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr "Chuẩn DVD không hỗ trợ luồng video H.264 (HDTV)."
 
 msgid ""
-"The DreamPlex plugin is not installed!\n"
-"Please install it."
-msgstr ""
-"Plugin DreamPlex chưa được cài đặt!\n"
-"Vui lòng cài đặt nó."
-
-msgid ""
 "The EPGSearch plugin is not installed!\n"
 "Please install it."
 msgstr ""
@@ -20891,10 +20874,6 @@ msgstr "Lịch sử thời gian"
 msgid "Timeline scale"
 msgstr "Quy mô thời gian"
 
-#, fuzzy
-msgid "Timer Actions"
-msgstr "Hành động hẹn giờ"
-
 msgid "Timer Log Actions"
 msgstr ""
 
@@ -21394,6 +21373,10 @@ msgstr ""
 
 msgid "Type of scan"
 msgstr "Loại quét"
+
+#, python-format
+msgid "UBI slot %s%s"
+msgstr ""
 
 msgid "UBINIZE"
 msgstr ""
@@ -22856,7 +22839,7 @@ msgstr "Với chế độ RAW T2MI bị tắt (mặc định), chúng ta có th�
 msgid "With errors:"
 msgstr "Có lỗi:"
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "nhấn OK lâu"
 
 msgid "With pop up"
@@ -23411,7 +23394,7 @@ msgstr "phiêu lưu / tây / chiến tranh"
 msgid "advertisement/shopping"
 msgstr "quảng cáo / mua sắm"
 
-msgid "all up/down"
+msgid "All up/down"
 msgstr "tất cả lên / xuống"
 
 msgid "alpha then oldest"
@@ -23679,9 +23662,6 @@ msgstr "thất bại"
 
 msgid "fashion"
 msgstr "thời trang"
-
-msgid "fast"
-msgstr "nhanh"
 
 msgid "file can not displayed - file not found"
 msgstr "tập tin không thể hiển thị - không tìm thấy tập tin"
@@ -24264,8 +24244,8 @@ msgstr "truyền thống (nhanh), nghỉ hưu"
 msgid "tree delete"
 msgstr ""
 
-msgid "turbo"
-msgstr "turbo"
+msgid "Turbo"
+msgstr "Turbo"
 
 msgid "uShare"
 msgstr "uShare"
@@ -24355,6 +24335,30 @@ msgstr "có (giữ thức ăn)"
 
 msgid "®"
 msgstr ""
+
+#~ msgid "Open DreamPlex"
+#~ msgstr "Hiển thị trình phát DreamPlex ..."
+
+#, fuzzy
+#~ msgid "QuickMenu Actions"
+#~ msgstr "Thao tác nhanh"
+
+#~ msgid "Search EPG for current event"
+#~ msgstr "Tìm kiếm epg cho sự kiện hiện tại."
+
+#~ msgid "Search IMDb for information about current event"
+#~ msgstr "Tìm kiếm IMDb để biết thông tin về sự kiện hiện tại."
+
+#~ msgid ""
+#~ "The DreamPlex plugin is not installed!\n"
+#~ "Please install it."
+#~ msgstr ""
+#~ "Plugin DreamPlex chưa được cài đặt!\n"
+#~ "Vui lòng cài đặt nó."
+
+#, fuzzy
+#~ msgid "Timer Actions"
+#~ msgstr "Hành động hẹn giờ"
 
 #, fuzzy
 #~ msgid "InfoBar EPG Actions"

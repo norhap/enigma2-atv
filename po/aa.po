@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 16:24+0000\n"
+"POT-Creation-Date: 2025-07-17 17:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1025,6 +1025,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d slots have been created on the device.\n"
+msgstr ""
+
+#, python-format
 msgid "%d times"
 msgstr ""
 
@@ -1199,6 +1203,10 @@ msgstr ""
 
 #, python-format
 msgid "%s not available."
+msgstr ""
+
+#, python-format
+msgid "%s version"
 msgstr ""
 
 #, python-format
@@ -2488,10 +2496,10 @@ msgstr ""
 msgid "Ask user"
 msgstr ""
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr ""
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr ""
 
 msgid "Aspect"
@@ -2602,7 +2610,7 @@ msgstr ""
 msgid "Auto"
 msgstr ""
 
-msgid "Auto Detect"
+msgid "Auto detect"
 msgstr ""
 
 msgid "Auto Language"
@@ -3015,7 +3023,7 @@ msgstr ""
 msgid "Blinking REC"
 msgstr ""
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr ""
 
 msgid "Block device"
@@ -3742,7 +3750,7 @@ msgstr ""
 msgid "Channel 1"
 msgstr ""
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr ""
 
 msgid "Channel Info"
@@ -3751,7 +3759,7 @@ msgstr ""
 msgid "Channel List"
 msgstr ""
 
-msgid "Channel Number"
+msgid "Channel number"
 msgstr ""
 
 msgid "Channel Selection"
@@ -4240,7 +4248,7 @@ msgstr ""
 msgid "Color space"
 msgstr ""
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr ""
 
 msgid "Combined"
@@ -5069,6 +5077,9 @@ msgstr ""
 msgid "Create separate radio user bouquet"
 msgstr ""
 
+msgid "Create slots for the selected device"
+msgstr ""
+
 msgid "Create swap"
 msgstr ""
 
@@ -5340,9 +5351,6 @@ msgid "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
 msgstr ""
 
 msgid "DUAL LAYER DVD"
-msgstr ""
-
-msgid "DVB API version"
 msgstr ""
 
 msgid "DVB CI Delay"
@@ -5695,6 +5703,9 @@ msgid "Define the DNS suffix."
 msgstr ""
 
 msgid "Define the custom mountpoint for the device."
+msgstr ""
+
+msgid "Define the default settings backup target location. Select 'Ask user' to prompt the user for the target location when the backup is run."
 msgstr ""
 
 msgid "Define the file system mount options."
@@ -7212,9 +7223,6 @@ msgstr ""
 msgid "Enigma2 revision"
 msgstr ""
 
-msgid "Enigma2 version"
-msgstr ""
-
 msgid "Enigmalight"
 msgstr ""
 
@@ -7910,9 +7918,6 @@ msgstr ""
 msgid "FFmpeg is not installed so '.mvi' file actions are not available!"
 msgstr ""
 
-msgid "FFmpeg version"
-msgstr ""
-
 msgid "FIFO"
 msgstr ""
 
@@ -8509,9 +8514,6 @@ msgstr ""
 msgid "G"
 msgstr ""
 
-msgid "GCC version"
-msgstr ""
-
 msgid "GREEN button"
 msgstr ""
 
@@ -8522,9 +8524,6 @@ msgid "GStreamer debug log category *"
 msgstr ""
 
 msgid "GStreamer debug log level *"
-msgstr ""
-
-msgid "GStreamer version"
 msgstr ""
 
 msgid "GUI Skin *"
@@ -8622,9 +8621,6 @@ msgid "Gibraltar"
 msgstr ""
 
 msgid "Given device id"
-msgstr ""
-
-msgid "Glibc version"
 msgstr ""
 
 msgid "Go back to the previous step"
@@ -9829,7 +9825,7 @@ msgstr ""
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr ""
 
-msgid "Internal hdd only"
+msgid "Internal disk only"
 msgstr ""
 
 msgid "Internet"
@@ -10050,7 +10046,14 @@ msgstr ""
 msgid "Kernel file"
 msgstr ""
 
+msgid "Kernel partition"
+msgstr ""
+
 msgid "Kernel version"
+msgstr ""
+
+#, python-format
+msgid "Kernel%s partition"
 msgstr ""
 
 msgid "Kexec MultiBoot Actions"
@@ -10305,7 +10308,7 @@ msgstr ""
 msgid "Left column file sort"
 msgstr ""
 
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr ""
 
 msgid "Left, back USB"
@@ -10592,10 +10595,10 @@ msgstr ""
 msgid "Logs older then the set no of days will be deleted."
 msgstr ""
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr ""
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr ""
 
 msgid "Long filenames"
@@ -12124,10 +12127,10 @@ msgstr ""
 msgid "No, scan later manually"
 msgstr ""
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr ""
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr ""
 
 msgid "NodeID"
@@ -12196,7 +12199,7 @@ msgstr ""
 msgid "Not Defined"
 msgstr ""
 
-msgid "Not Flashing"
+msgid "Non-flashing"
 msgstr ""
 
 msgid "Not Installed"
@@ -12472,9 +12475,6 @@ msgstr ""
 msgid "Open AutoTimer"
 msgstr ""
 
-msgid "Open AutoTimer OverView"
-msgstr ""
-
 msgid "Open AutoTimer Overview"
 msgstr ""
 
@@ -12482,9 +12482,6 @@ msgid "Open Bouquet selection"
 msgstr ""
 
 msgid "Open Box Portal"
-msgstr ""
-
-msgid "Open DreamPlex"
 msgstr ""
 
 msgid "Open EPG"
@@ -12650,9 +12647,6 @@ msgid "OpenDNS Home"
 msgstr ""
 
 msgid "OpenPLi Packages"
-msgstr ""
-
-msgid "OpenSSL version"
 msgstr ""
 
 msgid "OpenVPN"
@@ -13087,7 +13081,7 @@ msgstr ""
 msgid "Picon Packages"
 msgstr ""
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr ""
 
 msgid "Picon install location"
@@ -14039,9 +14033,6 @@ msgstr ""
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr ""
 
-msgid "Python version"
-msgstr ""
-
 msgid "Qatar"
 msgstr ""
 
@@ -14093,9 +14084,6 @@ msgstr ""
 msgid "QuickMenu"
 msgstr ""
 
-msgid "QuickMenu Actions"
-msgstr ""
-
 msgid "QuickMenu/Extensions"
 msgstr ""
 
@@ -14144,7 +14132,7 @@ msgstr ""
 msgid "REC "
 msgstr ""
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr ""
 
 msgid "REC Symbol in Standby"
@@ -14307,7 +14295,7 @@ msgstr ""
 msgid "Record Actions"
 msgstr ""
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr ""
 
 msgid "Record next"
@@ -15016,7 +15004,7 @@ msgstr ""
 msgid "Right column file sort"
 msgstr ""
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr ""
 
 msgid "Right, back USB"
@@ -15224,9 +15212,6 @@ msgid "Samba Server"
 msgstr ""
 
 msgid "Samba Settings"
-msgstr ""
-
-msgid "Samba version"
 msgstr ""
 
 msgid "Same as in active"
@@ -15487,7 +15472,7 @@ msgstr ""
 msgid "Scheduler Settings"
 msgstr ""
 
-msgid "Scheduler Standby"
+msgid "Scheduler standby"
 msgstr ""
 
 msgid "Scheduler deep standby"
@@ -15527,12 +15512,6 @@ msgid "Scrolling speed (software renderer)"
 msgstr ""
 
 msgid "Search"
-msgstr ""
-
-msgid "Search EPG for current event"
-msgstr ""
-
-msgid "Search IMDb for information about current event"
 msgstr ""
 
 msgid "Search Sats"
@@ -15610,10 +15589,10 @@ msgstr ""
 msgid "SeekBar activation"
 msgstr ""
 
-msgid "Seekbar"
+msgid "SeekBar"
 msgstr ""
 
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr ""
 
 msgid "Seeking connected events"
@@ -15685,7 +15664,7 @@ msgstr ""
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr ""
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr ""
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -15973,6 +15952,9 @@ msgstr ""
 msgid "Select a debug log file to view:"
 msgstr ""
 
+msgid "Select a device to create multiboot slots"
+msgstr ""
+
 msgid "Select a device to use as the flash expander"
 msgstr ""
 
@@ -16198,6 +16180,9 @@ msgid "Select sort method:"
 msgstr ""
 
 msgid "Select system information to view:"
+msgstr ""
+
+msgid "Select target device for slot creation"
 msgstr ""
 
 msgid "Select temporary directory sort order for the current column"
@@ -16766,10 +16751,10 @@ msgstr ""
 msgid "Service Name"
 msgstr ""
 
-msgid "Service Number and Service Name"
+msgid "Service number and service name"
 msgstr ""
 
-msgid "Service Number, Picon and Service Name"
+msgid "Service number, picon and service name"
 msgstr ""
 
 msgid "Service Scan"
@@ -16990,7 +16975,7 @@ msgstr ""
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr ""
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr ""
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -17122,6 +17107,9 @@ msgid "Setting a password is strongly advised if your STB is open to the Interne
 msgstr ""
 
 msgid "Settings"
+msgstr ""
+
+msgid "Settings Backup Target"
 msgstr ""
 
 msgid "Settings mode"
@@ -18160,7 +18148,7 @@ msgstr ""
 msgid "Skin Packages"
 msgstr ""
 
-msgid "Skin Setting"
+msgid "Skin setting"
 msgstr ""
 
 msgid "Skin Settings"
@@ -18316,6 +18304,9 @@ msgstr ""
 
 #, python-format
 msgid "Slot '%s' %s: %s%s"
+msgstr ""
+
+msgid "Slot F: Flash Slot Image Backup (Current image)"
 msgstr ""
 
 msgid "Slot Manager"
@@ -19555,11 +19546,6 @@ msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
 msgid ""
-"The DreamPlex plugin is not installed!\n"
-"Please install it."
-msgstr ""
-
-msgid ""
 "The EPGSearch plugin is not installed!\n"
 "Please install it."
 msgstr ""
@@ -20360,9 +20346,6 @@ msgstr ""
 msgid "Timeline scale"
 msgstr ""
 
-msgid "Timer Actions"
-msgstr ""
-
 msgid "Timer Log Actions"
 msgstr ""
 
@@ -20851,6 +20834,10 @@ msgid "Type of device"
 msgstr ""
 
 msgid "Type of scan"
+msgstr ""
+
+#, python-format
+msgid "UBI slot %s%s"
 msgstr ""
 
 msgid "UBINIZE"
@@ -22282,7 +22269,7 @@ msgstr ""
 msgid "With errors:"
 msgstr ""
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr ""
 
 msgid "With pop up"
@@ -22804,7 +22791,7 @@ msgstr ""
 msgid "advertisement/shopping"
 msgstr ""
 
-msgid "all up/down"
+msgid "All up/down"
 msgstr ""
 
 msgid "alpha then oldest"
@@ -23061,9 +23048,6 @@ msgid "failed"
 msgstr ""
 
 msgid "fashion"
-msgstr ""
-
-msgid "fast"
 msgstr ""
 
 msgid "file can not displayed - file not found"
@@ -23634,7 +23618,7 @@ msgstr ""
 msgid "tree delete"
 msgstr ""
 
-msgid "turbo"
+msgid "Turbo"
 msgstr ""
 
 msgid "uShare"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 16:24+0000\n"
-"PO-Revision-Date: 2025-05-10 04:44+0000\n"
+"POT-Creation-Date: 2025-07-17 17:20+0000\n"
+"PO-Revision-Date: 2025-07-18 21:03+0000\n"
 "Last-Translator: Petr Turek <turekdesign99@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 msgid ""
 "\n"
@@ -1068,6 +1068,10 @@ msgstr[1] "Byly nalezeny %d služby."
 msgstr[2] "Bylo nalezeno %d služeb."
 
 #, python-format
+msgid "%d slots have been created on the device.\n"
+msgstr "Na zařízení bylo vytvořeno %d slotů.\n"
+
+#, python-format
 msgid "%d times"
 msgstr "%d časy"
 
@@ -1244,6 +1248,10 @@ msgstr "%s dlouhé"
 #, python-format
 msgid "%s not available."
 msgstr "%s není dostupný."
+
+#, python-format
+msgid "%s version"
+msgstr "Verze %s"
 
 #, python-format
 msgid "%s%d min"
@@ -2564,10 +2572,10 @@ msgstr "Vzestupně"
 msgid "Ask user"
 msgstr "Zeptat se"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr "Zeptat se a standardně zvolit 'Ne'"
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr "Zeptat se a standardně zvolit 'Ano'"
 
 msgid "Aspect"
@@ -2678,7 +2686,7 @@ msgstr "Režim authoringu"
 msgid "Auto"
 msgstr "Auto"
 
-msgid "Auto Detect"
+msgid "Auto detect"
 msgstr "Auto detekce"
 
 msgid "Auto Language"
@@ -3093,7 +3101,7 @@ msgstr "Blacklist"
 msgid "Blinking REC"
 msgstr "Blikající REC"
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr "Blikající REC Symbol"
 
 msgid "Block device"
@@ -3843,7 +3851,7 @@ msgstr "Kanál / Služba"
 msgid "Channel 1"
 msgstr "Kanál 1"
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Kanál 1 s hlavním vysílacím časem"
 
 msgid "Channel Info"
@@ -3852,7 +3860,7 @@ msgstr "Info o kanálu"
 msgid "Channel List"
 msgstr "Seznam kanálů"
 
-msgid "Channel Number"
+msgid "Channel number"
 msgstr "Číslo kanálu"
 
 msgid "Channel Selection"
@@ -4344,7 +4352,7 @@ msgstr "Formát barev"
 msgid "Color space"
 msgstr "Barevný prostor"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr "Barevný Text"
 
 msgid "Combined"
@@ -5180,6 +5188,9 @@ msgstr "Vytvořit kořenový žurnálovací systém souborů flash."
 msgid "Create separate radio user bouquet"
 msgstr "Vytvořit samostatný uživatelský přehled rádií"
 
+msgid "Create slots for the selected device"
+msgstr "Vytvořit sloty pro vybrané zařízení"
+
 msgid "Create swap"
 msgstr "Vytvořit swap"
 
@@ -5456,9 +5467,6 @@ msgstr "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVOUVRSTVÉ DVD"
-
-msgid "DVB API version"
-msgstr "Verze DVB API"
 
 msgid "DVB CI Delay"
 msgstr "Zpoždění DVB CI"
@@ -5811,6 +5819,9 @@ msgstr "Určete příponu DNS."
 
 msgid "Define the custom mountpoint for the device."
 msgstr "Definovat vlastní přípojný bod pro zařízení."
+
+msgid "Define the default settings backup target location. Select 'Ask user' to prompt the user for the target location when the backup is run."
+msgstr "Definujte výchozí cílové umístění zálohy nastavení. Vyberte možnost „Zeptat se uživatele“, chcete-li, aby se uživatel při spuštění zálohy dozvěděl o cílovém umístění."
 
 msgid "Define the file system mount options."
 msgstr "Definovat možnosti připojení systému souborů."
@@ -7362,9 +7373,6 @@ msgstr "Informace o systému Enigma2"
 msgid "Enigma2 revision"
 msgstr "Revize Enigma2"
 
-msgid "Enigma2 version"
-msgstr "Verze Enigma2"
-
 msgid "Enigmalight"
 msgstr "Enigmalight"
 
@@ -8083,9 +8091,6 @@ msgstr "Sonda FFmpeg"
 msgid "FFmpeg is not installed so '.mvi' file actions are not available!"
 msgstr "FFmpeg není nainstalován, takže akce souboru '.mvi' nejsou dostupné!"
 
-msgid "FFmpeg version"
-msgstr "Verze FFmpeg"
-
 msgid "FIFO"
 msgstr "FIFO"
 
@@ -8684,9 +8689,6 @@ msgstr "FullHD test"
 msgid "G"
 msgstr "G"
 
-msgid "GCC version"
-msgstr "Verze GCC"
-
 msgid "GREEN button"
 msgstr "ZELENÉ tlačítko"
 
@@ -8698,9 +8700,6 @@ msgstr "Kategorie protokolu ladění GStreamer *"
 
 msgid "GStreamer debug log level *"
 msgstr "Úroveň protokolu ladění GStreamer *"
-
-msgid "GStreamer version"
-msgstr "Verze GStreamer"
 
 msgid "GUI Skin *"
 msgstr "Vzhled GUI *"
@@ -8798,9 +8797,6 @@ msgstr "Gibraltar"
 
 msgid "Given device id"
 msgstr "Zadané id zařízení"
-
-msgid "Glibc version"
-msgstr "Verze Glibc"
 
 msgid "Go back to the previous step"
 msgstr "Vrátit se k předchozímu kroku"
@@ -10018,7 +10014,7 @@ msgstr "Interní flash: %s %s "
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr "Interní flash: %s %s jako obnovení z USB"
 
-msgid "Internal hdd only"
+msgid "Internal disk only"
 msgstr "Jen na interním disku"
 
 msgid "Internet"
@@ -10240,8 +10236,15 @@ msgstr "Balíčky jádra"
 msgid "Kernel file"
 msgstr "Soubor jádra"
 
+msgid "Kernel partition"
+msgstr "Oddíl jádra"
+
 msgid "Kernel version"
 msgstr "Verze jádra"
+
+#, python-format
+msgid "Kernel%s partition"
+msgstr "Oddíl jádra%s"
 
 msgid "Kexec MultiBoot Actions"
 msgstr "Akce Kexec MultiBoot"
@@ -10495,7 +10498,7 @@ msgstr "Řazení adresáře v levém sloupci"
 msgid "Left column file sort"
 msgstr "Řazení souborů v levém sloupci"
 
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr "Nalevo od názvu kanálu"
 
 msgid "Left, back USB"
@@ -10783,10 +10786,10 @@ msgstr "Umístění zpráv"
 msgid "Logs older then the set no of days will be deleted."
 msgstr "Zprávy starší než nastavený počet dnů, se smažou."
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr "Dlouhé << / >>"
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr "L/P - dlouhý stisk"
 
 msgid "Long filenames"
@@ -12337,10 +12340,10 @@ msgstr "Ne, nikdy"
 msgid "No, scan later manually"
 msgstr "Ne, prohledat později ručně"
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr "Ne, vždy zobrazit prohlížeč pluginu"
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr "Ne, vždy zobrazit seznam časovačů"
 
 msgid "NodeID"
@@ -12409,7 +12412,7 @@ msgstr "Neklasifikováno"
 msgid "Not Defined"
 msgstr "Není definováno"
 
-msgid "Not Flashing"
+msgid "Non-flashing"
 msgstr "Nenahrávat"
 
 msgid "Not Installed"
@@ -12692,9 +12695,6 @@ msgstr "Otevřít možnosti zvuku"
 msgid "Open AutoTimer"
 msgstr "Otevřít automatický časovač"
 
-msgid "Open AutoTimer OverView"
-msgstr "Otevřít přehled automatického časovače"
-
 msgid "Open AutoTimer Overview"
 msgstr "Otevřít seznam automatických časovačů"
 
@@ -12703,9 +12703,6 @@ msgstr "Otevřít seznam"
 
 msgid "Open Box Portal"
 msgstr "Zobrazit Box Portal"
-
-msgid "Open DreamPlex"
-msgstr "Otevřít DreamPlex"
 
 msgid "Open EPG"
 msgstr "Otevřít EPG"
@@ -12871,9 +12868,6 @@ msgstr "Domovská stránka OpenDNS"
 
 msgid "OpenPLi Packages"
 msgstr "OpenPLi balíčky"
-
-msgid "OpenSSL version"
-msgstr "Verze OpenSSL"
 
 msgid "OpenVPN"
 msgstr "OpenVPN"
@@ -13307,7 +13301,7 @@ msgstr "Picony"
 msgid "Picon Packages"
 msgstr "Balíčky Picon"
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr "Picony a názvy programů"
 
 msgid "Picon install location"
@@ -14269,9 +14263,6 @@ msgstr "Vývojové balíčky Pythonu"
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr "Python frontend pro /tmp/mmi.socket"
 
-msgid "Python version"
-msgstr "Verze Pythonu"
-
 msgid "Qatar"
 msgstr "Katar"
 
@@ -14323,9 +14314,6 @@ msgstr "Aktivace QuickEPG"
 msgid "QuickMenu"
 msgstr "Rychlá nabídka"
 
-msgid "QuickMenu Actions"
-msgstr "Akce rychlé nabídky"
-
 msgid "QuickMenu/Extensions"
 msgstr "Rychlé Menu / Rozšířená nabídka"
 
@@ -14374,7 +14362,7 @@ msgstr "REC"
 msgid "REC "
 msgstr "REC "
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr "Symbol REC"
 
 msgid "REC Symbol in Standby"
@@ -14537,7 +14525,7 @@ msgstr "Záznam – stejné jako tlačítko záznamu"
 msgid "Record Actions"
 msgstr "Akce nahrávání"
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr "Ikona záznamu"
 
 msgid "Record next"
@@ -15253,7 +15241,7 @@ msgstr "Řazení adresáře v pravém sloupci"
 msgid "Right column file sort"
 msgstr "Řazení souborů v pravém sloupci"
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr "Napravo od názvu kanálu"
 
 msgid "Right, back USB"
@@ -15462,9 +15450,6 @@ msgstr "Server Samba"
 
 msgid "Samba Settings"
 msgstr "Nastavení Samby"
-
-msgid "Samba version"
-msgstr "Verze Samby"
 
 msgid "Same as in active"
 msgstr "Stejně jako při zapnutém přijímači"
@@ -15727,7 +15712,7 @@ msgstr "Časovač napájení - přehled"
 msgid "Scheduler Settings"
 msgstr "Nastavení plánovače"
 
-msgid "Scheduler Standby"
+msgid "Scheduler standby"
 msgstr "Časovač napájení (vypnout do pohotovosti)"
 
 msgid "Scheduler deep standby"
@@ -15768,12 +15753,6 @@ msgstr "Rychlost rolování (provádí software)"
 
 msgid "Search"
 msgstr "Hledat"
-
-msgid "Search EPG for current event"
-msgstr "Vyhledat EPG pro aktuální událost"
-
-msgid "Search IMDb for information about current event"
-msgstr "Vyhledejte si informace o aktuální události na IMDb"
 
 msgid "Search Sats"
 msgstr "Hledání družic (SAT Finder)"
@@ -15850,10 +15829,10 @@ msgstr "Procházení dopředu - dlouhý stisk"
 msgid "SeekBar activation"
 msgstr "Aktivace hledání"
 
-msgid "Seekbar"
+msgid "SeekBar"
 msgstr "Panel vyhledávání"
 
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr "Citlivost hledání"
 
 msgid "Seeking connected events"
@@ -15925,7 +15904,7 @@ msgstr "Vyberte 'Ano', aby byl informační panel zobrazen bez časového limitu
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr "Chcete-li, aby každé zjištěné úložné zařízení bylo automaticky exportováno jako sdílení samba, vyberte možnost „Ano“."
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr "Pokud nastavíte na 'ano' můžete použít seekbar a skočit na místo v rámci události."
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -16213,6 +16192,9 @@ msgstr "Vyberte přehled"
 msgid "Select a debug log file to view:"
 msgstr "Vyberte soubor protokolu ladění, který chcete zobrazit:"
 
+msgid "Select a device to create multiboot slots"
+msgstr "Vyberte zařízení pro vytvoření slotů pro více systémů"
+
 msgid "Select a device to use as the flash expander"
 msgstr "Vyberte zařízení, které chcete použít jako expandér flash"
 
@@ -16439,6 +16421,9 @@ msgstr "Vybrat způsob řazení:"
 
 msgid "Select system information to view:"
 msgstr "Vyberte systémové informace, které chcete zobrazit:"
+
+msgid "Select target device for slot creation"
+msgstr "Vyberte cílové zařízení pro vytvoření slotu"
 
 msgid "Select temporary directory sort order for the current column"
 msgstr "Vyberte dočasné řazení adresáře pro aktuální sloupec"
@@ -17027,10 +17012,10 @@ msgstr "Akce s informacemi o službě"
 msgid "Service Name"
 msgstr "Název programu"
 
-msgid "Service Number and Service Name"
+msgid "Service number and service name"
 msgstr "Číslo programu a název programu"
 
-msgid "Service Number, Picon and Service Name"
+msgid "Service number, picon and service name"
 msgstr "Číslo programu, pikona a název programu"
 
 msgid "Service Scan"
@@ -17257,7 +17242,7 @@ msgstr "Nastavit výchozí metodu třídění."
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr "Nastavení času zpoždění mezi opakovanými smyčkami rolování. Toto v některých vzhledech provádí software."
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr "Nastavte velikost skoku lišty."
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -17396,6 +17381,9 @@ msgstr "Nastavení hesla se důrazně doporučuje, pokud je váš přijímač p�
 
 msgid "Settings"
 msgstr "Nastavení"
+
+msgid "Settings Backup Target"
+msgstr "Cíl zálohy nastavení"
 
 msgid "Settings mode"
 msgstr "Nastavovací režim"
@@ -18433,7 +18421,7 @@ msgstr "Balíčky součástí vzhledu"
 msgid "Skin Packages"
 msgstr "Balíčky vzhledu"
 
-msgid "Skin Setting"
+msgid "Skin setting"
 msgstr "Nastavení vzhledu"
 
 msgid "Skin Settings"
@@ -18592,6 +18580,9 @@ msgstr "Slot '%s' %s"
 #, python-format
 msgid "Slot '%s' %s: %s%s"
 msgstr "Slot '%s' %s: %s%s"
+
+msgid "Slot F: Flash Slot Image Backup (Current image)"
+msgstr "Slot F: Záloha obrazu slotu Flash (aktuální obraz)"
 
 msgid "Slot Manager"
 msgstr "Správce slotů"
@@ -19845,13 +19836,6 @@ msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr "Standard DVD nepodporuje toky videa H.264 (HDTV)."
 
 msgid ""
-"The DreamPlex plugin is not installed!\n"
-"Please install it."
-msgstr ""
-"Plugin DreamPlex není nainstalován!\n"
-"Nainstalujte jej prosím."
-
-msgid ""
 "The EPGSearch plugin is not installed!\n"
 "Please install it."
 msgstr ""
@@ -20734,9 +20718,6 @@ msgstr "Značka časové osy"
 msgid "Timeline scale"
 msgstr "Měřítko času"
 
-msgid "Timer Actions"
-msgstr "Akce časovače"
-
 msgid "Timer Log Actions"
 msgstr "Akce protokolu časovače"
 
@@ -21228,6 +21209,10 @@ msgstr "Typ zařízení"
 
 msgid "Type of scan"
 msgstr "Typ prohledávání"
+
+#, python-format
+msgid "UBI slot %s%s"
+msgstr "UBI slot %s%s"
 
 msgid "UBINIZE"
 msgstr "UBINIZE"
@@ -22710,7 +22695,7 @@ msgstr "Pokud je režim T2MI RAW vypnutý (výchozí), můžeme použít de-enka
 msgid "With errors:"
 msgstr "S chybami:"
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "dlouhým stiskem OK"
 
 msgid "With pop up"
@@ -23261,7 +23246,7 @@ msgstr "dobrodružný/western/válečný"
 msgid "advertisement/shopping"
 msgstr "reklama/nakupování"
 
-msgid "all up/down"
+msgid "All up/down"
 msgstr "vše nahoru/dolů"
 
 msgid "alpha then oldest"
@@ -23521,9 +23506,6 @@ msgstr "selhalo"
 
 msgid "fashion"
 msgstr "móda"
-
-msgid "fast"
-msgstr "rychle"
 
 msgid "file can not displayed - file not found"
 msgstr "soubor nelze zobrazit - soubor nenalezen"
@@ -24097,8 +24079,8 @@ msgstr "tradiční (rychlý), přeladit"
 msgid "tree delete"
 msgstr "smazat strom"
 
-msgid "turbo"
-msgstr "turbo"
+msgid "Turbo"
+msgstr "Turbo"
 
 msgid "uShare"
 msgstr "uShare"
@@ -24190,6 +24172,61 @@ msgstr "ano (uchovat zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "DVB API version"
+#~ msgstr "Verze DVB API"
+
+#~ msgid "Enigma2 version"
+#~ msgstr "Verze Enigma2"
+
+#~ msgid "FFmpeg version"
+#~ msgstr "Verze FFmpeg"
+
+#~ msgid "GCC version"
+#~ msgstr "Verze GCC"
+
+#~ msgid "GStreamer version"
+#~ msgstr "Verze GStreamer"
+
+#~ msgid "Glibc version"
+#~ msgstr "Verze Glibc"
+
+#~ msgid "OpenSSL version"
+#~ msgstr "Verze OpenSSL"
+
+#~ msgid "Python version"
+#~ msgstr "Verze Pythonu"
+
+#~ msgid "Rust version"
+#~ msgstr "Rust verze"
+
+#~ msgid "Samba version"
+#~ msgstr "Verze Samby"
+
+#~ msgid "Open AutoTimer OverView"
+#~ msgstr "Otevřít přehled automatického časovače"
+
+#~ msgid "Open DreamPlex"
+#~ msgstr "Otevřít DreamPlex"
+
+#~ msgid "QuickMenu Actions"
+#~ msgstr "Akce rychlé nabídky"
+
+#~ msgid "Search EPG for current event"
+#~ msgstr "Vyhledat EPG pro aktuální událost"
+
+#~ msgid "Search IMDb for information about current event"
+#~ msgstr "Vyhledejte si informace o aktuální události na IMDb"
+
+#~ msgid ""
+#~ "The DreamPlex plugin is not installed!\n"
+#~ "Please install it."
+#~ msgstr ""
+#~ "Plugin DreamPlex není nainstalován!\n"
+#~ "Nainstalujte jej prosím."
+
+#~ msgid "Timer Actions"
+#~ msgstr "Akce časovače"
 
 #~ msgid "InfoBar EPG Actions"
 #~ msgstr "Akce informačního panelu EPG"

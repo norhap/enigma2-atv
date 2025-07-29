@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 16:24+0000\n"
+"POT-Creation-Date: 2025-07-17 17:20+0000\n"
 "PO-Revision-Date: 2016-04-02 23:18+0200\n"
 "Last-Translator: Andy Blackburn <andyblac@icloud.com>\n"
 "Language-Team: OldSkul from www.linux-sprejemniki.info\n"
@@ -1168,6 +1168,10 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
+#, python-format
+msgid "%d slots have been created on the device.\n"
+msgstr ""
+
 #
 #, fuzzy, python-format
 msgid "%d times"
@@ -1362,6 +1366,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s not available."
 msgstr "Server je trenutno nedosegljiv."
+
+#, python-format
+msgid "%s version"
+msgstr ""
 
 #
 #, fuzzy, python-format
@@ -2819,10 +2827,10 @@ msgstr ""
 msgid "Ask user"
 msgstr "Vprašajte uporabnika"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr ""
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr ""
 
 msgid "Aspect"
@@ -2954,7 +2962,7 @@ msgstr "Samodejno"
 
 #
 #, fuzzy
-msgid "Auto Detect"
+msgid "Auto detect"
 msgstr "Globoko spanje"
 
 msgid "Auto Language"
@@ -3416,7 +3424,7 @@ msgstr ""
 msgid "Blinking REC"
 msgstr ""
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr ""
 
 #
@@ -4213,7 +4221,7 @@ msgstr "Kanal"
 
 #
 #, fuzzy
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Seznam kanalov"
 
 msgid "Channel Info"
@@ -4223,7 +4231,7 @@ msgstr ""
 msgid "Channel List"
 msgstr "Seznam kanalov"
 
-msgid "Channel Number"
+msgid "Channel number"
 msgstr ""
 
 #
@@ -4760,7 +4768,7 @@ msgstr ""
 msgid "Color space"
 msgstr "Barvni format"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr ""
 
 msgid "Combined"
@@ -5644,6 +5652,9 @@ msgstr ""
 msgid "Create separate radio user bouquet"
 msgstr ""
 
+msgid "Create slots for the selected device"
+msgstr ""
+
 msgid "Create swap"
 msgstr ""
 
@@ -5952,9 +5963,6 @@ msgstr ""
 #
 msgid "DUAL LAYER DVD"
 msgstr "Dvo-slojni DVD"
-
-msgid "DVB API version"
-msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
@@ -6335,6 +6343,9 @@ msgid "Define the DNS suffix."
 msgstr ""
 
 msgid "Define the custom mountpoint for the device."
+msgstr ""
+
+msgid "Define the default settings backup target location. Select 'Ask user' to prompt the user for the target location when the backup is run."
 msgstr ""
 
 msgid "Define the file system mount options."
@@ -8015,9 +8026,6 @@ msgstr ""
 msgid "Enigma2 revision"
 msgstr ""
 
-msgid "Enigma2 version"
-msgstr ""
-
 msgid "Enigmalight"
 msgstr ""
 
@@ -8769,9 +8777,6 @@ msgstr ""
 msgid "FFmpeg is not installed so '.mvi' file actions are not available!"
 msgstr ""
 
-msgid "FFmpeg version"
-msgstr ""
-
 msgid "FIFO"
 msgstr ""
 
@@ -9433,9 +9438,6 @@ msgstr ""
 msgid "G"
 msgstr ""
 
-msgid "GCC version"
-msgstr ""
-
 #, fuzzy
 msgid "GREEN button"
 msgstr "Rdeča tipka..."
@@ -9447,9 +9449,6 @@ msgid "GStreamer debug log category *"
 msgstr ""
 
 msgid "GStreamer debug log level *"
-msgstr ""
-
-msgid "GStreamer version"
 msgstr ""
 
 msgid "GUI Skin *"
@@ -9557,9 +9556,6 @@ msgid "Gibraltar"
 msgstr ""
 
 msgid "Given device id"
-msgstr ""
-
-msgid "Glibc version"
 msgstr ""
 
 msgid "Go back to the previous step"
@@ -10895,7 +10891,7 @@ msgstr ""
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr ""
 
-msgid "Internal hdd only"
+msgid "Internal disk only"
 msgstr "Samo notranji HDD"
 
 msgid "Internet"
@@ -11136,7 +11132,14 @@ msgstr ""
 msgid "Kernel file"
 msgstr ""
 
+msgid "Kernel partition"
+msgstr ""
+
 msgid "Kernel version"
+msgstr ""
+
+#, python-format
+msgid "Kernel%s partition"
 msgstr ""
 
 msgid "Kexec MultiBoot Actions"
@@ -11419,7 +11422,7 @@ msgid "Left column file sort"
 msgstr ""
 
 #, fuzzy
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr "Ime naprave:"
 
 msgid "Left, back USB"
@@ -11748,10 +11751,10 @@ msgstr ""
 msgid "Logs older then the set no of days will be deleted."
 msgstr ""
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr ""
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr ""
 
 msgid "Long filenames"
@@ -13496,10 +13499,10 @@ msgstr "Ne, nikoli"
 msgid "No, scan later manually"
 msgstr "Ne, išči ročno kasneje"
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr ""
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr ""
 
 msgid "NodeID"
@@ -13577,7 +13580,7 @@ msgstr ""
 msgid "Not Defined"
 msgstr ""
 
-msgid "Not Flashing"
+msgid "Non-flashing"
 msgstr ""
 
 #
@@ -13882,9 +13885,6 @@ msgstr ""
 msgid "Open AutoTimer"
 msgstr ""
 
-msgid "Open AutoTimer OverView"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Open AutoTimer Overview"
@@ -13896,9 +13896,6 @@ msgid "Open Bouquet selection"
 msgstr "Konec urejanja paketa"
 
 msgid "Open Box Portal"
-msgstr ""
-
-msgid "Open DreamPlex"
 msgstr ""
 
 msgid "Open EPG"
@@ -14092,9 +14089,6 @@ msgid "OpenDNS Home"
 msgstr ""
 
 msgid "OpenPLi Packages"
-msgstr ""
-
-msgid "OpenSSL version"
 msgstr ""
 
 msgid "OpenVPN"
@@ -14563,7 +14557,7 @@ msgstr ""
 msgid "Picon Packages"
 msgstr ""
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr ""
 
 msgid "Picon install location"
@@ -15658,9 +15652,6 @@ msgstr ""
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr ""
 
-msgid "Python version"
-msgstr ""
-
 msgid "Qatar"
 msgstr ""
 
@@ -15721,9 +15712,6 @@ msgstr ""
 msgid "QuickMenu"
 msgstr ""
 
-msgid "QuickMenu Actions"
-msgstr ""
-
 msgid "QuickMenu/Extensions"
 msgstr ""
 
@@ -15776,7 +15764,7 @@ msgstr "FEC"
 msgid "REC "
 msgstr ""
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr ""
 
 msgid "REC Symbol in Standby"
@@ -15957,7 +15945,7 @@ msgstr ""
 msgid "Record Actions"
 msgstr ""
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr ""
 
 #
@@ -16766,7 +16754,7 @@ msgstr ""
 msgid "Right column file sort"
 msgstr ""
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr ""
 
 msgid "Right, back USB"
@@ -16987,9 +16975,6 @@ msgid "Samba Server"
 msgstr ""
 
 msgid "Samba Settings"
-msgstr ""
-
-msgid "Samba version"
 msgstr ""
 
 msgid "Same as in active"
@@ -17288,7 +17273,7 @@ msgstr "Pregled časovnikov"
 msgid "Scheduler Settings"
 msgstr ""
 
-msgid "Scheduler Standby"
+msgid "Scheduler standby"
 msgstr ""
 
 msgid "Scheduler deep standby"
@@ -17330,12 +17315,6 @@ msgstr ""
 #
 msgid "Search"
 msgstr "Iskanje"
-
-msgid "Search EPG for current event"
-msgstr ""
-
-msgid "Search IMDb for information about current event"
-msgstr ""
 
 msgid "Search Sats"
 msgstr ""
@@ -17432,11 +17411,11 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Seekbar"
+msgid "SeekBar"
 msgstr "Iskanje"
 
 #
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr "Občutljivost seekbar"
 
 msgid "Seeking connected events"
@@ -17509,7 +17488,7 @@ msgstr ""
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr ""
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr ""
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -17802,6 +17781,9 @@ msgstr ""
 msgid "Select a debug log file to view:"
 msgstr ""
 
+msgid "Select a device to create multiboot slots"
+msgstr ""
+
 msgid "Select a device to use as the flash expander"
 msgstr ""
 
@@ -18045,6 +18027,9 @@ msgid "Select sort method:"
 msgstr ""
 
 msgid "Select system information to view:"
+msgstr ""
+
+msgid "Select target device for slot creation"
 msgstr ""
 
 msgid "Select temporary directory sort order for the current column"
@@ -18640,10 +18625,10 @@ msgstr ""
 msgid "Service Name"
 msgstr ""
 
-msgid "Service Number and Service Name"
+msgid "Service number and service name"
 msgstr ""
 
-msgid "Service Number, Picon and Service Name"
+msgid "Service number, picon and service name"
 msgstr ""
 
 msgid "Service Scan"
@@ -18891,7 +18876,7 @@ msgstr ""
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr ""
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr ""
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -19029,6 +19014,9 @@ msgstr ""
 #
 msgid "Settings"
 msgstr "Nastavitve"
+
+msgid "Settings Backup Target"
+msgstr ""
 
 msgid "Settings mode"
 msgstr ""
@@ -20179,7 +20167,7 @@ msgstr ""
 msgid "Skin Packages"
 msgstr ""
 
-msgid "Skin Setting"
+msgid "Skin setting"
 msgstr ""
 
 msgid "Skin Settings"
@@ -20345,6 +20333,9 @@ msgstr ""
 
 #, python-format
 msgid "Slot '%s' %s: %s%s"
+msgstr ""
+
+msgid "Slot F: Flash Slot Image Backup (Current image)"
 msgstr ""
 
 msgid "Slot Manager"
@@ -21728,11 +21719,6 @@ msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
 msgid ""
-"The DreamPlex plugin is not installed!\n"
-"Please install it."
-msgstr ""
-
-msgid ""
 "The EPGSearch plugin is not installed!\n"
 "Please install it."
 msgstr ""
@@ -22594,11 +22580,6 @@ msgstr "Seznam časovnikov"
 msgid "Timeline scale"
 msgstr "Izbira časovnika"
 
-#
-#, fuzzy
-msgid "Timer Actions"
-msgstr "Izbira časovnika"
-
 msgid "Timer Log Actions"
 msgstr ""
 
@@ -23162,6 +23143,10 @@ msgstr ""
 #
 msgid "Type of scan"
 msgstr "Vrsta iskanja"
+
+#, python-format
+msgid "UBI slot %s%s"
+msgstr ""
 
 msgid "UBINIZE"
 msgstr ""
@@ -24706,7 +24691,7 @@ msgid "With errors:"
 msgstr ""
 
 #
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "Dolgi pritisk na tipko OK"
 
 msgid "With pop up"
@@ -25284,7 +25269,7 @@ msgstr ""
 msgid "advertisement/shopping"
 msgstr ""
 
-msgid "all up/down"
+msgid "All up/down"
 msgstr ""
 
 msgid "alpha then oldest"
@@ -25563,9 +25548,6 @@ msgid "failed"
 msgstr "ni uspelo"
 
 msgid "fashion"
-msgstr ""
-
-msgid "fast"
 msgstr ""
 
 msgid "file can not displayed - file not found"
@@ -26200,7 +26182,7 @@ msgstr ""
 msgid "tree delete"
 msgstr ""
 
-msgid "turbo"
+msgid "Turbo"
 msgstr ""
 
 msgid "uShare"
@@ -26310,6 +26292,11 @@ msgstr "Da (obdrži feed-e)"
 
 msgid "®"
 msgstr ""
+
+#
+#, fuzzy
+#~ msgid "Timer Actions"
+#~ msgstr "Izbira časovnika"
 
 #
 #, fuzzy

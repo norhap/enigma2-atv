@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 16:24+0000\n"
+"POT-Creation-Date: 2025-07-17 17:20+0000\n"
 "PO-Revision-Date: 2023-12-11 00:50+0000\n"
 "Last-Translator: W L <wl@mailhole.de>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sq/>\n"
@@ -1035,6 +1035,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d slots have been created on the device.\n"
+msgstr ""
+
+#, python-format
 msgid "%d times"
 msgstr "%d herë"
 
@@ -1210,6 +1214,10 @@ msgstr ""
 #, python-format
 msgid "%s not available."
 msgstr "%s nuk është në dispozicion."
+
+#, python-format
+msgid "%s version"
+msgstr ""
 
 #, python-format
 msgid "%s%d min"
@@ -2538,10 +2546,10 @@ msgstr ""
 msgid "Ask user"
 msgstr "Pyet përdoruesin"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr "Pyet përdoruesin (me prezgjedhur si 'jo')"
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr "Pyet përdoruesin (me prezgjedhur si 'po')"
 
 msgid "Aspect"
@@ -2652,7 +2660,7 @@ msgstr "Modalitet autorisimi"
 msgid "Auto"
 msgstr "Auto"
 
-msgid "Auto Detect"
+msgid "Auto detect"
 msgstr "Detekton auto"
 
 msgid "Auto Language"
@@ -3067,7 +3075,7 @@ msgstr ""
 msgid "Blinking REC"
 msgstr "REC pulsuese"
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr "Simboli REC"
 
 msgid "Block device"
@@ -3817,7 +3825,7 @@ msgstr ""
 msgid "Channel 1"
 msgstr "Kanali 1"
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Kanali 1 me Primetime"
 
 msgid "Channel Info"
@@ -3826,7 +3834,7 @@ msgstr "Informacioni i kanalit"
 msgid "Channel List"
 msgstr "Lista e kanaleve"
 
-msgid "Channel Number"
+msgid "Channel number"
 msgstr ""
 
 msgid "Channel Selection"
@@ -4317,7 +4325,7 @@ msgstr "Formati i ngjyrave"
 msgid "Color space"
 msgstr "Hapësira e ngjyrave"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr ""
 
 msgid "Combined"
@@ -5146,6 +5154,9 @@ msgstr ""
 msgid "Create separate radio user bouquet"
 msgstr "Krijo një buqetë të veçantë përdoruesi të radios"
 
+msgid "Create slots for the selected device"
+msgstr ""
+
 msgid "Create swap"
 msgstr ""
 
@@ -5420,9 +5431,6 @@ msgstr "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVD me dy shtresa"
-
-msgid "DVB API version"
-msgstr "Versioni DVB API"
 
 msgid "DVB CI Delay"
 msgstr "DVB CI Vonesa"
@@ -5774,6 +5782,9 @@ msgid "Define the DNS suffix."
 msgstr ""
 
 msgid "Define the custom mountpoint for the device."
+msgstr ""
+
+msgid "Define the default settings backup target location. Select 'Ask user' to prompt the user for the target location when the backup is run."
 msgstr ""
 
 msgid "Define the file system mount options."
@@ -7315,9 +7326,6 @@ msgstr "Informacioni Enigma2"
 msgid "Enigma2 revision"
 msgstr "Revizioni Enigma2"
 
-msgid "Enigma2 version"
-msgstr "Versioni Enigma2"
-
 msgid "Enigmalight"
 msgstr "Enigmalight"
 
@@ -8034,9 +8042,6 @@ msgstr ""
 msgid "FFmpeg is not installed so '.mvi' file actions are not available!"
 msgstr ""
 
-msgid "FFmpeg version"
-msgstr "Versioni FFmpeg"
-
 msgid "FIFO"
 msgstr "FIFO"
 
@@ -8635,9 +8640,6 @@ msgstr "Testi FullHD"
 msgid "G"
 msgstr "G"
 
-msgid "GCC version"
-msgstr "Versioni GCC"
-
 msgid "GREEN button"
 msgstr "Butoni JESHIL"
 
@@ -8649,9 +8651,6 @@ msgstr "Kategoria e regjistrit të korrigjimit të GStreamer *"
 
 msgid "GStreamer debug log level *"
 msgstr "Niveli i regjistrit të korrigjimit të GStreamer *"
-
-msgid "GStreamer version"
-msgstr "Versioni GStreamer"
 
 msgid "GUI Skin *"
 msgstr ""
@@ -8749,9 +8748,6 @@ msgstr "Gjibraltarit"
 
 msgid "Given device id"
 msgstr "ID-ja e dhënë e pajisjes"
-
-msgid "Glibc version"
-msgstr "Versioni Glibc"
 
 msgid "Go back to the previous step"
 msgstr ""
@@ -9969,7 +9965,7 @@ msgstr ""
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr ""
 
-msgid "Internal hdd only"
+msgid "Internal disk only"
 msgstr ""
 
 msgid "Internet"
@@ -10190,7 +10186,14 @@ msgstr ""
 msgid "Kernel file"
 msgstr ""
 
+msgid "Kernel partition"
+msgstr ""
+
 msgid "Kernel version"
+msgstr ""
+
+#, python-format
+msgid "Kernel%s partition"
 msgstr ""
 
 msgid "Kexec MultiBoot Actions"
@@ -10445,7 +10448,7 @@ msgstr ""
 msgid "Left column file sort"
 msgstr ""
 
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr ""
 
 msgid "Left, back USB"
@@ -10732,10 +10735,10 @@ msgstr ""
 msgid "Logs older then the set no of days will be deleted."
 msgstr ""
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr ""
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr ""
 
 msgid "Long filenames"
@@ -12264,10 +12267,10 @@ msgstr ""
 msgid "No, scan later manually"
 msgstr ""
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr ""
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr ""
 
 msgid "NodeID"
@@ -12336,7 +12339,7 @@ msgstr ""
 msgid "Not Defined"
 msgstr ""
 
-msgid "Not Flashing"
+msgid "Non-flashing"
 msgstr ""
 
 msgid "Not Installed"
@@ -12612,9 +12615,6 @@ msgstr "Opsionet e audios..."
 msgid "Open AutoTimer"
 msgstr ""
 
-msgid "Open AutoTimer OverView"
-msgstr ""
-
 msgid "Open AutoTimer Overview"
 msgstr ""
 
@@ -12622,9 +12622,6 @@ msgid "Open Bouquet selection"
 msgstr ""
 
 msgid "Open Box Portal"
-msgstr ""
-
-msgid "Open DreamPlex"
 msgstr ""
 
 msgid "Open EPG"
@@ -12790,9 +12787,6 @@ msgid "OpenDNS Home"
 msgstr ""
 
 msgid "OpenPLi Packages"
-msgstr ""
-
-msgid "OpenSSL version"
 msgstr ""
 
 msgid "OpenVPN"
@@ -13227,7 +13221,7 @@ msgstr "Pikona"
 msgid "Picon Packages"
 msgstr ""
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr ""
 
 msgid "Picon install location"
@@ -14179,9 +14173,6 @@ msgstr ""
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr ""
 
-msgid "Python version"
-msgstr ""
-
 msgid "Qatar"
 msgstr ""
 
@@ -14233,9 +14224,6 @@ msgstr ""
 msgid "QuickMenu"
 msgstr "Menuja e shpejte"
 
-msgid "QuickMenu Actions"
-msgstr ""
-
 msgid "QuickMenu/Extensions"
 msgstr ""
 
@@ -14284,7 +14272,7 @@ msgstr "REC"
 msgid "REC "
 msgstr "REC "
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr "Simboli REC"
 
 msgid "REC Symbol in Standby"
@@ -14447,7 +14435,7 @@ msgstr "Regjistro - njësoj si butoni i regjistrimit"
 msgid "Record Actions"
 msgstr "Regjistroni veprimet"
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr ""
 
 msgid "Record next"
@@ -15161,7 +15149,7 @@ msgstr ""
 msgid "Right column file sort"
 msgstr ""
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr ""
 
 msgid "Right, back USB"
@@ -15369,9 +15357,6 @@ msgid "Samba Server"
 msgstr ""
 
 msgid "Samba Settings"
-msgstr ""
-
-msgid "Samba version"
 msgstr ""
 
 msgid "Same as in active"
@@ -15632,7 +15617,7 @@ msgstr ""
 msgid "Scheduler Settings"
 msgstr ""
 
-msgid "Scheduler Standby"
+msgid "Scheduler standby"
 msgstr ""
 
 msgid "Scheduler deep standby"
@@ -15672,12 +15657,6 @@ msgid "Scrolling speed (software renderer)"
 msgstr ""
 
 msgid "Search"
-msgstr ""
-
-msgid "Search EPG for current event"
-msgstr ""
-
-msgid "Search IMDb for information about current event"
 msgstr ""
 
 msgid "Search Sats"
@@ -15755,10 +15734,10 @@ msgstr ""
 msgid "SeekBar activation"
 msgstr ""
 
-msgid "Seekbar"
+msgid "SeekBar"
 msgstr ""
 
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr ""
 
 msgid "Seeking connected events"
@@ -15830,7 +15809,7 @@ msgstr "Nëse vendoset në 'po; shiriti i informacionit do të mbetet i shfaqur 
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr ""
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr "Nëse vendoset në 'po', ju lejon të përdorni shiritin e kërkimit për të kërcyer në një pikë brenda ngjarjes."
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -16118,6 +16097,9 @@ msgstr ""
 msgid "Select a debug log file to view:"
 msgstr ""
 
+msgid "Select a device to create multiboot slots"
+msgstr ""
+
 msgid "Select a device to use as the flash expander"
 msgstr ""
 
@@ -16343,6 +16325,9 @@ msgid "Select sort method:"
 msgstr ""
 
 msgid "Select system information to view:"
+msgstr ""
+
+msgid "Select target device for slot creation"
 msgstr ""
 
 msgid "Select temporary directory sort order for the current column"
@@ -16911,10 +16896,10 @@ msgstr ""
 msgid "Service Name"
 msgstr ""
 
-msgid "Service Number and Service Name"
+msgid "Service number and service name"
 msgstr ""
 
-msgid "Service Number, Picon and Service Name"
+msgid "Service number, picon and service name"
 msgstr ""
 
 msgid "Service Scan"
@@ -17135,7 +17120,7 @@ msgstr ""
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr ""
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr ""
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -17267,6 +17252,9 @@ msgid "Setting a password is strongly advised if your STB is open to the Interne
 msgstr ""
 
 msgid "Settings"
+msgstr ""
+
+msgid "Settings Backup Target"
 msgstr ""
 
 msgid "Settings mode"
@@ -18305,7 +18293,7 @@ msgstr ""
 msgid "Skin Packages"
 msgstr ""
 
-msgid "Skin Setting"
+msgid "Skin setting"
 msgstr "Vendosja e lëkurës"
 
 msgid "Skin Settings"
@@ -18461,6 +18449,9 @@ msgstr ""
 
 #, python-format
 msgid "Slot '%s' %s: %s%s"
+msgstr ""
+
+msgid "Slot F: Flash Slot Image Backup (Current image)"
 msgstr ""
 
 msgid "Slot Manager"
@@ -19702,13 +19693,6 @@ msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr "Standardi i DVD nuk suporton video streams H.264 (HDTV)."
 
 msgid ""
-"The DreamPlex plugin is not installed!\n"
-"Please install it."
-msgstr ""
-"Shtojca DreamPlex nuk është instaluar!\n"
-"Ju lutemi instaloni atë."
-
-msgid ""
 "The EPGSearch plugin is not installed!\n"
 "Please install it."
 msgstr ""
@@ -20549,9 +20533,6 @@ msgstr ""
 msgid "Timeline scale"
 msgstr ""
 
-msgid "Timer Actions"
-msgstr ""
-
 msgid "Timer Log Actions"
 msgstr ""
 
@@ -21040,6 +21021,10 @@ msgid "Type of device"
 msgstr ""
 
 msgid "Type of scan"
+msgstr ""
+
+#, python-format
+msgid "UBI slot %s%s"
 msgstr ""
 
 msgid "UBINIZE"
@@ -22476,7 +22461,7 @@ msgstr "Me modalitetin T2MI RAW të çaktivizuar (e parazgjedhur) ne mund të p�
 msgid "With errors:"
 msgstr "Me gabime:"
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "me shtypje të gjatë OK"
 
 msgid "With pop up"
@@ -23025,7 +23010,7 @@ msgstr ""
 msgid "advertisement/shopping"
 msgstr ""
 
-msgid "all up/down"
+msgid "All up/down"
 msgstr ""
 
 msgid "alpha then oldest"
@@ -23282,9 +23267,6 @@ msgid "failed"
 msgstr ""
 
 msgid "fashion"
-msgstr ""
-
-msgid "fast"
 msgstr ""
 
 msgid "file can not displayed - file not found"
@@ -23855,8 +23837,8 @@ msgstr "tradicional (i shpejtë), ribashkim"
 msgid "tree delete"
 msgstr ""
 
-msgid "turbo"
-msgstr "turbo"
+msgid "Turbo"
+msgstr "Turbo"
 
 msgid "uShare"
 msgstr "uShare"
@@ -23947,6 +23929,31 @@ msgstr "Po (mbani ushqim)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "DVB API version"
+#~ msgstr "Versioni DVB API"
+
+#~ msgid "Enigma2 version"
+#~ msgstr "Versioni Enigma2"
+
+#~ msgid "FFmpeg version"
+#~ msgstr "Versioni FFmpeg"
+
+#~ msgid "GCC version"
+#~ msgstr "Versioni GCC"
+
+#~ msgid "GStreamer version"
+#~ msgstr "Versioni GStreamer"
+
+#~ msgid "Glibc version"
+#~ msgstr "Versioni Glibc"
+
+#~ msgid ""
+#~ "The DreamPlex plugin is not installed!\n"
+#~ "Please install it."
+#~ msgstr ""
+#~ "Shtojca DreamPlex nuk është instaluar!\n"
+#~ "Ju lutemi instaloni atë."
 
 #~ msgid "Watch recordings"
 #~ msgstr "Shikoni regjistrimet"
