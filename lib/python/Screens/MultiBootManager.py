@@ -1,3 +1,4 @@
+from math import ceil
 from os import W_OK, access, listdir, remove, stat, statvfs
 from os.path import exists, isdir, join, realpath
 from re import compile
@@ -151,7 +152,10 @@ class MultiBootManager(Screen):
 		self.close(True)
 
 	def deleteImage(self):
-		if BoxInfo.getItem("HasChkrootMultiboot") and not BoxInfo.getItem("hasUBIMB"):
+		currentSelected = self["slotlist"].l.getCurrentSelection()[0]
+		slot = currentSelected[1][0]
+		current = currentSelected[1][4]
+		if BoxInfo.getItem("HasChkrootMultiboot") and slot == "1" and current and not BoxInfo.getItem("hasUBIMB"):
 			self.session.openWithCallback(self.disableChkrootAnswer, MessageBox, _("Are you sure you want to disable Chkroot Multiboot?"), simple=True, windowTitle=self.getTitle())
 		else:
 			self.session.openWithCallback(self.deleteImageAnswer, MessageBox, "%s\n\n%s" % (self["slotlist"].l.getCurrentSelection()[0][0], _("Are you sure you want to delete this image?")), simple=True, windowTitle=self.getTitle())
@@ -969,7 +973,7 @@ class ChkrootSlotManager(Setup):
 			path = path if exists(path) else f"/sys/block/{base}/size"
 			with open(path) as fd:
 				blocks = int(fd.read().strip())
-				return (blocks * 512) // (1024 * 1024 * 1024)
+				return ceil((blocks * 512) / (1024 * 1024 * 1024))
 		except Exception as e:
 			return 0
 
@@ -1073,6 +1077,7 @@ class UBISlotManager(Setup):
 			cmdlist.append(f"for n in {TARGET_DEVICE}* ; do umount -lf $n > /dev/null 2>&1 ; done")
 			cmdlist.append(f"/usr/sbin/sgdisk -z {TARGET_DEVICE}")
 			cmdlist.append(f"/bin/touch /dev/nomount.{TARGET} > /dev/null 2>&1")
+			cmdlist.append(f"/bin/touch /dev/nomount.{TARGET}1 > /dev/null 2>&1")
 			cmdlist.append(f"/usr/sbin/parted --script {TARGET_DEVICE} mklabel gpt")
 			cmdlist.append(f"/usr/sbin/partprobe {TARGET_DEVICE}")
 			cmdlist.append(f"/usr/sbin/parted --script {TARGET_DEVICE} mkpart startup fat32 8192s 5MB")
@@ -1145,7 +1150,7 @@ class UBISlotManager(Setup):
 			path = path if exists(path) else f"/sys/block/{base}/size"
 			with open(path) as fd:
 				blocks = int(fd.read().strip())
-				return (blocks * 512) // (1024 * 1024 * 1024)
+				return ceil((blocks * 512) / (1024 * 1024 * 1024))
 		except Exception as e:
 			return 0
 
