@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-06 08:27+0000\n"
-"PO-Revision-Date: 2025-11-07 10:56+0000\n"
+"POT-Creation-Date: 2025-11-28 22:18+0000\n"
+"PO-Revision-Date: 2025-12-02 11:00+0000\n"
 "Last-Translator: pololoko111 <peciek83@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/pl/>\n"
 "Language: pl\n"
@@ -1393,12 +1393,6 @@ msgstr "/s"
 msgid "/sec]"
 msgstr "/sek]"
 
-msgid "/usr/share/enigma2 directory"
-msgstr "katalog /usr/share/enigma2"
-
-msgid "/var directory"
-msgstr "katalog /var"
-
 msgid "0"
 msgstr "0"
 
@@ -1650,7 +1644,7 @@ msgid "A finished scheduled timer wants to shut down your %s %s. Do that now?"
 msgstr "Zakończony zaplanowany timer chce wyłączyć %s %s. Czy chcesz to teraz zrobić?"
 
 msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
-msgstr "Podświetlenie na obrazie pilota zdalnego sterowania wskazuje, do którego przycisku odnosi się pomoc. Jeśli więcej niż jeden przycisk wykonuje wskazaną funkcję, wyświetlone zostanie więcej niż jedno podświetlenie. Tekst poniżej listy zawiera listę aktywnych przycisków oraz informację, czy dana funkcja wymaga długiego naciśnięcia przycisku lub naciśnięcia przycisku SHIFT."
+msgstr "Podświetlenie na pilocie pokazuje, do którego przycisku odnosi się pomoc. Jeśli wskazaną funkcję wykonuje więcej niż jeden przycisk, wyświetlony zostanie więcej niż jeden znacznik. Tekst pod listą zawiera listę aktywnych przycisków oraz informację, czy dana funkcja wymaga długiego naciśnięcia lub przesunięcia przycisku (przycisków)."
 
 msgid "A new storage device has been connected:"
 msgstr "Podłączono nowe urządzenie pamięci masowej:"
@@ -2126,6 +2120,9 @@ msgstr "Dorosły"
 msgid "Adult Audience, Strong Violence 15+"
 msgstr "Dorośli, silna przemoc 15+"
 
+msgid "Adult movie/Drama"
+msgstr "Film dla dorosłych/Dramat"
+
 msgid "Advanced"
 msgstr "Zaawansowane"
 
@@ -2146,6 +2143,12 @@ msgstr "Zaawansowana konfiguracja ulepszania wideo"
 
 msgid "Adventure"
 msgstr "Przygoda"
+
+msgid "Adventure/Western/War"
+msgstr "Przygoda/Western/Wojna"
+
+msgid "Advertisement/Shopping"
+msgstr "Reklama/Zakupy"
 
 msgid "Afar"
 msgstr "Afar"
@@ -2372,11 +2375,11 @@ msgstr "Zawsze pokazuj 'listy kanałów'"
 msgid "Always use smart1080p mode"
 msgstr "Zawsze używaj trybu 1080p"
 
-msgid "American football"
-msgstr "Futbol Amerykański"
-
 msgid "American Samoa"
 msgstr "Samoa Amerykańskie"
+
+msgid "American football"
+msgstr "Futbol amerykański"
 
 msgid "Amharic"
 msgstr "Amharski"
@@ -2396,6 +2399,9 @@ msgstr "Podjęto próbę przechwytywania aktualnego stanu TV. Jeśli nie jest to
 
 msgid "An unknown error occurred!"
 msgstr "Wystąpił nieznany błąd!"
+
+msgid "Ancient"
+msgstr "Starożytny"
 
 msgid "Andorra"
 msgstr "Andora"
@@ -2432,6 +2438,9 @@ msgstr "Antarktyka"
 
 msgid "Antigua and Barbuda"
 msgstr "Antigua i Barbuda"
+
+msgid "Antiques"
+msgstr "Antyki"
 
 msgid "Any activity"
 msgstr "Każde działanie"
@@ -2573,11 +2582,20 @@ msgstr "Ormiański"
 msgid "Arrow skip mode"
 msgstr "Tryb pomijania strzałek"
 
+msgid "Art/Literature"
+msgstr "Sztuka/Literatura"
+
 msgid "Artist"
 msgstr "Artysta"
 
+msgid "Arts"
+msgstr "Sztuka"
+
 msgid "Arts/Culture"
 msgstr "Kultura/Sztuka"
+
+msgid "Arts/Culture magazines"
+msgstr "Magazyn o sztuce/kulturze"
 
 msgid "Aruba"
 msgstr "Aruba"
@@ -2931,17 +2949,11 @@ msgstr "Wybrane w tle:"
 msgid "Background:"
 msgstr "Tło:"
 
-msgid "Backup"
-msgstr "Kopia zapasowa"
-
 msgid "Backup Location"
 msgstr "Lokalizacja kopii zapasowej"
 
 msgid "Backup Log"
 msgstr "Log kopii zapasowych"
-
-msgid "Backup Mode"
-msgstr "Tryb kopii zapasowej"
 
 msgid "Backup Mode: Flash Online"
 msgstr "Tryb kopii zapasowej: Flash Online"
@@ -2995,6 +3007,9 @@ msgstr "Bahamy"
 
 msgid "Bahrain"
 msgstr "Bahrajn"
+
+msgid "Ballet"
+msgstr "Balet"
 
 msgid "Bambara"
 msgstr "Bambara"
@@ -3107,6 +3122,9 @@ msgstr "Przepustowość"
 
 msgid "Black"
 msgstr "Czarny"
+
+msgid "Black & White"
+msgstr "Czarno-biały"
 
 msgid "Black screen"
 msgstr "Czarny ekran"
@@ -3262,6 +3280,9 @@ msgstr "Adres transmisji"
 msgid "Broadcast systems"
 msgstr "Systemy transmisji"
 
+msgid "Broadcasting/Press"
+msgstr "Nadawanie/Prasa"
+
 msgid "Broadcom"
 msgstr "Broadcom"
 
@@ -3323,6 +3344,9 @@ msgstr "Nagraj do średniego"
 
 msgid "Burundi"
 msgstr "Burundi"
+
+msgid "Business"
+msgstr "Biznes"
 
 msgid "Business & Finance"
 msgstr "Biznes i Finanse"
@@ -3419,9 +3443,6 @@ msgstr "Podstawowy edytor linii CCcam.cfg"
 
 msgid "CCcamInfo Mainmenu"
 msgstr "CCcamInfo Menu główne"
-
-msgid "CF Drive"
-msgstr "Dysk CF"
 
 msgid "CH"
 msgstr "CH"
@@ -3662,7 +3683,7 @@ msgid "Cancel any changes the active locale/language and exit all menus"
 msgstr "Anuluj wszelkie zmiany aktywnych ustawień regionalnych/języka i zamknij wszystkie menu"
 
 msgid "Cancel any changes to the active locale/language and exit"
-msgstr "Anuluj wszelkie zmiany w aktywnych ustawieniach regionu/języka i wyjdź"
+msgstr "Anuluj wszelkie zmiany w aktywnych ustawieniach regionu / języka i wyjdź"
 
 msgid "Cancel any text changes and exit"
 msgstr "Anuluj zmiany tekstu i wyjdź"
@@ -3769,6 +3790,12 @@ msgstr "Ustawienia cardserver"
 msgid "Cartoon"
 msgstr "Kreskówka"
 
+msgid "Cartoons"
+msgstr "Bajki"
+
+msgid "Cartoons/Puppets"
+msgstr "Bajki/Lalki"
+
 msgid "Cascade PiP"
 msgstr "Kaskada PiP"
 
@@ -3854,7 +3881,7 @@ msgid "Change step size"
 msgstr "Zmień rozmiar skoku"
 
 msgid "Change to Radio services mode"
-msgstr "Przejdź do trybu usług radiowych"
+msgstr "Przejdź do trybu kanałów radiowych"
 
 msgid "Change to TV services mode"
 msgstr "Przejdź do trybu usług telewizyjnych"
@@ -3887,16 +3914,16 @@ msgid "Channel List"
 msgstr "Lista Kanałów"
 
 msgid "Channel Selection"
-msgstr "Wybór kanału"
+msgstr "Ustawienia listy kanałów"
 
 msgid "Channel Selection Actions"
 msgstr "Akcje związane z wyborem kanału"
 
 msgid "Channel Selection Context Menu"
-msgstr "Menu kontekstowe wyboru kanału"
+msgstr "Menu kontekstowe listy kanałów"
 
 msgid "Channel Selection Context Menu Actions"
-msgstr "Akcje menu kontekstowego wyboru kanału"
+msgstr "Akcje menu kontekstowego listy kanałów"
 
 msgid "Channel Selection Context Menu Navigation Actions"
 msgstr "Akcje związane z nawigacją w menu kontekstowym wyboru kanału"
@@ -3953,10 +3980,10 @@ msgid "Channel preview mode"
 msgstr "Tryb podglądu kanału"
 
 msgid "Channel selection configuration"
-msgstr "Konfiguracja wyboru kanału"
+msgstr "Konfiguracja listy kanałów"
 
 msgid "Channel selection:"
-msgstr "Wybór kanału:"
+msgstr "Lista kanałów:"
 
 msgid "Channel up"
 msgstr "Kanał wyżej"
@@ -3981,6 +4008,9 @@ msgstr "Rozdział"
 
 msgid "Character device"
 msgstr "Postać urządzenia"
+
+msgid "Chat show"
+msgstr "Program dyskusyjny"
 
 msgid "Chechen"
 msgstr "Czeczeński"
@@ -4201,6 +4231,9 @@ msgstr "Kołowa prawa"
 msgid "City"
 msgstr "Miasto"
 
+msgid "Classical"
+msgstr "Klasyczny"
+
 msgid "Clean (Just flash and start clean)"
 msgstr "Wyczyść (Wystarczy zainstalować i skonfigurować od zera)"
 
@@ -4322,6 +4355,9 @@ msgstr "Zamknij pole wyboru"
 msgid "Close the current screen"
 msgstr "Zamknij aktualny ekran"
 
+msgid "Close the documentation screen"
+msgstr "Zamknij ekran dokumentacji"
+
 msgid "Close the screen"
 msgstr "Zamknij ekran"
 
@@ -4342,6 +4378,9 @@ msgstr "Zamknij wybór tytułu"
 
 msgid "Cloudflare DNS"
 msgstr "DNS Cloudflare"
+
+msgid "Club/Dance"
+msgstr "Klub/Taniec"
 
 msgid "Cocos (Keeling) Islands"
 msgstr "Wyspy Kokosowe"
@@ -4516,7 +4555,7 @@ msgid "Configure front panel LEDs"
 msgstr "Konfiguracja diod LED na panelu przednim"
 
 msgid "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info"
-msgstr "Skonfiguruj, w jaki sposób budowane są nazwy plików rejestrujących. Standard: Data Godzina - Kanał - Tytuł Bardzo bardzo krótki: Tytuł Bardzo krótki: Tytuł - Data Godzina Krótki z czasem: Data Godzina - Tytuł Krótki: Data - Tytuł Długi: Data Godzina - Kanał - Tytuł - Informacje"
+msgstr "Skonfiguruj sposób konstruowania nazw plików nagrań. Standardowe: Data, godzina – kanał – tytuł Bardzo, bardzo krótkie: Tytuł Bardzo krótkie: Tytuł – Data, godzina, krótkie z czasem: Data, godzina – tytuł Krótkie: Data, tytuł Długie: Data, godzina – kanał – tytuł – informacje"
 
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Określić, czy i gdzie ikona kodowania ma być wyświetlana w liście kanałów."
@@ -4528,22 +4567,22 @@ msgid "Configure if and how service type icons will be shown."
 msgstr "Skonfigurować, czy i gdzie typ pikon kanału ma być wyświetlany."
 
 msgid "Configure if and how the record indicator will be shown in the channel selection list."
-msgstr "Skonfigurować, czy i gdzie ma się pojawić wskaźnik nagrywania na liście wyboru kanałów."
+msgstr "Skonfiguruj, czy i w jaki sposób wskaźnik nagrywania będzie wyświetlany na liście wyboru kanałów."
 
 msgid "Configure if and how wide the service name column will be shown in the channel selection list."
-msgstr "Skonfigurować, czy i jak szeroka kolumna nazwy kanału pojawi się w liście wyboru kanału."
+msgstr "Skonfiguruj, czy i jak szeroko kolumna z nazwą kanału będzie wyświetlana na liście kanałów."
 
 msgid "Configure if crypto icons will be shown in the channel selection list."
 msgstr "Skonfiguruj, czy ikony kryptograficzne będą wyświetlane na liście wyboru kanałów."
 
 msgid "Configure if epg.dat should be saved at all."
-msgstr "Skonfiguruj, czy w ogóle ma być zapisywany plik epg.dat."
+msgstr "Skonfiguruj, czy plik epg.dat ma zostać w ogóle zapisany."
 
 msgid "Configure if service picons will be shown in quickzap."
 msgstr "Skonfiguruj jeśli pikony mają być wyświetlane w quickzap."
 
 msgid "Configure if service picons will be shown in the service list."
-msgstr "Skonfiguruj, czy pikony mają być wyświetlane w liście kanałów."
+msgstr "Skonfiguruj, czy pikony mają być wyświetlane na liście kanałów."
 
 msgid "Configure if service type icons will be shown."
 msgstr "Skonfiguruj, czy będą wyświetlane ikony typów usług."
@@ -4684,10 +4723,10 @@ msgid "Configure the gateway."
 msgstr "Skonfiguruj ustawienia 'bramy'."
 
 msgid "Configure the hard disk drive to go to standby after the specified idle time when the box is in standby."
-msgstr "Skonfiguruj dysk twardy tak, aby po określonym czasie bezczynności przechodził w tryb gotowości, gdy dekoder znajduje się w trybie gotowości."
+msgstr "Skonfiguruj dysk twardy tak, aby po upływie określonego czasu bezczynności przechodził w tryb czuwania, gdy dekoder znajduje się w trybie czuwania."
 
 msgid "Configure the hard disk drive to go to standby after the specified idle time."
-msgstr "Skonfiguruj dysk twardy tak, aby po określonym czasie bezczynności przeszedł w tryb gotowości."
+msgstr "Skonfiguruj dysk twardy tak, aby po upływie określonego czasu bezczynności przeszedł w tryb czuwania."
 
 msgid "Configure the height of the TrueType font letters used for teletext."
 msgstr "Skonfiguruj wysokość liter czcionki TrueType używanych do telegazety."
@@ -4720,7 +4759,7 @@ msgid "Configure the netmask."
 msgstr "Skonfiguruj maskę sieci."
 
 msgid "Configure the network again"
-msgstr "Skonfiguruj sieć ponownie"
+msgstr "Skonfiguruj ponownie sieć"
 
 msgid "Configure the number of days after which items are automatically removed from the trashcan."
 msgstr "Skonfiguruj liczbę dni, po upływie których elementy zostaną automatycznie usunięte z kosza."
@@ -4858,7 +4897,7 @@ msgid "Configure your NTP server."
 msgstr "Tutaj możesz zmienić synchronizację serwera NTP."
 
 msgid "Configure your Network"
-msgstr "Skonfiguruj sieć"
+msgstr "Skonfiguruj swoją sieć"
 
 msgid "Configure your internal LAN"
 msgstr "Ustawienia sieci LAN"
@@ -4867,7 +4906,7 @@ msgid "Configure your network settings, and press OK to start the scan"
 msgstr "Skonfiguruj ustawienia sieci i wciśnij 'OK' aby rozpocząć skanowanie"
 
 msgid "Configure your wireless LAN again"
-msgstr "Skonfiguruj ponownie sieć bezprzewodową"
+msgstr "Skonfiguruj ponownie sieć WiFi"
 
 msgid "Configures which video output connector will be used."
 msgstr "Skonfiguruj które wyście wideo ma być użyte."
@@ -5290,9 +5329,6 @@ msgstr "Aktualny"
 msgid "Current 1/1"
 msgstr "Aktualne 1/1"
 
-msgid "Current affairs"
-msgstr "Sprawy Bieżące"
-
 msgid "Current CEC address"
 msgstr "Aktualny adres CEC"
 
@@ -5320,6 +5356,9 @@ msgstr "Aktualny status:"
 #, python-format
 msgid "Current Temperature (SoC): %s °C"
 msgstr "Aktualna temperatura (SoC): %s °C"
+
+msgid "Current affairs"
+msgstr "Aktualności"
 
 msgid "Current crash log"
 msgstr "Aktualny log awarii"
@@ -5555,6 +5594,9 @@ msgstr "Taniec"
 msgid "Danish"
 msgstr "Duński"
 
+msgid "Darts"
+msgstr "Rzutki"
+
 msgid "Date"
 msgstr "Data"
 
@@ -5765,7 +5807,7 @@ msgid "Default"
 msgstr "Domyślny"
 
 msgid "Default  (keymap.xml)"
-msgstr "Standardowy  (keymap.xml)"
+msgstr "Domyślny (keymap.xml)"
 
 msgid "Default 'After event' *"
 msgstr "Domyślny 'Po wydarzeniu' *"
@@ -6181,6 +6223,12 @@ msgstr "Szczegóły logu GStreamer."
 msgid "Details"
 msgstr "Szczegóły"
 
+msgid "Detective"
+msgstr "Detektywistyczny"
+
+msgid "Detective/Thriller"
+msgstr "Detektywistyczny/Thriller"
+
 msgid "Development Packages"
 msgstr "Pakiety developerskie"
 
@@ -6194,7 +6242,7 @@ msgid "Device Manager Actions"
 msgstr "Akcje Menedżera urządzeń"
 
 msgid "Device Settings"
-msgstr "Ustawienia LAN/WLAN"
+msgstr "Ustawienia LAN/WiFi"
 
 msgid "Device id"
 msgstr "ID urządzenia"
@@ -6364,6 +6412,12 @@ msgstr "Wyłączone lub WPA/WPA2"
 
 msgid "Disabling Chkroot failed!"
 msgstr "Wyłączenie Chkroot nie powiodło się!"
+
+msgid "Discussion"
+msgstr "Dyskusja"
+
+msgid "Discussion/Interview/Debate"
+msgstr "Dyskusja/Wywiad/Debata"
 
 msgid "Dish"
 msgstr "Antena"
@@ -6581,13 +6635,6 @@ msgstr "Czy chcesz zmienić tryb dostępu '%s'?"
 msgid "Do you want the upgrade guide?"
 msgstr "Czy chcesz ulepszyć przewodnik?"
 
-msgid ""
-"Do you want to backup now?\n"
-"After pressing OK, please wait!"
-msgstr ""
-"Chcesz teraz utworzyć kopię zapasową?\n"
-"Po naciśnięciu 'OK', proszę czekać!"
-
 msgid "Do you want to backup settings?"
 msgstr "Czy chcesz wykonać kopię zapasową ustawień?"
 
@@ -6672,6 +6719,9 @@ msgstr "Czy chcesz rozpocząć tworzenie kopii teraz?"
 
 msgid "Do you want to update:"
 msgstr "Czy chcesz zaktualizować:"
+
+msgid "Docudrama"
+msgstr "Dokumentalny"
 
 msgid "Documentary"
 msgstr "Dokumentalny"
@@ -6932,8 +6982,14 @@ msgstr "Wschód"
 msgid "East limit set"
 msgstr "Ustaw limit wschodni"
 
+msgid "Easy listening"
+msgstr "Łatwe do słuchania"
+
 msgid "EasyMedia"
 msgstr "Easy Media"
+
+msgid "Economics/Social advisory"
+msgstr "Doradztwo ekonomiczne/społeczne"
 
 msgid "Ecuador"
 msgstr "Ekwador"
@@ -7018,8 +7074,11 @@ msgstr "Edukacja"
 msgid "Education/Information"
 msgstr "Edukacja/Informacje"
 
-msgid "Education/Science/Factual"
+msgid "Education/Science/Factual topics"
 msgstr "Edukacja/Nauka/Fakty"
+
+msgid "Educational"
+msgstr "Edukacyjny"
 
 msgid "Egypt"
 msgstr "Egipt"
@@ -7161,11 +7220,11 @@ msgid "Enable auto cable scan"
 msgstr "Włącz automatyczne skanowanie kablówki"
 
 msgid "Enable auto fast scan"
-msgstr "Włącz automatyczny fastscan"
+msgstr "Włącz automatyczne szybkie skanowanie"
 
 #, python-format
 msgid "Enable auto fast scan for %s"
-msgstr "Włącz automatyczny fastscan dla %s"
+msgstr "Włącz automatyczne szybkie skanowanie dla %s"
 
 msgid "Enable automatic shares"
 msgstr "Włącz automatyczne udostępnianie"
@@ -7531,8 +7590,14 @@ msgstr "Równy"
 msgid "Equatorial Guinea"
 msgstr "Gwinea Równikowa"
 
+msgid "Equestrian"
+msgstr "Jeździectwo"
+
 msgid "Eritrea"
 msgstr "Erytrea"
+
+msgid "Erotic"
+msgstr "Erotyczny"
 
 msgid "Error"
 msgstr "Błąd"
@@ -7899,6 +7964,9 @@ msgstr "Widok wydarzenia:"
 msgid "EventViewEPG Actions"
 msgstr "Akcje podglądu wydarzenia EPG"
 
+msgid "Events"
+msgstr "Wydarzenia"
+
 msgid "Everyday"
 msgstr "Codziennie"
 
@@ -8018,6 +8086,9 @@ msgstr "Wyjdź bez wykonywania kopii zapasowej"
 msgid "Expand"
 msgstr "Pokaż"
 
+msgid "Experimental film/video"
+msgstr "Film/wideo eksperymentalne"
+
 msgid "Experimental mode"
 msgstr "Tryb eksperymentalny"
 
@@ -8103,6 +8174,9 @@ msgstr "Wypakuj zawartość archiwum"
 msgid "Extract the package contents"
 msgstr "Wypakuj zawartość pakietu"
 
+msgid "Extreme"
+msgstr "Ekstremalny"
+
 msgid "Extrude from left"
 msgstr "Wyciągnij od lewej"
 
@@ -8168,6 +8242,9 @@ msgstr "Przywrócenie ustawień fabrycznych"
 
 msgid "Factory release"
 msgstr "Wydanie fabryczne"
+
+msgid "Factual"
+msgstr "Faktyczny"
 
 msgid "Fade the InfoBar on hide."
 msgstr "Przyciemnij pasek informacyjny przy ukryciu."
@@ -8242,6 +8319,9 @@ msgstr "Farerski"
 msgid "Farsi / Persian"
 msgstr "Farsi / Perski"
 
+msgid "Fashion"
+msgstr "Moda"
+
 msgid "Fast"
 msgstr "Szybko"
 
@@ -8271,6 +8351,12 @@ msgstr "[edycja ulubionych]"
 
 msgid "Favorites"
 msgstr "Ulubione"
+
+msgid "Feature"
+msgstr "Cecha"
+
+msgid "Features"
+msgstr "Cechy"
 
 msgid "Feed URL"
 msgstr "Adres URL kanału"
@@ -8425,7 +8511,10 @@ msgid "Fill in channel EPGs from the broadcast EPG where there is no IceTV EPG f
 msgstr "Wypełnij EPG kanału z EPG transmisji, w której nie ma EPG IceTV dla kanału"
 
 msgid "Film-noir"
-msgstr "Film-noir"
+msgstr "Film-noir (czarne kino)"
+
+msgid "Film/Cinema"
+msgstr "Film/Kino"
 
 msgid "Filter extensions"
 msgstr "Filtruj rozszerzenia"
@@ -8461,6 +8550,9 @@ msgstr "Znajdź aktualnie odtwarzaną usługę"
 msgid "Finding available log files, please wait..."
 msgstr "Trwa wyszukiwanie dostępnych plików logów, proszę czekać..."
 
+msgid "Fine arts"
+msgstr "Sztuki piękne"
+
 msgid "Fine movement"
 msgstr "Krótkie Przesunięcia"
 
@@ -8487,6 +8579,9 @@ msgstr "Pierwszy odtwarzalny plik timeshift!"
 
 msgid "Fishing"
 msgstr "Wędkarstwo"
+
+msgid "Fitness and Health"
+msgstr "Fitness i zdrowie"
 
 msgid "Fixed"
 msgstr "Naprawiony"
@@ -8558,19 +8653,25 @@ msgstr "Instalowanie systemu"
 
 #, python-format
 msgid "Flashing image '%s' was not successful!"
-msgstr "Wgrywanie systemu '%s' nie powiodło się!"
+msgstr "Instalowanie systemu '%s' nie powiodło się!"
 
 msgid "Flashing image successful"
 msgstr "Instalowanie systemu zakończone pomyślnie"
 
 msgid "Flat alphabetical"
-msgstr "Płaski alfabetycznie"
+msgstr "Płaski alfabetyczny"
 
 msgid "Flat by key group on remote"
 msgstr "Płaski według grupy przycisków na pilocie"
 
 msgid "Flat by position on remote"
 msgstr "Płaski według pozycji na pilocie"
+
+msgid "Folk and Country"
+msgstr "Folk i Country"
+
+msgid "Folk/Traditional music"
+msgstr "Muzyka ludowa/tradycyjna"
 
 msgid "Follow instructions on TV"
 msgstr "Postępuj zgodnie z instrukcjami na TV"
@@ -8585,6 +8686,9 @@ msgid "Food/Wine"
 msgstr "Jedzenie/Wino"
 
 msgid "Football"
+msgstr "Piłka nożna"
+
+msgid "Football/Soccer"
 msgstr "Piłka nożna"
 
 msgid "For how many minutes do you want to record?"
@@ -8616,6 +8720,9 @@ msgstr "Wymuszono wyłączenie"
 
 msgid "Force enabled"
 msgstr "wymuszanie włączone"
+
+msgid "Foreign countries/Expeditions"
+msgstr "Kraje obce/Wyprawy"
 
 msgid "Format"
 msgstr "Formatowanie"
@@ -8737,6 +8844,9 @@ msgstr "Widok pełnej rozdzielczości"
 msgid "FullHD Test"
 msgstr "Test FullHD"
 
+msgid "Further education"
+msgstr "Edukacja uzupełniająca"
+
 msgid "G"
 msgstr "G"
 
@@ -8772,6 +8882,9 @@ msgstr "Gambia"
 
 msgid "Game show"
 msgstr "Teleturniej"
+
+msgid "Game show/Quiz/Contest"
+msgstr "Teleturniej/Quiz/Konkurs"
 
 msgid "Ganda"
 msgstr "Ganda"
@@ -8869,6 +8982,18 @@ msgstr "Przejdź do katalogu nadrzędnego bieżącej kolumny"
 
 msgid "Go to standby"
 msgstr "Przejdź do trybu czuwania"
+
+msgid "Go to the first page of documentation"
+msgstr "Przejdź do pierwszej strony dokumentacji"
+
+msgid "Go to the last page of documentation"
+msgstr "Przejdź do ostatniej strony dokumentacji"
+
+msgid "Go to the next page of documentation"
+msgstr "Przejdź do następnej strony dokumentacji"
+
+msgid "Go to the previous page of documentation"
+msgstr "Przejdź do poprzedniej strony dokumentacji"
 
 msgid "Go up the list"
 msgstr "Idź w górę listy"
@@ -9104,6 +9229,9 @@ msgstr "Haitański"
 msgid "Halt"
 msgstr "Stop"
 
+msgid "Handicraft"
+msgstr "Rękodzieło"
+
 msgid "Handle Python crashes"
 msgstr "Awaria obsługi Pythona"
 
@@ -9120,10 +9248,10 @@ msgid "Hard Disk Settings"
 msgstr "Ustawienia HDD"
 
 msgid "Hard disk standby after"
-msgstr "Dysk twardy w trybie gotowości po"
+msgstr "Dysk twardy w trybie czuwania po"
 
 msgid "Hard disk standby in box standby after"
-msgstr "Dysk twardy w trybie gotowości w dekoderze po"
+msgstr "Dysk twardy w trybie czuwania w dekoderze po"
 
 msgid "Harddisk"
 msgstr "Dysk twardy"
@@ -9278,6 +9406,9 @@ msgstr "Wybrany element"
 msgid "Hindi"
 msgstr "Hindi"
 
+msgid "Hip Hop"
+msgstr "Hip Hop"
+
 msgid "Hiri Motu"
 msgstr "Hiri Motu"
 
@@ -9335,6 +9466,9 @@ msgstr "Stolica Apostolska (Państwo Watykańskie)"
 msgid "Home"
 msgstr "Domowy"
 
+msgid "Home and Garden"
+msgstr "Dom i ogród"
+
 msgid "Homepage"
 msgstr "Strona główna"
 
@@ -9363,7 +9497,7 @@ msgid "Horror"
 msgstr "Horror"
 
 msgid "Horse racing"
-msgstr "Wyścigi Konne"
+msgstr "Wyścigi konne"
 
 msgid "Host"
 msgstr "Host"
@@ -9468,7 +9602,7 @@ msgid "IP address is invalid!"
 msgstr "Adres IP jest nieprawidłowy!"
 
 msgid "IP address of the Stream Relay server used to descramble services that can only be decrypted via Stream Relay."
-msgstr "Adres IP serwera Stream Relay wykorzystywany do odkodowywania usług, które mogą być odszyfrowane przez Stream Relay."
+msgstr "Adres IP serwera Stream Relay używany do deszyfrowania kanałów, które można odszyfrować wyłącznie za pośrednictwem Stream Relay."
 
 msgid "IP of fallback remote receiver"
 msgstr "Adres IP zdalnego odbiornika"
@@ -9496,6 +9630,9 @@ msgstr "Wskaźnik prędkości ISO"
 
 msgid "ISP"
 msgstr "Dostawca"
+
+msgid "Ice hockey"
+msgstr "Hokej na lodzie"
 
 msgid "IceTV"
 msgstr "IceTV"
@@ -10092,6 +10229,9 @@ msgstr "Inupiaq"
 msgid "Invalid"
 msgstr "Nieprawidłowa"
 
+msgid "Invalid Help Page"
+msgstr "Nieprawidłowa strona pomocy"
+
 msgid "Invalid location!"
 msgstr "Nieprawidłowa lokalizacja!"
 
@@ -10166,6 +10306,9 @@ msgstr "Japoński"
 
 msgid "Javanese"
 msgstr "Jawajski"
+
+msgid "Jazz"
+msgstr "Jazz"
 
 msgid "Jersey"
 msgstr "Jersey"
@@ -10482,6 +10625,9 @@ msgstr "Język już został wybrany."
 msgid "Language selection"
 msgstr "Wybór Języka"
 
+msgid "Languages"
+msgstr "Języki"
+
 msgid "Lao"
 msgstr "Lao"
 
@@ -10694,6 +10840,9 @@ msgstr "Lista/Ulubione"
 msgid "Lists reloaded!"
 msgstr "Lista przeładowana!"
 
+msgid "Literature"
+msgstr "Literatura"
+
 msgid "Lithuania"
 msgstr "Litwa"
 
@@ -10705,6 +10854,9 @@ msgstr "Na żywo"
 
 msgid "Live TV Actions"
 msgstr "Akcje telewizyjne na żywo"
+
+msgid "Live broadcast"
+msgstr "Transmisja na żywo"
 
 msgid "Load"
 msgstr "Załaduj"
@@ -10760,7 +10912,7 @@ msgid "Locale (Descending)"
 msgstr "Ustawienia regionalne (malejąco)"
 
 msgid "Locale / Language Settings"
-msgstr "Ustawienia lokalne / języka"
+msgstr "Ustawienia regionalne / języki"
 
 msgid "Locale Selection Settings"
 msgstr "Ustawienia regionalne"
@@ -10957,6 +11109,12 @@ msgstr "Macedoński"
 msgid "Madagascar"
 msgstr "Madagaskar"
 
+msgid "Magazine"
+msgstr "Magazyn"
+
+msgid "Magazines/Reports/Documentary"
+msgstr "Magazyny/Raporty/Dokumentalne"
+
 msgid "Magenta"
 msgstr "Magenta"
 
@@ -11101,6 +11259,9 @@ msgstr "Wyspy Marshalla"
 msgid "Marshallese"
 msgstr "Marshallese"
 
+msgid "Martial sports"
+msgstr "Sporty walki"
+
 msgid "Martinique"
 msgstr "Martynika"
 
@@ -11182,6 +11343,9 @@ msgstr "Odtwarzacz Multimedialny"
 
 msgid "Medical"
 msgstr "Medyczny"
+
+msgid "Medicine/Physiology/Psychology"
+msgstr "Medycyna/Fizjologia/Psychologia"
 
 msgid "Medium is not a writeable DVD!"
 msgstr "Nośnik nie jest zapisywalnym DVD!"
@@ -11272,7 +11436,7 @@ msgid "Middle - Lite image"
 msgstr "Średni - system w wersji Lite"
 
 msgid "Mini series"
-msgstr "Mała Seria"
+msgstr "Miniserial"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -11394,14 +11558,20 @@ msgstr "Najnowsze u góry"
 msgid "Most recent last"
 msgstr "Najnowsze na dole"
 
-msgid "Motor Sport"
-msgstr "Sporty Motorowe"
-
 msgid "Motor command retries"
 msgstr "Ponowna próba silnika"
 
 msgid "Motor running timeout"
 msgstr "Limit czasu pracy silnika"
+
+msgid "Motor sport"
+msgstr "Sporty motorowe"
+
+msgid "Motoring"
+msgstr "Motoryzacja"
+
+msgid "Motors"
+msgstr "Motory"
 
 msgid "Mount"
 msgstr "Montowanie"
@@ -11806,6 +11976,9 @@ msgstr "Muzyka /Balet /Taniec"
 msgid "Musical"
 msgstr "Musical"
 
+msgid "Musical/Opera"
+msgstr "Musical/Opera"
+
 msgid "Mute"
 msgstr "Wycisz"
 
@@ -11887,6 +12060,9 @@ msgstr "Namibia"
 msgid "Narration"
 msgstr "Narracja"
 
+msgid "National music"
+msgstr "Muzyka narodowa"
+
 msgid "Native"
 msgstr "Rodowity"
 
@@ -11898,6 +12074,9 @@ msgstr "Nazwa natywna (malejąco)"
 
 msgid "Nature"
 msgstr "Natura"
+
+msgid "Nature/Animals/Environment"
+msgstr "Przyroda/Zwierzęta/Środowisko"
 
 msgid "Nauru"
 msgstr "Nauru"
@@ -12089,6 +12268,9 @@ msgstr "Nowy użytkownik"
 msgid "New event info"
 msgstr "Info o nowym wydarzeniu"
 
+msgid "New media"
+msgstr "Nowe media"
+
 msgid "New password"
 msgstr "Nowe hasło"
 
@@ -12113,8 +12295,20 @@ msgstr "Nowy katalog"
 msgid "News"
 msgstr "Aktualności"
 
+msgid "News and Weather"
+msgstr "Wiadomości i pogoda"
+
+msgid "News magazine"
+msgstr "Magazyn informacyjny"
+
 msgid "News/Current affairs"
-msgstr "Aktualności/Sprawy Bieżące"
+msgstr "Wiadomości/Aktualności"
+
+msgid "News/Documentary"
+msgstr "Wiadomości/Film dokumentalny"
+
+msgid "News/Weather report"
+msgstr "Wiadomości/Prognoza pogody"
 
 msgid "Next"
 msgstr "Następny"
@@ -12161,6 +12355,9 @@ msgstr "Na zdalnym odbiorniku nie znaleziono pliku „epg.dat”!"
 
 msgid "No (supported) DVDROM found!"
 msgstr "Nie znaleziono (obsługiwanego) napędu DVDROM!"
+
+msgid "No category"
+msgstr "Brak kategorii"
 
 msgid "No Connection"
 msgstr "Brak połączenia"
@@ -12287,7 +12484,7 @@ msgid "No slot images found"
 msgstr "Nie znaleziono systemow w slocie"
 
 msgid "No standby"
-msgstr "Brak gotowości"
+msgstr "Brak czuwania"
 
 msgid "No storage or hard disks detected."
 msgstr "Nie wykryto pamięci masowej ani dysków twardych."
@@ -12525,7 +12722,7 @@ msgid "Nothing"
 msgstr "Nic"
 
 msgid "Nothing connected and/or no files available!"
-msgstr "Nic nie podłączono lub brak dostępnych plików!"
+msgstr "Nic nie jest podłączone i / lub pliki nie są dostępne!"
 
 msgid ""
 "Nothing to scan!\n"
@@ -12945,6 +13142,9 @@ msgstr "OpenVPN"
 msgid "OpenViX Packages"
 msgstr "Pakiety OpenViX"
 
+msgid "Opera"
+msgstr "Opera"
+
 msgid "Operating LED status in deep standby mode"
 msgstr "Stan diody LED w trybie wyłączenia"
 
@@ -13318,6 +13518,9 @@ msgstr "Zamiast tego wykonaj flashowanie online"
 
 msgid "Perform the upgrade?"
 msgstr "Wykonać aktualizację?"
+
+msgid "Performing arts"
+msgstr "Sztuki performatywne"
 
 msgid "Permanently delete all recordings in the trashcan?"
 msgstr "Czy usunąć z kosza wszystkie nagrania?"
@@ -13698,10 +13901,10 @@ msgid "Please wait while locale/language is deleted..."
 msgstr "Proszę czekać, trwa usunięcie ustawień regionalnych/języka..."
 
 msgid "Please wait while locale/language is installed..."
-msgstr "Proszę czekać, aż ustawienia regionalne/język zostaną zainstalowane..."
+msgstr "Proszę czekać, aż ustawienia regionalne / język zostaną zainstalowane..."
 
 msgid "Please wait while locales/languages are purged..."
-msgstr "Proszę czekać, aż ustawienia regionalne/języki zostaną usunięte..."
+msgstr "Proszę czekać, aż ustawienia regionalne / języki zostaną usunięte..."
 
 msgid "Please wait while scanning is in progress..."
 msgstr "Proszę czekać, trwa skanowanie..."
@@ -13838,6 +14041,12 @@ msgstr "Polaryzacja"
 msgid "Polish"
 msgstr "Polski"
 
+msgid "Politics"
+msgstr "Polityka"
+
+msgid "Popular culture/Traditional arts"
+msgstr "Kultura popularna/Sztuka tradycyjna"
+
 msgid "Popup"
 msgstr "Wyskakujące Animacje"
 
@@ -13857,7 +14066,7 @@ msgid "Port D"
 msgstr "Port D"
 
 msgid "Port number for the Stream Relay server used to descramble services that can only be decrypted via Stream Relay."
-msgstr "Numer portu dla serwera Stream Relay wykorzystywany do odkodowywania usług, które mogą być tylko odszyfrowane przez Stream Relay."
+msgstr "Numer portu serwera Stream Relay używany do deszyfrowania kanałów, które można odszyfrować wyłącznie za pośrednictwem Stream Relay."
 
 msgid "Port of fallback remote receiver"
 msgstr "Port zdalnego odbiornika"
@@ -14313,10 +14522,10 @@ msgid "Purge Deleted User Bouquets"
 msgstr "Wyczyść usunięte listy kanałów"
 
 msgid "Purge all but / Add / Delete the currently highlighted locale/language"
-msgstr "Usuń wszystko oprócz / Dodaj / Usuń aktualnie podświetlone ustawienia regionalne/język"
+msgstr "Usuń wszystko oprócz / Dodaj / Usuń aktualnie podświetlone ustawienia regionalne / język"
 
 msgid "Purge all but the current and permanent locales/languages. Add the current locale/language if it is not installed. Delete the current locale/language if it is installed."
-msgstr "Usuń wszystkie ustawienia regionalne/języki oprócz bieżących i stałych. Dodaj bieżące ustawienia regionalne/język, jeśli nie są zainstalowane. Usuń bieżące ustawienia regionalne/język, jeśli są zainstalowane."
+msgstr "Usuń wszystkie ustawienia regionalne / język oprócz bieżących i stałych. Dodaj bieżące ustawienia regionalne / język, jeśli nie są zainstalowane. Usuń bieżące ustawienia regionalne / język, jeśli są zainstalowane."
 
 msgid "Purging all unused locales/languages..."
 msgstr "Wymazywanie wszystkich regionów/języków…"
@@ -14459,11 +14668,14 @@ msgstr "Czerwony (długo)"
 msgid "RF Output Settings"
 msgstr "Wyjście RF"
 
+msgid "Racing"
+msgstr "Wyścigi"
+
 msgid "Radio"
 msgstr "Radio"
 
 msgid "Radio Channel Selection"
-msgstr "Wybór Kanału Radiowego"
+msgstr "Listy kanałów radia"
 
 msgid "Radio Channel Selection Actions"
 msgstr "Akcje związane z wyborem kanału radiowego"
@@ -14505,7 +14717,7 @@ msgid "Ready to remove \"%s\"?"
 msgstr "Czy jesteś gotowy do usunięcia \"%s\"?"
 
 msgid "Real life"
-msgstr "Prawdziwe Życie"
+msgstr "Prawdziwe życie"
 
 msgid "Real or pseudo recordings"
 msgstr "prawdziwe lub pseudo nagrania"
@@ -14596,7 +14808,7 @@ msgid "Record"
 msgstr "Nagraj"
 
 msgid "Record - same as record button"
-msgstr "Nagraj - taki sam jak przycisk nagrywania"
+msgstr "Nagrywaj – to samo co przycisk nagrywania"
 
 msgid "Record Actions"
 msgstr "Akcje nagrywania"
@@ -14781,6 +14993,9 @@ msgstr "Odpowiednie trasowanie PIDs"
 msgid "Religion"
 msgstr "Religia"
 
+msgid "Religious"
+msgstr "Religijny"
+
 msgid "Reload Bookmarks"
 msgstr "Przeładuj zakładki"
 
@@ -14819,6 +15034,9 @@ msgstr "Pozostałe minuty/Pasek postępu z lewej"
 
 msgid "Remaining minutes/Progress bar right"
 msgstr "Pozostałe minuty/Pasek postępu z prawej"
+
+msgid "Remarkable people"
+msgstr "Wyjątkowi ludzie"
 
 msgid "Remember last service in PiP"
 msgstr "Pamiętaj ostatni kanał w PiP"
@@ -15293,6 +15511,9 @@ msgstr "Odwrócić przyciski listy kanałów"
 msgid "Reverse list"
 msgstr "Odwróć listę"
 
+msgid "Review"
+msgstr "Recenzja"
+
 msgid "Rewind"
 msgstr "Przewijanie"
 
@@ -15328,6 +15549,9 @@ msgstr "Prawy, przedni USB"
 
 msgid "Right, wrapped"
 msgstr "Prawo, zawinięte"
+
+msgid "Rock/Pop"
+msgstr "Rock/Pop"
 
 msgid "Roll-off"
 msgstr "Pasmo przepustowe"
@@ -15372,7 +15596,7 @@ msgid "Rugby"
 msgstr "Rugby"
 
 msgid "Rugby league"
-msgstr "Liga Rugby"
+msgstr "Liga rugby"
 
 msgid "Run"
 msgstr "Uruchom"
@@ -15459,7 +15683,7 @@ msgid "SDcard slot %s%s"
 msgstr "SDcard slot %s%s"
 
 msgid "SDcard switch ERROR! - H9 root files not transferred to SD card"
-msgstr "Przełącznik karty SD BŁĄD! - Pliki główne H9 nie zostały przesłane na kartę SD"
+msgstr "BŁĄD przełączania karty SD! - Pliki główne H9 nie zostały przeniesione na kartę SD"
 
 msgid "SDcard switch ERROR! - already on Nand"
 msgstr "Przełącznik karty SD BŁĄD! - już na Nand"
@@ -15528,13 +15752,13 @@ msgid "Samba Settings"
 msgstr "Ustawienia samby"
 
 msgid "Same as in active"
-msgstr "Taki sam jak w aktywnym"
+msgstr "Tak samo jak w trybie aktywnym"
 
 msgid "Same as stream"
 msgstr "Taki sam jak strumień"
 
 msgid "Same behavior as current animation"
-msgstr "Takie samo zachowanie jak bieżąca animacja"
+msgstr "Takie samo zachowanie jak w obecnej animacji"
 
 msgid "Same resolution as skin"
 msgstr "Taka sama rozdzielczość jak w skórce"
@@ -15797,6 +16021,9 @@ msgstr "Logi harmonogramu"
 msgid "Scheduler standby"
 msgstr "Programator czuwania"
 
+msgid "Science fiction"
+msgstr "Science fiction"
+
 msgid "Sci-Fi"
 msgstr "Sci-Fi"
 
@@ -15805,6 +16032,9 @@ msgstr "Nauka"
 
 msgid "Science & Tech"
 msgstr "Nauka i Technika"
+
+msgid "Science fiction/Fantasy/Horror"
+msgstr "Science fiction/Fantasy/Horror"
 
 msgid "Scope"
 msgstr "Zakres"
@@ -15915,7 +16145,7 @@ msgid "Select"
 msgstr "Wybierz"
 
 msgid "Select '1.0' for standard committed switches, '1.1' for uncommitted switches, and '1.2' for systems using a positioner."
-msgstr "Wybierz \"1.0\" dla standardowych przełączników zatwierdzonych, \"1.1\" dla przełączników niezaangażowanych i \"1.2\" dla systemów wykorzystujących pozycjoner."
+msgstr "Wybierz '1.0' dla standardowych zatwierdzonych przełączeń, '1.1”'dla niezatwierdzonych przełączeń i '1.2' dla systemów wykorzystujących pozycjoner."
 
 msgid "Select 'A' or 'B' if your aerial system requires this, otherwise select 'None'. If you are unsure select 'None'."
 msgstr "Wybierz \"A\" lub \"B\", jeśli wymaga tego system antenowy, w przeciwnym razie wybierz \"brak\". Jeśli nie masz pewności, wybierz \"brak\"."
@@ -15930,7 +16160,7 @@ msgid "Select 'Enable' to start the CI+ helper."
 msgstr "Wybierz „Włącz”, aby uruchomić CI+ helper."
 
 msgid "Select 'Enabled' if this tuner has a signal cable connected, otherwise select 'Nothing connected'."
-msgstr "Wybierz 'Włączone', jeśli ten tuner ma podłączony sygnałowy, w przeciwnym razie wybierz 'Nie podłączone'."
+msgstr "Wybierz opcję 'Włączone', jeśli tuner ma podłączony kabel sygnałowy, w przeciwnym razie wybierz opcję 'Nic nie jest podłączone'."
 
 msgid "Select 'No' to make time shift use a single buffer file. Use 'Time shift checking for older files [in minutes]' and 'Time shift checking for free space?' to control the size of the buffer file."
 msgstr "Jeśli ustawione na \"nie\", timeshift użyje tylko jednego pliku do zapisu kolejnych programów na danym kanale. Zalecane jest dostosowanie opcji \"Sprawdzanie plików starszych [w min.]\" i \"Sprawdź wolne miejsce\"."
@@ -16026,7 +16256,7 @@ msgid "Select 'Yes' to enable preview of channels while in the EPG list. Press '
 msgstr "Jeśli ustawione na „tak”, możesz wyświetlać podgląd kanałów na liście kanałów. Naciśnij 'OK', aby wyświetlić podgląd wybranego kanału. Naciśnij 'OK' drugi raz, aby wyjść i przejść do tego kanału, natomiast naciskając 'EXIT' powrócisz do kanału, na którym zacząłeś."
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
-msgstr "Wybierz opcję „Tak”, aby włączyć ładowanie niepołączonych list kanałów. Oznacza to, że zostaną załadowane listy kanałów, które nie są zawarte w plikach lista.tv lub lista.radio. Umożliwia to na przykład tworzenie list, które nie kolidują z listami pochodzącymi z pakietów ustawień ani nie są przez nie zastępowane."
+msgstr "Wybierz 'Tak', aby włączyć wczytywanie niepowiązanych list kanałów. Oznacza to, że wczytane zostaną list kanałów, które nie znajdują się w plikach bouquets.tv lub bouquets.radio. Pozwala to na przykład na tworzenie list, które nie kolidują z listami kanałów pochodzącymi z pakietów ustawień ani nie są przez nie zastępowane."
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr "Wybierz 'Tak', aby umożliwić użycie przycisków LEWO/PRAWO do poruszania się W górę/W dół, gdy przyciski LEWO/PRAWO są w innym przypadku niezdefiniowane. Zapewnia to (starą) nawigację dla użytkowników, którzy ją preferują."
@@ -16077,7 +16307,7 @@ msgid "Select 'Yes' to remove all tuning data. Selecting this option will remove
 msgstr "Wybierz 'Tak', aby usunąć wszystkie dane strojenia. Wybranie tej opcji spowoduje usunięcie wszystkich danych strojenia i listy kanałów oraz spowoduje, że timery nie będą działać, dopóki odbiornik nie zostanie ponownie dostrojony."
 
 msgid "Select 'Yes' to remove all user customizations of skin data. Selecting this option will remove all user based skin customizations. All affected skins will return to their standard settings. This will also clear any customized boot logos and backdrops."
-msgstr "Wybierz 'Tak' aby usunąć wszystkie dostosowania danych skórki przez użytkownika. Wybranie tej opcji spowoduje usunięcie wszystkich dostosowań skórek dokonanych przez użytkownika. Wszystkie dotknięte skórki powrócą do swoich standardowych ustawień. Spowoduje to również usunięcie wszystkich niestandardowych logotypów i tła."
+msgstr "Wybierz 'Tak', aby usunąć wszystkie personalizacje użytkownika dotyczące danych skórek. Wybranie tej opcji spowoduje usunięcie wszystkich personalizacji skórek użytkownika. Wszystkie skórki, których to dotyczy, powrócą do ustawień standardowych. Spowoduje to również usunięcie wszelkich spersonalizowanych logotypów i tła."
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr "Wybierz 'Tak' aby usunąć wszystkie dane interfejsu użytkownika. Wybranie tej opcji spowoduje usunięcie wszystkich danych dotyczących map klawiszy, menu i zastępowania ustawień oraz przywrócenie domyślnych definicji."
@@ -16158,7 +16388,7 @@ msgid "Select 'Yes' to show the bouquet selection screen every time you open the
 msgstr "Wybierz „Tak”, aby za każdym razem, gdy otworzysz EPG, wyświetlał się ekran wyboru kanałów."
 
 msgid "Select 'Yes' to show the channel list after switching between Radio and TV modes."
-msgstr "Jeśli jest ustawione na 'tak', lista kanałów pojawi się po przełączeniu między trybami radia i TV."
+msgstr "Wybierz 'Tak', aby wyświetlić listę kanałów po przełączeniu się pomiędzy trybami radia i telewizji."
 
 msgid "Select 'Yes' to show the current directory in the list of directories. Note that File Commander must be restarted for this change to take effect."
 msgstr "Wybierz \"Tak\", aby wyświetlić bieżący katalog na liście katalogów. Należy pamiętać, że aby ta zmiana zaczęła obowiązywać, należy ponownie uruchomić File Commander."
@@ -16604,7 +16834,7 @@ msgid "Select the currently highlighted bouquet"
 msgstr "Wybierz aktualnie zaznaczoną listę kanałów"
 
 msgid "Select the currently highlighted locale/language for the user interface"
-msgstr "Wybierz aktualnie podświetlone ustawienia regionalne/język interfejsu użytkownika"
+msgstr "Wybierz aktualnie podświetloną lokalizację / język dla interfejsu użytkownika"
 
 msgid "Select the currently highlighted service"
 msgstr "Wybierz aktualnie podświetloną usługę"
@@ -16704,7 +16934,7 @@ msgid "Select the last item in the list"
 msgstr "Wybierz ostatnią pozycję na liście"
 
 msgid "Select the layout of the information in the services list, from the options provided by the skin, displayed within the ChannelSelection screen."
-msgstr "Wybierz układ informacji na liście kanałów spośród opcji dostępnych w skórce, wyświetlanych na ekranie Wybór kanału."
+msgstr "Wybierz układ informacji na liście kanałów z opcji udostępnionych przez skórkę wyświetlaną na ekranie List kanałów."
 
 msgid "Select the layout of the installed plugins in the Plugin Browser screen. NOTE: The change is not immediate but will be seen when Plugin Browser is restarted!"
 msgstr "Wybierz układ zainstalowanych wtyczek na ekranie Przeglądarka wtyczek. UWAGA: Zmiana nie jest natychmiastowa, ale będzie widoczna po ponownym uruchomieniu przeglądarki wtyczek!"
@@ -16792,16 +17022,16 @@ msgid "Select the satellite from which your dish is receiving its signal. If you
 msgstr "Wybierz satelitę, z którego odbierana jest antena. Jeśli nie masz pewności, wybierz „automatyczny”, a odbiornik spróbuje to ustalić."
 
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'Automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'Nothing connected'."
-msgstr "Wybierz satelitę podłączonego do portu A przełącznika. Jeśli nie masz pewności, wybierz „automatyczny”, a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz „Nie podłączone”."
+msgstr "Wybierz satelitę, który jest podłączony do portu A przełącznika. Jeśli nie masz pewności, wybierz opcję 'Automatycznie', a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz opcję 'Nic nie jest podłączone'."
 
 msgid "Select the satellite which is connected to Port-B of your switch. If you are unsure select 'Automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'Nothing connected'."
-msgstr "Wybierz satelitę podłączonego do portu B przełącznika. Jeśli nie masz pewności, wybierz „automatyczny”, a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz „Nie podłączone”."
+msgstr "Wybierz satelitę, który jest podłączony do portu B przełącznika. Jeśli nie masz pewności, wybierz opcję 'Automatycznie', a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz opcję 'Nic nie jest podłączone'."
 
 msgid "Select the satellite which is connected to Port-C of your switch. If you are unsure select 'Automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'Nothing connected'."
-msgstr "Wybierz satelitę podłączonego do portu C przełącznika. Jeśli nie masz pewności, wybierz „automatyczny”, a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz „Nie podłączone”."
+msgstr "Wybierz satelitę, który jest podłączony do portu C przełącznika. Jeśli nie masz pewności, wybierz opcję 'Automatycznie', a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz opcję 'Nic nie jest podłączone'."
 
 msgid "Select the satellite which is connected to Port-D of your switch. If you are unsure select 'Automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'Nothing connected'."
-msgstr "Wybierz satelitę podłączonego do portu D przełącznika. Jeśli nie masz pewności, wybierz „automatyczny”, a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz „Nie podłączone”."
+msgstr "Wybierz satelitę, który jest podłączony do portu D przełącznika. Jeśli nie masz pewności, wybierz opcję 'Automatycznie', a odbiornik spróbuje to ustalić. Jeśli nic nie jest podłączone do tego portu, wybierz opcję 'Nic nie jest podłączone'."
 
 msgid "Select the satellite you want to configure. Once configured you can select and configure other satellites that will be accessed using this same tuner."
 msgstr "Wybierz satelitę, którą chcesz skonfigurować. Po skonfigurowaniu tego satelity możesz wybrać i skonfigurować inne satelity, które będą dostępne za pomocą tego samego tunera."
@@ -17072,6 +17302,12 @@ msgstr "Serbski"
 
 msgid "Serial No"
 msgstr "Nr seryjny"
+
+msgid "Serious music/Classic music"
+msgstr "Muzyka poważna/Muzyka klasyczna"
+
+msgid "Serious/Classical/Religious/Historical/Drama"
+msgstr "Poważny/Klasyczny/Religijny/Historyczny/Dramat"
 
 msgid "Server down"
 msgstr "Serwer nie działa"
@@ -17568,7 +17804,7 @@ msgid "Setup your Audio Mode"
 msgstr "Skonfiguruj tryb audio"
 
 msgid "Setup your Channel selection configuration"
-msgstr "Wybierz swoją konfigurację wyboru kanałów"
+msgstr "Wybierz swoją konfigurację list kanałów"
 
 msgid "Setup your Device mounts (USB, HDD, others...)"
 msgstr "Ustawienia montowania (USB, HDD i inne)"
@@ -17604,7 +17840,7 @@ msgid "Setup your local network"
 msgstr "Ustawienia sieci"
 
 msgid "Setup your local network. For Wlan you need to boot with a USB-Wlan stick"
-msgstr "Skonfiguruj swoją sieć lokalną. W przypadku Wlan musisz uruchomić się za pomocą pamięci USB-Wlan"
+msgstr "Skonfiguruj sieć lokalną. W przypadku sieci WiFi konieczne jest ponowne uruchomienie dekodera z USB-WLAN"
 
 msgid "Setup your mounts for network"
 msgstr "Ustawienia montowania w sieci"
@@ -17661,14 +17897,14 @@ msgstr "Shona"
 msgid "Shopping"
 msgstr "Zakupy"
 
-msgid "Short film"
-msgstr "Krótki Film"
-
 msgid "Short filenames"
 msgstr "Krótkie nazwy plików"
 
 msgid "Short filenames with time"
 msgstr "Krótkie nazwy plików z czasem"
+
+msgid "Short film"
+msgstr "Krótki film"
 
 msgid "Should the crash counter be reset to prevent a restart?"
 msgstr "Czy licznik awarii powinien zostać zresetowany, aby zapobiec ponownemu uruchomieniu?"
@@ -17950,7 +18186,7 @@ msgid "Show background in Radio Mode"
 msgstr "Pokaż tapetę w trybie radio"
 
 msgid "Show background when tuned to a radio channel."
-msgstr "Pokaż tapetę dla kanału radiowego."
+msgstr "Pokaż tapetę po dostrojeniu kanału radiowego."
 
 msgid "Show bouquet on launch"
 msgstr "Pokaż listy kanałów po uruchomieniu"
@@ -18377,6 +18613,9 @@ msgstr "Akcje Pokaż/Ukryj"
 msgid "Show/Hide focus bar"
 msgstr "Pokaż/Ukryj pasek ostrości"
 
+msgid "Showbiz"
+msgstr "Showbiz"
+
 msgid "Showiframe"
 msgstr "Pokaż iframe"
 
@@ -18776,17 +19015,29 @@ msgstr "Smartcard PIN"
 msgid "Smooth"
 msgstr "Płynność"
 
+msgid "Snooker/Pool"
+msgstr "Snooker/Bilard"
+
 msgid "SoC family"
 msgstr "Rodzina SoC"
 
+msgid "Soap"
+msgstr "Mydło"
+
 msgid "Soap opera"
-msgstr "Opera Mydlana"
+msgstr "Opera mydlana"
+
+msgid "Soap/Melodrama/Folkloric"
+msgstr "Mydło/Melodramat/Folklor"
 
 msgid "Soccer"
 msgstr "Piłka nożna"
 
 msgid "Social/Political/Economics"
 msgstr "Społeczność/Polityka/Ekonomia"
+
+msgid "Social/Spiritual sciences"
+msgstr "Nauki społeczne/duchowe"
 
 msgid "Society & Culture"
 msgstr "Społeczeństwo i Kultura"
@@ -18810,7 +19061,7 @@ msgid "Softcam Setup"
 msgstr "Ustawienia softcam"
 
 msgid "Softcams"
-msgstr "Softcam"
+msgstr "Softcamy"
 
 msgid "Software Management"
 msgstr "Menedżer oprogramowania"
@@ -18885,15 +19136,6 @@ msgstr "Nie znaleziono kopii zapasowej!"
 msgid "Sorry uShare Config is Missing"
 msgstr "Niestety brakuje Konfig. uShare"
 
-msgid ""
-"Sorry your Backup destination does not exist\n"
-"\n"
-"Please choose an other one."
-msgstr ""
-"Przepraszamy, miejsce docelowe kopii zapasowej nie istnieje\n"
-"\n"
-"Wybierz inne."
-
 #, python-format
 msgid "Sorry, %s has not been installed!"
 msgstr "Niestety, %s nie został zainstalowany!"
@@ -18956,6 +19198,9 @@ msgstr "Sortuj: Katalogi wg %s %s; Pliki wg %s %s."
 
 msgid "Sotho, Southern"
 msgstr "Sotho, Południowy"
+
+msgid "Soul/Rhythm and Blues"
+msgstr "Soul/Blues"
 
 msgid "Sound"
 msgstr "Dźwięk"
@@ -19042,14 +19287,17 @@ msgstr "Sport"
 msgid "Sports"
 msgstr "Sporty"
 
+msgid "Sports magazines"
+msgstr "Magazyn sportowy"
+
 msgid "Sri Lanka"
 msgstr "Sri Lanka"
 
 msgid "Standard"
-msgstr "Standardowy"
+msgstr "Standard"
 
 msgid "Standard (Always)"
-msgstr "Standardowo (zawsze)"
+msgstr "Standard (zawsze)"
 
 msgid "Standard list"
 msgstr "Lista standardowa"
@@ -19070,7 +19318,7 @@ msgid "Start"
 msgstr "Start"
 
 msgid "Start Auto Refresh"
-msgstr "Uruchom auto. odświeżanie"
+msgstr "Uruchom odświeżanie"
 
 msgid "Start Boot Frequency"
 msgstr "Częstotliwość uruchamiania"
@@ -19218,7 +19466,7 @@ msgid "Stop"
 msgstr "Zatrzymaj"
 
 msgid "Stop Auto Refresh"
-msgstr "Zatrzymaj auto. odświeżanie"
+msgstr "Zatrzymaj odświeżanie"
 
 msgid "Stop PiP"
 msgstr "Zatrzymaj PiP"
@@ -19312,7 +19560,7 @@ msgid "Storage Devices"
 msgstr "Urządzenia pamięci masowej"
 
 msgid "Storage device full!"
-msgstr "Dysk jest pełny!"
+msgstr "Urządzenie pamięci masowej jest pełne!"
 
 msgid "Storage device not found!"
 msgstr "Nie znaleziono dysku!"
@@ -19554,10 +19802,10 @@ msgid "Switch EPG Page Up"
 msgstr "Przełącz stronę EPG w górę"
 
 msgid "Switch Mode to enable HDR Modes or PiP Functions"
-msgstr "Tryb przełączania, aby włączyć tryby HDR lub funkcje PIP"
+msgstr "Przełącz tryb, aby włączyć tryby HDR lub funkcje PiP"
 
 msgid "Switch TV to correct input"
-msgstr "Przełącz TV na odpowiednie wejście"
+msgstr "Przełącz TV na właściwe wejście"
 
 msgid "Switch To Bookmarks Panel"
 msgstr "Przełącz się na panel zakładek"
@@ -19575,19 +19823,19 @@ msgid "Switch config"
 msgstr "Przełącz konfigurację"
 
 msgid "Switch off the TV to correct input"
-msgstr "Wyłącz telewizor, aby poprawić sygnał wejściowy"
+msgstr "Wyłącz TV, aby poprawić sygnał wejściowy"
 
 msgid "Switch to 720p video"
-msgstr "Przełączna wideo 720p"
+msgstr "Przełącz na wideo 720p"
 
 msgid "Switch to HDMI in mode"
-msgstr "Przełącz na HDMI w trybie"
+msgstr "Przełącz na tryb HDMI"
 
 msgid "Switch to Radio"
-msgstr "Przełącz na Radio"
+msgstr "Przełącz na radio"
 
 msgid "Switch to Radio mode"
-msgstr "Przełącz w tryb radio"
+msgstr "Przełącz na tryb radia"
 
 msgid "Switch to TV"
 msgstr "Przełącz na TV"
@@ -19605,28 +19853,28 @@ msgid "Switch to file list panel"
 msgstr "Przejdź do panelu z listą plików"
 
 msgid "Switch to next EPG Event"
-msgstr "Przełączanie do następnego zdarzenia EPG"
+msgstr "Przejdź do następnego wydarzenia EPG"
 
 msgid "Switch to play list"
 msgstr "Przełącz do listy odtwarzania"
 
 msgid "Switch to previous EPG Event"
-msgstr "Przełącz na poprzednie wydarzenie EPG"
+msgstr "Przejdź do poprzedniego wydarzenia EPG"
 
 msgid "Switch to the available RADIO services"
-msgstr "Przełącz na dostępne usługi RADIO"
+msgstr "Przejdź do dostępnych kanałów RADIO"
 
 msgid "Switch to the available TV services"
-msgstr "Przełącz na dostępne usługi telewizyjne"
+msgstr "Przejdź do dostępnych usług telewizyjnych"
 
 msgid "Switch to the left column"
-msgstr "Przełącz do lewej kolumny"
+msgstr "Przejdź do lewej kolumny"
 
 msgid "Switch to the other column"
 msgstr "Przejdź do innej kolumny"
 
 msgid "Switch to the right column"
-msgstr "Przełącz do prawej kolumny"
+msgstr "Przejdź do prawej kolumny"
 
 msgid "Switchable tuner types:"
 msgstr "Wymienne typy tunerów:"
@@ -19805,6 +20053,12 @@ msgstr "Akcje widoku zadań"
 msgid "Tatar"
 msgstr "Tatar"
 
+msgid "Technology"
+msgstr "Technologia"
+
+msgid "Technology/Natural sciences"
+msgstr "Technologia/Nauki przyrodnicze"
+
 msgid "Teletext"
 msgstr "Telegazeta"
 
@@ -19881,6 +20135,9 @@ msgstr "Katalog tymczasowy"
 
 msgid "Tennis"
 msgstr "Tenis"
+
+msgid "Tennis/Squash"
+msgstr "Tenis/Squash"
 
 msgid "Terrestrial"
 msgstr "Naziemny"
@@ -20245,7 +20502,7 @@ msgid "The service list is reloaded."
 msgstr "Lista kanałów została przeładowana."
 
 msgid "The setting 'Without query' is the same as 'Standard' without additional confirmation query. All other dependencies (e.g. recordings, time range) persist."
-msgstr "Ustawienie „bez warunku” jest takie samo jak „standardowe” bez dodatkowego zapytania potwierdzającego. Wszystkie inne zależności (np. nagrania, zakres czasowy) pozostają bez zmian."
+msgstr "Ustawienie 'Bez pytania”'jest takie samo jak 'Standard' bez dodatkowego zapytania potwierdzającego. Wszystkie pozostałe zależności (np. nagrania, zakres czasowy) pozostają niezmienione."
 
 #, python-format
 msgid ""
@@ -20540,7 +20797,7 @@ msgid "This option allows you to choose how to display elapsed time, as + or -."
 msgstr "Ta opcja pozwala wybrać sposób wyświetlania czasu, który upłynął, jako + lub -."
 
 msgid "This option allows you to choose how to display standard definition video on your TV."
-msgstr "Ta opcja pozwala na wybór sposobu wyświetlania standardowej definicji wideo na ekranie telewizora."
+msgstr "Opcja ta umożliwia wybranie sposobu wyświetlania obrazu w standardowej rozdzielczości na telewizorze."
 
 msgid "This option allows you to choose what the first button press jumps to in channel list screen, (so pressing '2' jumps to 'A' or '2' first), when 'Quick Actions' preset actions are performed. "
 msgstr "Ta opcja pozwala wybrać, do czego przeskakuje pierwsze naciśnięcie przycisku na ekranie listy kanałów (więc naciśnięcie „2” powoduje przejście do „A” lub „2” jako pierwsze), gdy wykonywane są zaprogramowane akcje „Szybkie akcje”. "
@@ -21011,7 +21268,7 @@ msgid "Toggle between bouquet/EPG lists"
 msgstr "Przełącz między listami kanałów/EPG"
 
 msgid "Toggle between the available TV and RADIO services"
-msgstr "Przełączaj się między dostępnymi usługami TV i RADIO"
+msgstr "Przełączaj się między dostępnymi kanałami TV i RADIO"
 
 msgid "Toggle display of image information"
 msgstr "Przełącz wyświetlanie informacji o systemie"
@@ -21113,6 +21370,9 @@ msgstr "Całkowity rozmiar swap"
 msgid "Total:"
 msgstr "Całkowita:"
 
+msgid "Tourism/Travel"
+msgstr "Turystyka/Podróże"
+
 msgid "Track"
 msgstr "Ścieżka"
 
@@ -21162,6 +21422,9 @@ msgstr "Informacje transpondera"
 #, python-format
 msgid "Transponder information for '%s'"
 msgstr "Informacje transpondera dla '%s'"
+
+msgid "Transport"
+msgstr "Transport"
 
 msgid "Transport Stream ID (TSID)"
 msgstr "ID strumienia trans. (TSID)"
@@ -21310,7 +21573,7 @@ msgid "Turbo"
 msgstr "Turbo"
 
 msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
-msgstr "Turbo: Jeden restart po flashu; Szybki: Jeden restart po flashu, jeden restart po przywróceniu; Wolny: Jeden restart po flashu, jeden restart po przywróceniu interfejsu."
+msgstr "Turbo: Jedno ponowne uruchomienie po flashowaniu; Szybko: Jedno ponowne uruchomienie po flashowaniu, jedno ponowne uruchomienie po przywróceniu; Wolno: Jedno ponowne uruchomienie po flashowaniu, jedno ponowne uruchomienie po przywróceniu w interfejsie GUI."
 
 msgid "Turkey"
 msgstr "Turcja"
@@ -21415,9 +21678,6 @@ msgstr "USB 2.0 (tył, wewnętrzny)"
 msgid "USB 3.0 (Back, outer)"
 msgstr "USB 3.0 (tył, zewnętrzny)"
 
-msgid "USB Stick"
-msgstr "Pamięć USB"
-
 #, python-format
 msgid "USB reader %d"
 msgstr "Czytnik USB %d"
@@ -21430,7 +21690,7 @@ msgid "USB switch ERROR! - already on USB"
 msgstr "Przełącznik USB BŁĄD! - już na USB"
 
 msgid "USB switch ERROR! - root files not transferred to USB"
-msgstr "Przełącznik USB BŁĄD! - Pliki root nie został przesłany na USB"
+msgstr "BŁĄD przełączenia USB! - pliki główne nie zostały przeniesione na USB"
 
 msgid "UUID"
 msgstr "UUID"
@@ -21455,6 +21715,9 @@ msgstr "Nienadzorowana aktualizacja bez interfejsu graficznego"
 
 msgid "Undefined"
 msgstr "Nieokreślony"
+
+msgid "Under 5"
+msgstr "Poniżej 5 lat"
 
 msgid "Undetermined"
 msgstr "Nieokreślony"
@@ -21558,6 +21821,9 @@ msgstr "Odmontowanie"
 
 msgid "Unpack File"
 msgstr "Wypakuj plik"
+
+msgid "Unpublished"
+msgstr "Niepublikowane"
 
 msgid "Unscramble and record ECM"
 msgstr "dekoduj i nagrywaj ECM"
@@ -21899,7 +22165,7 @@ msgid "Use the UP/DOWN buttons to select the installed image to be backed up. Pr
 msgstr "Za pomocą przycisków GÓRA/DÓŁ wybierz zainstalowany system, którego kopię zapasową chcesz utworzyć. Naciśnij przycisk „Start” (ZIELONY), aby rozpocząć tworzenie kopii zapasowej."
 
 msgid "Use the alternative or the conventional radio mode."
-msgstr "Użyj alternatywnego lub konwencjonalnego trybu radia."
+msgstr "Użyj alternatywnego lub konwencjonalnego trybu radiowego."
 
 msgid "Use the current selection and exit"
 msgstr "Użyj bieżącego wyboru i wyjdź"
@@ -22115,6 +22381,9 @@ msgstr "Vanuatu"
 
 msgid "Variety"
 msgstr "Różnorodność"
+
+msgid "Variety show"
+msgstr "Program rozrywkowy"
 
 msgid "Various"
 msgstr "Różny"
@@ -22493,6 +22762,12 @@ msgstr "Ostrzeżenie: brak LNB; używaj ustawień fabrycznych."
 msgid "Watch movies..."
 msgstr "Oglądaj filmy..."
 
+msgid "Water sport"
+msgstr "Sporty wodne"
+
+msgid "Watersports"
+msgstr "Sporty wodne"
+
 msgid "Weather"
 msgstr "Pogoda"
 
@@ -22616,7 +22891,7 @@ msgid "When enabled the receiver will automatically be switched off."
 msgstr "Po włączeniu odbiornik automatycznie się wyłączy."
 
 msgid "When enabled the receiver will automatically be switched on."
-msgstr "Po włączeniu odbiornik włączy się automatycznie."
+msgstr "Po włączeniu tej opcji odbiornik włączy się automatycznie."
 
 msgid "When enabled the receiver will automatically return to standby when the TV is turned off."
 msgstr "Po włączeniu tej opcji odbiornik automatycznie powróci do trybu czuwania po wyłączeniu telewizora."
@@ -22825,8 +23100,8 @@ msgstr "Szerokość"
 msgid "Width / Height"
 msgstr "Szerokość / Wysokość"
 
-msgid "Winter Sports"
-msgstr "Sporty zimowe"
+msgid "Winter sports"
+msgstr "Sport zimowy"
 
 msgid "Wipe"
 msgstr "Wyczyść"
@@ -22901,7 +23176,7 @@ msgid "Without pop up"
 msgstr "Bez okienka"
 
 msgid "Without query"
-msgstr "bez warunku"
+msgstr "Bez pytania"
 
 msgid "Wizard Actions"
 msgstr "Akcje kreatora"
@@ -22911,6 +23186,12 @@ msgstr "Wolof"
 
 msgid "Workaround for old tuner driver."
 msgstr "Rozwiązanie dla starego sterownika tunera."
+
+msgid "World Affairs"
+msgstr "Sprawy światowe"
+
+msgid "World cultures"
+msgstr "Kultury świata"
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -22945,6 +23226,9 @@ msgstr "Pakiety X11"
 
 msgid "XBox 360 support"
 msgstr "Wsparcie dla XBox 360"
+
+msgid "XML Help Actions"
+msgstr "Akcje pomocy XML"
 
 msgid "XPicon, ZZZPicon"
 msgstr "XPicon, ZZZPicon"
@@ -23092,6 +23376,9 @@ msgstr "Aby aktywować autostart, musisz utworzyć plik swap."
 #, python-format
 msgid "You have to wait %s!"
 msgstr "Musisz poczekać na %s!"
+
+msgid "You managed to jump to an invalid page. Stop it :-)"
+msgstr "Udało Ci się przejść na nieprawidłową stronę. Przestań :-)"
 
 msgid "You must set at least one command!"
 msgstr "Musisz wybrać co najmniej jedno polecenie!"
@@ -23412,17 +23699,8 @@ msgstr "Włącz PiP"
 msgid "address:"
 msgstr "adres:"
 
-msgid "Adult movie/Drama"
-msgstr "Film dla dorosłych/Dramat"
-
 msgid "advanced"
 msgstr "zaawansowane"
-
-msgid "Adventure/Western/War"
-msgstr "Przygoda/Western/Wojna"
-
-msgid "Advertisement/Shopping"
-msgstr "Reklama/Zakupy"
 
 msgid "alpha then oldest"
 msgstr "alfa, następnie najstarszy"
@@ -23442,24 +23720,11 @@ msgstr "am"
 msgid "aqua"
 msgstr "aqua"
 
-msgid ""
-"are you sure you want to restore\n"
-"following backup:\n"
-msgstr ""
-"jesteś pewien, że chcesz przywrócić\n"
-"tą kopie zapasową:\n"
-
 msgid "arts/culture (general)"
 msgstr "kultura/sztuka (ogólna)"
 
-msgid "arts/culture (without music, general)"
+msgid "Arts/Culture (without music)"
 msgstr "kultura/sztuka (bez muzyki, ogólna)"
-
-msgid "Arts/Culture magazines"
-msgstr "Czasopisma o sztuce/kulturze"
-
-msgid "athletics"
-msgstr "lekka atletyka"
 
 #, python-format
 msgid "audio track (%s) format"
@@ -23476,16 +23741,13 @@ msgid "automatic"
 msgstr "automatyczny"
 
 msgid "azure"
-msgstr "azure"
+msgstr "lazurowy"
 
 msgid "back"
 msgstr "wróć"
 
 msgid "background image"
 msgstr "obraz tła"
-
-msgid "ballet"
-msgstr "balet"
 
 #, python-format
 msgid "bc%d"
@@ -23497,14 +23759,8 @@ msgstr "lepiej"
 msgid "black"
 msgstr "czarny"
 
-msgid "Black & White"
-msgstr "Czarno-biały"
-
 msgid "blue"
 msgstr "niebieski"
-
-msgid "Broadcasting/Press"
-msgstr "Nadawanie/Prasa"
 
 #, python-format
 msgid "burn audio track (%s)"
@@ -23525,16 +23781,13 @@ msgstr "karta"
 msgid "card reader"
 msgstr "czytnik kart"
 
-msgid "Cartoons/Puppets"
-msgstr "Bajki/Lalki"
-
 msgid "chapters"
 msgstr "rozdziały"
 
 msgid "children's (general)"
 msgstr "dla dzieci (ogólnie)"
 
-msgid "children's/youth program (general)"
+msgid "Children's/Youth programs"
 msgstr "dla dzieci/młodzieży (ogólnie)"
 
 msgid "clip overscan / letterbox borders"
@@ -23542,9 +23795,6 @@ msgstr "clip overscan/letterbox obramowania"
 
 msgid "close share view"
 msgstr "zamknij widok współdzielonych"
-
-msgid "comedy"
-msgstr "komedia"
 
 msgid "comedy (general)"
 msgstr "komedia (ogólnie)"
@@ -23558,14 +23808,11 @@ msgstr "potwierdzony"
 msgid "connected"
 msgstr "połączony"
 
-msgid "cooking"
-msgstr "gotowanie"
-
 msgid "copy"
 msgstr "kopiuj"
 
 msgid "current affairs (general)"
-msgstr "sprawy bieżące (ogólnie)"
+msgstr "aktualności (ogólnie)"
 
 msgid "date"
 msgstr "data"
@@ -23585,20 +23832,11 @@ msgstr "usuń"
 msgid "delete cut"
 msgstr "usuń cięcie"
 
-msgid "Detective/Thriller"
-msgstr "Detektywistyczny/Thriller"
-
 msgid "disabled"
 msgstr "wyłączony"
 
 msgid "disconnected"
 msgstr "odłączony"
-
-msgid "Discussion/Interview/Debate"
-msgstr "Dyskusja/Wywiad/Debata"
-
-msgid "documentary"
-msgstr "dokument"
 
 msgid "documentary (general)"
 msgstr "dokumentalny (ogólnie)"
@@ -23625,14 +23863,8 @@ msgstr "czas ecm:"
 msgid "ecm.info"
 msgstr "ecm.info"
 
-msgid "Economics/Social advisory"
-msgstr "Doradztwo ekonomiczne/społeczne"
-
 msgid "education/information (general)"
 msgstr "edukacja/informacje (ogólnie)"
-
-msgid "education/science/factual topics (general)"
-msgstr "edukacja/nauka/fakty"
 
 msgid "embedded"
 msgstr "osadzony"
@@ -23646,23 +23878,17 @@ msgstr "włączony"
 msgid "end cut here"
 msgstr "koniec cięcia tutaj"
 
-msgid "enigma2 and network"
-msgstr "enigma2 i sieć"
+msgid "Entertainment programs for 10 to 16"
+msgstr "Rozrywka (10-16 lat)"
 
-msgid "entertainment (10-16 year old)"
-msgstr "rozrywka (10-16 lat)"
-
-msgid "entertainment (6-14 year old)"
-msgstr "rozrywka (6-14 lat)"
+msgid "Entertainment programs for 6 to 14"
+msgstr "Rozrywka (6-14 lat)"
 
 msgid "entertainment (general)"
-msgstr "rozrywka (ogólnie)"
+msgstr "Rozrywka (ogólnie)"
 
 msgid "equal to"
 msgstr "równe"
-
-msgid "Equestrian"
-msgstr "Jeździectwo"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "wykonywać cięcia (wymaga wtyczki MovieCut)"
@@ -23670,17 +23896,11 @@ msgstr "wykonywać cięcia (wymaga wtyczki MovieCut)"
 msgid "exit DVD player or return to file browser"
 msgstr "zamknij odtwarzacz DVD i powróć do przeglądarki plików"
 
-msgid "Experimental film/video"
-msgstr "Film/wideo eksperymentalne"
-
 msgid "externally loopthrough to"
 msgstr "zewnętrzne przesyłanie do"
 
 msgid "failed"
 msgstr "nie powiodło się"
-
-msgid "Fashion"
-msgstr "Moda"
 
 msgid "file can not displayed - file not found"
 msgstr "plik nie może zostać wyświetlony - nie został znaleziony"
@@ -23691,29 +23911,11 @@ msgstr "formaty plików (BMP, PNG, JPG, GIF)"
 msgid "filename"
 msgstr "nazwa pliku"
 
-msgid "Film/Cinema"
-msgstr "Film/Kino"
-
-msgid "Fine arts"
-msgstr "Sztuki piękne"
-
-msgid "Fitness and Health"
-msgstr "Fitness i zdrowie"
-
 msgid "flat alphabetic"
-msgstr "alfabetycznie (+katalogi)"
+msgstr "płaski alfabetyczny"
 
 msgid "flat alphabetic reverse"
-msgstr "alfabetycznie (+ katalogi) Z>A"
-
-msgid "Folk/Traditional music"
-msgstr "Muzyka ludowa/tradycyjna"
-
-msgid "Football/Soccer"
-msgstr "Piłka nożna"
-
-msgid "Foreign countries/Expeditions"
-msgstr "Kraje obce/Wyprawy"
+msgstr "płaski alfabet odwrócony"
 
 msgid "forward to the next chapter"
 msgstr "Przeskocz do nastepnego rozdziału"
@@ -23726,15 +23928,6 @@ msgstr "wolne miejsce na dysku"
 
 msgid "from"
 msgstr "z"
-
-msgid "Further education"
-msgstr "Edukacja uzupełniająca"
-
-msgid "Game show/Quiz/Contest"
-msgstr "Teleturniej/Quiz/Konkurs"
-
-msgid "gardening"
-msgstr "ogrodnictwo"
 
 msgid "get the cards' server"
 msgstr "serwer kart"
@@ -23762,9 +23955,6 @@ msgstr "h:mmAM/PM"
 
 msgid "h:mmam/pm"
 msgstr "h:mmam/pm"
-
-msgid "Handicraft"
-msgstr "Rękodzieło"
 
 msgid "handled"
 msgstr "obsługiwane"
@@ -23802,7 +23992,7 @@ msgstr "nieaktywny"
 msgid "increase uphop by 1"
 msgstr "wzrost uphop o 1"
 
-msgid "information/education/school program"
+msgid "Informational/Educational/School programs"
 msgstr "informacja/edukacja/program szkolny"
 
 msgid "infotainment (general)"
@@ -23823,9 +24013,6 @@ msgstr "natychmiastowe nagranie"
 msgid "internally loopthrough to"
 msgstr "wewnętrzne przesyłanie do"
 
-msgid "jazz"
-msgstr "jazz"
-
 msgid "jump back to the previous title"
 msgstr "Przeskoczyć do poprzedniego tytułu"
 
@@ -23835,26 +24022,14 @@ msgstr "Przeskoczyć do następnego tytułu"
 msgid "jump to chapter by number"
 msgstr "przejdź do rozdziału według numeru"
 
-msgid "languages"
-msgstr "języki"
-
 msgid "left"
 msgstr "Lewo"
-
-msgid "leisure hobbies (general)"
-msgstr "rozrywka hobby"
 
 msgid "length"
 msgstr "długość"
 
 msgid "lime"
 msgstr "lime"
-
-msgid "Literature"
-msgstr "Literatura"
-
-msgid "Live broadcast"
-msgstr "Transmisja na żywo"
 
 msgid "locked"
 msgstr "zablokowany"
@@ -23865,17 +24040,8 @@ msgstr "długo"
 msgid "loopthrough to"
 msgstr "przelotowe do"
 
-msgid "Magazines/Reports/Documentary"
-msgstr "Czasopisma/Raporty/Filmy dokumentalne"
-
 msgid "manual"
 msgstr "ręcznie"
-
-msgid "Martial sports"
-msgstr "Sporty walki"
-
-msgid "Medicine/Physiology/Psychology"
-msgstr "Medycyna/Fizjologia/Psychologia"
 
 msgid "min"
 msgstr "min"
@@ -23886,12 +24052,6 @@ msgstr "Moduł wyłączony"
 msgid "month"
 msgstr "miesiąc"
 
-msgid "motor sport"
-msgstr "sporty motorowe"
-
-msgid "Motoring"
-msgstr "Motoryzacja"
-
 msgid "move"
 msgstr "ruch"
 
@@ -23899,7 +24059,7 @@ msgid "movie (general)"
 msgstr "film (ogólnie)"
 
 msgid "movie/drama (general)"
-msgstr "film/dramat"
+msgstr "Film/Dramat (ogólny)"
 
 msgid "multi"
 msgstr "multi"
@@ -23907,35 +24067,14 @@ msgstr "multi"
 msgid "music (general)"
 msgstr "muzyka (ogólnie)"
 
-msgid "music/ballet/dance (general)"
-msgstr "muzyka/balet/taniec"
-
-msgid "Musical/Opera"
-msgstr "Musical/Opera"
-
 msgid "n/a"
 msgstr "Niedostępne"
 
 msgid "name"
 msgstr "nazwa"
 
-msgid "Nature/Animals/Environment"
-msgstr "Przyroda/Zwierzęta/Środowisko"
-
-msgid "New media"
-msgstr "Nowe media"
-
 msgid "news (general)"
 msgstr "aktualności (ogólne)"
-
-msgid "News magazine"
-msgstr "Magazyn informacyjny"
-
-msgid "news/current affairs (general)"
-msgstr "wiadomości"
-
-msgid "News/Weather report"
-msgstr "Wiadomości/Prognoza pogody"
 
 msgid "no CAId selected"
 msgstr "Nie wybrano CAId"
@@ -23947,10 +24086,10 @@ msgid "no module found"
 msgstr "Nie znaleziono modułu"
 
 msgid "no or unknown card inserted"
-msgstr "brak lub nieaktywna karta"
+msgstr "brak lub włożona nieznana karta"
 
 msgid "no storage devices found"
-msgstr "nie znaleziono urządzenia magazynującego"
+msgstr "nie znaleziono urządzeń pamięci masowej"
 
 msgid "not"
 msgstr "nie"
@@ -23968,7 +24107,7 @@ msgid "not used"
 msgstr "nie używany"
 
 msgid "nothing connected"
-msgstr "Nie podłączone"
+msgstr "Nic nie jest połączone"
 
 msgid "of a DUAL layer medium used."
 msgstr "nośnik dwuwarstwowy zużyty."
@@ -23983,16 +24122,13 @@ msgid "offset is"
 msgstr "przesunięcie jest"
 
 msgid "olympic blue"
-msgstr "olympic blue"
+msgstr "olimpijski niebieski"
 
 msgid "on READ ONLY medium."
-msgstr "nośnik tylko do odczytu."
+msgstr "na nośniku TYLKO DO ODCZYTU."
 
 msgid "orange"
-msgstr "orange"
-
-msgid "original language"
-msgstr "język oryginalny"
+msgstr "pomarańczowy"
 
 msgid "package"
 msgstr "pakiet"
@@ -24000,14 +24136,11 @@ msgstr "pakiet"
 msgid "packages"
 msgstr "pakiety"
 
-msgid "Performing arts"
-msgstr "Sztuki performatywne"
-
 msgid "pid:"
 msgstr "pid:"
 
 msgid "pink"
-msgstr "pink"
+msgstr "różowy"
 
 msgid "please wait, loading picture..."
 msgstr "proszę czekać, ładowanie zdjęcia..."
@@ -24021,10 +24154,7 @@ msgstr "wtyczki"
 msgid "pm"
 msgstr "pm"
 
-msgid "Popular culture/Traditional arts"
-msgstr "Kultura popularna/Sztuka tradycyjna"
-
-msgid "pre-school children's program"
+msgid "Pre-school children's programs"
 msgstr "dla przedszkolaków"
 
 msgid "provid:"
@@ -24034,7 +24164,7 @@ msgid "provider:"
 msgstr "nadawca:"
 
 msgid "purple"
-msgstr "purple"
+msgstr "fioletowy"
 
 msgid "red"
 msgstr "czerwony"
@@ -24044,12 +24174,6 @@ msgstr "niezawodny"
 
 msgid "reliable, retune"
 msgstr "niezawodny, dostrojony"
-
-msgid "religion"
-msgstr "religia"
-
-msgid "Remarkable people"
-msgstr "Wyjątkowi ludzie"
 
 msgid "remove after this position"
 msgstr "usuń po tej pozycji"
@@ -24064,7 +24188,7 @@ msgid "restoring satellites.xml not possible!"
 msgstr "przywracanie pliku satellites.xml nie jest możliwe!"
 
 msgid "reverse by date"
-msgstr "wg. daty (od najstarszego)"
+msgstr "odwróć według daty"
 
 msgid "rewind to the previous chapter"
 msgstr "cofnij do poprzedniego rozdziału"
@@ -24072,14 +24196,8 @@ msgstr "cofnij do poprzedniego rozdziału"
 msgid "right"
 msgstr "Prawo"
 
-msgid "Rock/Pop"
-msgstr "Rock/Pop"
-
-msgid "romance"
-msgstr "romans"
-
 msgid "rose"
-msgstr "rose"
+msgstr "róża"
 
 msgid ""
 "satellites.xml not found or corrupted!\n"
@@ -24095,20 +24213,11 @@ msgstr ""
 msgid "scan state"
 msgstr "status skanowania"
 
-msgid "Science fiction/Fantasy/Horror"
-msgstr "Science fiction/Fantasy/Horror"
-
 msgid "search EPG..."
 msgstr "szukaj w EPG..."
 
 msgid "select CAId's"
 msgstr "Wybierz CAId'y"
-
-msgid "Serious music/Classic music"
-msgstr "Muzyka poważna/Muzyka klasyczna"
-
-msgid "Serious/Classical/Religious/Historical/Drama"
-msgstr "Poważny/Klasyczny/Religijny/Historyczny/Dramat"
 
 msgid "service PIN"
 msgstr "PIN kanału"
@@ -24128,9 +24237,6 @@ msgstr "pokaż wszystkie karty"
 msgid "show all tags"
 msgstr "pokaż wszystkie znaczniki"
 
-msgid "show/game show (general)"
-msgstr "show/pokazy gier (ogólny)"
-
 msgid "shuffle"
 msgstr "wymieszaj"
 
@@ -24146,38 +24252,26 @@ msgstr "Przeskocz do tyłu"
 msgid "skip forward"
 msgstr "Przeskocz do przodu"
 
-msgid "Soap/Melodrama/Folkloric"
-msgstr "Mydło/Melodramat/Folklor"
-
-msgid "social/political issues/economics (general)"
+msgid "Social/Political issues/Economics"
 msgstr "poltyka/społeczeństwo/ekonomia"
-
-msgid "Social/Spiritual sciences"
-msgstr "Nauki społeczne/duchowe"
 
 msgid "softcam"
 msgstr "softcam"
 
 msgid "softcams"
-msgstr "softcam"
+msgstr "softcamy"
 
 msgid "special (general)"
 msgstr "specjalne (ogólne)"
 
-msgid "special events"
+msgid "Special events (Olympic games, World cup, etc.)"
 msgstr "wydarzenia specjalne"
 
 msgid "sport (general)"
 msgstr "sport (ogólnie)"
 
-msgid "sports (general)"
-msgstr "sporty (ogólnie)"
-
-msgid "Sports magazines"
-msgstr "Magazyny sportowe"
-
 msgid "standard"
-msgstr "standardowe"
+msgstr "standard"
 
 msgid "start cut here"
 msgstr "rozpocznij cięcie tutaj"
@@ -24209,23 +24303,14 @@ msgstr "Przełącz na następny język napisów"
 msgid "system:"
 msgstr "system:"
 
-msgid "talk show"
-msgstr "talk show"
-
-msgid "team sports"
+msgid "Team sports (excluding Football)"
 msgstr "sporty zespołowe"
-
-msgid "Technology/Natural sciences"
-msgstr "Technologia/Nauki przyrodnicze"
 
 msgid "teletext"
 msgstr "telegazeta"
 
 msgid "template file"
 msgstr "plik szablonu"
-
-msgid "Tennis/Squash"
-msgstr "Tenis/Squash"
 
 msgid "text"
 msgstr "tekst"
@@ -24235,9 +24320,6 @@ msgstr "to nagranie"
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "czas odtwarzania, rozdział, audio, informacje o napisach"
-
-msgid "Tourism/Travel"
-msgstr "Turystyka/Podróże"
 
 msgid "traditional (fast)"
 msgstr "tradycyjny (szybki)"
@@ -24275,9 +24357,6 @@ msgstr "nieznany"
 msgid "unknown error"
 msgstr "nieznany błąd"
 
-msgid "Unpublished"
-msgstr "Niepublikowane"
-
 msgid "untestable"
 msgstr "nietestowalny"
 
@@ -24285,10 +24364,7 @@ msgid "update"
 msgstr "aktualizacja"
 
 msgid "using:"
-msgstr "za pomocą:"
-
-msgid "Variety show"
-msgstr "Program rozrywkowy"
+msgstr "używając:"
 
 msgid "violet"
 msgstr "fioletowy"
@@ -24299,9 +24375,6 @@ msgstr "Poczekaj na CI ..."
 msgid "wait for mmi..."
 msgstr "czekaj na MMI..."
 
-msgid "Water sport"
-msgstr "Sporty wodne"
-
 msgid "west"
 msgstr "zachód"
 
@@ -24310,9 +24383,6 @@ msgstr "Biały"
 
 msgid "width"
 msgstr "szerokość"
-
-msgid "Winter sport"
-msgstr "Sport zimowy"
 
 msgid "wireless network interface"
 msgstr "interfejs sieci bezprzewodowej"
@@ -24336,11 +24406,115 @@ msgstr "Żółty"
 msgid "yes (keep feeds)"
 msgstr "tak (zachować feed'y)"
 
-msgid "Languages"
-msgstr "Języki"
-
 msgid "®"
 msgstr "®"
+
+#~ msgid "/usr/share/enigma2 directory"
+#~ msgstr "katalog /usr/share/enigma2"
+
+#~ msgid "/var directory"
+#~ msgstr "katalog /var"
+
+#~ msgid "Backup"
+#~ msgstr "Kopia zapasowa"
+
+#~ msgid "Backup Mode"
+#~ msgstr "Tryb kopii zapasowej"
+
+#~ msgid "CF Drive"
+#~ msgstr "Dysk CF"
+
+#~ msgid ""
+#~ "Do you want to backup now?\n"
+#~ "After pressing OK, please wait!"
+#~ msgstr ""
+#~ "Chcesz teraz utworzyć kopię zapasową?\n"
+#~ "Po naciśnięciu 'OK', proszę czekać!"
+
+#~ msgid ""
+#~ "Sorry your Backup destination does not exist\n"
+#~ "\n"
+#~ "Please choose an other one."
+#~ msgstr ""
+#~ "Przepraszamy, miejsce docelowe kopii zapasowej nie istnieje\n"
+#~ "\n"
+#~ "Wybierz inne."
+
+#~ msgid "USB Stick"
+#~ msgstr "Pamięć USB"
+
+#~ msgid ""
+#~ "are you sure you want to restore\n"
+#~ "following backup:\n"
+#~ msgstr ""
+#~ "jesteś pewien, że chcesz przywrócić\n"
+#~ "tą kopie zapasową:\n"
+
+#~ msgid "enigma2 and network"
+#~ msgstr "enigma2 i sieć"
+
+#~ msgid "Motor Sport"
+#~ msgstr "Sporty motorowe"
+
+#~ msgid "Winter Sports"
+#~ msgstr "Sporty zimowe"
+
+#~ msgid "athletics"
+#~ msgstr "lekka atletyka"
+
+#~ msgid "ballet"
+#~ msgstr "balet"
+
+#~ msgid "comedy"
+#~ msgstr "komedia"
+
+#~ msgid "cooking"
+#~ msgstr "gotowanie"
+
+#~ msgid "documentary"
+#~ msgstr "dokumentalny"
+
+#~ msgid "education/science/factual topics (general)"
+#~ msgstr "edukacja/nauka/fakty"
+
+#~ msgid "gardening"
+#~ msgstr "ogrodnictwo"
+
+#~ msgid "jazz"
+#~ msgstr "jazz"
+
+#~ msgid "languages"
+#~ msgstr "języki"
+
+#~ msgid "leisure hobbies (general)"
+#~ msgstr "Rozrywka hobby"
+
+#~ msgid "motor sport"
+#~ msgstr "sporty motorowe"
+
+#~ msgid "music/ballet/dance (general)"
+#~ msgstr "muzyka/balet/taniec"
+
+#~ msgid "news/current affairs (general)"
+#~ msgstr "wiadomości/aktualności (ogólne)"
+
+#~ msgid "original language"
+#~ msgstr "język oryginalny"
+
+#~ msgid "religion"
+#~ msgstr "religia"
+
+#~ msgid "romance"
+#~ msgstr "romans"
+
+#~ msgid "show/game show (general)"
+#~ msgstr "show/pokazy gier (ogólny)"
+
+#~ msgid "sports (general)"
+#~ msgstr "sporty (ogólnie)"
+
+#~ msgid "talk show"
+#~ msgstr "talk show"
 
 #~ msgid "Current status"
 #~ msgstr "Aktualny status"
