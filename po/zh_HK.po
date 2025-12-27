@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2024-07-23 13:09+0000\n"
 "Last-Translator: Ricky From Hong Kong <lamricky11@hotmail.com>\n"
 "Language-Team: Chinese (Traditional, Hong Kong) <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/zh_Hant_HK/>\n"
@@ -1876,15 +1876,6 @@ msgstr "活動的用戶端(s)"
 msgid "Active only"
 msgstr ""
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr ""
-
-msgid "AdGuard DNS (Family)"
-msgstr ""
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr ""
-
 msgid "Adapter Settings"
 msgstr "網卡設定"
 
@@ -1959,9 +1950,6 @@ msgstr ""
 #, fuzzy
 msgid "Add ZapTimer"
 msgstr "添加到計時器"
-
-msgid "Add a DNS entry"
-msgstr ""
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr ""
@@ -2188,6 +2176,9 @@ msgid "After recording"
 msgstr "正在錄製"
 
 msgid "After zap"
+msgstr ""
+
+msgid "Aggregate data only"
 msgstr ""
 
 msgid "Akan"
@@ -2463,6 +2454,9 @@ msgstr ""
 
 msgid "Animations"
 msgstr "動畫效果"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr ""
@@ -3575,15 +3569,6 @@ msgstr "未找到CI插座"
 msgid "CI+ Helper*"
 msgstr ""
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
-
 msgid "CPU"
 msgstr ""
 
@@ -4389,15 +4374,6 @@ msgstr ""
 msgid "Clean up and remove all completed timers?"
 msgstr ""
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr ""
-
 msgid "Cleaning Trashcan"
 msgstr ""
 
@@ -4526,9 +4502,6 @@ msgstr ""
 msgid "Close title selection"
 msgstr "關閉標題選項"
 
-msgid "Cloudflare DNS"
-msgstr ""
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4639,9 +4612,6 @@ msgstr ""
 #, fuzzy
 msgid "Common Setup Actions"
 msgstr "備份位置"
-
-msgid "Comodo Secure DNS"
-msgstr ""
 
 msgid "Comoros"
 msgstr ""
@@ -5221,21 +5191,6 @@ msgstr ""
 msgid "Contrast Video & OSD"
 msgstr ""
 
-msgid "Control D (Ads + Tracking)"
-msgstr ""
-
-msgid "Control D (Family Friendly)"
-msgstr ""
-
-msgid "Control D (Malware)"
-msgstr ""
-
-msgid "Control D (Uncensored)"
-msgstr ""
-
-msgid "Control D (Unfiltered)"
-msgstr ""
-
 msgid "Control LED can be turned on or off here."
 msgstr ""
 
@@ -5701,9 +5656,6 @@ msgstr ""
 msgid "DMM normal"
 msgstr ""
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr ""
-
 msgid "DNS Settings"
 msgstr ""
 
@@ -5713,13 +5665,13 @@ msgstr ""
 msgid "DNS protocol mode"
 msgstr ""
 
-msgid "Use DNS rotation"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr ""
 
-msgid "DNS.WATCH (Uncensored)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -6015,9 +5967,6 @@ msgstr "家長控制"
 
 msgid "Deep Standby"
 msgstr "深度休眠"
-
-msgid "Deep standby"
-msgstr ""
 
 msgid "Default"
 msgstr "預設"
@@ -7528,6 +7477,9 @@ msgstr ""
 
 msgid "Enable intro screen"
 msgstr "啟用簡介介面"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 msgid "Enable multiple bouquets"
 msgstr "啟用自定義組"
@@ -9313,9 +9265,6 @@ msgid "Gold"
 msgstr ""
 
 msgid "Golf"
-msgstr ""
-
-msgid "Google Public DNS"
 msgstr ""
 
 msgid "Goto"
@@ -11999,6 +11948,15 @@ msgstr ""
 msgid "Mongolian"
 msgstr ""
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr ""
 
@@ -12161,12 +12119,6 @@ msgid "Move job queued."
 msgstr ""
 
 msgid "Move only highlighted file"
-msgstr ""
-
-msgid "Move the current DNS entry down one line"
-msgstr ""
-
-msgid "Move the current DNS entry up one line"
 msgstr ""
 
 msgid "Move the current bookmark down"
@@ -13148,12 +13100,6 @@ msgstr "CF卡"
 msgid "None"
 msgstr "無"
 
-msgid "NordVPN Secure DNS"
-msgstr ""
-
-msgid "NordVPN Smart DNS"
-msgstr ""
-
 msgid "Norfolk Island"
 msgstr ""
 
@@ -13497,6 +13443,15 @@ msgstr ""
 msgid "Only on startup"
 msgstr "啟動時載入種子:"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr ""
 
@@ -13694,16 +13649,6 @@ msgid "Open the single service EPG view"
 msgstr ""
 
 msgid "Open with File Commander"
-msgstr ""
-
-msgid "OpenDNS FamilyShield"
-msgstr ""
-
-#, fuzzy
-msgid "OpenDNS Home"
-msgstr "導入自動計時器"
-
-msgid "OpenDNS Sandbox"
 msgstr ""
 
 msgid "OpenPLi Packages"
@@ -15000,6 +14945,9 @@ msgstr "每分鐘"
 msgid "Priority"
 msgstr "次序"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr ""
 
@@ -15219,15 +15167,6 @@ msgstr ""
 #, fuzzy
 msgid "Quad PiP is not available."
 msgstr "抱歉, 視頻不可用。"
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr ""
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr ""
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr ""
 
 msgid "Quechua"
 msgstr ""
@@ -15820,9 +15759,6 @@ msgstr "移除標題"
 #, fuzzy
 msgid "Remove Terrestrial Services"
 msgstr "保護服務"
-
-msgid "Remove a DNS entry"
-msgstr ""
 
 msgid "Remove a mark"
 msgstr "移除標記"
@@ -16997,6 +16933,9 @@ msgstr ""
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr ""
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr ""
 
@@ -17010,6 +16949,9 @@ msgid "Select 'Yes' to enable preview of channels while in the EPG list. Press '
 msgstr ""
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
+msgstr ""
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
 msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
@@ -17524,6 +17466,9 @@ msgstr ""
 msgid "Select the AI-Powered Translation target language."
 msgstr ""
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr ""
+
 msgid "Select the No / False response"
 msgstr ""
 
@@ -17846,9 +17791,6 @@ msgstr ""
 msgid "Select the tags that should be used for this recording."
 msgstr ""
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr ""
-
 msgid "Select the time after which this timer can start."
 msgstr ""
 
@@ -18077,6 +18019,15 @@ msgstr ""
 #, fuzzy
 msgid "Server down"
 msgstr "伺服器"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 #, fuzzy
 msgid "Servers"
@@ -18375,7 +18326,13 @@ msgstr "兩倍記憶體大小"
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr ""
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
+msgstr ""
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
 msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
@@ -18384,6 +18341,9 @@ msgstr ""
 #, fuzzy
 msgid "Set the position of the recording icons."
 msgstr "選擇位置來保存錄影."
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr ""
@@ -18420,6 +18380,9 @@ msgid "Set the top left location of the busy spinner. The coordinates are scaled
 msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
+msgstr ""
+
+msgid "Set the username for the monitoring UI web interface."
 msgstr ""
 
 #, python-format
@@ -21201,7 +21164,7 @@ msgstr ""
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr ""
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr ""
 
 #, fuzzy
@@ -21598,7 +21561,7 @@ msgstr ""
 msgid "This is the currently selected locale.  [%s]"
 msgstr ""
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -21824,9 +21787,6 @@ msgid "This option sets up the picture sharpness, used when the picture is being
 msgstr ""
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
-msgstr ""
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
 msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
@@ -22667,15 +22627,6 @@ msgstr "烏克蘭"
 msgid "Ukrainian"
 msgstr "烏克蘭"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr ""
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr ""
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr ""
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr ""
 
@@ -22954,7 +22905,19 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "自動分配位址(DHCP)"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
+msgstr ""
+
+msgid "Use DoH servers"
 msgstr ""
 
 msgid "Use EIT EPG information when it is available."
@@ -22982,6 +22945,9 @@ msgstr ""
 msgid "Use Netmed EPG information when it is available."
 msgstr ""
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr ""
 
@@ -23004,6 +22970,9 @@ msgid "Use Virgin EPG information when it is available."
 msgstr ""
 
 msgid "Use Zap timer end times"
+msgstr ""
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
 msgstr ""
 
 msgid "Use a gateway"
@@ -23076,7 +23045,16 @@ msgstr ""
 msgid "Use official channel numbering"
 msgstr ""
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
+msgstr ""
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
 msgstr ""
 
 msgid "Use original DVB subtitle position"
@@ -24697,7 +24675,7 @@ msgstr ""
 msgid "am"
 msgstr "名稱"
 
-msgid "aqua"
+msgid "Aqua"
 msgstr ""
 
 #, python-format
@@ -24714,7 +24692,7 @@ msgstr "單軌"
 msgid "automatic"
 msgstr ""
 
-msgid "azure"
+msgid "Azure"
 msgstr ""
 
 msgid "back"
@@ -24972,7 +24950,7 @@ msgstr "左"
 msgid "length"
 msgstr "長度"
 
-msgid "lime"
+msgid "Lime"
 msgstr ""
 
 msgid "locked"
@@ -25056,13 +25034,13 @@ msgstr ""
 msgid "offset is"
 msgstr ""
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr ""
 
 msgid "on READ ONLY medium."
 msgstr "唯讀介質."
 
-msgid "orange"
+msgid "Orange"
 msgstr ""
 
 msgid "package"
@@ -25074,7 +25052,7 @@ msgstr ""
 msgid "pid:"
 msgstr ""
 
-msgid "pink"
+msgid "Pink"
 msgstr ""
 
 msgid "please wait, loading picture..."
@@ -25097,7 +25075,7 @@ msgstr "供應商"
 msgid "provider:"
 msgstr "供應商"
 
-msgid "purple"
+msgid "Purple"
 msgstr ""
 
 msgid "red"
@@ -25131,7 +25109,7 @@ msgstr "退回上一個章節"
 msgid "right"
 msgstr "右"
 
-msgid "rose"
+msgid "Rose"
 msgstr ""
 
 msgid ""
@@ -25336,6 +25314,10 @@ msgstr "是 (保留)"
 
 msgid "®"
 msgstr ""
+
+#, fuzzy
+#~ msgid "OpenDNS Home"
+#~ msgstr "導入自動計時器"
 
 #, fuzzy
 #~ msgid "current affairs (general)"

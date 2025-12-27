@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2025-06-17 15:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ta/>\n"
@@ -1831,15 +1831,6 @@ msgstr "செயலில் உள்ள வாடிக்கையாளர�
 msgid "Active only"
 msgstr "செயலில் மட்டும்"
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr ""
-
-msgid "AdGuard DNS (Family)"
-msgstr ""
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr ""
-
 msgid "Adapter Settings"
 msgstr "தழுவல் அமைப்புகள்"
 
@@ -1908,9 +1899,6 @@ msgstr "ZAP+RecordTimer ஐச் சேர்க்கவும்"
 
 msgid "Add ZapTimer"
 msgstr "சாப்டிமரைச் சேர்க்கவும்"
-
-msgid "Add a DNS entry"
-msgstr "ஒரு டிஎன்எச் நுழைவு சேர்க்கவும்"
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr "தொகுதி ஆஃப்செட் பட்டியலில் ரேடியோ சேவையைச் சேர்க்கவும்"
@@ -2127,6 +2115,9 @@ msgstr "பதிவு செய்த பிறகு"
 
 msgid "After zap"
 msgstr "சாப் பிறகு"
+
+msgid "Aggregate data only"
+msgstr ""
 
 msgid "Akan"
 msgstr "அகான்"
@@ -2386,6 +2377,9 @@ msgstr "அனிமேசன் விரைவு"
 
 msgid "Animations"
 msgstr "அனிமேசன்கள்"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "அண்டார்ட்டிக்கா"
@@ -3432,15 +3426,6 @@ msgstr "நீங்கள் ச்லாட்:"
 msgid "CI+ Helper*"
 msgstr "Ci+ உதவியாளர்*"
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
-
 msgid "CPU"
 msgstr "சிபியு"
 
@@ -4218,15 +4203,6 @@ msgstr "நிறைவு செய்யப்பட்ட அனைத்த�
 msgid "Clean up and remove all completed timers?"
 msgstr "நிறைவு செய்யப்பட்ட அனைத்து டைமர்களையும் தூய்மை செய்து அகற்றவா?"
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr ""
-
 msgid "Cleaning Trashcan"
 msgstr "குப்பைத்தொட்டியை தூய்மை செய்தல்"
 
@@ -4352,9 +4328,6 @@ msgstr "இந்த திரையை மூடு"
 msgid "Close title selection"
 msgstr "தலைப்பு தேர்வை மூடு"
 
-msgid "Cloudflare DNS"
-msgstr "கிளவுட்ஃப்ளேர் டி.என்.எச்"
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4462,9 +4435,6 @@ msgstr "பொதுவான அமைப்புகள்"
 
 msgid "Common Setup Actions"
 msgstr "பொதுவான அமைவு செயல்கள்"
-
-msgid "Comodo Secure DNS"
-msgstr "கோமோடோ பாதுகாப்பான டி.என்.எச்"
 
 msgid "Comoros"
 msgstr "கோமரோச்"
@@ -5035,21 +5005,6 @@ msgstr "மாறுபட்ட வீடியோ"
 msgid "Contrast Video & OSD"
 msgstr "மாறுபட்ட வீடியோ & OSD"
 
-msgid "Control D (Ads + Tracking)"
-msgstr ""
-
-msgid "Control D (Family Friendly)"
-msgstr ""
-
-msgid "Control D (Malware)"
-msgstr ""
-
-msgid "Control D (Uncensored)"
-msgstr ""
-
-msgid "Control D (Unfiltered)"
-msgstr ""
-
 msgid "Control LED can be turned on or off here."
 msgstr "கட்டுப்பாட்டு எல்.ஈ.டி இங்கே இயக்கப்படலாம் அல்லது அணைக்கப்படலாம்."
 
@@ -5496,9 +5451,6 @@ msgstr "டி.எம்.எம் மேம்பட்டது"
 msgid "DMM normal"
 msgstr "டி.எம்.எம் இயல்பானது"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr "டி.என்.எச் (டைனமிக் பெயர் சேவையகம்) செயல்கள்"
-
 msgid "DNS Settings"
 msgstr "டி.என்.எச் அமைப்புகள்"
 
@@ -5508,13 +5460,13 @@ msgstr "டிஎன்எச் தரவு மூல"
 msgid "DNS protocol mode"
 msgstr "டிஎன்எச் பயன்முறை"
 
-msgid "Use DNS rotation"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr "டி.என்.எச் பின்னொட்டு"
 
-msgid "DNS.WATCH (Uncensored)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -5800,9 +5752,6 @@ msgid "Decryption & Parental Control"
 msgstr "மறைகுறியாக்கம் மற்றும் பெற்றோர் கட்டுப்பாடு"
 
 msgid "Deep Standby"
-msgstr "ஆழமான காத்திருப்பு"
-
-msgid "Deep standby"
 msgstr "ஆழமான காத்திருப்பு"
 
 msgid "Default"
@@ -7283,6 +7232,9 @@ msgstr "குறைவடையும் ட்யூனரிலிருந�
 
 msgid "Enable intro screen"
 msgstr "அறிமுக திரையை இயக்கவும்"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 msgid "Enable multiple bouquets"
 msgstr "பல பூங்கொத்துகளை இயக்கவும்"
@@ -9017,9 +8969,6 @@ msgstr "தங்கம்"
 
 msgid "Golf"
 msgstr "கோல்ஃப்"
-
-msgid "Google Public DNS"
-msgstr ""
 
 msgid "Goto"
 msgstr "கோட்டோ"
@@ -11551,6 +11500,15 @@ msgstr "மங்கோலியா"
 msgid "Mongolian"
 msgstr "மங்கோலியன்"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "மோன்டே நெக்ரோ"
 
@@ -11700,12 +11658,6 @@ msgstr "வேலை வரிசையில் நகர்த்தவும�
 
 msgid "Move only highlighted file"
 msgstr "சிறப்பிக்கப்பட்ட கோப்பை மட்டும் நகர்த்தவும்"
-
-msgid "Move the current DNS entry down one line"
-msgstr "தற்போதைய டிஎன்எச் நுழைவை ஒரு வரியில் நகர்த்தவும்"
-
-msgid "Move the current DNS entry up one line"
-msgstr "தற்போதைய டிஎன்எச் நுழைவை ஒரு வரியை நகர்த்தவும்"
 
 msgid "Move the current bookmark down"
 msgstr "தற்போதைய புத்தகக்குறியை கீழே நகர்த்தவும்"
@@ -12633,12 +12585,6 @@ msgstr "ஒளிரவில்லை"
 msgid "None"
 msgstr "எதுவுமில்லை"
 
-msgid "NordVPN Secure DNS"
-msgstr "Nordvpn பாதுகாப்பான டி.என்.எச்"
-
-msgid "NordVPN Smart DNS"
-msgstr "இன்று nordvpn அறிவுள்ள"
-
 msgid "Norfolk Island"
 msgstr "நொர்ஃபோக் தீவு"
 
@@ -12961,6 +12907,15 @@ msgstr "இந்த மணி நேரத்திற்கு முன்ப
 msgid "Only on startup"
 msgstr "தொடக்கத்தில் மட்டுமே"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "திற"
 
@@ -13140,15 +13095,6 @@ msgstr "ஒற்றை பணி EPG பார்வையைத் திற�
 
 msgid "Open with File Commander"
 msgstr "கோப்பு தளபதியுடன் திறக்கவும்"
-
-msgid "OpenDNS FamilyShield"
-msgstr "Opendns familyShield"
-
-msgid "OpenDNS Home"
-msgstr "Opendns வீடு"
-
-msgid "OpenDNS Sandbox"
-msgstr ""
 
 msgid "OpenPLi Packages"
 msgstr "OpenPli தொகுப்புகள்"
@@ -14376,6 +14322,9 @@ msgstr "பிரைம் டைம் மணித்துளி"
 msgid "Priority"
 msgstr "முன்னுரிமை"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "ச்கேன் தொடங்கும் சிக்கல்"
 
@@ -14577,15 +14526,6 @@ msgstr "குவாட் பிப் சேனல்"
 
 msgid "Quad PiP is not available."
 msgstr "குவாட் பிப் கிடைக்கவில்லை."
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr ""
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr ""
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr ""
 
 msgid "Quechua"
 msgstr "க்வெச்சுவா"
@@ -15131,9 +15071,6 @@ msgstr "சேவையை அகற்று"
 
 msgid "Remove Terrestrial Services"
 msgstr "நிலப்பரப்பு சேவைகளை அகற்றவும்"
-
-msgid "Remove a DNS entry"
-msgstr "ஒரு டிஎன்எச் நுழைவை அகற்று"
 
 msgid "Remove a mark"
 msgstr "ஒரு அடையாளத்தை அகற்று"
@@ -16252,6 +16189,9 @@ msgstr "கோப்பு தளபதி கோப்பு பார்வை
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr "அனைத்து டெலிடெக்ச்ட் மற்றும் டிவிபி வசனங்களுக்கும் AI- இயங்கும் மொழிபெயர்ப்பை இயக்க 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும்."
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "இந்த சாதனத்தின் அமைப்புகளைத் திருத்துவதற்கு 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும். 'இல்லை' என்பதைத் தேர்ந்தெடுப்பது சாதனங்களின் அமைப்புகளை அவற்றின் இயல்புநிலை மதிப்புகளுக்கு மீட்டமைக்கிறது."
 
@@ -16266,6 +16206,9 @@ msgstr "ஈபிசி பட்டியலில் இருக்கும�
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "இணைக்கப்படாத பயனர் பூங்கொத்துகளை ஏற்றுவதற்கு 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும். அதாவது, bowquets.tv அல்லது bougets.radio கோப்புகளில் சேர்க்கப்படாத பயனர் பூங்கொத்துகள் ஏற்றப்படும். எடுத்துக்காட்டாக, அமைப்புகள் தொகுப்புகளிலிருந்து வந்த பூங்கொத்துகளுடன் முரண்படாத அல்லது மாற்றப்படாத பூங்கொத்துகளை உருவாக்க இது உங்களை அனுமதிக்கிறது."
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr "இடது/வலது பொத்தான்கள் வரையறுக்கப்படாதபோது, பேசப்/பேசெடவுன் நகர்த்த இடது/வலது பொத்தான்களைப் பயன்படுத்த 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும். இது விரும்பும் பயனர்களுக்கு இது மரபு வழிசெலுத்தலை வழங்குகிறது."
@@ -16762,6 +16705,9 @@ msgstr "%s உள்ளீட்டைத் தேர்ந்தெடுக�
 msgid "Select the AI-Powered Translation target language."
 msgstr "AI- இயங்கும் மொழிபெயர்ப்பு இலக்கு மொழியைத் தேர்ந்தெடுக்கவும்."
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr "இயல்புநிலை DNS அமைப்புகளின் மூலத்தைத் தேர்ந்தெடுக்கவும்."
+
 msgid "Select the No / False response"
 msgstr "இல்லை / தவறான பதிலைத் தேர்ந்தெடுக்கவும்"
 
@@ -17084,9 +17030,6 @@ msgstr "கோப்பு தளபதி தொடக்கத்தில் 
 msgid "Select the tags that should be used for this recording."
 msgstr "இந்த பதிவுக்கு பயன்படுத்த வேண்டிய குறிச்சொற்களைத் தேர்ந்தெடுக்கவும்."
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr "இயல்புநிலை DNS அமைப்புகளின் மூலத்தைத் தேர்ந்தெடுக்கவும்."
-
 msgid "Select the time after which this timer can start."
 msgstr "இந்த நேரங்குறிகருவி தொடங்கக்கூடிய நேரத்தைத் தேர்ந்தெடுக்கவும்."
 
@@ -17320,6 +17263,15 @@ msgstr "தீவிர/கிளாசிக்கல்/மத/வரலாற
 
 msgid "Server down"
 msgstr "சேவையகம் கீழே"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "சேவையகங்கள்"
@@ -17596,14 +17548,23 @@ msgstr "சீக்பரின் சம்ப் அளவை அமைக்
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr "ச்கிரிப்டில் 'ச்டவுட்' மற்றும் 'ச்டெர்ர்' வெளியீட்டிற்காக சேமிக்க வேண்டிய வரிகளின் எண்ணிக்கையை அமைக்கவும்."
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "உங்கள் குறைவடையும் ட்யூனரிலிருந்து OpenWebif இன் கடவுச்சொல்லை அமைக்கவும்"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "உங்கள் குறைவடையும் ட்யூனரிலிருந்து OpenWebif இன் துறைமுகத்தை அமைக்கவும்"
 
 msgid "Set the position of the recording icons."
 msgstr "பதிவு ஐகான்களின் நிலையை அமைக்கவும்."
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "செய்தி பட்டி 2 வது இன்போபார் லைட் அல்லது நிகழ்வு தகவலுக்கு காண்பிக்கும் போது 'சரி' என்பதை அழுத்தும்போது நீங்கள் பெறும் திரை வகையை அமைக்கவும்."
@@ -17643,6 +17604,9 @@ msgstr "பிசியான ச்பின்னரின் மேல் இ
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "சேனல் தேர்வுத் திரையில் முன்னேற்றக் குறிப்பின் வகையை அமைக்கவும்."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -20260,7 +20224,7 @@ msgstr "'%s' கோப்பை மீட்டெடுக்க முடி�
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr "மொழிகளை மொழிபெயர்க்க பயன்படுத்தப்படும் AI பயன்முறை. உங்கள் இலக்கு மொழிக்கு மிகவும் துல்லியமான மொழிபெயர்ப்பை வழங்கும் ஒன்றை நீங்கள் தேர்வு செய்யலாம்."
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr "தேர்ந்தெடுக்கப்பட்ட இணைய இணைப்பு பதிவேற்ற வேகத்தின் அடிப்படையில் சிறந்த செயல்திறனை வழங்க AI- இயங்கும் மொழிபெயர்ப்பு பணி உகந்ததாக இருக்கும்."
 
 msgid ""
@@ -20685,7 +20649,7 @@ msgstr "இது தற்போது தேர்ந்தெடுக்க�
 msgid "This is the currently selected locale.  [%s]"
 msgstr "இது தற்போது தேர்ந்தெடுக்கப்பட்ட இடம். [%s]"
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr "தொகுதி சரிசெய்தல் பட்டியலில் சேர்க்கப்பட்ட எந்தவொரு சேவைக்கும் பயன்படுத்தப்படும் ஆரம்ப / இயல்புநிலை தொகுதி ஆஃப்செட் இது."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -20912,9 +20876,6 @@ msgstr "இந்த விருப்பம் படக் கூர்மை
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
 msgstr "இந்த சொருகி ஒரு நிரல் முன்பே தொடங்குகிறது அல்லது நீண்ட காலம் நீடிக்கும் என்பதை தீர்மானிக்க முடியும். சேனல் நம்பகமான தரவை வழங்க வேண்டும்."
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
-msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
 msgstr "இந்த பணி பெற்றோரின் கட்டுப்பாட்டு முள் மூலம் பாதுகாக்கப்படுகிறது!"
@@ -21728,15 +21689,6 @@ msgstr "உக்ரெயின்"
 msgid "Ukrainian"
 msgstr "உக்ரேனிய"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr ""
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr ""
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr ""
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "KEXEC மல்டிபூட்டை துவக்க முடியவில்லை!"
 
@@ -22008,8 +21960,20 @@ msgstr "ஆட்டோகாம் பயன்படுத்தவும்"
 msgid "Use DHCP"
 msgstr "DHCP ஐப் பயன்படுத்தவும்"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "1080i வீடியோசிக்னலுக்கு deinterlacing ஐப் பயன்படுத்தவா?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "EIT EPG செய்தி கிடைக்கும்போது அதைப் பயன்படுத்தவும்."
@@ -22035,6 +21999,9 @@ msgstr "MHW EPG செய்தி கிடைக்கும்போது �
 msgid "Use Netmed EPG information when it is available."
 msgstr "நெட் ஈபிசி செய்தி கிடைக்கும்போது அதைப் பயன்படுத்தவும்."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "OpentV EPG ஐப் பயன்படுத்தவும். EPG ஐ உறிஞ்சுவதற்கு குறிப்பிட்ட டிரான்ச்பாண்டருக்கு டியூனிங் தேவைப்படுகிறது."
 
@@ -22058,6 +22025,9 @@ msgstr "விர்சின் ஈபிசி செய்தி கிடை
 
 msgid "Use Zap timer end times"
 msgstr "சாப் நேரங்குறிகருவி எண்ட் நேரங்களைப் பயன்படுத்தவும்"
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
+msgstr ""
 
 msgid "Use a gateway"
 msgstr "ஒரு நுழைவாயில் பயன்படுத்தவும்"
@@ -22128,8 +22098,17 @@ msgstr "மரபு வழிசெலுத்தலைப் பயன்ப�
 msgid "Use official channel numbering"
 msgstr "அதிகாரப்பூர்வ சேனல் எண்ணைப் பயன்படுத்தவும்"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "WLAN (வாவ்) இல் விழிப்புக்கு மட்டுமே பயன்படுத்தவும்"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "அசல் டி.வி.பி வசன வரியை பயன்படுத்தவும்"
@@ -23738,7 +23717,7 @@ msgstr "ஆல்பரேவ் பின்னர் புதியது"
 msgid "am"
 msgstr "ஆம்"
 
-msgid "aqua"
+msgid "Aqua"
 msgstr "அக்வா"
 
 #, python-format
@@ -23755,7 +23734,7 @@ msgstr "ஆடியோ தடங்கள்"
 msgid "automatic"
 msgstr "தானியங்கி"
 
-msgid "azure"
+msgid "Azure"
 msgstr "அசூர்"
 
 msgid "back"
@@ -24007,7 +23986,7 @@ msgstr "இடது"
 msgid "length"
 msgstr "நீளம்"
 
-msgid "lime"
+msgid "Lime"
 msgstr "சுண்ணாம்பு"
 
 msgid "locked"
@@ -24088,13 +24067,13 @@ msgstr "அணை அல்லது WPA2 ஆன்"
 msgid "offset is"
 msgstr "ஆஃப்செட்"
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr "ஒலிம்பிக் நீலம்"
 
 msgid "on READ ONLY medium."
 msgstr "மட்டும் நடுத்தரத்தைப் படிக்கவும்."
 
-msgid "orange"
+msgid "Orange"
 msgstr "ஆரஞ்சு"
 
 msgid "package"
@@ -24106,7 +24085,7 @@ msgstr "தொகுப்பு"
 msgid "pid:"
 msgstr "பிஐடி:"
 
-msgid "pink"
+msgid "Pink"
 msgstr "இளஞ்சிவப்பு"
 
 msgid "please wait, loading picture..."
@@ -24127,7 +24106,7 @@ msgstr "வழங்குநர்:"
 msgid "provider:"
 msgstr "வழங்குநர்:"
 
-msgid "purple"
+msgid "Purple"
 msgstr "ஊதா"
 
 msgid "red"
@@ -24160,7 +24139,7 @@ msgstr "முந்தைய அத்தியாயத்திற்கு �
 msgid "right"
 msgstr "வலது"
 
-msgid "rose"
+msgid "Rose"
 msgstr "ரோசா"
 
 msgid ""
@@ -24356,6 +24335,42 @@ msgstr "ஆம் (ஊட்டங்களை வைத்திருங்க
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Add a DNS entry"
+#~ msgstr "ஒரு டிஎன்எச் நுழைவு சேர்க்கவும்"
+
+#~ msgid "DNS (Dynamic Name Server) Actions"
+#~ msgstr "டி.என்.எச் (டைனமிக் பெயர் சேவையகம்) செயல்கள்"
+
+#~ msgid "Deep standby"
+#~ msgstr "ஆழமான காத்திருப்பு"
+
+#~ msgid "Move the current DNS entry down one line"
+#~ msgstr "தற்போதைய டிஎன்எச் நுழைவை ஒரு வரியில் நகர்த்தவும்"
+
+#~ msgid "Move the current DNS entry up one line"
+#~ msgstr "தற்போதைய டிஎன்எச் நுழைவை ஒரு வரியை நகர்த்தவும்"
+
+#~ msgid "Remove a DNS entry"
+#~ msgstr "ஒரு டிஎன்எச் நுழைவை அகற்று"
+
+#~ msgid "Cloudflare DNS"
+#~ msgstr "கிளவுட்ஃப்ளேர் டி.என்.எச்"
+
+#~ msgid "Comodo Secure DNS"
+#~ msgstr "கோமோடோ பாதுகாப்பான டி.என்.எச்"
+
+#~ msgid "NordVPN Secure DNS"
+#~ msgstr "Nordvpn பாதுகாப்பான டி.என்.எச்"
+
+#~ msgid "NordVPN Smart DNS"
+#~ msgstr "இன்று nordvpn அறிவுள்ள"
+
+#~ msgid "OpenDNS FamilyShield"
+#~ msgstr "Opendns familyShield"
+
+#~ msgid "OpenDNS Home"
+#~ msgstr "Opendns வீடு"
 
 #~ msgid "Google DNS"
 #~ msgstr "கூகிள் டி.என்.எச்"

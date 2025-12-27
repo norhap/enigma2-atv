@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu_po v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2025-05-05 05:50+0000\n"
 "Last-Translator: Balázs Sólyom <balazs@solyom.online>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/hu/>\n"
@@ -1874,15 +1874,6 @@ msgstr "Aktív kliensek"
 msgid "Active only"
 msgstr ""
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr ""
-
-msgid "AdGuard DNS (Family)"
-msgstr ""
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr ""
-
 msgid "Adapter Settings"
 msgstr "Adapter beállításai"
 
@@ -1951,9 +1942,6 @@ msgstr "Zap + Felvétel időzítő hozzáadása"
 
 msgid "Add ZapTimer"
 msgstr "Zap időzítő hozzáadása"
-
-msgid "Add a DNS entry"
-msgstr ""
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr ""
@@ -2169,6 +2157,9 @@ msgid "After recording"
 msgstr "Felvétel után"
 
 msgid "After zap"
+msgstr ""
+
+msgid "Aggregate data only"
 msgstr ""
 
 msgid "Akan"
@@ -2431,6 +2422,9 @@ msgstr "Animáció sebessége"
 
 msgid "Animations"
 msgstr "Animációk"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Antarktika"
@@ -3482,15 +3476,6 @@ msgstr "CI foglalat: "
 msgid "CI+ Helper*"
 msgstr ""
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
-
 msgid "CPU"
 msgstr "Processzor"
 
@@ -4264,15 +4249,6 @@ msgstr ""
 msgid "Clean up and remove all completed timers?"
 msgstr ""
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr ""
-
 msgid "Cleaning Trashcan"
 msgstr ""
 
@@ -4398,9 +4374,6 @@ msgstr ""
 msgid "Close title selection"
 msgstr "Címválasztás bezárása"
 
-msgid "Cloudflare DNS"
-msgstr ""
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4509,9 +4482,6 @@ msgstr ""
 #, fuzzy
 msgid "Common Setup Actions"
 msgstr "Indításkori művelet"
-
-msgid "Comodo Secure DNS"
-msgstr ""
 
 msgid "Comoros"
 msgstr "Comore-szigetek"
@@ -5077,21 +5047,6 @@ msgstr ""
 msgid "Contrast Video & OSD"
 msgstr ""
 
-msgid "Control D (Ads + Tracking)"
-msgstr ""
-
-msgid "Control D (Family Friendly)"
-msgstr ""
-
-msgid "Control D (Malware)"
-msgstr ""
-
-msgid "Control D (Uncensored)"
-msgstr ""
-
-msgid "Control D (Unfiltered)"
-msgstr ""
-
 #, fuzzy
 msgid "Control LED can be turned on or off here."
 msgstr "A Power LED itt be- és kikapcsolható."
@@ -5541,9 +5496,6 @@ msgstr "DMM haladó"
 msgid "DMM normal"
 msgstr "DMM hagyományos"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr ""
-
 msgid "DNS Settings"
 msgstr ""
 
@@ -5553,13 +5505,13 @@ msgstr ""
 msgid "DNS protocol mode"
 msgstr ""
 
-msgid "Use DNS rotation"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr ""
 
-msgid "DNS.WATCH (Uncensored)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -5853,9 +5805,6 @@ msgstr "Dekódolás és szülői felügyelet"
 
 msgid "Deep Standby"
 msgstr "Kikapcsolás"
-
-msgid "Deep standby"
-msgstr ""
 
 msgid "Default"
 msgstr "Alapértelmezett"
@@ -7328,6 +7277,9 @@ msgstr "Csatornák importálása a tartalék tunerből"
 
 msgid "Enable intro screen"
 msgstr "Engedélyezi az intro-t a képernyőn"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 msgid "Enable multiple bouquets"
 msgstr "Többszörös csatornacsomagok engedélyezése"
@@ -9069,9 +9021,6 @@ msgstr "Arany"
 
 msgid "Golf"
 msgstr "Golf"
-
-msgid "Google Public DNS"
-msgstr ""
 
 msgid "Goto"
 msgstr "Menj"
@@ -11643,6 +11592,15 @@ msgstr "Mongólia"
 msgid "Mongolian"
 msgstr "Mongólia"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "Montenegró"
 
@@ -11795,12 +11753,6 @@ msgid "Move job queued."
 msgstr ""
 
 msgid "Move only highlighted file"
-msgstr ""
-
-msgid "Move the current DNS entry down one line"
-msgstr ""
-
-msgid "Move the current DNS entry up one line"
 msgstr ""
 
 msgid "Move the current bookmark down"
@@ -12743,12 +12695,6 @@ msgstr "Nem villog"
 msgid "None"
 msgstr "Nincs"
 
-msgid "NordVPN Secure DNS"
-msgstr ""
-
-msgid "NordVPN Smart DNS"
-msgstr ""
-
 msgid "Norfolk Island"
 msgstr "Norfolk-szigetek"
 
@@ -13075,6 +13021,15 @@ msgstr "Csak gyorsan mozgassa a dish-t ezen óra előtt."
 msgid "Only on startup"
 msgstr "Csak indításkor"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Nyitás"
 
@@ -13270,16 +13225,6 @@ msgstr ""
 
 msgid "Open with File Commander"
 msgstr "Megnyitás File Commander-el"
-
-msgid "OpenDNS FamilyShield"
-msgstr ""
-
-#, fuzzy
-msgid "OpenDNS Home"
-msgstr "AutoTimer megnyitása"
-
-msgid "OpenDNS Sandbox"
-msgstr ""
 
 msgid "OpenPLi Packages"
 msgstr ""
@@ -14511,6 +14456,9 @@ msgstr "Fő műsoridő (perc)"
 msgid "Priority"
 msgstr "Prioritás"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "hiba a keresés indításakor"
 
@@ -14712,15 +14660,6 @@ msgstr "Quad Kép-a-Képben csatorna "
 
 msgid "Quad PiP is not available."
 msgstr "Négy csatornás Kép-a-Képben nem érhető el."
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr ""
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr ""
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr ""
 
 msgid "Quechua"
 msgstr ""
@@ -15268,9 +15207,6 @@ msgstr "Szolgáltatás törlése"
 
 msgid "Remove Terrestrial Services"
 msgstr "földfelszíni szolgáltatás eltávolítása"
-
-msgid "Remove a DNS entry"
-msgstr ""
 
 msgid "Remove a mark"
 msgstr "Egy jelölő eltávolítása"
@@ -16395,6 +16331,9 @@ msgstr ""
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr ""
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr ""
 
@@ -16409,6 +16348,9 @@ msgstr "Ha az 'igen'-t választja, a csatornát előnézetben tekintheti meg. Ny
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Ha engedélyezi, a leválasztott felhasználói csatornacsomagok is betöltődnek. Ez azt jelenti, hogy az olyan felhasználói csatornacsomagok is betöltődnek, amelyek léteznek, de nincsnek benne a bouquets.tv vagy bouquets.radio fájlban. Ez lehetőséget ad arra, hogy a saját csatornacsomagjait megtartsa, ha a csatornák frissülnek"
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr ""
@@ -16905,6 +16847,9 @@ msgstr ""
 msgid "Select the AI-Powered Translation target language."
 msgstr ""
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr ""
+
 msgid "Select the No / False response"
 msgstr ""
 
@@ -17228,9 +17173,6 @@ msgstr ""
 msgid "Select the tags that should be used for this recording."
 msgstr ""
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr ""
-
 msgid "Select the time after which this timer can start."
 msgstr ""
 
@@ -17459,6 +17401,15 @@ msgstr "komolyzene/klasszikus/vallási/történelmi/dráma"
 
 msgid "Server down"
 msgstr "Kiszolgáló le"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Kiszolgálók"
@@ -17737,14 +17688,23 @@ msgstr "Állítsa be a keresősáv ugrási méretét."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr ""
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Állítsa be az OpenWebIf jelszót a tartalék tunerből"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Állítsa be az OpenWebIf portot a tartalék tunerből"
 
 msgid "Set the position of the recording icons."
 msgstr "Állítsa be a felvételt jelző ikon pozícióját"
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Állítsa be a képernyő típusát, ha megnyomja az \"OK\" gombot, amikor az Információs sáv a Második információs sáv Lite-ra vagy esemény információra mutat."
@@ -17781,6 +17741,9 @@ msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Állítsa be a folyamatjelző típusát a csatornaválasztó képernyőn."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -20414,7 +20377,7 @@ msgstr ""
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr ""
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr ""
 
 msgid ""
@@ -20812,7 +20775,7 @@ msgstr ""
 msgid "This is the currently selected locale.  [%s]"
 msgstr ""
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -21038,9 +21001,6 @@ msgid "This option sets up the picture sharpness, used when the picture is being
 msgstr "Ezzel beállítja a kép élességét, amelyet a kép felskálázásnál használ."
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
-msgstr ""
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
 msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
@@ -21863,15 +21823,6 @@ msgstr "Ukrajna"
 msgid "Ukrainian"
 msgstr "Ukrán"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr ""
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr ""
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr ""
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr ""
 
@@ -22143,8 +22094,20 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "DHCP használata"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "Használjon felbontást 1080i videójelre?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "EPG információk beolvasása a DVB jelfolyamból (EIT)."
@@ -22170,6 +22133,9 @@ msgstr "MHW EPG információk beolvasása a jelforrásból."
 msgid "Use Netmed EPG information when it is available."
 msgstr "Netmed EPG információk beolvasása a jelforrásból."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr ""
 
@@ -22192,6 +22158,9 @@ msgid "Use Virgin EPG information when it is available."
 msgstr "Virgin EPG információk beolvasása a jelforrásból."
 
 msgid "Use Zap timer end times"
+msgstr ""
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
 msgstr ""
 
 msgid "Use a gateway"
@@ -22260,8 +22229,17 @@ msgstr ""
 msgid "Use official channel numbering"
 msgstr "Hivatalos csatornaszámozás használata"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Csak Wake on WLan (WoW)"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "DVB feliratok pozíciójának megtartása"
@@ -23844,7 +23822,7 @@ msgstr "utána a legújabb"
 msgid "am"
 msgstr "de"
 
-msgid "aqua"
+msgid "Aqua"
 msgstr ""
 
 #, python-format
@@ -23861,7 +23839,7 @@ msgstr "hangsávok"
 msgid "automatic"
 msgstr "automatikus"
 
-msgid "azure"
+msgid "Azure"
 msgstr ""
 
 msgid "back"
@@ -24114,7 +24092,7 @@ msgstr "bal"
 msgid "length"
 msgstr "hossz"
 
-msgid "lime"
+msgid "Lime"
 msgstr ""
 
 msgid "locked"
@@ -24195,13 +24173,13 @@ msgstr "ki vagy wpa2 be"
 msgid "offset is"
 msgstr "offszet"
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr ""
 
 msgid "on READ ONLY medium."
 msgstr "a csak olvasható hordozón."
 
-msgid "orange"
+msgid "Orange"
 msgstr ""
 
 msgid "package"
@@ -24213,7 +24191,7 @@ msgstr ""
 msgid "pid:"
 msgstr "pid:"
 
-msgid "pink"
+msgid "Pink"
 msgstr ""
 
 msgid "please wait, loading picture..."
@@ -24234,7 +24212,7 @@ msgstr "szolgáltató Id:"
 msgid "provider:"
 msgstr "szolgáltató:"
 
-msgid "purple"
+msgid "Purple"
 msgstr ""
 
 msgid "red"
@@ -24267,7 +24245,7 @@ msgstr "visszatekerés az előző chapterhez"
 msgid "right"
 msgstr "jobb"
 
-msgid "rose"
+msgid "Rose"
 msgstr ""
 
 msgid ""
@@ -24464,6 +24442,10 @@ msgstr "igen (állapotok megtartása)"
 
 msgid "®"
 msgstr "®"
+
+#, fuzzy
+#~ msgid "OpenDNS Home"
+#~ msgstr "AutoTimer megnyitása"
 
 #~ msgid "Sci-Fi"
 #~ msgstr "Sci-Fi"

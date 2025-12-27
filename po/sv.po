@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2025-11-11 20:51+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sv/>\n"
@@ -1895,15 +1895,6 @@ msgstr "Aktiva kunder"
 msgid "Active only"
 msgstr "Endast aktiv"
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr ""
-
-msgid "AdGuard DNS (Family)"
-msgstr ""
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr ""
-
 #
 msgid "Adapter Settings"
 msgstr "Inställningar för adapter"
@@ -1982,9 +1973,6 @@ msgstr "Lägg till Zappa+RecordTimer"
 
 msgid "Add ZapTimer"
 msgstr "Lägg till ZapTimer"
-
-msgid "Add a DNS entry"
-msgstr "Lägga till en DNS-post"
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr "Lägg till en RADIO-tjänst i listan över volymoffset"
@@ -2219,6 +2207,9 @@ msgstr "Efter inspelning"
 
 msgid "After zap"
 msgstr "Efter zapp"
+
+msgid "Aggregate data only"
+msgstr ""
 
 msgid "Akan"
 msgstr "Akan"
@@ -2491,6 +2482,9 @@ msgstr "Animationshastighet"
 
 msgid "Animations"
 msgstr "Animationer"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Antarktis"
@@ -3592,15 +3586,6 @@ msgstr "CI-plats: "
 msgid "CI+ Helper*"
 msgstr "CI+-hjälpare*"
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
-
 msgid "CPU"
 msgstr "CPU"
 
@@ -4409,15 +4394,6 @@ msgstr "Städa upp och ta bort alla avslutade timers"
 msgid "Clean up and remove all completed timers?"
 msgstr "Städa upp och ta bort alla avslutade timers?"
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr ""
-
 msgid "Cleaning Trashcan"
 msgstr "Rengöring av papperskorg"
 
@@ -4552,9 +4528,6 @@ msgstr "Stäng denna skärm"
 msgid "Close title selection"
 msgstr "Stäng titelval"
 
-msgid "Cloudflare DNS"
-msgstr "Cloudflare DNS"
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4671,9 +4644,6 @@ msgstr "Vanliga inställningar"
 #
 msgid "Common Setup Actions"
 msgstr "Vanliga installationsåtgärder"
-
-msgid "Comodo Secure DNS"
-msgstr "Comodo säker DNS"
 
 msgid "Comoros"
 msgstr "Komorerna"
@@ -5263,21 +5233,6 @@ msgstr "Kontrast Video"
 msgid "Contrast Video & OSD"
 msgstr "Kontrast Video & OSD"
 
-msgid "Control D (Ads + Tracking)"
-msgstr ""
-
-msgid "Control D (Family Friendly)"
-msgstr ""
-
-msgid "Control D (Malware)"
-msgstr ""
-
-msgid "Control D (Uncensored)"
-msgstr ""
-
-msgid "Control D (Unfiltered)"
-msgstr ""
-
 msgid "Control LED can be turned on or off here."
 msgstr "Kontroll-LED kan sättas på eller stängas av här."
 
@@ -5745,9 +5700,6 @@ msgstr "DMM avancerad"
 msgid "DMM normal"
 msgstr "DMM normal"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr "DNS (dynamisk namnserver) Åtgärder"
-
 msgid "DNS Settings"
 msgstr "DNS-inställningar"
 
@@ -5757,13 +5709,13 @@ msgstr "DNS datakälla"
 msgid "DNS protocol mode"
 msgstr "DNS-läge"
 
-msgid "Use DNS rotation"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr "DNS-suffix"
 
-msgid "DNS.WATCH (Uncensored)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -6064,9 +6016,6 @@ msgstr "Dekryptering och föräldrakontroll"
 #
 msgid "Deep Standby"
 msgstr "Deep Standby"
-
-msgid "Deep standby"
-msgstr "Djup standby"
 
 #
 msgid "Default"
@@ -7640,6 +7589,9 @@ msgstr "Aktivera importtimer från reservtuner"
 
 msgid "Enable intro screen"
 msgstr "Aktivera introskärm"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 #
 msgid "Enable multiple bouquets"
@@ -9464,9 +9416,6 @@ msgstr "Guld"
 
 msgid "Golf"
 msgstr "Golf"
-
-msgid "Google Public DNS"
-msgstr ""
 
 msgid "Goto"
 msgstr "Goto"
@@ -12149,6 +12098,15 @@ msgstr "Mongoliet"
 msgid "Mongolian"
 msgstr "Mongoliska"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "Montenegro"
 
@@ -12308,12 +12266,6 @@ msgstr "Flyttjobb i kö."
 
 msgid "Move only highlighted file"
 msgstr "Flytta endast markerad fil"
-
-msgid "Move the current DNS entry down one line"
-msgstr "Flytta den aktuella DNS-posten en rad nedåt"
-
-msgid "Move the current DNS entry up one line"
-msgstr "Flytta den aktuella DNS-posten en rad uppåt"
 
 msgid "Move the current bookmark down"
 msgstr "Flytta det aktuella bokmärket nedåt"
@@ -13315,12 +13267,6 @@ msgstr "Icke-blinkande"
 msgid "None"
 msgstr "Ingen"
 
-msgid "NordVPN Secure DNS"
-msgstr "NordVPN säker DNS"
-
-msgid "NordVPN Smart DNS"
-msgstr "NordVPN Smart DNS"
-
 msgid "Norfolk Island"
 msgstr "Norfolk Island"
 
@@ -13662,6 +13608,15 @@ msgstr "Flytta bara disken snabbt före denna timme."
 msgid "Only on startup"
 msgstr "Endast vid uppstart"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Öppen"
 
@@ -13849,15 +13804,6 @@ msgstr "Öppna EPG-vyn för en enda tjänst"
 
 msgid "Open with File Commander"
 msgstr "Öppna med File Commander"
-
-msgid "OpenDNS FamilyShield"
-msgstr "OpenDNS Familjeskydd"
-
-msgid "OpenDNS Home"
-msgstr "OpenDNS Hem"
-
-msgid "OpenDNS Sandbox"
-msgstr ""
 
 msgid "OpenPLi Packages"
 msgstr "OpenPLi-paket"
@@ -15183,6 +15129,9 @@ msgstr "Primetime minut"
 msgid "Priority"
 msgstr "Prioritet"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "Problem med att starta skanning"
 
@@ -15392,15 +15341,6 @@ msgstr "Quad PiP-kanal "
 #
 msgid "Quad PiP is not available."
 msgstr "Quad PiP är inte tillgängligt."
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr ""
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr ""
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr ""
 
 msgid "Quechua"
 msgstr "Quechua"
@@ -15985,9 +15925,6 @@ msgstr "Ta bort tjänsten"
 #
 msgid "Remove Terrestrial Services"
 msgstr "Ta bort markbundna tjänster"
-
-msgid "Remove a DNS entry"
-msgstr "Ta bort en DNS-post"
 
 #
 msgid "Remove a mark"
@@ -17190,6 +17127,9 @@ msgstr "Välj \"Ja\" för att visa okända filer i File Commander-filvisaren, v�
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr "Välj \"Ja\" för att aktivera AI-driven översättning för alla text-TV- och DVB-undertexter."
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "Välj \"Yes\" för att aktivera redigering av den här enhetens inställningar. Om du väljer \"No\" återställs enhetens inställningar till standardvärdena."
 
@@ -17204,6 +17144,9 @@ msgstr "Välj \"Yes\" för att aktivera förhandsgranskning av kanaler i EPG-lis
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Välj \"Yes\" för att aktivera laddning av olänkade användarbuketter. Det vill säga att användarbuketter som inte ingår i filerna bouquets.tv eller bouquets.radio kommer att laddas. På så sätt kan du t.ex. skapa buketter som inte står i konflikt med, eller ersätts av, buketter som kommer från inställningspaket."
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr "Välj \"Yes\" för att aktivera användning av knapparna LEFT/RIGHT för att flytta PageUp/PageDown när knapparna LEFT/RIGHT annars är odefinierade. Detta ger äldre navigering för användare som föredrar det."
@@ -17716,6 +17659,9 @@ msgstr "Välj %s-inmatning"
 msgid "Select the AI-Powered Translation target language."
 msgstr "Välj målspråket för AI-driven översättning."
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr "Välj källa för standardinställningarna för DNS."
+
 msgid "Select the No / False response"
 msgstr "Välj svarsalternativet Nej/Falskt"
 
@@ -18041,9 +17987,6 @@ msgstr "Välj den start-/initialkolumn som ska aktiveras när File Commander sta
 msgid "Select the tags that should be used for this recording."
 msgstr "Välj de taggar som ska användas för den här inspelningen."
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr "Välj källa för standardinställningarna för DNS."
-
 msgid "Select the time after which this timer can start."
 msgstr "Välj den tid efter vilken timern ska starta."
 
@@ -18289,6 +18232,15 @@ msgstr "seriös/klassisk/religiös/historisk film/drama"
 
 msgid "Server down"
 msgstr "Server nere"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Servrar"
@@ -18579,14 +18531,23 @@ msgstr "Ställ in hoppstorleken för SeekBar."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr "Ange antalet rader som ska sparas för utdata från \"stout\" och \"sterr\" i skript."
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Ställ in lösenordet för OpenWebif från din reservtuner"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Ställ in porten för OpenWebif från din reservtuner"
 
 msgid "Set the position of the recording icons."
 msgstr "Ställ in positionen för inspelningsikonerna."
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Ställ in vilken skärmtyp du får när du trycker på \"OK\" när informationsfältet visas till 2nd infobar Lite eller eventinfo."
@@ -18626,6 +18587,9 @@ msgstr "Ställ in den övre vänstra positionen för den upptagna spinnern. Koor
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Ställ in typen av förloppsindikering i kanalvalsskärmen."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -21392,7 +21356,7 @@ msgstr "Filen '%s' kan inte hämtas, försök igen senare."
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr "Det AI-läge som används för att översätta språk. Du kan välja det som ger den mest exakta översättningen för ditt målspråk."
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr "Tjänsten AI-driven översättning kommer att optimeras för att ge bästa prestanda baserat på den valda uppladdningshastigheten för internetanslutningen."
 
 msgid ""
@@ -21827,7 +21791,7 @@ msgstr "Detta är det språk som för närvarande är valt.  [%s]"
 msgid "This is the currently selected locale.  [%s]"
 msgstr "Det här är den lokaltyp som för närvarande är vald.  [%s]"
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr "Detta är den initiala/förvalda volymkompensationen som tillämpas på alla tjänster som läggs till i listan över volymjusteringar."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -22054,9 +22018,6 @@ msgstr "Detta alternativ ställer in bildskärpan, som används när bilden skal
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
 msgstr "Denna plugin kan avgöra om ett program börjar tidigare eller varar längre. Kanalen måste tillhandahålla tillförlitliga data."
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
-msgstr ""
 
 #
 msgid "This service is protected by a parental control PIN!"
@@ -22933,15 +22894,6 @@ msgstr "Ukraina"
 msgid "Ukrainian"
 msgstr "Ukrainska"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr ""
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr ""
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr ""
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "Det gick inte att initiera Kexec MultiBoot!"
 
@@ -23229,8 +23181,20 @@ msgstr "Använd AutoCam"
 msgid "Use DHCP"
 msgstr "Använd DHCP"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "Använd Deinterlacing för 1080i Videosignal?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "Använd EIT EPG-information när den är tillgänglig."
@@ -23256,6 +23220,9 @@ msgstr "Använd MHW EPG-information när den är tillgänglig."
 msgid "Use Netmed EPG information when it is available."
 msgstr "Använd Netmed EPG-information när den finns tillgänglig."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "Använd OpenTV EPG. Kräver inställning till specifik transponder för att absorbera EPG."
 
@@ -23279,6 +23246,9 @@ msgstr "Använd Virgin EPG-information när den är tillgänglig."
 
 msgid "Use Zap timer end times"
 msgstr "Använd Zappa timer sluttider"
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
+msgstr ""
 
 #
 msgid "Use a gateway"
@@ -23352,8 +23322,17 @@ msgstr "Använd äldre navigering"
 msgid "Use official channel numbering"
 msgstr "Använd officiell kanalnumrering"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Använd endast för Wake on WLan (WoW)"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "Använd original DVB-undertextens position"
@@ -25040,8 +25019,8 @@ msgstr "alpharev sedan nyaste"
 msgid "am"
 msgstr "am"
 
-msgid "aqua"
-msgstr "aqua"
+msgid "Aqua"
+msgstr "Aqua"
 
 #, python-format
 msgid "audio track (%s) format"
@@ -25058,7 +25037,7 @@ msgstr "ljudspår"
 msgid "automatic"
 msgstr "automatisk"
 
-msgid "azure"
+msgid "Azure"
 msgstr "azurblå"
 
 #
@@ -25345,7 +25324,7 @@ msgstr "vänster"
 msgid "length"
 msgstr "längd"
 
-msgid "lime"
+msgid "Lime"
 msgstr "kalk"
 
 #
@@ -25442,15 +25421,15 @@ msgstr "av eller wpa2 på"
 msgid "offset is"
 msgstr "offset är"
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr "olympisk blå"
 
 #
 msgid "on READ ONLY medium."
 msgstr "på READ ONLY-medium."
 
-msgid "orange"
-msgstr "orange"
+msgid "Orange"
+msgstr "Orange"
 
 msgid "package"
 msgstr "paket"
@@ -25461,7 +25440,7 @@ msgstr "paket"
 msgid "pid:"
 msgstr "pid:"
 
-msgid "pink"
+msgid "Pink"
 msgstr "rosa"
 
 #
@@ -25483,7 +25462,7 @@ msgstr "provid:"
 msgid "provider:"
 msgstr "leverantör:"
 
-msgid "purple"
+msgid "Purple"
 msgstr "lila"
 
 #
@@ -25523,7 +25502,7 @@ msgstr "spola tillbaka till föregående kapitel"
 msgid "right"
 msgstr "höger"
 
-msgid "rose"
+msgid "Rose"
 msgstr "ros"
 
 msgid ""
@@ -25745,6 +25724,42 @@ msgstr "ja (behåller flöden)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Add a DNS entry"
+#~ msgstr "Lägga till en DNS-post"
+
+#~ msgid "DNS (Dynamic Name Server) Actions"
+#~ msgstr "DNS (dynamisk namnserver) Åtgärder"
+
+#~ msgid "Deep standby"
+#~ msgstr "Djup standby"
+
+#~ msgid "Move the current DNS entry down one line"
+#~ msgstr "Flytta den aktuella DNS-posten en rad nedåt"
+
+#~ msgid "Move the current DNS entry up one line"
+#~ msgstr "Flytta den aktuella DNS-posten en rad uppåt"
+
+#~ msgid "Remove a DNS entry"
+#~ msgstr "Ta bort en DNS-post"
+
+#~ msgid "Cloudflare DNS"
+#~ msgstr "Cloudflare DNS"
+
+#~ msgid "Comodo Secure DNS"
+#~ msgstr "Comodo säker DNS"
+
+#~ msgid "NordVPN Secure DNS"
+#~ msgstr "NordVPN säker DNS"
+
+#~ msgid "NordVPN Smart DNS"
+#~ msgstr "NordVPN Smart DNS"
+
+#~ msgid "OpenDNS FamilyShield"
+#~ msgstr "OpenDNS Familjeskydd"
+
+#~ msgid "OpenDNS Home"
+#~ msgstr "OpenDNS Hem"
 
 #~ msgid "Google DNS"
 #~ msgstr "Google DNS"

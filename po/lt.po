@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2025-06-11 19:04+0000\n"
 "Last-Translator: Adga56 <adga45@gmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/lt/>\n"
@@ -1877,15 +1877,6 @@ msgstr "Aktyvūs klientai"
 msgid "Active only"
 msgstr ""
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr ""
-
-msgid "AdGuard DNS (Family)"
-msgstr ""
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr ""
-
 msgid "Adapter Settings"
 msgstr "Adapterio parametrai"
 
@@ -1954,9 +1945,6 @@ msgstr "Pridėti jungimo ir įrašymo laikmatį"
 
 msgid "Add ZapTimer"
 msgstr "Pridėti jungimo laikmatį"
-
-msgid "Add a DNS entry"
-msgstr "DNS įrašo įtraukimas"
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr ""
@@ -2173,6 +2161,9 @@ msgstr "Po įrašymo"
 
 msgid "After zap"
 msgstr "Po perjungimo"
+
+msgid "Aggregate data only"
+msgstr ""
 
 msgid "Akan"
 msgstr "Akanas"
@@ -2434,6 +2425,9 @@ msgstr "Animacijos greitis"
 
 msgid "Animations"
 msgstr "Animacijos"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Antarktika"
@@ -3480,15 +3474,6 @@ msgstr "CI lizdas: "
 msgid "CI+ Helper*"
 msgstr ""
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
-
 msgid "CPU"
 msgstr "Procesorius"
 
@@ -4266,15 +4251,6 @@ msgstr "Išvalykite ir pašalinkite visus užbaigtus laikmačius"
 msgid "Clean up and remove all completed timers?"
 msgstr "Išvalyti ir pašalinti visus užbaigtus laikmačius?"
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr ""
-
 msgid "Cleaning Trashcan"
 msgstr ""
 
@@ -4401,9 +4377,6 @@ msgstr "Uždaryti ekraną"
 msgid "Close title selection"
 msgstr "Užverti pavadinimo pasirinkimą"
 
-msgid "Cloudflare DNS"
-msgstr "Cloudflare DNS"
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4512,9 +4485,6 @@ msgstr ""
 
 msgid "Common Setup Actions"
 msgstr "Bendrieji nustatymo veiksmai"
-
-msgid "Comodo Secure DNS"
-msgstr ""
 
 msgid "Comoros"
 msgstr "Komorai"
@@ -5086,21 +5056,6 @@ msgstr ""
 msgid "Contrast Video & OSD"
 msgstr ""
 
-msgid "Control D (Ads + Tracking)"
-msgstr ""
-
-msgid "Control D (Family Friendly)"
-msgstr ""
-
-msgid "Control D (Malware)"
-msgstr ""
-
-msgid "Control D (Uncensored)"
-msgstr ""
-
-msgid "Control D (Unfiltered)"
-msgstr ""
-
 msgid "Control LED can be turned on or off here."
 msgstr "LED valdymas gali būti įjungtas arba išjungtas čia."
 
@@ -5547,9 +5502,6 @@ msgstr "DMM išsamiai"
 msgid "DMM normal"
 msgstr "DMM veikiantis"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr "DNS (dinaminio vardų serverio) veiksmai"
-
 msgid "DNS Settings"
 msgstr "DNS parametrai"
 
@@ -5559,13 +5511,13 @@ msgstr "DNS duomenų šaltinis"
 msgid "DNS protocol mode"
 msgstr ""
 
-msgid "Use DNS rotation"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr ""
 
-msgid "DNS.WATCH (Uncensored)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -5852,9 +5804,6 @@ msgstr "Dekodavimas ir tėvų kontrolė"
 
 msgid "Deep Standby"
 msgstr "Visiškai išjungti"
-
-msgid "Deep standby"
-msgstr "Gilus budėjimo režimas"
 
 msgid "Default"
 msgstr "Numatytasis"
@@ -7327,6 +7276,9 @@ msgstr "Įjungti importo laikmatį iš atsarginio imtuvo"
 
 msgid "Enable intro screen"
 msgstr "Įjungti įvadinį vaizdą"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 msgid "Enable multiple bouquets"
 msgstr "Įjungti kanalų dubliavimą keliuose paketuose"
@@ -9065,9 +9017,6 @@ msgstr "Auksinis"
 
 msgid "Golf"
 msgstr "Golfas"
-
-msgid "Google Public DNS"
-msgstr ""
 
 msgid "Goto"
 msgstr "Eiti į"
@@ -11601,6 +11550,15 @@ msgstr "Mongolija"
 msgid "Mongolian"
 msgstr "Mongolų"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "Juodkalnija"
 
@@ -11750,12 +11708,6 @@ msgstr "Perkelti užduotį į eilę."
 
 msgid "Move only highlighted file"
 msgstr "Perkelti tik paryškintą failą"
-
-msgid "Move the current DNS entry down one line"
-msgstr "Perkelti dabartinį DNS įrašą viena eilute žemyn"
-
-msgid "Move the current DNS entry up one line"
-msgstr "Perkelti dabartinį DNS įrašą į vieną eilutę aukštyn"
 
 msgid "Move the current bookmark down"
 msgstr "Perkelti dabartinę žymelę žemyn"
@@ -12680,12 +12632,6 @@ msgstr "Nediegiama"
 msgid "None"
 msgstr "Nėra"
 
-msgid "NordVPN Secure DNS"
-msgstr ""
-
-msgid "NordVPN Smart DNS"
-msgstr ""
-
 msgid "Norfolk Island"
 msgstr "Norfolko sala"
 
@@ -13008,6 +12954,15 @@ msgstr "Tik greitai perkelti anteną iki šios valandos."
 msgid "Only on startup"
 msgstr "Tik paleidimo metu"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Atverti"
 
@@ -13187,15 +13142,6 @@ msgstr "Atidaryti vienos kanalo EPG rodinį"
 
 msgid "Open with File Commander"
 msgstr "Atverti su Failų valdytoju"
-
-msgid "OpenDNS FamilyShield"
-msgstr "OpenDNS Šeimos Skydas"
-
-msgid "OpenDNS Home"
-msgstr "OpenDNS pagrindinis puslapis"
-
-msgid "OpenDNS Sandbox"
-msgstr ""
 
 msgid "OpenPLi Packages"
 msgstr ""
@@ -14425,6 +14371,9 @@ msgstr "Žiūrimiausio laiko minutė"
 msgid "Priority"
 msgstr "Pirmenybė"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "klaida pradedant paiešką"
 
@@ -14626,15 +14575,6 @@ msgstr "Keturių PiP kanalų, kanalas "
 
 msgid "Quad PiP is not available."
 msgstr "Quad PiP nėra."
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr ""
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr ""
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr ""
 
 msgid "Quechua"
 msgstr "Kečua"
@@ -15180,9 +15120,6 @@ msgstr "Pašalinti"
 
 msgid "Remove Terrestrial Services"
 msgstr "pašalinti antžeminius kanalus"
-
-msgid "Remove a DNS entry"
-msgstr "DNS įrašo šalinimas"
 
 msgid "Remove a mark"
 msgstr "Pašalinti žymeklį"
@@ -16304,6 +16241,9 @@ msgstr "Pasirinkite \"Taip\", kad nežinomi failai būtų rodomi \"File Commande
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr ""
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "Pasirinkite 'Taip', kad įgalintumėte šio įrenginio nustatymų redagavimą. Pasirinkus 'Ne', įrenginių nustatymai iš naujo nustato numatytąsias reikšmes."
 
@@ -16318,6 +16258,9 @@ msgstr "Jei nustatyta 'taip', kanalų sąrašo lange jūs galite peržiūrėti k
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Kai čia įjungta, enigma2 įkels nesusietus vartotojo paketus. Tai reiškia, kad vartotojo paketai, kurie yra prieinami, tačiau nėra įtraukti į  bouquets.tv, ar  bouquets.radio failus, vis tiek bus įkelti. Tai leidžia jums pvz. išsaugoti savo vartotojo paketus, kai bus atnaujinami įdiegti nustatymai"
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr "Pasirinkite \"Taip\", kad įgalintumėte mygtukų KAIRĖ/DEŠINĖ naudojimą, kad perkeltumėte PageUp/PageDown, kai mygtukai KAIRĖ/DEŠINĖN yra kitaip neapibrėžti. Tai suteikia seną naršymą vartotojams, kurie to pageidauja."
@@ -16814,6 +16757,9 @@ msgstr ""
 msgid "Select the AI-Powered Translation target language."
 msgstr ""
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr "Pasirinkite numatytųjų DNS parametrų šaltinį."
+
 msgid "Select the No / False response"
 msgstr "Pasirinkite atsakymą Nr. / Klaidingas"
 
@@ -17133,9 +17079,6 @@ msgstr ""
 msgid "Select the tags that should be used for this recording."
 msgstr ""
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr "Pasirinkite numatytųjų DNS parametrų šaltinį."
-
 msgid "Select the time after which this timer can start."
 msgstr ""
 
@@ -17366,6 +17309,15 @@ msgstr "rimtas/klasikinis/religinis/istorinis filmas/drama"
 
 msgid "Server down"
 msgstr "Serveris žemyn"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Serveriai"
@@ -17642,14 +17594,23 @@ msgstr "Nustatykite šuolio dydį paieškos juostoje."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr ""
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Nustatykite OpenWebif slaptažodį iš atsarginio derintuvo"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Nustatykite OpenWebif jungtį iš savo atsarginio imtuvo"
 
 msgid "Set the position of the recording icons."
 msgstr "Nustatyti įrašymo piktogramos poziciją"
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Nustatykite ekrano tipą, jums paspaudus 'OK', kai info juosta rodo 2 paprastas info juostas arba įvykio informaciją."
@@ -17686,6 +17647,9 @@ msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Nustatykite pasirinkto kanalo veiksmo eigos indikaciją kanalų pasirinkimo lange."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -20298,7 +20262,7 @@ msgstr ""
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr ""
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr ""
 
 msgid ""
@@ -20709,7 +20673,7 @@ msgstr "Tai šiuo metu pasirinkta kalba.  [%s]"
 msgid "This is the currently selected locale.  [%s]"
 msgstr "Tai šiuo metu pasirinkta lokalė.  [%s]"
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr "Tai yra pradinis / numatytasis apimties poslinkis, taikomas visoms paslaugoms, įtrauktoms į garsumo koregavimo sąrašą."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -20936,9 +20900,6 @@ msgstr "Nustato paveikslėlių vaizdo ryškumą keičiantis masteliui."
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
 msgstr "Šis įskiepis gali nustatyti, jei įvykis prasideda anksčiau, arba ilgiau užtrunka. Kanalas tam turi pateikti patikimus duomenis."
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
-msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
 msgstr "šis kanalas apsaugotas tėvų kontrolės pin kodu"
@@ -21750,15 +21711,6 @@ msgstr "Ukraina"
 msgid "Ukrainian"
 msgstr "Ukrainiečių"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr ""
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr ""
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr ""
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr ""
 
@@ -22030,8 +21982,20 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Naudoti DHCP"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "Naudoti progresinį kodavimą 1080i vaizdo signalui?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "Naudoti EIT EPG informaciją, kai ji prieinama."
@@ -22057,6 +22021,9 @@ msgstr "Naudokite MHW EPG informaciją, jei ji yra prieinama."
 msgid "Use Netmed EPG information when it is available."
 msgstr "Naudokite Netmed EPG informaciją, jei ji yra prieinama."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr ""
 
@@ -22079,6 +22046,9 @@ msgid "Use Virgin EPG information when it is available."
 msgstr "Naudokite Virgin EPG informaciją, kai ji yra prieinama."
 
 msgid "Use Zap timer end times"
+msgstr ""
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
 msgstr ""
 
 msgid "Use a gateway"
@@ -22147,8 +22117,17 @@ msgstr ""
 msgid "Use official channel numbering"
 msgstr "Naudokite oficialų kanalų numeravimą"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Naudokite tik dėl paleidimo WLan tinkle (WoW)"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "Naudoti numatytąją DVB subtitrų vietą"
@@ -23744,7 +23723,7 @@ msgstr "alpha versija tada naujausia"
 msgid "am"
 msgstr "priešpiet"
 
-msgid "aqua"
+msgid "Aqua"
 msgstr ""
 
 #, python-format
@@ -23761,7 +23740,7 @@ msgstr "garso takeliai"
 msgid "automatic"
 msgstr "automatinis"
 
-msgid "azure"
+msgid "Azure"
 msgstr ""
 
 msgid "back"
@@ -24013,7 +23992,7 @@ msgstr "kairys"
 msgid "length"
 msgstr "ilgis"
 
-msgid "lime"
+msgid "Lime"
 msgstr "laimo žalia"
 
 msgid "locked"
@@ -24094,13 +24073,13 @@ msgstr "išjungti arba wpa2 ant"
 msgid "offset is"
 msgstr "kompensuoti, yra"
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr "olimpinė mėlyna"
 
 msgid "on READ ONLY medium."
 msgstr "diskas TIK SKAITYMUI."
 
-msgid "orange"
+msgid "Orange"
 msgstr "oranžinė"
 
 msgid "package"
@@ -24112,7 +24091,7 @@ msgstr ""
 msgid "pid:"
 msgstr "pid:"
 
-msgid "pink"
+msgid "Pink"
 msgstr "rožinė"
 
 msgid "please wait, loading picture..."
@@ -24133,7 +24112,7 @@ msgstr "tiekėjas:"
 msgid "provider:"
 msgstr "teikėjas:"
 
-msgid "purple"
+msgid "Purple"
 msgstr "violetinė"
 
 msgid "red"
@@ -24166,7 +24145,7 @@ msgstr "atsukti į ankstesnį skyrių"
 msgid "right"
 msgstr "dešinys"
 
-msgid "rose"
+msgid "Rose"
 msgstr "rožinė"
 
 msgid ""
@@ -24363,6 +24342,33 @@ msgstr "taip (išsaugoti šaltinius)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Add a DNS entry"
+#~ msgstr "DNS įrašo įtraukimas"
+
+#~ msgid "DNS (Dynamic Name Server) Actions"
+#~ msgstr "DNS (dinaminio vardų serverio) veiksmai"
+
+#~ msgid "Deep standby"
+#~ msgstr "Gilus budėjimo režimas"
+
+#~ msgid "Move the current DNS entry down one line"
+#~ msgstr "Perkelti dabartinį DNS įrašą viena eilute žemyn"
+
+#~ msgid "Move the current DNS entry up one line"
+#~ msgstr "Perkelti dabartinį DNS įrašą į vieną eilutę aukštyn"
+
+#~ msgid "Remove a DNS entry"
+#~ msgstr "DNS įrašo šalinimas"
+
+#~ msgid "Cloudflare DNS"
+#~ msgstr "Cloudflare DNS"
+
+#~ msgid "OpenDNS FamilyShield"
+#~ msgstr "OpenDNS Šeimos Skydas"
+
+#~ msgid "OpenDNS Home"
+#~ msgstr "OpenDNS pagrindinis puslapis"
 
 #~ msgid "Google DNS"
 #~ msgstr "Google DNS"

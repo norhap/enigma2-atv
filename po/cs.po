@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2025-12-21 15:22+0000\n"
 "Last-Translator: Petr Turek <turekdesign99@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/cs/>\n"
@@ -1868,15 +1868,6 @@ msgstr "Aktivní klienti"
 msgid "Active only"
 msgstr "Pouze aktivní"
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr "AdGuard DNS (reklamy/sledovače)"
-
-msgid "AdGuard DNS (Family)"
-msgstr "AdGuard DNS (rodinný)"
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr "AdGuard DNS (nefiltrovaný)"
-
 msgid "Adapter Settings"
 msgstr "Nastavení adaptéru"
 
@@ -1945,9 +1936,6 @@ msgstr "Přidat Zap+ časovač nahrávání"
 
 msgid "Add ZapTimer"
 msgstr "Přidat časovač Zap"
-
-msgid "Add a DNS entry"
-msgstr "Přidat položku DNS"
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr "Přidání služby RADIO do seznamu Kompenzace hlasitosti"
@@ -2164,6 +2152,9 @@ msgstr "Po nahrávání"
 
 msgid "After zap"
 msgstr "Po přepnutí"
+
+msgid "Aggregate data only"
+msgstr ""
 
 msgid "Akan"
 msgstr "Akan"
@@ -2423,6 +2414,9 @@ msgstr "Rychlost animace"
 
 msgid "Animations"
 msgstr "Animace"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Antarktida"
@@ -3469,15 +3463,6 @@ msgstr "CI slot: "
 msgid "CI+ Helper*"
 msgstr "Pomocník CI+*"
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr "CIRA Kanadský štít (rodinný)"
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr "CIRA Kanadský štít (soukromý)"
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr "Kanadský štít CIRA (chráněný)"
-
 msgid "CPU"
 msgstr "CPU"
 
@@ -4255,15 +4240,6 @@ msgstr "Vymazat a odebrat všechny dokončené časovače"
 msgid "Clean up and remove all completed timers?"
 msgstr "Vymazat a odebrat všechny dokončené časovače?"
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr "CleanBrowsing (filtr pro dospělé)"
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr "CleanBrowsing (rodinný filtr)"
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr "CleanBrowsing (bezpečnostní filtr)"
-
 msgid "Cleaning Trashcan"
 msgstr "Čištění koše"
 
@@ -4390,9 +4366,6 @@ msgstr "Zavřít tuto obrazovku"
 msgid "Close title selection"
 msgstr "Zavřít výběr titulku"
 
-msgid "Cloudflare DNS"
-msgstr "Cloudflare DNS"
-
 msgid "Club/Dance"
 msgstr "Klub/Tanec"
 
@@ -4501,9 +4474,6 @@ msgstr "Společná nastavení"
 
 msgid "Common Setup Actions"
 msgstr "Běžné instalační akce"
-
-msgid "Comodo Secure DNS"
-msgstr "Zabezpečené DNS společnosti Comodo"
 
 msgid "Comoros"
 msgstr "Komory"
@@ -5074,21 +5044,6 @@ msgstr "Kontrast videa"
 msgid "Contrast Video & OSD"
 msgstr "Kontrast videa & OSD"
 
-msgid "Control D (Ads + Tracking)"
-msgstr "Kontrola D (Reklamy + Sledování)"
-
-msgid "Control D (Family Friendly)"
-msgstr "Kontrola D (vhodné pro rodiny s dětmi)"
-
-msgid "Control D (Malware)"
-msgstr "Kontrola D (Malware)"
-
-msgid "Control D (Uncensored)"
-msgstr "Kontrola D (necenzurovaná)"
-
-msgid "Control D (Unfiltered)"
-msgstr "Kontrola D (nefiltrovaná)"
-
 msgid "Control LED can be turned on or off here."
 msgstr "Kontrolní LED lze zde zapnout nebo vypnout."
 
@@ -5535,9 +5490,6 @@ msgstr "Rozšířené"
 msgid "DMM normal"
 msgstr "Normální"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr "Akce DNS (Dynamic Name Server)"
-
 msgid "DNS Settings"
 msgstr "Nastavení DNS"
 
@@ -5547,14 +5499,14 @@ msgstr "Zdroj DNS"
 msgid "DNS protocol mode"
 msgstr "Režim DNS"
 
-msgid "Use DNS rotation"
-msgstr "Použít rotaci DNS"
-
 msgid "DNS suffix"
 msgstr "Přípona DNS"
 
-msgid "DNS.WATCH (Uncensored)"
-msgstr "DNS.WATCH (Necenzurované)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
+msgstr ""
 
 msgid ""
 "DO NOT POWER OFF YOUR DEVICE WHILE UPDATING!\n"
@@ -5840,9 +5792,6 @@ msgstr "Dekódování a rodičovská ochrana"
 
 msgid "Deep Standby"
 msgstr "Vypnout přijímač"
-
-msgid "Deep standby"
-msgstr "Hluboký spánek"
 
 msgid "Default"
 msgstr "Výchozí"
@@ -7323,6 +7272,9 @@ msgstr "Importovat časovače ze záložního tuneru"
 
 msgid "Enable intro screen"
 msgstr "Povolit úvodní obrazovku"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 msgid "Enable multiple bouquets"
 msgstr "Povolit vícenásobné přehledy"
@@ -9059,9 +9011,6 @@ msgstr "Zlatý"
 
 msgid "Golf"
 msgstr "Golf"
-
-msgid "Google Public DNS"
-msgstr "Veřejný DNS od Googlu"
 
 msgid "Goto"
 msgstr "Přejít na"
@@ -11595,6 +11544,15 @@ msgstr "Mongolsko"
 msgid "Mongolian"
 msgstr "Mongolský"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "Černá Hora"
 
@@ -11744,12 +11702,6 @@ msgstr "Přesun byl zařazen do fronty."
 
 msgid "Move only highlighted file"
 msgstr "Přesunout pouze zvýrazněný soubor"
-
-msgid "Move the current DNS entry down one line"
-msgstr "Přesunout aktuální položku DNS o jeden řádek dolů"
-
-msgid "Move the current DNS entry up one line"
-msgstr "Přesunout aktuální položku DNS o jeden řádek nahoru"
 
 msgid "Move the current bookmark down"
 msgstr "Přesunout aktuální záložku dolů"
@@ -12677,12 +12629,6 @@ msgstr "Nenahrávat"
 msgid "None"
 msgstr "Ne"
 
-msgid "NordVPN Secure DNS"
-msgstr "NordVPN Zabezpečené DNS"
-
-msgid "NordVPN Smart DNS"
-msgstr "Inteligentní DNS NordVPN"
-
 msgid "Norfolk Island"
 msgstr "Ostrov Norfolk"
 
@@ -13005,6 +12951,15 @@ msgstr "Před touto hodinou rychle přesunout parabolu."
 msgid "Only on startup"
 msgstr "Po startu přijímače"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Otevřít"
 
@@ -13184,15 +13139,6 @@ msgstr "Otevřít zobrazení EPG pro jednu službu"
 
 msgid "Open with File Commander"
 msgstr "Otevřít pomocí File Commanderu"
-
-msgid "OpenDNS FamilyShield"
-msgstr "OpenDNS FamilyShield"
-
-msgid "OpenDNS Home"
-msgstr "Domovská stránka OpenDNS"
-
-msgid "OpenDNS Sandbox"
-msgstr "Sandbox OpenDNS"
 
 msgid "OpenPLi Packages"
 msgstr "OpenPLi balíčky"
@@ -14422,6 +14368,9 @@ msgstr "Hlavní vysílací čas (minuta)"
 msgid "Priority"
 msgstr "Priorita"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "chyba při spuštění skenování"
 
@@ -14623,15 +14572,6 @@ msgstr "Quad PiP kanál "
 
 msgid "Quad PiP is not available."
 msgstr "Quad PiP není k dispozici."
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr "Quad9 (Blokování malwaru + DNSSEC)"
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr "Quad9 (Blokování malwaru + ECS)"
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr "Quad9 (nezabezpečené / bez blokování)"
 
 msgid "Quechua"
 msgstr "Kečuánština"
@@ -15177,9 +15117,6 @@ msgstr "Odstranit službu"
 
 msgid "Remove Terrestrial Services"
 msgstr "odstranit pozemní vysílání"
-
-msgid "Remove a DNS entry"
-msgstr "Odebrat položku DNS"
 
 msgid "Remove a mark"
 msgstr "Odstranit značku"
@@ -16301,6 +16238,9 @@ msgstr "Vyberte 'Ano', chcete-li zobrazit neznámé soubory v prohlížeči soub
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr "Povolit překlad s technologií AI pro všechny teletextové a DVB titulky."
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr "Vyberte možnost „Ano“ pro povolení rotace záznamů DNS. Tato rotace změní pořadí, ve kterém se používá seznam serverů DNS, a může zabránit problémům, pokud se server DNS v seznamu stane nedostupným."
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "Chcete-li povolit úpravy nastavení tohoto zařízení, vyberte možnost Ano. Výběrem možnosti „Ne“ se resetuje nastavení zařízení na výchozí hodnoty."
 
@@ -16315,6 +16255,9 @@ msgstr "Když je nastaveno na 'Ano',můžete zobrazit náhledy kanálů v seznam
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Je povoleno načtení nepropojených uživatelských přehledů. Tj. přehledů které jsou k dispozici, ale nejsou zahrnuty v přehledech TV/Radia a budou tedy trvale načteny. To vám například umožní použití vlastních uživatelských přehledů, zatímco instalovaná nastavení jsou aktualizována."
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr "Vyberte 'Ano', chcete-li povolit použití tlačítek VLEVO/VPRAVO k pohybu PageUp/PageDown, když tlačítka VLEVO/VPRAVO nejsou jinak definována. To poskytuje starší navigaci pro uživatele, kteří ji preferují."
@@ -16811,6 +16754,9 @@ msgstr "Vyberte položku %s"
 msgid "Select the AI-Powered Translation target language."
 msgstr "Nakonfigurujte jazyk překladu AI."
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr "Zvolte zdroj výchozích nastavení DNS."
+
 msgid "Select the No / False response"
 msgstr "Vyberte odpověď Ne/Nepravda"
 
@@ -17133,9 +17079,6 @@ msgstr "Vyberte počáteční sloupec, který se má aktivovat při spuštění 
 msgid "Select the tags that should be used for this recording."
 msgstr "Vyberte značky, které by měly být použity pro tento záznam."
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr "Zvolte zdroj výchozích nastavení DNS."
-
 msgid "Select the time after which this timer can start."
 msgstr "Vyberte čas, po kterém se tento časovač může spustit."
 
@@ -17369,6 +17312,15 @@ msgstr "závažný/klasický/náboženský/historický film/drama"
 
 msgid "Server down"
 msgstr "Server je mimo provoz"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Servery"
@@ -17645,14 +17597,23 @@ msgstr "Nastavte velikost skoku lišty."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr "Nastavte počet řádků, které se mají uložit pro výstup 'stout' a 'stderr' ve skriptech."
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Nastavte heslo pro OpenWebif z vašeho záložního tuneru."
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Nastavte port OpenWebif z vašeho záložního tuneru."
 
 msgid "Set the position of the recording icons."
 msgstr "Nastavit polohu ikon nahrávání."
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Nastavení typu infobaru po stisku 'OK' když info pruh ukazuje na druhém infobaru Lite nebo informace o programu."
@@ -17692,6 +17653,9 @@ msgstr "Nastavte levé horní umístění aktivního spinneru. Měřítko souřa
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Nastavuje typ průběhů pořadů ve výběru programů."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -20313,7 +20277,7 @@ msgstr "Soubor '%s' nelze načíst, zkuste to prosím později."
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr "Režim AI používaný pro překlad jazyků. Můžete si vybrat ten, který poskytuje nejpřesnější překlad pro váš cílový jazyk."
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr "Služba AI-Powered Translation bude optimalizována tak, aby poskytovala nejlepší výkon na základě zvolené rychlosti odesílání internetového připojení."
 
 msgid ""
@@ -20739,7 +20703,7 @@ msgstr "Jedná se o aktuálně vybraný jazyk.  [%s]"
 msgid "This is the currently selected locale.  [%s]"
 msgstr "Jedná se o aktuálně vybrané národní prostředí.  [%s]"
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr "Jedná se o počáteční / výchozí posun hlasitosti, který se použije pro všechny služby přidané do seznamu pro úpravu hlasitosti."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -20966,9 +20930,6 @@ msgstr "Tato volba nastavuje ostrost obrazu,při použití upscalinku obrazu."
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
 msgstr "Tento plugin může určit, zda program začíná dříve nebo bude delší. Vysílání musí poskytovat spolehlivé údaje."
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
-msgstr "Vyberte možnost „Ano“ pro povolení rotace záznamů DNS. Tato rotace změní pořadí, ve kterém se používá seznam serverů DNS, a může zabránit problémům, pokud se server DNS v seznamu stane nedostupným."
 
 msgid "This service is protected by a parental control PIN!"
 msgstr "Tento program je chráněný rodičovským zámkem!"
@@ -21782,15 +21743,6 @@ msgstr "Ukrajina"
 msgid "Ukrainian"
 msgstr "Ukrajinština"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr "UltraDNS Public (zabezpečené pro rodiny)"
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr "UltraDNS Public (ochrana před hrozbami)"
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr "Veřejné UltraDNS (nefiltrované)"
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "Nelze inicializovat Kexec MultiBoot!"
 
@@ -22062,8 +22014,20 @@ msgstr "Použít AutoCam"
 msgid "Use DHCP"
 msgstr "Použít DHCP"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr "Použít rotaci DNS"
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "Použít odstranění prokládání pro videosignál 1080i?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "Používat EIT EPG informace, jestliže jsou dostupné."
@@ -22089,6 +22053,9 @@ msgstr "Používat MHW EPG informace, jestliže jsou dostupné."
 msgid "Use Netmed EPG information when it is available."
 msgstr "Používat Netmed EPG informace, jestliže jsou dostupné."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "Použít OpenTV EPG. Vyžaduje naladění na konkrétní transpondér, pro načtení EPG."
 
@@ -22112,6 +22079,9 @@ msgstr "Používat Virgin EPG informace, jestliže jsou dostupné."
 
 msgid "Use Zap timer end times"
 msgstr "Použít časy ukončení časovače Zap"
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
+msgstr ""
 
 msgid "Use a gateway"
 msgstr "Použít bránu (gateway)"
@@ -22182,8 +22152,17 @@ msgstr "Použít starší navigaci"
 msgid "Use official channel numbering"
 msgstr "Použít ofciální číslování kanálů"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Použít pouze pro Wake on WLan (WoW)"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "Použít původní pozici DVB titulků"
@@ -23792,7 +23771,7 @@ msgstr "abecední pak nejnovější"
 msgid "am"
 msgstr "am"
 
-msgid "aqua"
+msgid "Aqua"
 msgstr "modrá"
 
 #, python-format
@@ -23809,7 +23788,7 @@ msgstr "audio stopy"
 msgid "automatic"
 msgstr "automatické"
 
-msgid "azure"
+msgid "Azure"
 msgstr "azurová"
 
 msgid "back"
@@ -24061,7 +24040,7 @@ msgstr "vlevo"
 msgid "length"
 msgstr "délka"
 
-msgid "lime"
+msgid "Lime"
 msgstr "limetková"
 
 msgid "locked"
@@ -24142,13 +24121,13 @@ msgstr "vypnuto nebo wpa2 zapnuto"
 msgid "offset is"
 msgstr "odsazení je"
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr "olympijská modrá"
 
 msgid "on READ ONLY medium."
 msgstr "na READ ONLY médiu."
 
-msgid "orange"
+msgid "Orange"
 msgstr "oranžová"
 
 msgid "package"
@@ -24160,7 +24139,7 @@ msgstr "balíčky"
 msgid "pid:"
 msgstr "pid:"
 
-msgid "pink"
+msgid "Pink"
 msgstr "růžová"
 
 msgid "please wait, loading picture..."
@@ -24181,7 +24160,7 @@ msgstr "posk.:"
 msgid "provider:"
 msgstr "poskyt.:"
 
-msgid "purple"
+msgid "Purple"
 msgstr "purpurová"
 
 msgid "red"
@@ -24214,7 +24193,7 @@ msgstr "vrátit na předchozí kapitolu"
 msgid "right"
 msgstr "vpravo"
 
-msgid "rose"
+msgid "Rose"
 msgstr "červená"
 
 msgid ""
@@ -24411,6 +24390,111 @@ msgstr "ano (uchovat zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Add a DNS entry"
+#~ msgstr "Přidat položku DNS"
+
+#~ msgid "DNS (Dynamic Name Server) Actions"
+#~ msgstr "Akce DNS (Dynamic Name Server)"
+
+#~ msgid "Deep standby"
+#~ msgstr "Hluboký spánek"
+
+#~ msgid "Move the current DNS entry down one line"
+#~ msgstr "Přesunout aktuální položku DNS o jeden řádek dolů"
+
+#~ msgid "Move the current DNS entry up one line"
+#~ msgstr "Přesunout aktuální položku DNS o jeden řádek nahoru"
+
+#~ msgid "Remove a DNS entry"
+#~ msgstr "Odebrat položku DNS"
+
+#~ msgid "AdGuard DNS (Ads/Trackers)"
+#~ msgstr "AdGuard DNS (reklamy/sledovače)"
+
+#~ msgid "AdGuard DNS (Family)"
+#~ msgstr "AdGuard DNS (rodinný)"
+
+#~ msgid "AdGuard DNS (Unfiltered)"
+#~ msgstr "AdGuard DNS (nefiltrovaný)"
+
+#~ msgid "CIRA Canadian Shield (Family)"
+#~ msgstr "CIRA Kanadský štít (rodinný)"
+
+#~ msgid "CIRA Canadian Shield (Private)"
+#~ msgstr "CIRA Kanadský štít (soukromý)"
+
+#~ msgid "CIRA Canadian Shield (Protected)"
+#~ msgstr "Kanadský štít CIRA (chráněný)"
+
+#~ msgid "CleanBrowsing (Adult Filter)"
+#~ msgstr "CleanBrowsing (filtr pro dospělé)"
+
+#~ msgid "CleanBrowsing (Family Filter)"
+#~ msgstr "CleanBrowsing (rodinný filtr)"
+
+#~ msgid "CleanBrowsing (Security Filter)"
+#~ msgstr "CleanBrowsing (bezpečnostní filtr)"
+
+#~ msgid "Cloudflare DNS"
+#~ msgstr "Cloudflare DNS"
+
+#~ msgid "Comodo Secure DNS"
+#~ msgstr "Zabezpečené DNS společnosti Comodo"
+
+#~ msgid "Control D (Ads + Tracking)"
+#~ msgstr "Kontrola D (Reklamy + Sledování)"
+
+#~ msgid "Control D (Family Friendly)"
+#~ msgstr "Kontrola D (vhodné pro rodiny s dětmi)"
+
+#~ msgid "Control D (Malware)"
+#~ msgstr "Kontrola D (Malware)"
+
+#~ msgid "Control D (Uncensored)"
+#~ msgstr "Kontrola D (necenzurovaná)"
+
+#~ msgid "Control D (Unfiltered)"
+#~ msgstr "Kontrola D (nefiltrovaná)"
+
+#~ msgid "DNS.WATCH (Uncensored)"
+#~ msgstr "DNS.WATCH (Necenzurované)"
+
+#~ msgid "Google Public DNS"
+#~ msgstr "Veřejný DNS od Googlu"
+
+#~ msgid "NordVPN Secure DNS"
+#~ msgstr "NordVPN Zabezpečené DNS"
+
+#~ msgid "NordVPN Smart DNS"
+#~ msgstr "Inteligentní DNS NordVPN"
+
+#~ msgid "OpenDNS FamilyShield"
+#~ msgstr "OpenDNS FamilyShield"
+
+#~ msgid "OpenDNS Home"
+#~ msgstr "Domovská stránka OpenDNS"
+
+#~ msgid "OpenDNS Sandbox"
+#~ msgstr "Sandbox OpenDNS"
+
+#~ msgid "Quad9 (Malware blocking + DNSSEC)"
+#~ msgstr "Quad9 (Blokování malwaru + DNSSEC)"
+
+#~ msgid "Quad9 (Malware blocking + ECS)"
+#~ msgstr "Quad9 (Blokování malwaru + ECS)"
+
+#~ msgid "Quad9 (Unsecured / no blocking)"
+#~ msgstr "Quad9 (nezabezpečené / bez blokování)"
+
+#~ msgid "UltraDNS Public (Family Secure)"
+#~ msgstr "UltraDNS Public (zabezpečené pro rodiny)"
+
+#~ msgid "UltraDNS Public (Threat Protection)"
+#~ msgstr "UltraDNS Public (ochrana před hrozbami)"
+
+#~ msgid "UltraDNS Public (Unfiltered)"
+#~ msgstr "Veřejné UltraDNS (nefiltrované)"
 
 #~ msgid "Google DNS"
 #~ msgstr "Google DNS"

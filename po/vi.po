@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 12:54+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2019-07-27 12:19+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1841,15 +1841,6 @@ msgstr "Khách hàng tích cực"
 msgid "Active only"
 msgstr ""
 
-msgid "AdGuard DNS (Ads/Trackers)"
-msgstr ""
-
-msgid "AdGuard DNS (Family)"
-msgstr ""
-
-msgid "AdGuard DNS (Unfiltered)"
-msgstr ""
-
 msgid "Adapter Settings"
 msgstr "Cài đặt bộ điều hợp"
 
@@ -1918,9 +1909,6 @@ msgstr "Thêm bộ đếm thời gian"
 
 msgid "Add ZapTimer"
 msgstr "Thêm bộ đếm thời gian"
-
-msgid "Add a DNS entry"
-msgstr ""
 
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr ""
@@ -2136,6 +2124,9 @@ msgid "After recording"
 msgstr "Sau khi ghi âm"
 
 msgid "After zap"
+msgstr ""
+
+msgid "Aggregate data only"
 msgstr ""
 
 msgid "Akan"
@@ -2402,6 +2393,9 @@ msgstr "Tốc độ  hình"
 
 msgid "Animations"
 msgstr "Ảnh động"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Nam Cực"
@@ -3456,15 +3450,6 @@ msgstr "Khe CI: "
 msgid "CI+ Helper*"
 msgstr ""
 
-msgid "CIRA Canadian Shield (Family)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Private)"
-msgstr ""
-
-msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
-
 msgid "CPU"
 msgstr "CPU"
 
@@ -4247,15 +4232,6 @@ msgstr ""
 msgid "Clean up and remove all completed timers?"
 msgstr ""
 
-msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Family Filter)"
-msgstr ""
-
-msgid "CleanBrowsing (Security Filter)"
-msgstr ""
-
 msgid "Cleaning Trashcan"
 msgstr ""
 
@@ -4380,9 +4356,6 @@ msgstr ""
 msgid "Close title selection"
 msgstr "Đóng lựa chọn tiêu đề"
 
-msgid "Cloudflare DNS"
-msgstr ""
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4491,9 +4464,6 @@ msgstr ""
 #, fuzzy
 msgid "Common Setup Actions"
 msgstr "Hành động khởi động"
-
-msgid "Comodo Secure DNS"
-msgstr ""
 
 msgid "Comoros"
 msgstr "Comoros"
@@ -5063,21 +5033,6 @@ msgstr ""
 msgid "Contrast Video & OSD"
 msgstr ""
 
-msgid "Control D (Ads + Tracking)"
-msgstr ""
-
-msgid "Control D (Family Friendly)"
-msgstr ""
-
-msgid "Control D (Malware)"
-msgstr ""
-
-msgid "Control D (Uncensored)"
-msgstr ""
-
-msgid "Control D (Unfiltered)"
-msgstr ""
-
 #, fuzzy
 msgid "Control LED can be turned on or off here."
 msgstr "Đèn LED nguồn có thể được bật hoặc tắt ở đây."
@@ -5532,9 +5487,6 @@ msgstr "DMM nâng cao"
 msgid "DMM normal"
 msgstr "DMM bình thường"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr ""
-
 msgid "DNS Settings"
 msgstr ""
 
@@ -5544,13 +5496,13 @@ msgstr ""
 msgid "DNS protocol mode"
 msgstr ""
 
-msgid "Use DNS rotation"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr ""
 
-msgid "DNS.WATCH (Uncensored)"
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -5845,9 +5797,6 @@ msgstr "Giải mã & Kiểm soát của cha mẹ"
 
 msgid "Deep Standby"
 msgstr "Chế độ chờ"
-
-msgid "Deep standby"
-msgstr ""
 
 msgid "Default"
 msgstr "Mặc định"
@@ -7337,6 +7286,9 @@ msgstr "Kích hoạt tính năng hẹn giờ nhập từ bộ điều chỉnh d�
 
 msgid "Enable intro screen"
 msgstr "Bật màn hình giới thiệu"
+
+msgid "Enable monitoring UI"
+msgstr ""
 
 msgid "Enable multiple bouquets"
 msgstr "Cho phép nhiều gói kênh"
@@ -9087,9 +9039,6 @@ msgid "Gold"
 msgstr "Vàng"
 
 msgid "Golf"
-msgstr ""
-
-msgid "Google Public DNS"
 msgstr ""
 
 msgid "Goto"
@@ -11672,6 +11621,15 @@ msgstr "Mông Cổ"
 msgid "Mongolian"
 msgstr "Mông Cổ"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "Montenegro"
 
@@ -11825,12 +11783,6 @@ msgid "Move job queued."
 msgstr ""
 
 msgid "Move only highlighted file"
-msgstr ""
-
-msgid "Move the current DNS entry down one line"
-msgstr ""
-
-msgid "Move the current DNS entry up one line"
 msgstr ""
 
 msgid "Move the current bookmark down"
@@ -12786,12 +12738,6 @@ msgstr "Không nhấp nháy"
 msgid "None"
 msgstr "Không"
 
-msgid "NordVPN Secure DNS"
-msgstr ""
-
-msgid "NordVPN Smart DNS"
-msgstr ""
-
 msgid "Norfolk Island"
 msgstr "Đảo Norfolk"
 
@@ -13119,6 +13065,15 @@ msgstr "Chỉ di chuyển chảo nhanh chóng trước giờ này."
 msgid "Only on startup"
 msgstr "Chỉ khi khởi động"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Mở"
 
@@ -13314,16 +13269,6 @@ msgstr ""
 
 msgid "Open with File Commander"
 msgstr "Mở bằng File Commander"
-
-msgid "OpenDNS FamilyShield"
-msgstr ""
-
-#, fuzzy
-msgid "OpenDNS Home"
-msgstr "Mở AutoTimer"
-
-msgid "OpenDNS Sandbox"
-msgstr ""
 
 msgid "OpenPLi Packages"
 msgstr ""
@@ -14558,6 +14503,9 @@ msgstr "Phút đầu"
 msgid "Priority"
 msgstr "Sự ưu tiên"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "lỗi bắt đầu quét"
 
@@ -14764,15 +14712,6 @@ msgstr "Kênh Quad PiP "
 
 msgid "Quad PiP is not available."
 msgstr "Quad PiP không có sẵn."
-
-msgid "Quad9 (Malware blocking + DNSSEC)"
-msgstr ""
-
-msgid "Quad9 (Malware blocking + ECS)"
-msgstr ""
-
-msgid "Quad9 (Unsecured / no blocking)"
-msgstr ""
 
 msgid "Quechua"
 msgstr ""
@@ -15331,9 +15270,6 @@ msgstr "Xóa dịch vụ"
 
 msgid "Remove Terrestrial Services"
 msgstr "loại bỏ các dịch vụ trên mặt đất"
-
-msgid "Remove a DNS entry"
-msgstr ""
 
 msgid "Remove a mark"
 msgstr "Xóa một dấu"
@@ -16458,6 +16394,9 @@ msgstr ""
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr ""
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr ""
 
@@ -16472,6 +16411,9 @@ msgstr "Nếu được đặt thành 'có', bạn có thể xem trước các k�
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Khi được bật enigma2 sẽ tải các tập tin người dùng không liên kết. Điều này có nghĩa là các userbouquets có sẵn, nhưng không được bao gồm trong các tập tin bouquets.tv hoặc bouquets.radio, vẫn sẽ được tải. Điều này cho phép bạn lấy ví dụ để giữ bó hoa người dùng của riêng bạn trong khi cài đặt được cài đặt được nâng cấp"
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr ""
@@ -16968,6 +16910,9 @@ msgstr ""
 msgid "Select the AI-Powered Translation target language."
 msgstr ""
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr ""
+
 msgid "Select the No / False response"
 msgstr ""
 
@@ -17291,9 +17236,6 @@ msgstr ""
 msgid "Select the tags that should be used for this recording."
 msgstr ""
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
-msgstr ""
-
 msgid "Select the time after which this timer can start."
 msgstr ""
 
@@ -17524,6 +17466,15 @@ msgstr "nghiêm túc / cổ điển / tôn giáo / lịch sử phim / kịch"
 
 msgid "Server down"
 msgstr "Máy chủ ngừng hoạt động"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Máy chủ"
@@ -17803,14 +17754,23 @@ msgstr "Đặt kích thước bước nhảy của thanh tìm kiếm."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr ""
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Đặt mật khẩu của OpenWebif từ bộ điều chỉnh dự phòng của bạn"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Đặt cổng của OpenWebif từ bộ điều chỉnh dự phòng của bạn"
 
 msgid "Set the position of the recording icons."
 msgstr "Đặt vị trí của các biểu tượng ghi âm"
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Đặt loại màn hình bạn nhận được khi nhấn 'OK' khi thanh thông tin hiển thị thành thông tin sự kiện thứ 2 hoặc thông tin sự kiện."
@@ -17847,6 +17807,9 @@ msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Đặt loại chỉ báo tiến trình trong màn hình chọn kênh."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -20484,7 +20447,7 @@ msgstr ""
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr ""
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr ""
 
 msgid ""
@@ -20882,7 +20845,7 @@ msgstr ""
 msgid "This is the currently selected locale.  [%s]"
 msgstr ""
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -21110,9 +21073,6 @@ msgid "This option sets up the picture sharpness, used when the picture is being
 msgstr "Tùy chọn này thiết lập độ sắc nét của hình ảnh, được sử dụng khi hình ảnh được nâng cấp."
 
 msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
-msgstr ""
-
-msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
 msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
@@ -21939,15 +21899,6 @@ msgstr "Ukraine"
 msgid "Ukrainian"
 msgstr "Tiếng Ukraina"
 
-msgid "UltraDNS Public (Family Secure)"
-msgstr ""
-
-msgid "UltraDNS Public (Threat Protection)"
-msgstr ""
-
-msgid "UltraDNS Public (Unfiltered)"
-msgstr ""
-
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr ""
 
@@ -22223,8 +22174,20 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Sử dụng DHCP"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "Sử dụng Khử xen kẽ cho 1080i Videoignal?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "Sử dụng thông tin EIT EPG khi có sẵn."
@@ -22250,6 +22213,9 @@ msgstr "Sử dụng thông tin MHW EPG khi có sẵn."
 msgid "Use Netmed EPG information when it is available."
 msgstr "Sử dụng thông tin EPG Netmed khi có sẵn."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr ""
 
@@ -22272,6 +22238,9 @@ msgid "Use Virgin EPG information when it is available."
 msgstr "Sử dụng thông tin Virgin EPG khi có sẵn."
 
 msgid "Use Zap timer end times"
+msgstr ""
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
 msgstr ""
 
 msgid "Use a gateway"
@@ -22340,8 +22309,17 @@ msgstr ""
 msgid "Use official channel numbering"
 msgstr "Sử dụng đánh số kênh chính thức"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Chỉ sử dụng cho Wake on WLan (WoW)"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "Sử dụng vị trí phụ đề DVB ban đầu"
@@ -23931,7 +23909,7 @@ msgstr "alpharev sau đó mới nhất"
 msgid "am"
 msgstr "am"
 
-msgid "aqua"
+msgid "Aqua"
 msgstr ""
 
 #, python-format
@@ -23948,7 +23926,7 @@ msgstr "bản nhạc"
 msgid "automatic"
 msgstr "tự động"
 
-msgid "azure"
+msgid "Azure"
 msgstr ""
 
 msgid "back"
@@ -24201,7 +24179,7 @@ msgstr "trái"
 msgid "length"
 msgstr "chiều dài"
 
-msgid "lime"
+msgid "Lime"
 msgstr ""
 
 msgid "locked"
@@ -24283,13 +24261,13 @@ msgstr "tắt hoặc wpa2 trên"
 msgid "offset is"
 msgstr "bù là"
 
-msgid "olympic blue"
+msgid "Olympic blue"
 msgstr ""
 
 msgid "on READ ONLY medium."
 msgstr "trên phương tiện ĐỌC."
 
-msgid "orange"
+msgid "Orange"
 msgstr ""
 
 msgid "package"
@@ -24301,7 +24279,7 @@ msgstr ""
 msgid "pid:"
 msgstr "pid:"
 
-msgid "pink"
+msgid "Pink"
 msgstr ""
 
 msgid "please wait, loading picture..."
@@ -24322,7 +24300,7 @@ msgstr "cung cấp:"
 msgid "provider:"
 msgstr "nhà cung cấp:"
 
-msgid "purple"
+msgid "Purple"
 msgstr ""
 
 msgid "red"
@@ -24355,7 +24333,7 @@ msgstr "tua lại chương trước"
 msgid "right"
 msgstr "phải"
 
-msgid "rose"
+msgid "Rose"
 msgstr ""
 
 msgid ""
@@ -24551,6 +24529,10 @@ msgstr "có (giữ thức ăn)"
 
 msgid "®"
 msgstr ""
+
+#, fuzzy
+#~ msgid "OpenDNS Home"
+#~ msgstr "Mở AutoTimer"
 
 #, fuzzy
 #~ msgid "arts/culture (general)"
