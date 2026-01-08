@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu_po v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-02 18:38+0000\n"
+"POT-Creation-Date: 2026-01-08 09:08+0000\n"
 "PO-Revision-Date: 2025-05-05 05:50+0000\n"
 "Last-Translator: Balázs Sólyom <balazs@solyom.online>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/hu/>\n"
@@ -4014,7 +4014,7 @@ msgstr "Ellenőrzés"
 msgid "Check for PDC"
 msgstr ""
 
-msgid "Check for PDC availability on each service"
+msgid "Check for PDC availability on each service."
 msgstr ""
 
 msgid "Check power and input state from TV"
@@ -4170,36 +4170,6 @@ msgstr "Válassza ki, hogy a '0' gomb miként működjön az aktív Kép-a-Képb
 
 msgid "Choose where to mount your devices to:"
 msgstr "Válassza ki, hova kell csatlakoztatni eszközeit:"
-
-msgid "Choose whether AAC sound tracks should be transcoded."
-msgstr "Válassza ki, hogy az AAC hangsávokat átkódolják-e."
-
-msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
-msgstr "Válassza ki, hogy az AC3 Plus hangsávokat át kell-e kódolni az AC3-ra."
-
-msgid "Choose whether AC3 sound tracks should be downmixed to stereo."
-msgstr "Ha kiválasztja, akkor az AC3 hangsávjait lekeveri sztereóra."
-
-msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
-msgstr "Válassza ki, hogy a DTS csatorna hangsávjait le kell-e keverni vagy átkódolni."
-
-msgid "Choose whether DTS channel sound tracks should be downmixed to stereo."
-msgstr "Ha kiválasztja, akkor az DTS csatorna hangsávjait lekeveri sztereóra."
-
-msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
-msgstr "Válassza ki, hogy a WMA Pro csatorna hangzásait le kell-e keverni vagy átkódolni."
-
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Válassza ki, hogy a többcsatornás hangsávnak PCM vagy SPDIF formátumúra legyen konvertálva."
-
-msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Válassza ki, hogy a többcsatornás hangsávokat a sztereóhoz le kell-e keverni."
-
-msgid "Choose whether multi channel sound tracks should be output as PCM."
-msgstr "Válassza ki, hogy a többcsatornás hangsávot PCM-ként kell kiadni."
-
-msgid "Choose whether or not to show an icon when a motorized dish is moving."
-msgstr "Válassza ki, hogy megjelenjen-e egy ikon, miközben az antenna forgatómotorja dolgozik."
 
 msgid "Choose which level of menu/setting's to display. 'Expert'-level shows all items."
 msgstr "Válassza ki, hogy a beállítások módját milyen szinten szeretné megjeleníteni. A Haladó szint megmutat minden menü pontot."
@@ -4867,9 +4837,6 @@ msgstr "Állítsa be, hogy a teletexthez rögzített betűtípus vagy skálázha
 
 msgid "Configure whether another tuner from the preferred list is allocated for recordings instead of sharing a tuner that is already active receiving the same live TV channel."
 msgstr "Állítsa be, hogy a preferált listából egy másik tuner van-e rögzítésre a tuner megosztása helyett, amely ugyanazt az élő TV-csatornát használja."
-
-msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Állítsa be, hogy a többcsatornás hangsávokat a sztereóhoz le kell-e keverni."
 
 msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (like in EPGrefresh)."
 msgstr "Állítsa be, hogy a felvételi szimbólum milyen esemény esetén látható a képernyőn és az LCD kijelzőn (felvétel, adatfolyam,...)."
@@ -7124,7 +7091,7 @@ msgstr "5V kimenet az akítv antennához engedélyezve"
 msgid "Enable Autorecord"
 msgstr "Automatikus Timeshift felvétel engedélyezése"
 
-msgid "Enable BT Audio"
+msgid "Enable BT audio"
 msgstr "BT Audió engedélyezve"
 
 msgid "Enable Bouquet Edit"
@@ -7196,10 +7163,10 @@ msgstr "A Swap engedélyezése indításkor"
 msgid "Enable VPS"
 msgstr ""
 
-msgid "Enable VPS by default (new timers)"
+msgid "Select 'Yes' to set the VPS flag on all new timers by default."
 msgstr ""
 
-msgid "Enable VPS on instant records"
+msgid "VPS on instant recordings"
 msgstr ""
 
 msgid "Enable VPS-Plugin"
@@ -8912,7 +8879,7 @@ msgstr "Általános"
 msgid "General AC3 delay"
 msgstr "Általános AC3 késleltetés"
 
-msgid "General BT Audio delay"
+msgid "General BT audio delay"
 msgstr "Általános BT Audio késleltetés"
 
 msgid "General PCM delay"
@@ -9248,9 +9215,6 @@ msgstr "Python összeomlások kezelése"
 
 msgid "Handle Standby from TV"
 msgstr "Készenlét fogadása a TV-től"
-
-msgid "Handle input from TV"
-msgstr "Kezelje a bemenetet a TV-ből"
 
 msgid "Handle wake up from TV"
 msgstr "Bekapcsolás fogadása a TV-től"
@@ -9722,13 +9686,13 @@ msgstr "Ha 'soha', akkor az első összeomlás ellenére is beírja az összeoml
 msgid "If EPG available"
 msgstr ""
 
-msgid "If a programme is interrupted and divided into separate events, the plugin will search for the connected events."
+msgid "If an event is interrupted and divided into separate recordings, this feature will search for alternate broadcasts of the same event."
 msgstr ""
 
 msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
-msgid "If enabled and necessary, the plugin will wake up the receiver from deep standby for the defined starting time to control whether the programme begins earlier."
+msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr ""
 
 msgid "If enabled the output resolution of the receiver will try to match the resolution of the video contents resolution."
@@ -9752,7 +9716,7 @@ msgstr ""
 msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr "Ha a naplók a beállított maximális hely értékét túllépik, akkor a legidősebb napló törlődik."
 
-msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
+msgid "Set a time offset before a timer is due to start to allow VPS to scan for the latest event timing. Select '0' to disable this feature."
 msgstr ""
 
 msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
@@ -12259,17 +12223,11 @@ msgstr "Hálózat menü"
 msgid "Network mounts"
 msgstr "Hálózati csatolások"
 
-msgid "Network name"
-msgstr ""
-
 msgid "Network name (SSID)"
 msgstr "Hálózatnév (SSID)"
 
 msgid "Network scan"
 msgstr "Hálózat keresése"
-
-msgid "Network status"
-msgstr ""
 
 msgid "Network storage on"
 msgstr ""
@@ -12825,6 +12783,9 @@ msgid "Number and picon"
 msgstr ""
 
 msgid "Number of IP Addresses"
+msgstr ""
+
+msgid "Number of Slots"
 msgstr ""
 
 msgid "Number of digits in service number"
@@ -14483,6 +14444,9 @@ msgstr ""
 msgid "Process YELLOW button action"
 msgstr ""
 
+msgid "Process action from TV"
+msgstr "Kezelje a bemenetet a TV-ből"
+
 msgid "Processing"
 msgstr ""
 
@@ -15048,7 +15012,7 @@ msgstr ""
 msgid "Refresh ZeroTier status information"
 msgstr ""
 
-msgid "Refresh every x hours"
+msgid "Refresh every"
 msgstr "Ennyi óránként frissít mindent"
 
 msgid "Refresh rate"
@@ -15487,6 +15451,9 @@ msgstr "Hálózat újraindítása az aktuális beállításokkal"
 
 msgid "Restart test"
 msgstr "Teszt újraindítása"
+
+msgid "Restart your network connection and interfaces."
+msgstr "Hálózati kapcsolatok és interfészek újraindítása."
 
 msgid "Restarting..."
 msgstr ""
@@ -15949,7 +15916,7 @@ msgstr "Mentés és leállítás"
 msgid "Save directory on EXIT"
 msgstr "az utolsó mappa mentése kilépéskor"
 
-msgid "Save every x hours"
+msgid "Save every"
 msgstr "Mentés ideje (órában)"
 
 #, python-format
@@ -16229,7 +16196,7 @@ msgstr "Keresősáv aktiválása"
 msgid "SeekBar sensibility"
 msgstr "Keresősáv érzékenysége"
 
-msgid "Seeking connected events"
+msgid "Find connected events"
 msgstr ""
 
 msgid "Select"
@@ -17111,6 +17078,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Válassza ki az SCR eszköz által használt protokollt. A választható lehetőségek: 'SCR Unicable' (Unicable), vagy 'SCR JESS' (JESS, más néven Unicable II)."
 
+msgid "Select the receiver action when the TV switches away from the receiver input."
+msgstr ""
+
 msgid "Select the refresh rate to be used on the TV."
 msgstr ""
 
@@ -17287,8 +17257,38 @@ msgstr "Válassza ki, hogy a távirányító Fel/Le gombjával mit szeretne csin
 msgid "Select where the recording should be saved."
 msgstr ""
 
+msgid "Select whether AAC audio tracks should be transcoded."
+msgstr "Válassza ki, hogy az AAC hangsávokat átkódolják-e."
+
+msgid "Select whether AC3 Plus audio tracks should be transcoded to AC3."
+msgstr "Válassza ki, hogy az AC3 Plus hangsávokat át kell-e kódolni az AC3-ra."
+
+msgid "Select whether AC3 audio tracks should be downmixed to stereo."
+msgstr "Ha kiválasztja, akkor az AC3 hangsávjait lekeveri sztereóra."
+
+msgid "Select whether DTS channel audio tracks should be downmixed or transcoded."
+msgstr "Válassza ki, hogy a DTS csatorna hangsávjait le kell-e keverni vagy átkódolni."
+
+msgid "Select whether DTS channel audio tracks should be downmixed to stereo."
+msgstr "Ha kiválasztja, akkor az DTS csatorna hangsávjait lekeveri sztereóra."
+
 msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
 msgstr ""
+
+msgid "Select whether WMA Pro channel audio tracks should be downmixed or transcoded."
+msgstr "Válassza ki, hogy a WMA Pro csatorna hangzásait le kell-e keverni vagy átkódolni."
+
+msgid "Select whether multichannel audio tracks should be converted to PCM or SPDIF."
+msgstr "Válassza ki, hogy a többcsatornás hangsávnak PCM vagy SPDIF formátumúra legyen konvertálva."
+
+msgid "Select whether multichannel audio tracks should be downmixed to stereo."
+msgstr "Válassza ki, hogy a többcsatornás hangsávokat a sztereóhoz le kell-e keverni."
+
+msgid "Select whether multichannel audio tracks should be output as PCM."
+msgstr "Válassza ki, hogy a többcsatornás hangsávot PCM-ként kell kiadni."
+
+msgid "Select whether or not to show an icon when a motorized dish is moving."
+msgstr "Válassza ki, hogy megjelenjen-e egy ikon, miközben az antenna forgatómotorja dolgozik."
 
 msgid "Select wireless network"
 msgstr "Válasszon vezeték nélküli hálózatot"
@@ -17735,7 +17735,7 @@ msgstr "Állítsa be az Információs sáv elrejtéséhez szükséges időt."
 msgid "Set the time to wait for execute the default action in shutdown, standby or restart messages, e.g. used in RecordTimer, Scheduler, SleepTimer etc."
 msgstr "Állítsa be az alapértelmezett művelet végrehajtásának várakozási idejét a leállítási, készenléti vagy újraindítási üzenetekben. (pl. használva a Timer, PowerTimer, Sleeptimer, ...)"
 
-msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at 0,0 and the bottom right is at 1260,700. Note that the position is the top left of the spinner and not the centre of the spinner."
+msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at (0,0) and the bottom right is at (1260,700). Note that the position is the top left of the spinner and not the centre of the spinner."
 msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -17773,7 +17773,7 @@ msgstr ""
 msgid "Set time options"
 msgstr ""
 
-msgid "Set to 'Disabled' to replace underscore characters '_' in file and directory names with spaces."
+msgid "Set to 'Disabled' to replace underscore characters, '_', in file and directory names with spaces."
 msgstr ""
 
 msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby before shutting down."
@@ -18129,7 +18129,7 @@ msgstr "A HDMI kimenet felbontásának megjelenítése"
 msgid "Show InfoBar"
 msgstr "Információs sáv megjelenítése"
 
-msgid "Show InfoBar lite *"
+msgid "Show InfoBar lite"
 msgstr "Információs sáv lite megjelenítése *"
 
 msgid "Show InfoBar on channel change"
@@ -18639,9 +18639,6 @@ msgid "Show subservice selection"
 msgstr "Show subservice selection"
 
 msgid "Show subservices"
-msgstr ""
-
-msgid "Show subservices *"
 msgstr ""
 
 msgid "Show subservices of the active service"
@@ -20353,10 +20350,10 @@ msgstr ""
 msgid "The %s %s is shutting down. Please wait..."
 msgstr ""
 
-msgid "The %s %s reads the stored EPG data every x hours."
+msgid "The %s %s reads the stored EPG data every selected number of hours."
 msgstr "A(z) %s %s készülék ennyi óránként frissíti a tárolt EPG adatokat."
 
-msgid "The %s %s stores the EPG data every x hours."
+msgid "The %s %s stores the EPG data every selected number of hours."
 msgstr "A(z) %s %s tárolja az EPG adatokat minden órában."
 
 #, python-format
@@ -20740,9 +20737,6 @@ msgstr "Ez a(z) %s %s készülék nem képes %s adatfolyamokat dekódolni!"
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "Ez a DVD RW medium már meg van formázva - a lemez újraformázásával minden adat el fog veszni."
 
-msgid "This Option allows you to switch Audio to BT Speakers."
-msgstr "Ez az opció lehetővé teszi a Hang BT hangszórókra való váltását."
-
 msgid "This allows you to change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
 msgstr "Ez lehetővé teszi a betűméret megváltoztatását a kinézeti méretéhez képest, így az '1' az 1 pont méretével növekszik, a '-1' pedig 1 pont méretre csökken"
 
@@ -20908,8 +20902,14 @@ msgstr "Ez az opció lehetővé teszi a 3D Surround hang használatát."
 msgid "This option allows you to set offset values for different Letterbox resolutions."
 msgstr ""
 
+msgid "This option allows you to set the Auto Volume Level output."
+msgstr "Ezzel az opcióval beállíthatja az Auto Volume Level (Automatikus hangerőszint) beállítást."
+
 msgid "This option allows you to set the layout view (Text or Graphics)."
 msgstr "Itt állíthatja be a megjelenési módot (Szöveges vagy Grafikus)."
+
+msgid "This option allows you to switch Audio to Bluetooth speakers."
+msgstr "Ez az opció lehetővé teszi a Hang BT hangszórókra való váltását."
 
 msgid "This option allows you to the SNR as a percentage (not all receivers support this)."
 msgstr "Ez az opció lehetővé teszi, hogy az SNR százalékos arányként jelenjen meg (ezt nem minden vevő egység támogatja)."
@@ -20920,14 +20920,8 @@ msgstr "Ez az opció lehetővé teszi az összes HDMI mód használatát"
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Ez az opció lehetővé teszi a régi és az új beállítások egymás melletti megtekintését."
 
-msgid "This option configures the general audio delay for BT Speakers."
+msgid "This option configures the audio delay value for Bluetooth speakers."
 msgstr "Ez az opció konfigurálja a BT hangszórók általános audio késleltetését."
-
-msgid "This option configures the general audio delay of Dolby Digital sound tracks."
-msgstr "A Dolby Digital hangsávjainak késleltetését tudja itt beállítani."
-
-msgid "This option configures the general audio delay of stereo sound tracks."
-msgstr "A sztereó hangsávjainak késleltetését tudja itt beállítani."
 
 msgid "This option configures the picture sharpness."
 msgstr "Ez az opció beállítja a kép élességét."
@@ -20937,9 +20931,6 @@ msgstr "Ez az opció konfigurálja a képernyő felbontását PC kimenet üzemm�
 
 msgid "This option configures the video output mode (or resolution)."
 msgstr "Beállíthatja a videó kimenet módját."
-
-msgid "This option configures you can set Auto Volume Level."
-msgstr "Ezzel az opcióval beállíthatja az Auto Volume Level (Automatikus hangerőszint) beállítást."
 
 msgid "This option lets you adjust the 3D depth of the OSD."
 msgstr "Ez az opció lehetővé teszi a 3D mélység beállítását"
@@ -20955,6 +20946,12 @@ msgstr "Ezzel az opcióval megjelenítheti a opciókat a kiterjesztett képerny�
 
 msgid "This option moves the PVR status display from a separate window into the MoviePlayer InfoBar."
 msgstr "Ez az opció áthelyezi a PVR státuszt a különálló ablakból a MoviePlayer Információs sávjába."
+
+msgid "This option selects the general audio delay of Dolby Digital sound tracks."
+msgstr "A Dolby Digital hangsávjainak késleltetését tudja itt beállítani."
+
+msgid "This option selects the general audio delay of stereo sound tracks."
+msgstr "A sztereó hangsávjainak késleltetését tudja itt beállítani."
 
 msgid "This option set the level of suppression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "Ez az opció beállítja a musquito zaj szupresszióját (a Musquito Noise véletlenszerű aliasing az erős tömörítés hatására). Nyilvánvaló, hogy ez a kép részleteinek elvesztésével jár."
@@ -20998,7 +20995,7 @@ msgstr ""
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr "Ezzel beállítja a kép élességét, amelyet a kép felskálázásnál használ."
 
-msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
+msgid "Select 'Yes' to allow the VPS to adjust recording timers based on broadcast Program Delivery Control (PDC) data. For this to work the service must provide reliable event PDC data."
 msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
@@ -22317,6 +22314,9 @@ msgstr ""
 msgid "Use the extended List"
 msgstr "Használja a kiterjesztett listát"
 
+msgid "Use the network wizard to configure your Network."
+msgstr ""
+
 msgid "Use the wizard to set up basic features"
 msgstr "Használja a varázslót az alapbeállításokhoz"
 
@@ -22824,7 +22824,7 @@ msgstr "Felébresztés"
 msgid "Wake up TV from Standby"
 msgstr "A TV felébresztése készenléti módból"
 
-msgid "Wake up from Deep-Standby is allowed"
+msgid "Wake from Shutdown allowed"
 msgstr ""
 
 msgid "Wake up time before a timer begins"
@@ -23183,7 +23183,7 @@ msgstr ""
 msgid "When tuned to a service, the system normally scans the transponder for changes and saves them. Enable only if you know what you're doing."
 msgstr "Ha letiltja a csatornakeresést a háttérben, akkor a keresés során megtalált csatorna nem lesz elmentve."
 
-msgid "When yes, VPS will be enabled on instant records (stop after current event), if the channel supports VPS."
+msgid "Select 'Yes' to use PDC data, if available on the current service, to accurately stop the instant recording at the end of the event."
 msgstr ""
 
 msgid "Where do you want to backup your settings?"
@@ -23763,13 +23763,10 @@ msgstr "Következőre Ugrás+Felvétel"
 msgid "ZeroTier Actions"
 msgstr ""
 
-msgid "ZeroTier version"
+msgid "ZeroTier Settings"
 msgstr ""
 
 msgid "ZeroTier-One"
-msgstr ""
-
-msgid "ZeroTier Settings"
 msgstr ""
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7 old Model"
@@ -24432,6 +24429,9 @@ msgstr "igen (állapotok megtartása)"
 msgid "®"
 msgstr "®"
 
+#~ msgid "Configure whether multichannel audio tracks should be downmixed to stereo."
+#~ msgstr "Állítsa be, hogy a többcsatornás hangsávokat a sztereóhoz le kell-e keverni."
+
 #~ msgid "* Only available if more than one interface is active."
 #~ msgstr "* Csak akkor érvényes, ha egynél több interfész aktív."
 
@@ -24458,9 +24458,6 @@ msgstr "®"
 
 #~ msgid "Press yellow to set this interface as the default interface."
 #~ msgstr "Nyomja le a sárga gombot, hogy ezt az interfészt jelölje meg alapértelmezettnek."
-
-#~ msgid "Restart your network connection and interfaces."
-#~ msgstr "Hálózati kapcsolatok és interfészek újraindítása."
 
 #~ msgid "Set interface as the default Interface"
 #~ msgstr "Jelölje meg mint alapértelmezett interfészt"

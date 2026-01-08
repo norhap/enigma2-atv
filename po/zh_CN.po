@@ -1,13 +1,13 @@
 # lexlong2007 <lexlong2007@163.com>, 2022.
 # tzyy1970 <haotzyy1970@yahoo.com>, 2022.
-# Mark Stone <grystyle@gmail.com>, 2023, 2024, 2025.
+# Mark Stone <grystyle@gmail.com>, 2023, 2024, 2025, 2026.
 # Johnspp93 <Johnspp93@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: openATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-02 18:38+0000\n"
-"PO-Revision-Date: 2025-12-28 11:50+0000\n"
+"POT-Creation-Date: 2026-01-08 09:08+0000\n"
+"PO-Revision-Date: 2026-01-04 15:06+0000\n"
 "Last-Translator: Mark Stone <grystyle@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -3970,7 +3970,7 @@ msgstr "车臣语"
 msgid "Check for PDC"
 msgstr "检查 PDC"
 
-msgid "Check for PDC availability on each service"
+msgid "Check for PDC availability on each service."
 msgstr "检查每个服务的 PDC 可用性"
 
 msgid "Check power and input state from TV"
@@ -4125,36 +4125,6 @@ msgstr "选择画中画激活时按钮“0”要执行的操作。"
 
 msgid "Choose where to mount your devices to:"
 msgstr "选择挂载设备到："
-
-msgid "Choose whether AAC sound tracks should be transcoded."
-msgstr "选择是否对 AAC 音轨进行转码。"
-
-msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
-msgstr "选择是否将 AC3+ 音轨转码为AC3。"
-
-msgid "Choose whether AC3 sound tracks should be downmixed to stereo."
-msgstr "选择是否将 AC3 音轨缩混为立体声。"
-
-msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
-msgstr "选择 DTS 音轨是应缩混还是转码。"
-
-msgid "Choose whether DTS channel sound tracks should be downmixed to stereo."
-msgstr "选择 DTS 音轨是否缩混为立体声。"
-
-msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
-msgstr "选择 WMA Pro 音轨是缩混还是转码。"
-
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "选择是将多声道音轨转换为 PCM 还是 SPDIF。"
-
-msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
-msgstr "选择多声道音轨是否应缩混为立体声。"
-
-msgid "Choose whether multi channel sound tracks should be output as PCM."
-msgstr "选择是否应将多声道音轨作为 PCM 输出。"
-
-msgid "Choose whether or not to show an icon when a motorized dish is moving."
-msgstr "极轴移动时选择是否显示图标。"
 
 msgid "Choose which level of menu/setting's to display. 'Expert'-level shows all items."
 msgstr "选择要显示的 菜单/设置 级别。'专家'级别显示所有项目。"
@@ -4501,7 +4471,7 @@ msgid "Configure front panel LEDs"
 msgstr "配置前面板指示灯"
 
 msgid "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info."
-msgstr "配置录像文件名的生成规则。标准：日期时间 - 频道 - 标题  极简格式：仅标题  短格式（带时间）：标题 - 日期 时间  带时间的短格式：日期 时间 - 标题  短格式：日期 - 标题  完整格式：日期 时间 - 频道 - 标题 - 附加信息。"
+msgstr "配置录像文件的命名规则。--标准：日期 时间 - 频道 - 标题 --极简：仅标题 --简略：标题 - 日期 时间 --带时间的短格式：日期 时间 - 标题 --短格式：日期 - 标题 --长格式：日期 时间 - 频道 - 标题 - 附加信息。"
 
 msgid "Configure if 'epg.dat' should be saved at all."
 msgstr "配置是否应该保存 epg.dat。"
@@ -4826,9 +4796,6 @@ msgstr "配置等宽字体或可扩展 TrueType 字体是否用于图文电视�
 
 msgid "Configure whether another tuner from the preferred list is allocated for recordings instead of sharing a tuner that is already active receiving the same live TV channel."
 msgstr "配置是否将首选列表中的另一个调谐器分配给录制内容，而不是共享正在接收相同直播电视频道的调谐器。"
-
-msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
-msgstr "配置多声道音轨是否要缩混为立体声。"
 
 msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (like in EPGrefresh)."
 msgstr "配置“录制”符号（在显示皮肤和 LCD 皮肤中）是仅对真正录制可见，还是对流媒体和伪录制可见（例如，EPGrefresh）。"
@@ -6581,7 +6548,7 @@ msgid "Do you really want to stop and delete the timer '%s'?"
 msgstr "真的要停止并删除定时器“%s”吗？"
 
 msgid "Do you really want to trim the file system?"
-msgstr ""
+msgstr "真的要修剪文件系统吗？"
 
 #, python-format
 msgid "Do you want change '%s' access mode?"
@@ -7080,7 +7047,7 @@ msgstr "为有源天线启用 5V"
 msgid "Enable Autorecord"
 msgstr "启用自动录制"
 
-msgid "Enable BT Audio"
+msgid "Enable BT audio"
 msgstr "启用蓝牙音频"
 
 msgid "Enable Bouquet Edit"
@@ -7152,10 +7119,10 @@ msgstr "启动时启用交换空间"
 msgid "Enable VPS"
 msgstr "启用 VPS"
 
-msgid "Enable VPS by default (new timers)"
+msgid "Select 'Yes' to set the VPS flag on all new timers by default."
 msgstr "默认启用 VPS（新定时器）"
 
-msgid "Enable VPS on instant records"
+msgid "VPS on instant recordings"
 msgstr "即时录制启用 VPS"
 
 msgid "Enable VPS-Plugin"
@@ -7485,7 +7452,7 @@ msgid "Enter text via an attached keyboard"
 msgstr "通过连接的键盘输入文本"
 
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
-msgstr ""
+msgstr "请输入 ZeroTier 网络 ID。该 ID 的长度必须正好为 16 个字符。"
 
 msgid "Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space."
 msgstr "输入流媒体错误后要添加到流媒体缓冲区的持续时间。这个额外的缓冲区有助于避免因缓冲区空间不足而导致的进一步流媒体问题。"
@@ -8862,7 +8829,7 @@ msgstr "一般"
 msgid "General AC3 delay"
 msgstr "常规 AC3 延迟"
 
-msgid "General BT Audio delay"
+msgid "General BT audio delay"
 msgstr "常规 AC3 延迟"
 
 msgid "General PCM delay"
@@ -9195,9 +9162,6 @@ msgstr "处理 Python 崩溃"
 
 msgid "Handle Standby from TV"
 msgstr "处理来自电视的待机"
-
-msgid "Handle input from TV"
-msgstr "处理来自电视的输入"
 
 msgid "Handle wake up from TV"
 msgstr "处理来自电视的唤醒"
@@ -9666,13 +9630,13 @@ msgstr "如为 '从不'，将写入崩溃日志，尽管是第一次崩溃。"
 msgid "If EPG available"
 msgstr "如果 EPG 可用"
 
-msgid "If a programme is interrupted and divided into separate events, the plugin will search for the connected events."
+msgid "If an event is interrupted and divided into separate recordings, this feature will search for alternate broadcasts of the same event."
 msgstr "如果程序被中断并被划分为单独的事件，插件将搜索连接的事件。"
 
 msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr "如果某个操作是用户可配置的，则其帮助条目将标记为“(C)”后缀。"
 
-msgid "If enabled and necessary, the plugin will wake up the receiver from deep standby for the defined starting time to control whether the programme begins earlier."
+msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr "如果启用且有必要，插件将在定义的启动时间内从深度待机中唤醒接收机，以控制程序是否更早开始。"
 
 msgid "If enabled the output resolution of the receiver will try to match the resolution of the video contents resolution."
@@ -9696,7 +9660,7 @@ msgstr "如果启用，将使用新的 GStreamer 播放引擎。"
 msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr "当所有日志达到最大空间时，最旧的将被删除。"
 
-msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
+msgid "Set a time offset before a timer is due to start to allow VPS to scan for the latest event timing. Select '0' to disable this feature."
 msgstr "如果可能，在定时器启动前 x 分钟，VPS 插件将控制程序是否提前开始。 （0 禁用功能）"
 
 msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
@@ -10272,13 +10236,13 @@ msgid "Job overview"
 msgstr "作业概述"
 
 msgid "Join"
-msgstr ""
+msgstr "加入"
 
 msgid "Join or leave the configured ZeroTier network"
-msgstr ""
+msgstr "加入或离开已配置的 ZeroTier 网络"
 
 msgid "Joined"
-msgstr ""
+msgstr "已加入"
 
 msgid "Jordan"
 msgstr "约旦"
@@ -10641,7 +10605,7 @@ msgid "Latvian"
 msgstr "拉脱维亚语"
 
 msgid "Leave"
-msgstr ""
+msgstr "离开"
 
 msgid "Leave DVD player?"
 msgstr "退出 DVD 播放器？"
@@ -12148,17 +12112,11 @@ msgstr "网络菜单"
 msgid "Network mounts"
 msgstr "网络挂载"
 
-msgid "Network name"
-msgstr ""
-
 msgid "Network name (SSID)"
 msgstr "网络名称 （SSID）"
 
 msgid "Network scan"
 msgstr "网络扫描"
-
-msgid "Network status"
-msgstr ""
 
 msgid "Network storage on"
 msgstr "网络存储 -"
@@ -12179,7 +12137,7 @@ msgstr ""
 "按“确定”继续。"
 
 msgid "Network-ID"
-msgstr ""
+msgstr "网络 ID"
 
 msgid "Network:"
 msgstr "网络："
@@ -12665,7 +12623,7 @@ msgstr ""
 "路径： %s"
 
 msgid "Not joined. Press Yellow to join."
-msgstr ""
+msgstr "未加入。按黄色键加入。"
 
 msgid "Not required"
 msgstr "不需要"
@@ -12713,6 +12671,9 @@ msgstr "编号和频道图标"
 
 msgid "Number of IP Addresses"
 msgstr "IP 地址数"
+
+msgid "Number of Slots"
+msgstr ""
 
 msgid "Number of digits in service number"
 msgstr "频道编号位数"
@@ -14350,6 +14311,9 @@ msgstr "处理红色按钮动作"
 msgid "Process YELLOW button action"
 msgstr "处理黄色按钮动作"
 
+msgid "Process action from TV"
+msgstr "处理来自电视的输入"
+
 msgid "Processing"
 msgstr "处理中"
 
@@ -14911,9 +14875,9 @@ msgid "Refresh"
 msgstr "刷新"
 
 msgid "Refresh ZeroTier status information"
-msgstr ""
+msgstr "刷新 ZeroTier 状态信息"
 
-msgid "Refresh every x hours"
+msgid "Refresh every"
 msgstr "刷新每（小时）"
 
 msgid "Refresh rate"
@@ -15354,6 +15318,9 @@ msgstr "用当前设置重启网络"
 
 msgid "Restart test"
 msgstr "重启测试"
+
+msgid "Restart your network connection and interfaces."
+msgstr "重新启动网络连接和接口。"
 
 msgid "Restarting..."
 msgstr "正在重启..."
@@ -15809,7 +15776,7 @@ msgstr "保存并停止"
 msgid "Save directory on EXIT"
 msgstr "退出时保存目录"
 
-msgid "Save every x hours"
+msgid "Save every"
 msgstr "保存每（单位：小时）"
 
 #, python-format
@@ -16088,7 +16055,7 @@ msgstr "激活进度条"
 msgid "SeekBar sensibility"
 msgstr "进度条灵敏度"
 
-msgid "Seeking connected events"
+msgid "Find connected events"
 msgstr "寻找关联事件"
 
 msgid "Select"
@@ -16971,6 +16938,9 @@ msgstr "选择上一个频道同时关闭扫描器并退出所有菜单"
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "选择您的 SCR 设备使用的协议。 选项有'SCR Unicable'（Unicable）或'SCR JESS'（JESS，也称为Unicable II）。"
 
+msgid "Select the receiver action when the TV switches away from the receiver input."
+msgstr ""
+
 msgid "Select the refresh rate to be used on the TV."
 msgstr "选择要在电视上使用的刷新率。"
 
@@ -17148,8 +17118,38 @@ msgstr "选择希望 上/下 按钮激活的功能。"
 msgid "Select where the recording should be saved."
 msgstr "选择录制保存的位置。"
 
+msgid "Select whether AAC audio tracks should be transcoded."
+msgstr "选择是否对 AAC 音轨进行转码。"
+
+msgid "Select whether AC3 Plus audio tracks should be transcoded to AC3."
+msgstr "选择是否将 AC3+ 音轨转码为AC3。"
+
+msgid "Select whether AC3 audio tracks should be downmixed to stereo."
+msgstr "选择是否将 AC3 音轨缩混为立体声。"
+
+msgid "Select whether DTS channel audio tracks should be downmixed or transcoded."
+msgstr "选择 DTS 音轨是应缩混还是转码。"
+
+msgid "Select whether DTS channel audio tracks should be downmixed to stereo."
+msgstr "选择 DTS 音轨是否缩混为立体声。"
+
 msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
 msgstr "选择DNS的模式。"
+
+msgid "Select whether WMA Pro channel audio tracks should be downmixed or transcoded."
+msgstr "选择 WMA Pro 音轨是缩混还是转码。"
+
+msgid "Select whether multichannel audio tracks should be converted to PCM or SPDIF."
+msgstr "选择是将多声道音轨转换为 PCM 还是 SPDIF。"
+
+msgid "Select whether multichannel audio tracks should be downmixed to stereo."
+msgstr "选择多声道音轨是否应缩混为立体声。"
+
+msgid "Select whether multichannel audio tracks should be output as PCM."
+msgstr "选择是否应将多声道音轨作为 PCM 输出。"
+
+msgid "Select whether or not to show an icon when a motorized dish is moving."
+msgstr "极轴移动时选择是否显示图标。"
 
 msgid "Select wireless network"
 msgstr "选择无线网络"
@@ -17368,7 +17368,7 @@ msgid "Service off-air"
 msgstr "频道停播"
 
 msgid "Service online"
-msgstr ""
+msgstr "在线服务"
 
 msgid "Service picons aspect ratio"
 msgstr "频道图标宽高比"
@@ -17599,7 +17599,7 @@ msgstr "设置隐藏信息栏的时间。"
 msgid "Set the time to wait for execute the default action in shutdown, standby or restart messages, e.g. used in RecordTimer, Scheduler, SleepTimer etc."
 msgstr "设置等待执行关机、待机或重启消息中默认操作的时间，例如用于录制定时器、电源定时器、睡眠定时器等。"
 
-msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at 0,0 and the bottom right is at 1260,700. Note that the position is the top left of the spinner and not the centre of the spinner."
+msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at (0,0) and the bottom right is at (1260,700). Note that the position is the top left of the spinner and not the centre of the spinner."
 msgstr "设置繁忙旋转器的左上角位置。坐标经过缩放，使得左上角位于 (0,0)，右下角位于 (1260,700)。请注意，该位置是旋转器的左上角，而不是旋转器的中心。"
 
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -17637,7 +17637,7 @@ msgstr "将此设置为“是”以按字母顺序对播放列表进行排序。
 msgid "Set time options"
 msgstr "设置时间选项"
 
-msgid "Set to 'Disabled' to replace underscore characters '_' in file and directory names with spaces."
+msgid "Set to 'Disabled' to replace underscore characters, '_', in file and directory names with spaces."
 msgstr "设置为“禁用”以用空格替换文件和目录名称中的下划线字符“_”。"
 
 msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby before shutting down."
@@ -17996,7 +17996,7 @@ msgstr "显示 HDMI 输出分辨率"
 msgid "Show InfoBar"
 msgstr "显示信息栏"
 
-msgid "Show InfoBar lite *"
+msgid "Show InfoBar lite"
 msgstr "显示精简信息栏 *"
 
 msgid "Show InfoBar on channel change"
@@ -18504,9 +18504,6 @@ msgstr "显示子频道选择"
 
 msgid "Show subservices"
 msgstr "显示子频道"
-
-msgid "Show subservices *"
-msgstr "显示子频道*"
 
 msgid "Show subservices of the active service"
 msgstr "显示活动频道的子频道"
@@ -20201,10 +20198,10 @@ msgstr "%s %s 的内存容量有限。 需要交换文件来增加可用内存�
 msgid "The %s %s is shutting down. Please wait..."
 msgstr "%s %s 正在关闭。 请稍等..."
 
-msgid "The %s %s reads the stored EPG data every x hours."
+msgid "The %s %s reads the stored EPG data every selected number of hours."
 msgstr "%s %s 读取存储的 EPG 数据每（小时）。"
 
-msgid "The %s %s stores the EPG data every x hours."
+msgid "The %s %s stores the EPG data every selected number of hours."
 msgstr "%s %s 存储 EPG 数据 每（小时）。"
 
 #, python-format
@@ -20615,9 +20612,6 @@ msgstr "此 %s %s 不能解码 %s 流！"
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "此 DVD RW 介质已经格式化－重新格式化将擦除光盘上的所有内容。"
 
-msgid "This Option allows you to switch Audio to BT Speakers."
-msgstr "此选项允许您显示菜单路径。"
-
 msgid "This allows you to change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
 msgstr "这允许您更改相对于皮肤大小的字体大小，即 1 增加 1 磅大小，-1 减少 1 磅大小。"
 
@@ -20783,8 +20777,14 @@ msgstr "此选项允许您启用 3D 环绕声。"
 msgid "This option allows you to set offset values for different Letterbox resolutions."
 msgstr "此选项允许您为不同的信箱模式分辨率设置偏移值。"
 
+msgid "This option allows you to set the Auto Volume Level output."
+msgstr "此选项配置 让您设置自动音量级别。"
+
 msgid "This option allows you to set the layout view (Text or Graphics)."
 msgstr "此选项允许您设置布局视图（文本或图形）。"
+
+msgid "This option allows you to switch Audio to Bluetooth speakers."
+msgstr "此选项允许您显示菜单路径。"
 
 msgid "This option allows you to the SNR as a percentage (not all receivers support this)."
 msgstr "此选项允许您将SNR作为百分比（并非所有接收机都支持此功能）。"
@@ -20795,13 +20795,7 @@ msgstr "此选项允许您使用所有HDMI模式"
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "此选项允许您并排浏览旧的和新的设置。"
 
-msgid "This option configures the general audio delay for BT Speakers."
-msgstr "此选项配置立体声音轨的常规音频延迟。"
-
-msgid "This option configures the general audio delay of Dolby Digital sound tracks."
-msgstr "此选项配置杜比数码声轨的常规音频延迟。"
-
-msgid "This option configures the general audio delay of stereo sound tracks."
+msgid "This option configures the audio delay value for Bluetooth speakers."
 msgstr "此选项配置立体声音轨的常规音频延迟。"
 
 msgid "This option configures the picture sharpness."
@@ -20812,9 +20806,6 @@ msgstr "此选项配置电脑输出模式的屏幕分辨率。"
 
 msgid "This option configures the video output mode (or resolution)."
 msgstr "此选项配置视频输出模式（或分辨率）。"
-
-msgid "This option configures you can set Auto Volume Level."
-msgstr "此选项配置 让您设置自动音量级别。"
 
 msgid "This option lets you adjust the 3D depth of the OSD."
 msgstr "此选项可让您调整 OSD 的 3D 深度。"
@@ -20830,6 +20821,12 @@ msgstr "此选项可让您在扩展菜单屏幕中显示 3D OSD 菜单选项。"
 
 msgid "This option moves the PVR status display from a separate window into the MoviePlayer InfoBar."
 msgstr "此选项将 PVR 状态显示从单独的窗口移动到 MoviePlayer 信息栏中。"
+
+msgid "This option selects the general audio delay of Dolby Digital sound tracks."
+msgstr "此选项配置杜比数码声轨的常规音频延迟。"
+
+msgid "This option selects the general audio delay of stereo sound tracks."
+msgstr "此选项配置立体声音轨的常规音频延迟。"
 
 msgid "This option set the level of suppression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "此选项设置蚊式噪声的抑制级别（蚊式噪声是强压缩导致的随机混叠）。 显然，这是以牺牲图片细节为代价的。"
@@ -20873,7 +20870,7 @@ msgstr "此选项设置视频图片对比度。"
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr "此选项设置图片清晰度，当图片放大时使用。"
 
-msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
+msgid "Select 'Yes' to allow the VPS to adjust recording timers based on broadcast Program Delivery Control (PDC) data. For this to work the service must provide reliable event PDC data."
 msgstr "这个插件可以确定一个节目是更早开始还是持续更长时间。 频道必须提供可靠的数据。"
 
 msgid "This service is protected by a parental control PIN!"
@@ -21426,10 +21423,10 @@ msgid "Tries left:"
 msgstr "剩余尝试次数："
 
 msgid "Trim File System"
-msgstr ""
+msgstr "修剪文件系统"
 
 msgid "Trim File System..."
-msgstr ""
+msgstr "修剪文件系统..."
 
 msgid "Trinidad and Tobago"
 msgstr "特立尼达和多巴哥"
@@ -21554,10 +21551,10 @@ msgid "Tunisia"
 msgstr "突尼斯"
 
 msgid "Tunnel IPv4"
-msgstr ""
+msgstr "IPv4 隧道"
 
 msgid "Tunnel IPv6"
-msgstr ""
+msgstr "IPv6 隧道"
 
 msgid "Turbo"
 msgstr "Turbo"
@@ -22187,6 +22184,9 @@ msgstr "使用当前选择并退出"
 msgid "Use the extended List"
 msgstr "使用扩展列表"
 
+msgid "Use the network wizard to configure your Network."
+msgstr "使用网络向导配置网络。"
+
 msgid "Use the wizard to set up basic features"
 msgstr "使用向导设置基本功能"
 
@@ -22717,7 +22717,7 @@ msgstr "唤醒"
 msgid "Wake up TV from Standby"
 msgstr "从待机状态唤醒电视"
 
-msgid "Wake up from Deep-Standby is allowed"
+msgid "Wake from Shutdown allowed"
 msgstr "允许从深度待机唤醒"
 
 msgid "Wake up time before a timer begins"
@@ -23078,7 +23078,7 @@ msgstr "当红色框正确可见时，按绿色按钮保存设置并退出。"
 msgid "When tuned to a service, the system normally scans the transponder for changes and saves them. Enable only if you know what you're doing."
 msgstr "当调谐到频道时，系统通常会扫描转发器的任何改动并保存它们。 仅当你在完全确定自己在做什么时设为“是”。"
 
-msgid "When yes, VPS will be enabled on instant records (stop after current event), if the channel supports VPS."
+msgid "Select 'Yes' to use PDC data, if available on the current service, to accurately stop the instant recording at the end of the event."
 msgstr "选 是 时，即时录制中 VPS 将被启用（在当前事件后停止），如果频道支持 VPS。"
 
 msgid "Where do you want to backup your settings?"
@@ -23660,16 +23660,13 @@ msgid "Zap+Record next"
 msgstr "换台 + 录制下一个"
 
 msgid "ZeroTier Actions"
-msgstr ""
-
-msgid "ZeroTier version"
-msgstr ""
-
-msgid "ZeroTier-One"
-msgstr ""
+msgstr "ZeroTier 操作"
 
 msgid "ZeroTier Settings"
-msgstr ""
+msgstr "ZeroTier 设置"
+
+msgid "ZeroTier-One"
+msgstr "ZeroTier-One"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7 old Model"
 msgstr "Zgemma H.S/H.2S/H.2H/H5/H7旧型号"
@@ -24326,6 +24323,12 @@ msgstr "是（保留订阅源）"
 msgid "®"
 msgstr "®"
 
+#~ msgid "Configure whether multichannel audio tracks should be downmixed to stereo."
+#~ msgstr "配置多声道音轨是否要缩混为立体声。"
+
+#~ msgid "Show subservices *"
+#~ msgstr "显示子频道*"
+
 #~ msgid "* Only available if more than one interface is active."
 #~ msgstr "* 仅当有多个网卡处于活动状态时可用。"
 
@@ -24362,9 +24365,6 @@ msgstr "®"
 #~ msgid "Press yellow to set this interface as the default interface."
 #~ msgstr "请按黄键来设置这个界面为默认界面。"
 
-#~ msgid "Restart your network connection and interfaces."
-#~ msgstr "重新启动网络连接和接口。"
-
 #~ msgid "Set interface as the default Interface"
 #~ msgstr "设置界面为默认界面"
 
@@ -24381,9 +24381,6 @@ msgstr "®"
 
 #~ msgid "Use the network wizard to configure selected network adapter"
 #~ msgstr "使用网络向导配置选择的网络适配器"
-
-#~ msgid "Use the network wizard to configure your Network."
-#~ msgstr "使用网络向导配置网络。"
 
 #~ msgid "white"
 #~ msgstr "白色"

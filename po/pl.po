@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-02 18:38+0000\n"
-"PO-Revision-Date: 2026-01-03 07:28+0000\n"
+"POT-Creation-Date: 2026-01-08 09:08+0000\n"
+"PO-Revision-Date: 2026-01-08 13:53+0000\n"
 "Last-Translator: pololoko111 <peciek83@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/pl/>\n"
 "Language: pl\n"
@@ -4015,7 +4015,7 @@ msgstr "Czeczeński"
 msgid "Check for PDC"
 msgstr "Sprawdź PDC"
 
-msgid "Check for PDC availability on each service"
+msgid "Check for PDC availability on each service."
 msgstr "Sprawdź dostępność PDC w każdej usłudze"
 
 msgid "Check power and input state from TV"
@@ -4170,36 +4170,6 @@ msgstr "Wybierz przycisk '0 ', kiedy PIP jest aktywny."
 
 msgid "Choose where to mount your devices to:"
 msgstr "Wybierz miejsce montażu urządzeń:"
-
-msgid "Choose whether AAC sound tracks should be transcoded."
-msgstr "Wybierz, czy transkodować ścieżkę dźwiękową AAC."
-
-msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
-msgstr "Wybierz, czy ścieżki dźwiękowe AC3 Plus mają zostać przekodowane do AC3."
-
-msgid "Choose whether AC3 sound tracks should be downmixed to stereo."
-msgstr "Wybierz, czy ścieżki dźwiękowe AC3 mają zostać zmiksowane do wersji stereo."
-
-msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
-msgstr "Wybierz, czy ścieżki dźwiękowe kanału DTS mają być miksowane w dół lub transkodowane."
-
-msgid "Choose whether DTS channel sound tracks should be downmixed to stereo."
-msgstr "Wybierz, czy ścieżki dźwiękowe kanału DTS mają być miksowane do wersji stereo."
-
-msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
-msgstr "Wybierz, czy ścieżki dźwiękowe kanałów WMA Pro mają być miksowane w dół lub transkodowane."
-
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Wybierz, czy wielokanałowe ścieżki dźwiękowe mają być konwertowane na PCM czy SPDIF."
-
-msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Wybierz, czy ścieżki dźwiękowe wielokanałowe mają zostać zmiksowane do wersji stereo."
-
-msgid "Choose whether multi channel sound tracks should be output as PCM."
-msgstr "Wybierz, czy ścieżki dźwiękowe wielokanałowe mają być odtwarzane jako PCM."
-
-msgid "Choose whether or not to show an icon when a motorized dish is moving."
-msgstr "Wybierz, czy pokazywać ikonę w czasie ruchu obrotnicy."
 
 msgid "Choose which level of menu/setting's to display. 'Expert'-level shows all items."
 msgstr "Wybierz poziom dostępu do menu konfiguracyjnego. Poziom 'Expert' daje dostęp do wszystkich opcji."
@@ -4874,9 +4844,6 @@ msgstr "Skonfiguruj, czy do telegazety używana jest stała czcionka lub skalowa
 
 msgid "Configure whether another tuner from the preferred list is allocated for recordings instead of sharing a tuner that is already active receiving the same live TV channel."
 msgstr "Skonfiguruj, czy do nagrań ma zostać przydzielony inny tuner z listy preferowanych, zamiast udostępniać tuner, który jest już aktywny i odbiera ten sam kanał telewizyjny na żywo."
-
-msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Skonfiguruj, czy ścieżki dźwiękowe wielokanałowe mają być miksowane do wersji stereo."
 
 msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (like in EPGrefresh)."
 msgstr "Skonfiguruj, czy symbol „nagrywania” (w skórce wyświetlacza i skórce wyświetlacza LCD) ma być widoczny tylko dla rzeczywistych nagrań, czy także dla nagrań strumieniowych i pseudo (np. EPGrefresh)."
@@ -5871,7 +5838,7 @@ msgid "Default volume offset"
 msgstr "Domyślne przesunięcie głośności"
 
 msgid "Default wake-up is 5 minutes prior to timer start to wake up from Deep Standby. Adjust if the wake-up is too early or late, e.g., for network drives."
-msgstr "Domyślnie wybudzanie następuje 5 minut przed przejściem w tryb wyłączenia. Dostosuj, jeśli wybudzanie jest zbyt wczesne lub zbyt późne, np. w przypadku dysków sieciowych."
+msgstr "Domyślnie wybudzanie następuje 5 minut przed rozpoczęciem wybudzania z trybu wyłączenia. Dostosuj czas wybudzania, jeśli jest on zbyt wczesny lub zbyt późny, np. w przypadku dysków sieciowych."
 
 #, python-format
 msgid "Default: '%s'."
@@ -7129,7 +7096,7 @@ msgstr "Włącz 5V dla aktywnej anteny"
 msgid "Enable Autorecord"
 msgstr "Włącz nagrywanie automatyczne"
 
-msgid "Enable BT Audio"
+msgid "Enable BT audio"
 msgstr "Włącz dźwięk Bluetooth"
 
 msgid "Enable Bouquet Edit"
@@ -7201,10 +7168,10 @@ msgstr "Uruchom plik swap przy starcie"
 msgid "Enable VPS"
 msgstr "Włącz VPS"
 
-msgid "Enable VPS by default (new timers)"
+msgid "Select 'Yes' to set the VPS flag on all new timers by default."
 msgstr "Włącz VPS domyślnie (nowe timery)"
 
-msgid "Enable VPS on instant records"
+msgid "VPS on instant recordings"
 msgstr "Włącz VPS na natychmiastowych nagraniach"
 
 msgid "Enable VPS-Plugin"
@@ -7536,7 +7503,7 @@ msgid "Enter text via an attached keyboard"
 msgstr "Wpisz tekst za pomocą dołączonej klawiatury"
 
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
-msgstr "Wprowadź ID sieci ZeroTier (16 znaków)."
+msgstr "Wprowadź ID sieci ZeroTier. Identyfikator powinien mieć dokładnie 16 znaków."
 
 msgid "Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space."
 msgstr "Wprowadź czas, jaki ma zostać dodany do bufora strumieniowego po wystąpieniu błędu strumieniowania. Ten dodatkowy bufor może pomóc uniknąć dalszych problemów ze strumieniowaniem spowodowanych brakiem miejsca w buforze."
@@ -8913,7 +8880,7 @@ msgstr "Ogólne"
 msgid "General AC3 delay"
 msgstr "Ogólne opóźnienie AC3"
 
-msgid "General BT Audio delay"
+msgid "General BT audio delay"
 msgstr "Ogólne opóźnienie dźwięku Bluetooth"
 
 msgid "General PCM delay"
@@ -9246,9 +9213,6 @@ msgstr "Awaria obsługi Pythona"
 
 msgid "Handle Standby from TV"
 msgstr "Obsługa trybu czuwania z telewizora"
-
-msgid "Handle input from TV"
-msgstr "Obsługa danych wejściowych z telewizora"
 
 msgid "Handle wake up from TV"
 msgstr "Obsługuje komendę 'budzenia' z TV"
@@ -9717,13 +9681,13 @@ msgstr "Jeśli 'nigdy', mimo to zapisze dziennik awarii dla pierwszej awarii."
 msgid "If EPG available"
 msgstr "Jeśli EPG jest dostępne"
 
-msgid "If a programme is interrupted and divided into separate events, the plugin will search for the connected events."
+msgid "If an event is interrupted and divided into separate recordings, this feature will search for alternate broadcasts of the same event."
 msgstr "Jeżeli program zostanie przerwany i podzielony na osobne zdarzenia, wtyczka wyszuka powiązane zdarzenia."
 
 msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr "Jeśli akcja jest konfigurowalna przez użytkownika, jej wpis pomocy zostanie oznaczony sufiksem „(C)”."
 
-msgid "If enabled and necessary, the plugin will wake up the receiver from deep standby for the defined starting time to control whether the programme begins earlier."
+msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr "Jeżeli jest włączona i zachodzi taka potrzeba, wtyczka wybudzi odbiornik z trybu wyłączenia na określony czas rozpoczęcia, aby kontrolować, czy program rozpocznie się wcześniej."
 
 msgid "If enabled the output resolution of the receiver will try to match the resolution of the video contents resolution."
@@ -9747,7 +9711,7 @@ msgstr "Jeśli włączone, nowy silnik odtwarzania GStreamer zostanie wykorzysta
 msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr "Jeśli zostanie przekroczona przestrzeń maksymalna,najstarsze zostaną usunięte."
 
-msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
+msgid "Set a time offset before a timer is due to start to allow VPS to scan for the latest event timing. Select '0' to disable this feature."
 msgstr "Jeśli to możliwe, x minut przed uruchomieniem timera Wtyczka VPS będzie kontrolować, czy program rozpocznie się wcześniej. (0 wyłącza funkcję)"
 
 msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
@@ -10685,7 +10649,7 @@ msgid "Latin"
 msgstr "Łacina"
 
 msgid "Latitude"
-msgstr "Szerokość"
+msgstr "Szerokość geograficzna"
 
 msgid "Latvia"
 msgstr "Łotwa"
@@ -12202,17 +12166,11 @@ msgstr "Menu sieciowe"
 msgid "Network mounts"
 msgstr "Montowanie Sieci"
 
-msgid "Network name"
-msgstr "Nazwa sieci"
-
 msgid "Network name (SSID)"
 msgstr "Nazwa sieci (SSID)"
 
 msgid "Network scan"
 msgstr "Skanowanie sieci"
-
-msgid "Network status"
-msgstr "Status sieci"
 
 msgid "Network storage on"
 msgstr "Pamięć sieciowa na"
@@ -12638,16 +12596,16 @@ msgid "Norfolk Island"
 msgstr "Norfolk"
 
 msgid "Normal"
-msgstr "normalny"
+msgstr "Normalny"
 
 msgid "Normal - Standard image"
-msgstr "Normalny - system standardowy"
+msgstr "Normalny - System standardowy"
 
 msgid "Normal No ScaleUp"
 msgstr "Normalny bez skalowania"
 
 msgid "Normal: No boot modes required."
-msgstr "Normalny: nie są wymagane żadne tryby rozruchu."
+msgstr "Normalny: Nie są wymagane żadne tryby rozruchu."
 
 msgid "North"
 msgstr "Północ"
@@ -12767,6 +12725,9 @@ msgstr "Numer i pikon"
 
 msgid "Number of IP Addresses"
 msgstr "Liczba adresów IP"
+
+msgid "Number of Slots"
+msgstr "Liczba slotów"
 
 msgid "Number of digits in service number"
 msgstr "Liczba cyfr w numerze kanału"
@@ -14406,6 +14367,9 @@ msgstr "Przetwórz akcję CZERWONEGO przycisku"
 msgid "Process YELLOW button action"
 msgstr "Przetwórz akcję ŻÓŁTEGO przycisku"
 
+msgid "Process action from TV"
+msgstr "Akcja procesu z TV"
+
 msgid "Processing"
 msgstr "Przetwarzanie"
 
@@ -14969,8 +14933,8 @@ msgstr "Odśwież"
 msgid "Refresh ZeroTier status information"
 msgstr "Odśwież informacje o statusie ZeroTier"
 
-msgid "Refresh every x hours"
-msgstr "Odśwież co (w godz.)"
+msgid "Refresh every"
+msgstr "Odśwież co"
 
 msgid "Refresh rate"
 msgstr "Częstotliwość odświeżania"
@@ -15411,6 +15375,9 @@ msgstr "Uruchom ponownie sieć z obecną konfiguracją"
 msgid "Restart test"
 msgstr "Uruchom ponownie test"
 
+msgid "Restart your network connection and interfaces."
+msgstr "Uruchom ponownie połączenie z siecią i interfejsy."
+
 msgid "Restarting..."
 msgstr "Restartuje..."
 
@@ -15587,7 +15554,7 @@ msgid "Root directory"
 msgstr "Katalog root"
 
 msgid "Root file"
-msgstr "Plik Root"
+msgstr "Plik root"
 
 msgid "Rose"
 msgstr "róża"
@@ -15865,8 +15832,8 @@ msgstr "Zapisz i zatrzymaj"
 msgid "Save directory on EXIT"
 msgstr "zapisz ostatni katalog przy wyjściu"
 
-msgid "Save every x hours"
-msgstr "Zapisz co (w godzinach)"
+msgid "Save every"
+msgstr "Zapisz co"
 
 #, python-format
 msgid "Save image as '%s'"
@@ -16147,7 +16114,7 @@ msgstr "Aktywacja paska postępu"
 msgid "SeekBar sensibility"
 msgstr "Czułość paska postępu"
 
-msgid "Seeking connected events"
+msgid "Find connected events"
 msgstr "Wyszukiwanie powiązanych wydarzeń"
 
 msgid "Select"
@@ -17030,6 +16997,9 @@ msgstr "Wybierz poprzednią usługę, zamknij skaner i wyjdź ze wszystkich menu
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Wybierz protokół używany przez urządzenie SCR. Dostępne opcje to „SCR Unicable” (Unicable) lub „SCR JESS” (JESS, znany również jako Unicable II)."
 
+msgid "Select the receiver action when the TV switches away from the receiver input."
+msgstr "Wybierz akcję odbiornika, która ma zostać wykonana, gdy telewizor przełączy się z wejścia odbiornika."
+
 msgid "Select the refresh rate to be used on the TV."
 msgstr "Wybierz częstotliwość odświeżania dla TV."
 
@@ -17207,8 +17177,38 @@ msgstr "Wybierz, co chcesz aktywować przyciskiem W górę/W dół."
 msgid "Select where the recording should be saved."
 msgstr "Wybierz miejsce, w którym ma być zapisane nagranie."
 
+msgid "Select whether AAC audio tracks should be transcoded."
+msgstr "Wybierz, czy ścieżki dźwiękowe AAC mają być transkodowane."
+
+msgid "Select whether AC3 Plus audio tracks should be transcoded to AC3."
+msgstr "Wybierz, czy ścieżki dźwiękowe AC3 Plus mają zostać przekodowane do AC3."
+
+msgid "Select whether AC3 audio tracks should be downmixed to stereo."
+msgstr "Wybierz, czy ścieżki dźwiękowe AC3 mają zostać zmiksowane do wersji stereo."
+
+msgid "Select whether DTS channel audio tracks should be downmixed or transcoded."
+msgstr "Wybierz, czy ścieżki dźwiękowe kanału DTS mają być miksowane w dół lub transkodowane."
+
+msgid "Select whether DTS channel audio tracks should be downmixed to stereo."
+msgstr "Wybierz, czy ścieżki dźwiękowe kanału DTS mają być miksowane do wersji stereo."
+
 msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
 msgstr "Wybierz, czy chcesz używać protokołu IPv4, IPv6, czy obu. Jeśli oba są włączone, wybierz, który protokół ma być preferowany."
+
+msgid "Select whether WMA Pro channel audio tracks should be downmixed or transcoded."
+msgstr "Wybierz, czy ścieżki dźwiękowe kanałów WMA Pro mają być miksowane w dół lub transkodowane."
+
+msgid "Select whether multichannel audio tracks should be converted to PCM or SPDIF."
+msgstr "Wybierz, czy wielokanałowe ścieżki dźwiękowe mają być konwertowane na PCM czy SPDIF."
+
+msgid "Select whether multichannel audio tracks should be downmixed to stereo."
+msgstr "Wybierz, czy ścieżki dźwiękowe wielokanałowe mają zostać zmiksowane do wersji stereo."
+
+msgid "Select whether multichannel audio tracks should be output as PCM."
+msgstr "Wybierz, czy ścieżki dźwiękowe wielokanałowe mają być odtwarzane jako PCM."
+
+msgid "Select whether or not to show an icon when a motorized dish is moving."
+msgstr "Wybierz, czy ikona ma być wyświetlana, gdy antena satelitarna jest w ruchu."
 
 msgid "Select wireless network"
 msgstr "Wybierz sieć bezprzewodową"
@@ -17658,7 +17658,7 @@ msgstr "Ustaw czas ukrycia paska informacyjnego."
 msgid "Set the time to wait for execute the default action in shutdown, standby or restart messages, e.g. used in RecordTimer, Scheduler, SleepTimer etc."
 msgstr "Ustaw czas oczekiwania na wykonanie domyślnej akcji w komunikatach o wyłączeniu, przejściu w tryb czuwania lub ponownym uruchomieniu, np. używanych w RecordTimer, Scheduler, SleepTimer itp."
 
-msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at 0,0 and the bottom right is at 1260,700. Note that the position is the top left of the spinner and not the centre of the spinner."
+msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at (0,0) and the bottom right is at (1260,700). Note that the position is the top left of the spinner and not the centre of the spinner."
 msgstr "Ustaw położenie lewego górnego rogu zajętego spinnera. Współrzędne są skalowane w taki sposób, że lewy górny róg to (0,0), a dolny prawy to (1260,700). Należy pamiętać, że położenie to lewy górny róg pokrętła, a nie środek spinnera."
 
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -17696,8 +17696,8 @@ msgstr "Ustaw opcję „Tak”, aby sortować listy odtwarzania alfabetycznie."
 msgid "Set time options"
 msgstr "Ustaw opcje czasu"
 
-msgid "Set to 'Disabled' to replace underscore characters '_' in file and directory names with spaces."
-msgstr "Jeśli ta opcja jest wyłączona, znaki podkreślenia w nazwach plików i katalogów nie są wyświetlane i są zastępowane spacjami."
+msgid "Set to 'Disabled' to replace underscore characters, '_', in file and directory names with spaces."
+msgstr "Ustaw na 'Wyłączone', aby zastąpić znaki podkreślenia '_' w nazwach plików i katalogów spacjami."
 
 msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby before shutting down."
 msgstr "Ustaw na „Włączone”, aby odszyfrować zakodowane nagrania w kolejce w trybie czuwania przed wyłączeniem."
@@ -17706,7 +17706,7 @@ msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby."
 msgstr "Ustaw na „Włączone”, aby odszyfrować zakodowane nagrania w kolejce w trybie czuwania."
 
 msgid "Set to 'Yes' to enable sending the same TV commands for Deep Standby as for regular Standby."
-msgstr "Jeżeli zostanie wybrana opcja „Tak”, do telewizora w przypadku przejścia w tryb wyłączenia będą wysyłane te same polecenia, co w przypadku zwykłego trybu czuwania."
+msgstr "Ustaw na 'Tak', aby umożliwić wysyłanie tych samych poleceń telewizora dla trybu wyłączenia, co dla zwykłego trybu czuwania."
 
 msgid "Set to 'Yes', to enable automatic recording of the background time shift buffer."
 msgstr "Jeżeli ustawione na 'tak', włączy nagrywanie automatycznie w tle z timeshiftem."
@@ -18055,8 +18055,8 @@ msgstr "Pokaż rozdzielczość HDMI"
 msgid "Show InfoBar"
 msgstr "Pokaż pasek informacyjny"
 
-msgid "Show InfoBar lite *"
-msgstr "Pokaż okrojony pasek informacyjny *"
+msgid "Show InfoBar lite"
+msgstr "Pokaż okrojony pasek informacyjny "
 
 msgid "Show InfoBar on channel change"
 msgstr "Pokaż pasek informacyjny podczas zmiany kanału"
@@ -18564,9 +18564,6 @@ msgstr "Pokaż wybór subserwisów"
 msgid "Show subservices"
 msgstr "Pokaż subserwisy"
 
-msgid "Show subservices *"
-msgstr "Pokaż subserwisy *"
-
 msgid "Show subservices of the active service"
 msgstr "Pokaż subserwisy aktywnej usługi"
 
@@ -18622,7 +18619,7 @@ msgid "Show two lines per entry"
 msgstr "Pokaż dwie linie na liście kanałów"
 
 msgid "Show underscore characters"
-msgstr "Pokaż znaki podkreślenia w nazwach plików"
+msgstr "Pokaż znaki podkreślenia"
 
 msgid "Show unknown Videoresolution as next higher or as highest screen resolution."
 msgstr "Pokaż nieznaną rozdzielczość wideo jako następną wyższą lub najwyższą rozdzielczość ekranu."
@@ -19591,7 +19588,7 @@ msgid "Stopping Softcam"
 msgstr "Zatrzymywanie softcam"
 
 msgid "Stops time shift being used if a recording is in progress. This is advisable for USB sticks."
-msgstr "Zatrzymaj timeshift jeśli nagrywanie jest w toku. (Zalecane dla pamięci USB)."
+msgstr "Zatrzymuje użycie funkcji timeshift podczas nagrywania. Jest to zalecane w przypadku pamięci USB."
 
 msgid "Storage / Disk Information"
 msgstr "Informacje o pamięci masowej / dyskach"
@@ -20265,11 +20262,11 @@ msgstr "%s %s ma ograniczoną pojemność pamięci. Plik wymiany jest wymagany d
 msgid "The %s %s is shutting down. Please wait..."
 msgstr "%s %s jest wyłączany. Proszę czekać..."
 
-msgid "The %s %s reads the stored EPG data every x hours."
-msgstr "%s %s odczytuje zapisane dane EPG co (godz.)."
+msgid "The %s %s reads the stored EPG data every selected number of hours."
+msgstr "%s %s odczytuje zapisane dane EPG co wybraną liczbę godzin."
 
-msgid "The %s %s stores the EPG data every x hours."
-msgstr "%s %s przechowuje dane EPG co (godz.)."
+msgid "The %s %s stores the EPG data every selected number of hours."
+msgstr "%s %s zapisuje dane EPG co wybraną liczbę godzin."
 
 #, python-format
 msgid "The %s %s will reboot within 1 seconds."
@@ -20680,9 +20677,6 @@ msgstr "Ten %s %s nie może zdekodować %s strumienia!"
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "Nosnik DVD RW zawiera dane- jego sformatowanie spowoduje utrate danych na nosniku."
 
-msgid "This Option allows you to switch Audio to BT Speakers."
-msgstr "Ta opcja umożliwia przełączenie dźwięku na głośniki Bluetooth."
-
 msgid "This allows you to change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
 msgstr "Pozwala to zmienić rozmiar czcionki w zależności od rozmiaru skóry, więc 1 zwiększa rozmiar o 1 punkt, a -1 zmniejsza rozmiar o 1 punkt."
 
@@ -20714,7 +20708,7 @@ msgid "This is the currently selected locale.  [%s]"
 msgstr "To jest obecnie wybrany region. [%s]"
 
 msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
-msgstr "Jest to początkowe / domyślne przesunięcie woluminu zastosowane do wszystkich usług dodanych do listy regulacji głośności."
+msgstr "Jest to początkowe/domyślne przesunięcie głośności stosowane do wszystkich kanałów dodanych do listy regulacji głośności."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Jest to kolejność wysyłania poleceń DiSEqC do systemu antenowego. Kolejność musi dokładnie odpowiadać kolejności, w jakiej urządzenia fizyczne są ułożone wzdłuż kabla sygnałowego (zaczynając od końca odbiornika)."
@@ -20848,8 +20842,14 @@ msgstr "Ta opcja umożliwia włączenie dźwięku przestrzennego 3D."
 msgid "This option allows you to set offset values for different Letterbox resolutions."
 msgstr "Ta opcja umożliwia ustawienie wartości przesunięcia dla różnych rozdzielczości Letterbox."
 
+msgid "This option allows you to set the Auto Volume Level output."
+msgstr "Opcja ta umożliwia ustawienie automatycznego poziomu głośności."
+
 msgid "This option allows you to set the layout view (Text or Graphics)."
 msgstr "Ta opcja pozwala ustawić widok układu (tekst lub grafika)."
+
+msgid "This option allows you to switch Audio to Bluetooth speakers."
+msgstr "Ta opcja umożliwia przełączenie dźwięku na głośniki Bluetooth."
 
 msgid "This option allows you to the SNR as a percentage (not all receivers support this)."
 msgstr "Ta opcja pozwala SNR pokazać jako procentowe (nie wszystkie odbiorniki mają wsparcie )."
@@ -20860,14 +20860,8 @@ msgstr "Ta opcja pozwala na korzystanie ze wszystkich trybów HDMI"
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Ta opcja pozwala Ci zobaczyć stare i nowe ustawienia obok siebie."
 
-msgid "This option configures the general audio delay for BT Speakers."
+msgid "This option configures the audio delay value for Bluetooth speakers."
 msgstr "Ta opcja konfiguruje ogólne opóźnienie dźwięku dla głośników Bluetooth."
-
-msgid "This option configures the general audio delay of Dolby Digital sound tracks."
-msgstr "Opcja ta konfiguruje ogólne opóźnienie dźwięku w ścieżkach dźwiękowych Dolby Digital."
-
-msgid "This option configures the general audio delay of stereo sound tracks."
-msgstr "Opcja ta konfiguruje ogólne opóźnienie dźwięku w ścieżkach dźwiękowych stereo."
 
 msgid "This option configures the picture sharpness."
 msgstr "Ta opcja ustawia ostrość obrazu."
@@ -20877,9 +20871,6 @@ msgstr "Ta opcja konfiguruje rozdzielczość ekranu w trybie wyjścia PC."
 
 msgid "This option configures the video output mode (or resolution)."
 msgstr "Ta opcja konfiguruje tryb wyjścia wideo (lub rozdzielczości)."
-
-msgid "This option configures you can set Auto Volume Level."
-msgstr "Ta opcja konfiguruje poziom głośności w trybie auto."
 
 msgid "This option lets you adjust the 3D depth of the OSD."
 msgstr "Ta opcja umożliwia dostosowanie głębi 3D menu OSD."
@@ -20895,6 +20886,12 @@ msgstr "Ta opcja umożliwia wyświetlenie opcji menu OSD 3D na ekranie Menu rozs
 
 msgid "This option moves the PVR status display from a separate window into the MoviePlayer InfoBar."
 msgstr "Opcja przesuwa stan PVR z oddzielnego okna na pasek informacyjny Odtwarzacza filmów."
+
+msgid "This option selects the general audio delay of Dolby Digital sound tracks."
+msgstr "Opcja ta konfiguruje ogólne opóźnienie dźwięku w ścieżkach dźwiękowych Dolby Digital."
+
+msgid "This option selects the general audio delay of stereo sound tracks."
+msgstr "Opcja ta konfiguruje ogólne opóźnienie dźwięku w ścieżkach dźwiękowych stereo."
 
 msgid "This option set the level of suppression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "Ta opcja ustawia poziom tłumienia szumów (Szumy są losowo wygładzane w wyniku silnej kompresji). Oczywiście odbywa się to kosztem szczegółów obrazu."
@@ -20938,7 +20935,7 @@ msgstr "Opcja ustawia kontrast wideo."
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr "Ta opcja ustawia ostrość obrazu, używana gdy obraz jest powiększony."
 
-msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
+msgid "Select 'Yes' to allow the VPS to adjust recording timers based on broadcast Program Delivery Control (PDC) data. For this to work the service must provide reliable event PDC data."
 msgstr "Ta wtyczka może określić, czy program zaczyna się wcześniej lub trwa dłużej. Kanał musi dostarczyć wiarygodne dane."
 
 msgid "This service is protected by a parental control PIN!"
@@ -22252,6 +22249,9 @@ msgstr "Użyj bieżącego wyboru i wyjdź"
 msgid "Use the extended List"
 msgstr "Użyj rozszerzonej listy"
 
+msgid "Use the network wizard to configure your Network."
+msgstr "Użyj kreatora sieci, aby skonfigurować swoją Sieć."
+
 msgid "Use the wizard to set up basic features"
 msgstr "Użyj kreatora aby ustawić podstawowe funkcje"
 
@@ -22782,7 +22782,7 @@ msgstr "Wybudzenie"
 msgid "Wake up TV from Standby"
 msgstr "Wybudzaj TV ze stanu czuwania"
 
-msgid "Wake up from Deep-Standby is allowed"
+msgid "Wake from Shutdown allowed"
 msgstr "Wybudzenie z trybu wyłączenia jest dozwolone"
 
 msgid "Wake up time before a timer begins"
@@ -23143,7 +23143,7 @@ msgstr "Gdy czerwone pole będzie już prawidłowo widoczne, naciśnij ZIELONY p
 msgid "When tuned to a service, the system normally scans the transponder for changes and saves them. Enable only if you know what you're doing."
 msgstr "Gdy nastawiony na kanał będzie normalnie skanować zmiany na transponderze i zapisze je. Tylko ustawiony na 'tak', jeśli jesteś absolutnie pewien, co robisz."
 
-msgid "When yes, VPS will be enabled on instant records (stop after current event), if the channel supports VPS."
+msgid "Select 'Yes' to use PDC data, if available on the current service, to accurately stop the instant recording at the end of the event."
 msgstr "Jeśli tak, VPS będzie włączony na nagraniach natychmiastowych (zatrzymanie po bieżącym zdarzeniu), jeśli kanał obsługuje VPS."
 
 msgid "Where do you want to backup your settings?"
@@ -23727,14 +23727,11 @@ msgstr "Przełącz+Następne nagranie"
 msgid "ZeroTier Actions"
 msgstr "Akcje ZeroTier"
 
-msgid "ZeroTier version"
-msgstr "Wersja ZeroTier"
+msgid "ZeroTier Settings"
+msgstr "Ustawienia ZeroTier"
 
 msgid "ZeroTier-One"
 msgstr "ZeroTier-One"
-
-msgid "ZeroTier Settings"
-msgstr "Ustawienia Zerotier"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7 old Model"
 msgstr "Zgemma H.S/H.2S/H.2H/H5/H7 stary Model"
@@ -24392,6 +24389,21 @@ msgstr "tak (zachować feed'y)"
 msgid "®"
 msgstr "®"
 
+#~ msgid "Configure whether multichannel audio tracks should be downmixed to stereo."
+#~ msgstr "Skonfiguruj, czy ścieżki dźwiękowe wielokanałowe mają być miksowane do wersji stereo."
+
+#~ msgid "Show subservices *"
+#~ msgstr "Pokaż subserwisy *"
+
+#~ msgid "Network name"
+#~ msgstr "Nazwa sieci"
+
+#~ msgid "Network status"
+#~ msgstr "Status sieci"
+
+#~ msgid "ZeroTier version"
+#~ msgstr "Wersja ZeroTier"
+
 #~ msgid "* Only available if more than one interface is active."
 #~ msgstr "* Dostępne tylko wtedy gdy więcej niż jeden interfejs jest aktywny."
 
@@ -24428,9 +24440,6 @@ msgstr "®"
 #~ msgid "Press yellow to set this interface as the default interface."
 #~ msgstr "Naciśnij żółty, aby ustawić ten interfejs jako domyślny."
 
-#~ msgid "Restart your network connection and interfaces."
-#~ msgstr "Uruchom ponownie połączenie z siecią i interfejsy."
-
 #~ msgid "Set interface as the default Interface"
 #~ msgstr "Ustaw interfejs jako domyślny"
 
@@ -24447,9 +24456,6 @@ msgstr "®"
 
 #~ msgid "Use the network wizard to configure selected network adapter"
 #~ msgstr "Użyj kreatora sieci do skonfigurowania wybranego interfejsu"
-
-#~ msgid "Use the network wizard to configure your Network."
-#~ msgstr "Użyj kreatora sieci, aby skonfigurować swoją Sieć."
 
 #~ msgid "white"
 #~ msgstr "Biały"

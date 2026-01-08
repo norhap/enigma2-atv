@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-02 18:38+0000\n"
+"POT-Creation-Date: 2026-01-08 09:08+0000\n"
 "PO-Revision-Date: 2021-11-04 23:53+0000\n"
 "Last-Translator: T. Rylle <dk-translation@pm.me>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/da/>\n"
@@ -3976,7 +3976,7 @@ msgstr "Kontroller"
 msgid "Check for PDC"
 msgstr ""
 
-msgid "Check for PDC availability on each service"
+msgid "Check for PDC availability on each service."
 msgstr ""
 
 msgid "Check power and input state from TV"
@@ -4131,36 +4131,6 @@ msgstr "Vælg hvad du vil have '0' knappen til at gøre når PiP er aktiv."
 
 msgid "Choose where to mount your devices to:"
 msgstr "Vælg hvor dine enheder mountes til:"
-
-msgid "Choose whether AAC sound tracks should be transcoded."
-msgstr "Vælg om AAC lydspor skal omkodes eller ikke."
-
-msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
-msgstr "Vælg om AC3 Plus lydspor skal omkodes til AC3 eller ikke."
-
-msgid "Choose whether AC3 sound tracks should be downmixed to stereo."
-msgstr "Vælg om AC3 lydspor skal downmixes til stereo eller ikke."
-
-msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
-msgstr "Væg om DTS kanal lydspor skal downmixes eller det skal omkodes."
-
-msgid "Choose whether DTS channel sound tracks should be downmixed to stereo."
-msgstr "Vælg om DTS kanal lydspor skal downmixes til stereo eller ikke."
-
-msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
-msgstr "Vælg om WMA Pro kanal lydspor skal downmixes eller om det skal omkodes."
-
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Vælg om flerkanals lydspor skal konverteres til PCM eller SPDIF."
-
-msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Vælg om flerkanals lydspor skal downmixes til stereo."
-
-msgid "Choose whether multi channel sound tracks should be output as PCM."
-msgstr "Vælg om flerkanals lydspor skal sendes ud som PCM."
-
-msgid "Choose whether or not to show an icon when a motorized dish is moving."
-msgstr "Vælg om der sakl vises et ikon når en motoriseret skål bevæger sig."
 
 msgid "Choose which level of menu/setting's to display. 'Expert'-level shows all items."
 msgstr "Vælg på hvilket niveau menu/indstillinger skal vises. Niveauet 'Ekspert' viser alle elementer."
@@ -4829,9 +4799,6 @@ msgstr "Konfigurer om der skal bruges fast eller skalerbar TrueType skrifttype i
 
 msgid "Configure whether another tuner from the preferred list is allocated for recordings instead of sharing a tuner that is already active receiving the same live TV channel."
 msgstr "Konfigurer om en anden Tuner fra listen af foretrukne tildeles til optagelser i stedet for at dele en Tuner, der allerede aktiv modtagere den samme Live TV kanal."
-
-msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Konfigurer om flerkanals lydspor skal downmixes til stereo."
 
 msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (like in EPGrefresh)."
 msgstr "Konfigurer om 'optager' symbolet (i skærm-Tema og LCD-Tema) kun er synlig for ægte optagelser eller også ved streaming og pseudo-optagelser (f.eks. EPG opfriskning)."
@@ -7071,7 +7038,7 @@ msgstr "Aktiver 5V til aktiv antenne"
 msgid "Enable Autorecord"
 msgstr "Aktiver Autooptag"
 
-msgid "Enable BT Audio"
+msgid "Enable BT audio"
 msgstr "Aktiver BT Lyd"
 
 msgid "Enable Bouquet Edit"
@@ -7143,10 +7110,10 @@ msgstr "Aktiver swap ved opstart"
 msgid "Enable VPS"
 msgstr ""
 
-msgid "Enable VPS by default (new timers)"
+msgid "Select 'Yes' to set the VPS flag on all new timers by default."
 msgstr ""
 
-msgid "Enable VPS on instant records"
+msgid "VPS on instant recordings"
 msgstr ""
 
 msgid "Enable VPS-Plugin"
@@ -8861,7 +8828,7 @@ msgstr "Generel"
 msgid "General AC3 delay"
 msgstr "Generel AC3 forsinkelse"
 
-msgid "General BT Audio delay"
+msgid "General BT audio delay"
 msgstr "Generel BT lydforsinkelse"
 
 msgid "General PCM delay"
@@ -9194,9 +9161,6 @@ msgstr "Håndter Python nedbrud"
 
 msgid "Handle Standby from TV"
 msgstr "Håndter Standby fra TV"
-
-msgid "Handle input from TV"
-msgstr "Håndter inddata fra TV"
 
 msgid "Handle wake up from TV"
 msgstr "Håndter vågn op fra TV"
@@ -9669,13 +9633,13 @@ msgstr "Hvis 'Aldrig', skrives en nedbrudslog uanset dette ved første nedbrud."
 msgid "If EPG available"
 msgstr ""
 
-msgid "If a programme is interrupted and divided into separate events, the plugin will search for the connected events."
+msgid "If an event is interrupted and divided into separate recordings, this feature will search for alternate broadcasts of the same event."
 msgstr ""
 
 msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr "Hvis en handling er bruger-konfigurerbar, markeres dens hjælpepost med en '(C)' endelse."
 
-msgid "If enabled and necessary, the plugin will wake up the receiver from deep standby for the defined starting time to control whether the programme begins earlier."
+msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr ""
 
 msgid "If enabled the output resolution of the receiver will try to match the resolution of the video contents resolution."
@@ -9699,7 +9663,7 @@ msgstr ""
 msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr "Hvis logge bruger den maksimale tilladte plads, vil den ældste blive slettet."
 
-msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
+msgid "Set a time offset before a timer is due to start to allow VPS to scan for the latest event timing. Select '0' to disable this feature."
 msgstr ""
 
 msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
@@ -12204,17 +12168,11 @@ msgstr "Netværksmenu"
 msgid "Network mounts"
 msgstr "Netværks-monunts"
 
-msgid "Network name"
-msgstr ""
-
 msgid "Network name (SSID)"
 msgstr "Netværksnavn (SSID)"
 
 msgid "Network scan"
 msgstr "Netværkssøgning"
-
-msgid "Network status"
-msgstr ""
 
 msgid "Network storage on"
 msgstr ""
@@ -12770,6 +12728,9 @@ msgid "Number and picon"
 msgstr ""
 
 msgid "Number of IP Addresses"
+msgstr ""
+
+msgid "Number of Slots"
 msgstr ""
 
 msgid "Number of digits in service number"
@@ -14431,6 +14392,9 @@ msgstr ""
 msgid "Process YELLOW button action"
 msgstr ""
 
+msgid "Process action from TV"
+msgstr "Håndter inddata fra TV"
+
 msgid "Processing"
 msgstr ""
 
@@ -14996,7 +14960,7 @@ msgstr ""
 msgid "Refresh ZeroTier status information"
 msgstr ""
 
-msgid "Refresh every x hours"
+msgid "Refresh every"
 msgstr "Opfrisk hver (i timer)"
 
 msgid "Refresh rate"
@@ -15436,6 +15400,9 @@ msgstr "Genstart også netværk med nuværende opsætning"
 
 msgid "Restart test"
 msgstr "Genstart Test"
+
+msgid "Restart your network connection and interfaces."
+msgstr "Genstart din netværksopkobling og grænseflade."
 
 msgid "Restarting..."
 msgstr ""
@@ -15898,7 +15865,7 @@ msgstr "Gem og Stop"
 msgid "Save directory on EXIT"
 msgstr "Gem sidste mappe ved afslutning"
 
-msgid "Save every x hours"
+msgid "Save every"
 msgstr "Gem hver (i timer)"
 
 #, python-format
@@ -16179,7 +16146,7 @@ msgstr "Søgebjælke aktivering"
 msgid "SeekBar sensibility"
 msgstr "Søgebjælke følsomhed"
 
-msgid "Seeking connected events"
+msgid "Find connected events"
 msgstr ""
 
 msgid "Select"
@@ -17060,6 +17027,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Vælg den protokol der bruges af din SRC enhed. Mulighederne er 'SCR Unicable' (Unicable), eller 'SCR JESS' (JESS, også kendt som Unicable II)."
 
+msgid "Select the receiver action when the TV switches away from the receiver input."
+msgstr ""
+
 msgid "Select the refresh rate to be used on the TV."
 msgstr ""
 
@@ -17236,8 +17206,38 @@ msgstr "Vælg hvad du ønsker at Op/Ned knappen skal aktivere:"
 msgid "Select where the recording should be saved."
 msgstr ""
 
+msgid "Select whether AAC audio tracks should be transcoded."
+msgstr "Vælg om AAC lydspor skal omkodes eller ikke."
+
+msgid "Select whether AC3 Plus audio tracks should be transcoded to AC3."
+msgstr "Vælg om AC3 Plus lydspor skal omkodes til AC3 eller ikke."
+
+msgid "Select whether AC3 audio tracks should be downmixed to stereo."
+msgstr "Vælg om AC3 lydspor skal downmixes til stereo eller ikke."
+
+msgid "Select whether DTS channel audio tracks should be downmixed or transcoded."
+msgstr "Væg om DTS kanal lydspor skal downmixes eller det skal omkodes."
+
+msgid "Select whether DTS channel audio tracks should be downmixed to stereo."
+msgstr "Vælg om DTS kanal lydspor skal downmixes til stereo eller ikke."
+
 msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
 msgstr ""
+
+msgid "Select whether WMA Pro channel audio tracks should be downmixed or transcoded."
+msgstr "Vælg om WMA Pro kanal lydspor skal downmixes eller om det skal omkodes."
+
+msgid "Select whether multichannel audio tracks should be converted to PCM or SPDIF."
+msgstr "Vælg om flerkanals lydspor skal konverteres til PCM eller SPDIF."
+
+msgid "Select whether multichannel audio tracks should be downmixed to stereo."
+msgstr "Vælg om flerkanals lydspor skal downmixes til stereo."
+
+msgid "Select whether multichannel audio tracks should be output as PCM."
+msgstr "Vælg om flerkanals lydspor skal sendes ud som PCM."
+
+msgid "Select whether or not to show an icon when a motorized dish is moving."
+msgstr "Vælg om der sakl vises et ikon når en motoriseret skål bevæger sig."
 
 msgid "Select wireless network"
 msgstr "Vælg trådløst netværk"
@@ -17686,7 +17686,7 @@ msgstr "Sæt tiden indtil infobjælken skjules."
 msgid "Set the time to wait for execute the default action in shutdown, standby or restart messages, e.g. used in RecordTimer, Scheduler, SleepTimer etc."
 msgstr "Sæt tiden der ventes før udførelse af standardhandling i nedluknings-, Standby- eller genstartsbeskeder (bruges f.eks i Timer, StrømTimer, DvaleTimer, ...)"
 
-msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at 0,0 and the bottom right is at 1260,700. Note that the position is the top left of the spinner and not the centre of the spinner."
+msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at (0,0) and the bottom right is at (1260,700). Note that the position is the top left of the spinner and not the centre of the spinner."
 msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -17724,7 +17724,7 @@ msgstr ""
 msgid "Set time options"
 msgstr ""
 
-msgid "Set to 'Disabled' to replace underscore characters '_' in file and directory names with spaces."
+msgid "Set to 'Disabled' to replace underscore characters, '_', in file and directory names with spaces."
 msgstr ""
 
 msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby before shutting down."
@@ -18080,7 +18080,7 @@ msgstr "Vis HDMI udgangsopløsning"
 msgid "Show InfoBar"
 msgstr "Vis Infobjælke"
 
-msgid "Show InfoBar lite *"
+msgid "Show InfoBar lite"
 msgstr "Vis enkel Infobjælke *"
 
 msgid "Show InfoBar on channel change"
@@ -18592,9 +18592,6 @@ msgid "Show subservice selection"
 msgstr "Vis valg af underkanal"
 
 msgid "Show subservices"
-msgstr ""
-
-msgid "Show subservices *"
 msgstr ""
 
 msgid "Show subservices of the active service"
@@ -20303,10 +20300,10 @@ msgstr ""
 msgid "The %s %s is shutting down. Please wait..."
 msgstr ""
 
-msgid "The %s %s reads the stored EPG data every x hours."
+msgid "The %s %s reads the stored EPG data every selected number of hours."
 msgstr "%s %s læser gemte EPG data hver (timer)."
 
-msgid "The %s %s stores the EPG data every x hours."
+msgid "The %s %s stores the EPG data every selected number of hours."
 msgstr "%s %s gemmer EPG dataene hver (timer)."
 
 #, python-format
@@ -20690,9 +20687,6 @@ msgstr "%s %s kan ikke afkode %s Streams!"
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "Denne DVD RW er allerede formatteret - reformattering vil slette alt indhold på disken."
 
-msgid "This Option allows you to switch Audio to BT Speakers."
-msgstr "Denne mulighed tillader dig at skifte lyd til BT højtalere."
-
 msgid "This allows you to change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
 msgstr "Dette tillader dig at ændre skriftstørrelse relativ til Tema-størrelsen, så 1 øger med 1 punkstørrelse, og -1 reducere med 1 punktstørrelse."
 
@@ -20858,8 +20852,14 @@ msgstr "Denne mulighed tillader dig at aktivere 3D Surround Sound."
 msgid "This option allows you to set offset values for different Letterbox resolutions."
 msgstr ""
 
+msgid "This option allows you to set the Auto Volume Level output."
+msgstr "Denne mulighed konfigurere auto-lydstyrke niveau."
+
 msgid "This option allows you to set the layout view (Text or Graphics)."
 msgstr "Denne mulighed tillader dig at sætte visningslayout (Tekst eller Grafik)."
+
+msgid "This option allows you to switch Audio to Bluetooth speakers."
+msgstr "Denne mulighed tillader dig at skifte lyd til BT højtalere."
 
 msgid "This option allows you to the SNR as a percentage (not all receivers support this)."
 msgstr "Denne mulighed tillader dig at vis SNR som en procentdel (ikke alle modtagere understøtter dette)."
@@ -20870,14 +20870,8 @@ msgstr "Denne mulighed tillader dig at bruge alle HDMI tilstande"
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Denne mulighed tillader dig at vise gamle og nye indstillinger side om side."
 
-msgid "This option configures the general audio delay for BT Speakers."
+msgid "This option configures the audio delay value for Bluetooth speakers."
 msgstr "Denne mulighed konfigurere den generelle lydforsinkelse for BT højtalere."
-
-msgid "This option configures the general audio delay of Dolby Digital sound tracks."
-msgstr "Denne mulighed konfigurere den generelle lydforsinkelse af Dolby Digital lydspor."
-
-msgid "This option configures the general audio delay of stereo sound tracks."
-msgstr "Denne mulighed konfigurere den generelle lydforsinkelse af stereo lydspor."
 
 msgid "This option configures the picture sharpness."
 msgstr "Denne mulighed konfigurer billedskarpheden."
@@ -20887,9 +20881,6 @@ msgstr "Denne mulighed konfigurer skærmopløsning i PC udgangstilstand."
 
 msgid "This option configures the video output mode (or resolution)."
 msgstr "Denne mulighed konfigurere videoudgangstilstand (eller opløsning)"
-
-msgid "This option configures you can set Auto Volume Level."
-msgstr "Denne mulighed konfigurere auto-lydstyrke niveau."
 
 msgid "This option lets you adjust the 3D depth of the OSD."
 msgstr "Denne mulighed lader dig justere 3D dybden"
@@ -20905,6 +20896,12 @@ msgstr "Denne mulighed tillader dig at vise muligheder i udvidelsesskærmen"
 
 msgid "This option moves the PVR status display from a separate window into the MoviePlayer InfoBar."
 msgstr "Denne mulighed flytter PVR status fra et selvstændig vindue til Filmafspillerens Infobjælke."
+
+msgid "This option selects the general audio delay of Dolby Digital sound tracks."
+msgstr "Denne mulighed konfigurere den generelle lydforsinkelse af Dolby Digital lydspor."
+
+msgid "This option selects the general audio delay of stereo sound tracks."
+msgstr "Denne mulighed konfigurere den generelle lydforsinkelse af stereo lydspor."
 
 msgid "This option set the level of suppression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "Denne mulighed sætter niveauet for undertrykkelse af mosquito støj (musquito støj er tilfældig harmonisk forvrængning som resultat af kraftig kompression). Dette sker naturligvis på bekostning af billeddetaljer."
@@ -20948,7 +20945,7 @@ msgstr ""
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr "Denne mulighed sætter den billedeskarphed op, der bruges når billedet opskaleres."
 
-msgid "This plugin can determine whether a programme begins earlier or lasts longer. The channel has to provide reliable data."
+msgid "Select 'Yes' to allow the VPS to adjust recording timers based on broadcast Program Delivery Control (PDC) data. For this to work the service must provide reliable event PDC data."
 msgstr ""
 
 msgid "This service is protected by a parental control PIN!"
@@ -22267,6 +22264,9 @@ msgstr ""
 msgid "Use the extended List"
 msgstr "Brug den udvidede liste."
 
+msgid "Use the network wizard to configure your Network."
+msgstr ""
+
 msgid "Use the wizard to set up basic features"
 msgstr "Brug denne assistent til at sætte grundfunktioner op"
 
@@ -22770,7 +22770,7 @@ msgstr "Vågn op"
 msgid "Wake up TV from Standby"
 msgstr "Væk TV fra Standby"
 
-msgid "Wake up from Deep-Standby is allowed"
+msgid "Wake from Shutdown allowed"
 msgstr ""
 
 msgid "Wake up time before a timer begins"
@@ -23129,7 +23129,7 @@ msgstr ""
 msgid "When tuned to a service, the system normally scans the transponder for changes and saves them. Enable only if you know what you're doing."
 msgstr "Når en kanal er valgt, vil systemet normalt søge efter ændringer på transponderen og gemme dem. Sæt kun til 'Ja' hvis du er helt sikker på hvad du gør."
 
-msgid "When yes, VPS will be enabled on instant records (stop after current event), if the channel supports VPS."
+msgid "Select 'Yes' to use PDC data, if available on the current service, to accurately stop the instant recording at the end of the event."
 msgstr ""
 
 msgid "Where do you want to backup your settings?"
@@ -23709,13 +23709,10 @@ msgstr "Zap+Optag næste"
 msgid "ZeroTier Actions"
 msgstr ""
 
-msgid "ZeroTier version"
+msgid "ZeroTier Settings"
 msgstr ""
 
 msgid "ZeroTier-One"
-msgstr ""
-
-msgid "ZeroTier Settings"
 msgstr ""
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7 old Model"
@@ -24377,6 +24374,9 @@ msgstr "ja (behold feeds)"
 msgid "®"
 msgstr "®"
 
+#~ msgid "Configure whether multichannel audio tracks should be downmixed to stereo."
+#~ msgstr "Konfigurer om flerkanals lydspor skal downmixes til stereo."
+
 #~ msgid "* Only available if more than one interface is active."
 #~ msgstr "* Kun tilgængelig hvis mere end en grænseflade er aktiv."
 
@@ -24403,9 +24403,6 @@ msgstr "®"
 
 #~ msgid "Press yellow to set this interface as the default interface."
 #~ msgstr "Tryk på gul for at vælge denne grænseflade som standardgrænseflade."
-
-#~ msgid "Restart your network connection and interfaces."
-#~ msgstr "Genstart din netværksopkobling og grænseflade."
 
 #~ msgid "Set interface as the default Interface"
 #~ msgstr "Sæt grænseflade som standard grænseflade"
