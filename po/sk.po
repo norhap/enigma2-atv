@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 19:51+0100\n"
-"PO-Revision-Date: 2026-01-29 02:46+0000\n"
+"POT-Creation-Date: 2026-02-11 10:12+0000\n"
+"PO-Revision-Date: 2026-02-12 11:09+0000\n"
 "Last-Translator: Marián Hikaník <podnety@mojepreklady.net>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sk/>\n"
 "Language: sk\n"
@@ -943,7 +943,7 @@ msgstr[1] "Našli sa %d balíčky."
 msgstr[2] "Našlo sa %d balíčkov."
 
 #, python-format
-msgid "%d package has an update"
+msgid "%d package has an update."
 msgid_plural "%d packages have updates."
 msgstr[0] "Je dostupná aktualizácia pre %d balíček"
 msgstr[1] "Je dostupná aktualizácia pre %d balíčky."
@@ -2089,6 +2089,9 @@ msgstr "Upravte horizontálnu pozíciu písmen používaných pre teletext."
 msgid "Adjust the vertical position of the letters used for teletext."
 msgstr "Upravte vertikálnu pozíciu písmen používaných pre teletext."
 
+msgid "Adjusts compensation for hardware buffer latency for DM9x0."
+msgstr "Upraví kompenzáciu pre latenciu HW vyrovnávacej pamäte pre DM9x0."
+
 msgid "Adult"
 msgstr "Pre dospelých"
 
@@ -2767,7 +2770,7 @@ msgstr "Automatický režim videa vybraný"
 msgid "Auto video mode selected for the TV."
 msgstr "Automatický režim videa zvolený pre TV."
 
-msgid "Auto(not available)"
+msgid "Auto (not available)"
 msgstr "Auto (nedostupné)"
 
 msgid "AutoCam Settings"
@@ -2829,6 +2832,9 @@ msgstr "Automatická aktualizácia denníka na celú obrazovku"
 
 msgid "Autostart"
 msgstr "Autoštart"
+
+msgid "Available"
+msgstr "Dostupné"
 
 msgid "Available format variables"
 msgstr "Dostupné premenné formátu"
@@ -5763,10 +5769,10 @@ msgid "Debug log time format *"
 msgstr "Formát času v denníku pre ladenie *"
 
 msgid "Decoder release strategy"
-msgstr ""
+msgstr "Stratégia uvoľnenia dekodéra"
 
 msgid "Decoder start timeout"
-msgstr ""
+msgstr "Časový limit pre spustenie dekodéra"
 
 msgid "Decryption & Parental Control"
 msgstr "Dekódovanie a rodičovská kontrola"
@@ -5820,7 +5826,7 @@ msgstr "Predvolený typ nahrávania"
 msgid "Default right column directory"
 msgstr "Predvolený priečinok v pravom stĺpci"
 
-msgid "Default sort order for directories in the left column"
+msgid "Default sort order for directories in the left column."
 msgstr "Predvolené poradie zoraďovania pre priečinky v ľavom stĺpci"
 
 msgid "Default sort order for directories in the right column."
@@ -9226,6 +9232,9 @@ msgstr "MultiBoot zariadenie"
 msgid "Hardware information"
 msgstr "Informácie o hardvéri"
 
+msgid "Hardware latency correction"
+msgstr "Korekcia latencie hardvéru"
+
 msgid "Hardware serial"
 msgstr "Sériové číslo hardvéru"
 
@@ -9491,7 +9500,7 @@ msgid "Hours Minutes Seconds"
 msgstr "Hodiny Minúty Sekundy"
 
 msgid "How to release the hardware decoder when switching to software descrambling. 'Quick' releases immediately (faster zapping). 'Normal' performs clean shutdown first (more stable on some boxes)."
-msgstr ""
+msgstr "Spôsob uvoľnenia HW dekodéra pri prepnutí na SW dekódovanie. Voľba 'Rýchlo' uvoľňuje okamžite (rýchle prepnutie). Voľba 'Normal' vykoná najskôr čisté vypnutie (pri niektorých prijímačoch stabilnejšie)."
 
 msgid "Http(s) stream start delay"
 msgstr "Oneskorenie spustenia http(s) streamu"
@@ -11281,7 +11290,7 @@ msgid "Maximum space used (MB)"
 msgstr "Maximálna použitá veľkosť (MB):"
 
 msgid "Maximum time to wait for the incoming data and descrambling keys (CW) before starting decoder. Usually both arrive much faster and this is only for special cases."
-msgstr ""
+msgstr "Max. čas čakania pre prichádzajúce údaje a dešifrovacie kľúče (CW), pred spustením dekodéra. Zvyčajne dorazia oveľa rýchlejšie a toto nastavenie je určené len pre špecifické prípady."
 
 msgid "Mayotte"
 msgstr "Mayotte"
@@ -13941,7 +13950,7 @@ msgstr "Pamäť flash sa kopíruje do tohto flash expandéra. Môže to trvať n
 msgid "Please wait, loading picture..."
 msgstr "Prosím čakajte, načítava sa obrázok…"
 
-msgid "Please wait, swap is is being created. This could take a few minutes to complete."
+msgid "Please wait, swap is being created. This could take a few minutes to complete."
 msgstr "Vytvára sa priestor pre swap. Môže to trvať niekoľko minút. Čakajte, prosím."
 
 msgid "Please wait..."
@@ -16623,7 +16632,7 @@ msgid "Select how the arrow buttons 'UP', 'DOWN', 'LEFT' or 'RIGHT' will act dur
 msgstr "Vyberte, ako sa budú tlačidlá so šípkami („NAHOR“, „NADOL“, „DOĽAVA“ a „DOPRAVA“) správať počas vyhľadávania."
 
 msgid "Select how the descrambled data stream is processed. 'Automatic' uses asynchronous writes (lower CPU usage) with automatic fallback to synchronous if kernel AIO is not supported. 'Synchronous' forces blocking writes (stable, most compatible)."
-msgstr ""
+msgstr "Vyberte, ako sa spracuje tok dekódovaných údajov. Pri voľbe 'Automaticky' sú zápisy asynchrónne (menšie vyťaženie CPU) s automatickým návratom na synchrónne, ak nie je podporovaný kernel AIO. Pri voľbe 'Synchrónne' sa vynútia blokové zápisy (stabilné, najlepšia kompatibilita)."
 
 msgid "Select how the number buttons will act during seek actions."
 msgstr "Vyberte, ako sa budú počas vyhľadávania správať číselné tlačidlá."
@@ -19089,7 +19098,7 @@ msgid "Socket"
 msgstr "Socket"
 
 msgid "SoftCSA Settings"
-msgstr ""
+msgstr "Nastavenia SoftCSA"
 
 msgid "Softcam"
 msgstr "Softcam"
@@ -19134,7 +19143,7 @@ msgid "Software Update Actions"
 msgstr "Akcie pre aktualizáciu softvéru"
 
 msgid "Software descrambling"
-msgstr ""
+msgstr "Softvérové dekódovanie"
 
 msgid "Software information"
 msgstr "Informácie o softvéri"
@@ -19965,7 +19974,7 @@ msgid "Synchronize system time using transponder or Internet."
 msgstr "Synchronizácia systémového času pomocou transpondéra alebo internetu."
 
 msgid "Synchronous"
-msgstr ""
+msgstr "Synchrónne"
 
 msgid "Syrian Arab Republic"
 msgstr "Sýrska arabská republika"
@@ -20746,28 +20755,28 @@ msgstr "Redukcia blokového šumu v obraze. Zhorší sa tým však jeho ostrosť
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "Nastavenie úrovne dynamického kontrastu obrazu."
 
-msgid "This option allows you can config the Colordepth for UHD"
+msgid "This option allows you to config the Colordepth for UHD."
 msgstr "Konfigurácia farebnej hĺbky pre UHD"
 
-msgid "This option allows you can config the Colorimetry for HDR"
+msgid "This option allows you to config the Colorimetry for HDR."
 msgstr "Konfigurácia kolorimetrie pre HDR"
 
-msgid "This option allows you can config the Colorspace from Auto to RGB"
+msgid "This option allows you to config the Colorspace from Auto to RGB."
 msgstr "Zmena farebného priestoru z Auto na RGB"
 
-msgid "This option allows you can enable or disable the 10 Bit Color Mode"
+msgid "This option allows you to enable or disable the 10 Bit Color Mode."
 msgstr "Zapnutie/vypnutie režimu 10 bitových farieb"
 
-msgid "This option allows you can enable or disable the 12 Bit Color Mode"
+msgid "This option allows you to enable or disable the 12 Bit Color Mode."
 msgstr "Zapnutie/vypnutie režimu 12 bitových farieb"
 
-msgid "This option allows you can force the HDR Modes for UHD"
+msgid "This option allows you to force the HDR Modes for UHD."
 msgstr "Vynútenie režimov HDR pre UHD"
 
-msgid "This option allows you can force the HDR10 Modes for UHD"
+msgid "This option allows you to force the HDR10 Modes for UHD."
 msgstr "Vynútenie režimov HDR10 pre UHD"
 
-msgid "This option allows you can force the HLG Modes for UHD"
+msgid "This option allows you to force the HLG Modes for UHD."
 msgstr "Vynútenie režimov HLG pre UHD"
 
 msgid "This option allows you enable smoothing filter to control the dithering process."
@@ -20788,7 +20797,7 @@ msgstr "Zvýraznenie modrých tónov v obraze."
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "Zvýraznenie zelených tónov v obraze."
 
-msgid "This option allows you to bypass HDMI EDID check"
+msgid "This option allows you to bypass HDMI EDID check."
 msgstr "Nastavenie možnosti obísť kontrolu HDMI EDID"
 
 msgid "This option allows you to change the virtual loudspeaker position."
@@ -20872,7 +20881,7 @@ msgstr "Táto voľba umožňuje prepnutie zvuku na Bluetooth reproduktory."
 msgid "This option allows you to the SNR as a percentage (not all receivers support this)."
 msgstr "Zobrazenie SNR v percentách namiesto dB (nepodporujú všetky prijímače)."
 
-msgid "This option allows you to use all HDMI Modes"
+msgid "This option allows you to use all HDMI Modes."
 msgstr "Táto voľba umožňuje používať všetky režimy HDMI"
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -23827,9 +23836,6 @@ msgstr "zvukové stopy"
 
 msgid "automatic"
 msgstr "automaticky"
-
-msgid "Available"
-msgstr ""
 
 msgid "back"
 msgstr "späť"
