@@ -869,6 +869,7 @@ class FileCommander(Screen, NumericalTextInput, StatInfo):
 				return fileList.getCurrentDirectory()
 			elif fileList.getPath():
 				return normpath(fileList.getPath())
+
 		if config.plugins.FileCommander.savePathLeft.value:
 			config.plugins.FileCommander.pathLeft.value = getSavePath(self["listleft"])
 		else:
