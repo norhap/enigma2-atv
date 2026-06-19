@@ -3,20 +3,21 @@
 # Oriol Pellicer i Sabrià <oriol@elsud.org>, 2006, 2007.
 # Víctor Pont <victor@pont.cat>, 2021.
 # Josep Belda <josepmaulet1707@gmail.com>, 2021.
+# Adolfo Jayme Barrientos <fitojb@ubuntu.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 05:50+0000\n"
-"PO-Revision-Date: 2021-09-13 18:30+0000\n"
-"Last-Translator: Josep Belda <josepmaulet1707@gmail.com>\n"
+"POT-Creation-Date: 2026-06-05 05:46+0000\n"
+"PO-Revision-Date: 2026-06-10 04:39+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 2026.6\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
 
 msgid ""
@@ -29,7 +30,7 @@ msgid ""
 "Recording in progress."
 msgstr ""
 "\n"
-"Gravació en curs."
+"Enregistrament en curs."
 
 msgid "  Menu key : Select quad channel"
 msgstr ""
@@ -64,31 +65,31 @@ msgid " (lower than any auto)"
 msgstr " (superior a qualsevol auto)"
 
 #
-#, fuzzy
 msgid " <No Channel>"
-msgstr "Canal"
+msgstr " <Cap canal>"
 
 #
-#, fuzzy
 msgid " <empty>"
-msgstr "buit"
+msgstr " <buit>"
 
 msgid " HI "
 msgstr ""
 
 msgid " and"
-msgstr ""
+msgstr " i"
 
 #
-#, fuzzy
 msgid ""
 " available !!\n"
 "\n"
 "Do you want to install the new settings list?"
-msgstr "Vols restaurar la configuració?"
+msgstr ""
+" disponible.\n"
+"\n"
+"Voleu instal·lar la llista de configuracions nova?"
 
 msgid " of "
-msgstr ""
+msgstr " de "
 
 #
 #, fuzzy
@@ -96,38 +97,36 @@ msgid " updated"
 msgstr "repetit"
 
 msgid "!! Boot loader Upgrade !!"
-msgstr ""
+msgstr "!! Actualització del carregador d'arrencada !!"
 
 msgid "# = Reboot required if this item is changed."
 msgstr ""
 
 #
-#, fuzzy
 msgid "%-H:%M"
-msgstr "%H:%M"
+msgstr "%-H:%M"
 
 #
-#, fuzzy
 msgid "%-H:%M:%S"
-msgstr "%H:%M"
+msgstr "%-H:%M:%S"
 
 msgid "%-I:%M"
-msgstr ""
+msgstr "%-I:%M"
 
 msgid "%-I:%M%P"
-msgstr ""
+msgstr "%-I:%M%P"
 
 msgid "%-I:%M%^p"
-msgstr ""
+msgstr "%-I:%M%^p"
 
 msgid "%-I:%M:%S"
-msgstr ""
+msgstr "%-I:%M:%S"
 
 msgid "%-I:%M:%S%P"
-msgstr ""
+msgstr "%-I:%M:%S%P"
 
 msgid "%-I:%M:%S%^p"
-msgstr ""
+msgstr "%-I:%M:%S%^p"
 
 #
 #. TRANSLATORS: Full date representation daynum monthname year in strftime() format! See 'man strftime'.
@@ -233,8 +232,8 @@ msgstr "%.2f GB"
 #, python-format
 msgid "%.2f Second"
 msgid_plural "%.2f Seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%.2f segon"
+msgstr[1] "%.2f segons"
 
 #, python-format
 msgid "%02d.%02d."
@@ -261,9 +260,8 @@ msgid "%2.1f Seconds"
 msgstr "%2.1f seg"
 
 #
-#, fuzzy
 msgid "%A"
-msgstr "Un"
+msgstr "%A"
 
 #. TRANSLATORS: Short date representation dayname daynum short monthname in strftime() format! See 'man strftime'.
 msgid "%A %-d %B"
@@ -494,11 +492,11 @@ msgstr ""
 
 #. TRANSLATORS: Short time representation hour:minute (Same as "Default").
 msgid "%R"
-msgstr ""
+msgstr "%R"
 
 #. TRANSLATORS: Time representation hour:minute:seconds for 24 hour clock or 12 hour clock without AM/PM and hour:minute for 12 hour clocks with AM/PM.
 msgid "%T"
-msgstr ""
+msgstr "%T"
 
 msgid "%Y %B %-d"
 msgstr ""
@@ -1150,9 +1148,8 @@ msgid "%d.%-m"
 msgstr ""
 
 #
-#, fuzzy
 msgid "%d.%-m.%Y"
-msgstr "%d.%B %Y"
+msgstr "%d.%-m.%Y"
 
 #, python-format
 msgid "%d.%03d GB"
@@ -1457,7 +1454,7 @@ msgid "1.2"
 msgstr "1.2"
 
 msgid "10bit"
-msgstr ""
+msgstr "10 bits"
 
 msgid "12 character"
 msgstr ""
@@ -1475,7 +1472,7 @@ msgid "12V output."
 msgstr "sortida 12V"
 
 msgid "12bit"
-msgstr ""
+msgstr "12 bits"
 
 msgid "12bit 4:2:0/4:2:2 no PiP"
 msgstr ""
@@ -1524,7 +1521,7 @@ msgid "1st InfoBar timeout"
 msgstr ""
 
 msgid "1x"
-msgstr ""
+msgstr "1×"
 
 msgid "2"
 msgstr "2"
@@ -1547,16 +1544,16 @@ msgid "2nd InfoBar timeout"
 msgstr ""
 
 msgid "2x"
-msgstr ""
+msgstr "2×"
 
 msgid "2x, 4x"
-msgstr ""
+msgstr "2×, 4×"
 
 msgid "2x, 4x, 6x"
-msgstr ""
+msgstr "2×, 4×, 6×"
 
 msgid "2x, 4x, 6x, 8x"
-msgstr ""
+msgstr "2×, 4×, 6×, 8×"
 
 msgid "3"
 msgstr "3"
@@ -1573,7 +1570,7 @@ msgid "3D Surround Speaker Position"
 msgstr ""
 
 msgid "3x"
-msgstr ""
+msgstr "3×"
 
 msgid "4"
 msgstr "4"
@@ -1614,7 +1611,7 @@ msgid "8 character"
 msgstr ""
 
 msgid "8bit"
-msgstr ""
+msgstr "8 bits"
 
 msgid "9"
 msgstr "9"
@@ -1823,9 +1820,8 @@ msgid "AC3plus transcoding"
 msgstr ""
 
 #
-#, fuzzy
 msgid "AFL"
-msgstr "PAL"
+msgstr "AFL"
 
 msgid "AI Translation color"
 msgstr ""
@@ -1913,9 +1909,8 @@ msgid "Accessed"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Action"
-msgstr "Descripció"
+msgstr "Acció"
 
 #
 msgid "Action at end of media"
@@ -1931,7 +1926,7 @@ msgid "Actions"
 msgstr ""
 
 msgid "Activate"
-msgstr ""
+msgstr "Activa"
 
 msgid "Activate Expander"
 msgstr ""
@@ -1973,7 +1968,7 @@ msgid "Activate time shift end and pause"
 msgstr "Activa el final del timeshift i la pausa"
 
 msgid "Active"
-msgstr ""
+msgstr "Actiu"
 
 msgid "Active clients"
 msgstr ""
@@ -2257,13 +2252,12 @@ msgid "Advanced Restore"
 msgstr "Restauració avançada"
 
 #
-#, fuzzy
 msgid "Advanced Settings"
-msgstr "Configuracions"
+msgstr "Paràmetres avançats"
 
 #
 msgid "Advanced options and settings."
-msgstr ""
+msgstr "Opcions i paràmetres avançats."
 
 msgid "Advanced video enhancement setup"
 msgstr "Configuració avançada de millora de vídeo"
@@ -2314,7 +2308,7 @@ msgid "Akan"
 msgstr ""
 
 msgid "Aland Islands"
-msgstr "Illes Aland"
+msgstr "Illes Åland"
 
 msgid "Albania"
 msgstr "Albania"
@@ -2468,7 +2462,7 @@ msgid "Alphabetical under headings"
 msgstr ""
 
 msgid "Alphanumeric"
-msgstr ""
+msgstr "Alfanumèric"
 
 msgid "Also import at reboot/restart"
 msgstr "Importar també al reiniciar l'enigma2"
@@ -2589,7 +2583,7 @@ msgid "Animation Speed"
 msgstr ""
 
 msgid "Animations"
-msgstr ""
+msgstr "Animacions"
 
 msgid "Anonymize client IPs"
 msgstr ""
@@ -2641,7 +2635,7 @@ msgid "Arabic (Tunisian)"
 msgstr ""
 
 msgid "Aragonese"
-msgstr ""
+msgstr "Aragonès"
 
 msgid "Are you ready to run the script?"
 msgstr ""
@@ -2792,7 +2786,7 @@ msgid "Ask user (with default of 'Yes')"
 msgstr ""
 
 msgid "Aspect"
-msgstr ""
+msgstr "Aspecte"
 
 msgid "Aspect Ratio"
 msgstr ""
@@ -3014,9 +3008,8 @@ msgid "Automatic Service Searching"
 msgstr "Recerca automàtica"
 
 #
-#, fuzzy
 msgid "Automatic resolution"
-msgstr "Recerca automàtica"
+msgstr "Resolució automàtica"
 
 #
 #, fuzzy
@@ -3045,7 +3038,7 @@ msgid "Automatically update Log-Fullscreen View"
 msgstr ""
 
 msgid "Autostart"
-msgstr ""
+msgstr "Inici automàtic"
 
 msgid "Available"
 msgstr ""
@@ -3161,7 +3154,7 @@ msgid "Background selected:"
 msgstr ""
 
 msgid "Background:"
-msgstr ""
+msgstr "Fons:"
 
 msgid "Backup Location"
 msgstr ""
@@ -3335,7 +3328,7 @@ msgid "Bihari languages"
 msgstr ""
 
 msgid "Biography"
-msgstr ""
+msgstr "Biografia"
 
 msgid "Bislama"
 msgstr ""
@@ -3503,6 +3496,12 @@ msgid "Brightness Video"
 msgstr ""
 
 msgid "Brightness Video & OSD"
+msgstr ""
+
+msgid "Brightness applied to the combined video + OSD output. Affects everything on screen including this menu."
+msgstr ""
+
+msgid "Brightness applied to the video layer only. Does not affect enigma2 menus or OSD."
 msgstr ""
 
 msgid "British Indian Ocean Territory"
@@ -3712,7 +3711,7 @@ msgid "CI+ Helper*"
 msgstr ""
 
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #, python-format
 msgid "CPU / Core %d type"
@@ -4061,6 +4060,12 @@ msgstr "dibuixos animats / titelles"
 msgid "Cascade PiP"
 msgstr "Cascade PiP"
 
+msgid "Case insensitive"
+msgstr ""
+
+msgid "Case sensitive"
+msgstr ""
+
 msgid "Catalan / Valencian"
 msgstr ""
 
@@ -4074,7 +4079,7 @@ msgid "Cebuano"
 msgstr ""
 
 msgid "Celsius"
-msgstr ""
+msgstr "Celsius"
 
 msgid "Center"
 msgstr "centre"
@@ -4252,21 +4257,20 @@ msgid "Channel list type"
 msgstr "Menú de llista de canal"
 
 msgid "Channel name"
-msgstr ""
+msgstr "Nom del canal"
 
 msgid "Channel number"
-msgstr ""
+msgstr "Número del canal"
 
 msgid "Channel preview mode"
-msgstr ""
+msgstr "Mode de previsualització del canal"
 
 msgid "Channel selection configuration"
-msgstr ""
+msgstr "Configuració de selecció de canals"
 
 #
-#, fuzzy
 msgid "Channel selection:"
-msgstr "Selecció de canal"
+msgstr "Selecció de canals:"
 
 msgid "Channel up"
 msgstr ""
@@ -4277,21 +4281,21 @@ msgid "ChannelEPG Settings"
 msgstr "Selecció de canal"
 
 msgid "Channels"
-msgstr ""
+msgstr "Canals"
 
 msgid "Channels and EPG"
-msgstr ""
+msgstr "Canals i EPG"
 
 msgid "Channels only"
-msgstr ""
+msgstr "Només els canals"
 
 #
 msgid "Chap."
-msgstr "Chap."
+msgstr "Cap."
 
 #
 msgid "Chapter"
-msgstr "Chapter"
+msgstr "Capítol"
 
 #
 #, fuzzy
@@ -4323,10 +4327,10 @@ msgid "Checking Feeds"
 msgstr ""
 
 msgid "Checking Logs..."
-msgstr ""
+msgstr "S'estan comprovant els registres…"
 
 msgid "Checking file system..."
-msgstr "Comprovació del sistema de fitxers …"
+msgstr "S'està comprovant el sistema de fitxers…"
 
 #, python-format
 msgid ""
@@ -4350,13 +4354,13 @@ msgid "Children/Youth"
 msgstr "Infantil / juvenil"
 
 msgid "Chile"
-msgstr "Chile"
+msgstr "Xile"
 
 msgid "China"
 msgstr "Xina"
 
 msgid "Chinese"
-msgstr ""
+msgstr "Xinès"
 
 msgid "Chinese (Simplified)"
 msgstr ""
@@ -4474,7 +4478,7 @@ msgid "Christmas Island"
 msgstr "Illa de Nadal"
 
 msgid "Chrony"
-msgstr ""
+msgstr "Chrony"
 
 msgid "Church Slavic"
 msgstr ""
@@ -4494,7 +4498,7 @@ msgid "Circular right"
 msgstr "Circular dreta"
 
 msgid "City"
-msgstr ""
+msgstr "Ciutat"
 
 msgid "Classical"
 msgstr ""
@@ -4681,12 +4685,6 @@ msgstr "Colombia"
 #
 msgid "Color"
 msgstr "Color"
-
-msgid "Color Bottom"
-msgstr ""
-
-msgid "Color Top"
-msgstr ""
 
 msgid "Color format"
 msgstr "Format  color"
@@ -5300,7 +5298,7 @@ msgid "Contacting IceTV server and setting up your %s %s."
 msgstr ""
 
 msgid "Content"
-msgstr ""
+msgstr "Contingut"
 
 #
 msgid "Content does not fit on DVD!"
@@ -5350,10 +5348,19 @@ msgstr ""
 msgid "Contrast Video & OSD"
 msgstr ""
 
+msgid "Contrast applied to the combined video + OSD output. Affects everything on screen including this menu."
+msgstr ""
+
+msgid "Contrast applied to the video layer only. Does not affect enigma2 menus or OSD."
+msgstr ""
+
 msgid "Control LED can be turned on or off here."
 msgstr ""
 
 msgid "Control files:"
+msgstr ""
+
+msgid "Control how files will be sorted in screens that show a file list. Case sensitive will group uppercase files first followed by lowercase files. Case insensitive will sort files alphabetically, ignoring case."
 msgstr ""
 
 msgid "Control of the position how finished timer are shown in the Timer List."
@@ -5534,9 +5541,6 @@ msgid "Create application loader dump."
 msgstr ""
 
 msgid "Create backup image zip file."
-msgstr ""
-
-msgid "Create boot dump."
 msgstr ""
 
 msgid "Create boot image dump."
@@ -5741,9 +5745,8 @@ msgid "Currently Remembered Volume Levels:"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Custom"
-msgstr "Personalitzar"
+msgstr "Personalitzat"
 
 msgid "Custom mountpoint"
 msgstr ""
@@ -6603,7 +6606,7 @@ msgid "Detail of GStreamer log."
 msgstr ""
 
 msgid "Details"
-msgstr ""
+msgstr "Detalls"
 
 msgid "Detective"
 msgstr ""
@@ -6612,44 +6615,44 @@ msgid "Detective/Thriller"
 msgstr "detectiu / thriller"
 
 msgid "Development Packages"
-msgstr ""
+msgstr "Paquets de desenvolupament"
 
 msgid "Device"
-msgstr ""
+msgstr "Dispositiu"
 
 msgid "Device Manager"
-msgstr ""
+msgstr "Gestor de dispositius"
 
 msgid "Device Manager Actions"
-msgstr ""
+msgstr "Accions del gestor de dispositius"
 
 msgid "Device Settings"
-msgstr ""
+msgstr "Paràmetres del dispositiu"
 
 msgid "Device id"
-msgstr ""
+msgstr "Id. del dispositiu"
 
 msgid "Device mounts"
-msgstr ""
+msgstr "Muntatges del dispositiu"
 
 msgid "Device name:"
 msgstr "Nom del dispositiu:"
 
 msgid "Device number"
-msgstr ""
+msgstr "Número de dispositiu"
 
 msgid "Devices"
-msgstr ""
+msgstr "Dispositius"
 
 #
 msgid "DiSEqC"
 msgstr "DiSEqC"
 
 msgid "DiSEqC 1.0 command"
-msgstr "DiSEqC 1.0 command"
+msgstr "Ordre del DiSEqC 1.0"
 
 msgid "DiSEqC 1.1 command"
-msgstr "DiSEqC 1.1 command"
+msgstr "Ordre del DiSEqC 1.1"
 
 msgid "DiSEqC 1.1 repeats"
 msgstr "DiSEqC 1.1 repeteix"
@@ -6678,7 +6681,7 @@ msgid "DiSEqC-tester settings"
 msgstr "Configuració del testador DiSEqC"
 
 msgid "Diction"
-msgstr ""
+msgstr "Dicció"
 
 #, python-format
 msgid ""
@@ -6709,7 +6712,7 @@ msgid "Direct playback of linked titles without menu"
 msgstr "Reproducció directa de títols enllaçats sense menú"
 
 msgid "Directories"
-msgstr ""
+msgstr "Directoris"
 
 msgid "Directory"
 msgstr "Directori"
@@ -6958,7 +6961,7 @@ msgstr ""
 #
 #, python-format
 msgid "Do you really want to delete '%s'?"
-msgstr "Segur que vols esborrar %s?"
+msgstr "Segur que voleu suprimir «%s»?"
 
 #, python-format
 msgid ""
@@ -6984,6 +6987,8 @@ msgid ""
 "Do you really want to format the device in the Linux file system?\n"
 "All data on the device will be lost!"
 msgstr ""
+"Realment voleu formatar el dispositiu al sistema de fitxers Linux?\n"
+"Se'n perdran totes les dades."
 
 #, python-format
 msgid "Do you really want to move '%s' to the trashcan?"
@@ -7786,6 +7791,9 @@ msgstr ""
 msgid "Enable this option to add storage device information detected during system boot and hot plug events to the debug log file."
 msgstr ""
 
+msgid "Enable this option to add text encoding information to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add timer debugging data to the debug log file."
 msgstr ""
 
@@ -8334,7 +8342,7 @@ msgstr ""
 
 #, python-format
 msgid "Error: There was a problem writing '%s'!"
-msgstr ""
+msgstr "Error: s'ha produït un problema en escriure «%s»."
 
 #, python-format
 msgid "Error: There was an issue in the reset of the feeds! Please reboot the %s %s and check the file system for any errors before trying this command again."
@@ -8345,7 +8353,7 @@ msgstr "No es poden crear els directoris obligatoris al suport (per exemple, sti
 
 #, python-format
 msgid "Error: Unable to rename directory '%s' to '%s'!"
-msgstr ""
+msgstr "Error: no s'ha pogut canviar el nom del directori «%s» a «%s»."
 
 #, python-format
 msgid "Error: Unable to write log file '%s'!"
@@ -8363,14 +8371,14 @@ msgid "Error: mount not successful!"
 msgstr ""
 
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 msgid "Estonia"
 msgstr "Estonia"
 
 #
 msgid "Estonian"
-msgstr "Estonian"
+msgstr "Estonià"
 
 #
 #, fuzzy
@@ -8396,7 +8404,7 @@ msgid "Even if a 'Zap' recording timer starting?"
 msgstr ""
 
 msgid "Event Info"
-msgstr ""
+msgstr "Informació de l'esdeveniment"
 
 msgid "Event View"
 msgstr ""
@@ -8423,10 +8431,10 @@ msgid "EventViewEPG Actions"
 msgstr ""
 
 msgid "Events"
-msgstr ""
+msgstr "Esdeveniments"
 
 msgid "Everyday"
-msgstr ""
+msgstr "Tots els dies"
 
 msgid ""
 "Everything in one place - IceTV does it for you!\n"
@@ -8456,24 +8464,24 @@ msgstr ""
 
 #
 msgid "Exif"
-msgstr "Exif"
+msgstr "EXIF"
 
 msgid "Existing or trial customer"
 msgstr ""
 
 #
 msgid "Exit"
-msgstr "Sortir"
+msgstr "Surt"
 
 msgid "Exit EPG"
 msgstr "Sortir EPG"
 
 msgid "Exit File Commander"
-msgstr ""
+msgstr "Surt del gestor de fitxers"
 
 #
 msgid "Exit Movie Selection"
-msgstr "Llista de pel·lícules"
+msgstr "Surt de la selecció de pel·lícules"
 
 #
 #, fuzzy
@@ -8481,14 +8489,14 @@ msgid "Exit Quad Channel Selection"
 msgstr "Selecció de canal"
 
 msgid "Exit all menus"
-msgstr ""
+msgstr "Surt de tots els menús"
 
 msgid "Exit and close all screens without performing a backup"
 msgstr ""
 
 #
 msgid "Exit editor"
-msgstr "Sortir de l'editor"
+msgstr "Surt de l'editor"
 
 msgid "Exit editor and discard any changes"
 msgstr ""
@@ -8501,18 +8509,18 @@ msgstr "Surt de la selecció del dispositiu d’entrada."
 
 #
 msgid "Exit media player?"
-msgstr "Sortiu del reproductor multimèdia?"
+msgstr "Voleu sortir del reproductor multimèdia?"
 
 #
 msgid "Exit mediaplayer"
-msgstr "Sortir del reproductor"
+msgstr "Surt del reproductor"
 
 msgid "Exit menu"
-msgstr ""
+msgstr "Surt del menú"
 
 #
 msgid "Exit movie player?"
-msgstr "Sortir del reproductor"
+msgstr "Voleu sortir del reproductor?"
 
 #
 msgid "Exit network adapter configuration"
@@ -8654,16 +8662,16 @@ msgid "F"
 msgstr ""
 
 msgid "F1"
-msgstr ""
+msgstr "F1"
 
 msgid "F2"
-msgstr ""
+msgstr "F2"
 
 msgid "F3"
-msgstr ""
+msgstr "F3"
 
 msgid "F4"
-msgstr ""
+msgstr "F4"
 
 msgid "FBC SCR (Unicable/JESS)"
 msgstr ""
@@ -8943,7 +8951,7 @@ msgid "File Commander Selection Actions"
 msgstr ""
 
 msgid "File Commander Settings"
-msgstr ""
+msgstr "Paràmetres del gestor de fitxers"
 
 msgid "File Commander Text Editor"
 msgstr ""
@@ -8952,23 +8960,26 @@ msgid "File Commander Text Editor Actions"
 msgstr ""
 
 msgid "File Commander settings"
-msgstr ""
+msgstr "Paràmetres del gestor de fitxers"
 
 #
 msgid "File System Check"
-msgstr ""
+msgstr "Comprovació del sistema de fitxers"
 
 msgid "File System Packages"
-msgstr ""
+msgstr "Paquets del sistema de fitxers"
 
 msgid "File appears to be busy!\n"
 msgstr "Sembla que el fitxer està ocupat.\n"
 
 msgid "File compression"
-msgstr ""
+msgstr "Compressió de fitxers"
+
+msgid "File sorting mode"
+msgstr "Mode d'ordenació de fitxers"
 
 msgid "File system"
-msgstr ""
+msgstr "Sistema de fitxers"
 
 msgid "File transfer was canceled by user!"
 msgstr ""
@@ -8977,7 +8988,7 @@ msgid "File transfer was cancelled by user"
 msgstr ""
 
 msgid "Filename"
-msgstr "Nom de l’arxiu"
+msgstr "Nom del fitxer"
 
 msgid "Files/folders to exclude from backup"
 msgstr ""
@@ -9345,6 +9356,9 @@ msgstr ""
 msgid "Full factory reset"
 msgstr ""
 
+msgid "Full range (no clipping)"
+msgstr ""
+
 msgid "Full screen"
 msgstr ""
 
@@ -9649,7 +9663,7 @@ msgid "Guam"
 msgstr "Guam"
 
 msgid "Guarani"
-msgstr ""
+msgstr "Guaraní"
 
 msgid "Guard Interval"
 msgstr "Interval de guàrdia"
@@ -9799,6 +9813,9 @@ msgid "Hardware information"
 msgstr ""
 
 msgid "Hardware latency correction"
+msgstr ""
+
+msgid "Hardware revision"
 msgstr ""
 
 msgid "Hardware serial"
@@ -9963,7 +9980,7 @@ msgid "Historical"
 msgstr ""
 
 msgid "History"
-msgstr ""
+msgstr "Historial"
 
 msgid "History Prev/Next"
 msgstr ""
@@ -10518,6 +10535,9 @@ msgstr ""
 msgid "Include teletext details"
 msgstr ""
 
+msgid "Include text encoding data"
+msgstr ""
+
 msgid "Include timer data"
 msgstr ""
 
@@ -10569,7 +10589,7 @@ msgid "Info icon width"
 msgstr ""
 
 msgid "InfoBar"
-msgstr ""
+msgstr "Barra d'informació"
 
 msgid "InfoBar EPG"
 msgstr ""
@@ -10748,7 +10768,7 @@ msgid "Instant recording location"
 msgstr "Canviar la gravació (durada)"
 
 msgid "Interface"
-msgstr ""
+msgstr "Interfície"
 
 #, python-format
 msgid "Interface '%s'"
@@ -11348,7 +11368,7 @@ msgid "Left, wrapped"
 msgstr "esquerra, embolicada"
 
 msgid "Legacy mode"
-msgstr ""
+msgstr "Mode llegat"
 
 msgid "Leisure hobbies"
 msgstr "Aficions de lleure"
@@ -11381,18 +11401,17 @@ msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
 #
-#, fuzzy
 msgid "Lifestyle"
-msgstr "Selecció de gravació"
+msgstr "Estil de vida"
 
 msgid "Light Grey"
 msgstr ""
 
 msgid "Light source"
-msgstr ""
+msgstr "Font de llum"
 
 msgid "Limburgan / Limburger / Limburgish"
-msgstr ""
+msgstr "Limburguès"
 
 msgid "Lime"
 msgstr ""
@@ -11416,6 +11435,9 @@ msgstr "Límit oest"
 
 msgid "Limited memory size, swap file required"
 msgstr ""
+
+msgid "Limited range (64..940)"
+msgstr "Interval limitat (64..940)"
 
 #
 msgid "Limits cancelled"
@@ -11458,7 +11480,7 @@ msgid "Linked titles with a DVD menu"
 msgstr "Títulos vinculados con un menú de DVD"
 
 msgid "Links"
-msgstr ""
+msgstr "Enllaços"
 
 msgid "List Navigation Actions"
 msgstr ""
@@ -11500,7 +11522,7 @@ msgid "Lithuanian"
 msgstr "Lituà"
 
 msgid "Live"
-msgstr ""
+msgstr "En directe"
 
 msgid "Live TV Actions"
 msgstr ""
@@ -11616,7 +11638,7 @@ msgid "Lock:"
 msgstr "Bloqueig:"
 
 msgid "Log"
-msgstr ""
+msgstr "Registre"
 
 #, python-format
 msgid "Log %d/%d"
@@ -11694,6 +11716,9 @@ msgstr ""
 msgid "Lower Framerate saves CPU Time."
 msgstr ""
 
+msgid "Lower RGB output clipping limit. 'Full range' = no lower clipping, 'Limited range' clips RGB outputs to 64 (broadcast safe)."
+msgstr ""
+
 msgid "Lower USB"
 msgstr ""
 
@@ -11735,7 +11760,7 @@ msgid "MAC-address"
 msgstr "Adreça IP"
 
 msgid "MENU"
-msgstr ""
+msgstr "MENÚ"
 
 msgid "MHz"
 msgstr ""
@@ -15639,6 +15664,12 @@ msgstr ""
 msgid "RF Output Settings"
 msgstr "Sortida RF"
 
+msgid "RGB clamp (lower)"
+msgstr ""
+
+msgid "RGB clamp (upper)"
+msgstr ""
+
 msgid "Racing"
 msgstr ""
 
@@ -18350,6 +18381,9 @@ msgid "Select whether DTS channel audio tracks should be downmixed or transcoded
 msgstr ""
 
 msgid "Select whether DTS channel audio tracks should be downmixed to stereo."
+msgstr ""
+
+msgid "Select whether Dolby TrueHD audio tracks should be passed through or decoded."
 msgstr ""
 
 msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
@@ -21959,7 +21993,7 @@ msgstr ""
 msgid "This allows you to change the number of rows shown."
 msgstr ""
 
-msgid "This allows you to set the maximum number of digits in a service number, up to 5."
+msgid "This allows you to set the maximum number of digits in a service number, up to 6."
 msgstr ""
 
 msgid "This bouquet is protected by a parental control PIN!"
@@ -21977,11 +22011,11 @@ msgstr ""
 
 #, python-format
 msgid "This is the currently selected language.  [%s]"
-msgstr ""
+msgstr "Aquesta és la llengua seleccionada actualment.  [%s]"
 
 #, python-format
 msgid "This is the currently selected locale.  [%s]"
-msgstr ""
+msgstr "Aquesta és la configuració local seleccionada actualment.  [%s]"
 
 msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr ""
@@ -22189,18 +22223,6 @@ msgstr "Aquesta opció estableix la nitidesa de l’escalaire que s’utilitza p
 
 msgid "This option sets the suppression of false digital contours, that are the result of a limited number of discrete values."
 msgstr "Aquesta opció estableix la supressió de falsos contorns digitals, que són el resultat d’un nombre limitat de valors discrets."
-
-msgid "This option sets the video & osd picture brightness."
-msgstr ""
-
-msgid "This option sets the video & osd picture contrast."
-msgstr ""
-
-msgid "This option sets the video picture brightness."
-msgstr ""
-
-msgid "This option sets the video picture contrast."
-msgstr ""
 
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr "Aquesta opció configura la nitidesa de la imatge, que s’utilitza quan s’implica la imatge."
@@ -23350,6 +23372,9 @@ msgid "Uphops -"
 msgstr ""
 
 msgid "Uphops: "
+msgstr ""
+
+msgid "Upper RGB output clipping limit. 'Full range' = no upper clipping, 'Limited range' clips RGB outputs to 940 (broadcast safe)."
 msgstr ""
 
 msgid "Upper USB"
@@ -25355,7 +25380,7 @@ msgstr "formats de fitxers (BMP, PNG, JPG, GIF)"
 
 #
 msgid "filename"
-msgstr "nom de l’arxiu"
+msgstr "nom del fitxer"
 
 msgid "flat alphabetic"
 msgstr "plana alfabètica"

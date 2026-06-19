@@ -4,6 +4,7 @@ from json import loads
 from locale import format_string
 from os import listdir, remove, statvfs
 from os.path import basename, getmtime, isdir, isfile, join
+from re import search
 from subprocess import PIPE, Popen
 from urllib.request import urlopen
 
@@ -1417,6 +1418,12 @@ class ReceiverInformation(InformationBase):
 		hwRelease = fileReadLine("/proc/stb/info/release", source=MODULE_NAME)
 		if hwRelease:
 			info.append(formatLine("P1", _("Factory release"), hwRelease))
+		hwVersion = fileReadLine("/proc/stb/info/version", source=MODULE_NAME)
+		if hwVersion:
+			match = search(r"\brev[0-9]+\b", hwVersion)
+			if match:
+				hwVersion = match.group(0)
+			info.append(formatLine("P1", _("Hardware revision"), hwVersion))
 		displayType = BoxInfo.getItem("displaytype")
 		if displayType and not displayType.startswith(" "):
 			info.append(formatLine("P1", _("Display type"), displayType))
