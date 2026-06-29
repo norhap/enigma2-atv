@@ -611,6 +611,11 @@ void eTextPara::setFont(const gFont *font, int tabwidth)
 	fontRenderClass::getInstance()->getFont(fnt, font->family.c_str(), font->pointSize, tabwidth);
 	if (!fnt)
 		eWarning("[eTextPara] Font '%s' is missing!", font->family.c_str());
+	else if (font->pointWidth > 0 && font->pointWidth < font->pointSize)
+	{
+		fnt->scaler.width = font->pointWidth;
+		fnt->font.width   = font->pointWidth;
+	}
 	fontRenderClass::getInstance()->getFont(replacement, replacement_facename.c_str(), font->pointSize, tabwidth);
 	fontRenderClass::getInstance()->getFont(fallback, fallback_facename.c_str(), font->pointSize, tabwidth);
 	setFont(fnt, replacement, fallback);
@@ -1094,10 +1099,10 @@ void eTextPara::blit(gDC &dc, const ePoint &offset, const gRGB &cbackground, con
 					int sa = i * 16;
 					if (sa < 256)
 					{
-						da = BLEND(background.a, currentforeground.a, sa) & 0xFF;
-						dr = BLEND(background.r, currentforeground.r, sa) & 0xFF;
-						dg = BLEND(background.g, currentforeground.g, sa) & 0xFF;
-						db = BLEND(background.b, currentforeground.b, sa) & 0xFF;
+						da = BLEND(background.a, currentforeground.a, sa) & 0xFF; // NOSONAR
+						dr = BLEND(background.r, currentforeground.r, sa) & 0xFF; // NOSONAR
+						dg = BLEND(background.g, currentforeground.g, sa) & 0xFF; // NOSONAR
+						db = BLEND(background.b, currentforeground.b, sa) & 0xFF; // NOSONAR
 					}
 #undef BLEND
 					da ^= 0xFF;

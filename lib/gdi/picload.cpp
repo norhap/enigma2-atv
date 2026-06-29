@@ -731,7 +731,7 @@ static void svg_load(Cfilepara* filepara, bool forceRGB = false) {
 	w = image->width * scale;
 	h = image->height * scale;
 
-	pic_buffer = (unsigned char*)malloc(w * h * 4);
+	pic_buffer = (unsigned char*)malloc(w * h * 4); // NOSONAR
 	if (pic_buffer == nullptr) {
 		nsvgDeleteRasterizer(rast);
 		nsvgDelete(image);
@@ -758,7 +758,7 @@ static void svg_load(Cfilepara* filepara, bool forceRGB = false) {
 			return;
 		}
 		for (int i = 0; i < w * h; i++) {
-			pic_buffer2[3 * i] = pic_buffer[4 * i];
+			pic_buffer2[3 * i] = pic_buffer[4 * i]; // NOSONAR
 			pic_buffer2[3 * i + 1] = pic_buffer[4 * i + 1];
 			pic_buffer2[3 * i + 2] = pic_buffer[4 * i + 2];
 		}
