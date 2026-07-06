@@ -66,10 +66,9 @@ def InitUsageConfig():
 
 	# "UserInterface" settings.
 	#
-	config.usage.menuType = ConfigSelection(default="standard", choices=[
-		("horzanim", _("Horizontal menu")),
-		("horzicon", _("Horizontal icons")),
-		("standard", _("Vertical menu"))
+	config.usage.menuType = ConfigSelection(default=0, choices=[
+		(0, _("Vertical menu")),
+		(1, _("Horizontal menu"))
 	])
 	config.usage.menuEntryStyle = ConfigSelection(default="text", choices=[
 		("text", _("Entry text only")),
@@ -114,6 +113,7 @@ def InitUsageConfig():
 	])
 	config.usage.unhandledKeyTimeout = ConfigSelection(default=2, choices=[(x, ngettext("%d Second", "%d Seconds", x) % x) for x in range(1, 6)])
 	config.usage.show_spinner = ConfigYesNo(default=True)
+	config.usage.fastSkinReload = ConfigYesNo(default=False)
 	config.usage.screenSaverStartTimer = ConfigSelection(default=0, choices=[(0, _("Disabled"))] + [(x, ngettext("%d Second", "%d Seconds", x) % x) for x in (5, 10, 20, 30, 40, 50)] + [(x * 60, ngettext("%d Minute", "%d Minutes", x) % x) for x in (1, 5, 10, 15, 20, 30, 45, 60)])
 	config.usage.screenSaverMoveTimer = ConfigSelection(default=10, choices=[(x, ngettext("%d Second", "%d Seconds", x) % x) for x in range(1, 61)])
 	config.usage.screenSaverMode = ConfigSelection(default=1, choices=[

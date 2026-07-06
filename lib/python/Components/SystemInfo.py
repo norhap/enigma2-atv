@@ -5,8 +5,8 @@ from os import listdir, readlink
 from os.path import basename, exists, isfile, islink, join
 from subprocess import PIPE, Popen
 
-from enigma import eDBoxLCD, eDVBCIInterfaces, eDVBCSAEngine, eDVBResourceManager, eGetEnigmaDebugLvl, getE2Rev, getOARev, Misc_Options
-from Tools.Directories import fileCheck, fileExists, fileHas, fileReadLine, fileReadLines, isPluginInstalled, pathExists, resolveFilename, SCOPE_LIBDIR, SCOPE_SKINS
+from enigma import Misc_Options, eDBoxLCD, eDVBCIInterfaces, eDVBCSAEngine, eDVBResourceManager, eGetEnigmaDebugLvl, getE2Rev, getOARev
+from Tools.Directories import SCOPE_LIBDIR, SCOPE_SKINS, fileCheck, fileExists, fileHas, fileReadLine, fileReadLines, isPluginInstalled, pathExists, resolveFilename
 from Tools.MultiBoot import MultiBoot
 
 MODULE_NAME = __name__.split(".")[-1]
@@ -485,6 +485,7 @@ for ciSlot in range(BoxInfo.getItem("CommonInterface")):
 BoxInfo.setItem("inadyn", exists("/etc/init.d/inadyn-mt"))
 BoxInfo.setItem("minidlna", exists("/etc/init.d/minidlna"))
 BoxInfo.setItem("ushare", exists("/etc/init.d/ushare"))
+BoxInfo.setItem("nfsserver", exists("/etc/init.d/nfsserver"))
 BoxInfo.setItem("samba", exists("/etc/init.d/samba"))
 BoxInfo.setItem("zerotier", exists("/etc/init.d/zerotier"))
 

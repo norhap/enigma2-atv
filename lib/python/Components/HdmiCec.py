@@ -83,10 +83,19 @@ msgfile = "/tmp/hdmicec_msg"
 errfile = "/tmp/hdmicec_cmd_err.log"
 hlpfile = "/tmp/hdmicec_cmd_hlp.txt"
 cecinfo = "http://www.cec-o-matic.com"
-VOLUME_FORWARDING_STATE_FILE = "/var/run/cec_volume_forwarding_dest"
+VOLUME_FORWARDING_STATE_FILE = "/etc/enigma2/cec_volume_forwarding_dest"
+VOLUME_FORWARDING_STATE_FILES = (VOLUME_FORWARDING_STATE_FILE, "/var/run/cec_volume_forwarding_dest")
 
 WRONG_DATA_LENGTH = "<wrong data length>"
 UNKNOWN = "<unknown>"
+ACTIVE_SOURCE_SWITCH_INTERVAL_MS = 250
+ACTIVE_SOURCE_SWITCH_RETRY_TIME_MS = 1000
+ACTIVE_SOURCE_SWITCH_RETRIES = 1
+PANASONIC_SOURCE_SWITCH_DELAY_MS = 3000
+SYSTEM_AUDIO_MODE_REQUEST_DELAY_MS = 1500
+SYSTEM_AUDIO_MODE_REQUEST_INTERVAL_MS = 300
+SYSTEM_AUDIO_MODE_REQUEST_RETRY_MS = 2500
+SYSTEM_AUDIO_MODE_REQUEST_RETRIES = 2
 
 CEC_VENDOR_UNKNOWN = 0x000000
 CEC_VENDOR_ENIGMA2_STB = 0x000934
@@ -583,6 +592,15 @@ class HdmiCec:
 			self.wait.timeout.get().append(self.sendCmd)
 			self.queue = []
 			self.messages = []
+			self.activeSourceTimer = eTimer()
+			self.activeSourceTimer.callback.append(self.sendActiveSourceCommand)
+			self.activeSourceMessages = []
+			self.activeSourceRetryPending = False
+			self.activeSourceRetryCounter = 0
+			self.systemAudioModeTimer = eTimer()
+			self.systemAudioModeTimer.callback.append(self.requestSystemAudioMode)
+			self.systemAudioModeMessages = []
+			self.systemAudioModeRequestCounter = 0
 
 			self.handleTimer = eTimer()
 			self.stateTimer = eTimer()
@@ -640,40 +658,52 @@ class HdmiCec:
 			self.sendMessage(0, "vendorrequest")
 			self.sendMessage(5, "vendorrequest")
 			self.sendMessage(5, "givesystemaudiostatus")
+			self.scheduleSystemAudioModeRequest(reset=True)
 
 	def _saveVolumeForwardingState(self):
-		try:
-			with open(VOLUME_FORWARDING_STATE_FILE, "w") as f:
-				f.write(str(self.volumeForwardingDestination))
-		except OSError as e:
-			self.CECwritedebug(f"[HdmiCec] could not save volume forwarding state: {e}", True)
+		saved = False
+		for path in VOLUME_FORWARDING_STATE_FILES:
+			try:
+				with open(path, "w") as f:
+					f.write(str(self.volumeForwardingDestination))
+				saved = True
+			except OSError as e:
+				if path == VOLUME_FORWARDING_STATE_FILE:
+					self.CECwritedebug(f"[HdmiCec] could not save persistent volume forwarding state: {e}", True)
+		if not saved:
+			self.CECwritedebug("[HdmiCec] could not save volume forwarding state", True)
 
 	def _restoreVolumeForwardingState(self):
-		try:
-			if not exists(VOLUME_FORWARDING_STATE_FILE):
-				return False
-			with open(VOLUME_FORWARDING_STATE_FILE) as f:
-				destination = int(f.read().strip(), 10)
-			if destination not in (0, 5):
+		for path in VOLUME_FORWARDING_STATE_FILES:
+			try:
+				if not exists(path):
+					continue
+				with open(path) as f:
+					destination = int(f.read().strip(), 10)
+				if destination not in (0, 5):
+					self._clearVolumeForwardingState()
+					return False
+				self.volumeForwardingDestination = destination
+				self.volumeForwardingEnabled = True
+				if destination == 5:
+					self.audio_system_present = True
+				if path != VOLUME_FORWARDING_STATE_FILE:
+					self._saveVolumeForwardingState()
+				self.CECwritedebug(f"[HdmiCec] volume forwarding state restored: device {destination:02x}", True)
+				return True
+			except (OSError, ValueError) as e:
+				self.CECwritedebug(f"[HdmiCec] could not restore volume forwarding state from {path}: {e}", True)
 				self._clearVolumeForwardingState()
 				return False
-			self.volumeForwardingDestination = destination
-			self.volumeForwardingEnabled = True
-			if destination == 5:
-				self.audio_system_present = True
-			self.CECwritedebug(f"[HdmiCec] volume forwarding state restored: device {destination:02x}", True)
-			return True
-		except (OSError, ValueError) as e:
-			self.CECwritedebug(f"[HdmiCec] could not restore volume forwarding state: {e}", True)
-			self._clearVolumeForwardingState()
 		return False
 
 	def _clearVolumeForwardingState(self):
-		try:
-			if exists(VOLUME_FORWARDING_STATE_FILE):
-				remove(VOLUME_FORWARDING_STATE_FILE)
-		except OSError as e:
-			self.CECwritedebug(f"[HdmiCec] could not clear volume forwarding state: {e}", True)
+		for path in VOLUME_FORWARDING_STATE_FILES:
+			try:
+				if exists(path):
+					remove(path)
+			except OSError as e:
+				self.CECwritedebug(f"[HdmiCec] could not clear volume forwarding state {path}: {e}", True)
 
 	def getPhysicalAddress(self):
 		physicaladdress = eHdmiCEC.getInstance().getPhysicalAddress()
@@ -708,6 +738,107 @@ class HdmiCec:
 	def sendCecMessage(self, address, cmd, data):
 		payload = self.payloadBytes(data)
 		eHdmiCEC.getInstance().sendMessageBytes(address, cmd, payload.hex().upper())
+
+	def activeSourceInterval(self):
+		return max(config.hdmicec.minimum_send_interval.value or 0, ACTIVE_SOURCE_SWITCH_INTERVAL_MS)
+
+	def activeSourceInitialDelay(self):
+		if self.tv_vendor == CEC_VENDOR_PANASONIC and "on" not in self.tv_powerstate:
+			return PANASONIC_SOURCE_SWITCH_DELAY_MS
+		return self.activeSourceInterval()
+
+	def stopActiveSourceSequence(self):
+		active = False
+		if self.activeSourceTimer.isActive():
+			self.activeSourceTimer.stop()
+			active = True
+		if self.activeSourceMessages or self.activeSourceRetryPending:
+			active = True
+		self.activeSourceMessages = []
+		self.activeSourceRetryPending = False
+		return active
+
+	def startActiveSourceSequence(self, retry=False):
+		if not config.hdmicec.enabled.value or not config.hdmicec.report_active_source.value or Screens.Standby.inStandby:
+			return
+		if retry and self.activesource:
+			self.activeSourceRetryPending = False
+			return
+		if not retry:
+			self.activeSourceRetryCounter = 0
+		if self.activeSourceTimer.isActive():
+			self.activeSourceTimer.stop()
+		self.activeSourceRetryPending = False
+		self.activeSourceMessages = [(0, "setstreampath"), (0, "sourceactive"), (0, "routinginfo")]
+		if config.hdmicec.report_active_menu.value:
+			self.activeSourceMessages.append((0, "menuactive"))
+		delay = self.activeSourceInterval() if retry else self.activeSourceInitialDelay()
+		self.CECwritedebug(f"[HdmiCec] schedule active source sequence in {delay} ms" + (" (retry)" if retry else ""), True)
+		if delay:
+			self.activeSourceTimer.start(delay, True)
+		else:
+			self.sendActiveSourceCommand()
+
+	def sendActiveSourceCommand(self):
+		if self.activeSourceRetryPending:
+			self.activeSourceRetryPending = False
+			self.startActiveSourceSequence(retry=True)
+			return
+		if Screens.Standby.inStandby or self.what == "standby":
+			self.stopActiveSourceSequence()
+			return
+		if self.activeSourceMessages:
+			address, message = self.activeSourceMessages.pop(0)
+			self.sendMessage(address, message, immediate=True)
+			if self.activeSourceMessages:
+				self.activeSourceTimer.start(self.activeSourceInterval(), True)
+				return
+		if (self.what == "on" and config.hdmicec.report_active_source.value and not self.activesource and
+			self.activeSourceRetryCounter < ACTIVE_SOURCE_SWITCH_RETRIES and not Screens.Standby.inStandby):
+			self.activeSourceRetryCounter += 1
+			self.activeSourceRetryPending = True
+			self.CECwritedebug(f"[HdmiCec] active source not confirmed, retry in {ACTIVE_SOURCE_SWITCH_RETRY_TIME_MS} ms", True)
+			self.activeSourceTimer.start(ACTIVE_SOURCE_SWITCH_RETRY_TIME_MS, True)
+
+	def shouldRequestSystemAudioMode(self):
+		return (
+			config.hdmicec.enabled.value and
+			config.hdmicec.volume_forwarding.value and
+			config.hdmicec.control_receiver_wakeup.value and
+			not self.system_audio_mode and
+			self.what != "standby" and
+			not Screens.Standby.inStandby
+		)
+
+	def scheduleSystemAudioModeRequest(self, delay=SYSTEM_AUDIO_MODE_REQUEST_DELAY_MS, reset=False):
+		if reset:
+			self.systemAudioModeRequestCounter = 0
+			self.systemAudioModeMessages = []
+		if self.shouldRequestSystemAudioMode() and not self.systemAudioModeTimer.isActive():
+			self.systemAudioModeTimer.start(delay, True)
+
+	def requestSystemAudioMode(self):
+		if self.systemAudioModeMessages:
+			address, message = self.systemAudioModeMessages.pop(0)
+			self.sendMessage(address, message)
+			if self.systemAudioModeMessages:
+				self.systemAudioModeTimer.start(SYSTEM_AUDIO_MODE_REQUEST_INTERVAL_MS, True)
+			elif self.shouldRequestSystemAudioMode() and self.systemAudioModeRequestCounter <= SYSTEM_AUDIO_MODE_REQUEST_RETRIES:
+				self.systemAudioModeTimer.start(SYSTEM_AUDIO_MODE_REQUEST_RETRY_MS, True)
+			return
+		if self.shouldRequestSystemAudioMode():
+			self.systemAudioModeRequestCounter += 1
+			self.CECwritedebug(f"[HdmiCec] request system audio mode for volume forwarding ({self.systemAudioModeRequestCounter})", True)
+			self.systemAudioModeMessages = [
+				(5, "powerstate"),
+				(5, "vendorrequest"),
+				(5, "givephysicaladdress"),
+				(5, "keypoweron"),
+				(5, "keyrelease"),
+				(5, "setsystemaudiomode"),
+				(5, "givesystemaudiostatus"),
+			]
+			self.requestSystemAudioMode()
 
 	def updateVolumeForwardingState(self, announce=False, persist=True):
 		if not config.hdmicec.enabled.value or not config.hdmicec.volume_forwarding.value:
@@ -765,6 +896,8 @@ class HdmiCec:
 				self.audio_system_present = True
 			if address in (0, 5):
 				self.updateVolumeForwardingState(config.hdmicec.volume_forwarding.value)
+			if address == 5:
+				self.scheduleSystemAudioModeRequest()
 			self.CECwritedebug(f"[HdmiCec] device {address:02X} vendor: {self.vendorName(vendor)} (0x{vendor:06X})", True)
 		if physical is not None:
 			device["physical"] = physical
@@ -774,6 +907,7 @@ class HdmiCec:
 				self.audio_system_present = True
 				self.volumeForwardingDestination = 5
 				self.updateVolumeForwardingState(config.hdmicec.volume_forwarding.value)
+				self.scheduleSystemAudioModeRequest()
 				if physical is not None and self.isUpstreamPath(physical, eHdmiCEC.getInstance().getPhysicalAddress()):
 					self.CECwritedebug(f"[HdmiCec] audio system detected upstream: {self.physicalAddressText(physical)} -> {self.getPhysicalAddress()}", True)
 		if name:
@@ -914,6 +1048,13 @@ class HdmiCec:
 					self.audio_system_present = address == 5 or self.audio_system_present
 					self.system_audio_mode = ctrl0 == 1
 					self.updateVolumeForwardingState(config.hdmicec.volume_forwarding.value)
+					if self.system_audio_mode:
+						self.systemAudioModeRequestCounter = 0
+						self.systemAudioModeMessages = []
+						if self.systemAudioModeTimer.isActive():
+							self.systemAudioModeTimer.stop()
+					elif address == 5:
+						self.scheduleSystemAudioModeRequest(reset=True)
 				case 0x71:  # give audio status
 					if address == 5:
 						self.sendMessage(address, "audiostatus")
@@ -1004,6 +1145,7 @@ class HdmiCec:
 						self.audio_system_present = True
 						if config.hdmicec.volume_forwarding.value:
 							self.sendMessage(5, "givesystemaudiostatus")
+							self.scheduleSystemAudioModeRequest()
 					if self.getDeviceVendor(address) == CEC_VENDOR_UNKNOWN:
 						self.sendMessage(address, "vendorrequest")
 				case 0x89 | 0x8A | 0x8B | 0xA0:
@@ -1030,11 +1172,14 @@ class HdmiCec:
 			if wakeup:
 				self.wakeup()
 
-	def sendMessage(self, address, message):
+	def sendMessage(self, address, message, immediate=False):
 		if config.hdmicec.enabled.value:
 			cmd = 0
 			data = b""
 			match message:
+				case "activesourcesequence":
+					self.startActiveSourceSequence()
+					return
 				case "volumeup":
 					self.sendVolumeKey(0x41)
 					return
@@ -1109,6 +1254,8 @@ class HdmiCec:
 					physicaladdress = eHdmiCEC.getInstance().getPhysicalAddress()
 					devicetype = eHdmiCEC.getInstance().getDeviceType()
 					data = pack("BBB", int(physicaladdress / 256), int(physicaladdress % 256), devicetype)
+				case "givephysicaladdress":
+					cmd = 0x83
 				case "vendorid":
 					cmd = 0x87
 					data = self.vendorPayload(self.getAdvertisedVendor(address))
@@ -1126,10 +1273,12 @@ class HdmiCec:
 				case "keypoweroff":
 					cmd = 0x44
 					data = pack("B", 0x6c)
+				case "keyrelease":
+					cmd = 0x45
 				case "powerstate":
 					cmd = 0x8f
 			if cmd:
-				if config.misc.DeepStandby.value or not config.hdmicec.minimum_send_interval.value:  # no delay for messages before go in to deep-standby
+				if immediate or config.misc.DeepStandby.value or not config.hdmicec.minimum_send_interval.value:  # no delay for messages before go in to deep-standby
 					if config.hdmicec.debug.value:
 						self.debugTx(address, cmd, data)
 					self.sendCecMessage(address, cmd, data)
@@ -1154,15 +1303,24 @@ class HdmiCec:
 		for send in messages:
 			address = send[0]
 			message = send[1]
-			if self.what == "on" and ((self.repeatCounter > 0 or self.activesource) and (message == "standby" or (message == "wakeup" and not config.hdmicec.control_tv_wakeup.value))):  # skip active source workaround messages
+			skipActiveSourceWorkaround = (
+				self.what == "on" and
+				(self.repeatCounter > 0 or self.activesource) and
+				(message == "standby" or
+					(message == "wakeup" and not config.hdmicec.control_tv_wakeup.value) or
+					(message == "activesourcesequence" and self.activesource))
+			)
+			if skipActiveSourceWorkaround:
 				continue
 			self.sendMessage(address, message)
 			sendCnt += 1
 		if sendCnt:
 			self.repeatTimer.start((config.hdmicec.minimum_send_interval.value * (len(messages) + 1) + self.sendSlower()), True)
+		if self.what == "on":
+			self.scheduleSystemAudioModeRequest()
 
 	def repeatMessages(self):
-		if len(self.queue):
+		if len(self.queue) or self.activeSourceTimer.isActive():
 			self.repeatTimer.start(1000, True)
 		elif self.firstrun:
 			if self.stateTimer.isActive():
@@ -1202,11 +1360,9 @@ class HdmiCec:
 				if config.hdmicec.control_tv_wakeup.value:
 					self.messages.append((0, "wakeup"))
 				if config.hdmicec.report_active_source.value:
-					self.messages.append((0, "setstreampath"))
-					self.messages.append((0, "sourceactive"))
-					self.messages.append((0, "routinginfo"))
-				if config.hdmicec.report_active_menu.value:
-					if not config.hdmicec.report_active_source.value and self.activesource:
+					self.messages.append((0, "activesourcesequence"))
+				elif config.hdmicec.report_active_menu.value:
+					if self.activesource:
 						self.messages.append((0, "sourceactive"))
 					self.messages.append((0, "menuactive"))
 
@@ -1218,6 +1374,7 @@ class HdmiCec:
 					self.repeatTimer.start(1000, True)
 				else:
 					self.sendMessages(self.messages)
+				self.scheduleSystemAudioModeRequest(reset=True)
 
 			if isfile("/usr/script/TvOn.sh"):
 				Console().ePopen("/usr/script/TvOn.sh &")
@@ -1263,9 +1420,15 @@ class HdmiCec:
 			if self.stateTimer.isActive():
 				self.stateTimer.stop()
 				active = True
+			if self.systemAudioModeTimer.isActive():
+				self.systemAudioModeTimer.stop()
+				active = True
+			self.systemAudioModeMessages = []
+			if self.stopActiveSourceSequence():
+				active = True
 			return active
 		else:
-			return self.repeatTimer.isActive() or self.stateTimer.isActive()
+			return self.repeatTimer.isActive() or self.stateTimer.isActive() or self.activeSourceTimer.isActive()
 
 	def stateTimeout(self):
 		self.CECwritedebug("[HdmiCec] timeout for check TV state!", True)
@@ -1285,9 +1448,7 @@ class HdmiCec:
 		if "source" in state:
 			self.tv_powerstate = "on"
 			if state == "activesource" and self.what == "on" and config.hdmicec.report_active_source.value and not self.activesource and not self.firstrun:  # last try for switch to correct input
-				self.sendMessage(0, "setstreampath")
-				self.sendMessage(0, "sourceactive")
-				self.sendMessage(0, "routinginfo")
+				self.startActiveSourceSequence()
 			if self.firstrun and not config.hdmicec.handle_deepstandby_events.value:
 				self.firstrun = False
 		elif state == "tvstandby":
@@ -1432,6 +1593,7 @@ class HdmiCec:
 		if self.volumeForwardingEnabled:
 			self.sendMessage(5, "vendorrequest")
 			self.sendMessage(5, "givesystemaudiostatus")
+			self.scheduleSystemAudioModeRequest()
 
 	def configReportActiveMenu(self, configElement):
 		if self.old_configReportActiveMenu == config.hdmicec.report_active_menu.value:

@@ -9,7 +9,7 @@ from enigma import BT_ALPHABLEND, BT_ALPHATEST, BT_HALIGN_CENTER, BT_HALIGN_LEFT
 from Components.config import ConfigEnableDisable, ConfigSelection, ConfigSubsection, ConfigText, config
 from Components.SystemInfo import BoxInfo
 from Components.Sources.Source import ObsoleteSource
-from Tools.Directories import SCOPE_LCDSKIN, SCOPE_GUISKIN, SCOPE_FONTS, SCOPE_SKINS, pathExists, resolveFilename, fileReadXML
+from Tools.Directories import SCOPE_LCDSKIN, SCOPE_GUISKIN, SCOPE_FONTS, SCOPE_SKINS, pathExists, resolveFilename, fileReadXML, clearResolveLists
 from Tools.Import import my_import
 from Tools.LoadPixmap import LoadPixmap
 
@@ -50,6 +50,7 @@ colors = {  # Dictionary of skin color names.
 	"key_text": gRGB(0x00FFFFFF),
 	"key_yellow": gRGB(0x00A08500)
 }
+gradients = {}  # Dictionary of skin color names whose value is a gradient spec.
 fonts = {  # Dictionary of predefined and skin defined font aliases.
 	"Body": ("Regular", 18, 22, 16),
 	"ChoiceList": ("Regular", 20, 24, 18)
@@ -96,7 +97,7 @@ runCallbacks = False
 # E.g. "MySkin/skin_display.xml"
 #
 def InitSkins():
-	global currentPrimarySkin, currentDisplaySkin, resolutions
+	global currentPrimarySkin, currentDisplaySkin
 	# #################################################################################################
 	if isfile("/etc/.restore_skins"):
 		unlink("/etc/.restore_skins")
@@ -220,26 +221,34 @@ def loadSkin(filename, scope=SCOPE_SKINS, desktop=getDesktop(GUI_SKIN_ID), scree
 
 
 def reloadSkins():
-	global colors, domScreens, fonts, menus, parameters, setups, switchPixmap
 	domScreens.clear()
 	colors.clear()
-	colors = {
+	colors.update({
 		"key_back": gRGB(0x00313131),
 		"key_blue": gRGB(0x0018188B),
 		"key_green": gRGB(0x001F771F),
 		"key_red": gRGB(0x009F1313),
 		"key_text": gRGB(0x00FFFFFF),
 		"key_yellow": gRGB(0x00A08500)
-	}
+	})
+	gradients.clear()
 	fonts.clear()
-	fonts = {
+	fonts.update({
 		"Body": ("Regular", 18, 22, 16),
 		"ChoiceList": ("Regular", 20, 24, 18)
-	}
+	})
 	menus.clear()
+	screens.clear()
 	parameters.clear()
 	setups.clear()
 	switchPixmap.clear()
+	windowStyles.clear()
+	scrollLabelStyle.clear()
+	subtitleFonts.clear()
+	constantWidgets.clear()
+	layouts.clear()
+	variables.clear()
+	clearResolveLists()
 	InitSkins()
 
 
@@ -482,28 +491,19 @@ def parseFont(value, scale=((1, 1), (1, 1))):
 
 
 def parseFontScale(value, scale=((1, 1), (1, 1))):
-	if ";" in value:
-		scaleType, size = value.split(";")
-		try:
-			size = int(size)
-		except ValueError:
-			val = size.replace("f", f"{getSkinFactor()}")
-			try:
-				size = int(eval(val))
-			except Exception as err:
-				print(f"[Skin] Error ({type(err).__name__} - {err}): Font scale size in '{value}', evaluated to '{val}', can't be processed!")
-				size = None
-		if scaleType not in ("size", "width"):
-			print(f"[Skin] Error: Font scale size must be in 'size/width', value:'{value}', can't be processed!")
-			size = None
-			scaleType = 0
-		if size:
-			size = int(size * scale[1][0] / scale[1][1])
-			scaleType = 1 if scaleType == "size" else 2
-	else:
-		scaleType = 0
-		size = None
-	return scaleType, size
+    scaleType, *size = value.split(";")
+    try:
+        size = int(int(size[0] if size else -4) * scale[1][0] / scale[1][1])
+    except ValueError as err:
+        print(f"[Skin] Error ({type(err).__name__} - {err}): Font scale size in '{value}' is '{size}' and is invalid!")
+        size = 0
+    if scaleType in ("size", "width"):
+        scaleType = 1 if scaleType == "size" else 2
+    else:
+        print(f"[Skin] Error: Font scale must be 'size' or 'width' not '{scaleType}'!")
+        size = 0
+        scaleType = 0
+    return scaleType, size
 
 
 def parseGradient(value):
@@ -516,6 +516,7 @@ def parseGradient(value):
 			isColor = False
 		return isColor
 
+	value = gradients.get(value, value)
 	data = [x.strip() for x in value.split(",")]
 	gradientColors = [gRGB(0x00000000), gRGB(0x00FFFFFF), gRGB(0x00FFFFFF)]  # Start color, center color, end color.
 	for index, color in enumerate(data):
@@ -1005,7 +1006,7 @@ class AttributeParser:
 		pass
 
 	def backgroundColor(self, value):
-		if "," in value:
+		if "," in value or value in gradients:
 			self.guiObject.setBackgroundGradient(*parseGradient(value))
 		else:
 			self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
@@ -1021,7 +1022,7 @@ class AttributeParser:
 		attribDeprecationWarning("backgroundColorRows", "backgroundColorEven")
 
 	def backgroundColorSelected(self, value):
-		if "," in value:
+		if "," in value or value in gradients:
 			self.guiObject.setBackgroundGradientSelected(*parseGradient(value))
 		else:
 			self.guiObject.setBackgroundColorSelected(parseColor(value, 0x00000000))
@@ -1434,7 +1435,6 @@ def applyAllAttributes(guiObject, desktop, attributes, scale=((1, 1), (1, 1))):
 def loadSingleSkinData(desktop, screenID, domSkin, pathSkin, scope=SCOPE_GUISKIN):
 	"""Loads skin data like colors, windowstyle etc."""
 	assert domSkin.tag == "skin", "root element in skin must be 'skin'!"
-	global colors, fonts, menus, parameters, setups, switchPixmap, resolutions, scrollLabelStyle, subtitleFonts
 	for tag in domSkin.findall("output"):
 		scrnID = parseInteger(tag.attrib.get("id", GUI_SKIN_ID), GUI_SKIN_ID)
 		if scrnID == GUI_SKIN_ID:
@@ -1472,7 +1472,10 @@ def loadSingleSkinData(desktop, screenID, domSkin, pathSkin, scope=SCOPE_GUISKIN
 			name = color.attrib.get("name")
 			color = color.attrib.get("value")
 			if name and color:
-				colors[name] = parseColor(color, 0x00FFFFFF)
+				if "," in color:
+					gradients[name] = color
+				else:
+					colors[name] = parseColor(color, 0x00FFFFFF)
 			else:
 				skinError(f"Tag 'color' needs a name and color, got name='{name}' and color='{color}'")
 	for tag in domSkin.findall("fonts"):
@@ -1515,31 +1518,40 @@ def loadSingleSkinData(desktop, screenID, domSkin, pathSkin, scope=SCOPE_GUISKIN
 				skinError(f"Tag 'parameter' needs a name and value, got name='{name}' and size='{value}'")
 	for tag in domSkin.findall("screens"):
 		for screen in tag.findall("screen"):
-			key = screen.attrib.get("key")
 			image = screen.attrib.get("image")
-			if key and image is not None:
-				screens[key] = image
-				# print(f"[Skin] DEBUG: Screen key='{key}', image='{image}'.")
+			key = screen.attrib.get("key", "")
+			keys = screen.attrib.get("keys", "")
+			if image is not None and (key or keys):
+				keys = [x.strip() for x in keys.split(",")] if keys else [key]
+				for key in keys:
+					screens[key] = image
+					# print(f"[Skin] DEBUG: Screen key='{key}', image='{image}'.")
 			else:
-				skinError(f"Tag 'screen' needs key and image, got key='{key}' and image='{image}'")
+				skinError(f"Tag 'screen' needs key or keys and image, got key='{key}' keys='{keys}' and image='{image}'")
 	for tag in domSkin.findall("menus"):
 		for menu in tag.findall("menu"):
-			key = menu.attrib.get("key")
 			image = menu.attrib.get("image")
-			if key and image is not None:
-				menus[key] = image
-				# print(f"[Skin] DEBUG: Menu key='{key}', image='{image}'.")
+			key = menu.attrib.get("key", "")
+			keys = menu.attrib.get("keys", "")
+			if image is not None and (key or keys):
+				keys = [x.strip() for x in keys.split(",")] if keys else [key]
+				for key in keys:
+					menus[key] = image
+					# print(f"[Skin] DEBUG: Menu key='{key}', image='{image}'.")
 			else:
-				skinError(f"Tag 'menu' needs key and image, got key='{key}' and image='{image}'")
+				skinError(f"Tag 'menu' needs key or keys and image, got key='{key}' keys='{keys}' and image='{image}'")
 	for tag in domSkin.findall("setups"):
 		for setup in tag.findall("setup"):
-			key = setup.attrib.get("key")
 			image = setup.attrib.get("image")
-			if key and image is not None:
-				setups[key] = image
-				# print(f"[Skin] DEBUG: Setup key='{key}', image='{image}'.")
+			key = setup.attrib.get("key", "")
+			keys = setup.attrib.get("keys", "")
+			if image is not None and (key or keys):
+				keys = [x.strip() for x in keys.split(",")] if keys else [key]
+				for key in keys:
+					setups[key] = image
+					# print(f"[Skin] DEBUG: Setup key='{key}', image='{image}'.")
 			else:
-				skinError(f"Tag 'setup' needs key and image, got key='{key}' and image='{image}'")
+				skinError(f"Tag 'setup' needs key or keys and image, got key='{key}' keys='{keys}' and image='{image}'")
 	for tag in domSkin.findall("constant-widgets"):
 		for constant_widget in tag.findall("constant-widget"):
 			name = constant_widget.attrib.get("name")
@@ -2120,7 +2132,19 @@ class TemplateParser:
 		attributes = {"type": node.tag}
 		for attrib, value in skinAttributes:
 			attributes[attrib] = value
-		attributes["_flags"] = horizontalAlignments.get(attributes.get("horizontalAlignment"), 1) + verticalAlignments.get(attributes.get("verticalAlignment"), 0) + wraps.get(attributes.get("wrap"), 0)
+
+		flags = 0
+		if attributes["type"] == "text":
+			attributesFlags = attributes.get("flags", "")
+			for attributesflag in attributesFlags.split(","):
+				if attributesflag == "blend":
+					flags += 256  # RT_BLEND
+				elif attributesflag == "underline":
+					flags += 512  # RT_UNDERLINE
+				elif attributesflag == "scroll":
+					flags += 1024  # RT_SCROLL
+
+		attributes["_flags"] = horizontalAlignments.get(attributes.get("horizontalAlignment"), 1) + verticalAlignments.get(attributes.get("verticalAlignment"), 0) + wraps.get(attributes.get("wrap"), 0) + flags
 		if attributes["type"] == "pixmap":
 			attributes["pixmapType"] = pixmapTypes.get(attributes.get("alpha", ""), eListboxPythonMultiContent.TYPE_PIXMAP)
 			attributes["pixmapFlags"] = parseScale(attributes.get("scale", "off"))
@@ -2385,11 +2409,21 @@ def readSkin(screen, skin, names, desktop):
 					if isinstance(element, converterClass):  # and element.converter_arguments == "widgetTemplates":
 						connection = element
 				if connection is None:
+					itemHeight = int(widget.attrib.get("itemHeight", 0))
+					itemWidth = int(widget.attrib.get("itemWidth", 0))
+					if not itemWidth or not itemHeight:
+						savedState = (context.x, context.y, context.w, context.h)
+						try:
+							_, widgetSize = context.parse(widget.attrib.get("position"), widget.attrib.get("size"), None)
+						finally:
+							context.x, context.y, context.w, context.h = savedState
+						itemWidth = itemWidth or widgetSize[0]
+						itemHeight = itemHeight or widgetSize[1]
 					args = {
 						"scale": context.scale,
 						"dom": widgetTemplates,
-						"itemHeight": int(widget.attrib.get("itemHeight", 0)),
-						"itemWidth": int(widget.attrib.get("itemWidth", 0))
+						"itemHeight": itemHeight,
+						"itemWidth": itemWidth
 					}
 					connection = converterClass(args)
 					connection.connect(source)
