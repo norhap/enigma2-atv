@@ -63,8 +63,8 @@ class Session:
 		from Components.FrontPanelLed import frontPanelLed
 		frontPanelLed.setSession(self)
 		from Tools.Notifications import notificationCenter
-		notificationCenter.session = self
 		self.allDialogs = []
+		notificationCenter.setup(self)
 		for plugin in plugins.getPlugins(PluginDescriptor.WHERE_SESSIONSTART):
 			try:
 				plugin.__call__(reason=0, session=self)
@@ -417,6 +417,8 @@ def runScreenTest():
 	CiHandler.setSession(session)
 	from Screens.SwapManager import SwapAutostart
 	SwapAutostart()
+	enigma.eProfileWrite("Processing Screen")
+	processing = Processing(session)  # noqa F841
 	enigma.eProfileWrite("Wizards")
 	screensToRun = []
 	RestoreSettings = None
@@ -449,8 +451,6 @@ def runScreenTest():
 	vol = VolumeControl(session)  # noqa F841
 	enigma.eProfileWrite("VolumeAdjust")
 	vol = VolumeAdjust(session)  # noqa F841
-	enigma.eProfileWrite("Processing Screen")
-	processing = Processing(session)  # noqa F841
 	enigma.eProfileWrite("Global MessageBox Screen")
 	modalMessagebox = ModalMessageBox(session)  # noqa F841
 	toast = Toast(session)  # noqa F841
@@ -761,6 +761,7 @@ config.crash.debugTeletext = ConfigYesNo(default=False)
 config.crash.debugStorage = ConfigYesNo(default=False)
 config.crash.debugDVBDB = ConfigYesNo(default=False)
 config.crash.debugTextEncoding = ConfigYesNo(default=False)
+config.crash.debugNetwork = ConfigYesNo(default=True)
 
 # config.plugins needs to be defined before InputDevice < HelpMenu < MessageBox < InfoBar.
 config.plugins = ConfigSubsection()
