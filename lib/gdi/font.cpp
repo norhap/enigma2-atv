@@ -160,7 +160,10 @@ std::string fontRenderClass::AddFont(const std::string &filename, const std::str
 
 	auto it = fontMap.find(name);
 	if (it != fontMap.end())
+	{
+		FTC_Manager_RemoveFaceID(cacheManager, (FTC_FaceID)it->second);
 		delete it->second;
+	}
 
 	fontListEntry *n = new fontListEntry;
 	n->filename = filename;
@@ -173,6 +176,25 @@ std::string fontRenderClass::AddFont(const std::string &filename, const std::str
 	eDebugNoNewLine(" -> '%s'.\n", n->face.c_str());
 
 	return n->face;
+}
+
+void fontRenderClass::ClearFonts()
+{
+	singleLock s(ftlock);
+	for (auto &entry : fontMap)
+	{
+		FTC_Manager_RemoveFaceID(cacheManager, (FTC_FaceID)entry.second);
+		delete entry.second;
+	}
+	fontMap.clear();
+	fontFacesCacheValid = false;
+	eTextPara::setReplacementFont("");
+	eTextPara::setFallbackFont("");
+}
+
+void clearFonts()
+{
+	fontRenderClass::getInstance()->ClearFonts();
 }
 
 fontRenderClass::fontListEntry::~fontListEntry() = default;
@@ -622,7 +644,7 @@ void eTextPara::setFont(const gFont *font, int tabwidth)
 	 * holds via FTC_Manager_LookupSize, so current_face and its size
 	 * metrics are guaranteed to be valid when we read them.              */
 	cachedLineHeight = 0;
-	if (current_face)
+	if (current_face && current_face->size)
 	{
 		int h = current_face->size->metrics.height;
 		if (!h)
@@ -882,23 +904,27 @@ int eTextPara::renderString(const char *string, int rflags, int border, int mark
 							{
 								if ((i + 2 + codeidx) == uc_visual.end()) break;
 								color[codeidx] = (char)((*(i + 2 + codeidx)) & 0xff);
-								if (!isxdigit((unsigned char)color[codeidx]))
+								// Hex digits + legacy color notation (: ; < = > ?)
+								unsigned char cc = (unsigned char)color[codeidx];
+								if (!(isxdigit(cc) || (cc >= ':' && cc <= '?')))
 									break;
 							}
-							isprintable = 0;
 							if (codeidx == 8)
 							{
 								newcolor = gRGB(color).argb();
 								activate_newcolor = true;
+								activate_colorreset = false;
+								isprintable = 0;
 								i += 1 + codeidx;
-							}
-							else
-							{
-								activate_colorreset = true;
-								i++;
 							}
 							break;
 						}
+						case 'C':
+							activate_colorreset = true;
+							activate_newcolor = false;
+							isprintable = 0;
+							++i;
+							break;
 						default:
 						;
 					}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-12 13:00+0000\n"
+"POT-Creation-Date: 2026-07-15 19:52+0000\n"
 "PO-Revision-Date: 2026-03-01 05:04+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ta/>\n"
@@ -41,6 +41,9 @@ msgstr "  ரெக்"
 
 msgid "  Red key : Show/Hide channel name"
 msgstr "  சிவப்பு விசை: சேனல் பெயரைக் காட்டு/மறைக்கவும்"
+
+msgid " (+5 volt terrestrial)"
+msgstr ""
 
 #, python-format
 msgid " (Channel %s)"
@@ -1605,14 +1608,17 @@ msgstr ""
 "ஒரு பதிவு தற்போது இயங்குகிறது.\n"
 " நீங்கள் என்ன செய்ய விரும்புகிறீர்கள்?"
 
-msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
-msgstr "ஒரு பதிவு தற்போது இயங்குகிறது. பதவியை உள்ளமைக்க முயற்சிக்கும் முன் பதிவை நிறுத்துங்கள்."
-
 msgid "A recording is currently running. Please stop the recording before trying to scan."
 msgstr "ஒரு பதிவு தற்போது இயங்குகிறது. ச்கேன் செய்ய முயற்சிக்கும் முன் பதிவை நிறுத்துங்கள்."
 
 msgid "A recording is currently running. Please stop the recording before trying to start the satellite finder."
 msgstr "ஒரு பதிவு தற்போது இயங்குகிறது. செயற்கைக்கோள் கண்டுபிடிப்பாளரைத் தொடங்க முயற்சிக்கும் முன் பதிவை நிறுத்துங்கள்."
+
+msgid "A recording is running or will start within six minutes. Changing the tuner configuration can interrupt it. Save anyway?"
+msgstr ""
+
+msgid "A recording is running or will start within six minutes. Please try the positioner setup later."
+msgstr ""
 
 #, python-format
 msgid ""
@@ -1664,6 +1670,11 @@ msgid ""
 msgstr ""
 "ஒரு நேரங்குறிகருவி பதிவு செய்யத் தவறிவிட்டது!\n"
 " டிவியை முடக்கி மீண்டும் முயற்சிக்கவா?\n"
+
+msgid ""
+"A zap timer wants to switch the channel.\n"
+"Do you want to zap now?\n"
+msgstr ""
 
 msgid "AAC downmix"
 msgstr "AAC டவுன்மிக்ச்"
@@ -1760,6 +1771,9 @@ msgstr "தொடங்க உள்ளது"
 
 msgid "Above 200 Mbps"
 msgstr "200 எம்.பி.பி.எச்"
+
+msgid "Access mode"
+msgstr ""
 
 msgid "Access point"
 msgstr "அணுகல் புள்ளி"
@@ -1877,6 +1891,9 @@ msgstr "பூச்செட்டில் மார்க்கரைச் �
 
 msgid "Add New Quad Channel Entry"
 msgstr "புதிய குவாட் சேனல் நுழைவு சேர்க்கவும்"
+
+msgid "Add Path"
+msgstr ""
 
 msgid "Add RecordTimer"
 msgstr "ரெக்கார்ட் டைமரைச் சேர்க்கவும்"
@@ -2043,6 +2060,9 @@ msgstr "தொகுதி ஆஃப்செட் பட்டியலில�
 msgid "Adding schedule..."
 msgstr "அட்டவணையைச் சேர்ப்பது ..."
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional files/folders to backup"
 msgstr "காப்புப்பிரதிக்கு கூடுதல் கோப்புகள்/கோப்புறைகள்"
 
@@ -2051,6 +2071,10 @@ msgstr "கூடுதல் மின்னோடி விருப்பங�
 
 msgid "Additional motor options allow you to enter details from your motor's specifications so Enigma can work out how long it will take to move to another satellite."
 msgstr "கூடுதல் மின்னோடி விருப்பங்கள் உங்கள் மோட்டரின் விவரக்குறிப்புகளிலிருந்து விவரங்களை உள்ளிட உங்களை அனுமதிக்கின்றன, எனவே மற்றொரு செயற்கைக்கோளுக்குச் செல்ல எவ்வளவு நேரம் ஆகும் என்பதை புதிரானது வேலை செய்யலாம்."
+
+#, python-format
+msgid "Additional rotor cable from %s"
+msgstr ""
 
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "வண்ண அமைப்புகளை சரிசெய்யவும், இதனால் அனைத்து வண்ண நிழல்களும் வேறுபடுகின்றன, ஆனால் முடிந்தவரை நிறைவுற்றதாகத் தோன்றும். முடிவில் நீங்கள் மகிழ்ச்சியாக இருந்தால், வீடியோவை நன்றாகச் சரிசெய்ய சரி என்பதை அழுத்தவும் அல்லது பிற சோதனைத் திரைகளைத் தேர்ந்தெடுக்க எண் விசைகளைப் பயன்படுத்தவும்."
@@ -2112,11 +2136,11 @@ msgstr "ஆப்பிரிக்கா"
 msgid "After Event"
 msgstr "நிகழ்வுக்குப் பிறகு"
 
-msgid "After Power Lost"
-msgstr "பவர் லோச்டுக்குப் பிறகு"
-
 msgid "After event"
 msgstr "நிகழ்வுக்குப் பிறகு"
+
+msgid "After power loss"
+msgstr "பவர் லோச்டுக்குப் பிறகு"
 
 msgid "After recording"
 msgstr "பதிவு செய்த பிறகு"
@@ -2228,6 +2252,9 @@ msgstr "செவித்திறன் குறைபாட்டிற்�
 
 msgid "Allow unsupported modes"
 msgstr "ஆதரிக்கப்படாத முறைகளை அனுமதிக்கவும்"
+
+msgid "Allowed clients"
+msgstr ""
 
 msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr "சேமிக்கப்பட்ட ஈபிசி தரவை தவறாமல் படிக்க %s %s அனுமதிக்கிறது."
@@ -2684,6 +2711,9 @@ msgstr "தானி"
 
 msgid "Auto (not available)"
 msgstr "ஆட்டோ (கிடைக்கவில்லை)"
+
+msgid "Auto DiSEqC search order"
+msgstr ""
 
 msgid "Auto Language"
 msgstr "வாகன மொழி"
@@ -3818,6 +3848,9 @@ msgstr "மையப்படுத்தப்பட்ட, மூடப்ப�
 msgid "Central African Republic"
 msgstr "மத்திய ஆப்ரிக்க குடியரசு"
 
+msgid "Central Europe"
+msgstr ""
+
 msgid "Central Khmer"
 msgstr "சென்டரல் கெமெர்"
 
@@ -3929,7 +3962,7 @@ msgstr "சேனல் தேர்வுத் திரை"
 msgid "Channel Selection Settings"
 msgstr "சேனல் தேர்வு அமைப்புகள்"
 
-msgid "Channel Selection picon set"
+msgid "Channel Selection picon path"
 msgstr ""
 
 msgid "Channel buttons"
@@ -4007,6 +4040,9 @@ msgstr "அரட்டை நிகழ்ச்சி"
 msgid "Chechen"
 msgstr "செச்சென்"
 
+msgid "Check ONID/TSID"
+msgstr ""
+
 msgid "Check for PDC"
 msgstr "பி.டி.சி."
 
@@ -4027,6 +4063,9 @@ msgstr "ஊட்டங்களை சரிபார்க்கிறது"
 
 msgid "Checking Logs..."
 msgstr "பதிவுகளை சரிபார்க்கிறது ..."
+
+msgid "Checking ONID/TSID ..."
+msgstr ""
 
 msgid "Checking file system..."
 msgstr "கோப்பு முறைமையைச் சரிபார்க்கிறது ..."
@@ -4873,6 +4912,9 @@ msgstr "உள்ளமைத்தல்"
 msgid "Configuring Service"
 msgstr "சேவையை உள்ளமைத்தல்"
 
+msgid "Confirm Zap"
+msgstr ""
+
 msgid "ConflictTimer Actions"
 msgstr "மோதல் செயல்கள்"
 
@@ -4948,12 +4990,6 @@ msgstr "இந்த தகவலுக்கு உங்கள் எச்.�
 
 msgid "Consult your motor's specifications for this information, or leave the default setting."
 msgstr "இந்த தகவலுக்கு உங்கள் மோட்டரின் விவரக்குறிப்புகளை அணுகவும் அல்லது இயல்புநிலை அமைப்பை விடவும்."
-
-msgid "Consult your receiver's manual for more information on power management."
-msgstr "மின் மேலாண்மை குறித்த கூடுதல் தகவலுக்கு உங்கள் ரிசீவரின் கையேட்டில் அணுகவும்."
-
-msgid "Consult your receiver's manual for more information on power threshold."
-msgstr "பவர் வாசல் பற்றிய கூடுதல் தகவலுக்கு உங்கள் ரிசீவரின் கையேட்டைப் பாருங்கள்."
 
 #, python-format
 msgid "Contacting IceTV server and setting up your %s %s."
@@ -5356,8 +5392,17 @@ msgstr "தற்போதைய இடம் '%s'."
 msgid "Current mode: %s \n"
 msgstr "தற்போதைய பயன்முறை: %s\n"
 
+msgid "Current rotor position:"
+msgstr ""
+
+msgid "Current rotor position: unknown"
+msgstr ""
+
 msgid "Current settings:"
 msgstr "தற்போதைய அமைப்புகள்:"
+
+msgid "Current supplied to the LNB and positioner."
+msgstr ""
 
 msgid "Current time"
 msgstr "தற்போதைய நேரம்"
@@ -5876,6 +5921,9 @@ msgstr "இந்த சேவைக்கு சாப்ட்கேமை வ
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "HTTP (கள்) ச்ட்ரீம்கள் தொடங்குவதற்கு முன் மில்லி விநாடிகளில் கூடுதல் தாமதத்தை வரையறுக்கவும்."
 
+msgid "Define path %s for picons."
+msgstr ""
+
 msgid "Define the custom mountpoint for the device."
 msgstr "சாதனத்திற்கான தனிப்பயன் மவுண்ட்பாயிண்ட் வரையறுக்கவும்."
 
@@ -6209,6 +6257,9 @@ msgstr "சிச்ட்ரீமர் பதிவின் விவரம�
 
 msgid "Details"
 msgstr "விவரங்கள்"
+
+msgid "Detect positioner movement by its current consumption."
+msgstr ""
 
 msgid "Detective"
 msgstr "டிடெக்டிவ்"
@@ -6977,6 +7028,9 @@ msgstr "கிழக்கு"
 msgid "East limit set"
 msgstr "கிழக்கு வரம்பு தொகுப்பு"
 
+msgid "Eastern satellites"
+msgstr ""
+
 msgid "Easy listening"
 msgstr "எளிதாகக் கேட்பது"
 
@@ -7175,6 +7229,12 @@ msgstr "மினிட்வியை இயக்கு"
 msgid "Enable Move Mode"
 msgstr "நகர்வு பயன்முறையை இயக்கவும்"
 
+msgid "Enable NFSv3"
+msgstr ""
+
+msgid "Enable NFSv4"
+msgstr ""
+
 msgid "Enable Netmed EPG"
 msgstr "நிகர ஈபிசியை இயக்கவும்"
 
@@ -7335,6 +7395,9 @@ msgstr "பிழைத்திருத்த பதிவு கோப்ப�
 msgid "Enable this option to add keyboard key map data to the debug log file."
 msgstr "பிழைத்திருத்த பதிவு கோப்பில் விசைப்பலகை முக்கிய வரைபடத் தரவைச் சேர்க்க இந்த விருப்பத்தை இயக்கவும்."
 
+msgid "Enable this option to add network information to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add opkg output data to the debug log file."
 msgstr "பிழைத்திருத்த பதிவு கோப்பில் OPKG வெளியீட்டு தரவைச் சேர்க்க இந்த விருப்பத்தை இயக்கவும்."
 
@@ -7361,6 +7424,12 @@ msgstr "சாதன மேலாளரில் அறியப்படாத 
 
 msgid "Enable this setting if your aerial system needs power."
 msgstr "உங்கள் வான்வழி அமைப்புக்கு ஆற்றல் தேவைப்பட்டால் இந்த அமைப்பை இயக்கவும்."
+
+msgid "Enable this when a power inserter or external supply powers the Unicable device."
+msgstr ""
+
+msgid "Enable this when the User Band is protected by a PIN in a multi-dwelling Unicable installation."
+msgstr ""
 
 msgid "Enable timer"
 msgstr "டைமரை இயக்கவும்"
@@ -7507,6 +7576,9 @@ msgstr "இந்த டைமருக்கு ஒரு பெயரை உ�
 msgid "Enter a new name for this device."
 msgstr "இந்த சாதனத்திற்கு புதிய பெயரை உள்ளிடவும்."
 
+msgid "Enter expected ONID/TSID"
+msgstr ""
+
 msgid "Enter if you are North or South of the equator."
 msgstr "நீங்கள் பூமத்திய ரேகைக்கு வடக்கு அல்லது தெற்கே இருந்தால் உள்ளிடவும்."
 
@@ -7528,6 +7600,12 @@ msgstr "முள் குறியீட்டை உள்ளிடவும�
 msgid "Enter text via an attached keyboard"
 msgstr "இணைக்கப்பட்ட விசைப்பலகை வழியாக உரையை உள்ளிடவும்"
 
+msgid "Enter the IP address or subnet (e.g. 192.168.1.0/24) to which NFS host access is granted. Enter '*', the default, for all host access."
+msgstr ""
+
+msgid "Enter the PIN from 0 to 255 assigned to this User Band by the installer or building operator."
+msgstr ""
+
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
 msgstr "ZeroTier பிணையம் ஐடியை உள்ளிடவும். அடையாளம் சரியாக 16 எழுத்துகள் நீளமாக இருக்க வேண்டும்."
 
@@ -7539,6 +7617,9 @@ msgstr "குறைந்த இசைக்குழு மற்றும் 
 
 msgid "Enter the frequency step size for the tuner to use when searching for cable multiplexes. For more information consult your cable provider's documentation."
 msgstr "கேபிள் மல்டிபிளெக்சைத் தேடும்போது ட்யூனரைப் பயன்படுத்த அதிர்வெண் படி அளவை உள்ளிடவும். மேலும் தகவலுக்கு உங்கள் கேபிள் வழங்குநரின் ஆவணங்களைப் பார்க்கவும்."
+
+msgid "Enter the number of NFS server threads to be allocated/used. Higher values improve performance with multiple clients but use more memory."
+msgstr ""
 
 msgid "Enter the number stored in the positioner that corresponds to this satellite."
 msgstr "இந்த செயற்கைக்கோளுக்கு ஒத்த நிலைப்பாட்டில் சேமிக்கப்பட்ட எண்ணை உள்ளிடவும்."
@@ -8164,6 +8245,9 @@ msgstr "வெளிப்புற வசன உரையாடல் வண்
 msgid "External subtitle switch fonts"
 msgstr "வெளிப்புற வசன சுவிட்ச் எழுத்துருக்கள்"
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra High"
 msgstr "கூடுதல் உயர்"
 
@@ -8205,6 +8289,13 @@ msgstr "FBC மண்ணியத் திருத்திகள் (பய�
 
 msgid "FBC automatic"
 msgstr "FBC தானியங்கி"
+
+#, python-format
+msgid "FBC automatic: connected to %s"
+msgstr ""
+
+msgid "FBC automatic: inactive"
+msgstr ""
 
 msgid "FCC enabled"
 msgstr "FCC இயக்கப்பட்டது"
@@ -8821,7 +8912,7 @@ msgstr "முன் யூ.எச்.பி"
 msgid "Front USB 3.0"
 msgstr "முன் யூ.எச்.பி 3.0"
 
-msgid "Front panel/Display picon set"
+msgid "Front panel/Display picon path"
 msgstr ""
 
 msgid "Front processor version"
@@ -9392,6 +9483,9 @@ msgstr "பிளேயரை மறைக்க"
 msgid "Hide softcam servername"
 msgstr "சாப்ட்காம் சேவையகத்தை மறைக்கவும்"
 
+msgid "Hide sub-menu"
+msgstr ""
+
 msgid "Hide the InfoBar"
 msgstr "இன்போபரை மறைக்கவும்"
 
@@ -9948,6 +10042,9 @@ msgstr "பன்னாட்டு தரவைச் சேர்க்கவ�
 msgid "Include keyboard data"
 msgstr "விசைப்பலகை தரவைச் சேர்க்கவும்"
 
+msgid "Include network data"
+msgstr ""
+
 msgid "Include opkg output data"
 msgstr "OBKG வெளியீட்டு தரவைச் சேர்க்கவும்"
 
@@ -10032,7 +10129,7 @@ msgstr "இன்போபார் ஃபேட்-அவுட் விரை
 msgid "InfoBar front end data source"
 msgstr "இன்போபார் முன் இறுதியில் தரவு மூல"
 
-msgid "InfoBar picon set"
+msgid "InfoBar picon path"
 msgstr ""
 
 msgid "Information"
@@ -10043,6 +10140,9 @@ msgstr "தகவல்/கல்வி/பள்ளி திட்டம்"
 
 msgid "Infotainment"
 msgstr "இன்போடெயின்மென்ட்"
+
+msgid "Inherited channel / frequency"
+msgstr ""
 
 msgid "Init"
 msgstr "Init"
@@ -10614,6 +10714,18 @@ msgstr "ரிமோட்"
 msgid "LNB"
 msgstr "Lnb"
 
+msgid "LNB 1"
+msgstr ""
+
+msgid "LNB 1 and the target LNB use different Unicable protocols"
+msgstr ""
+
+msgid "LNB current:"
+msgstr ""
+
+msgid "LNB current: not available"
+msgstr ""
+
 msgid "LNB/Switch Bootup time [ms]"
 msgstr "LNB/சுவிட்ச் பூட்அப் நேரம் [MS]"
 
@@ -10701,6 +10813,9 @@ msgstr "டிவிடி பிளேயரை விட்டு வெளி
 msgid "Leave movie player"
 msgstr "மூவி பிளேயரை விட்டு விடுங்கள்"
 
+msgid "Leave this at 0 to derive the position from the LNB number and device profile. Enter 1 to 64 only for a reprogrammed Unicable device."
+msgstr ""
+
 msgid "Leave this set to 'Yes' unless you fully understand why you are adjusting it."
 msgstr "நீங்கள் ஏன் அதை சரிசெய்கிறீர்கள் என்பதை நீங்கள் முழுமையாக புரிந்து கொள்ளாவிட்டால் இந்த தொகுப்பை 'ஆம்' என்று விடுங்கள்."
 
@@ -10733,9 +10848,6 @@ msgstr "இடது, முன் யூ.எச்.பி"
 
 msgid "Left, wrapped"
 msgstr "இடது, போர்த்தப்பட்டது"
-
-msgid "Legacy"
-msgstr ""
 
 msgid "Legacy mode"
 msgstr "மரபு பயன்முறை"
@@ -10794,6 +10906,9 @@ msgstr "கிழக்கைக் கட்டுப்படுத்து�
 
 msgid "Limit the characters that can be used in recording filenames to (7 bit) ASCII. This ensures compatibility with operating systems or file systems with limited character sets."
 msgstr "கோப்பு பெயர்களைப் பதிவு செய்வதில் பயன்படுத்தக்கூடிய எழுத்துக்களை (7 பிட்) ASCII க்கு மட்டுப்படுத்தவும். இது இயக்க முறைமைகள் அல்லது வரையறுக்கப்பட்ட எழுத்துத் தொகுப்புகளுடன் கோப்பு முறைமைகளுடன் பொருந்தக்கூடிய தன்மையை உறுதி செய்கிறது."
+
+msgid "Limit the search to the satellite group normally used by this installation."
+msgstr ""
 
 msgid "Limit west"
 msgstr "மேற்கு நாடுகளை மட்டுப்படுத்தவும்"
@@ -11348,6 +11463,9 @@ msgstr ""
 msgid "Mayotte"
 msgstr "மயோதி"
 
+msgid "Measured current"
+msgstr ""
+
 msgid "Media"
 msgstr "ஊடகம்"
 
@@ -11490,6 +11608,9 @@ msgstr "OSD உடன் MINITV"
 #, python-format
 msgid "Minimum age %d years"
 msgstr "குறைந்தபட்ச அகவை %d ஆண்டுகள்"
+
+msgid "Minimum difference between idle and moving current."
+msgstr ""
 
 msgid "Minimum send interval"
 msgstr "குறைந்தபட்ச அனுப்பு இடைவெளி"
@@ -11956,6 +12077,9 @@ msgstr "பல"
 msgid "Multi EPG"
 msgstr "மல்டி ஈபிசி"
 
+msgid "Multi-path mode"
+msgstr ""
+
 msgid "MultiBoot"
 msgstr "மல்டிபூட்"
 
@@ -12036,6 +12160,12 @@ msgstr "அடுத்தது"
 
 msgid "NFS"
 msgstr "NFS"
+
+msgid "NFS Settings"
+msgstr ""
+
+msgid "NFS threads"
+msgstr ""
 
 msgid "NIM"
 msgstr "நிம்"
@@ -12710,8 +12840,14 @@ msgstr "நிறுவப்படவில்லை"
 msgid "Not Shown"
 msgstr "காட்டப்படவில்லை"
 
+msgid "Not a valid tuner"
+msgstr ""
+
 msgid "Not associated"
 msgstr "தொடர்புபடுத்தப்படவில்லை"
+
+msgid "Not available"
+msgstr ""
 
 msgid "Not configured"
 msgstr "கட்டமைக்கப்படவில்லை"
@@ -12832,8 +12968,23 @@ msgstr "சரி பொத்தான் (குறுகிய)"
 msgid "OK button mode"
 msgstr "சரி பொத்தான் பயன்முறை"
 
+msgid "OK checks the currently tuned transponder."
+msgstr ""
+
 msgid "OK, guide me through the upgrade process"
 msgstr "சரி, மேம்படுத்தல் செயல்முறை மூலம் எனக்கு வழிகாட்டவும்"
+
+msgid "ONID"
+msgstr ""
+
+msgid "ONID/TSID check timed out"
+msgstr ""
+
+msgid "ONID/TSID does not match"
+msgstr ""
+
+msgid "ONID/TSID valid"
+msgstr ""
 
 msgid "OSCam Info"
 msgstr "ஆச்காம் செய்தி"
@@ -13173,6 +13324,9 @@ msgstr "பல பணி ஈபிசி பார்வையைத் தி�
 msgid "Open the single service EPG view"
 msgstr "ஒற்றை பணி EPG பார்வையைத் திறக்கவும்"
 
+msgid "Open tuner setup"
+msgstr ""
+
 msgid "Open with File Commander"
 msgstr "கோப்பு தளபதியுடன் திறக்கவும்"
 
@@ -13185,7 +13339,7 @@ msgstr "OpenVpn"
 msgid "OpenViX Packages"
 msgstr "OpenVix தொகுப்புகள்"
 
-msgid "OpenWebif picon set"
+msgid "OpenWebif picon path"
 msgstr ""
 
 msgid "Opera"
@@ -13353,6 +13507,9 @@ msgstr "பிசி - பெற்றோர் வழிகாட்டுத�
 
 msgid "PGS file"
 msgstr "பிசிஎச் கோப்பு"
+
+msgid "PIN"
+msgstr ""
 
 msgid "PIN code needed"
 msgstr "முள் குறியீடு தேவை"
@@ -13526,9 +13683,6 @@ msgstr "பாதை"
 msgid "Path '%s' missing!"
 msgstr "பாதை '%s' காணவில்லை!"
 
-msgid "Path to picon set %s."
-msgstr ""
-
 msgid "Pause"
 msgstr "இடைநிறுத்தம்"
 
@@ -13638,13 +13792,15 @@ msgstr "பிகான் மற்றும் பணி பெயர்"
 msgid "Picon install location"
 msgstr "பிகான் நிறுவும் இடம்"
 
-msgid "Picon mode"
-msgstr ""
-
+#, python-format
 msgid "Picon path %s"
 msgstr ""
 
-msgid "Picon set mode"
+#, python-format
+msgid "Picon path %s is in use and cannot be removed!"
+msgstr ""
+
+msgid "Picon search mode"
 msgstr ""
 
 msgid "Picon width"
@@ -14162,6 +14318,9 @@ msgstr "நிலைப்படுத்தி அமைப்பு"
 
 msgid "Positioner Setup Log"
 msgstr "பொருத்துதல் அமைவு பதிவு"
+
+msgid "Positioner actions"
+msgstr ""
 
 msgid "Positioner setup"
 msgstr "நிலைப்படுத்தி அமைப்பு"
@@ -15170,6 +15329,9 @@ msgstr "பெற்றோரின் பாதுகாப்பிலிர�
 msgid "Remove New Found Flag"
 msgstr "கண்டுபிடிக்கப்பட்ட புதிய கொடியை அகற்று"
 
+msgid "Remove Path"
+msgstr ""
+
 msgid "Remove Plugin"
 msgstr "சொருகி அகற்று"
 
@@ -15655,11 +15817,21 @@ msgstr "ரூட் அடைவு"
 msgid "Root file"
 msgstr "ரூட் கோப்பு"
 
+msgid "Root squash"
+msgstr ""
+
 msgid "Rose"
 msgstr "ரோசா"
 
+msgid "Rotor is not configured"
+msgstr ""
+
 msgid "Rotor turning speed"
 msgstr "ரோட்டார் திருப்பும் விரைவு"
+
+#, python-format
+msgid "Rotor: %d satellites"
+msgstr ""
 
 msgid "Router / Gateway"
 msgstr "திசைவி / நுழைவாயில்"
@@ -16504,6 +16676,9 @@ msgstr "பழைய பநிஇ V3 இலிருந்து கணக்க
 msgid "Select 'Yes' to use the number keys for quick selection of files / directories, select 'No' to use the number keys for MENU option shortcuts."
 msgstr "கோப்புகள் / கோப்பகங்களை விரைவாகத் தேர்ந்தெடுப்பதற்கு எண் விசைகளைப் பயன்படுத்த 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும், பட்டியல் விருப்பத்தாக்கங்களுக்கான எண் விசைகளைப் பயன்படுத்த 'இல்லை' என்பதைத் தேர்ந்தெடுக்கவும்."
 
+msgid "Select 'Yes' to use the same User Band channel and frequency as LNB 1. This is intended for multiple satellite positions delivered by the same Unicable system."
+msgstr ""
+
 msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr "இயக்கப்பட்ட மற்றும் அவசியமானால், சொருகி, நிரல் முன்பே தொடங்குகிறதா என்பதைக் கட்டுப்படுத்த வரையறுக்கப்பட்ட தொடக்க நேரத்திற்கு ஆழ்ந்த நிலைப்பாட்டிலிருந்து ரிசீவரை எழுப்பும்."
 
@@ -16633,6 +16808,9 @@ msgstr "பார்வைக்கு ஒரு களஞ்சியத்த�
 
 msgid "Select a script to run:"
 msgstr "இயக்க ஒரு ச்கிரிப்டைத் தேர்ந்தெடுக்கவும்:"
+
+msgid "Select a time period to display a confirmation prompt before a Zap timer changes the current service. This allows the user to cancel the Zap. Select 'Disabled' to allow the Zap to proceed without confirmation."
+msgstr ""
 
 msgid "Select a time, when in Standby, after which the descramble can proceed."
 msgstr "காத்திருப்பு பயன்முறையில் இருக்கும்போது ஒரு நேரத்தைத் தேர்ந்தெடுக்கவும், அதன் பிறகு டெச்கிராம்பிள் தொடரலாம்."
@@ -16855,16 +17033,16 @@ msgstr "இயல்புநிலை DNS அமைப்புகளின் 
 msgid "Select the No / False response"
 msgstr "இல்லை / தவறான பதிலைத் தேர்ந்தெடுக்கவும்"
 
-msgid "Select the Picon path, from above, to be used for Channel Selection picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Channel Selection picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for Front panel/Display picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Front panel/Display picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for InfoBar picons."
+msgid "Select the Picon path, from the option(s) above, to be used for InfoBar picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for OpenWebif picons."
+msgid "Select the Picon path, from the option(s) above, to be used for OpenWebif picons."
 msgstr ""
 
 #, python-format
@@ -17090,11 +17268,11 @@ msgstr "உங்கள் எச்.சி.ஆர் சாதனத்தி�
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "டெலிடெக்ச்ட்டை விட்டு வெளியேறும்போது திரை தெளிவுத்திறன் மற்றும் பிரேம் பஃபரை மீட்டெடுக்கும் முறையைத் தேர்ந்தெடுக்கவும்."
 
-msgid "Select the mode for picon path selection and resolution. 'Legacy' represents the previous mode of operation."
-msgstr ""
-
 msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
 msgstr "தானாக ஏற்றுமதி செய்யப்பட்ட சம்பா பங்குகளுக்கான அணுகல் பயன்முறையைத் தேர்ந்தெடுக்கவும்."
+
+msgid "Select the mode of access, Read/Write or Read Only, applied to all exported directories."
+msgstr ""
 
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "உங்கள் பயன்படுத்த முடியாத சாதனத்தின் மாதிரி எண்ணைத் தேர்ந்தெடுக்கவும். மாதிரி எண் பட்டியலிடப்படவில்லை எனில், 'பயனர் வரையறுக்கப்பட்ட' 'SCR' ஐ அமைத்து, அதன் விவரக்குறிப்புகளின்படி சாதன அளவுருக்களை கைமுறையாக உள்ளிடவும்."
@@ -17177,6 +17355,9 @@ msgstr "நீங்கள் கட்டமைக்க விரும்ப�
 
 msgid "Select the screen layout, from the options provided by the skin, to be used for the ChannelSelection screen."
 msgstr "சேனல்செலெக்சன் திரைக்குப் பயன்படுத்த, தோல் வழங்கிய விருப்பங்களிலிருந்து திரை தளவமைப்பைத் தேர்ந்தெடுக்கவும்."
+
+msgid "Select the search mode to find picons. 'Single-path mode' uses one path for all picons. 'Multi-path mode' allows multiple picon paths to be used for different use cases."
+msgstr ""
 
 msgid "Select the shifted character set"
 msgstr "மாற்றப்பட்ட எழுத்து தொகுப்பைத் தேர்ந்தெடுக்கவும்"
@@ -17667,10 +17848,6 @@ msgstr "கோர் 0 மற்றும் 1 க்கு குறைந்�
 
 msgid "Set MIN CPU frequency for cores 2, 3, 4 and 5"
 msgstr "கோர்கள் 2, 3, 4 மற்றும் 5 க்கான குறைந்தபட்ச சிபியு அதிர்வெண்ணை அமைக்கவும்"
-
-#, python-format
-msgid "Set Path %s"
-msgstr ""
 
 msgid "Set Scaling governor"
 msgstr "அளவிடுதல் ஆளுநரை அமைக்கவும்"
@@ -18713,6 +18890,9 @@ msgstr "ஒற்றை பணி EPG ஐக் காட்டு"
 msgid "Show status messages on switch to live TV"
 msgstr "லைவ் டிவிக்கு மாறும்போது நிலை செய்திகளைக் காட்டு"
 
+msgid "Show sub-menu"
+msgstr ""
+
 msgid "Show subservice selection"
 msgstr "துணை தேர்வைக் காட்டு"
 
@@ -18919,6 +19099,9 @@ msgstr "ஒற்றை செயற்கைக்கோள்"
 
 msgid "Single step (GOP)"
 msgstr "ஒற்றை படி (GOP)"
+
+msgid "Single-path mode"
+msgstr ""
 
 msgid "SingleEPG Settings"
 msgstr "Singinepg அமைப்புகள்"
@@ -20175,6 +20358,9 @@ msgstr "மொழிபெயர்ப்பாளர்_இன்ஃபோ"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "ISO9660 நிலை 1 க்கு TS கோப்பு மிகப் பெரியது!"
 
+msgid "TSID"
+msgstr ""
+
 msgid "TUNER:"
 msgstr "ட்யூனர்:"
 
@@ -20570,6 +20756,9 @@ msgstr ""
 msgid "The TV was switched to the recording service!\n"
 msgstr "டிவி ரெக்கார்டிங் சேவைக்கு மாற்றப்பட்டது!\n"
 
+msgid "The User Band channel, frequency and optional PIN are inherited from LNB 1 and cannot be changed here."
+msgstr ""
+
 msgid ""
 "The VPS-Plugin couldn't check if the selected channel supports VPS for manually programmed timers!\n"
 " Do you really want to enable VPS?"
@@ -20688,6 +20877,9 @@ msgstr ""
 
 msgid "The picon directory already exists and must be removed. Do you want to proceed?"
 msgstr "பிகான் அடைவு ஏற்கனவே உள்ளது மற்றும் அகற்றப்பட வேண்டும். நீங்கள் தொடர விரும்புகிறீர்களா?"
+
+msgid "The positioner tuner is currently unavailable. Stop recordings or other services using this tuner and try again."
+msgstr ""
 
 #, python-format
 msgid "The process will take approximately %d minutes to complete."
@@ -21915,11 +22107,26 @@ msgstr "உக்ரெயின்"
 msgid "Ukrainian"
 msgstr "உக்ரேனிய"
 
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: %s."
+msgstr ""
+
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: LNB 1 %s."
+msgstr ""
+
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "KEXEC மல்டிபூட்டை துவக்க முடியவில்லை!"
 
+#, python-format
+msgid "Unable to validate the Unicable position for LNB %d: %s."
+msgstr ""
+
 msgid "Unattended upgrade without GUI"
 msgstr "GUI இல்லாமல் கவனிக்கப்படாத மேம்படுத்தல்"
+
+msgid "Unavailable"
+msgstr ""
 
 msgid "Undefined"
 msgstr "வரையறுக்கப்படவில்லை"
@@ -21957,6 +22164,13 @@ msgstr "பயன்படுத்த முடியாத எல்.என்
 
 msgid "Unicable Matrix"
 msgstr "பயன்படுத்த முடியாத அணி"
+
+msgid "Unicable position"
+msgstr ""
+
+#, python-format
+msgid "Unicable position %d is not supported by the selected device for LNB %d. Valid positions are %d to %d; use 'User defined' for a reprogrammed device."
+msgstr ""
 
 msgid "Uninstall"
 msgstr "நிறுவல் நீக்க"
@@ -22222,6 +22436,9 @@ msgstr "HTTPS நெறிமுறையைப் பயன்படுத்�
 msgid "Use Harddisk Hardware Standby Timer"
 msgstr "வன் வன்பொருள் காத்திருப்பு டைமரைப் பயன்படுத்தவும்"
 
+msgid "Use LNB 1 User Band"
+msgstr ""
+
 msgid "Use MHW EPG information when it is available."
 msgstr "MHW EPG செய்தி கிடைக்கும்போது அதைப் பயன்படுத்தவும்."
 
@@ -22233,6 +22450,9 @@ msgstr "ODoH சேவையகங்களைப் பயன்படுத்
 
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "OpentV EPG ஐப் பயன்படுத்தவும். EPG ஐ உறிஞ்சுவதற்கு குறிப்பிட்ட டிரான்ச்பாண்டருக்கு டியூனிங் தேவைப்படுகிறது."
+
+msgid "Use PIN"
+msgstr ""
 
 msgid "Use QuickSelect"
 msgstr "QuickSelect ஐப் பயன்படுத்தவும்"
@@ -22981,12 +23201,18 @@ msgstr "எச்சரிக்கை: மேலெழுதல்கள் த
 msgid "Warning: Recordings should not be stored on the Flash disk!"
 msgstr "எச்சரிக்கை: ஃபிளாச் வட்டில் பதிவுகள் சேமிக்கப்படக்கூடாது!"
 
+msgid "Warning: The second input of this dual tuner may not support Unicable devices. "
+msgstr ""
+
 #, python-format
 msgid "Warning: There are %d update packages!"
 msgstr "எச்சரிக்கை: %d புதுப்பிப்பு தொகுப்புகள் உள்ளன!"
 
 msgid "Warning: There is only a network drive to store the backup. This means the auto restore will not work after the flash. Alternatively, mount the network drive after the flash and perform a manufacturer reset to auto restore."
 msgstr "எச்சரிக்கை: காப்புப்பிரதியை சேமிக்க ஒரு பிணைய இயக்கி மட்டுமே உள்ளது. இதன் பொருள் ஃபிளாச் பிறகு ஆட்டோ மீட்டமை வேலை செய்யாது. மாற்றாக, ஃபிளாச் பிறகு பிணையம் டிரைவை ஏற்றவும், ஆட்டோ மீட்டமைக்க உற்பத்தியாளர் மீட்டமைப்பைச் செய்யவும்."
+
+msgid "Warning: This FBC-C V1 tuner should be installed in the first slot. In the second slot only 2 of 8 demodulators may be available. "
+msgstr ""
 
 msgid "Warning: This is the last crash before an automatic restart is performed.\n"
 msgstr "எச்சரிக்கை: தானியங்கி மறுதொடக்கம் செய்யப்படுவதற்கு முன்பு இது கடைசி விபத்து.\n"
@@ -23086,6 +23312,9 @@ msgstr "மேற்கு ஃபிரிசியன்"
 msgid "Western Sahara"
 msgstr "மேற்கு சகாரா"
 
+msgid "Western satellites"
+msgstr ""
+
 msgid "What day of month?"
 msgstr "மாதத்தின் எந்த நாள்?"
 
@@ -23155,6 +23384,12 @@ msgstr "இயக்கப்பட்டால், ஒரு எச்சரி
 msgid "When enabled, allow each storage device detected to be automatically exported as a Samba share."
 msgstr "கண்டறியப்பட்ட ஒவ்வொரு சேமிப்பக சாதனத்தையும் தானாகவே சம்பா பங்காக ஏற்றுமதி செய்ய அனுமதிக்க 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும்."
 
+msgid "When enabled, allow usage of the NFS version 3 protocols."
+msgstr ""
+
+msgid "When enabled, allow usage of the NFS version 4 protocols."
+msgstr ""
+
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "இயக்கப்பட்டால், HTTP ச்ட்ரீம்களைப் பார்க்க ஏற்பு தேவை."
 
@@ -23178,6 +23413,9 @@ msgstr "இயக்கப்பட்டால், வரைகலை டி.�
 
 msgid "When enabled, it is possible to leave the movie player with exit."
 msgstr "இயக்கப்பட்டால், மூவி பிளேயரை வெளியேறு நிலையில் விட்டுவிட முடியும்."
+
+msgid "When enabled, map root to nobody (more secure). When disabled, full root access is available."
+msgstr ""
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "இயக்கப்பட்டால், ரோட்டார் திரும்புவதை நிறுத்தும்போது (ட்யூனரால் ஆதரிக்கப்படும்போது) கண்டறிய மின் நுகர்வு அளவிடவும்."
@@ -24161,6 +24399,18 @@ msgstr "எச்: MMAM/PM"
 msgid "handled"
 msgstr "கையாளப்பட்டது"
 
+msgid "has incomplete Unicable settings"
+msgstr ""
+
+msgid "has no supported Unicable device type"
+msgstr ""
+
+msgid "has no valid Unicable product"
+msgstr ""
+
+msgid "has no valid User Band channel"
+msgstr ""
+
 msgid "height"
 msgstr "உயரம்"
 
@@ -24208,6 +24458,12 @@ msgstr "உடனடி பதிவு"
 
 msgid "internally loopthrough to"
 msgstr "உள் வளையத்திற்கு"
+
+msgid "is not configured"
+msgstr ""
+
+msgid "is not configured for Unicable"
+msgstr ""
 
 msgid "jump back to the previous title"
 msgstr "முந்தைய தலைப்புக்கு திரும்பவும்"
@@ -24466,6 +24722,18 @@ msgstr "வார்ப்புரு கோப்பு"
 msgid "text"
 msgstr "உரை"
 
+msgid "the User Band channel from LNB 1 is not available"
+msgstr ""
+
+msgid "the selected device does not use the LNB 1 frequency on this User Band channel"
+msgstr ""
+
+msgid "the target LNB"
+msgstr ""
+
+msgid "the target LNB is not configured"
+msgstr ""
+
 msgid "this recording"
 msgstr "இந்த பதிவு"
 
@@ -24514,6 +24782,9 @@ msgstr "சோதிக்கப்படாதது"
 msgid "update"
 msgstr "புதுப்பிப்பு"
 
+msgid "uses an unavailable User Band frequency"
+msgstr ""
+
 msgid "using:"
 msgstr "பயன்படுத்துகிறது:"
 
@@ -24555,6 +24826,15 @@ msgstr "ஆம் (ஊட்டங்களை வைத்திருங்க
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
+#~ msgstr "ஒரு பதிவு தற்போது இயங்குகிறது. பதவியை உள்ளமைக்க முயற்சிக்கும் முன் பதிவை நிறுத்துங்கள்."
+
+#~ msgid "Consult your receiver's manual for more information on power management."
+#~ msgstr "மின் மேலாண்மை குறித்த கூடுதல் தகவலுக்கு உங்கள் ரிசீவரின் கையேட்டில் அணுகவும்."
+
+#~ msgid "Consult your receiver's manual for more information on power threshold."
+#~ msgstr "பவர் வாசல் பற்றிய கூடுதல் தகவலுக்கு உங்கள் ரிசீவரின் கையேட்டைப் பாருங்கள்."
 
 #, python-format
 #~ msgid "%d DMIPS per core"

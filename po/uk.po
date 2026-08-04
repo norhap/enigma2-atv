@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-12 13:00+0000\n"
+"POT-Creation-Date: 2026-07-15 19:52+0000\n"
 "PO-Revision-Date: 2026-06-06 11:58+0000\n"
 "Last-Translator: igorrrrr <igorzhugan66@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/uk/>\n"
@@ -44,6 +44,9 @@ msgstr "  ЗАП  "
 
 msgid "  Red key : Show/Hide channel name"
 msgstr "  Червона кнопка : Показати/сховати назву каналу"
+
+msgid " (+5 volt terrestrial)"
+msgstr ""
 
 #, python-format
 msgid " (Channel %s)"
@@ -1643,14 +1646,17 @@ msgstr ""
 "Триває запис.\n"
 "Що хочете зробити?"
 
-msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
-msgstr "В даний час триває запис. Зупиніть запис перед налаштуванням позиціонера."
-
 msgid "A recording is currently running. Please stop the recording before trying to scan."
 msgstr "В даний час триває запис. Зупиніть запис, щоб виконати пошук."
 
 msgid "A recording is currently running. Please stop the recording before trying to start the satellite finder."
 msgstr "В даний час триває запис. Зупиніть запис перед стартом пошуку супутника."
+
+msgid "A recording is running or will start within six minutes. Changing the tuner configuration can interrupt it. Save anyway?"
+msgstr ""
+
+msgid "A recording is running or will start within six minutes. Please try the positioner setup later."
+msgstr ""
 
 #, python-format
 msgid ""
@@ -1702,6 +1708,11 @@ msgid ""
 msgstr ""
 "Таймер зупинив запис!\n"
 "Відключити ТБ і спробувати ще раз?\n"
+
+msgid ""
+"A zap timer wants to switch the channel.\n"
+"Do you want to zap now?\n"
+msgstr ""
 
 msgid "AAC downmix"
 msgstr "AAC Plus мікшування"
@@ -1798,6 +1809,9 @@ msgstr "час до запису"
 
 msgid "Above 200 Mbps"
 msgstr "Вище 200 Мбіт/с"
+
+msgid "Access mode"
+msgstr ""
 
 msgid "Access point"
 msgstr "Точка доступу"
@@ -1915,6 +1929,9 @@ msgstr "Додати закладку"
 
 msgid "Add New Quad Channel Entry"
 msgstr "Додати новий чотирьохканальний вхід"
+
+msgid "Add Path"
+msgstr ""
 
 msgid "Add RecordTimer"
 msgstr "Додати Таймер Запису"
@@ -2081,6 +2098,9 @@ msgstr "Додати/видалити поточний канал до/із сп
 msgid "Adding schedule..."
 msgstr "Додавання завдання..."
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional files/folders to backup"
 msgstr "Додати файли/теки для резервного копіювання"
 
@@ -2089,6 +2109,10 @@ msgstr "Додаткові опції двигуна дозволяють вве
 
 msgid "Additional motor options allow you to enter details from your motor's specifications so Enigma can work out how long it will take to move to another satellite."
 msgstr "Додаткові опції двигуна дозволяють ввести дані з специфікації Вашого двигуна, щоб система обчислила необхідний час для переміщення антени."
+
+#, python-format
+msgid "Additional rotor cable from %s"
+msgstr ""
 
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Налаштуйте параметри кольору так щоб всі відтінки були відображені, але щоб залишались насиченими, настільки наскільки це можливо. Якщо результат вас задовольняє, натисніть ОК, щоб вийти з налаштувань, або на цифрові кнопки від 1 до 6, щоб вибрати інший тестовий екран."
@@ -2150,11 +2174,11 @@ msgstr "Африканська"
 msgid "After Event"
 msgstr "Після передачі"
 
-msgid "After Power Lost"
-msgstr "Після втрати живлення"
-
 msgid "After event"
 msgstr "Після події"
+
+msgid "After power loss"
+msgstr "Після втрати живлення"
 
 msgid "After recording"
 msgstr "Після запису"
@@ -2266,6 +2290,9 @@ msgstr "Дозволити субтитри для слабо чуючих"
 
 msgid "Allow unsupported modes"
 msgstr "Дозволити режими, що не підтримуються"
+
+msgid "Allowed clients"
+msgstr ""
 
 msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr "Дозволити %s %s для регулярного читання даних ЕПГ."
@@ -2722,6 +2749,9 @@ msgstr "Авто"
 
 msgid "Auto (not available)"
 msgstr "Авто(не доступний)"
+
+msgid "Auto DiSEqC search order"
+msgstr ""
 
 msgid "Auto Language"
 msgstr "Авто мова"
@@ -3856,6 +3886,9 @@ msgstr "по центру, прихований"
 msgid "Central African Republic"
 msgstr "Центрально-африканська Республіка"
 
+msgid "Central Europe"
+msgstr ""
+
 msgid "Central Khmer"
 msgstr "Кхмерська"
 
@@ -3967,7 +4000,7 @@ msgstr "Вигляд екрану Вибору каналів"
 msgid "Channel Selection Settings"
 msgstr "Налаштування списку каналів"
 
-msgid "Channel Selection picon set"
+msgid "Channel Selection picon path"
 msgstr ""
 
 msgid "Channel buttons"
@@ -4045,6 +4078,9 @@ msgstr "Чат-шоу"
 msgid "Chechen"
 msgstr "Чеченська"
 
+msgid "Check ONID/TSID"
+msgstr ""
+
 msgid "Check for PDC"
 msgstr "Перевірте наявність PDC"
 
@@ -4065,6 +4101,9 @@ msgstr "Перевірка Серверів"
 
 msgid "Checking Logs..."
 msgstr "Перевірка Логів ..."
+
+msgid "Checking ONID/TSID ..."
+msgstr ""
 
 msgid "Checking file system..."
 msgstr "Перевірка файлової системи..."
@@ -4913,6 +4952,9 @@ msgstr "Налаштування"
 msgid "Configuring Service"
 msgstr "Налаштування каналу"
 
+msgid "Confirm Zap"
+msgstr ""
+
 msgid "ConflictTimer Actions"
 msgstr "Дії кнопок ConflictTimer"
 
@@ -4988,12 +5030,6 @@ msgstr "Для отримання цієї інформації зверніть
 
 msgid "Consult your motor's specifications for this information, or leave the default setting."
 msgstr "Зверніться до специфікації Вашого двигуна для цієї інформації, або залиште налаштування за замовчуванням."
-
-msgid "Consult your receiver's manual for more information on power management."
-msgstr "Керування живленням. Для отримання додаткової інформації зверніться до посібника користувача."
-
-msgid "Consult your receiver's manual for more information on power threshold."
-msgstr "Поріг потужності. Для отримання додаткової інформації зверніться до посібника користувача."
 
 #, python-format
 msgid "Contacting IceTV server and setting up your %s %s."
@@ -5399,8 +5435,17 @@ msgstr "Поточне місцезнаходження '%s'."
 msgid "Current mode: %s \n"
 msgstr "Поточний режим: %s \n"
 
+msgid "Current rotor position:"
+msgstr ""
+
+msgid "Current rotor position: unknown"
+msgstr ""
+
 msgid "Current settings:"
 msgstr "Поточні налаштування:"
+
+msgid "Current supplied to the LNB and positioner."
+msgstr ""
 
 msgid "Current time"
 msgstr "Поточний час"
@@ -5919,6 +5964,9 @@ msgstr "Визначити Softcam для даного Каналу"
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "Визначте додаткову затримку в мілісекундах перед початком стріму http(s)."
 
+msgid "Define path %s for picons."
+msgstr ""
+
 msgid "Define the custom mountpoint for the device."
 msgstr "Визначте настроювану точку підключення для пристрою."
 
@@ -6252,6 +6300,9 @@ msgstr "Деталі журналу GStreamer"
 
 msgid "Details"
 msgstr "Подробиці"
+
+msgid "Detect positioner movement by its current consumption."
+msgstr ""
 
 msgid "Detective"
 msgstr "Детектив"
@@ -7021,6 +7072,9 @@ msgstr "Схід"
 msgid "East limit set"
 msgstr "Встановлення ліміту на схід"
 
+msgid "Eastern satellites"
+msgstr ""
+
 msgid "Easy listening"
 msgstr "Легке прослуховування"
 
@@ -7219,6 +7273,12 @@ msgstr "Включити Міні-ТБ"
 msgid "Enable Move Mode"
 msgstr "Ввімкнути режим переміщення"
 
+msgid "Enable NFSv3"
+msgstr ""
+
+msgid "Enable NFSv4"
+msgstr ""
+
 msgid "Enable Netmed EPG"
 msgstr "Увімкнути Netmed ЕПГ"
 
@@ -7379,6 +7439,9 @@ msgstr "Увімкніть цей параметр, щоб додати інфо
 msgid "Enable this option to add keyboard key map data to the debug log file."
 msgstr "Увімкніть цю опцію, щоб додати дані розкладки клавіатури до файлу журналу налагодження."
 
+msgid "Enable this option to add network information to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add opkg output data to the debug log file."
 msgstr "Увімкніть цей параметр, щоб додати вихідні дані opkg до файлу журналу налагодження."
 
@@ -7405,6 +7468,12 @@ msgstr "Увімкніть, щоб відображати невідомі пр�
 
 msgid "Enable this setting if your aerial system needs power."
 msgstr "Включити цю настройку, якщо Ваша антена потребує живлення."
+
+msgid "Enable this when a power inserter or external supply powers the Unicable device."
+msgstr ""
+
+msgid "Enable this when the User Band is protected by a PIN in a multi-dwelling Unicable installation."
+msgstr ""
 
 msgid "Enable timer"
 msgstr "Включити таймер"
@@ -7553,6 +7622,9 @@ msgstr "Введіть назву для цього таймера."
 msgid "Enter a new name for this device."
 msgstr "Введіть нову назву для цього пристрою."
 
+msgid "Enter expected ONID/TSID"
+msgstr ""
+
 msgid "Enter if you are North or South of the equator."
 msgstr "Введіть де Ви знаходитесь на півночі чи півдні від екватора."
 
@@ -7574,6 +7646,12 @@ msgstr "Введіть пін-код"
 msgid "Enter text via an attached keyboard"
 msgstr "Введіть текст за допомогою підключеної клавіатури"
 
+msgid "Enter the IP address or subnet (e.g. 192.168.1.0/24) to which NFS host access is granted. Enter '*', the default, for all host access."
+msgstr ""
+
+msgid "Enter the PIN from 0 to 255 assigned to this User Band by the installer or building operator."
+msgstr ""
+
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
 msgstr "Введіть ідентифікатор мережі ZeroTier. Ідентифікатор має містити рівно 16 символів."
 
@@ -7585,6 +7663,9 @@ msgstr "Введіть частоту порогу перемикання ниж
 
 msgid "Enter the frequency step size for the tuner to use when searching for cable multiplexes. For more information consult your cable provider's documentation."
 msgstr "Введіть крок частоти, який тюнер буде використовувати при пошуку кабельних каналів. Для отримання додаткової інформації зверніться до документації Вашого провайдера."
+
+msgid "Enter the number of NFS server threads to be allocated/used. Higher values improve performance with multiple clients but use more memory."
+msgstr ""
 
 msgid "Enter the number stored in the positioner that corresponds to this satellite."
 msgstr "Введіть номер позиції в позиціонері, що відповідає цьому супутнику."
@@ -8210,6 +8291,9 @@ msgstr "Зовнішній колір діалогових підзаголов�
 msgid "External subtitle switch fonts"
 msgstr "Перемикання шрифтів для зовнішніх субтитрів"
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra High"
 msgstr "Дуже високий"
 
@@ -8251,6 +8335,13 @@ msgstr "FBC SCR (Unicable/JESS)"
 
 msgid "FBC automatic"
 msgstr "Автоматичний FBC"
+
+#, python-format
+msgid "FBC automatic: connected to %s"
+msgstr ""
+
+msgid "FBC automatic: inactive"
+msgstr ""
 
 msgid "FCC enabled"
 msgstr "FCC увімкнено"
@@ -8867,7 +8958,7 @@ msgstr "Передня USB"
 msgid "Front USB 3.0"
 msgstr "Передня USB 3.0"
 
-msgid "Front panel/Display picon set"
+msgid "Front panel/Display picon path"
 msgstr ""
 
 msgid "Front processor version"
@@ -9438,6 +9529,9 @@ msgstr "Приховати програвач"
 msgid "Hide softcam servername"
 msgstr "Приховати ім'я сервера softcam"
 
+msgid "Hide sub-menu"
+msgstr ""
+
 msgid "Hide the InfoBar"
 msgstr "Згасання Інфобару"
 
@@ -9994,6 +10088,9 @@ msgstr "Включити міжнародні дані *"
 msgid "Include keyboard data"
 msgstr "Введення даних з клавіатури"
 
+msgid "Include network data"
+msgstr ""
+
 msgid "Include opkg output data"
 msgstr "Включити вихідні дані opkg"
 
@@ -10078,7 +10175,7 @@ msgstr "Швидкість згасання Інфобару"
 msgid "InfoBar front end data source"
 msgstr "Джерело відображення даних в інфобарі"
 
-msgid "InfoBar picon set"
+msgid "InfoBar picon path"
 msgstr ""
 
 msgid "Information"
@@ -10089,6 +10186,9 @@ msgstr "інформація/освіта/шкільна програма"
 
 msgid "Infotainment"
 msgstr "Інформаційно-розважальна"
+
+msgid "Inherited channel / frequency"
+msgstr ""
 
 msgid "Init"
 msgstr "Ініціалізувати"
@@ -10661,6 +10761,18 @@ msgstr "Пульт LIRC"
 msgid "LNB"
 msgstr "Конвертор"
 
+msgid "LNB 1"
+msgstr ""
+
+msgid "LNB 1 and the target LNB use different Unicable protocols"
+msgstr ""
+
+msgid "LNB current:"
+msgstr ""
+
+msgid "LNB current: not available"
+msgstr ""
+
 msgid "LNB/Switch Bootup time [ms]"
 msgstr "Час перемикання LNB/Switch [мс]"
 
@@ -10748,6 +10860,9 @@ msgstr "Вийти з DVD плеєра?"
 msgid "Leave movie player"
 msgstr "вийти з програвача"
 
+msgid "Leave this at 0 to derive the position from the LNB number and device profile. Enter 1 to 64 only for a reprogrammed Unicable device."
+msgstr ""
+
 msgid "Leave this set to 'Yes' unless you fully understand why you are adjusting it."
 msgstr "Якщо не знаєте для чого цей параметр, залиште значення 'Так'."
 
@@ -10780,9 +10895,6 @@ msgstr "Зліва, спереду USB"
 
 msgid "Left, wrapped"
 msgstr "зліва, прихований"
-
-msgid "Legacy"
-msgstr ""
 
 msgid "Legacy mode"
 msgstr "Старий вигляд"
@@ -10841,6 +10953,9 @@ msgstr "Обмеження на схід"
 
 msgid "Limit the characters that can be used in recording filenames to (7 bit) ASCII. This ensures compatibility with operating systems or file systems with limited character sets."
 msgstr "Обмежте знаки, які можуть використовуватися в записі імен файлів до (7 біт)ASCII. Це забезпечує сумісність з операційними системами або файловими системами з обмеженим набором символів."
+
+msgid "Limit the search to the satellite group normally used by this installation."
+msgstr ""
 
 msgid "Limit west"
 msgstr "Обмеження на захід"
@@ -11396,6 +11511,9 @@ msgstr "Максимальний час очікування першого кл
 msgid "Mayotte"
 msgstr "Майотта"
 
+msgid "Measured current"
+msgstr ""
+
 msgid "Media"
 msgstr "Медіа"
 
@@ -11538,6 +11656,9 @@ msgstr "Міні-ТВ з OSD"
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Мінімальний вік %d років"
+
+msgid "Minimum difference between idle and moving current."
+msgstr ""
 
 msgid "Minimum send interval"
 msgstr "Мінімальний інтервал відправки"
@@ -12004,6 +12125,9 @@ msgstr "Багаторазовий"
 msgid "Multi EPG"
 msgstr "Мульти ЕПГ"
 
+msgid "Multi-path mode"
+msgstr ""
+
 msgid "MultiBoot"
 msgstr "MultiBoot"
 
@@ -12084,6 +12208,12 @@ msgstr "НАСТУПНА"
 
 msgid "NFS"
 msgstr "NFS"
+
+msgid "NFS Settings"
+msgstr "Налаштування NFS"
+
+msgid "NFS threads"
+msgstr ""
 
 msgid "NIM"
 msgstr "NIM"
@@ -12758,8 +12888,14 @@ msgstr "Не встановлено"
 msgid "Not Shown"
 msgstr "Не показаний"
 
+msgid "Not a valid tuner"
+msgstr ""
+
 msgid "Not associated"
 msgstr "Не пов’язано"
+
+msgid "Not available"
+msgstr ""
 
 msgid "Not configured"
 msgstr "не налаштований"
@@ -12880,8 +13016,23 @@ msgstr "Кнопка OK (коротке натиснення)"
 msgid "OK button mode"
 msgstr "Режим кнопки OK"
 
+msgid "OK checks the currently tuned transponder."
+msgstr ""
+
 msgid "OK, guide me through the upgrade process"
 msgstr "OK, допомогти мені в процесі оновлення"
+
+msgid "ONID"
+msgstr "ONID"
+
+msgid "ONID/TSID check timed out"
+msgstr ""
+
+msgid "ONID/TSID does not match"
+msgstr ""
+
+msgid "ONID/TSID valid"
+msgstr ""
 
 msgid "OSCam Info"
 msgstr "Oscam Інфо"
@@ -13221,6 +13372,9 @@ msgstr "Відкрити багатоканальний перегляд ЕПГ"
 msgid "Open the single service EPG view"
 msgstr "Відкрити перегляд одиничного ЕПГ"
 
+msgid "Open tuner setup"
+msgstr ""
+
 msgid "Open with File Commander"
 msgstr "Відкрити за допомогою File Commander"
 
@@ -13233,7 +13387,7 @@ msgstr "OpenVPN"
 msgid "OpenViX Packages"
 msgstr "Пакети OpenViX"
 
-msgid "OpenWebif picon set"
+msgid "OpenWebif picon path"
 msgstr ""
 
 msgid "Opera"
@@ -13401,6 +13555,9 @@ msgstr "PG - батьківський нагляд"
 
 msgid "PGS file"
 msgstr "PGS файл"
+
+msgid "PIN"
+msgstr ""
 
 msgid "PIN code needed"
 msgstr "Необхідний Пін-код"
@@ -13574,9 +13731,6 @@ msgstr "Директорія"
 msgid "Path '%s' missing!"
 msgstr "Шлях '%s' відсутній!"
 
-msgid "Path to picon set %s."
-msgstr ""
-
 msgid "Pause"
 msgstr "Пауза"
 
@@ -13686,13 +13840,15 @@ msgstr "Пікони і Назва Каналу"
 msgid "Picon install location"
 msgstr "Цільове розташування пакета Picon"
 
-msgid "Picon mode"
-msgstr ""
-
+#, python-format
 msgid "Picon path %s"
 msgstr ""
 
-msgid "Picon set mode"
+#, python-format
+msgid "Picon path %s is in use and cannot be removed!"
+msgstr ""
+
+msgid "Picon search mode"
 msgstr ""
 
 msgid "Picon width"
@@ -14212,6 +14368,9 @@ msgstr "Налаштування позиціонера"
 
 msgid "Positioner Setup Log"
 msgstr "Налаштування Логу позиціонера"
+
+msgid "Positioner actions"
+msgstr ""
 
 msgid "Positioner setup"
 msgstr "Налаштування позиціонера"
@@ -15220,6 +15379,9 @@ msgstr "видалити з батьківського контролю"
 msgid "Remove New Found Flag"
 msgstr "видалити новий знайдений прапор"
 
+msgid "Remove Path"
+msgstr ""
+
 msgid "Remove Plugin"
 msgstr "Видалити плагін"
 
@@ -15705,11 +15867,21 @@ msgstr "Кореневий каталог"
 msgid "Root file"
 msgstr "Файл Root"
 
+msgid "Root squash"
+msgstr ""
+
 msgid "Rose"
 msgstr "розовий"
 
+msgid "Rotor is not configured"
+msgstr ""
+
 msgid "Rotor turning speed"
 msgstr "Швидкість обертання двигуна"
+
+#, python-format
+msgid "Rotor: %d satellites"
+msgstr ""
 
 msgid "Router / Gateway"
 msgstr "Маршрутизатор / Шлюз"
@@ -16557,6 +16729,9 @@ msgstr "Якщо вибрано 'так', значення сигналу (SNR �
 msgid "Select 'Yes' to use the number keys for quick selection of files / directories, select 'No' to use the number keys for MENU option shortcuts."
 msgstr "Виберіть 'Так', щоб використовувати цифрові клавіші для швидкого вибору файлів/каталогів, виберіть 'Ні', щоб використовувати цифрові клавіші для швидкого доступу до опцій МЕНЮ."
 
+msgid "Select 'Yes' to use the same User Band channel and frequency as LNB 1. This is intended for multiple satellite positions delivered by the same Unicable system."
+msgstr ""
+
 msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr "Якщо ввімкнено та необхідно, плагін виведе приймач із режиму глибокого очікування на визначений час запуску, щоб контролювати, чи розпочинається програма раніше."
 
@@ -16686,6 +16861,9 @@ msgstr "Виберіть журнал фіксації сховища для п�
 
 msgid "Select a script to run:"
 msgstr "Вибір скрипта для запуску:"
+
+msgid "Select a time period to display a confirmation prompt before a Zap timer changes the current service. This allows the user to cancel the Zap. Select 'Disabled' to allow the Zap to proceed without confirmation."
+msgstr ""
 
 msgid "Select a time, when in Standby, after which the descramble can proceed."
 msgstr "Виберіть час у режимі очікування, після якого може продовжитися декодування."
@@ -16908,16 +17086,16 @@ msgstr "Виберіть джерело налаштувань DNS за замо
 msgid "Select the No / False response"
 msgstr "Виберіть відповідь Ні/Хибна"
 
-msgid "Select the Picon path, from above, to be used for Channel Selection picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Channel Selection picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for Front panel/Display picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Front panel/Display picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for InfoBar picons."
+msgid "Select the Picon path, from the option(s) above, to be used for InfoBar picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for OpenWebif picons."
+msgid "Select the Picon path, from the option(s) above, to be used for OpenWebif picons."
 msgstr ""
 
 #, python-format
@@ -17143,11 +17321,11 @@ msgstr "Виберіть виробника свого пристрою SCR. Я�
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "Виберіть метод відновлення роздільної здатності екрана та буфера обміну при виході з телетексту."
 
-msgid "Select the mode for picon path selection and resolution. 'Legacy' represents the previous mode of operation."
-msgstr ""
-
 msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
 msgstr "Виберіть режим доступу для автоматично експортованих спільних ресурсів samba."
+
+msgid "Select the mode of access, Read/Write or Read Only, applied to all exported directories."
+msgstr ""
 
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "Виберіть номер моделі вашого пристрою Unicable. Якщо номер моделі не вказаний, встановіть 'SCR' на 'визначено користувачем' і введіть параметри пристрою вручну відповідно до його специфікації."
@@ -17230,6 +17408,9 @@ msgstr "Виберіть супутник, який потрібно налаш�
 
 msgid "Select the screen layout, from the options provided by the skin, to be used for the ChannelSelection screen."
 msgstr "Виберіть необхідні параметри, надані скіном, які будуть використовуватися для екрана Списку Каналів."
+
+msgid "Select the search mode to find picons. 'Single-path mode' uses one path for all picons. 'Multi-path mode' allows multiple picon paths to be used for different use cases."
+msgstr ""
 
 msgid "Select the shifted character set"
 msgstr "Виберіть набір символів клавіатури"
@@ -17720,10 +17901,6 @@ msgstr "Встановіть МІНІМАЛЬНУ частоту процесо�
 
 msgid "Set MIN CPU frequency for cores 2, 3, 4 and 5"
 msgstr "Встановіть МІНІМАЛЬНУ частоту процесора для ядер 2, 3, 4 і 5"
-
-#, python-format
-msgid "Set Path %s"
-msgstr ""
 
 msgid "Set Scaling governor"
 msgstr "Встановити регулятор масштабування"
@@ -18766,6 +18943,9 @@ msgstr "Показати одиночний телегід каналу"
 msgid "Show status messages on switch to live TV"
 msgstr "Показати повідомлення при переключені на канал ТВ"
 
+msgid "Show sub-menu"
+msgstr ""
+
 msgid "Show subservice selection"
 msgstr "Показати вибір підканалів"
 
@@ -18972,6 +19152,9 @@ msgstr "Один супутник"
 
 msgid "Single step (GOP)"
 msgstr "Визначити крок (GOP)"
+
+msgid "Single-path mode"
+msgstr ""
 
 msgid "SingleEPG Settings"
 msgstr "Налаштування простого ЕПГ"
@@ -20232,6 +20415,9 @@ msgstr "Переклад: kvinto - Monja 06.06.2026"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл занадто великий для ISO9660 рівень 1!"
 
+msgid "TSID"
+msgstr "TSID"
+
 msgid "TUNER:"
 msgstr "ТЮНЕР:"
 
@@ -20627,6 +20813,9 @@ msgstr ""
 msgid "The TV was switched to the recording service!\n"
 msgstr "ТБ переключено на записуваний канал!\n"
 
+msgid "The User Band channel, frequency and optional PIN are inherited from LNB 1 and cannot be changed here."
+msgstr ""
+
 msgid ""
 "The VPS-Plugin couldn't check if the selected channel supports VPS for manually programmed timers!\n"
 " Do you really want to enable VPS?"
@@ -20745,6 +20934,9 @@ msgstr ""
 
 msgid "The picon directory already exists and must be removed. Do you want to proceed?"
 msgstr "Каталог піконів уже існує і його потрібно видалити. Ви бажаєте продовжити?"
+
+msgid "The positioner tuner is currently unavailable. Stop recordings or other services using this tuner and try again."
+msgstr ""
 
 #, python-format
 msgid "The process will take approximately %d minutes to complete."
@@ -21973,11 +22165,26 @@ msgstr "Україна"
 msgid "Ukrainian"
 msgstr "Українська"
 
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: %s."
+msgstr ""
+
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: LNB 1 %s."
+msgstr ""
+
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "Неможливо ініціалізувати Kexec MultiBoot!"
 
+#, python-format
+msgid "Unable to validate the Unicable position for LNB %d: %s."
+msgstr ""
+
 msgid "Unattended upgrade without GUI"
 msgstr "Оновлення у фоновому режимі"
+
+msgid "Unavailable"
+msgstr ""
 
 msgid "Undefined"
 msgstr "Н/Д"
@@ -22015,6 +22222,13 @@ msgstr "Unicable конвертор"
 
 msgid "Unicable Matrix"
 msgstr "Unicable Matrix"
+
+msgid "Unicable position"
+msgstr ""
+
+#, python-format
+msgid "Unicable position %d is not supported by the selected device for LNB %d. Valid positions are %d to %d; use 'User defined' for a reprogrammed device."
+msgstr ""
 
 msgid "Uninstall"
 msgstr "Видалити"
@@ -22280,6 +22494,9 @@ msgstr "Використовуйте HTTPS протокол"
 msgid "Use Harddisk Hardware Standby Timer"
 msgstr "Використовувати апаратний таймер очікування жорсткого диска"
 
+msgid "Use LNB 1 User Band"
+msgstr ""
+
 msgid "Use MHW EPG information when it is available."
 msgstr "Використовувати інформацію MHW ЕПГ, коли вона доступна."
 
@@ -22291,6 +22508,9 @@ msgstr "Використовуйте сервери ODoH"
 
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "Використовуйте OpenTV ЕПГ. Потрібне налаштування на певний транспондер для показу ЕПГ."
+
+msgid "Use PIN"
+msgstr ""
 
 msgid "Use QuickSelect"
 msgstr "Використовувати QuickSelect"
@@ -23039,12 +23259,18 @@ msgstr "Попередження: перевизначення наразі ак
 msgid "Warning: Recordings should not be stored on the Flash disk!"
 msgstr "Попередження: записи не можна зберігати на Flash диску!"
 
+msgid "Warning: The second input of this dual tuner may not support Unicable devices. "
+msgstr ""
+
 #, python-format
 msgid "Warning: There are %d update packages!"
 msgstr "Попередження: є %d пакетів оновлень!"
 
 msgid "Warning: There is only a network drive to store the backup. This means the auto restore will not work after the flash. Alternatively, mount the network drive after the flash and perform a manufacturer reset to auto restore."
 msgstr "Можна знайти тільки мережевий диск для зберігання резервної копії, але після прошивки автовідновлення не буде працювати. Альтернативно Ви можете монтувати мережевий диск після прошивки і виконати скидання на автовідновлення."
+
+msgid "Warning: This FBC-C V1 tuner should be installed in the first slot. In the second slot only 2 of 8 demodulators may be available. "
+msgstr ""
 
 msgid "Warning: This is the last crash before an automatic restart is performed.\n"
 msgstr "Попередження: це останній среш перед виконанням автоматичного перезапуску.\n"
@@ -23144,6 +23370,9 @@ msgstr "Західнофризька"
 msgid "Western Sahara"
 msgstr "Західна Сахара"
 
+msgid "Western satellites"
+msgstr ""
+
 msgid "What day of month?"
 msgstr "Який день місяця?"
 
@@ -23213,6 +23442,12 @@ msgstr "Якщо включено, виводитиметься попередж
 msgid "When enabled, allow each storage device detected to be automatically exported as a Samba share."
 msgstr "Виберіть 'Так', щоб кожен виявлений пристрій зберігання даних автоматично експортувався як спільний доступ до samba."
 
+msgid "When enabled, allow usage of the NFS version 3 protocols."
+msgstr ""
+
+msgid "When enabled, allow usage of the NFS version 4 protocols."
+msgstr ""
+
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Якщо включено, потрібна авторизація для перегляду http потоків."
 
@@ -23236,6 +23471,9 @@ msgstr "Якщо включено, графічні DVB субтитри буд�
 
 msgid "When enabled, it is possible to leave the movie player with exit."
 msgstr "Якщо включено, можливо закрити медіапрогравач кнопкою exit."
+
+msgid "When enabled, map root to nobody (more secure). When disabled, full root access is available."
+msgstr ""
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Якщо включено, вимірюйте споживання енергії, щоб визначити, коли ротор перестає обертатися (якщо підтримується тюнером)."
@@ -24219,6 +24457,18 @@ msgstr "г:хх am/pm"
 msgid "handled"
 msgstr "обробляються"
 
+msgid "has incomplete Unicable settings"
+msgstr ""
+
+msgid "has no supported Unicable device type"
+msgstr ""
+
+msgid "has no valid Unicable product"
+msgstr ""
+
+msgid "has no valid User Band channel"
+msgstr ""
+
 msgid "height"
 msgstr "висота"
 
@@ -24266,6 +24516,12 @@ msgstr "негайний запис"
 
 msgid "internally loopthrough to"
 msgstr "внутрішня петля до"
+
+msgid "is not configured"
+msgstr ""
+
+msgid "is not configured for Unicable"
+msgstr ""
 
 msgid "jump back to the previous title"
 msgstr "перейти до попереднього епізоду"
@@ -24524,6 +24780,18 @@ msgstr "файл шаблону"
 msgid "text"
 msgstr "текст"
 
+msgid "the User Band channel from LNB 1 is not available"
+msgstr ""
+
+msgid "the selected device does not use the LNB 1 frequency on this User Band channel"
+msgstr ""
+
+msgid "the target LNB"
+msgstr ""
+
+msgid "the target LNB is not configured"
+msgstr ""
+
 msgid "this recording"
 msgstr "цей запис"
 
@@ -24572,6 +24840,9 @@ msgstr "нестабільний"
 msgid "update"
 msgstr "оновлено"
 
+msgid "uses an unavailable User Band frequency"
+msgstr ""
+
 msgid "using:"
 msgstr "за допомогою:"
 
@@ -24614,6 +24885,15 @@ msgstr "так (зберігати фіди)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
+#~ msgstr "В даний час триває запис. Зупиніть запис перед налаштуванням позиціонера."
+
+#~ msgid "Consult your receiver's manual for more information on power management."
+#~ msgstr "Керування живленням. Для отримання додаткової інформації зверніться до посібника користувача."
+
+#~ msgid "Consult your receiver's manual for more information on power threshold."
+#~ msgstr "Поріг потужності. Для отримання додаткової інформації зверніться до посібника користувача."
 
 #, python-format
 #~ msgid "%d DMIPS per core"
@@ -26045,9 +26325,6 @@ msgstr "®"
 #~ msgid "MiniDLNA Log"
 #~ msgstr "MiniDLNA Лог"
 
-#~ msgid "NFS Settings"
-#~ msgstr "Налаштування NFS"
-
 #~ msgid "OpenVPN Actions"
 #~ msgstr "Дії OpenVPN"
 
@@ -26672,9 +26949,6 @@ msgstr "®"
 #~ msgid "Next Picture"
 #~ msgstr "Наступне зображення"
 
-#~ msgid "ONID"
-#~ msgstr "ONID"
-
 #~ msgid "Previous Log"
 #~ msgstr "Попередній Лог"
 
@@ -26707,9 +26981,6 @@ msgstr "®"
 
 #~ msgid "System & Modulation"
 #~ msgstr "Система і модуляція"
-
-#~ msgid "TSID"
-#~ msgstr "TSID"
 
 #~ msgid "Tuner live values"
 #~ msgstr "Поточні налаштування тюнера"

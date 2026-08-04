@@ -1488,8 +1488,17 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 				cab_max = 4200;
 				break;
 			case feTerrestrial:
-				ret = (int)(snr / 30);
-				ter_max = 4200;
+				if (!strcmp(m_description, "GIGA DVB-T2/C NIM (TT3L10)"))
+				{
+					// Adjust the lower legacy SNR scale reported by the GigaBlue TT3L10 driver.
+					ret = (int)(snr / 20);
+					ter_max = 1700;
+				}
+				else
+				{
+					ret = (int)(snr / 30);
+					ter_max = 4200;
+				}
 				break;
 		}
 	}
@@ -3205,7 +3214,7 @@ RESULT eDVBFrontend::tune(const iDVBFrontendParameters &where, bool blindscan)
 		switch (diction)
 		{
 			case 1:
-				if(pin < 1)
+				if(pin < 0)
 				{
 					diseqc.len = 4;
 					diseqc.data[0] = 0x70;
@@ -3222,7 +3231,7 @@ RESULT eDVBFrontend::tune(const iDVBFrontendParameters &where, bool blindscan)
 				break;
 			case 0:
 			default:
-				if(pin < 1)
+				if(pin < 0)
 				{
 					diseqc.len = 5;
 					diseqc.data[2] = 0x5A;

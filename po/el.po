@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-12 13:00+0000\n"
+"POT-Creation-Date: 2026-07-15 19:52+0000\n"
 "PO-Revision-Date: 2026-06-15 03:01+0000\n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/el/>\n"
@@ -42,6 +42,9 @@ msgstr "  ΕΓΓΡ  "
 
 msgid "  Red key : Show/Hide channel name"
 msgstr "  Κόκκινο πλήκτρο: Εμφάνιση/απόκρυψη ονόματος καναλιού"
+
+msgid " (+5 volt terrestrial)"
+msgstr ""
 
 #, python-format
 msgid " (Channel %s)"
@@ -1606,14 +1609,17 @@ msgstr ""
 "Μια εγγραφή είναι σε εξέλιξη.\n"
 "Τι θέλετε να γίνει;"
 
-msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
-msgstr "Μία εγγραφή είναι σε εξέλιξη. Σταματήστε την εγγραφή πριν ρυθμίσετε το μοτέρ."
-
 msgid "A recording is currently running. Please stop the recording before trying to scan."
 msgstr "Μια εγγραφή είναι σε εξέλιξη. Πρέπει να σταματήσετε την εγγραφή πριν την ανίχνευση."
 
 msgid "A recording is currently running. Please stop the recording before trying to start the satellite finder."
 msgstr "Μία εγγραφή βρίσκεται σε εξέλιξη. Σταματήστε την εγγραφή πριν ξεκινήσετε την εύρεση σήματος."
+
+msgid "A recording is running or will start within six minutes. Changing the tuner configuration can interrupt it. Save anyway?"
+msgstr ""
+
+msgid "A recording is running or will start within six minutes. Please try the positioner setup later."
+msgstr ""
 
 #, python-format
 msgid ""
@@ -1665,6 +1671,11 @@ msgid ""
 msgstr ""
 "Ένας χρονοδιακόπτης απέτυχε να ξεκινήσει.\n"
 "Να απενεργοποιηθεί η TV και να ξαναπροσπαθήσει;\n"
+
+msgid ""
+"A zap timer wants to switch the channel.\n"
+"Do you want to zap now?\n"
+msgstr ""
 
 msgid "AAC downmix"
 msgstr "Αποκωδικοποίηση και μίξη AAC"
@@ -1761,6 +1772,9 @@ msgstr "Έτοιμο για εκκίνηση"
 
 msgid "Above 200 Mbps"
 msgstr "Πάνω από 200 Mbps"
+
+msgid "Access mode"
+msgstr ""
 
 msgid "Access point"
 msgstr "Σημείο πρόσβασης"
@@ -1878,6 +1892,9 @@ msgstr "Προσθήκη σημειωτή σε μπουκέτο"
 
 msgid "Add New Quad Channel Entry"
 msgstr "Προσθήκη νέου στοιχείου τετραπλού καναλιού"
+
+msgid "Add Path"
+msgstr ""
 
 msgid "Add RecordTimer"
 msgstr "Προσθήκη χρονοδιακόπτη εγγραφής"
@@ -2044,6 +2061,9 @@ msgstr "Προσθήκη/αφαίρεση της τρέχουσας υπηρεσ
 msgid "Adding schedule..."
 msgstr "Προσθήκη χρονοδιαγράμματος..."
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional files/folders to backup"
 msgstr "Πρόσθετα αρχεία/φάκελοι προς εφεδρεία"
 
@@ -2052,6 +2072,10 @@ msgstr "Οι πρόσθετες επιλογές μοτέρ σας επιτρέ�
 
 msgid "Additional motor options allow you to enter details from your motor's specifications so Enigma can work out how long it will take to move to another satellite."
 msgstr "Οι πρόσθετες επιλογές μοτέρ σας επιτρέπουν να εισάγετε λεπτομέρειες από τον πίνακα χαρακτηριστικών του μοτέρ σας ώστε το enigma να υπολογίζει πόσος χρόνος θα χρειαστεί να μετακινηθεί το κάτοπτρο σε άλλο δορυφόρο."
+
+#, python-format
+msgid "Additional rotor cable from %s"
+msgstr ""
 
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Ρυθμίστε την ένταση των χρωμάτων έτσι ώστε να διαφέρουν οι χρωματισμοί με τη μέγιστη φωτεινότητα. Όταν τελειώσετε, πιέστε ΟΚ για να κλείσετε τη μικρορύθμιση ή πιέστε ένα νούμερο για να δείτε και άλλες οθόνες δοκιμών."
@@ -2113,11 +2137,11 @@ msgstr "Αφρικάνς"
 msgid "After Event"
 msgstr "Μετά το πρόγραμμα"
 
-msgid "After Power Lost"
-msgstr "Μετά τη διακοπή τροφοδοσίας"
-
 msgid "After event"
 msgstr "Μετά το πρόγραμμα"
+
+msgid "After power loss"
+msgstr "Μετά τη διακοπή τροφοδοσίας"
 
 msgid "After recording"
 msgstr "Μετά την εγγραφή"
@@ -2229,6 +2253,9 @@ msgstr "Να επιτρέπονται υπότιτλοι για άτομα με 
 
 msgid "Allow unsupported modes"
 msgstr "Να επιτρέπονται οι μη υποστηριζόμενες λειτουργίες"
+
+msgid "Allowed clients"
+msgstr ""
 
 msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr "Επιτρέπει στον %s %s την τακτική ανάγνωση του αποθηκευμένου EPG."
@@ -2685,6 +2712,9 @@ msgstr "Αυτόματο"
 
 msgid "Auto (not available)"
 msgstr "Αυτόματο (μη διαθέσιμο)"
+
+msgid "Auto DiSEqC search order"
+msgstr ""
 
 msgid "Auto Language"
 msgstr "Αυτόματη γλώσσα"
@@ -3819,6 +3849,9 @@ msgstr "Στο κέντρο, σε αναδίπλωση"
 msgid "Central African Republic"
 msgstr "Κεντροαφρικανική Δημοκρατία"
 
+msgid "Central Europe"
+msgstr ""
+
 msgid "Central Khmer"
 msgstr "Κεντρικό Χμερ"
 
@@ -3930,7 +3963,7 @@ msgstr "Οθόνη επιλογής καναλιών"
 msgid "Channel Selection Settings"
 msgstr "Ρυθμίσεις επιλογής καναλιών"
 
-msgid "Channel Selection picon set"
+msgid "Channel Selection picon path"
 msgstr ""
 
 msgid "Channel buttons"
@@ -4008,6 +4041,9 @@ msgstr "Σόου συζητήσεων"
 msgid "Chechen"
 msgstr "Τσετσενικά"
 
+msgid "Check ONID/TSID"
+msgstr ""
+
 msgid "Check for PDC"
 msgstr "Έλεγχος για PDC"
 
@@ -4028,6 +4064,9 @@ msgstr "Έλεγχος πηγών"
 
 msgid "Checking Logs..."
 msgstr "Έλεγχος καταγραφολογίων..."
+
+msgid "Checking ONID/TSID ..."
+msgstr ""
 
 msgid "Checking file system..."
 msgstr "Έλεγχος συστήματος αρχείων..."
@@ -4874,6 +4913,9 @@ msgstr "Παραμετροποίηση"
 msgid "Configuring Service"
 msgstr "Παραμετροποίηση υπηρεσίας"
 
+msgid "Confirm Zap"
+msgstr ""
+
 msgid "ConflictTimer Actions"
 msgstr "Ενέργειες διένεξης χρονοδιακόπτη"
 
@@ -4949,12 +4991,6 @@ msgstr "Συμβουλευτείτε τον πίνακα χαρακτηριστ�
 
 msgid "Consult your motor's specifications for this information, or leave the default setting."
 msgstr "Συμβουλευτείτε τον πίνακα χαρακτηριστικών του μοτέρ σας για αυτές τις πληροφορίες ή αφήστε τις προεπιλεγμένες τιμές."
-
-msgid "Consult your receiver's manual for more information on power management."
-msgstr "Διαχείριση ισχύος. Συμβουλευτείτε το εγχειρίδιο χρήσης του δέκτη σας για περισσότερες πληροφορίες."
-
-msgid "Consult your receiver's manual for more information on power threshold."
-msgstr "Κατώφλι ισχύος. Συμβουλευτείτε το εγχειρίδιο χρήσης του δέκτη σας για περισσότερες πληροφορίες."
 
 #, python-format
 msgid "Contacting IceTV server and setting up your %s %s."
@@ -5360,8 +5396,17 @@ msgstr "Η τρέχουσα τοποθεσία είναι η '%s'."
 msgid "Current mode: %s \n"
 msgstr "Τρέχουσα λειτουργία: %s \n"
 
+msgid "Current rotor position:"
+msgstr ""
+
+msgid "Current rotor position: unknown"
+msgstr ""
+
 msgid "Current settings:"
 msgstr "Τρέχουσες ρυθμίσεις:"
+
+msgid "Current supplied to the LNB and positioner."
+msgstr ""
 
 msgid "Current time"
 msgstr "Τρέχουσα ώρα"
@@ -5880,6 +5925,9 @@ msgstr "Ορισμός softcam για αυτή την υπηρεσία"
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "Καθορισμός πρόσθετης καθυστέρησης σε χιλιοστά του δευτερολέπτου πριν από την έναρξη των ροών http(s)."
 
+msgid "Define path %s for picons."
+msgstr ""
+
 msgid "Define the custom mountpoint for the device."
 msgstr "Ορισμός προσαρμοσμένου σημείου πρόσβασης για αυτή τη συσκευή."
 
@@ -6213,6 +6261,9 @@ msgstr "Λεπτομέρειες αρχείου καταγραφής GStreamer."
 
 msgid "Details"
 msgstr "Λεπτομέρειες"
+
+msgid "Detect positioner movement by its current consumption."
+msgstr ""
 
 msgid "Detective"
 msgstr "Ντετέκτιβ"
@@ -6981,6 +7032,9 @@ msgstr "Ανατολικά"
 msgid "East limit set"
 msgstr "Το ανατολικό όριο ορίστηκε"
 
+msgid "Eastern satellites"
+msgstr ""
+
 msgid "Easy listening"
 msgstr "Εύκολη ακρόαση"
 
@@ -7179,6 +7233,12 @@ msgstr "Ενεργοποίηση MiniTV"
 msgid "Enable Move Mode"
 msgstr "Ενεργοποίηση λειτουργίας μετακίνησης"
 
+msgid "Enable NFSv3"
+msgstr ""
+
+msgid "Enable NFSv4"
+msgstr ""
+
 msgid "Enable Netmed EPG"
 msgstr "Ενεργοποίηση Netmed EPG"
 
@@ -7339,6 +7399,9 @@ msgstr "Ενεργοποιήστε αυτήν την επιλογή για να 
 msgid "Enable this option to add keyboard key map data to the debug log file."
 msgstr "Ενεργοποιήστε αυτή την επιλογή για την προσθήκη δεδομένων χάρτη πληκτρολογίου στο αρχείο καταγραφής αποσφαλμάτωσης."
 
+msgid "Enable this option to add network information to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add opkg output data to the debug log file."
 msgstr "Ενεργοποιήστε αυτή την επιλογή για την προσθήκη δεδομένων εξόδου opkg στο αρχείο καταγραφής αποσφαλμάτωσης."
 
@@ -7365,6 +7428,12 @@ msgstr "Ενεργοποιήστε αυτή την επιλογή για να ε
 
 msgid "Enable this setting if your aerial system needs power."
 msgstr "Ενεργοποιήστε αυτή τη ρύθμιση αν η κεραία σας απαιτεί πρόσθετη ισχύ."
+
+msgid "Enable this when a power inserter or external supply powers the Unicable device."
+msgstr ""
+
+msgid "Enable this when the User Band is protected by a PIN in a multi-dwelling Unicable installation."
+msgstr ""
 
 msgid "Enable timer"
 msgstr "Ενεργοποίηση χρονοδιακόπτη"
@@ -7511,6 +7580,9 @@ msgstr "Εισαγωγή ονόματος για αυτόν τον χρονοδ�
 msgid "Enter a new name for this device."
 msgstr "Εισαγωγή ονόματος για αυτή τη συσκευή."
 
+msgid "Enter expected ONID/TSID"
+msgstr ""
+
 msgid "Enter if you are North or South of the equator."
 msgstr "Εισάγετε αν βρίσκεστε βόρεια ή νότια του ισημερινού."
 
@@ -7532,6 +7604,12 @@ msgstr "Εισαγωγή κωδικού pin"
 msgid "Enter text via an attached keyboard"
 msgstr "Εισάγετε κείμενο μέσω ενός συνδεδεμένου πληκτρολογίου"
 
+msgid "Enter the IP address or subnet (e.g. 192.168.1.0/24) to which NFS host access is granted. Enter '*', the default, for all host access."
+msgstr ""
+
+msgid "Enter the PIN from 0 to 255 assigned to this User Band by the installer or building operator."
+msgstr ""
+
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
 msgstr "Εισάγετε το αναγνωριστικό δικτύου ZeroTier. Το ID πρέπει να είναι ακριβώς 16 χαρακτήρες σε μήκος."
 
@@ -7543,6 +7621,9 @@ msgstr "Εισάγετε τη συχνότητα αλλαγής μεταξύ τ�
 
 msgid "Enter the frequency step size for the tuner to use when searching for cable multiplexes. For more information consult your cable provider's documentation."
 msgstr "Εισάγετε το μέγεθος βήματος της συχνότητας που θα χρησιμοποιεί το tuner κατά την αναζήτηση καλωδιακών πολυπλεξιών. Για περισσότερες πληροφορίες ανατρέξτε στο εγχειρίδιο του καλωδιακού σας παρόχου."
+
+msgid "Enter the number of NFS server threads to be allocated/used. Higher values improve performance with multiple clients but use more memory."
+msgstr ""
 
 msgid "Enter the number stored in the positioner that corresponds to this satellite."
 msgstr "Εισάγετε τον αποθηκευμένο αριθμό του μοτέρ που αντιστοιχεί σε αυτόν τον δορυφόρο."
@@ -8168,6 +8249,9 @@ msgstr "Χρωματισμός διαλόγου εξωτερικών υποτί�
 msgid "External subtitle switch fonts"
 msgstr "Αλλαγή γραμματοσειρών εξωτερικού υπότιτλου"
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra High"
 msgstr "Έξτρα υψηλό"
 
@@ -8209,6 +8293,13 @@ msgstr "FBC SCR (Unicable/JESS)"
 
 msgid "FBC automatic"
 msgstr "FBC αυτόματο"
+
+#, python-format
+msgid "FBC automatic: connected to %s"
+msgstr ""
+
+msgid "FBC automatic: inactive"
+msgstr ""
 
 msgid "FCC enabled"
 msgstr "FCC ενεργό"
@@ -8825,7 +8916,7 @@ msgstr "Εμπρόσθιο USB"
 msgid "Front USB 3.0"
 msgstr "Εμπρόσθιο USB 3.0"
 
-msgid "Front panel/Display picon set"
+msgid "Front panel/Display picon path"
 msgstr ""
 
 msgid "Front processor version"
@@ -9396,6 +9487,9 @@ msgstr "Απόκρυψη αναπαραγωγού"
 msgid "Hide softcam servername"
 msgstr "Απόκρυψη του ονόματος διακομιστή softcam"
 
+msgid "Hide sub-menu"
+msgstr ""
+
 msgid "Hide the InfoBar"
 msgstr "Απόκρυψης της μπάρας πληροφοριών"
 
@@ -9952,6 +10046,9 @@ msgstr "Συμπερίληψη διεθνών δεδομένων *"
 msgid "Include keyboard data"
 msgstr "Συμπερίληψη των δεδομένων πληκτρολογίου"
 
+msgid "Include network data"
+msgstr ""
+
 msgid "Include opkg output data"
 msgstr "Συμπερίληψη των δεδομένων εξόδου opkg"
 
@@ -10036,7 +10133,7 @@ msgstr "Ταχύτητα ξεθωριάσματος της μπάρας πληρ
 msgid "InfoBar front end data source"
 msgstr "Πηγή δεδομένων tuner στη μπάρα πληροφοριών"
 
-msgid "InfoBar picon set"
+msgid "InfoBar picon path"
 msgstr ""
 
 msgid "Information"
@@ -10047,6 +10144,9 @@ msgstr "ειδήσεις/εκπαίδευση/σχολικό πρόγραμμα"
 
 msgid "Infotainment"
 msgstr "Ινφοτέιντμεντ"
+
+msgid "Inherited channel / frequency"
+msgstr ""
 
 msgid "Init"
 msgstr "Αρχικοποίηση"
@@ -10618,6 +10718,18 @@ msgstr "Τηλεχειριστήριο LIRC"
 msgid "LNB"
 msgstr "LNB"
 
+msgid "LNB 1"
+msgstr ""
+
+msgid "LNB 1 and the target LNB use different Unicable protocols"
+msgstr ""
+
+msgid "LNB current:"
+msgstr ""
+
+msgid "LNB current: not available"
+msgstr ""
+
 msgid "LNB/Switch Bootup time [ms]"
 msgstr "LNB/Χρόνος εκκίνησης διακόπτη [ms]"
 
@@ -10705,6 +10817,9 @@ msgstr "Έξοδος από την αναπαραγωγή DVD;"
 msgid "Leave movie player"
 msgstr "έξοδος από τον αναπαραγωγό ταινιών"
 
+msgid "Leave this at 0 to derive the position from the LNB number and device profile. Enter 1 to 64 only for a reprogrammed Unicable device."
+msgstr ""
+
 msgid "Leave this set to 'Yes' unless you fully understand why you are adjusting it."
 msgstr "Αφήστε αυτή τη ρύθμιση στο 'ναι' εκτός αν καταλαβαίνετε πλήρως γιατί την αλλάζετε."
 
@@ -10737,9 +10852,6 @@ msgstr "Αριστερό, μπροστά USB"
 
 msgid "Left, wrapped"
 msgstr "Αριστερά, σε αναδίπλωση"
-
-msgid "Legacy"
-msgstr ""
 
 msgid "Legacy mode"
 msgstr "Λειτουργία παλαιού τύπου"
@@ -10798,6 +10910,9 @@ msgstr "Ανατολικό όριο"
 
 msgid "Limit the characters that can be used in recording filenames to (7 bit) ASCII. This ensures compatibility with operating systems or file systems with limited character sets."
 msgstr "Περιορισμός των χαρακτήρων για χρήση στα ονόματα των εγγραφών σε (7 bit) ascii. Αυτό διασφαλίζει τη συμβατότητα με λειτουργικά συστήματα ή με συστήματα αρχείων με περιορισμένους χαρακτήρες."
+
+msgid "Limit the search to the satellite group normally used by this installation."
+msgstr ""
 
 msgid "Limit west"
 msgstr "Δυτικό όριο"
@@ -11352,6 +11467,9 @@ msgstr "Μέγιστος χρόνος αναμονής του πρώτου κλ�
 msgid "Mayotte"
 msgstr "Μαγιότ"
 
+msgid "Measured current"
+msgstr ""
+
 msgid "Media"
 msgstr "Πολυμέσα"
 
@@ -11494,6 +11612,9 @@ msgstr "MiniTV με OSD"
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Ελάχιστη ηλικία %d"
+
+msgid "Minimum difference between idle and moving current."
+msgstr ""
 
 msgid "Minimum send interval"
 msgstr "Ελάχιστο διάστημα αποστολής"
@@ -11960,6 +12081,9 @@ msgstr "Πολλαπλό"
 msgid "Multi EPG"
 msgstr "Πολλαπλός EPG"
 
+msgid "Multi-path mode"
+msgstr ""
+
 msgid "MultiBoot"
 msgstr "Πολλαπλή εκκίνηση"
 
@@ -12040,6 +12164,12 @@ msgstr "ΕΠΟΜΕΝΟ"
 
 msgid "NFS"
 msgstr "NFS"
+
+msgid "NFS Settings"
+msgstr "Ρυθμίσεις NFS"
+
+msgid "NFS threads"
+msgstr ""
 
 msgid "NIM"
 msgstr "NIM"
@@ -12714,8 +12844,14 @@ msgstr "Μη εγκατεστημένο"
 msgid "Not Shown"
 msgstr "Δεν εμφανίζεται"
 
+msgid "Not a valid tuner"
+msgstr ""
+
 msgid "Not associated"
 msgstr "Χωρίς συσχέτιση"
+
+msgid "Not available"
+msgstr ""
 
 msgid "Not configured"
 msgstr "Μη ρυθμισμένο"
@@ -12836,8 +12972,23 @@ msgstr "Πλήκτρο ΟΚ (σύντομο)"
 msgid "OK button mode"
 msgstr "Λειτουργία πλήκτρου ΟΚ"
 
+msgid "OK checks the currently tuned transponder."
+msgstr ""
+
 msgid "OK, guide me through the upgrade process"
 msgstr "ΟΚ, να οδηγηθώ στη διαδικασία αναβάθμισης"
+
+msgid "ONID"
+msgstr "ONID"
+
+msgid "ONID/TSID check timed out"
+msgstr ""
+
+msgid "ONID/TSID does not match"
+msgstr ""
+
+msgid "ONID/TSID valid"
+msgstr ""
 
 msgid "OSCam Info"
 msgstr "Πληροφορίες OScam"
@@ -13177,6 +13328,9 @@ msgstr "Άνοιγμα της επισκόπησης πολλαπλών υπηρ
 msgid "Open the single service EPG view"
 msgstr "Άνοιγμα της επισκόπησης μονής υπηρεσίας EPG"
 
+msgid "Open tuner setup"
+msgstr ""
+
 msgid "Open with File Commander"
 msgstr "Άνοιγμα με το File Commander"
 
@@ -13189,7 +13343,7 @@ msgstr "OpenVPN"
 msgid "OpenViX Packages"
 msgstr "Πακέτα OpenViX"
 
-msgid "OpenWebif picon set"
+msgid "OpenWebif picon path"
 msgstr ""
 
 msgid "Opera"
@@ -13357,6 +13511,9 @@ msgstr "ΓΣ - Γονική συναίνεση"
 
 msgid "PGS file"
 msgstr "αρχείο PGS"
+
+msgid "PIN"
+msgstr ""
 
 msgid "PIN code needed"
 msgstr "Απαιτείται κωδικός PIN"
@@ -13530,9 +13687,6 @@ msgstr "Διαδρομή"
 msgid "Path '%s' missing!"
 msgstr "Η διαδρομή '%s' λείπει!"
 
-msgid "Path to picon set %s."
-msgstr ""
-
 msgid "Pause"
 msgstr "Παύση"
 
@@ -13642,13 +13796,15 @@ msgstr "Λογότυπο και όνομα υπηρεσίας"
 msgid "Picon install location"
 msgstr "Φάκελος προορισμού πακέτου λογότυπων"
 
-msgid "Picon mode"
-msgstr ""
-
+#, python-format
 msgid "Picon path %s"
 msgstr ""
 
-msgid "Picon set mode"
+#, python-format
+msgid "Picon path %s is in use and cannot be removed!"
+msgstr ""
+
+msgid "Picon search mode"
 msgstr ""
 
 msgid "Picon width"
@@ -14166,6 +14322,9 @@ msgstr "Ρυθμίσεις μοτέρ"
 
 msgid "Positioner Setup Log"
 msgstr "Καταγραφή ρυθμίσεων μοτέρ"
+
+msgid "Positioner actions"
+msgstr ""
 
 msgid "Positioner setup"
 msgstr "Ρύθμιση μοτέρ"
@@ -15174,6 +15333,9 @@ msgstr "Αφαίρεση από τον γονικό έλεγχο"
 msgid "Remove New Found Flag"
 msgstr "Διαγραφή σημαίας \"νέο\""
 
+msgid "Remove Path"
+msgstr ""
+
 msgid "Remove Plugin"
 msgstr "Αφαίρεση πρόσθετου"
 
@@ -15659,11 +15821,21 @@ msgstr "Αρχικός φάκελος"
 msgid "Root file"
 msgstr "Αρχείο ρίζας"
 
+msgid "Root squash"
+msgstr ""
+
 msgid "Rose"
 msgstr "τριανταφυλλί"
 
+msgid "Rotor is not configured"
+msgstr ""
+
 msgid "Rotor turning speed"
 msgstr "Ταχύτητα περιστροφής του μοτέρ"
+
+#, python-format
+msgid "Rotor: %d satellites"
+msgstr ""
 
 msgid "Router / Gateway"
 msgstr "Δρομολογητής / πύλη δικτύου"
@@ -16508,6 +16680,9 @@ msgstr "Επιλέξτε 'ναι' για χρήση των τιμών σήματ
 msgid "Select 'Yes' to use the number keys for quick selection of files / directories, select 'No' to use the number keys for MENU option shortcuts."
 msgstr "Επιλέξτε 'ναι' για να χρησιμοποιήσετε τα αριθμητικά πλήκτρα για γρήγορη επιλογή αρχείων/φακέλων, επιλέξτε 'όχι' για να χρησιμοποιήσετε τα αριθμητικά πλήκτρα για τις συντομεύσεις επιλογών μενού."
 
+msgid "Select 'Yes' to use the same User Band channel and frequency as LNB 1. This is intended for multiple satellite positions delivered by the same Unicable system."
+msgstr ""
+
 msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr "Αν είναι ενεργοποιημένο και απαραίτητο, το πρόσθετο θα αφυπνίσει τον δέκτη από τη βαθιά αναμονή για την καθορισμένη ώρα έναρξης, ώστε να ελέγξει αν το πρόγραμμα ξεκινά νωρίτερα."
 
@@ -16637,6 +16812,9 @@ msgstr "Επιλογή ενός αρχείου καταγραφής αποσφα
 
 msgid "Select a script to run:"
 msgstr "Επιλογή ενός σεναρίου προς εκτέλεση:"
+
+msgid "Select a time period to display a confirmation prompt before a Zap timer changes the current service. This allows the user to cancel the Zap. Select 'Disabled' to allow the Zap to proceed without confirmation."
+msgstr ""
 
 msgid "Select a time, when in Standby, after which the descramble can proceed."
 msgstr "Επιλογή χρόνου κατά την αναμονή, μετά τον οποίο θα συνεχίζεται η αποκρυπτογράφηση."
@@ -16859,16 +17037,16 @@ msgstr "Επιλογή της πηγής ρυθμίσεων του προεπι�
 msgid "Select the No / False response"
 msgstr "Επιλέξτε την απάντηση Όχι / Ψευδές"
 
-msgid "Select the Picon path, from above, to be used for Channel Selection picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Channel Selection picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for Front panel/Display picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Front panel/Display picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for InfoBar picons."
+msgid "Select the Picon path, from the option(s) above, to be used for InfoBar picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for OpenWebif picons."
+msgid "Select the Picon path, from the option(s) above, to be used for OpenWebif picons."
 msgstr ""
 
 #, python-format
@@ -17094,11 +17272,11 @@ msgstr "Επιλέξτε τον κατασκευαστή της SCR συσκευ
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "Επιλογή της μεθόδου επαναφοράς της ανάλυσης της οθόνης και της μνήμης καρέ κατά την έξοδο από το τηλεκείμενο."
 
-msgid "Select the mode for picon path selection and resolution. 'Legacy' represents the previous mode of operation."
-msgstr ""
-
 msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
 msgstr "Επιλογή λειτουργίας πρόσβασης για τα κοινόχρηστα στοιχεία samba που εξάγονται αυτόματα."
+
+msgid "Select the mode of access, Read/Write or Read Only, applied to all exported directories."
+msgstr ""
 
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "Επιλέξτε το μοντέλο της Unicable συσκευής σας. Αν ο αριθμός μοντέλου δεν είναι στη λίστα, θέστε το 'SCR' ως 'ορισμένο από τον χρήστη' και εισάγετε τις παραμέτρους χειροκίνητα, σύμφωνα με τον πίνακα χαρακτηριστικών."
@@ -17181,6 +17359,9 @@ msgstr "Επιλέξτε τον δορυφόρο που θέλετε να ρυθ
 
 msgid "Select the screen layout, from the options provided by the skin, to be used for the ChannelSelection screen."
 msgstr "Επιλέξτε τη διάταξη της οθόνης από τις επιλογές που παρέχονται από το θέμα και που χρησιμοποιούνται στην οθόνη επιλογής καναλιών."
+
+msgid "Select the search mode to find picons. 'Single-path mode' uses one path for all picons. 'Multi-path mode' allows multiple picon paths to be used for different use cases."
+msgstr ""
 
 msgid "Select the shifted character set"
 msgstr "Επιλογή του σετ χαρακτήρων με shift"
@@ -17671,10 +17852,6 @@ msgstr "Ρύθμιση της ελάχιστης συχνότητας CPU για
 
 msgid "Set MIN CPU frequency for cores 2, 3, 4 and 5"
 msgstr "Ρύθμιση της ελάχιστης συχνότητας CPU για τους πυρήνες 2, 3, 4 και 5"
-
-#, python-format
-msgid "Set Path %s"
-msgstr ""
 
 msgid "Set Scaling governor"
 msgstr "Ορισμός ρυθμιστή κλιμάκωσης"
@@ -18717,6 +18894,9 @@ msgstr "Εμφάνιση EPG μίας μόνο υπηρεσίας"
 msgid "Show status messages on switch to live TV"
 msgstr "Εμφάνιση μηνυμάτων κατάστασης κατά την αλλαγή σε ζωντανή TV"
 
+msgid "Show sub-menu"
+msgstr ""
+
 msgid "Show subservice selection"
 msgstr "Εμφάνιση επιλογής υπό-υπηρεσιών"
 
@@ -18923,6 +19103,9 @@ msgstr "Ένας δορυφόρος"
 
 msgid "Single step (GOP)"
 msgstr "Μονό βήμα (GOP)"
+
+msgid "Single-path mode"
+msgstr ""
 
 msgid "SingleEPG Settings"
 msgstr "Ρυθμίσεις μονού EPG"
@@ -20179,6 +20362,9 @@ msgstr "MCelliotG"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Το αρχείο TS είναι πολύ μεγάλο για το ISO9660 επίπεδο 1!"
 
+msgid "TSID"
+msgstr "TSID"
+
 msgid "TUNER:"
 msgstr "TUNER:"
 
@@ -20574,6 +20760,9 @@ msgstr ""
 msgid "The TV was switched to the recording service!\n"
 msgstr "Η TV μετέβη στην υπηρεσία προς εγγραφή!\n"
 
+msgid "The User Band channel, frequency and optional PIN are inherited from LNB 1 and cannot be changed here."
+msgstr ""
+
 msgid ""
 "The VPS-Plugin couldn't check if the selected channel supports VPS for manually programmed timers!\n"
 " Do you really want to enable VPS?"
@@ -20692,6 +20881,9 @@ msgstr ""
 
 msgid "The picon directory already exists and must be removed. Do you want to proceed?"
 msgstr "Ο φάκελος λογότυπων υπάρχει ήδη και πρέπει να αφαιρεθεί. Θέλετε να συνεχίσετε;"
+
+msgid "The positioner tuner is currently unavailable. Stop recordings or other services using this tuner and try again."
+msgstr ""
 
 #, python-format
 msgid "The process will take approximately %d minutes to complete."
@@ -21919,11 +22111,26 @@ msgstr "Ουκρανία"
 msgid "Ukrainian"
 msgstr "Ουκρανικά"
 
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: %s."
+msgstr ""
+
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: LNB 1 %s."
+msgstr ""
+
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "Αδυναμία αρχικοποίησης της πολλαπλής εκκίνησης Kexec!"
 
+#, python-format
+msgid "Unable to validate the Unicable position for LNB %d: %s."
+msgstr ""
+
 msgid "Unattended upgrade without GUI"
 msgstr "Ανεπιτήρητη αναβάθμιση χωρίς γραφικό περιβάλλον"
+
+msgid "Unavailable"
+msgstr ""
 
 msgid "Undefined"
 msgstr "Απροσδιόριστο"
@@ -21961,6 +22168,13 @@ msgstr "Unicable LNB"
 
 msgid "Unicable Matrix"
 msgstr "Unicable Matrix"
+
+msgid "Unicable position"
+msgstr ""
+
+#, python-format
+msgid "Unicable position %d is not supported by the selected device for LNB %d. Valid positions are %d to %d; use 'User defined' for a reprogrammed device."
+msgstr ""
 
 msgid "Uninstall"
 msgstr "Απεγκατάσταση"
@@ -22226,6 +22440,9 @@ msgstr "Χρήση πρωτοκόλλου HTTPS"
 msgid "Use Harddisk Hardware Standby Timer"
 msgstr "Χρήση χρονοδιακόπτη αναμονής υλικού σκληρού δίσκου"
 
+msgid "Use LNB 1 User Band"
+msgstr ""
+
 msgid "Use MHW EPG information when it is available."
 msgstr "Χρήση πληροφοριών MHW όταν είναι διαθέσιμες."
 
@@ -22237,6 +22454,9 @@ msgstr "Χρήση διακομιστών ODoH"
 
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "Χρήση του OpenTV EPG. Απαιτείται συντονισμός σε συγκεκριμένο αναμεταδότη για την ενσωμάτωση του EPG."
+
+msgid "Use PIN"
+msgstr ""
 
 msgid "Use QuickSelect"
 msgstr "Χρήση της γρήγορης επιλογής"
@@ -22985,12 +23205,18 @@ msgstr "Προειδοποίηση: Οι παρακάμψεις είναι εν�
 msgid "Warning: Recordings should not be stored on the Flash disk!"
 msgstr "Προειδοποίηση: Οι εγγραφές δεν πρέπει να αποθηκεύονται σε φλασάκι!"
 
+msgid "Warning: The second input of this dual tuner may not support Unicable devices. "
+msgstr ""
+
 #, python-format
 msgid "Warning: There are %d update packages!"
 msgstr "Προειδοποίηση: Υπάρχουν %d πακέτα ενημέρωσης!"
 
 msgid "Warning: There is only a network drive to store the backup. This means the auto restore will not work after the flash. Alternatively, mount the network drive after the flash and perform a manufacturer reset to auto restore."
 msgstr "Προειδοποίηση: Υπάρχει μόνο ένας δίσκος δικτύου για αποθήκευση των αντιγράφων ασφαλείας. Αυτό σημαίνει ότι η αυτόματη επαναφορά δεν θα λειτουργήσει μετά το φλασάρισμα. Εναλλακτικά, μπορείτε να προβείτε στην αυτόματη επαναφορά προσαρτώντας το δίσκο δικτύου μετά το φλασάρισμα και εκτελώντας έπειτα εργοστασιακή επαναφορά."
+
+msgid "Warning: This FBC-C V1 tuner should be installed in the first slot. In the second slot only 2 of 8 demodulators may be available. "
+msgstr ""
 
 msgid "Warning: This is the last crash before an automatic restart is performed.\n"
 msgstr "Προειδοποίηση: Αυτό είναι το τελευταίο κρασάρισμα πριν γίνει επανεκκίνηση.\n"
@@ -23090,6 +23316,9 @@ msgstr "Δυτικά Φριζιακά"
 msgid "Western Sahara"
 msgstr "Δυτική Σαχάρα"
 
+msgid "Western satellites"
+msgstr ""
+
 msgid "What day of month?"
 msgstr "Ποια ημέρα του μήνα;"
 
@@ -23159,6 +23388,12 @@ msgstr "Όταν είναι ενεργό, θα εμφανίζεται μία π�
 msgid "When enabled, allow each storage device detected to be automatically exported as a Samba share."
 msgstr "Επιλέξτε 'ναι' για να επιτρέψετε την αυτόματη εξαγωγή κάθε εντοπισμένης συσκευής αποθήκευσης ως κοινόχρηστο στοιχείο samba."
 
+msgid "When enabled, allow usage of the NFS version 3 protocols."
+msgstr ""
+
+msgid "When enabled, allow usage of the NFS version 4 protocols."
+msgstr ""
+
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Όταν είναι ενεργό, απαιτείται πιστοποίηση για την παρακολούθηση ροών http."
 
@@ -23182,6 +23417,9 @@ msgstr "Όταν είναι ενεργό, οι γραφικοί υπότιτλο
 
 msgid "When enabled, it is possible to leave the movie player with exit."
 msgstr "Όταν είναι ενεργό, είναι δυνατή η έξοδος από την αναπαραγωγή ταινιών με το πλήκτρο εξόδου."
+
+msgid "When enabled, map root to nobody (more secure). When disabled, full root access is available."
+msgstr ""
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Όταν είναι ενεργό, θα γίνεται μέτρηση της κατανάλωσης ενέργειας, για να εντοπιστεί το σταμάτημα κίνησης του μοτέρ (όταν υποστηρίζεται από το tuner)."
@@ -24165,6 +24403,18 @@ msgstr "ω:λλπμ/μμ"
 msgid "handled"
 msgstr "διαχειρίστηκε"
 
+msgid "has incomplete Unicable settings"
+msgstr ""
+
+msgid "has no supported Unicable device type"
+msgstr ""
+
+msgid "has no valid Unicable product"
+msgstr ""
+
+msgid "has no valid User Band channel"
+msgstr ""
+
 msgid "height"
 msgstr "ύψος"
 
@@ -24212,6 +24462,12 @@ msgstr "άμεση εγγραφή"
 
 msgid "internally loopthrough to"
 msgstr "εσωτερικό loopthrough σε"
+
+msgid "is not configured"
+msgstr ""
+
+msgid "is not configured for Unicable"
+msgstr ""
 
 msgid "jump back to the previous title"
 msgstr "μετάβαση στον πρηγούμενο τίτλο"
@@ -24470,6 +24726,18 @@ msgstr "αρχείο προτύπου"
 msgid "text"
 msgstr "κείμενο"
 
+msgid "the User Band channel from LNB 1 is not available"
+msgstr ""
+
+msgid "the selected device does not use the LNB 1 frequency on this User Band channel"
+msgstr ""
+
+msgid "the target LNB"
+msgstr ""
+
+msgid "the target LNB is not configured"
+msgstr ""
+
 msgid "this recording"
 msgstr "αυτή η εγγραφή"
 
@@ -24518,6 +24786,9 @@ msgstr "μη εφικτός έλεγχος"
 msgid "update"
 msgstr "ενημέρωση"
 
+msgid "uses an unavailable User Band frequency"
+msgstr ""
+
 msgid "using:"
 msgstr "χρήση:"
 
@@ -24559,6 +24830,15 @@ msgstr "ναι (διατήρηση των feeds)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
+#~ msgstr "Μία εγγραφή είναι σε εξέλιξη. Σταματήστε την εγγραφή πριν ρυθμίσετε το μοτέρ."
+
+#~ msgid "Consult your receiver's manual for more information on power management."
+#~ msgstr "Διαχείριση ισχύος. Συμβουλευτείτε το εγχειρίδιο χρήσης του δέκτη σας για περισσότερες πληροφορίες."
+
+#~ msgid "Consult your receiver's manual for more information on power threshold."
+#~ msgstr "Κατώφλι ισχύος. Συμβουλευτείτε το εγχειρίδιο χρήσης του δέκτη σας για περισσότερες πληροφορίες."
 
 #, python-format
 #~ msgid "%d DMIPS per core"
@@ -25963,9 +26243,6 @@ msgstr "®"
 #~ msgid "MiniDLNA Log"
 #~ msgstr "Καταγραφές MiniDLNA"
 
-#~ msgid "NFS Settings"
-#~ msgstr "Ρυθμίσεις NFS"
-
 #~ msgid "OpenVPN Actions"
 #~ msgstr "Ενέργειες OpenVPN"
 
@@ -26475,9 +26752,6 @@ msgstr "®"
 #~ msgid "Next Picture"
 #~ msgstr "Επόμενη εικόνα"
 
-#~ msgid "ONID"
-#~ msgstr "ONID"
-
 #~ msgid "Previous Log"
 #~ msgstr "Προηγούμενη καταγραφή"
 
@@ -26510,9 +26784,6 @@ msgstr "®"
 
 #~ msgid "System & Modulation"
 #~ msgstr "Σύστημα & διαμόρφωση"
-
-#~ msgid "TSID"
-#~ msgstr "TSID"
 
 #~ msgid "Tuner live values"
 #~ msgstr "Τρέχουσες τιμές tuner"

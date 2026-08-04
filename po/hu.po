@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-12 13:00+0000\n"
+"POT-Creation-Date: 2026-07-15 19:52+0000\n"
 "PO-Revision-Date: 2025-05-05 05:50+0000\n"
 "Last-Translator: Balázs Sólyom <balazs@solyom.online>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/hu/>\n"
@@ -42,6 +42,9 @@ msgstr "  FEL  "
 
 msgid "  Red key : Show/Hide channel name"
 msgstr "  Piros gom: Mutatja/Elrejti a csatorna nevét"
+
+msgid " (+5 volt terrestrial)"
+msgstr ""
 
 #, python-format
 msgid " (Channel %s)"
@@ -1648,14 +1651,17 @@ msgstr ""
 "Egy felvétel folyamatban van. \n"
 "Mit szeretne tenni?"
 
-msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
-msgstr "Egy felvétel folyamatban van. Kérjük, állítsa le a felvételt, mielőtt beállítaná a pozícionálót."
-
 msgid "A recording is currently running. Please stop the recording before trying to scan."
 msgstr "Egy felvétel folyamatban van. A keresés elindítása előtt állítsa meg a felvételt."
 
 msgid "A recording is currently running. Please stop the recording before trying to start the satellite finder."
 msgstr "Egy felvétel folyamatban van. Kérjük, állítsa le a felvételt, mielőtt megpróbálná elindítani a műhold keresést."
+
+msgid "A recording is running or will start within six minutes. Changing the tuner configuration can interrupt it. Save anyway?"
+msgstr ""
+
+msgid "A recording is running or will start within six minutes. Please try the positioner setup later."
+msgstr ""
 
 #, python-format
 msgid ""
@@ -1704,6 +1710,11 @@ msgid ""
 msgstr ""
 "Az időzítő nem tud felvenni!\n"
 "Próbálja újra TV megjelenítés nélkül?\n"
+
+msgid ""
+"A zap timer wants to switch the channel.\n"
+"Do you want to zap now?\n"
+msgstr ""
 
 msgid "AAC downmix"
 msgstr "AAC lekeverése"
@@ -1801,6 +1812,9 @@ msgid "About to start"
 msgstr "az indításról"
 
 msgid "Above 200 Mbps"
+msgstr ""
+
+msgid "Access mode"
 msgstr ""
 
 msgid "Access point"
@@ -1919,6 +1933,9 @@ msgstr "jelölő hozzáadása"
 
 msgid "Add New Quad Channel Entry"
 msgstr "Új négy csatornás bejegyzés hozzáadása"
+
+msgid "Add Path"
+msgstr ""
 
 msgid "Add RecordTimer"
 msgstr "Felvétel időzítő hozzáadása"
@@ -2085,6 +2102,9 @@ msgstr ""
 msgid "Adding schedule..."
 msgstr "Felvétel ütemezése..."
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional files/folders to backup"
 msgstr "További fájlok és mappák a biztonsági mentéshez"
 
@@ -2093,6 +2113,10 @@ msgstr "A kiegészítő motoropciók lehetővé teszik, hogy adatokat írjon be 
 
 msgid "Additional motor options allow you to enter details from your motor's specifications so Enigma can work out how long it will take to move to another satellite."
 msgstr "A motor kiegészítő opciói lehetővé teszik az adatok megadását a motor műszaki adatlapjáról, így a rendszer tudhatja, mennyi ideig tart a egy másik műholdra váltás."
+
+#, python-format
+msgid "Additional rotor cable from %s"
+msgstr ""
 
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Állítsa be úgy a színeket, hogy a színcsíkok megkülönböztethetők legyenek, de a telítettség a lehető legmegfelelőbb legyen. Ha az eredménnyel elégedett, akkor nyomja meg az OK gombot a video finombeállítások bezárásához, vagy a számgombok segítségével válasszon másik teszt ábrát."
@@ -2154,11 +2178,11 @@ msgstr ""
 msgid "After Event"
 msgstr ""
 
-msgid "After Power Lost"
-msgstr "Áramszünet után"
-
 msgid "After event"
 msgstr "Esemény után"
+
+msgid "After power loss"
+msgstr "Áramszünet után"
 
 msgid "After recording"
 msgstr "Felvétel után"
@@ -2272,6 +2296,9 @@ msgstr "Hallássérülteknek szánt feliratok engedélyezése"
 
 msgid "Allow unsupported modes"
 msgstr "Nem támogatott módok engedélyezése"
+
+msgid "Allowed clients"
+msgstr ""
 
 msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr "Engedélyezi, hogy a %s %s rendszeresen olvassa az EPG adatokat."
@@ -2731,6 +2758,9 @@ msgstr "Automatikus"
 
 msgid "Auto (not available)"
 msgstr "Automatikus (nem érhető el)"
+
+msgid "Auto DiSEqC search order"
+msgstr ""
 
 msgid "Auto Language"
 msgstr "Automatikus nyelvválasztás"
@@ -3860,6 +3890,9 @@ msgstr "középen sortöréssel"
 msgid "Central African Republic"
 msgstr "Közép-afrikai Köztársaság"
 
+msgid "Central Europe"
+msgstr ""
+
 msgid "Central Khmer"
 msgstr ""
 
@@ -3972,7 +4005,7 @@ msgstr ""
 msgid "Channel Selection Settings"
 msgstr "Csatorna kiválasztás beállítása"
 
-msgid "Channel Selection picon set"
+msgid "Channel Selection picon path"
 msgstr ""
 
 msgid "Channel buttons"
@@ -4051,6 +4084,9 @@ msgstr ""
 msgid "Chechen"
 msgstr "Ellenőrzés"
 
+msgid "Check ONID/TSID"
+msgstr ""
+
 msgid "Check for PDC"
 msgstr ""
 
@@ -4071,6 +4107,9 @@ msgstr "Szolgáltatások ellenőrzése"
 
 msgid "Checking Logs..."
 msgstr "Naplók ellenőrzése ..."
+
+msgid "Checking ONID/TSID ..."
+msgstr ""
 
 msgid "Checking file system..."
 msgstr "Fájlrendszer ellenőrzése..."
@@ -4914,6 +4953,9 @@ msgstr "Konfigurálás"
 msgid "Configuring Service"
 msgstr ""
 
+msgid "Confirm Zap"
+msgstr ""
+
 msgid "ConflictTimer Actions"
 msgstr ""
 
@@ -4989,12 +5031,6 @@ msgstr "Ehhez az információért forduljon az SCR-eszköz specifikációs lapj�
 
 msgid "Consult your motor's specifications for this information, or leave the default setting."
 msgstr "Ehhez az információért forduljon a motor specifikációs lapjához, vagy hagyja meg az alapértelmezett beállítást."
-
-msgid "Consult your receiver's manual for more information on power management."
-msgstr "Energiagazdálkodás. További információkért olvassa el a vevőkészülék kézikönyvét."
-
-msgid "Consult your receiver's manual for more information on power threshold."
-msgstr "Energiaküszöb. További információkért olvassa el a vevőkészülék kézikönyvét."
 
 #, python-format
 msgid "Contacting IceTV server and setting up your %s %s."
@@ -5400,8 +5436,17 @@ msgstr ""
 msgid "Current mode: %s \n"
 msgstr "Aktuális mód: %s\n"
 
+msgid "Current rotor position:"
+msgstr ""
+
+msgid "Current rotor position: unknown"
+msgstr ""
+
 msgid "Current settings:"
 msgstr "Aktuális beállítások:"
+
+msgid "Current supplied to the LNB and positioner."
+msgstr ""
 
 msgid "Current time"
 msgstr "Aktuális idő"
@@ -5927,6 +5972,9 @@ msgstr ""
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "Egy extra késkeltetés megadása (milliszekundumban) a http(s) stream-ek indítása előtt."
 
+msgid "Define path %s for picons."
+msgstr ""
+
 msgid "Define the custom mountpoint for the device."
 msgstr ""
 
@@ -6262,6 +6310,9 @@ msgid "Detail of GStreamer log."
 msgstr ""
 
 msgid "Details"
+msgstr ""
+
+msgid "Detect positioner movement by its current consumption."
 msgstr ""
 
 msgid "Detective"
@@ -7020,6 +7071,9 @@ msgstr "Kelet"
 msgid "East limit set"
 msgstr "Keleti limit beállítás"
 
+msgid "Eastern satellites"
+msgstr ""
+
 msgid "Easy listening"
 msgstr ""
 
@@ -7219,6 +7273,12 @@ msgstr "MiniTV engedélyezve"
 msgid "Enable Move Mode"
 msgstr "mozgatási mód engedélyezése"
 
+msgid "Enable NFSv3"
+msgstr ""
+
+msgid "Enable NFSv4"
+msgstr ""
+
 msgid "Enable Netmed EPG"
 msgstr "Netmed EPG engedélyezése"
 
@@ -7379,6 +7439,9 @@ msgstr ""
 msgid "Enable this option to add keyboard key map data to the debug log file."
 msgstr ""
 
+msgid "Enable this option to add network information to the debug log file."
+msgstr ""
+
 msgid "Enable this option to add opkg output data to the debug log file."
 msgstr ""
 
@@ -7405,6 +7468,12 @@ msgstr ""
 
 msgid "Enable this setting if your aerial system needs power."
 msgstr "Engedélyezze ezt a beállítást, ha az antennarendszer áramellátást igényel"
+
+msgid "Enable this when a power inserter or external supply powers the Unicable device."
+msgstr ""
+
+msgid "Enable this when the User Band is protected by a PIN in a multi-dwelling Unicable installation."
+msgstr ""
 
 msgid "Enable timer"
 msgstr ""
@@ -7552,6 +7621,9 @@ msgstr ""
 msgid "Enter a new name for this device."
 msgstr ""
 
+msgid "Enter expected ONID/TSID"
+msgstr ""
+
 msgid "Enter if you are North or South of the equator."
 msgstr "Adja meg, ha az Egyenlítőtől északra vagy délre van."
 
@@ -7573,6 +7645,12 @@ msgstr "Adja meg a PIN-kódot"
 msgid "Enter text via an attached keyboard"
 msgstr ""
 
+msgid "Enter the IP address or subnet (e.g. 192.168.1.0/24) to which NFS host access is granted. Enter '*', the default, for all host access."
+msgstr ""
+
+msgid "Enter the PIN from 0 to 255 assigned to this User Band by the installer or building operator."
+msgstr ""
+
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
 msgstr ""
 
@@ -7584,6 +7662,9 @@ msgstr "Adja meg azt a frekvenciát, amellyel az LNB az alacsony és a magas sá
 
 msgid "Enter the frequency step size for the tuner to use when searching for cable multiplexes. For more information consult your cable provider's documentation."
 msgstr "Adja meg a tuner használni való frekvencialépés méretét a kábelmultiplexek keresésekor. További információkért olvassa el a kábelszolgáltató dokumentációját."
+
+msgid "Enter the number of NFS server threads to be allocated/used. Higher values improve performance with multiple clients but use more memory."
+msgstr ""
 
 msgid "Enter the number stored in the positioner that corresponds to this satellite."
 msgstr "Adja meg a pozícionálóban tárolt számot, amely megfelel ennek a műholdnak."
@@ -8204,6 +8285,9 @@ msgstr "Külső feliratok párbeszéd-színe"
 msgid "External subtitle switch fonts"
 msgstr "Külső felirat betűtípus csere"
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra High"
 msgstr ""
 
@@ -8245,6 +8329,13 @@ msgid "FBC SCR (Unicable/JESS)"
 msgstr ""
 
 msgid "FBC automatic"
+msgstr ""
+
+#, python-format
+msgid "FBC automatic: connected to %s"
+msgstr ""
+
+msgid "FBC automatic: inactive"
 msgstr ""
 
 msgid "FCC enabled"
@@ -8869,7 +8960,7 @@ msgstr "Elülső USB"
 msgid "Front USB 3.0"
 msgstr "Elülső USB 3.0"
 
-msgid "Front panel/Display picon set"
+msgid "Front panel/Display picon path"
 msgstr ""
 
 msgid "Front processor version"
@@ -9446,6 +9537,9 @@ msgstr "Lejátszó elrejtése"
 msgid "Hide softcam servername"
 msgstr ""
 
+msgid "Hide sub-menu"
+msgstr ""
+
 #, fuzzy
 msgid "Hide the InfoBar"
 msgstr "Az információs sáv elhalványodása az eltünésekor engedélyezett-e vagy nem"
@@ -10007,6 +10101,9 @@ msgstr ""
 msgid "Include keyboard data"
 msgstr "Billentyűzet adatbevitele"
 
+msgid "Include network data"
+msgstr ""
+
 msgid "Include opkg output data"
 msgstr ""
 
@@ -10092,7 +10189,7 @@ msgstr "Információs sáv elhalványodásának sebessége"
 msgid "InfoBar front end data source"
 msgstr "Információs sáv adat forrása"
 
-msgid "InfoBar picon set"
+msgid "InfoBar picon path"
 msgstr ""
 
 msgid "Information"
@@ -10103,6 +10200,9 @@ msgstr "információ/oktatás/isklola"
 
 msgid "Infotainment"
 msgstr "Infotainment"
+
+msgid "Inherited channel / frequency"
+msgstr ""
 
 msgid "Init"
 msgstr "Inicializálás"
@@ -10682,6 +10782,18 @@ msgstr ""
 msgid "LNB"
 msgstr "Fej"
 
+msgid "LNB 1"
+msgstr ""
+
+msgid "LNB 1 and the target LNB use different Unicable protocols"
+msgstr ""
+
+msgid "LNB current:"
+msgstr ""
+
+msgid "LNB current: not available"
+msgstr ""
+
 msgid "LNB/Switch Bootup time [ms]"
 msgstr "LNB/Switch indulási ideje [ms]"
 
@@ -10773,6 +10885,9 @@ msgstr "Kilépés a DVD lejátszóból?"
 msgid "Leave movie player"
 msgstr "kilépés a lejátszóból..."
 
+msgid "Leave this at 0 to derive the position from the LNB number and device profile. Enter 1 to 64 only for a reprogrammed Unicable device."
+msgstr ""
+
 msgid "Leave this set to 'Yes' unless you fully understand why you are adjusting it."
 msgstr "Hagyja ezt a beállítást 'igen'-en, kivéve, ha teljesen megérti, hogy miért is állítja be."
 
@@ -10805,9 +10920,6 @@ msgstr ""
 
 msgid "Left, wrapped"
 msgstr "bal oldalon sortöréssel"
-
-msgid "Legacy"
-msgstr ""
 
 msgid "Legacy mode"
 msgstr ""
@@ -10866,6 +10978,9 @@ msgstr "Keleti limit"
 
 msgid "Limit the characters that can be used in recording filenames to (7 bit) ASCII. This ensures compatibility with operating systems or file systems with limited character sets."
 msgstr "A fájlnevekben használt karaktertábla (7 bites) ASCII-re legyen korlátozva. Ezáltal a kompatibilitás garantált olyan operációs rendszerekkel is, melyekben limitált a karakterkészlet."
+
+msgid "Limit the search to the satellite group normally used by this installation."
+msgstr ""
 
 msgid "Limit west"
 msgstr "Nyugati limit"
@@ -11434,6 +11549,9 @@ msgstr ""
 msgid "Mayotte"
 msgstr "Mayotte"
 
+msgid "Measured current"
+msgstr ""
+
 msgid "Media"
 msgstr "Média"
 
@@ -11578,6 +11696,9 @@ msgstr "MiniTV OSD-vel"
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Minimális korhatár %d év"
+
+msgid "Minimum difference between idle and moving current."
+msgstr ""
 
 msgid "Minimum send interval"
 msgstr "Minimális ismétlési időköz"
@@ -12065,6 +12186,9 @@ msgstr ""
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
+msgid "Multi-path mode"
+msgstr ""
+
 msgid "MultiBoot"
 msgstr ""
 
@@ -12145,6 +12269,12 @@ msgstr "KÖVETKEZŐ"
 
 msgid "NFS"
 msgstr "NFS"
+
+msgid "NFS Settings"
+msgstr "NFS beállítása"
+
+msgid "NFS threads"
+msgstr ""
 
 msgid "NIM"
 msgstr ""
@@ -12823,8 +12953,14 @@ msgstr "Kodi telepítve:"
 msgid "Not Shown"
 msgstr "Nem látható"
 
+msgid "Not a valid tuner"
+msgstr ""
+
 msgid "Not associated"
 msgstr "Nem-csatlakozott"
+
+msgid "Not available"
+msgstr ""
 
 msgid "Not configured"
 msgstr "nem konfigurált"
@@ -12945,8 +13081,23 @@ msgstr "OK gomb (röviden)"
 msgid "OK button mode"
 msgstr "OK gomb mód"
 
+msgid "OK checks the currently tuned transponder."
+msgstr ""
+
 msgid "OK, guide me through the upgrade process"
 msgstr "OK, vezessen végig a frissítési folyamaton"
+
+msgid "ONID"
+msgstr "ONID"
+
+msgid "ONID/TSID check timed out"
+msgstr ""
+
+msgid "ONID/TSID does not match"
+msgstr ""
+
+msgid "ONID/TSID valid"
+msgstr ""
 
 msgid "OSCam Info"
 msgstr "OSCam Info"
@@ -13302,6 +13453,9 @@ msgstr ""
 msgid "Open the single service EPG view"
 msgstr ""
 
+msgid "Open tuner setup"
+msgstr ""
+
 msgid "Open with File Commander"
 msgstr "Megnyitás File Commander-el"
 
@@ -13314,7 +13468,7 @@ msgstr "OpenVPN"
 msgid "OpenViX Packages"
 msgstr ""
 
-msgid "OpenWebif picon set"
+msgid "OpenWebif picon path"
 msgstr ""
 
 msgid "Opera"
@@ -13485,6 +13639,9 @@ msgstr ""
 #, fuzzy
 msgid "PGS file"
 msgstr "EPG fájlnév"
+
+msgid "PIN"
+msgstr ""
 
 msgid "PIN code needed"
 msgstr "PIN-kód szükséges"
@@ -13659,9 +13816,6 @@ msgstr ""
 msgid "Path '%s' missing!"
 msgstr ""
 
-msgid "Path to picon set %s."
-msgstr ""
-
 msgid "Pause"
 msgstr "Szünet"
 
@@ -13771,13 +13925,15 @@ msgstr "Pikon és csatornanév"
 msgid "Picon install location"
 msgstr ""
 
-msgid "Picon mode"
-msgstr ""
-
+#, python-format
 msgid "Picon path %s"
 msgstr ""
 
-msgid "Picon set mode"
+#, python-format
+msgid "Picon path %s is in use and cannot be removed!"
+msgstr ""
+
+msgid "Picon search mode"
 msgstr ""
 
 msgid "Picon width"
@@ -14293,6 +14449,9 @@ msgstr "Forgatómotor Beálltások"
 
 msgid "Positioner Setup Log"
 msgstr "Forgatómotor beállítás napló"
+
+msgid "Positioner actions"
+msgstr ""
 
 msgid "Positioner setup"
 msgstr "Forgatómotor beállítás"
@@ -15305,6 +15464,9 @@ msgstr "eltávolítás a gyermekzár védelem alól"
 msgid "Remove New Found Flag"
 msgstr "az új talált zászló eltávolítása"
 
+msgid "Remove Path"
+msgstr ""
+
 msgid "Remove Plugin"
 msgstr ""
 
@@ -15789,11 +15951,21 @@ msgstr "Gyökérmappa"
 msgid "Root file"
 msgstr ""
 
+msgid "Root squash"
+msgstr ""
+
 msgid "Rose"
+msgstr ""
+
+msgid "Rotor is not configured"
 msgstr ""
 
 msgid "Rotor turning speed"
 msgstr "Fogratómotor sebesség"
+
+#, python-format
+msgid "Rotor: %d satellites"
+msgstr ""
 
 msgid "Router / Gateway"
 msgstr ""
@@ -16645,6 +16817,9 @@ msgstr "Ha 'igen' értékre van állítva, akkor a rendszer az API V3-ból szám
 msgid "Select 'Yes' to use the number keys for quick selection of files / directories, select 'No' to use the number keys for MENU option shortcuts."
 msgstr ""
 
+msgid "Select 'Yes' to use the same User Band channel and frequency as LNB 1. This is intended for multiple satellite positions delivered by the same Unicable system."
+msgstr ""
+
 msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr ""
 
@@ -16774,6 +16949,9 @@ msgstr ""
 
 msgid "Select a script to run:"
 msgstr "Válasszon egy scriptet a futtatáshoz:"
+
+msgid "Select a time period to display a confirmation prompt before a Zap timer changes the current service. This allows the user to cancel the Zap. Select 'Disabled' to allow the Zap to proceed without confirmation."
+msgstr ""
 
 msgid "Select a time, when in Standby, after which the descramble can proceed."
 msgstr ""
@@ -16996,16 +17174,16 @@ msgstr ""
 msgid "Select the No / False response"
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for Channel Selection picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Channel Selection picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for Front panel/Display picons."
+msgid "Select the Picon path, from the option(s) above, to be used for Front panel/Display picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for InfoBar picons."
+msgid "Select the Picon path, from the option(s) above, to be used for InfoBar picons."
 msgstr ""
 
-msgid "Select the Picon path, from above, to be used for OpenWebif picons."
+msgid "Select the Picon path, from the option(s) above, to be used for OpenWebif picons."
 msgstr ""
 
 #, python-format
@@ -17233,10 +17411,10 @@ msgstr "Válassza ki az SCR eszköz gyártóját. Ha a gyártó nincs felsorolva
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "A teletext elhagyásakor válassza ki a képernyőfelbontás és a framebuffer helyreállításának módját."
 
-msgid "Select the mode for picon path selection and resolution. 'Legacy' represents the previous mode of operation."
+msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
 msgstr ""
 
-msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
+msgid "Select the mode of access, Read/Write or Read Only, applied to all exported directories."
 msgstr ""
 
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
@@ -17316,6 +17494,9 @@ msgid "Select the satellite you want to configure. Once configured you can selec
 msgstr "Válassza ki a konfigurálni kívánt műholdat. Miután a műholdat konfigurálta, kiválaszthatja és konfigurálhatja azokat a többi műholdakat is, amelyek ugyanazzal a tunerrel lesznek elérhetők."
 
 msgid "Select the screen layout, from the options provided by the skin, to be used for the ChannelSelection screen."
+msgstr ""
+
+msgid "Select the search mode to find picons. 'Single-path mode' uses one path for all picons. 'Multi-path mode' allows multiple picon paths to be used for different use cases."
 msgstr ""
 
 #, fuzzy
@@ -17805,10 +17986,6 @@ msgid "Set MIN CPU frequency for cores 0 and 1"
 msgstr ""
 
 msgid "Set MIN CPU frequency for cores 2, 3, 4 and 5"
-msgstr ""
-
-#, python-format
-msgid "Set Path %s"
 msgstr ""
 
 msgid "Set Scaling governor"
@@ -18849,6 +19026,9 @@ msgstr "Egy csatorna EPG-jének megjelenítése"
 msgid "Show status messages on switch to live TV"
 msgstr "Állapotüzenetek mutatása az élő TV műsorra történő váltáskor"
 
+msgid "Show sub-menu"
+msgstr ""
+
 msgid "Show subservice selection"
 msgstr "Show subservice selection"
 
@@ -19055,6 +19235,9 @@ msgstr "Egyetlen műhold"
 
 msgid "Single step (GOP)"
 msgstr "Lépés (GOP)"
+
+msgid "Single-path mode"
+msgstr ""
 
 msgid "SingleEPG Settings"
 msgstr "SimpleEPG beállítása"
@@ -20327,6 +20510,9 @@ msgstr ""
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "A TS fájl túl nagy az 'ISO9660 level 1' szabvány szerint!"
 
+msgid "TSID"
+msgstr "TSID"
+
 msgid "TUNER:"
 msgstr ""
 
@@ -20712,6 +20898,9 @@ msgstr ""
 msgid "The TV was switched to the recording service!\n"
 msgstr "A felvétel rögzítésre nem lehetett átváltani a TV élő adásáról!\n"
 
+msgid "The User Band channel, frequency and optional PIN are inherited from LNB 1 and cannot be changed here."
+msgstr ""
+
 msgid ""
 "The VPS-Plugin couldn't check if the selected channel supports VPS for manually programmed timers!\n"
 " Do you really want to enable VPS?"
@@ -20822,6 +21011,9 @@ msgstr ""
 "Kérem, telepítse fel."
 
 msgid "The picon directory already exists and must be removed. Do you want to proceed?"
+msgstr ""
+
+msgid "The positioner tuner is currently unavailable. Stop recordings or other services using this tuner and try again."
 msgstr ""
 
 #, python-format
@@ -22048,11 +22240,26 @@ msgstr "Ukrajna"
 msgid "Ukrainian"
 msgstr "Ukrán"
 
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: %s."
+msgstr ""
+
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: LNB 1 %s."
+msgstr ""
+
 msgid "Unable to initialize Kexec MultiBoot!"
+msgstr ""
+
+#, python-format
+msgid "Unable to validate the Unicable position for LNB %d: %s."
 msgstr ""
 
 msgid "Unattended upgrade without GUI"
 msgstr "Felügyelet nélküli frissítés GUI nélkül"
+
+msgid "Unavailable"
+msgstr ""
 
 msgid "Undefined"
 msgstr "Meghatározatlan"
@@ -22090,6 +22297,13 @@ msgstr "Unicable fej"
 
 msgid "Unicable Matrix"
 msgstr "Unicable Mátrix"
+
+msgid "Unicable position"
+msgstr ""
+
+#, python-format
+msgid "Unicable position %d is not supported by the selected device for LNB %d. Valid positions are %d to %d; use 'User defined' for a reprogrammed device."
+msgstr ""
 
 msgid "Uninstall"
 msgstr ""
@@ -22355,6 +22569,9 @@ msgstr ""
 msgid "Use Harddisk Hardware Standby Timer"
 msgstr "A merevlemez használja a készenléti időzítőt"
 
+msgid "Use LNB 1 User Band"
+msgstr ""
+
 msgid "Use MHW EPG information when it is available."
 msgstr "MHW EPG információk beolvasása a jelforrásból."
 
@@ -22365,6 +22582,9 @@ msgid "Use ODoH servers"
 msgstr ""
 
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
+msgstr ""
+
+msgid "Use PIN"
 msgstr ""
 
 msgid "Use QuickSelect"
@@ -23088,12 +23308,18 @@ msgstr ""
 msgid "Warning: Recordings should not be stored on the Flash disk!"
 msgstr ""
 
+msgid "Warning: The second input of this dual tuner may not support Unicable devices. "
+msgstr ""
+
 #, python-format
 msgid "Warning: There are %d update packages!"
 msgstr ""
 
 msgid "Warning: There is only a network drive to store the backup. This means the auto restore will not work after the flash. Alternatively, mount the network drive after the flash and perform a manufacturer reset to auto restore."
 msgstr "Ha csak egy hálózati meghajtót talál a mentés tárolására, akkor ez azt jelenti, hogy a Flashelés után az automatikus tárolás nem fog működni. Alternatív megoldásként csatlakoztasson egy hálózati meghajtót a Flashelés után, és elvégezheti a gyártó visszaállítását az automatikus tároláshoz"
+
+msgid "Warning: This FBC-C V1 tuner should be installed in the first slot. In the second slot only 2 of 8 demodulators may be available. "
+msgstr ""
 
 msgid "Warning: This is the last crash before an automatic restart is performed.\n"
 msgstr "Figyelmeztetés: Ez az utolsó összeomlás az automatikus újraindítás végrehajtása előtt.\n"
@@ -23191,6 +23417,9 @@ msgstr "Nyugat-Szahara"
 msgid "Western Sahara"
 msgstr "Nyugat-Szahara"
 
+msgid "Western satellites"
+msgstr ""
+
 msgid "What day of month?"
 msgstr ""
 
@@ -23260,6 +23489,12 @@ msgstr "Egy figyelmeztetés jelenjen meg a képernyőn választható lehetőség
 msgid "When enabled, allow each storage device detected to be automatically exported as a Samba share."
 msgstr ""
 
+msgid "When enabled, allow usage of the NFS version 3 protocols."
+msgstr ""
+
+msgid "When enabled, allow usage of the NFS version 4 protocols."
+msgstr ""
+
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Ha engedélyezi, HTTP streamek (adatfolyamok) megtekintéséhez azonosításra lesz szükség."
 
@@ -23283,6 +23518,9 @@ msgstr "A DVB felirat eredeti helyen történő megjelenítése."
 
 msgid "When enabled, it is possible to leave the movie player with exit."
 msgstr "Lehessen kilépni a lejátszóból az EXIT gomb megnyomásával."
+
+msgid "When enabled, map root to nobody (more secure). When disabled, full root access is available."
+msgstr ""
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Ezzel a funkcióval a motor forgását az áramfelvétel mérésével lehet ellenőrizni (amennyiben a tuner támogatja)."
@@ -24265,6 +24503,18 @@ msgstr "h:mmam/pm"
 msgid "handled"
 msgstr "kezelve"
 
+msgid "has incomplete Unicable settings"
+msgstr ""
+
+msgid "has no supported Unicable device type"
+msgstr ""
+
+msgid "has no valid Unicable product"
+msgstr ""
+
+msgid "has no valid User Band channel"
+msgstr ""
+
 msgid "height"
 msgstr "magasság"
 
@@ -24313,6 +24563,12 @@ msgstr "Azonnali felvétel"
 
 msgid "internally loopthrough to"
 msgstr "belső átfűzés ide"
+
+msgid "is not configured"
+msgstr ""
+
+msgid "is not configured for Unicable"
+msgstr ""
 
 msgid "jump back to the previous title"
 msgstr "visszaugrás az előző címhez"
@@ -24572,6 +24828,18 @@ msgstr "sablon fájl"
 msgid "text"
 msgstr ""
 
+msgid "the User Band channel from LNB 1 is not available"
+msgstr ""
+
+msgid "the selected device does not use the LNB 1 frequency on this User Band channel"
+msgstr ""
+
+msgid "the target LNB"
+msgstr ""
+
+msgid "the target LNB is not configured"
+msgstr ""
+
 msgid "this recording"
 msgstr "ez a felvétel"
 
@@ -24620,6 +24888,9 @@ msgstr "tesztelhetetlen"
 msgid "update"
 msgstr "frissítés"
 
+msgid "uses an unavailable User Band frequency"
+msgstr ""
+
 msgid "using:"
 msgstr "használva:"
 
@@ -24661,6 +24932,15 @@ msgstr "igen (állapotok megtartása)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
+#~ msgstr "Egy felvétel folyamatban van. Kérjük, állítsa le a felvételt, mielőtt beállítaná a pozícionálót."
+
+#~ msgid "Consult your receiver's manual for more information on power management."
+#~ msgstr "Energiagazdálkodás. További információkért olvassa el a vevőkészülék kézikönyvét."
+
+#~ msgid "Consult your receiver's manual for more information on power threshold."
+#~ msgstr "Energiaküszöb. További információkért olvassa el a vevőkészülék kézikönyvét."
 
 #~ msgid "Config"
 #~ msgstr "Konfigurálás"
@@ -25764,9 +26044,6 @@ msgstr "®"
 #~ msgid "MiniDLNA Log"
 #~ msgstr "MiniDLNA Napló"
 
-#~ msgid "NFS Settings"
-#~ msgstr "NFS beállítása"
-
 #~ msgid "OpenVPN Settings"
 #~ msgstr "OpenVPN beállítása"
 
@@ -26146,9 +26423,6 @@ msgstr "®"
 #~ msgid "NIM & Type"
 #~ msgstr "HDMI HDR típus"
 
-#~ msgid "ONID"
-#~ msgstr "ONID"
-
 #, fuzzy
 #~ msgid "Service ID"
 #~ msgstr "Csatorna információ"
@@ -26176,9 +26450,6 @@ msgstr "®"
 #, fuzzy
 #~ msgid "System & Modulation"
 #~ msgstr "Moduláció"
-
-#~ msgid "TSID"
-#~ msgstr "TSID"
 
 #, fuzzy
 #~ msgid "Tuner live values"

@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-12 13:00+0000\n"
-"PO-Revision-Date: 2026-07-13 14:11+0000\n"
+"POT-Creation-Date: 2026-07-15 19:52+0000\n"
+"PO-Revision-Date: 2026-07-16 23:23+0000\n"
 "Last-Translator: Marián Hikaník <podnety@mojepreklady.net>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sk/>\n"
 "Language: sk\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 msgid ""
 "\n"
@@ -44,6 +44,9 @@ msgstr "  REC  "
 
 msgid "  Red key : Show/Hide channel name"
 msgstr "  Červené tlač.: Zobraziť/skryť názov kanála"
+
+msgid " (+5 volt terrestrial)"
+msgstr " (+5 volt, terestriálne)"
 
 #, python-format
 msgid " (Channel %s)"
@@ -1643,14 +1646,17 @@ msgstr ""
 "Práve prebieha nahrávanie.\n"
 "Čo chcete urobiť?"
 
-msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
-msgstr "Práve prebieha nahrávanie. Pred nastavovaním pozicionéra nahrávanie zastavte."
-
 msgid "A recording is currently running. Please stop the recording before trying to scan."
 msgstr "Práve prebieha nahrávanie. Pred vyhľadávaním zastavte nahrávanie."
 
 msgid "A recording is currently running. Please stop the recording before trying to start the satellite finder."
 msgstr "Práve prebieha nahrávanie. Pred spustením vyhľadávača družíc zastavte nahrávanie."
+
+msgid "A recording is running or will start within six minutes. Changing the tuner configuration can interrupt it. Save anyway?"
+msgstr "Práve prebieha alebo sa v priebehu šiestich minút spustí nahrávanie. Zmena konfigurácie tunera ho môže narušiť. Chcete ju aj tak uložiť?"
+
+msgid "A recording is running or will start within six minutes. Please try the positioner setup later."
+msgstr "Práve prebieha alebo sa v priebehu šiestich minút spustí nahrávanie. Prosím, skúste nastaviť pozicionér neskôr."
 
 #, python-format
 msgid ""
@@ -1702,6 +1708,13 @@ msgid ""
 msgstr ""
 "Časovač nespustil nahrávanie!\n"
 "Vypnúť TV a skúsiť znovu?\n"
+
+msgid ""
+"A zap timer wants to switch the channel.\n"
+"Do you want to zap now?\n"
+msgstr ""
+"Časovač prepnutia chce prepnúť kanál\n"
+"Chcete ho prepnúť teraz?\n"
 
 msgid "AAC downmix"
 msgstr "AAC downmix"
@@ -1798,6 +1811,9 @@ msgstr "sa čoskoro začne"
 
 msgid "Above 200 Mbps"
 msgstr "Viac ako 200 Mbps"
+
+msgid "Access mode"
+msgstr "Režim prístupu"
 
 msgid "Access point"
 msgstr "Prístupový bod"
@@ -1915,6 +1931,9 @@ msgstr "Pridať značku k prehľadu"
 
 msgid "Add New Quad Channel Entry"
 msgstr "Pridať nový záznam pre Quad kanál"
+
+msgid "Add Path"
+msgstr "Pridať cestu"
 
 msgid "Add RecordTimer"
 msgstr "Pridať časovač nahrávania"
@@ -2081,6 +2100,9 @@ msgstr "Pridať/odstrániť aktuálnu stanicu/službu do/zo zoznamu pre posun hl
 msgid "Adding schedule..."
 msgstr "Pridáva sa plán..."
 
+msgid "Additional cable of motorized LNB"
+msgstr "Prídavný kábel motorizovaného LNB"
+
 msgid "Additional files/folders to backup"
 msgstr "Ďalšie súbory/priečinky na zálohovanie"
 
@@ -2089,6 +2111,10 @@ msgstr "Doplnkové parametre motora umožňujú zadať podrobnosti zo špecifik�
 
 msgid "Additional motor options allow you to enter details from your motor's specifications so Enigma can work out how long it will take to move to another satellite."
 msgstr "Doplnkové parametre motora umožňujú zadať podrobnosti zo špecifikácií vášho motora, takže Enigma dokáže zistiť, ako dlho potrvá presun paraboly na inú družicu."
+
+#, python-format
+msgid "Additional rotor cable from %s"
+msgstr "Prídavný kábel rotora z %s"
 
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Upravte farby tak, aby sa dali jednotlivé odtiene dobre rozlíšiť, ale súčasne boli čo najsýtejšie. Ak ste s výsledkom spokojní, tlačidlom OK ukončite nastavovanie obrazu alebo číslicovými tlačidlami zvoľte iný testovací obrazec."
@@ -2150,11 +2176,11 @@ msgstr "afrikánčina"
 msgid "After Event"
 msgstr "Po udalosti"
 
-msgid "After Power Lost"
-msgstr "Po výpadku napájania"
-
 msgid "After event"
 msgstr "Po udalosti"
+
+msgid "After power loss"
+msgstr "Po výpadku napájania"
 
 msgid "After recording"
 msgstr "Po nahrávaní"
@@ -2266,6 +2292,9 @@ msgstr "Povoliť titulky pre sluchovo postihnutých"
 
 msgid "Allow unsupported modes"
 msgstr "Povoliť nepodporované režimy"
+
+msgid "Allowed clients"
+msgstr "Povolení klienti"
 
 msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr "Umožňuje prijímaču %s %s pravidelne čítať uložené dáta EPG."
@@ -2722,6 +2751,9 @@ msgstr "Auto"
 
 msgid "Auto (not available)"
 msgstr "Auto (nedostupné)"
+
+msgid "Auto DiSEqC search order"
+msgstr "Poradie vyhľadávania Auto DiSEqC"
 
 msgid "Auto Language"
 msgstr "Automatický jazyk"
@@ -3856,6 +3888,9 @@ msgstr "Zarovnané na stred, zalomené"
 msgid "Central African Republic"
 msgstr "Stredoafrická republika"
 
+msgid "Central Europe"
+msgstr "Stredná Európa"
+
 msgid "Central Khmer"
 msgstr "centrálna khmérčina"
 
@@ -3967,8 +4002,8 @@ msgstr "Obrazovka pre výber kanálov"
 msgid "Channel Selection Settings"
 msgstr "Nastavenia výberu kanála"
 
-msgid "Channel Selection picon set"
-msgstr "Sada pikon pre výber kanálov"
+msgid "Channel Selection picon path"
+msgstr "Cesta k pikonám pre výber kanálov"
 
 msgid "Channel buttons"
 msgstr "Tlačidlá kanála"
@@ -4045,6 +4080,9 @@ msgstr "Talkshow"
 msgid "Chechen"
 msgstr "Čečenčina"
 
+msgid "Check ONID/TSID"
+msgstr "Skontrolovať ONID/TSID"
+
 msgid "Check for PDC"
 msgstr "Skontrolovať PDC"
 
@@ -4065,6 +4103,9 @@ msgstr "Kontrola zdrojov"
 
 msgid "Checking Logs..."
 msgstr "Kontrola denníkov..."
+
+msgid "Checking ONID/TSID ..."
+msgstr "Kontroluje sa ONID/TSID..."
 
 msgid "Checking file system..."
 msgstr "Kontrola súborového systému..."
@@ -4913,6 +4954,9 @@ msgstr "Konfiguruje sa"
 msgid "Configuring Service"
 msgstr "Konfigurácia služby"
 
+msgid "Confirm Zap"
+msgstr "Potvrdiť prepnutie"
+
 msgid "ConflictTimer Actions"
 msgstr "Akcie pri konflikte časovačov"
 
@@ -4988,12 +5032,6 @@ msgstr "Túto informáciu získate v zozname špecifikácií zariadenia SCR."
 
 msgid "Consult your motor's specifications for this information, or leave the default setting."
 msgstr "Pozrite si zoznam špecifikácií motora alebo ponechajte predvolené nastavenie."
-
-msgid "Consult your receiver's manual for more information on power management."
-msgstr "Správa napájania. Ďalšie informácie získate v návode na obsluhu vášho prijímača."
-
-msgid "Consult your receiver's manual for more information on power threshold."
-msgstr "Prahový prúd. Ďalšie informácie získate v návode k prijímaču."
 
 #, python-format
 msgid "Contacting IceTV server and setting up your %s %s."
@@ -5399,8 +5437,17 @@ msgstr "Aktuálne umiestnenie: '%s'."
 msgid "Current mode: %s \n"
 msgstr "Aktuálny režim: %s \n"
 
+msgid "Current rotor position:"
+msgstr "Aktuálna pozícia rotora:"
+
+msgid "Current rotor position: unknown"
+msgstr "Aktuálna pozícia rotora: neznáma"
+
 msgid "Current settings:"
 msgstr "Aktuálne nastavenia:"
+
+msgid "Current supplied to the LNB and positioner."
+msgstr "Prúd dodávaný do LNB a pozicionéra."
 
 msgid "Current time"
 msgstr "Aktuálny čas"
@@ -5919,6 +5966,9 @@ msgstr "Definovať softcam pre túto stanicu"
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "Zadajte dodatočné oneskorenie (v milisekundách) pred spustením streamov http(s)."
 
+msgid "Define path %s for picons."
+msgstr "Definovať cestu %s pre pikony."
+
 msgid "Define the custom mountpoint for the device."
 msgstr "Definovať používateľský bod pripojenia pre toto zariadenie."
 
@@ -6252,6 +6302,9 @@ msgstr "Podrobnosti denníka GStreamera."
 
 msgid "Details"
 msgstr "Podrobnosti"
+
+msgid "Detect positioner movement by its current consumption."
+msgstr "Detegovať pohyb pozicionéra podľa jeho spotreby prúdu."
 
 msgid "Detective"
 msgstr "Detektívky"
@@ -7021,6 +7074,9 @@ msgstr "Východne"
 msgid "East limit set"
 msgstr "Východný limit nastavený"
 
+msgid "Eastern satellites"
+msgstr "Východné družice"
+
 msgid "Easy listening"
 msgstr "Ľahké počúvanie"
 
@@ -7219,6 +7275,12 @@ msgstr "Povoliť MiniTV"
 msgid "Enable Move Mode"
 msgstr "Zapnúť režim presunu"
 
+msgid "Enable NFSv3"
+msgstr "Zapnúť NFSv3"
+
+msgid "Enable NFSv4"
+msgstr "Zapnúť NFSv4"
+
 msgid "Enable Netmed EPG"
 msgstr "Povoliť Netmed EPG"
 
@@ -7379,6 +7441,9 @@ msgstr "Aktiváciou tejto možnosti pridáte načítané informácie o jazyku a 
 msgid "Enable this option to add keyboard key map data to the debug log file."
 msgstr "Aktiváciou tejto možnosti pridáte údaje mapy klávesov klávesnice do súboru denníka ladenia."
 
+msgid "Enable this option to add network information to the debug log file."
+msgstr "Aktiváciou tejto možnosti sa pridá informácia o sieti do súboru so záznamom pre ladenie."
+
 msgid "Enable this option to add opkg output data to the debug log file."
 msgstr "Aktiváciou tejto možnosti pridáte výstupné údaje opkg do súboru denníka ladenia."
 
@@ -7405,6 +7470,12 @@ msgstr "Aktiváciou tejto možnosti zobrazíte neznáme úložné zariadenia v s
 
 msgid "Enable this setting if your aerial system needs power."
 msgstr "Ak váš anténny systém vyžaduje napájanie, aktivujte toto nastavenie."
+
+msgid "Enable this when a power inserter or external supply powers the Unicable device."
+msgstr "Aktivujte túto možnosť vtedy, keď je zariadenie Unicable napájané cez napájaciu výhybku alebo externé zdroje napájania."
+
+msgid "Enable this when the User Band is protected by a PIN in a multi-dwelling Unicable installation."
+msgstr "Túto voľbu aktivujte vtedy, keď je používateľské pásmo chránené kódom PIN vo viacbytových inštaláciách Unicable."
 
 msgid "Enable timer"
 msgstr "Zapnúť časovač"
@@ -7553,6 +7624,9 @@ msgstr "Zadajte názov pre tento časovač."
 msgid "Enter a new name for this device."
 msgstr "Zadajte nové meno pre toto zariadenie."
 
+msgid "Enter expected ONID/TSID"
+msgstr "Zadajte očakávané ONID/TSID"
+
 msgid "Enter if you are North or South of the equator."
 msgstr "Zadajte, či ste severne alebo južne od rovníka."
 
@@ -7574,6 +7648,12 @@ msgstr "Zadajte PIN kód"
 msgid "Enter text via an attached keyboard"
 msgstr "Zadajte text pomocou pripojenej klávesnice"
 
+msgid "Enter the IP address or subnet (e.g. 192.168.1.0/24) to which NFS host access is granted. Enter '*', the default, for all host access."
+msgstr "Zadajte IP adresu alebo podsieť (napr. 192.168.1.0/24), pre ktorú má byť udelená možnosť prístupu na NFS hostiteľa. Pre prístup všetkých hostiteľov zadajte '*' (štandardná hodnota)."
+
+msgid "Enter the PIN from 0 to 255 assigned to this User Band by the installer or building operator."
+msgstr "Zadajte PIN od 0 do 255 pridelené tomuto používateľskému pásmu inštalačným technikom alebo prevádzkovateľom budovy."
+
 msgid "Enter the ZeroTier Network ID. The ID should be exactly 16 characters in length."
 msgstr "Zadajte ID siete ZeroTier. ID by malo mať dĺžku presne 16 znakov."
 
@@ -7585,6 +7665,9 @@ msgstr "Zadajte frekvenciu, pri ktorej sa LNB prepína medzi nízkym a vysokým 
 
 msgid "Enter the frequency step size for the tuner to use when searching for cable multiplexes. For more information consult your cable provider's documentation."
 msgstr "Zadajte frekvenčný krok tunera pre vyhľadávanie v káblových multiplexoch. Viac informácií získate v dokumentácii od operátora káblovej televízie."
+
+msgid "Enter the number of NFS server threads to be allocated/used. Higher values improve performance with multiple clients but use more memory."
+msgstr "Zadajte počet vlákien NFS servera, ktoré sa majú alokovať/použiť. Vyššie hodnoty zlepšujú výkon s viacerými klientmi, ale vyžadujú viac pamäte."
 
 msgid "Enter the number stored in the positioner that corresponds to this satellite."
 msgstr "Zadajte číslo uložené v pozicionéri, ktoré prináleží tomuto satelitu."
@@ -8210,6 +8293,9 @@ msgstr "Farebné dialógy v externých titulkoch"
 msgid "External subtitle switch fonts"
 msgstr "Zmena fontu externých titulkov"
 
+msgid "Externally powered"
+msgstr "Externe napájané"
+
 msgid "Extra High"
 msgstr "Extra vysoký"
 
@@ -8251,6 +8337,13 @@ msgstr "FBC SCR (Unicable/JESS)"
 
 msgid "FBC automatic"
 msgstr "FBC automaticky"
+
+#, python-format
+msgid "FBC automatic: connected to %s"
+msgstr "FBC automaticky: pripojené na %s"
+
+msgid "FBC automatic: inactive"
+msgstr "Automatické FBC: neaktívne"
 
 msgid "FCC enabled"
 msgstr "FCC aktivované"
@@ -8867,8 +8960,8 @@ msgstr "Predné USB"
 msgid "Front USB 3.0"
 msgstr "Predné USB 3.0"
 
-msgid "Front panel/Display picon set"
-msgstr "Sada pikon pre predný panel/displej"
+msgid "Front panel/Display picon path"
+msgstr "Cesta k pikonám pre predný panel/displej"
 
 msgid "Front processor version"
 msgstr "Verzia front procesora"
@@ -9438,6 +9531,9 @@ msgstr "Nezobrazovať prehrávač"
 msgid "Hide softcam servername"
 msgstr "Skryť názov servera softcamu"
 
+msgid "Hide sub-menu"
+msgstr "Skryť podradené menu"
+
 msgid "Hide the InfoBar"
 msgstr "Nezobrazovať infolištu"
 
@@ -9994,6 +10090,9 @@ msgstr "Zahrnúť medzinárodné údaje *"
 msgid "Include keyboard data"
 msgstr "Zahrnúť údaje z klávesnice"
 
+msgid "Include network data"
+msgstr "Zahrnúť sieťové údaje"
+
 msgid "Include opkg output data"
 msgstr "Zahrnúť výstupné dáta opkg"
 
@@ -10078,8 +10177,8 @@ msgstr "Rýchlosť strácania infolišty"
 msgid "InfoBar front end data source"
 msgstr "Zdroj údajov infolišty"
 
-msgid "InfoBar picon set"
-msgstr "Sada pikony pre informačný panel"
+msgid "InfoBar picon path"
+msgstr "Cesta k pikonám pre informačný panel"
 
 msgid "Information"
 msgstr "Informácie"
@@ -10089,6 +10188,9 @@ msgstr "Informácie/vzdelávanie/školský program"
 
 msgid "Infotainment"
 msgstr "Infotainment"
+
+msgid "Inherited channel / frequency"
+msgstr "Zdedený kanál/frekvencia"
 
 msgid "Init"
 msgstr "Inicializácia"
@@ -10661,6 +10763,18 @@ msgstr "Diaľkové ovládanie LIRC"
 msgid "LNB"
 msgstr "LNB"
 
+msgid "LNB 1"
+msgstr "LNB 1"
+
+msgid "LNB 1 and the target LNB use different Unicable protocols"
+msgstr "LNB 1 a cieľové LNB používajú rozličné protokoly Unicable"
+
+msgid "LNB current:"
+msgstr "Prúd LNB:"
+
+msgid "LNB current: not available"
+msgstr "Prúd LNB: nedostupné"
+
 msgid "LNB/Switch Bootup time [ms]"
 msgstr "Čas spúšťania LNB/prepínača [ms]"
 
@@ -10748,6 +10862,9 @@ msgstr "Zatvoriť prehrávač DVD?"
 msgid "Leave movie player"
 msgstr "ukončiť prehrávač médií"
 
+msgid "Leave this at 0 to derive the position from the LNB number and device profile. Enter 1 to 64 only for a reprogrammed Unicable device."
+msgstr "Ponechajte nastavenie 0 na odvodenie pozície podľa čísla LNB a profilu zariadenia. Hodnoty 1 a 64 zadávajte len pre preprogramované zariadenie Unicable."
+
 msgid "Leave this set to 'Yes' unless you fully understand why you are adjusting it."
 msgstr "Ak úplne nerozumiete dôvodom zmeny, ponechajte voľbu 'áno'."
 
@@ -10780,9 +10897,6 @@ msgstr "USB vľavo, vpredu"
 
 msgid "Left, wrapped"
 msgstr "Doľava, zalomené"
-
-msgid "Legacy"
-msgstr "Starší"
 
 msgid "Legacy mode"
 msgstr "Starší režim"
@@ -10841,6 +10955,9 @@ msgstr "Limit – východ"
 
 msgid "Limit the characters that can be used in recording filenames to (7 bit) ASCII. This ensures compatibility with operating systems or file systems with limited character sets."
 msgstr "Obmedzí znaky používané v názvoch súborov s nahrávkou na (7-bitové) ASCII. To zaistí kompatibilitu s operačnými systémami alebo súborovými systémmami s obmedzenými znakovými sadami."
+
+msgid "Limit the search to the satellite group normally used by this installation."
+msgstr "Obmedziť vyhľadávanie na skupinu družíc, ktoré táto inštalácia bežne používa."
 
 msgid "Limit west"
 msgstr "Limit – západ"
@@ -11396,6 +11513,9 @@ msgstr "Max. čas čakania na prvý dekódovací kľúč (CW) pred spustením de
 msgid "Mayotte"
 msgstr "Mayotte"
 
+msgid "Measured current"
+msgstr "Nameraný prúd"
+
 msgid "Media"
 msgstr "Médium"
 
@@ -11538,6 +11658,9 @@ msgstr "MiniTV s OSD"
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Minimálny vek: %d rokov"
+
+msgid "Minimum difference between idle and moving current."
+msgstr "Minimálny rozdiel medzi prúdom počas pokoja a počas pohybu."
 
 msgid "Minimum send interval"
 msgstr "Minimálny interval posielania"
@@ -12004,6 +12127,9 @@ msgstr "Viacnásobné"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
+msgid "Multi-path mode"
+msgstr "Viac-cestný režim"
+
 msgid "MultiBoot"
 msgstr "MultiBoot"
 
@@ -12084,6 +12210,12 @@ msgstr "ĎALEJ"
 
 msgid "NFS"
 msgstr "NFS"
+
+msgid "NFS Settings"
+msgstr "Nastavenie NFS"
+
+msgid "NFS threads"
+msgstr "Vlákna NFS"
 
 msgid "NIM"
 msgstr "NIM"
@@ -12758,8 +12890,14 @@ msgstr "Nie je nainštalované"
 msgid "Not Shown"
 msgstr "Nezobrazené"
 
+msgid "Not a valid tuner"
+msgstr "Neplatný tuner"
+
 msgid "Not associated"
 msgstr "Neasociované"
+
+msgid "Not available"
+msgstr "Nie je k dispozícii"
 
 msgid "Not configured"
 msgstr "Nenakonfigurované"
@@ -12880,8 +13018,23 @@ msgstr "Tlačidlo OK (krátko)"
 msgid "OK button mode"
 msgstr "Režim tlačidla OK"
 
+msgid "OK checks the currently tuned transponder."
+msgstr "Tlačidlom OK sa skontroluje aktuálne naladený transpondér."
+
 msgid "OK, guide me through the upgrade process"
 msgstr "OK, preveď ma procesom aktualizácie"
+
+msgid "ONID"
+msgstr "ONID"
+
+msgid "ONID/TSID check timed out"
+msgstr "Uplynul časový limit pre kontrolu ONID/TSID"
+
+msgid "ONID/TSID does not match"
+msgstr "ONID/TSID sa nezhodujú"
+
+msgid "ONID/TSID valid"
+msgstr "ONID/TSID sú platné"
 
 msgid "OSCam Info"
 msgstr "Info o OScame"
@@ -13221,6 +13374,9 @@ msgstr "Otvoriť zobrazenie EPG pre viac staníc"
 msgid "Open the single service EPG view"
 msgstr "Otvoriť zobrazenie EPG pre jednu stanicu"
 
+msgid "Open tuner setup"
+msgstr "Otvoriť nastavenie tunera"
+
 msgid "Open with File Commander"
 msgstr "Otvoriť pomocou Správcu súborov"
 
@@ -13233,8 +13389,8 @@ msgstr "OpenVPN"
 msgid "OpenViX Packages"
 msgstr "OpenViX balíčky"
 
-msgid "OpenWebif picon set"
-msgstr "Sada pikon OpenWebif"
+msgid "OpenWebif picon path"
+msgstr "Cesta k pikonám OpenWebif"
 
 msgid "Opera"
 msgstr "Opera"
@@ -13401,6 +13557,9 @@ msgstr "PG - rodičovská kontrola"
 
 msgid "PGS file"
 msgstr "PGS súbor"
+
+msgid "PIN"
+msgstr "PIN"
 
 msgid "PIN code needed"
 msgstr "Je potrebný PIN"
@@ -13574,9 +13733,6 @@ msgstr "Cesta"
 msgid "Path '%s' missing!"
 msgstr "Cesta '%s' nie je dostupná!"
 
-msgid "Path to picon set %s."
-msgstr "Cesta pre sadu pikon %s."
-
 msgid "Pause"
 msgstr "Pozastavenie"
 
@@ -13686,14 +13842,16 @@ msgstr "Pikona a názov stanice"
 msgid "Picon install location"
 msgstr "Cieľové umiestnenie balíčka pikon"
 
-msgid "Picon mode"
-msgstr "Režim pikony"
-
+#, python-format
 msgid "Picon path %s"
 msgstr "Cesta k pikone %s"
 
-msgid "Picon set mode"
-msgstr "Režim nastavenia pikony"
+#, python-format
+msgid "Picon path %s is in use and cannot be removed!"
+msgstr "Cesta k pikone %s sa práve využíva a nemožno ju odstrániť!"
+
+msgid "Picon search mode"
+msgstr "Režim vyhľadávania pikony"
 
 msgid "Picon width"
 msgstr "Pikony – šírka"
@@ -14212,6 +14370,9 @@ msgstr "Nastavenie pozicionéra"
 
 msgid "Positioner Setup Log"
 msgstr "Denník nastavení pozicionéra"
+
+msgid "Positioner actions"
+msgstr "Akcie pozicionéra"
 
 msgid "Positioner setup"
 msgstr "Nastavenie pozicionéra"
@@ -15220,6 +15381,9 @@ msgstr "Odstrániť z rodičovskej kontroly"
 msgid "Remove New Found Flag"
 msgstr "Odstrániť značku novonájdenej stanice"
 
+msgid "Remove Path"
+msgstr "Odstrániť cestu"
+
 msgid "Remove Plugin"
 msgstr "Odstrániť plugin"
 
@@ -15705,11 +15869,21 @@ msgstr "Koreňový priečinok"
 msgid "Root file"
 msgstr "Koreňový súbor"
 
+msgid "Root squash"
+msgstr "Obmedzenie práv vzdialeného správcu"
+
 msgid "Rose"
 msgstr "ružová"
 
+msgid "Rotor is not configured"
+msgstr "Rotor nie je nakonfigurovaný"
+
 msgid "Rotor turning speed"
 msgstr "Rýchlosť otáčania motora"
+
+#, python-format
+msgid "Rotor: %d satellites"
+msgstr "Rotor: %d satelitov"
 
 msgid "Router / Gateway"
 msgstr "Router/brána"
@@ -16557,6 +16731,9 @@ msgstr "Ak je nastavené na 'áno', hodnoty signálu (SNR atď.) sa budú vypoč
 msgid "Select 'Yes' to use the number keys for quick selection of files / directories, select 'No' to use the number keys for MENU option shortcuts."
 msgstr "Ak sa má na rýchly výber súborov/priečinkov použiť numerická klávesnica, vyberte možnosť 'Áno'. Ak vyberiete možnosť 'Nie', číselné tlačidlá sa použijú pre skratky možností v MENU."
 
+msgid "Select 'Yes' to use the same User Band channel and frequency as LNB 1. This is intended for multiple satellite positions delivered by the same Unicable system."
+msgstr "Ak vyberiete možnosť 'Áno', použije sa rovnaký kanál používateľského pásma a frekvencia ako LNB1. Táto voľba je určená pre viaceré satelitné pozície poskytované rovnakým systémom Unicable."
+
 msgid "Select 'Yes' to wake the receiver from Shutdown prior to the recording start time to allow the PDC data to make last minute timer adjustments."
 msgstr "Nastavte voľbu na 'Áno', na prebudenie prijímača pred začatím nahrávania zo stavu vypnutia. PDC tak bude môcť upraviť poslednú minútu časovača."
 
@@ -16686,6 +16863,9 @@ msgstr "Vyberte denník o odovzdaní do repozitára, ktorý sa má zobraziť:"
 
 msgid "Select a script to run:"
 msgstr "Vyberte skript na spustenie:"
+
+msgid "Select a time period to display a confirmation prompt before a Zap timer changes the current service. This allows the user to cancel the Zap. Select 'Disabled' to allow the Zap to proceed without confirmation."
+msgstr "Vyberte časový limit pre zobrazenie potvrdenia predtým než časovač prepnutia zmení aktuálnu stanicu. Používateľ tak môže zrušiť činnosť časovača. Výberom možnosti 'Vypnuté' umožníte prepnutie bez potvrdzovania."
 
 msgid "Select a time, when in Standby, after which the descramble can proceed."
 msgstr "Vyberte čas, v pohotovostnom režime, po ktorom môže dekódovanie pokračovať."
@@ -16908,17 +17088,17 @@ msgstr "Vyberte zdroj predvolených nastavení DNS."
 msgid "Select the No / False response"
 msgstr "Vyberte odozvu Nie/Nesprávne"
 
-msgid "Select the Picon path, from above, to be used for Channel Selection picons."
-msgstr "Vyberte cestu k pikone, zhora, ktorá sa použije aj pri pikonách pre výber kanálov."
+msgid "Select the Picon path, from the option(s) above, to be used for Channel Selection picons."
+msgstr "Vyberte cestu k pikonám, z možností uvedených hore, ktorá sa použije pre pikony pri výbere kanála."
 
-msgid "Select the Picon path, from above, to be used for Front panel/Display picons."
-msgstr "Vyberte cestu k pikone, zhora, ktorá sa použije aj pre predný panel/displej."
+msgid "Select the Picon path, from the option(s) above, to be used for Front panel/Display picons."
+msgstr "Vyberte cestu k pikonám, z možností uvedených hore, ktorá sa použije pre pikony predného panela/displeja."
 
-msgid "Select the Picon path, from above, to be used for InfoBar picons."
-msgstr "Vyberte cestu k pikone, zhora, ktorá sa bude používať pre pikony informačného panela."
+msgid "Select the Picon path, from the option(s) above, to be used for InfoBar picons."
+msgstr "Vyberte cestu k sade pikon, z možností uvedených hore, ktorá sa použije pre pikony informačného panela."
 
-msgid "Select the Picon path, from above, to be used for OpenWebif picons."
-msgstr "Vyberte cestu k pikone, zhora, ktoré sa majú používať pre pikony OpenWebif."
+msgid "Select the Picon path, from the option(s) above, to be used for OpenWebif picons."
+msgstr "Vyberte cestu k pikonám, z možností uvedených hore, ktorá sa použije pre pikony OpenWebif."
 
 #, python-format
 msgid "Select the Softcam for '%s'"
@@ -17143,11 +17323,11 @@ msgstr "Vyberte výrobcu vášho zariadenia SCR. Ak nie je výrobca uvedený v z
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "Vyberte metódu obnovenia rozlíšenia obrazovky a vyrovávacej pamäte pri vypnutí teletextu."
 
-msgid "Select the mode for picon path selection and resolution. 'Legacy' represents the previous mode of operation."
-msgstr "Nastavte režim pre výber cesty a rozlíšenia pikony. 'Starší' označuje predchádzajúci režim fungovania."
-
 msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
 msgstr "Vyberte režim prístupu, čítanie/zápis alebo len čítanie, ktorý sa použije pre všetky automaticky exportované zdieľania Samba."
+
+msgid "Select the mode of access, Read/Write or Read Only, applied to all exported directories."
+msgstr "Vyberte režim prístupu, čítanie/zápis alebo Len čítanie, ktorý sa použije pri všetkých exportovaných priečinkoch."
 
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "Vyberte číslo modelu vášho zariadenia Unicable. Ak nie je číslo modelu uvedené v zozname, nastavte 'SCR' na voľbu 'definované používateľom' a zadajte parametre zariadenia manuálne podľa jeho špecifikácií."
@@ -17230,6 +17410,9 @@ msgstr "Vyberte družicu, ktorú chcete konfigurovať. Po nakonfigurovaní druž
 
 msgid "Select the screen layout, from the options provided by the skin, to be used for the ChannelSelection screen."
 msgstr "Vyberte si rozloženie obrazovky, z možností daných vzhľadom, ktorý sa používa pre obrazovku na výber kanála."
+
+msgid "Select the search mode to find picons. 'Single-path mode' uses one path for all picons. 'Multi-path mode' allows multiple picon paths to be used for different use cases."
+msgstr "Vyberte režim vyhľadávania pre nájdenie pikon. 'Režim jednej cesty' používa jednu cestu pre všetky pikony. 'Režim viacerých ciest' umožňuje použitie viacerých ciest k pikone, ktoré sa dá využiť v rôznych iných prípadoch."
 
 msgid "Select the shifted character set"
 msgstr "Vyberte znakovú sadu pre veľké písmená"
@@ -17720,10 +17903,6 @@ msgstr "Nastaviť MIN frekvenciu CPU pre jadrá 0 a 1"
 
 msgid "Set MIN CPU frequency for cores 2, 3, 4 and 5"
 msgstr "Nastaviť MIN frekvenciu CPU pre jadrá 2, 3, 4 a 5"
-
-#, python-format
-msgid "Set Path %s"
-msgstr "Nastaviť cestu %s"
 
 msgid "Set Scaling governor"
 msgstr "Nastaviť regulátor škálovania"
@@ -18766,6 +18945,9 @@ msgstr "Zobraziť EPG pre jednu stanicu"
 msgid "Show status messages on switch to live TV"
 msgstr "Zobraziť stavové správy pri prepnutí na live TV"
 
+msgid "Show sub-menu"
+msgstr "Zobraziť podradené menu"
+
 msgid "Show subservice selection"
 msgstr "Zobraziť výber podradenej stanice/služby"
 
@@ -18972,6 +19154,9 @@ msgstr "Jedna družica"
 
 msgid "Single step (GOP)"
 msgstr "Jeden krok (GOP)"
+
+msgid "Single-path mode"
+msgstr "Režim jednej cesty"
 
 msgid "SingleEPG Settings"
 msgstr "Nastavenia SingleEPG"
@@ -20232,6 +20417,9 @@ msgstr "@dym1, Marián Hikaník, atec"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Súbor TS je príliš veľký pre ISO9660 level 1!"
 
+msgid "TSID"
+msgstr "TSID"
+
 msgid "TUNER:"
 msgstr "TUNER:"
 
@@ -20627,6 +20815,9 @@ msgstr ""
 msgid "The TV was switched to the recording service!\n"
 msgstr "TV bola prepnutá na nahrávanú stanicu!\n"
 
+msgid "The User Band channel, frequency and optional PIN are inherited from LNB 1 and cannot be changed here."
+msgstr "Kanál používateľského pásma, frekvencia a voliteľný kód PIN sú zdedené od LNB 1 a nemožno ich tu meniť."
+
 msgid ""
 "The VPS-Plugin couldn't check if the selected channel supports VPS for manually programmed timers!\n"
 " Do you really want to enable VPS?"
@@ -20745,6 +20936,9 @@ msgstr ""
 
 msgid "The picon directory already exists and must be removed. Do you want to proceed?"
 msgstr "Priečiok pre picony už existuje a musí sa odstrániť. Má sa pokračovať?"
+
+msgid "The positioner tuner is currently unavailable. Stop recordings or other services using this tuner and try again."
+msgstr "Tuner ovládajúci pozicionér nie je práve dostupný. Zastavte nahrávania lebo iné služby využívajúce daný tuner a skúste to znovu."
 
 #, python-format
 msgid "The process will take approximately %d minutes to complete."
@@ -21973,11 +22167,26 @@ msgstr "Ukrajina"
 msgid "Ukrainian"
 msgstr "ukrajinčina"
 
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: %s."
+msgstr "Nie je možné dedenie používateľského pásma z LNB %d: %s."
+
+#, python-format
+msgid "Unable to inherit the User Band for LNB %d: LNB 1 %s."
+msgstr "Nie je možné dedenie používateľského pásma pre LNB %d: LNB 1 %s."
+
 msgid "Unable to initialize Kexec MultiBoot!"
 msgstr "Nie je možné inicializovať Kexec MultiBoot!"
 
+#, python-format
+msgid "Unable to validate the Unicable position for LNB %d: %s."
+msgstr "Nemožno overiť pozíciu Unicable pre LNB %d: %s."
+
 msgid "Unattended upgrade without GUI"
 msgstr "Bezobslužná aktualizácia bez GUI"
+
+msgid "Unavailable"
+msgstr "Nedostupné"
 
 msgid "Undefined"
 msgstr "Nedefinované"
@@ -22015,6 +22224,13 @@ msgstr "Unicable LNB"
 
 msgid "Unicable Matrix"
 msgstr "Unicable Matrix"
+
+msgid "Unicable position"
+msgstr "Pozícia Unicable"
+
+#, python-format
+msgid "Unicable position %d is not supported by the selected device for LNB %d. Valid positions are %d to %d; use 'User defined' for a reprogrammed device."
+msgstr "Pozícia Unicable %d nie je podporovaná vybraným zariadením pre LNB %d. Platné pozície sú %d až %d; pre preprogramované zariadenie použite možnosť 'Definované používateľom'."
 
 msgid "Uninstall"
 msgstr "Odinštalovať"
@@ -22280,6 +22496,9 @@ msgstr "Použiť protokol HTTPS"
 msgid "Use Harddisk Hardware Standby Timer"
 msgstr "Použiť hardvérový časovač pohotovostného režimu pevného disku"
 
+msgid "Use LNB 1 User Band"
+msgstr "Použiť používateľské pásmo LNB 1"
+
 msgid "Use MHW EPG information when it is available."
 msgstr "Používať MHW EPG informácie, ak sú dostupné."
 
@@ -22291,6 +22510,9 @@ msgstr "Používať servery ODoH"
 
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "Použiť OpenTV EPG: načítanie EPG si vyžaduje naladenie na konkrétny transpondér."
+
+msgid "Use PIN"
+msgstr "Použiť PIN"
 
 msgid "Use QuickSelect"
 msgstr "Použiť rýchly výber"
@@ -23039,12 +23261,18 @@ msgstr "Upozornenie: momentálne je aktívne prepisovanie!"
 msgid "Warning: Recordings should not be stored on the Flash disk!"
 msgstr "Upozornenie: Nahrávky by sa nemali ukladať na flashdisk!"
 
+msgid "Warning: The second input of this dual tuner may not support Unicable devices. "
+msgstr "Upozornenie: druhý vstup tohto duálneho tunera nemusí podporovať zariadenia Unicable. "
+
 #, python-format
 msgid "Warning: There are %d update packages!"
 msgstr "Upozornenie: K dispozícii je %d aktualizačných balíčkov!"
 
 msgid "Warning: There is only a network drive to store the backup. This means the auto restore will not work after the flash. Alternatively, mount the network drive after the flash and perform a manufacturer reset to auto restore."
 msgstr "Upozornenie: Na uloženie zálohy je dostupná len sieťová jednotka. To znamená, že po flashovaní nebude fungovať automatické obnovenie. Alternatívne môžete pripojiť sieťovú jednotku po flashovaní a vykonať výrobný reset na automatické obnovenie."
+
+msgid "Warning: This FBC-C V1 tuner should be installed in the first slot. In the second slot only 2 of 8 demodulators may be available. "
+msgstr "Upozornenie: Tento FBC-C V1 tuner by mal byť nainštalovaný v prvom slote. V druhom slote môžu byť dostupné len 2 z 8 demodulátorov. "
 
 msgid "Warning: This is the last crash before an automatic restart is performed.\n"
 msgstr "Upozornenie: Toto je posledný pád systému pred vykonaním automatického reštartu.\n"
@@ -23144,6 +23372,9 @@ msgstr "západná frízština"
 msgid "Western Sahara"
 msgstr "Západná Sahara"
 
+msgid "Western satellites"
+msgstr "Západné družice"
+
 msgid "What day of month?"
 msgstr "Ktorý deň v mesiaci?"
 
@@ -23213,6 +23444,12 @@ msgstr "Ak je povolené, zobrazí sa výstraha a používateľ bude mať možnos
 msgid "When enabled, allow each storage device detected to be automatically exported as a Samba share."
 msgstr "Ak je zapnuté, povoliť automatické exportovanie každého zisteného úložného zariadenia ako zdieľania Samba."
 
+msgid "When enabled, allow usage of the NFS version 3 protocols."
+msgstr "Ak je povolené, povoliť používanie protokolov NFS verzie 3."
+
+msgid "When enabled, allow usage of the NFS version 4 protocols."
+msgstr "Ak je povolené, povoliť používanie protokolov NFS verzie 4."
+
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Ak je povolené, na sledovanie http streamov sa vyžaduje prihlásenie."
 
@@ -23236,6 +23473,9 @@ msgstr "Ak je povolené, grafické DVB titulky sa zobrazia na ich pôvodnej poz�
 
 msgid "When enabled, it is possible to leave the movie player with exit."
 msgstr "Ak je povolené, prehrávač médií sa dá ukončiť tlačidlom EXIT."
+
+msgid "When enabled, map root to nobody (more secure). When disabled, full root access is available."
+msgstr "Ak je povolené, mapovať správcu (root) na používateľa nobody (bezpečnejšie). Ak je zakázané, je možný úplný prístup správcu."
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Ak je povolené, prijímač sa bude meraním spotreby energie snažiť rozpoznať, kedy sa zastaví otáčanie motora (ak je podporované tunerom)."
@@ -24219,6 +24459,18 @@ msgstr "h:mmam/pm"
 msgid "handled"
 msgstr "spracované"
 
+msgid "has incomplete Unicable settings"
+msgstr "má neúplné nastavenia pre Unicable"
+
+msgid "has no supported Unicable device type"
+msgstr "nemá žiadny podporovaný typ zariadenia Unicable"
+
+msgid "has no valid Unicable product"
+msgstr "nemá platný produkt Unicable"
+
+msgid "has no valid User Band channel"
+msgstr "nemá platný kanál používateľského pásma"
+
 msgid "height"
 msgstr "výška"
 
@@ -24266,6 +24518,12 @@ msgstr "okamžité nahrávanie"
 
 msgid "internally loopthrough to"
 msgstr "interná slučka na"
+
+msgid "is not configured"
+msgstr "nie je nakonfigurované"
+
+msgid "is not configured for Unicable"
+msgstr "nie je nakonfigurované pre Unicable"
 
 msgid "jump back to the previous title"
 msgstr "preskočiť na predchádzajúci titul"
@@ -24524,6 +24782,18 @@ msgstr "súbor šablóny"
 msgid "text"
 msgstr "text"
 
+msgid "the User Band channel from LNB 1 is not available"
+msgstr "kanál používateľského pásma z LNB 1 je nedostupný"
+
+msgid "the selected device does not use the LNB 1 frequency on this User Band channel"
+msgstr "vybrané zariadenie nepoužíva frekvenciu LNB 1 na tomto kanáli používateľského pásma"
+
+msgid "the target LNB"
+msgstr "cieľové LNB"
+
+msgid "the target LNB is not configured"
+msgstr "cieľové LNB nie je nakonfigurované"
+
 msgid "this recording"
 msgstr "táto nahrávka"
 
@@ -24572,6 +24842,9 @@ msgstr "nie je možné otestovať"
 msgid "update"
 msgstr "aktualizovať"
 
+msgid "uses an unavailable User Band frequency"
+msgstr "používa nedostupnú frekvenciu používateľského pásma"
+
 msgid "using:"
 msgstr "s použitím:"
 
@@ -24614,6 +24887,50 @@ msgstr "áno (zachovať zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "A recording is currently running. Please stop the recording before trying to configure the positioner."
+#~ msgstr "Práve prebieha nahrávanie. Pred nastavovaním pozicionéra nahrávanie zastavte."
+
+#~ msgid "Consult your receiver's manual for more information on power management."
+#~ msgstr "Správa napájania. Ďalšie informácie získate v návode na obsluhu vášho prijímača."
+
+#~ msgid "Consult your receiver's manual for more information on power threshold."
+#~ msgstr "Prahový prúd. Ďalšie informácie získate v návode k prijímaču."
+
+#~ msgid "Legacy"
+#~ msgstr "Starší"
+
+#~ msgid "Path to picon set %s."
+#~ msgstr "Cesta pre sadu pikon %s."
+
+#~ msgid "Picon mode"
+#~ msgstr "Režim pikony"
+
+#, python-format
+#~ msgid "Picon set %s"
+#~ msgstr "Sada pikon %s"
+
+#~ msgid "Picon set mode"
+#~ msgstr "Režim nastavenia pikony"
+
+#~ msgid "Select the mode for picon path selection and resolution. 'Legacy' represents the previous mode of operation."
+#~ msgstr "Nastavte režim pre výber cesty a rozlíšenia pikony. 'Starší' označuje predchádzajúci režim fungovania."
+
+#, python-format
+#~ msgid "Set Path %s"
+#~ msgstr "Nastaviť cestu %s"
+
+#~ msgid "Select the Picon path, from above, to be used for Channel Selection picons."
+#~ msgstr "Vyberte cestu k pikone, zhora, ktorá sa použije aj pri pikonách pre výber kanálov."
+
+#~ msgid "Select the Picon path, from above, to be used for Front panel/Display picons."
+#~ msgstr "Vyberte cestu k pikone, zhora, ktorá sa použije aj pre predný panel/displej."
+
+#~ msgid "Select the Picon path, from above, to be used for InfoBar picons."
+#~ msgstr "Vyberte cestu k pikone, zhora, ktorá sa bude používať pre pikony informačného panela."
+
+#~ msgid "Select the Picon path, from above, to be used for OpenWebif picons."
+#~ msgstr "Vyberte cestu k pikone, zhora, ktoré sa majú používať pre pikony OpenWebif."
 
 #, python-format
 #~ msgid "%d DMIPS per core"
@@ -26131,9 +26448,6 @@ msgstr "®"
 #~ msgid "MiniDLNA Log"
 #~ msgstr "Denník MiniDLNA"
 
-#~ msgid "NFS Settings"
-#~ msgstr "Nastavenie NFS"
-
 #~ msgid "OpenVPN Actions"
 #~ msgstr "Akcie OpenVPN"
 
@@ -26740,9 +27054,6 @@ msgstr "®"
 #~ msgid "Next Picture"
 #~ msgstr "Ďalší obrázok"
 
-#~ msgid "ONID"
-#~ msgstr "ONID"
-
 #~ msgid "Previous Log"
 #~ msgstr "Predchádzajúci denník"
 
@@ -26775,9 +27086,6 @@ msgstr "®"
 
 #~ msgid "System & Modulation"
 #~ msgstr "Systém & modulácia"
-
-#~ msgid "TSID"
-#~ msgstr "TSID"
 
 #~ msgid "Tuner live values"
 #~ msgstr "Hodnoty tunera naživo"

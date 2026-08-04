@@ -2048,8 +2048,55 @@ class NetworkMiniDLNASetup(Setup):
 
 
 class NetworkSambaSetup(Setup):
+	SMBCONF = "/etc/samba/smb-local.conf"
+
 	def __init__(self, session):
+		self.workgroup = NoSave(ConfigText(default="WORKGROUP", fixed_size=False))
+		self.guest = NoSave(ConfigYesNo(default=True))
+		self.globalLine = 0
+		self.workgroupLine = 0
+		self.guestLine = 0
+		self.smbConf = fileReadLines(self.SMBCONF, default=[], source=MODULE_NAME)
+		inGlobal = False
+		for index, line in enumerate(self.smbConf):
+			line = line.strip()
+			if line.startswith("[") and line.endswith("]"):
+				inGlobal = line[1:-1].lower() == "global"
+				continue
+			if inGlobal and "=" in line:
+				if self.globalLine == 0:
+					self.globalLine = index
+				key, value = [x.strip() for x in line.split("=", 1)]
+				comment = key.startswith(("#", ";"))
+				match key.lstrip("#;").lstrip().lower():
+					case "workgroup":
+						self.workgroupLine = index
+						if not comment:
+							self.workgroup.value = value
+							self.workgroup.savedValue = value
+					case "guest ok":
+						self.guestLine = index
+						if not comment:
+							self.guest.value = value.lower() in ("yes", "true", "1")
+							self.guest.savedValue = value
 		Setup.__init__(self, session=session, setup="NetworkSamba")
+
+	def keySave(self):
+		if self.workgroupLine:
+			if self.workgroup.isChanged():
+				self.smbConf[self.workgroupLine] = f"\tworkgroup = {self.workgroup.value}"
+		elif self.globalLine and self.workgroup.value != self.workgroup.default:
+			self.smbConf.insert(self.globalLine, f"\tworkgroup = {self.workgroup.value}")
+			self.globalLine += 1
+		value = "yes" if self.guest.value else "no"
+		if self.guestLine:
+			if self.guest.isChanged():
+				self.smbConf[self.guestLine] = f"\tguest ok = {value}"
+		elif self.globalLine and self.guest.value != self.guest.default:
+			self.smbConf.insert(self.globalLine, f"\tguest ok = {value}")
+		if fileWriteLines(self.SMBCONF, self.smbConf, source=MODULE_NAME):
+			print("Error")
+		Setup.keySave(self)
 
 
 class NetworkPassword(Setup):
