@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 10:29+0000\n"
+"POT-Creation-Date: 2026-08-14 19:37+0000\n"
 "PO-Revision-Date: 2021-08-15 18:50+0000\n"
 "Last-Translator: openATV <openatv@gmail.com>\n"
 "Language-Team: Frisian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/fy/>\n"
@@ -3078,9 +3078,6 @@ msgstr "Automatysk sykjen"
 msgid "Automatic scan for services"
 msgstr ""
 
-msgid "Automatic shares access"
-msgstr ""
-
 msgid "Automatically put the TV in Standby whenever the receiver goes into Standby or Deep Standby."
 msgstr ""
 
@@ -3112,6 +3109,9 @@ msgid "Available locales are:"
 msgstr "Beskikbere variabele formaten"
 
 msgid "Available shares:"
+msgstr ""
+
+msgid "Available tuner types"
 msgstr ""
 
 msgid "Avaric"
@@ -3591,6 +3591,9 @@ msgstr ""
 msgid "Broadcom"
 msgstr ""
 
+msgid "Broadcom default"
+msgstr ""
+
 msgid "Browse, install or remove plugins on a one by one basis."
 msgstr ""
 
@@ -3683,6 +3686,15 @@ msgstr "C"
 #
 msgid "C-Band"
 msgstr "C-Bân"
+
+msgid "C/T input"
+msgstr ""
+
+msgid "C/T input switching"
+msgstr ""
+
+msgid "C/T input switching: external 5V coax switch"
+msgstr ""
 
 msgid "CCD-Width"
 msgstr ""
@@ -3825,6 +3837,9 @@ msgid "Cable"
 msgstr "Kabel"
 
 msgid "Cable Scan"
+msgstr ""
+
+msgid "Cable input"
 msgstr ""
 
 #
@@ -4917,6 +4932,9 @@ msgstr ""
 msgid "Configure an additional delay to improve subtitle synchronization."
 msgstr ""
 
+msgid "Configure cable reception on this input."
+msgstr ""
+
 msgid "Configure default setting for new timers. Need a restart after changing."
 msgstr ""
 
@@ -4976,6 +4994,12 @@ msgid ""
 msgstr ""
 
 msgid "Configure remote control type"
+msgstr ""
+
+msgid "Configure satellite reception on the separate SAT input."
+msgstr ""
+
+msgid "Configure terrestrial reception on this input."
 msgstr ""
 
 msgid "Configure the DiSEqC mode for this LNB."
@@ -5957,9 +5981,6 @@ msgstr ""
 msgid "DNS protocol mode"
 msgstr ""
 
-msgid "DNS suffix"
-msgstr ""
-
 msgid "DNSCrypt"
 msgstr ""
 
@@ -5999,16 +6020,13 @@ msgstr ""
 msgid "DVB-C"
 msgstr ""
 
-msgid "DVB-C / Cable only"
-msgstr ""
-
 msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
 msgstr ""
 
-msgid "DVB-C and DVB-T/T2 via external 5V controlled coax switch"
+msgid "DVB-C and DVB-T/T2 share this input. When both are enabled, Enigma2 uses 5V to control the external coax switch."
 msgstr ""
 
 #
@@ -6020,9 +6038,6 @@ msgid "DVB-S2"
 msgstr "DVB-S2"
 
 msgid "DVB-T"
-msgstr ""
-
-msgid "DVB-T/T2 / Terrestrial only"
 msgstr ""
 
 msgid "DVB-T2"
@@ -7289,6 +7304,9 @@ msgstr ""
 msgid "Domain"
 msgstr ""
 
+msgid "Domain name"
+msgstr ""
+
 msgid "Dominica"
 msgstr ""
 
@@ -8197,16 +8215,16 @@ msgstr ""
 msgid "Enter the password, pass-phrase or pre-shared key for the selected wireless network."
 msgstr ""
 
-msgid "Enter the primary IPv4 DNS setting for this adapter."
+msgid "Enter the primary IPv4 DNS server for this adapter."
 msgstr ""
 
-msgid "Enter the primary IPv6 DNS setting for this adapter. (Optional)"
+msgid "Enter the primary IPv6 DNS server for this adapter. (Optional)"
 msgstr ""
 
-msgid "Enter the secondary IPv4 DNS setting for this adapter. (Optional)"
+msgid "Enter the secondary IPv4 DNS server for this adapter. (Optional)"
 msgstr ""
 
-msgid "Enter the secondary IPv6 DNS setting for this adapter. (Optional)"
+msgid "Enter the secondary IPv6 DNS server for this adapter. (Optional)"
 msgstr ""
 
 #
@@ -8219,7 +8237,7 @@ msgstr ""
 msgid "Enter the subscription code to fully enable the AI-Powered Translation plugin, the unified code for trial is 15."
 msgstr ""
 
-msgid "Enter the workgroup name to be used by this receiver for Samba based connections. (Default is 'WORKGROUP'.)"
+msgid "Enter the workgroup name to be used by this server for Samba based connections. (Default is 'WORKGROUP'.)"
 msgstr ""
 
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
@@ -9459,7 +9477,7 @@ msgstr ""
 msgid "Force ToneBurst"
 msgstr "Toan piek"
 
-msgid "Force a specific network link speed/duplex mode instead of auto-negotiation. Only change this if you have a specific reason as an incorrect setting can break network connectivity."
+msgid "Force a specific network link speed/duplex mode instead of auto-negotiation. Only change this if you have a specific reason for the change as an incorrect setting can break network connectivity."
 msgstr ""
 
 #
@@ -9748,6 +9766,9 @@ msgstr ""
 msgid "Gibraltar"
 msgstr ""
 
+msgid "GigaBlue optimized"
+msgstr ""
+
 msgid "Given device id"
 msgstr ""
 
@@ -10003,6 +10024,9 @@ msgid "HDMI-In Recording Settings"
 msgstr ""
 
 msgid "HDMIin"
+msgstr ""
+
+msgid "HDR OSD adjustment"
 msgstr ""
 
 msgid "HDR10 Support"
@@ -10382,9 +10406,6 @@ msgid "Hungary"
 msgstr "Hongaarsk"
 
 msgid "Hybrid Tuner"
-msgstr ""
-
-msgid "Hybrid tuner mode"
 msgstr ""
 
 msgid "Hz"
@@ -11417,6 +11438,9 @@ msgid "Kiribati"
 msgstr ""
 
 msgid "Kodi"
+msgstr ""
+
+msgid "Kodi Add-on Packages"
 msgstr ""
 
 msgid "Kodi MediaCenter"
@@ -13151,7 +13175,7 @@ msgstr "Folgende"
 msgid "NFS"
 msgstr ""
 
-msgid "NFS Settings"
+msgid "NFS Server Settings"
 msgstr ""
 
 msgid "NFS threads"
@@ -13335,6 +13359,9 @@ msgid "Network Test"
 msgstr ""
 
 msgid "Network Test:"
+msgstr ""
+
+msgid "Network Wi-Fi Settings"
 msgstr ""
 
 msgid "Network Wizard"
@@ -16200,7 +16227,7 @@ msgstr ""
 msgid "Re-enter new PIN"
 msgstr ""
 
-msgid "Read Only"
+msgid "Read-Only"
 msgstr ""
 
 msgid "Read Userdata from 'oscam.conf'"
@@ -17296,6 +17323,9 @@ msgstr ""
 msgid "SAT"
 msgstr ""
 
+msgid "SAT input"
+msgstr ""
+
 msgid "SATA"
 msgstr ""
 
@@ -17392,7 +17422,7 @@ msgstr ""
 msgid "Samba Server"
 msgstr ""
 
-msgid "Samba Settings"
+msgid "Samba Server Settings"
 msgstr ""
 
 msgid "Same as in active"
@@ -18025,6 +18055,9 @@ msgstr ""
 msgid "Select 'Yes' to show 'dev', 'staticdev', 'dbg' and 'doc' packages in the Download Plugins screen."
 msgstr ""
 
+msgid "Select 'Yes' to show Kodi add-on packages in the Download Plugins screen."
+msgstr ""
+
 msgid "Select 'Yes' to show LCD skin packages in the Download Plugins screen."
 msgstr ""
 
@@ -18380,9 +18413,6 @@ msgstr ""
 msgid "Select how the schedule is handled with respect to Standby."
 msgstr ""
 
-msgid "Select how this DVB-C/T tuner is connected. Use the external coax switch option only with a 5V controlled coax switch."
-msgstr ""
-
 msgid "Select how to activate the Quick EPG mode."
 msgstr ""
 
@@ -18495,7 +18525,7 @@ msgstr ""
 msgid "Select the AI-Powered Translation target language."
 msgstr ""
 
-msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgid "Select the DNS server(s) that will be used to lookup hostnames to resolve IP addresses."
 msgstr ""
 
 msgid "Select the No / False response"
@@ -18741,10 +18771,10 @@ msgstr ""
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr ""
 
-msgid "Select the mode of access, Read/Write or Read Only, applied to all automatically exported Samba shares."
+msgid "Select the mode of access, Read/Write or Read-Only, applied to all automatically exported Samba shares."
 msgstr ""
 
-msgid "Select the mode of access, Read/Write or Read Only, applied to all exported directories."
+msgid "Select the mode of access, Read/Write or Read-Only, applied to all exported directories."
 msgstr ""
 
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
@@ -19008,7 +19038,7 @@ msgstr ""
 msgid "Select whether Dolby TrueHD audio tracks should be passed through or decoded."
 msgstr ""
 
-msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
+msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then select which should be preferred."
 msgstr ""
 
 msgid "Select whether WMA Pro channel audio tracks should be downmixed or transcoded."
@@ -19142,7 +19172,7 @@ msgstr ""
 msgid "Server down"
 msgstr "Kanaal sykje"
 
-msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgid "Server must not enforce its own blacklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
 msgstr ""
 
 msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not logging the request on the server providing the data."
@@ -19562,7 +19592,7 @@ msgstr ""
 msgid ""
 "Set up tuner [TUNER].\n"
 "\n"
-"For hybrid tuner models switch Tuner Type with the LEFT and RIGHT buttons."
+"For tuners supporting multiple reception types, configure each available type separately."
 msgstr ""
 
 msgid "Set voltage and 22KHz"
@@ -19921,6 +19951,9 @@ msgid "Show InfoBar picons"
 msgstr ""
 
 msgid "Show Kernel packages"
+msgstr ""
+
+msgid "Show Kodi Add-on packages"
 msgstr ""
 
 #
@@ -21268,7 +21301,7 @@ msgstr ""
 msgid "Specify the directory to use when starting Media Player."
 msgstr ""
 
-msgid "Specify the network domain name suffix to be applied when only the host name is provided. This helps the DNS resolver find the requested host."
+msgid "Enter the network domain name suffix to be added to the hostname above. This helps the DNS resolver find other network devices on the network."
 msgstr ""
 
 msgid "Speed"
@@ -21957,10 +21990,6 @@ msgstr ""
 msgid "Switch to the right column"
 msgstr ""
 
-#
-msgid "Switchable tuner types:"
-msgstr ""
-
 msgid "Switching to live TV - time shift is still active!"
 msgstr ""
 
@@ -22249,6 +22278,9 @@ msgstr ""
 #
 msgid "Terrestrial"
 msgstr "Ether"
+
+msgid "Terrestrial input"
+msgstr ""
 
 msgid "Test"
 msgstr ""
@@ -22726,6 +22758,9 @@ msgstr ""
 msgid "This is a workaround for devices that wake up immediately after entering Standby. Wake-up commands from other devices are ignored for a few seconds."
 msgstr ""
 
+msgid "This is one reception type of a single tuner. Enabled reception types are switched automatically and scanned separately."
+msgstr ""
+
 #, python-format
 msgid "This is the currently selected language.  [%s]"
 msgstr ""
@@ -22747,6 +22782,9 @@ msgid "This menu offers options related managing the software on the %s %s."
 msgstr ""
 
 msgid "This offset will only be used if the channel does not have its own volume offset."
+msgstr ""
+
+msgid "This option adjusts SDR graphics and OSD colors while the HDMI output is in HDR mode."
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -23554,6 +23592,9 @@ msgid "Trim File System..."
 msgstr ""
 
 msgid "Trinidad and Tobago"
+msgstr ""
+
+msgid "Triple Tuner"
 msgstr ""
 
 msgid "True"
@@ -25251,7 +25292,7 @@ msgstr ""
 msgid "When enabled, show status or error messages."
 msgstr ""
 
-msgid "When enabled, specify custom DNS settings for this adapter instead of the global DNS settings."
+msgid "When enabled, specify custom DNS settings for this adapter instead of using the global DNS settings."
 msgstr ""
 
 msgid "When enabled, subtitles for the hearing impaired can be used."
@@ -25308,7 +25349,7 @@ msgstr ""
 msgid "When enabled, this Wi-Fi adapter is kept in Wake-on-WiFi mode only and will not be used to connect to any network."
 msgstr ""
 
-msgid "When enabled, this adapter is initialized and activated at boot time."
+msgid "When enabled, this adapter will be initialized and activated at boot time."
 msgstr ""
 
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
@@ -25386,9 +25427,6 @@ msgid "While available"
 msgstr ""
 
 msgid "White"
-msgstr ""
-
-msgid "Wi-Fi Connection Settings"
 msgstr ""
 
 msgid "Wide"
@@ -25665,10 +25703,6 @@ msgid "You can only burn Dreambox recordings!"
 msgstr ""
 
 msgid "You can skip this function and turn off the TV when you wake the receiver from Standby and immediately switch back to Standby."
-msgstr ""
-
-#, python-format
-msgid "You can switch with left and right this tuner types %s"
 msgstr ""
 
 #
