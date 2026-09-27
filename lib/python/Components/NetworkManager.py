@@ -159,7 +159,7 @@ class NetworkManager:
 			driver = apiNl80211
 			if isBroadcomWl(interface, module):
 				driver = apiWext
-			elif isdir(f"{sysfsNet}/{interface}/device/ieee80211"):
+			elif isdir(f"{sysfsNet}/{interface}/phy80211"):
 				driver = apiNl80211
 			elif module in ("ath_pci", "ath5k", "ar6k_wlan"):
 				driver = apiMadwifi
@@ -320,10 +320,10 @@ class NetworkManager:
 					conn.wifi.disabled = not conn.enabled
 					conn.wifi.priority = conn.priority
 			wifiConfigs = [x.wifi for x in conns if x.wifi is not None and x.wifi.ssid]
-			if not wifiConfigs:
+			wpf = WpaSupplicantFile(interface)
+			if not wifiConfigs and not wpf.exists():
 				continue
 			self.log(f"saveWpaSupplicant: {interface} writing {len(wifiConfigs)} wifi config(s): {", ".join(f"{x.ssid!r}(disabled={x.disabled})" for x in wifiConfigs)}.")
-			wpf = WpaSupplicantFile(interface)
 			wpf.ensureDir()
 			ok = wpf.save(wifiConfigs) and ok
 			self.reconfigureWifi(interface)
@@ -340,7 +340,12 @@ class NetworkManager:
 			interface = adapter.name
 			api = adapter.driverApi
 			driverFlags = f"-D {api}" if api != apiNl80211 else ""
-			lines = [
+			lines = []
+			if self.getBaseConnection(interface).wakeOnWiFi and exists(wlBin):
+				# The firmware forgets the wake pattern whenever the interface goes down.
+				lines.append(f"pre-up {wlBin} -i {interface} wowl 0x100 || true")
+				lines.append(f"pre-up {wlBin} -i {interface} wowl_activate || true")
+			lines += [
 				f"pre-up {ifconfigBin} {interface} up || true",
 				f"pre-up {wpaSupplicantBin} -i{interface} -c{adapter.wpaConfPath} -B {driverFlags} -P{adapter.wpaPidPath} || true",
 			]
@@ -597,16 +602,7 @@ class NetworkManager:
 		procPath = BoxInfo.getItem("WakeOnLAN") or ""
 		if procPath and exists(procPath):
 			cmds.append(f"echo '{'enable' if enable else 'disable'}' > {procPath}")
-		self.updateWowPreup(adapter, enable)
 		return cmds
-
-	def updateWowPreup(self, adapter: Adapter, enable: bool):
-		baseConn = self.getBaseConnection(adapter.name)
-		interface = adapter.name
-		baseConn.extraLines = [x for x in baseConn.extraLines if "wowl" not in x]
-		if enable:
-			baseConn.extraLines.insert(0, f"pre-up wl -i {interface} wowl_activate || true")
-			baseConn.extraLines.insert(0, f"pre-up wl -i {interface} wowl 0x100 || true")
 
 	def getWakeOnWiFi(self, interface: str) -> bool:
 		if interface not in self.adapters:
@@ -740,6 +736,8 @@ class NetworkManager:
 				netInfo.channel = data.get("channel", 0)
 				netInfo.bitrateBps = data.get("bitrate_bps", 0)
 				netInfo.signal = data.get("signal_dbm", 0)
+				netInfo.keyMgmt = data.get("key_mgmt", "")
+				netInfo.pairwiseCipher = data.get("pairwise_cipher", "")
 			else:
 				netInfo.link = netInfo.up and data.get("link", False)
 				netInfo.speed = data.get("speed", -1) if netInfo.link else -1
@@ -801,15 +799,23 @@ class NetworkManager:
 			callback()
 			return
 
-		remaining = [len(candidates)]
+		pending = list(candidates)
 
-		def onResult(interface: str, ok: bool):
-			self.adapters[interface].hasInternet = ok
-			remaining[0] -= 1
-			if remaining[0] == 0:
+		# One interface at a time: a ping occupies the daemon until it has its
+		# reply or runs into its timeout, so firing all of them at once can
+		# outlast the caller's timeout on boxes with several interfaces.
+		def nextInterface():
+			if pending:
+				interface = pending.pop(0)
+				ServiceAction.ping(interface, "8.8.8.8", lambda exitCode, iface=interface: primaryDone(iface, exitCode))
+			else:
 				results = {interface: self.adapters[interface].hasInternet for interface in candidates}
 				self.log(f"checkConnectionInternet: results={results}.")
 				callback()
+
+		def onResult(interface: str, ok: bool):
+			self.adapters[interface].hasInternet = ok
+			nextInterface()
 
 		def fallbackDone(interface: str, exitCode: int):
 			onResult(interface, exitCode == 0)
@@ -818,10 +824,9 @@ class NetworkManager:
 			if exitCode == 0:
 				onResult(interface, True)
 			else:
-				ServiceAction.ping(interface, "1.1.1.1", lambda ec, iface=interface: fallbackDone(interface, ec))
+				ServiceAction.ping(interface, "1.1.1.1", lambda exitCode, iface=interface: fallbackDone(iface, exitCode))
 
-		for interface in candidates:
-			ServiceAction.ping(interface, "8.8.8.8", lambda ec, iface=interface: primaryDone(interface, ec))
+		nextInterface()
 
 	def onIfaceAdd(self, interface: str):
 		self.log(f"onIfaceAdd: {interface}.")
@@ -955,6 +960,8 @@ class NetInfo:
 	channel: int = 0  # Wi-Fi only, channel number.
 	bitrateBps: int = 0  # Wi-Fi only, TX bitrate in bps.
 	signal: int = 0  # Wi-Fi only, dBm.
+	keyMgmt: str = ""  # Wi-Fi only, key management wpa_supplicant negotiated (e.g. "SAE", "WPA2-PSK").
+	pairwiseCipher: str = ""  # Wi-Fi only, negotiated pairwise cipher (e.g. "CCMP", "WEP-104").
 	driver: str = ""  # Kernel module name (e.g. "r8168", "mt76x2u").
 	hwId: str = ""  # "VVVV:DDDD" PCI or USB vendor:product hex.
 	bus: str = ""  # Physical bus from socketdaemon (e.g. "usb", "pci", "platform").
@@ -1018,6 +1025,29 @@ class Adapter:
 			value = 600 if self.isWiFi else 100
 		return value
 
+	@property
+	def connectionText(self) -> str:
+		# Encryption is what wpa_supplicant negotiated, not what the saved connection asks for; DHCP reflects the active connection's own setting.
+		parts = []
+		connection = networkManager.activeConnection(self.name)
+		if connection and connection.dhcp:
+			parts.append("DHCP")
+		if self.isWiFi and self.netInfo.link:
+			keyMgmt = self.netInfo.keyMgmt.upper()
+			if "SAE" in keyMgmt or "OWE" in keyMgmt:
+				text = "WPA3"
+			elif "WPA2" in keyMgmt:
+				text = "WPA2"
+			elif "WPA" in keyMgmt:
+				text = "WPA"
+			elif "WEP" in self.netInfo.pairwiseCipher.upper():
+				text = "WEP"
+			else:
+				text = ""
+			if text:
+				parts.append(f"{text}E" if "EAP" in keyMgmt else text)  # 802.1X, e.g. "WPA2E".
+		return ", ".join(parts)
+
 
 @dataclass
 class NameserverConfig:
@@ -1064,6 +1094,8 @@ class InterfacesFile:
 				elif len(tokens_inner) >= 3 and tokens_inner[0] == "Only" and tokens_inner[1] == "WakeOnWiFi":
 					wakeOnWiFiIfaces.add(tokens_inner[2])
 					continue
+				elif current is not None and not current.enabled:
+					line = inner
 				else:
 					disabled = False
 					continue
@@ -1152,7 +1184,7 @@ class InterfacesFile:
 					if ip:
 						current.dnsServers.append(ip)
 			elif kw in ("pre-up", "pre-down", "post-up", "post-down", "up", "down"):
-				current.extraLines.append(raw.strip())
+				current.extraLines.append(line)
 		return result, autoIfaces, wakeOnWiFiIfaces
 
 	def serialize(self, connectionsByAdapter: dict[str, list[Connection]], adapterEnabledMap: dict[str, bool] | None = None) -> list[str]:

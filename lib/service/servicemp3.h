@@ -346,6 +346,12 @@ private:
 	   with an older generation are still in the pump queue and must not reach a
 	   parser. Written on the main thread, read on the gstreamer thread. */
 	std::atomic<int> m_subtitle_generation{0};
+	/* current-text switch requested while the pipeline was not settled in PLAYING;
+	   applied on the next PAUSED->PLAYING transition */
+	bool m_subtitle_switch_deferred = false;
+	void applySubtitleStreamSwitch();
+	/* audio stream requested while the pipeline was not settled in PLAYING, -1 if none */
+	int m_audio_switch_deferred = -1;
 	int selectAudioStream(int i, bool skipAudioFix = false);
 	std::vector<audioStream> m_audioStreams;
 	std::vector<subtitleStream> m_subtitleStreams;
@@ -378,7 +384,13 @@ private:
 	gint m_last_seek_count;
 	bool m_seeking_or_paused;
 	bool m_to_paused;
+	// seek held back until preroll, -1 = none
 	gint64 m_pending_seek_pos;
+	bool m_prerolled;
+	// evResumed still to be sent
+	bool m_resume_pending;
+	// "&e2subtitletrack=" given, ignore pango_autoturnon
+	bool m_subtitle_requested;
 	int64_t m_last_trickseek_ms;   /* CLOCK_MONOTONIC, throttle 500ms */
 	bufferInfo m_bufferInfo;
 	errorInfo m_errorInfo;
@@ -458,6 +470,7 @@ private:
 	gulong m_subs_to_pull_handler_id, m_notify_source_handler_id, m_notify_element_added_handler_id;
 
 	RESULT seekToImpl(pts_t to);
+	void applyPendingSeek();
 
 	gint m_aspect, m_width, m_height, m_framerate, m_progressive, m_gamma;
 	std::string m_useragent;

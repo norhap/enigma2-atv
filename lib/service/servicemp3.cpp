@@ -122,6 +122,25 @@ static void gstSetStringIfAvailable(GstElement* element, const char* property, c
 		g_object_set(G_OBJECT(element), property, value.c_str(), NULL);
 }
 
+/* PLAYING with no state change in flight; timeout 0, never blocks. */
+static bool pipelineSettledInPlaying(GstElement* pipeline)
+{
+	if (!pipeline) return false;
+	GstState state = GST_STATE_NULL, pending = GST_STATE_VOID_PENDING;
+	gst_element_get_state(pipeline, &state, &pending, 0);
+	return state == GST_STATE_PLAYING && pending == GST_STATE_VOID_PENDING;
+}
+
+/* Runs on a GStreamer pool thread, see eServiceMP3::applySubtitleStreamSwitch().
+   user_data is the text-selector sink pad; it holds one ref, released via the
+   GDestroyNotify passed to gst_element_call_async(). */
+static void forceSelectorCommit(GstElement*, gpointer user_data)
+{
+	GstPad* pad = GST_PAD(user_data);
+	gst_pad_send_event(pad, gst_event_new_custom(GST_EVENT_CUSTOM_DOWNSTREAM_OOB,
+												  gst_structure_new_empty("eServiceMP3-force-selector-commit")));
+}
+
 static GstElement* createDashPlaybackPipeline(const std::string& uri, const std::string& useragent)
 {
 	/* HW audio sink expects stream-format=raw post-aacparse. */
@@ -1042,7 +1061,10 @@ eServiceMP3::eServiceMP3(eServiceReference ref)
 	m_clear_buffers = true;
 	m_initial_start = false;
 	m_send_ev_start = true;
-	m_pending_seek_pos = 0;
+	m_pending_seek_pos = -1;
+	m_prerolled = false;
+	m_resume_pending = false;
+	m_subtitle_requested = false;
 	m_first_paused = false;
 	m_cuesheet_loaded = false; /* cuesheet CVR */
 	m_audiosink_not_running = false;
@@ -1120,15 +1142,58 @@ eServiceMP3::eServiceMP3(eServiceReference ref)
 	if (!m_ref.alternativeurl.empty())
 		filename = m_ref.alternativeurl.c_str();
 
+	// optional start position/tracks, strip them before "&suburi=" below
+	{
+		static const char* const markers[] = {"&e2startoffset=", "&e2audiotrack=", "&e2subtitletrack="};
+		std::string url = filename;
+		bool stripped = false;
+		for (int p = 0; p < 3; p++) {
+			size_t ppos = url.find(markers[p]);
+			if (ppos == std::string::npos)
+				continue;
+			size_t value_start = ppos + strlen(markers[p]);
+			size_t value_end = url.find('&', value_start);
+			std::string value = url.substr(value_start, value_end == std::string::npos ? std::string::npos : value_end - value_start);
+			url.erase(ppos, (value_end == std::string::npos ? url.size() : value_end) - ppos);
+			stripped = true;
+			switch (p) {
+				case 0:
+					m_pending_seek_pos = atoll(value.c_str());
+					if (m_pending_seek_pos < 0)
+						m_pending_seek_pos = -1;
+					else
+						m_resume_pending = true;
+					eDebug("[eServiceMP3] e2startoffset=%lld", (long long)m_pending_seek_pos);
+					break;
+				case 1:
+					m_currentAudioStream = atoi(value.c_str());
+					eDebug("[eServiceMP3] e2audiotrack=%d", m_currentAudioStream);
+					break;
+				case 2: {
+					// picked up via getCachedSubtitle(), negative = no subtitle
+					int index = atoi(value.c_str());
+					m_cachedSubtitleStream = index >= 0 ? index : -1;
+					m_subtitle_requested = true;
+					eDebug("[eServiceMP3] e2subtitletrack=%d", m_cachedSubtitleStream);
+				} break;
+			}
+		}
+		if (stripped) {
+			filename_str = url;
+			filename = filename_str.c_str();
+		}
+	}
+
 	gchar* suburi = NULL;
 
 	m_external_subtitle_path = "";
 	m_external_subtitle_language = "";
 	m_external_subtitle_extension = "";
 
-	pos = m_ref.path.find("&suburi=");
+	std::string suburi_source = filename;
+	pos = suburi_source.find("&suburi=");
 	if (pos != std::string::npos) {
-		filename_str = filename;
+		filename_str = suburi_source;
 
 		std::string suburi_str = filename_str.substr(pos + 8);
 		filename = suburi_str.c_str();
@@ -1604,6 +1669,7 @@ RESULT eServiceMP3::start() {
 
 	m_subtitles_paused = false;
 	m_base_mpegts = -1;  // Reset MPEGTS base for WebVTT at new start
+	m_prerolled = false;
 	if (m_gst_playbin) {
 		eDebug("[eServiceMP3] *** starting pipeline ****");
 		GstStateChangeReturn ret;
@@ -1861,16 +1927,12 @@ RESULT eServiceMP3::seekToImpl(pts_t to) {
 	m_last_seek_pos = to;
 	m_base_mpegts = -1;  // Reset when seeking to avoid stale base
 
-	if(m_pending_seek_pos == 0 && to > 0)
-	{
-		GstState state;
-		gst_element_get_state(m_gst_playbin, &state, NULL, 0);
-
-		if (state < GST_STATE_PAUSED) {
-			eDebug("[eServiceMP3] seekTo delayed (state=%d)", state);
-			m_pending_seek_pos = to;
-			return 0;
-		}
+	// a flushing seek before preroll stalls playback, apply it on ASYNC_DONE
+	if (!m_prerolled) {
+		eDebug("[eServiceMP3] seekTo %lld deferred until preroll", (long long)to);
+		m_pending_seek_pos = to;
+		m_seeking_or_paused = false;
+		return 0;
 	}
 
 	/* 200ms gate against seek-spam: stacked FLUSH seeks deadlock the
@@ -1906,9 +1968,36 @@ RESULT eServiceMP3::seekToImpl(pts_t to) {
 		if (!m_to_paused) {
 			m_seeking_or_paused = false;
 			m_last_seek_count = 1;
+			// seek before the first getPlayPosition(), position would stay frozen
+			if (!m_play_position_timer->isActive())
+				m_play_position_timer->start(50, false);
 		}
 	}
 	return 0;
+}
+
+/**
+ * @brief Applies a seek held back until preroll and sends evResumed.
+ */
+void eServiceMP3::applyPendingSeek() {
+	m_prerolled = true;
+	if (m_pending_seek_pos >= 0) {
+		pts_t pos = m_pending_seek_pos;
+		m_pending_seek_pos = -1;
+		if (m_is_live) {
+			eDebug("[eServiceMP3] dropping deferred seek to %lld, source is live", (long long)pos);
+		} else if (pos == 0) {
+			// already at 0, and it runs MPEG-TS into EOS
+			eDebug("[eServiceMP3] dropping deferred seek to 0, already there");
+		} else {
+			eDebug("[eServiceMP3] performing deferred seek to %lld", (long long)pos);
+			seekTo(pos);
+		}
+	}
+	if (m_resume_pending) {
+		m_resume_pending = false;
+		m_event((iPlayableService*)this, evResumed);
+	}
 }
 
 /**
@@ -2823,10 +2912,29 @@ int eServiceMP3::selectAudioStream(int i, bool skipAudioFix) {
 		m_currentAudioStream = 0;
 		return i == 0 ? 0 : -1;
 	}
+	if (i < 0 || i >= (int)m_audioStreams.size()) {
+		// eDebug("[eServiceMP3] selectAudioStream: index %d out of range (n=%d)", i, (int)m_audioStreams.size());
+		return -1;
+	}
+	/* Same input-selector pending commit as with subtitles (see
+	   applySubtitleStreamSwitch()): while the audio sink holds a streaming thread
+	   (pause, buffering, re-preroll after a seek), the flushing seek in
+	   clearBuffers() would deadlock on the audio selector. Applied on the next
+	   PAUSED->PLAYING transition instead. */
+	if (!skipAudioFix && i != m_currentAudioStream && !pipelineSettledInPlaying(m_gst_playbin)) {
+		// eDebug("[eServiceMP3] pipeline not settled in PLAYING, deferring switch to audio stream %d", i);
+		m_audio_switch_deferred = i;
+		return 0;
+	}
+	if (!skipAudioFix)
+		m_audio_switch_deferred = -1;
 	int current_audio, current_audio_orig;
 	g_object_get(m_gst_playbin, "current-audio", &current_audio_orig, NULL);
 	g_object_set(m_gst_playbin, "current-audio", i, NULL);
 	g_object_get(m_gst_playbin, "current-audio", &current_audio, NULL);
+	if (current_audio != i) {
+		current_audio = i;
+	}
 	if (current_audio == i) {
 		if (!skipAudioFix) {
 			eDebug("[eServiceMP3] switched to audio stream %d", current_audio);
@@ -3072,6 +3180,9 @@ void eServiceMP3::gstBusCall(GstMessage* msg) {
 						gst_element_set_state(m_gst_playbin, GST_STATE_PLAYING);
 						m_is_live = true;
 					}
+					// live sources do not preroll
+					if (m_is_live && !m_prerolled)
+						applyPendingSeek();
 				} break;
 				case GST_STATE_CHANGE_READY_TO_PAUSED: {
 					m_state = stRunning;
@@ -3127,6 +3238,8 @@ void eServiceMP3::gstBusCall(GstMessage* msg) {
 						   gst_element_state_change_return_get_name(ret));
 					if (!m_is_live && ret == GST_STATE_CHANGE_NO_PREROLL)
 						m_is_live = true;
+					if (m_is_live && !m_prerolled)
+						applyPendingSeek();
 					m_event((iPlayableService*)this, evGstreamerPlayStarted);
 					updateEpgCacheNowNext();
 
@@ -3142,7 +3255,23 @@ void eServiceMP3::gstBusCall(GstMessage* msg) {
 				} break;
 				case GST_STATE_CHANGE_PAUSED_TO_PLAYING: {
 					m_paused = false;
-					if (m_currentAudioStream < 0) {
+					if (m_subtitle_switch_deferred && pipelineSettledInPlaying(m_gst_playbin)) {
+						m_subtitle_switch_deferred = false;
+						/* buffers of the previous track may still be queued in the pump */
+						m_subtitle_generation++;
+						// eDebug("[eServiceMP3] applying deferred subtitle switch");
+						applySubtitleStreamSwitch();
+					}
+					if (m_audio_switch_deferred >= 0) {
+						int deferred_audio = m_audio_switch_deferred;
+						m_audio_switch_deferred = -1;
+						// eDebug("[eServiceMP3] applying deferred audio switch to stream %d", deferred_audio);
+#ifdef PASSTHROUGH_FIX
+						selectAudioStream(deferred_audio);
+#else
+						selectTrack(deferred_audio);
+#endif
+					} else if (m_currentAudioStream < 0) {
 						unsigned int autoaudio = 0;
 						int autoaudio_level = 5;
 						std::string configvalue;
@@ -3328,6 +3457,8 @@ void eServiceMP3::gstBusCall(GstMessage* msg) {
 					m_event((iPlayableService*)this, evUpdatedInfo);
 					m_send_ev_start = false;
 				}
+				if (!m_prerolled)
+					applyPendingSeek();
 				break;
 			}
 
@@ -3460,15 +3591,12 @@ void eServiceMP3::gstBusCall(GstMessage* msg) {
 					m_event((iPlayableService*)this, evUpdatedInfo);
 				}
 
-				if (m_pending_seek_pos > 0) {
-					eDebug("[eServiceMP3] Performing deferred seek to %llds", (long long)m_pending_seek_pos);
-					seekTo(m_pending_seek_pos);
-					m_pending_seek_pos = -1;
-				}
-
 			} else {
 				m_send_ev_start = true;
 			}
+
+			if (!m_prerolled)
+				applyPendingSeek();
 
 			if (m_errorInfo.missing_codec != "") {
 				if (m_errorInfo.missing_codec.find("video/") == 0 ||
@@ -3903,11 +4031,10 @@ void eServiceMP3::gstPoll(ePtr<GstMessageContainer> const& msg) {
 		case 2: {
 			GstBuffer* buffer = *((GstMessageContainer*)msg);
 			if (buffer) {
-				/* queued before the last stream switch: the buffer still holds data of
-				   the previous track and would be fed to the parser of the new one */
-				if (msg->getGeneration() != m_subtitle_generation) {
-					eDebug("[eServiceMP3] dropping stale subtitle buffer (gen %d, current %d)",
-						   msg->getGeneration(), m_subtitle_generation.load());
+				/* queued before the last stream switch, or the switch is still deferred:
+				   the buffer still holds data of the previous track and would be fed to
+				   the parser of the new one */
+				if (m_subtitle_switch_deferred || msg->getGeneration() != m_subtitle_generation) {
 					break;
 				}
 				pullSubtitle(buffer);
@@ -4434,6 +4561,11 @@ RESULT eServiceMP3::enableSubtitles(iSubtitleUser* user, struct SubtitleTrack& t
 	if (m_currentSubtitleStream == track.pid && !eSubtitleSettings::pango_autoturnon)
 		return 0;
 
+	/* the page on screen belongs to the old track and would sit there until
+	   its own timeout elapses */
+	if (m_subtitle_widget)
+		m_subtitle_widget->clearPage();
+
 	m_subtitle_generation++;
 	m_subtitle_sync_timer->stop();
 	m_dvb_subtitle_sync_timer->stop();
@@ -4450,12 +4582,77 @@ RESULT eServiceMP3::enableSubtitles(iSubtitleUser* user, struct SubtitleTrack& t
 	m_pgs_subtitle_parser->reset();
 
 	m_subtitle_widget = user;
-	g_object_set(m_gst_playbin, "current-text", m_currentSubtitleStream, NULL);
 
-	eDebug("[eServiceMP3] switched to subtitle stream %i (generation %d)", m_currentSubtitleStream,
-		   m_subtitle_generation.load());
+	/* The forced selector commit in applySubtitleStreamSwitch() cannot complete
+	   while a streaming thread sits blocked in the text sink, which it does until
+	   the pipeline is back in PLAYING (pause, buffering, re-preroll after a seek).
+	   Defer the whole switch then, not just the commit: a pending active pad left
+	   behind would deadlock the next flushing seek. */
+	if (pipelineSettledInPlaying(m_gst_playbin)) {
+		m_subtitle_switch_deferred = false;
+		applySubtitleStreamSwitch();
+	} else {
+		m_subtitle_switch_deferred = true;
+		// eDebug("[eServiceMP3] enableSubtitles: pipeline not settled in PLAYING, deferring switch to stream %i",
+		//	   m_currentSubtitleStream);
+	}
 
 	return 0;
+}
+
+/**
+ * @brief Switches playbin's text stream to m_currentSubtitleStream.
+ *
+ * Must only be called while the pipeline is settled in PLAYING, see
+ * enableSubtitles().
+ */
+void eServiceMP3::applySubtitleStreamSwitch() {
+	g_object_set(m_gst_playbin, "current-text", m_currentSubtitleStream, NULL);
+
+	/* Work around a playbin/input-selector timing bug in GStreamer >= 1.28
+	   (verified against the gstplaybin2.c and gstinputselector.c sources, and
+	   GST_DEBUG traces; up to 1.26.10 input-selector switched active-pad at once):
+	   playbin's own current-text setter (gst_play_bin_set_current_text_stream)
+	   already does g_object_set(combiner, "active-pad", sinkpad, NULL) for us,
+	   but that call, like ours would be, is a no-op beyond recording a *pending*
+	   active pad on the text input-selector -- gst_input_selector_set_active_pad
+	   only ever touches pending_active_sinkpad. The actual switch only commits
+	   lazily, the next time an event or buffer happens to pass through any of
+	   the selector's sink pads (gst_selector_pad_event/_chain check for a
+	   pending commit unconditionally, before looking at what they received).
+	   For a sparse stream (e.g. PGS, with long gaps between cues) that next
+	   occasion can be many seconds away. A seek issued in that window deadlocks
+	   the pipeline: its FLUSH_START runs the pending commit first, which takes
+	   active_sinkpad_lock as writer and waits for all readers -- but _chain
+	   holds it as reader across the push into the text sink, and a thread
+	   blocked there (PAUSED, re-preroll) is only released by that FLUSH_START.
+	   Force the commit to happen now instead of waiting for the lazy one: send
+	   the selector's sink pad for this stream a harmless custom event, which
+	   makes it run that unconditional pending-commit check immediately. The
+	   commit still has to wait for the writer lock, and subsink runs with
+	   sync=TRUE (GSTREAMER_SUBTITLE_SYNC_MODE_BUG is undefined), so even in
+	   PLAYING a reader can sit in the sink's clock wait until the cue's display
+	   time -- for external SRT/ASS up to the next cue. Hence the event is sent
+	   from a GStreamer pool thread, never from the E2 main thread. */
+	GstPad* textPad = NULL;
+	if (g_signal_lookup("get-text-pad", G_OBJECT_TYPE(m_gst_playbin)))
+		g_signal_emit_by_name(m_gst_playbin, "get-text-pad", m_currentSubtitleStream, &textPad);
+	if (textPad) {
+		// eDebug("[eServiceMP3] applySubtitleStreamSwitch: forcing input-selector active-pad commit for %s",
+		//	   GST_PAD_NAME(textPad));
+		GstElement* selector = gst_pad_get_parent_element(textPad);
+		if (selector) {
+			/* textPad's ref is handed to the async call, released by the
+			   GDestroyNotify once forceSelectorCommit has run. */
+			gst_element_call_async(selector, forceSelectorCommit, textPad, (GDestroyNotify)gst_object_unref);
+			gst_object_unref(selector);
+		} else {
+			gst_object_unref(textPad);
+		}
+	}
+
+	// eDebug("[eServiceMP3] switched to subtitle stream %i (generation %d)", m_currentSubtitleStream,
+	//	   m_subtitle_generation.load());
 }
 
 /**
@@ -4469,6 +4666,7 @@ RESULT eServiceMP3::enableSubtitles(iSubtitleUser* user, struct SubtitleTrack& t
 RESULT eServiceMP3::disableSubtitles() {
 	eDebug("[eServiceMP3] disableSubtitles");
 	m_subtitle_generation++;
+	m_subtitle_switch_deferred = false;
 	m_currentSubtitleStream = -1;
 	m_pgs_subtitle_parser->reset();
 	m_cachedSubtitleStream = m_currentSubtitleStream;
@@ -4513,7 +4711,7 @@ static int subtitleTrackType(subtype_t type) {
  */
 RESULT eServiceMP3::getCachedSubtitle(struct SubtitleTrack& track) {
 	// If autostart not active, exit
-	if (!eSubtitleSettings::pango_autoturnon)
+	if (!eSubtitleSettings::pango_autoturnon && !m_subtitle_requested)
 		return -1;
 	int autosub_level = 5;
 	std::string configvalue;
