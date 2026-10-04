@@ -47,6 +47,10 @@ class WizardStart(Wizard, ShowRemoteControl):
 		flashSize = statvfs('/')
 		flashSize = (flashSize.f_frsize * flashSize.f_blocks) // 2 ** 20
 		self.smallFlashSize = BoxInfo.getItem("SmallFlash") and flashSize < 130
+		# The native bootstrap wizard writes this marker only after the USB
+		# setup and the complete SmallBox package installation succeeded.  A
+		# Chkroot installation writes it into the new root file system.
+		self.smallBoxPrepared = BoxInfo.getItem("SmallBoxWizard")
 		self.swapExists = "/dev/" in "".join(fileReadLines("/proc/swaps", default=[], source=MODULE_NAME))
 		self["wizard"] = Pixmap()
 		self["HelpWindow"] = Pixmap()
@@ -71,6 +75,12 @@ class WizardStart(Wizard, ShowRemoteControl):
 		configfile.save()
 
 	def purgeLocales(self):
+		# SmallBox images deliberately contain only English, German and French.
+		# Avoid an unnecessary opkg removal pass (and its high temporary memory
+		# use) during the first-run wizard.
+		if BoxInfo.getItem("SmallFlash"):
+			self.purgeLocalesDone()
+			return
 		packages = international.getPurgablePackages()
 		if packages:
 			Processing.instance.setDescription(_("Please wait while unused locales/languages are purged..."))
