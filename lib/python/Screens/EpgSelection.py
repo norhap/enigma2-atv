@@ -307,10 +307,10 @@ class EPGSelectionBase(Screen):
 	def addEditAutoTimer(self):
 		self.closeEventViewDialog()
 		event, service = self[f"list{self.activeList}"].getCurrent()[:2]
-		if event is None:
+		if event is None or service is None:
 			return
-		timer = self.session.nav.RecordTimer.getTimerForEvent(service, event)
-		if timer is not None and hasattr(timer, 'autoTimerId') and timer.autoTimerId:
+		timer = self.getRecordEvent(service.ref.toCompareString(), event)
+		if timer is not None and getattr(timer, "autoTimerId", None):
 			self._editAutoTimer(timer)
 		else:
 			self.addAutoTimer()
@@ -1590,9 +1590,11 @@ class EPGSelectionGrid(EPGSelectionBase, EPGBouquetSelection, EPGServiceZap, EPG
 		self.setTitle(self.getCurrentBouquetName())
 		self["list"].recalcEntrySize()
 		serviceref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
-		self["list"].fillGraphEPG(self.services, self.ask_time)
+		startService = self.getStartService()
+		# Start on the page that contains the start service, moveToService only finds rows of the current page.
+		self["list"].fillGraphEPG(self.services, self.ask_time, current_service=startService)
 		self["list"].setCurrentlyPlaying(serviceref)
-		self["list"].moveToService(self.getStartService())
+		self["list"].moveToService(startService)
 		self["list"].fillGraphEPG(None, self.ask_time, True)
 		self["list"].setShowServiceMode(self.epgConfig.servicetitle_mode.value)
 		if (self.type == EPG_TYPE_GRAPH and "channel1" in self.epgConfig.startmode.value) or self.selectFirstService():
@@ -1666,8 +1668,8 @@ class EPGSelectionGrid(EPGSelectionBase, EPGBouquetSelection, EPGServiceZap, EPG
 			if self.ask_time + 3600 < time():
 				self.ask_time += 86400
 		self["list"].resetOffset()
-		self["list"].fillGraphEPG(self.services, self.ask_time)
 		serviceref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
+		self["list"].fillGraphEPG(self.services, self.ask_time, current_service=serviceref)
 		self["list"].fillGraphEPG(None, self.ask_time, True)
 		self["list"].moveToService(serviceref)
 		name = self.getCurrentBouquetName()
