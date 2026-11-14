@@ -135,10 +135,11 @@ void eDVBServicePMTHandler::channelStateChanged(iDVBChannel *channel)
 
 			if (!m_service || m_service->usePMT())
 			{
-				if (m_pmt_pid == -1)
-					m_PAT.begin(eApp, eDVBPATSpec(), m_demux);
-				else
-					m_PMT.begin(eApp, eDVBPMTSpec(m_pmt_pid, m_reference.getServiceID().get()), m_demux);
+				int result = m_pmt_pid == -1
+					? m_PAT.begin(eApp, eDVBPATSpec(), m_demux)
+					: m_PMT.begin(eApp, eDVBPMTSpec(m_pmt_pid, m_reference.getServiceID().get()), m_demux);
+				if (result && !sendServiceEvent(m_pmt_pid == -1 ? eventNoPAT : eventNoPMT))
+					return;
 			}
 
 			serviceEvent(eventTuned);
@@ -193,6 +194,21 @@ void eDVBServicePMTHandler::registerCAService()
 		demuxes[1] = demuxes[0];
 	const eServiceReferenceDVB reference = eServiceReferenceDVB(m_reference.toReferenceString());
 	eDVBCAHandler::getInstance()->registerService(reference, adapterid, demuxes, (int)m_service_type, m_ca_servicePtr);
+}
+
+int eDVBServicePMTHandler::retryProgramInfo()
+{
+	if (!m_demux || m_pmt_ready)
+		return -1;
+
+	// Reopen only this handler's section readers, without retuning the shared channel.
+	m_no_pat_entry_delay->stop();
+	m_PMT.stop();
+	m_PAT.stop();
+	m_have_cached_program = false;
+	if (m_pmt_pid != -1)
+		return m_PMT.begin(eApp, eDVBPMTSpec(m_pmt_pid, m_reference.getServiceID().get()), m_demux);
+	return m_PAT.begin(eApp, eDVBPATSpec(), m_demux);
 }
 
 void eDVBServicePMTHandler::PMTready(int error)
@@ -328,7 +344,8 @@ void eDVBServicePMTHandler::PATready(int)
 			if(eDVBServicePMTHandler::m_debug)
 				eDebug("[eDVBServicePMTHandler] use pmtpid %04x for service_id %04x", pmtpid, m_reference.getServiceID().get());
 			m_no_pat_entry_delay->stop();
-			m_PMT.begin(eApp, eDVBPMTSpec(pmtpid, m_reference.getServiceID().get()), m_demux);
+			if (m_PMT.begin(eApp, eDVBPMTSpec(pmtpid, m_reference.getServiceID().get()), m_demux))
+				serviceEvent(eventNoPMT);
 		}
 	} else
 		serviceEvent(eventNoPAT);
@@ -967,7 +984,13 @@ int eDVBServicePMTHandler::getProgramInfo(program &program)
 		program.isCached = true;
 
 		if ( vpidtype == -1 )
-			vpidtype = videoStream::vtMPEG2;
+		{
+			/* Infer HEVC only when the PID cache has no video codec. An explicit
+			 * cached codec or the current PMT must take precedence over the service type. */
+			const int serviceType = m_reference.getServiceType();
+			vpidtype = (serviceType == eServiceReferenceDVB::nvecTv || serviceType == eServiceReferenceDVB::nvecTv20)
+				? videoStream::vtH265_HEVC : videoStream::vtMPEG2;
+		}
 		if ( cached_vpid != -1 )
 		{
 			videoStream s;
@@ -1015,27 +1038,6 @@ int eDVBServicePMTHandler::getProgramInfo(program &program)
 		if (cnt)
 		{
 			ret = 0;
-		}
-	}
-
-	/*
-	 * A freshly tuned service can initially be built from the lamedb PID cache.
-	 * When cVTYPE is absent, the legacy cache path labels the video as MPEG-2.
-	 * That is not valid for DVB service types 0x1f/0x20, which explicitly mean
-	 * HEVC.  Normalize the stream type before it reaches eTSMPEGDecoder so the
-	 * decoder and the HEVC HDR fallback are started with the correct codec.
-	 */
-	const int service_type = m_reference.getServiceType();
-	if (service_type == eServiceReferenceDVB::nvecTv || service_type == eServiceReferenceDVB::nvecTv20)
-	{
-		for (std::vector<videoStream>::iterator stream = program.videoStreams.begin(); stream != program.videoStreams.end(); ++stream)
-		{
-			if (stream->type != videoStream::vtH265_HEVC)
-			{
-				eDebug("[eDVBServicePMTHandler] service type 0x%02x forces video PID %04x type %d -> HEVC",
-					service_type, stream->pid, stream->type);
-				stream->type = videoStream::vtH265_HEVC;
-			}
 		}
 	}
 
@@ -1355,6 +1357,9 @@ int eDVBServicePMTHandler::tuneExt(eServiceReferenceDVB &ref, ePtr<iTsSource> &s
 void eDVBServicePMTHandler::free()
 {
 	++m_free_count;
+	m_no_pat_entry_delay->stop();
+	m_channelStateChanged_connection = 0;
+	m_channelEvent_connection = 0;
 	// Disconnect before releasing the scan: a pending SDT timeout can otherwise
 	// call SDTScanEvent after the service has already released m_dvb_scan.
 	m_scan_event_connection = 0;
@@ -1393,10 +1398,17 @@ void eDVBServicePMTHandler::free()
 	m_PMT.stop();
 	m_PAT.stop();
 	m_service = 0;
+	// Releasing a frontend can synchronously query this handler from Python.
+	// Keep the channels alive until all handler references have been cleared.
+	ePtr<iDVBChannel> channel(m_channel);
+	ePtr<iDVBChannel> relayChannel(m_sr_channel);
+	ePtr<iDVBPVRChannel> pvrChannel(m_pvr_channel);
 	m_channel = 0;
 	m_sr_channel = 0;
 	m_pvr_channel = 0;
 	m_demux = 0;
+	m_pmt_ready = false;
+	m_have_cached_program = false;
 }
 
 void eDVBServicePMTHandler::addCaHandler()

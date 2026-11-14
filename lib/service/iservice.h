@@ -15,6 +15,8 @@ class eServiceEvent;
 class eServiceReference
 {
 public:
+	typedef std::string PathString;
+	typedef std::string DisplayName;
 	enum
 	{
 		idServiceIsScrambled  = 0x0100,				//  256  Added to normal id to indicate scrambling
@@ -71,7 +73,7 @@ public:
 	bool isStreamRelay = false;
 #endif
 	std::string getPath() const { return path; }
-	void setPath( const std::string &n ) { path=n; }
+	void setPath(const PathString &n) { path=n; }
 	void setAlternativeUrl( const std::string &n, bool isSR = false ) { alternativeurl=n; isStreamRelay=isSR; }
 	void setSubUri( const std::string &n ) { suburi=n; }
 	bool getIsStreamRelay() const { return isStreamRelay; }
@@ -112,7 +114,7 @@ public:
 #endif
 	std::string getName() const { return name; }
 	std::string getProvider() const { return prov; }
-	void setName( const std::string &n ) { name=n; }
+	void setName(const DisplayName &n) { name=n; }
 	void setProvider( const std::string &s ) { prov=s; }
 	int getChannelNum() const { return number; }
 	void setChannelNum(const int n) { number = n; }
@@ -174,7 +176,7 @@ public:
 		data[4]=data4;
 		number = 0;
 	}
-	eServiceReference(int type, int flags, const std::string &path)
+	eServiceReference(int type, int flags, const PathString &path)
 		: type(type), flags(flags), path(path)
 	{
 		memset(data, 0, sizeof(data));
@@ -183,7 +185,7 @@ public:
 #ifdef SWIG
 	eServiceReference(const eServiceReference &ref);
 #endif
-	eServiceReference(const std::string &string);
+	eServiceReference(const PathString &string);
 	std::string toString() const;
 	std::string toCompareString() const;
 	std::string toReferenceString() const;
@@ -442,7 +444,10 @@ public:
 		sDABDynamicLabel = sUser + 10,
 		sDABPTY = sUser + 11,
 		sDABPTYTable = sUser + 12,
-		sDABSampleRate = sUser + 13 /* source audio sample rate in Hz, after SBR */
+		sDABSampleRate = sUser + 13, /* source audio sample rate in Hz, after SBR */
+		sDABSubChId = sUser + 14,
+		sDABCuStart = sUser + 15, /* first capacity unit of the selected audio subchannel */
+		sDABCuSize = sUser + 16 /* number of capacity units of the selected audio subchannel */
 	};
 	enum {
 		resNA = -1,
@@ -706,6 +711,13 @@ public:
 	virtual std::string getTimeshiftServiceData() { return ""; }
 	// RAM sources have no recording file and must bypass disk PTS bookkeeping.
 	virtual bool isTimeshiftMemory() { return false; }
+	// Optional, bounded RAM-buffer repositioning for external-audio synchronization.
+	// Does not enable general seeking or change ordinary timeshift recovery.
+	virtual RESULT seekTimeshiftDelay(int /*milliseconds*/) { return -1; }
+	// Opt-in recovery for plugin-owned external-audio synchronization buffers.
+	virtual RESULT setTimeshiftSyncEnabled(bool /*enabled*/) { return -1; }
+	// Incoming and decoded timestamps in the same 90 kHz stream clock domain.
+	virtual RESULT getTimeshiftDelay(pts_t &SWIG_NAMED_OUTPUT(delay)) { delay = 0; return -1; }
 };
 SWIG_TEMPLATE_TYPEDEF(ePtr<iTimeshiftService>, iTimeshiftServicePtr);
 
@@ -1097,6 +1109,7 @@ public:
 		errMisconfiguration = -256,
 		errNoResources = -257,
 		errNoCiConnected = -258,
+		errNoProgramInfo = -259,
 	};
 };
 

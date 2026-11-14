@@ -3,6 +3,7 @@
 #include <lib/base/modelinformation.h>
 #include <string>
 #include <memory>
+#include <utility>
 #include <lib/service/servicedvb.h>
 #include <lib/service/service.h>
 #include <lib/hbbtv/hbbtv.h>
@@ -881,7 +882,7 @@ RESULT eStaticServiceDVBPVRInformation::getEvent(const eServiceReference &ref, e
 			equivalentref.path.clear();
 			return eEPGCache::getInstance()->lookupEventTime(equivalentref, start_time, evt);
 		}
-		else
+		else if (ref.path.length() >= 2)
 		{
 			ePtr<eServiceEvent> event = new eServiceEvent;
 			std::string filename = ref.path;
@@ -1282,11 +1283,19 @@ RESULT eDVBServiceList::getNext(eServiceReference &ref)
 	if (!m_query)
 		return -1;
 
-	return m_query->getNextResult((eServiceReferenceDVB&)ref);
+	eServiceReferenceDVB dvbRef;
+	RESULT result = m_query->getNextResult(dvbRef);
+	if (!result)
+		ref = std::move(dvbRef);
+	else
+		ref.type = eServiceReference::idInvalid;
+	return result;
 }
 
 RESULT eDVBServiceList::startEdit(ePtr<iMutableServiceList> &res)
 {
+	res = 0;
+	m_edit_db = 0;
 	if (m_parent.flags & eServiceReference::canDescent) // bouquet
 	{
 		ePtr<iDVBChannelList> db;
@@ -1295,50 +1304,64 @@ RESULT eDVBServiceList::startEdit(ePtr<iMutableServiceList> &res)
 		if (eDVBResourceManager::getInstance(resm) || resm->getChannelList(db))
 			return -1;
 
-		if (db->getBouquet(m_parent, m_bouquet) != 0)
+		eBouquet *bouquet = nullptr;
+		if (db->getBouquet(m_parent, bouquet) != 0 || !bouquet)
 			return -1;
 
+		m_edit_db = db;
 		res = this;
 
 		return 0;
 	}
-	res = 0;
 	return -1;
+}
+
+eBouquet *eDVBServiceList::getEditBouquet()
+{
+	eBouquet *bouquet = nullptr;
+	if (m_edit_db && !m_edit_db->getBouquet(m_parent, bouquet))
+		return bouquet;
+	return nullptr;
 }
 
 RESULT eDVBServiceList::addService(eServiceReference &ref, eServiceReference before)
 {
-	if (!m_bouquet)
+	eBouquet *bouquet = getEditBouquet();
+	if (!bouquet)
 		return -1;
-	return m_bouquet->addService(ref, before);
+	return bouquet->addService(ref, before);
 }
 
 RESULT eDVBServiceList::removeService(eServiceReference &ref, bool renameBouquet)
 {
-	if (!m_bouquet)
+	eBouquet *bouquet = getEditBouquet();
+	if (!bouquet)
 		return -1;
-	return m_bouquet->removeService(ref, renameBouquet);
+	return bouquet->removeService(ref, renameBouquet);
 }
 
 RESULT eDVBServiceList::moveService(eServiceReference &ref, int pos)
 {
-	if (!m_bouquet)
+	eBouquet *bouquet = getEditBouquet();
+	if (!bouquet)
 		return -1;
-	return m_bouquet->moveService(ref, pos);
+	return bouquet->moveService(ref, pos);
 }
 
 RESULT eDVBServiceList::flushChanges()
 {
-	if (!m_bouquet)
+	eBouquet *bouquet = getEditBouquet();
+	if (!bouquet)
 		return -1;
-	return m_bouquet->flushChanges();
+	return bouquet->flushChanges();
 }
 
 RESULT eDVBServiceList::setListName(const std::string &name)
 {
-	if (!m_bouquet)
+	eBouquet *bouquet = getEditBouquet();
+	if (!bouquet)
 		return -1;
-	return m_bouquet->setListName(name);
+	return bouquet->setListName(name);
 }
 
 RESULT eServiceFactoryDVB::play(const eServiceReference &ref, ePtr<iPlayableService> &ptr)
@@ -1843,12 +1866,28 @@ void eDVBServicePlay::resetRecoveryState() {
 	m_stream_corruption_detected = false;
 	m_recovery_phase = RecoveryPhase::Waiting;
 	m_recovery_check_position = 0;
+	m_timeshift_sync_playback_pts = -1;
+	m_timeshift_sync_live_pts = -1;
 	if (m_precise_recovery_timer->isActive())
 		m_precise_recovery_timer->stop();
 }
 
 bool eDVBServicePlay::getTimeshiftRecoveryDelay(pts_t &delay, pts_t &position)
 {
+	if (m_timeshift_sync_enabled)
+	{
+		pts_t live = 0;
+		if (!getTimeshiftSyncPosition(live, position))
+			return false;
+		// Preserve the decoder timestamp while paused, including on drivers
+		// which continue advancing getPTS() after pause().
+		if (m_timeshift_sync_playback_pts < 0)
+			m_timeshift_sync_playback_pts = position;
+		if (m_timeshift_sync_live_pts < 0)
+			m_timeshift_sync_live_pts = live;
+		delay = (live - position) & 0x1FFFFFFFFLL;
+		return true;
+	}
 	pts_t length = 0;
 	// Both values use the recording timeline. getCurrentPCR() returns a raw
 	// stream timestamp and must not be compared with a relative play position.
@@ -1856,6 +1895,50 @@ bool eDVBServicePlay::getTimeshiftRecoveryDelay(pts_t &delay, pts_t &position)
 		return false;
 	delay = length - position;
 	return true;
+}
+
+RESULT eDVBServicePlay::setTimeshiftSyncEnabled(bool enabled)
+{
+	if (enabled && !m_timeshift_enabled)
+		return -1;
+	if (m_timeshift_sync_enabled != enabled)
+	{
+		// Release only a pause owned by recovery, never a user pause.
+		if (m_stream_corruption_detected && m_precise_recovery_timer->isActive() && m_is_paused)
+			unpause();
+		resetRecoveryState();
+		m_timeshift_sync_enabled = enabled;
+	}
+	return 0;
+}
+
+bool eDVBServicePlay::getTimeshiftSyncPosition(pts_t &live, pts_t &playback)
+{
+	if (!m_timeshift_active || !m_record || !m_decoder)
+		return false;
+	live = playback = -1;
+	// Despite its name, getCurrentPCR() returns the timing PID's latest PTS.
+	// Match video to video (or audio on radio), not a normalized seek position.
+	if (m_record->getCurrentPCR(live) || live < 0)
+		return false;
+	if (m_stream_corruption_detected && m_timeshift_sync_playback_pts >= 0)
+		playback = m_timeshift_sync_playback_pts;
+	else if (m_decoder->getPTS(m_have_video_pid ? 1 : 2, playback) || playback < 0)
+		return false;
+	live &= 0x1FFFFFFFFLL;
+	playback &= 0x1FFFFFFFFLL;
+	// Reject a decoder ahead of the input or an unrelated clock reset.
+	return ((live - playback) & 0x1FFFFFFFFLL) < 0x100000000LL;
+}
+
+RESULT eDVBServicePlay::getTimeshiftDelay(pts_t &delay)
+{
+	pts_t live = 0, playback = 0;
+	delay = 0;
+	if (!getTimeshiftSyncPosition(live, playback))
+		return -1;
+	delay = (live - playback) & 0x1FFFFFFFFLL;
+	return 0;
 }
 
 void eDVBServicePlay::handleEofRecovery() {
@@ -1874,6 +1957,8 @@ void eDVBServicePlay::handleEofRecovery() {
 	m_original_timeshift_delay = 0;
 	m_recovery_phase = RecoveryPhase::Waiting;
 	m_recovery_check_position = 0;
+	m_timeshift_sync_playback_pts = -1;
+	m_timeshift_sync_live_pts = -1;
 	/* Take the delay fingerprint BEFORE pausing: pause() freezes the decoder
 	 * clock, and a getPlayPosition() taken after it would read a stale or
 	 * zero PTS, corrupting the fingerprint. */
@@ -1919,7 +2004,7 @@ void eDVBServicePlay::startPreciseRecoveryCheck() {
 		}
 	}
 
-	int recovery_delay_ms = eSimpleConfig::getInt("config.timeshift.recoveryBufferDelay", 300);
+	int recovery_delay_ms = m_timeshift_sync_enabled ? 0 : eSimpleConfig::getInt("config.timeshift.recoveryBufferDelay", 300);
 	const pts_t safety_buffer_pts = recovery_delay_ms * 90;
 
 	bool recovery_complete = false;
@@ -1932,9 +2017,17 @@ void eDVBServicePlay::startPreciseRecoveryCheck() {
 		}
 
 		pts_t final_target_delay = m_original_timeshift_delay + safety_buffer_pts;
+		if (m_timeshift_sync_enabled)
+		{
+			pts_t live = 0, playback = 0;
+			// A stale timestamp already satisfies the old delay at fault onset.
+			// Wait for incoming data before resuming, even without an extra reserve.
+			if (!getTimeshiftSyncPosition(live, playback) || live == m_timeshift_sync_live_pts)
+				return;
+		}
 
 #ifdef ENABLE_TIMESHIFT_HW_LATENCY_FIX
-		int hw_latency_ms = eSimpleConfig::getInt("config.timeshift.hwLatencyCorrection", 2000);
+		int hw_latency_ms = m_timeshift_sync_enabled ? 0 : eSimpleConfig::getInt("config.timeshift.hwLatencyCorrection", 2000);
 		if (hw_latency_ms < 0)
 			hw_latency_ms = 0;
 		if (hw_latency_ms > 5000)
@@ -1975,7 +2068,9 @@ void eDVBServicePlay::startPreciseRecoveryCheck() {
 	}
 
 	if (recovery_complete) {
-		const bool check_discontinuity = m_recovery_phase == RecoveryPhase::Waiting;
+		// External-audio synchronization has one recovery owner. Indexed-length
+		// jitter must not start a second pause after playback has resumed.
+		const bool check_discontinuity = !m_timeshift_sync_enabled && m_recovery_phase == RecoveryPhase::Waiting;
 		m_recovery_check_position = position + current_delay;
 		m_stream_corruption_detected = false;
 
@@ -2448,6 +2543,8 @@ RESULT eDVBServicePlay::getLength(pts_t &len)
 RESULT eDVBServicePlay::pause()
 {
 	eDebug("[eDVBServicePlay] pause");
+	if (m_timeshift_sync_enabled && m_stream_corruption_detected)
+		resetRecoveryState();
 	setFastForward_internal(0, m_slowmotion || m_fastforward > 1 || m_skipmode != 0);
 	// Check SoftDecoder first (only if session is active AND not in timeshift playback)
 	// During timeshift playback, we use the normal decoder for the timeshift file
@@ -3803,6 +3900,7 @@ RESULT eDVBServicePlay::stopTimeshift(bool swToLive)
 
 	// Reset the recovery system state for the next timeshift session.
 	resetRecoveryState();
+	m_timeshift_sync_enabled = false;
 
 	// IMPORTANT: Stop the timeshift recorder BEFORE switching to live!
 	// Otherwise the SoftDecoder starts and allocates resources, then the old
@@ -3834,7 +3932,12 @@ RESULT eDVBServicePlay::stopTimeshift(bool swToLive)
 	}
 	// A close failure also requires live playback before leases are released.
 	if (swToLive || result)
+	{
 		switchToLive();
+		// A full stop may remove this directory asynchronously. A new session
+		// must use its own directory instead of reusing the pending cleanup path.
+		m_timeshift_directory.clear();
+	}
 
 	ofstream fileout;
 	fileout.open("/proc/stb/lcd/symbol_timeshift");

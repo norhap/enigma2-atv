@@ -20,6 +20,7 @@
 
 class eDABDecoder;
 class eDABSDRWorker;
+typedef struct _GstBuffer GstBuffer;
 typedef struct _GstElement GstElement;
 
 enum { DAB_MAX_SCANNED_SERVICES = 64 };
@@ -86,6 +87,9 @@ struct eDABWorkerStats
 	int mscQuality;
 	int programmeType = -1;
 	int programmeTypeTable = -1;
+	int subchannelId = -1;
+	int capacityUnitStart = -1;
+	int capacityUnitSize = -1;
 	bool rfSynced;
 	bool serviceFound;
 	bool dabplus;
@@ -263,6 +267,7 @@ private:
 	static bool sinkAcceptsLOAS(const char *factoryName);
 	bool startAudioPipeline(bool loasInput = false, bool pcmInput = false, bool mp2Input = false);
 	void stopAudioPipeline();
+	void setAudioTimestamp(GstBuffer *buffer, uint64_t durationNs);
 	void pushAudio(const uint8_t *data, size_t length, uint64_t durationNs, uint8_t config);
 	void pushMP2(const uint8_t *data, size_t length, uint64_t durationNs);
 	void pushSDRAudio(const uint8_t *data, size_t length, uint64_t durationNs, bool dabplus);

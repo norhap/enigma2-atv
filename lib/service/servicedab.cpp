@@ -47,6 +47,16 @@ constexpr uint64_t LOAS_PROBE_OVERRUNS = 3;
 constexpr uint16_t DAB_LIVE_EPG_EVENT_ID = 0xdab0;
 constexpr int DAB_LIVE_EPG_WINDOW = 4 * 60 * 60;
 
+void releaseDVBParent(ePtr<iPlayableService> &service, ePtr<eConnection> &connection, bool stop)
+{
+	// Releasing the tuner can synchronously query frontendInfo() on this DAB service.
+	ePtr<iPlayableService> parent = service;
+	service = nullptr;
+	connection = nullptr;
+	if (stop && parent)
+		parent->stop();
+}
+
 enum class DABAudioMode
 {
 	Automatic,
@@ -559,6 +569,10 @@ void eDABWorker::updateDecoderStats()
 	m_stats.dlPlusProgrammeHost[sizeof(m_stats.dlPlusProgrammeHost) - 1] = 0;
 	if (m_stats.serviceRevision != m_decoder->serviceRevision())
 	{
+		// These fields change with the FIC; reuse the existing metadata update.
+		m_stats.subchannelId = m_decoder->subchannelId();
+		m_stats.capacityUnitStart = m_decoder->capacityUnitStart();
+		m_stats.capacityUnitSize = m_decoder->capacityUnitSize();
 		m_publish_pending = true;  // A scan waits for this to stop changing.
 		const std::vector<eDABDecoder::ServiceInfo> services = m_decoder->serviceList();
 		m_stats.serviceRevision = m_decoder->serviceRevision();
@@ -754,6 +768,15 @@ private:
 				value += character;
 		}
 		return std::string();
+	}
+
+	static int jsonInteger(const std::string &line, const char *key, int maximum)
+	{
+		const std::string text = jsonValue(line, key);
+		if (text.empty() || text.size() > 3 || text.find_first_not_of("0123456789") != std::string::npos)
+			return -1;
+		const int value = atoi(text.c_str());
+		return value <= maximum ? value : -1;
 	}
 
 	void thread() override
@@ -1269,6 +1292,9 @@ private:
 			}
 			return;
 		}
+		const std::string selectedService = jsonValue(line, "serviceId");
+		if (!selectedService.empty() && selectedService != std::to_string(m_service_id))
+			return;
 		const std::string bitrate = jsonValue(line, "bitrate");
 		// Numeric FIG metadata is separate from legacy programType/genre text.
 		// Empty/malformed values mean unavailable, never PTY zero.
@@ -1276,14 +1302,8 @@ private:
 		const std::string ptyTable = jsonValue(line, "ptyTable");
 		if (!pty.empty() || !ptyTable.empty())
 		{
-			auto parseCode = [](const std::string &text, int maximum) {
-				if (text.empty() || text.find_first_not_of("0123456789") != std::string::npos || text.size() > 3)
-					return -1;
-				const int value = atoi(text.c_str());
-				return value <= maximum ? value : -1;
-			};
-			m_stats.programmeType = parseCode(pty, 31);
-			m_stats.programmeTypeTable = parseCode(ptyTable, 255);
+			m_stats.programmeType = jsonInteger(line, "pty", 31);
+			m_stats.programmeTypeTable = jsonInteger(line, "ptyTable", 255);
 			m_publish_pending = true;
 		}
 		const std::string dabType = jsonValue(line, "dabType");
@@ -1295,6 +1315,15 @@ private:
 			m_stats.bitrate = atoi(bitrate.c_str());
 			m_stats.dabplus = dabType == "DAB+";
 			m_stats.serviceFound = true;
+			m_stats.subchannelId = jsonInteger(line, "subchannelId", 63);
+			m_stats.capacityUnitStart = jsonInteger(line, "capacityUnitStart", 863);
+			m_stats.capacityUnitSize = jsonInteger(line, "capacityUnitSize", 864);
+			if (m_stats.capacityUnitStart < 0 || m_stats.capacityUnitSize <= 0 ||
+				m_stats.capacityUnitStart + m_stats.capacityUnitSize > 864)
+			{
+				m_stats.capacityUnitStart = -1;
+				m_stats.capacityUnitSize = -1;
+			}
 			snprintf(m_stats.language, sizeof(m_stats.language), "%s", language.c_str());
 			snprintf(m_stats.programType, sizeof(m_stats.programType), "%s", programType.c_str());
 			snprintf(m_stats.protection, sizeof(m_stats.protection), "%s", protection.c_str());
@@ -1753,8 +1782,7 @@ bool eServiceDABRecord::prepareParent()
 	m_event(this, evTuneStart);
 	if (m_parent->start())
 	{
-		m_parent_event_connection = nullptr;
-		m_parent = nullptr;
+		releaseDVBParent(m_parent, m_parent_event_connection, false);
 		return false;
 	}
 	return true;
@@ -1902,10 +1930,7 @@ RESULT eServiceDABRecord::stop()
 	m_state = stateIdle;
 	stopRTLSDR();
 	stopTap();
-	if (m_parent)
-		m_parent->stop();
-	m_parent_event_connection = nullptr;
-	m_parent = nullptr;
+	releaseDVBParent(m_parent, m_parent_event_connection, true);
 	if (m_file_fd >= 0)
 	{
 		::close(m_file_fd);
@@ -2368,8 +2393,7 @@ RESULT eServiceDAB::start()
 	if (result)
 	{
 		m_running = false;
-		m_parent_event_connection = nullptr;
-		m_parent = nullptr;
+		releaseDVBParent(m_parent, m_parent_event_connection, false);
 		m_event(this, evTuneFailed);
 	}
 	return result;
@@ -2382,10 +2406,7 @@ RESULT eServiceDAB::stop()
 	m_running = false;
 	stopRTLSDR();
 	stopTap();
-	if (m_parent)
-		m_parent->stop();
-	m_parent_event_connection = nullptr;
-	m_parent = nullptr;
+	releaseDVBParent(m_parent, m_parent_event_connection, true);
 	m_event(this, evStopped);
 	return 0;
 }
@@ -2721,6 +2742,9 @@ void eServiceDAB::workerMessage(const eDABWorkerStats &stats)
 	const bool epgChanged = m_stats.spiRevision != stats.spiRevision;
 	const bool logoChanged = m_stats.logoRevision != stats.logoRevision;
 	const bool radioMetaChanged = m_stats.serviceFound != stats.serviceFound ||
+		m_stats.subchannelId != stats.subchannelId ||
+		m_stats.capacityUnitStart != stats.capacityUnitStart ||
+		m_stats.capacityUnitSize != stats.capacityUnitSize ||
 		m_stats.audioFormat != stats.audioFormat ||
 		m_stats.dabplus != stats.dabplus || m_stats.bitrate != stats.bitrate ||
 		strcmp(m_stats.serviceLabel, stats.serviceLabel) != 0 ||
@@ -2941,11 +2965,18 @@ bool eServiceDAB::startAudioPipeline(bool loasInput, bool pcmInput, bool mp2Inpu
 	m_audio_input_pcm = pcmInput;
 	m_audio_input_mp2 = mp2Input;
 	m_audio_loas = !mp2Input && !pcmCompatibility && !loasSinkRejected() && sinkAcceptsLOAS(hardwareSink);
+	bool alsaPCM = false;
+#if defined(HWOSMIO4K) || defined(HWOSMIO4KPLUS)
+	/* The Edision driver accepts PCM through ALSA; raw PCM sent to audio0
+	 * remains silent. Keep compressed MPEG audio on the DVB decoder. */
+	alsaPCM = !m_audio_loas && !mp2Input;
+#endif
+	const char *outputSink = alsaPCM ? "alsasink" : hardwareSink;
 	if (mp2Input)
 		eDABDebug("[eServiceDAB] selected MPEG Layer II hardware decode via '%s'", hardwareSink);
 	else
 		eDABDebug("[eServiceDAB] selected %s AAC decode via '%s' (mode=%s, pcmCompatibility=%d)",
-			m_audio_loas ? "hardware" : "software", hardwareSink,
+			m_audio_loas ? "hardware" : "software", outputSink,
 			audioMode == DABAudioMode::HardwareAAC ? "aac" :
 				audioMode == DABAudioMode::SoftwarePCM ? "pcm" : "auto",
 			pcmCompatibility);
@@ -2953,7 +2984,12 @@ bool eServiceDAB::startAudioPipeline(bool loasInput, bool pcmInput, bool mp2Inpu
 	description += pcmInput ? "false " : "true ";
 	description +=
 		"format=time do-timestamp=false block=false "
-		"! queue name=dabqueue min-threshold-buffers=24 max-size-buffers=256 "
+		"! queue name=dabqueue ";
+	/* Timed frames need the same reserve at every AAC rate. Unlike a buffer
+	 * count, a time threshold is also included in GStreamer's latency query.
+	 * RTL-SDR LOAS is timestamped by aacparse downstream of this queue. */
+	description += m_audio_input_loas ? "min-threshold-buffers=24 " : "min-threshold-time=480000000 ";
+	description += "max-size-buffers=256 "
 		"max-size-bytes=1048576 max-size-time=5000000000 leaky=downstream ! ";
 	if (pcmInput)
 	{
@@ -2970,9 +3006,9 @@ bool eServiceDAB::startAudioPipeline(bool loasInput, bool pcmInput, bool mp2Inpu
 	}
 	else if (!m_audio_loas)
 		description += "faad ! audioconvert ! audioresample ! ";
-	if (!m_audio_loas && !pcmInput && pcmCompatibility)
+	if (!m_audio_loas && !pcmInput && (pcmCompatibility || alsaPCM))
 		description += "audio/x-raw,format=S16LE,rate=48000,channels=2 ! ";
-	description += hardwareSink;
+	description += outputSink;
 	description += " name=dabaudiosink";
 	GError *error = nullptr;
 	eDABDebug("[eServiceDAB] creating GStreamer pipeline: %s", description.c_str());
@@ -3035,12 +3071,18 @@ bool eServiceDAB::startAudioPipeline(bool loasInput, bool pcmInput, bool mp2Inpu
 	GstElement *audioSink = gst_bin_get_by_name(GST_BIN(m_audio_pipeline), "dabaudiosink");
 	if (audioSink)
 	{
+		if (alsaPCM)
+			/* ALSA paces the audio-only stream through its playback buffer. */
+			g_object_set(audioSink, "sync", FALSE, "async", FALSE, nullptr);
 		if (g_object_class_find_property(G_OBJECT_GET_CLASS(audioSink), "e2-sync"))
 		{
-			/* Match eServiceMP3's audio-only setup. Compatibility sinks must
-			 * be clocked by GStreamer when software-decoded PCM is used. */
+			/* Match eServiceMP3's audio-only setup unless the platform needs
+			 * driver-paced PCM instead of GStreamer clock synchronization. */
 			bool sinkSync = pcmCompatibility;
-#ifdef DREAMNEXTGEN
+#if defined(DREAMBOX) && defined(__MIPSEL__)
+			/* Dreambox MIPS drivers pace PCM, as in automatic mode. */
+			sinkSync = false;
+#elif defined(DREAMNEXTGEN)
 			sinkSync = true;
 #endif
 			g_object_set(audioSink, "e2-sync", sinkSync, nullptr);
@@ -3180,6 +3222,28 @@ void eServiceDAB::setAudioCaps(uint8_t config)
 		coreSampleRateTable[formatIndex], coreChannels, sbr, ps);
 }
 
+void eServiceDAB::setAudioTimestamp(GstBuffer *buffer, uint64_t durationNs)
+{
+	if (!m_audio_next_pts && !m_audio_input_pcm)
+	{
+		/* The live pipeline starts before the ensemble has delivered audio.
+		 * Start its media timeline at the first frame, not at pipeline creation. */
+		GstClock *clock = gst_element_get_clock(m_audio_pipeline);
+		if (clock)
+		{
+			const GstClockTime now = gst_clock_get_time(clock);
+			const GstClockTime baseTime = gst_element_get_base_time(m_audio_pipeline);
+			if (GST_CLOCK_TIME_IS_VALID(baseTime) && now >= baseTime)
+				m_audio_next_pts = now - baseTime;
+			gst_object_unref(clock);
+		}
+	}
+	GST_BUFFER_PTS(buffer) = m_audio_next_pts;
+	GST_BUFFER_DTS(buffer) = m_audio_next_pts;
+	GST_BUFFER_DURATION(buffer) = durationNs;
+	m_audio_next_pts += durationNs;
+}
+
 void eServiceDAB::pushAudio(const uint8_t *data, size_t length, uint64_t durationNs, uint8_t config)
 {
 	if (!data || !length || !durationNs)
@@ -3193,10 +3257,7 @@ void eServiceDAB::pushAudio(const uint8_t *data, size_t length, uint64_t duratio
 	if (!buffer)
 		return;
 	gst_buffer_fill(buffer, 0, data, length);
-	GST_BUFFER_PTS(buffer) = m_audio_next_pts;
-	GST_BUFFER_DTS(buffer) = m_audio_next_pts;
-	GST_BUFFER_DURATION(buffer) = durationNs;
-	m_audio_next_pts += durationNs;
+	setAudioTimestamp(buffer, durationNs);
 	GstFlowReturn flow = GST_FLOW_OK;
 	g_signal_emit_by_name(m_audio_source, "push-buffer", buffer, &flow);
 	gst_buffer_unref(buffer);
@@ -3212,10 +3273,7 @@ void eServiceDAB::pushMP2(const uint8_t *data, size_t length, uint64_t durationN
 	if (!buffer)
 		return;
 	gst_buffer_fill(buffer, 0, data, length);
-	GST_BUFFER_PTS(buffer) = m_audio_next_pts;
-	GST_BUFFER_DTS(buffer) = m_audio_next_pts;
-	GST_BUFFER_DURATION(buffer) = durationNs;
-	m_audio_next_pts += durationNs;
+	setAudioTimestamp(buffer, durationNs);
 	GstFlowReturn flow = GST_FLOW_OK;
 	g_signal_emit_by_name(m_audio_source, "push-buffer", buffer, &flow);
 	gst_buffer_unref(buffer);
@@ -3284,10 +3342,7 @@ void eServiceDAB::pushPCM(const uint8_t *data, size_t length, unsigned sampleRat
 	if (!buffer)
 		return;
 	gst_buffer_fill(buffer, 0, data, length);
-	GST_BUFFER_PTS(buffer) = m_audio_next_pts;
-	GST_BUFFER_DTS(buffer) = m_audio_next_pts;
-	GST_BUFFER_DURATION(buffer) = durationNs;
-	m_audio_next_pts += durationNs;
+	setAudioTimestamp(buffer, durationNs);
 	GstFlowReturn flow = GST_FLOW_OK;
 	g_signal_emit_by_name(m_audio_source, "push-buffer", buffer, &flow);
 	gst_buffer_unref(buffer);
@@ -3535,8 +3590,15 @@ void eServiceDAB::pollAudioBus()
 		return;
 	GstMessage *message;
 	while ((message = gst_bus_pop_filtered(bus,
-		static_cast<GstMessageType>(GST_MESSAGE_ERROR | GST_MESSAGE_WARNING))) != nullptr)
+		static_cast<GstMessageType>(GST_MESSAGE_ERROR | GST_MESSAGE_WARNING | GST_MESSAGE_LATENCY))) != nullptr)
 	{
+		if (GST_MESSAGE_TYPE(message) == GST_MESSAGE_LATENCY)
+		{
+			if (!gst_bin_recalculate_latency(GST_BIN(m_audio_pipeline)))
+				eDABDebug("[eServiceDAB] audio latency is not available yet");
+			gst_message_unref(message);
+			continue;
+		}
 		GError *error = nullptr;
 		gchar *debug = nullptr;
 		if (GST_MESSAGE_TYPE(message) == GST_MESSAGE_ERROR)
@@ -3717,6 +3779,12 @@ int eServiceDAB::getInfo(int w)
 		return m_stats.programmeTypeTable;
 	case sDABSampleRate:
 		return m_stats.audioFormat.sampleRate ? static_cast<int>(m_stats.audioFormat.sampleRate) : resNA;
+	case sDABSubChId:
+		return m_stats.subchannelId;
+	case sDABCuStart:
+		return m_stats.capacityUnitStart;
+	case sDABCuSize:
+		return m_stats.capacityUnitSize > 0 ? m_stats.capacityUnitSize : resNA;
 	case sTransferBPS:
 		return static_cast<int>(std::min<uint64_t>(m_transfer_bps, std::numeric_limits<int>::max()));
 	case sProvider:

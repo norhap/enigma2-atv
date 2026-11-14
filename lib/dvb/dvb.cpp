@@ -184,23 +184,19 @@ void eDVBAdapterLinux::scanDevices()
 		snprintf(filename, sizeof(filename), "/sys/class/dvb/dvb%d.frontend%d", m_nr, num_fe);
 		if (::access(filename, X_OK) < 0) break;
 		snprintf(filename, sizeof(filename), "/dev/dvb/adapter%d/frontend%d", m_nr, num_fe);
-		eDVBFrontend *fe;
 		std::string name = filename;
 		std::map<std::string, std::string>::iterator it = mappedFrontendName.find(name);
 		if (it != mappedFrontendName.end()) name = it->second;
 
+		int simulateOk = 0;
+		int frontendOk = 0;
+		ePtr<eDVBFrontend> simulateFrontend = new eDVBFrontend(name.c_str(), num_fe, simulateOk, true);
+		ePtr<eDVBFrontend> frontend = new eDVBFrontend(name.c_str(), num_fe, frontendOk, false, simulateFrontend);
+		if (simulateOk && frontendOk)
 		{
-			int ok = 0;
-			fe = new eDVBFrontend(name.c_str(), num_fe, ok, true);
-			if (ok)
-				m_simulate_frontend.push_back(ePtr<eDVBFrontend>(fe));
-		}
-
-		{
-			int ok = 0;
-			fe = new eDVBFrontend(name.c_str(), num_fe, ok, false, fe);
-			if (ok)
-				m_frontend.push_back(ePtr<eDVBFrontend>(fe));
+			// Both lists are indexed together; a failed probe must not shift their pairing.
+			m_simulate_frontend.push_back(simulateFrontend);
+			m_frontend.push_back(frontend);
 		}
 		++num_fe; // NOSONAR
 	}
@@ -2835,6 +2831,20 @@ void eDVBChannel::forceSourcePosition(off_t offset)
 {
 	if (m_pvr_thread)
 		m_pvr_thread->forcePosition(offset);
+}
+
+RESULT eDVBChannel::seekSourcePosition(off_t offset)
+{
+	if (!m_pvr_thread || offset < 0 || offset % 188)
+		return -1;
+	// Apply the new source position while stopped, then flush in playback order.
+	m_pvr_thread->pause();
+	m_pvr_thread->forcePosition(offset);
+	::ioctl(m_pvr_fd_dst, 0);
+	if (m_cue && m_cue->m_decoding_demux)
+		m_cue->m_decoding_demux->flush();
+	m_pvr_thread->resume();
+	return 0;
 }
 
 void eDVBChannel::flushPVR(iDVBDemux *decoding_demux)
