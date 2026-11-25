@@ -271,11 +271,19 @@ def reloadSkins():
 #
 def loadSkinTemplates(skinTemplatesFileNames):
 	def addTemplate(template, fileName):
-		if template.get("component", "") in ("serviceList",):  # Only serviceList now more comming
+		if template.get("component", "") in ("serviceList", "movieList"):
 			componentTemplates.add(template, fileName)
 
+	defaultTemplatesFile = resolveFilename(SCOPE_SKINS, "skinTemplates.xml")
+	if isfile(defaultTemplatesFile):
+		defaultTemplates = fileReadXML(defaultTemplatesFile, source=MODULE_NAME)
+		if defaultTemplates is not None:
+			for template in defaultTemplates.findall("template"):
+				addTemplate(template, defaultTemplatesFile)
 	if skinTemplatesFileNames:
 		for skinTemplatesFileName in skinTemplatesFileNames:
+			if skinTemplatesFileName == defaultTemplatesFile:
+				continue
 			print(f"[Skin] Loading XML templates from '{skinTemplatesFileName}'.")
 			domStyles = fileReadXML(skinTemplatesFileName, source=MODULE_NAME)
 			if domStyles is not None:
@@ -284,7 +292,7 @@ def loadSkinTemplates(skinTemplatesFileNames):
 	else:
 		for screen in domScreens:
 			element, path = domScreens.get(screen, (None, None))
-			for template in element.findall(".//widget/templates/template"):
+			for template in element.findall(".//widget/templates/template") + element.findall(".//widget/template"):
 				addTemplate(template, None)
 	if config.crash.debugScreens.value:
 		print(f"[Skin] DEBUG: componentTemplates '{componentTemplates.templates}'.")
@@ -857,7 +865,8 @@ def parseScrollbarMode(value):
 def parseScrollbarScroll(value):
 	options = {
 		"byPage": 0,
-		"byLine": 1
+		"byLine": 1,
+		"byCenter": 2
 	}
 	return parseOptions(options, "scrollbarScroll", value, 0)
 
@@ -1678,7 +1687,8 @@ def loadSingleSkinData(desktop, screenID, domSkin, pathSkin, scope=SCOPE_GUISKIN
 	}
 	scrollbarScrolls = {
 		0: "byPage",
-		1: "byLine"
+		1: "byLine",
+		2: "byCenter"
 	}
 	for tag in domSkin.findall("windowstyle"):
 		style = eWindowStyleSkinned()
